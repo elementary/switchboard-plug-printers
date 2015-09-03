@@ -19,12 +19,13 @@
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
+
 namespace Printers {
 
     public static Plug plug;
 
     public class Plug : Switchboard.Plug {
-        Gtk.Grid main_grid;
+        Gtk.Paned main_paned;
 
         public Plug () {
             Object (category: Category.HARDWARE,
@@ -36,14 +37,26 @@ namespace Printers {
         }
 
         public override Gtk.Widget get_widget () {
-            if (main_grid == null) {
-                main_grid = new Gtk.Grid ();
-                var hello_label = new Gtk.Label (_("Hello World"));
-                main_grid.attach (hello_label, 0, 0, 1, 1);
-                main_grid.show_all ();
+            if (main_paned == null) {
+                main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
+                var list_box = new Gtk.ListBox ();
+                var scrolled = new Gtk.ScrolledWindow (null, null);
+                scrolled.add (list_box);
+                var stack = new Gtk.Stack ();
+                main_paned.pack1 (scrolled, true, false);
+                main_paned.pack2 (stack, false, false);
+                unowned CUPS.Destination[] dests;
+                var num = CUPS.get_dests (out dests);
+                for (int i = 0; i < num; i++) {
+                    var row = new PrinterRow (dests[i]);
+                    list_box.add (row);
+                    stack.add (row.page);
+                }
+
+                main_paned.show_all ();
             }
 
-            return main_grid;
+            return main_paned;
         }
 
         public override void shown () {
