@@ -1,0 +1,27 @@
+Source: switchboard-plug-printers
+Section: x11
+Priority: optional
+Maintainer: Corentin Noël <corentin@elementary.io>
+Build-Depends: cmake,
+               debhelper (>= 9),
+               libswitchboard-2.0-dev
+Standards-Version: 3.9.2
+Homepage: https://launchpad.net/switchboard-plug-printers
+
+Package: switchboard-plug-printers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Enhances: switchboard
+Description: Printers plug for Switchboard
+ This plug configures all available printers.
+
+Package: switchboard-plug-printers-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: switchboard-plug-printers (= ${binary:Version}), ${misc:Depends}
+Enhances: switchboard-plug-template
+Description: Printers plug for Switchboard (debugging symbols)
+ This plug configures all available printers.
+ .
+ This package contains debugging symbols for switchboard-plug-printers.
