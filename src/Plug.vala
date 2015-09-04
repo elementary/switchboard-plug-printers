@@ -42,9 +42,10 @@ namespace Printers {
                 var list_box = new Gtk.ListBox ();
                 var scrolled = new Gtk.ScrolledWindow (null, null);
                 scrolled.add (list_box);
+                scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
                 var stack = new Gtk.Stack ();
-                main_paned.pack1 (scrolled, true, false);
-                main_paned.pack2 (stack, false, false);
+                main_paned.pack1 (scrolled, false, false);
+                main_paned.pack2 (stack, true, false);
                 unowned CUPS.Destination[] dests;
                 var num = CUPS.get_dests (out dests);
                 for (int i = 0; i < num; i++) {

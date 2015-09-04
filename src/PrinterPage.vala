@@ -75,17 +75,160 @@ public class Printers.PrinterPage : Gtk.Grid {
         N_("The optical photo conductor is no longer functioning")
     };
 
+    private unowned CUPS.Destination dest;
+
     public PrinterPage (CUPS.Destination dest) {
+        this.dest = dest;
         expand = true;
+        margin = 12;
+        column_spacing = 12;
+        row_spacing = 6;
         var image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DIALOG);
-        var name = new Gtk.Label (dest.printer_info);
-        ((Gtk.Misc) name).xalign = 0;
+        var name = new Gtk.Entry ();
+        name.halign = Gtk.Align.START;
+        name.text = dest.printer_info;
         var state = new Gtk.Label (human_readable_reason (dest.printer_state_reasons));
+        state.hexpand = true;
         ((Gtk.Misc) state).xalign = 0;
+        ((Gtk.Misc) state).yalign = 0;
+        var stack = new Gtk.Stack ();
+        var stack_switcher = new Gtk.StackSwitcher ();
+        stack_switcher.margin_top = 6;
+        stack_switcher.margin_bottom = 6;
+        stack_switcher.halign = Gtk.Align.CENTER;
+        stack_switcher.set_stack (stack);
+        stack.add_titled (get_general_page (), "general", _("General"));
+        stack.add_titled (get_options_page (), "options", _("Options"));
+        stack.add_titled (get_tasks_page (), "tasks", _("Tasks"));
         attach (image, 0, 0, 1, 2);
         attach (name, 1, 0, 1, 1);
         attach (state, 1, 1, 1, 1);
+        attach (stack_switcher, 0, 2, 2, 1);
+        attach (stack, 0, 3, 2, 1);
         show_all ();
+    }
+
+    private Gtk.Grid get_general_page () {
+        var grid = new Gtk.Grid ();
+        grid.column_spacing = 12;
+        grid.row_spacing = 6;
+
+        var location_label = new Gtk.Label ("Location:");
+        ((Gtk.Misc) location_label).xalign = 1;
+        location_label.hexpand = true;
+
+        var location_entry = new Gtk.Entry ();
+        location_entry.text = dest.printer_location ?? "";
+        location_entry.hexpand = true;
+        location_entry.halign = Gtk.Align.START;
+        location_entry.placeholder_text = _("Location of the printer");
+
+        var ip_label = new Gtk.Label ("IP Address:");
+        ((Gtk.Misc) ip_label).xalign = 1;
+
+        var ip_label_ = new Gtk.Label ("localhost");
+        ip_label_.selectable = true;
+        ((Gtk.Misc) ip_label_).xalign = 0;
+
+        var exp_grid = new Gtk.Grid ();
+        exp_grid.hexpand = true;
+        grid.attach (exp_grid, 0, 0, 4, 1);
+        grid.attach (location_label, 1, 0, 1, 1);
+        grid.attach (location_entry, 2, 0, 1, 1);
+        grid.attach (ip_label, 1, 1, 1, 1);
+        grid.attach (ip_label_, 2, 1, 1, 1);
+        return grid;
+    }
+
+    private Gtk.Grid get_options_page () {
+        var grid = new Gtk.Grid ();
+        grid.column_spacing = 12;
+        grid.row_spacing = 6;
+        return grid;
+    }
+
+    private Gtk.Frame get_tasks_page () {
+        var grid = new Gtk.Grid ();
+        grid.orientation = Gtk.Orientation.VERTICAL;
+
+        var list_store = new Gtk.ListStore (4, typeof (GLib.Icon), typeof (string), typeof (string), typeof (string));
+        Gtk.TreeIter iter;
+
+        unowned CUPS.Job[] jobs;
+        var jobs_number = dest.get_jobs (out jobs, 1, CUPS.WhichJobs.ALL);
+        for (int i = 0; i < jobs_number; i++) {
+            list_store.append (out iter);
+            string date;
+            unowned CUPS.Job job = jobs[i];
+            if (job.completed_time != 0) {
+                var date_time = new DateTime.from_unix_local (job.completed_time);
+                date = date_time.format ("%F %T");
+            } else if (job.processing_time != 0) {
+                var date_time = new DateTime.from_unix_local (job.processing_time);
+                date = date_time.format ("%F %T");
+            } else {
+                var date_time = new DateTime.from_unix_local (job.creation_time);
+                date = date_time.format ("%F %T");
+            }
+
+            list_store.set (iter, 1, job.title, 2, human_readable_job_state (job.state), 3, date, 0, new ThemedIcon (job.format.replace ("/", "-")));
+        }
+
+        // The View:
+        var view = new Gtk.TreeView.with_model (list_store);
+        var scrolled = new Gtk.ScrolledWindow (null, null);
+        scrolled.expand = true;
+        scrolled.add (view);
+
+        var cell = new Gtk.CellRendererText ();
+        var cellell = new Gtk.CellRendererText ();
+        cellell.ellipsize = Pango.EllipsizeMode.END;
+        var cellpixbuf = new Gtk.CellRendererPixbuf ();
+        var column = new Gtk.TreeViewColumn.with_attributes ("Job Title", cellell, "text", 1);
+        column.expand = true;
+        column.resizable = true;
+        view.insert_column_with_attributes (-1, "", cellpixbuf, "gicon", 0);
+        view.insert_column (column, -1);
+        column = new Gtk.TreeViewColumn.with_attributes ("Time", cell, "text", 3);
+        column.resizable = true;
+        view.insert_column (column, -1);
+        column = new Gtk.TreeViewColumn.with_attributes ("Job State", cell, "text", 2);
+        column.resizable = true;
+        view.insert_column (column, -1);
+
+        var toolbar = new Gtk.Toolbar ();
+        toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
+        toolbar.get_style_context ().add_class ("inline-toolbar");
+        var start_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("media-playback-start-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        toolbar.add (start_button);
+        var pause_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("media-playback-pause-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        toolbar.add (pause_button);
+        var stop_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("media-playback-stop-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        toolbar.add (stop_button);
+        var expander = new Gtk.ToolItem ();
+        expander.set_expand (true);
+        expander.visible_vertical = false;
+        toolbar.add (expander);
+        var show_all_button = new Gtk.ToggleToolButton ();
+        show_all_button.label = _("Show finished jobs");
+        show_all_button.toggled.connect (() => {
+            toggle_finished (show_all_button);
+        });
+        toolbar.add (show_all_button);
+
+        grid.add (scrolled);
+        grid.add (toolbar);
+        var frame = new Gtk.Frame (null);
+        frame.add (grid);
+        return frame;
+    }
+
+    private void toggle_finished (Gtk.ToggleToolButton button) {
+        if (button.active == true) {
+            button.label = _("Hide finished jobs");
+        } else {
+            button.label = _("Show finished jobs");
+        }
     }
 
     private string human_readable_reason (string reason) {
@@ -96,6 +239,26 @@ public class Printers.PrinterPage : Gtk.Grid {
         }
 
         return reason;
+    }
+
+    private string human_readable_job_state (CUPS.IPP.JobState state) {
+        switch (state) {
+            case CUPS.IPP.JobState.PENDING:
+                return _("Pending");
+            case CUPS.IPP.JobState.HELD:
+                return _("On Held");
+            case CUPS.IPP.JobState.PROCESSING:
+                return _("Processing");
+            case CUPS.IPP.JobState.STOPPED:
+                return _("Stopped");
+            case CUPS.IPP.JobState.CANCELED:
+                return _("Canceled");
+            case CUPS.IPP.JobState.ABORTED:
+                return _("Aborded");
+            case CUPS.IPP.JobState.COMPLETED:
+            default:
+                return _("Completed");
+        }
     }
 }
 

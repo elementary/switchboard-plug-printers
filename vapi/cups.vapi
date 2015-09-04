@@ -219,10 +219,24 @@ namespace CUPS {
 			}
 		}
 
+		public int get_jobs (out unowned CUPS.Job[] jobs, int myjobs, CUPS.WhichJobs whichjobs) {
+		    return CUPS.get_jobs (out jobs, this.name, myjobs, whichjobs);
+		}
+
 		public int print_file (string filename, string title, Option[]? options) {
 			return CUPS.print_file (this.name, filename, title, options);
 		}
 	}
+
+	[CCode (cname = "int", cprefix = "CUPS_WHICHJOBS_", has_type_id = false)]
+	public enum WhichJobs {
+		ALL,
+		ACTIVE,
+		COMPLETED
+	}
+
+	[CCode (cname = "cupsGetJobs")]
+	public int get_jobs ([CCode (array_length = false)] out unowned CUPS.Job[] jobs, string name, int myjobs, CUPS.WhichJobs whichjobs);
 
 	[CCode (cname = "cups_job_t")]
 	public struct Job {
@@ -231,7 +245,7 @@ namespace CUPS {
 		public string title;
 		public string user;
 		public string format;
-		// public IPP.JobState state;
+		public IPP.JobState state;
 		public int size;
 		public int priority;
 		public time_t completed_time;
