@@ -1,5 +1,103 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-04 00:38+0200\n"
+"PO-Revision-Date: 2015-09-03 23:38+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-09-04 05:42+0000\n"
+"X-Generator: Launchpad (build 17706)\n"
+
+#. / Translators: The printer is low on toner
+#: ../src/PrinterPage.vala:45
+msgid "Low on toner"
+msgstr ""
+
+#. / Translators: The printer has no toner left
+#: ../src/PrinterPage.vala:47
+msgid "Out of toner"
+msgstr ""
+
+#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/PrinterPage.vala:49
+msgid "Low on developer"
+msgstr ""
+
+#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/PrinterPage.vala:51
+msgid "Out of developer"
+msgstr ""
+
+#. / Translators: "marker" is one color bin of the printer
+#: ../src/PrinterPage.vala:53
+msgid "Low on a marker supply"
+msgstr ""
+
+#. / Translators: "marker" is one color bin of the printer
+#: ../src/PrinterPage.vala:55
+msgid "Out of a marker supply"
+msgstr ""
+
+#. / Translators: One or more covers on the printer are open
+#: ../src/PrinterPage.vala:57
+msgid "Open cover"
+msgstr ""
+
+#. / Translators: One or more doors on the printer are open
+#: ../src/PrinterPage.vala:59
+msgid "Open door"
+msgstr ""
+
+#. / Translators: At least one input tray is low on media
+#: ../src/PrinterPage.vala:61
+msgid "Low on paper"
+msgstr ""
+
+#. / Translators: At least one input tray is empty
+#: ../src/PrinterPage.vala:63
+msgid "Out of paper"
+msgstr ""
+
+#. / Translators: The printer is offline
+#: ../src/PrinterPage.vala:65
+msgctxt "printer state"
+msgid "Offline"
+msgstr ""
+
+#. / Translators: Someone has stopped the Printer
+#: ../src/PrinterPage.vala:67
+msgctxt "printer state"
+msgid "Stopped"
+msgstr ""
+
+#. / Translators: The printer marker supply waste receptacle is almost full
+#: ../src/PrinterPage.vala:69
+msgid "Waste receptacle almost full"
+msgstr ""
+
+#. / Translators: The printer marker supply waste receptacle is full
+#: ../src/PrinterPage.vala:71
+msgid "Waste receptacle full"
+msgstr ""
+
+#. / Translators: Optical photo conductors are used in laser printers
+#: ../src/PrinterPage.vala:73
+msgid "The optical photo conductor is near end of life"
+msgstr ""
+
+#. / Translators: Optical photo conductors are used in laser printers
+#: ../src/PrinterPage.vala:75
+msgid "The optical photo conductor is no longer functioning"
+msgstr ""
+
+#: ../src/Plug.vala:33
+msgid "Printers"
+msgstr ""
+
+#: ../src/Plug.vala:34
+msgid "Change printers settings"
+msgstr ""
