@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Corentin Noël <corentin@elementary.io>
 Build-Depends: cmake,
                debhelper (>= 9),
+               libcups2,
                libswitchboard-2.0-dev
 Standards-Version: 3.9.2
 Homepage: https://launchpad.net/switchboard-plug-printers
