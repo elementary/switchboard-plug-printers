@@ -2,7 +2,8 @@ Source: switchboard-plug-printers
 Section: x11
 Priority: optional
 Maintainer: Corentin Noël <corentin@elementary.io>
-Build-Depends: cmake,
+Build-Depends: cups,
+               cmake,
                debhelper (>= 9),
                libcups2,
                libswitchboard-2.0-dev

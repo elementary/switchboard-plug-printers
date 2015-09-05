@@ -117,12 +117,27 @@ public class Printers.PrinterPage : Gtk.Grid {
         right_grid.add (info_button);
         right_grid.add (enable_switch);
 
+        var info_popover = new Gtk.Popover (info_button);
+        info_popover.hide.connect (() => {
+            info_button.active = false;
+        });
+        info_button.toggled.connect (() => {
+            if (info_button.active == true) {
+                info_popover.show_all ();
+            } else {
+                info_popover.hide ();
+            }
+        });
+
         var state = new Gtk.Label (human_readable_reason (dest.printer_state_reasons));
         state.hexpand = true;
         ((Gtk.Misc) state).xalign = 0;
         attach (image, 0, 0, 1, 1);
         attach (editable_title, 1, 0, 1, 1);
         attach (right_grid, 2, 0, 1, 1);
+
+        var status_label = new Gtk.Label ("Status:");
+        ((Gtk.Misc) status_label).xalign = 1;
 
         var location_label = new Gtk.Label ("Location:");
         ((Gtk.Misc) location_label).xalign = 1;
@@ -140,6 +155,18 @@ public class Printers.PrinterPage : Gtk.Grid {
         var ip_label_ = new Gtk.Label ("localhost");
         ip_label_.selectable = true;
         ((Gtk.Misc) ip_label_).xalign = 0;
+
+        var info_grid = new Gtk.Grid ();
+        info_grid.margin = 6;
+        info_grid.column_spacing = 12;
+        info_grid.row_spacing = 6;
+        info_grid.attach (status_label, 0, 0, 1, 1);
+        info_grid.attach (state, 1, 0, 1, 1);
+        info_grid.attach (location_label, 0, 1, 1, 1);
+        info_grid.attach (location_entry, 1, 1, 1, 1);
+        info_grid.attach (ip_label, 0, 2, 1, 1);
+        info_grid.attach (ip_label_, 1, 2, 1, 1);
+        info_popover.add (info_grid);
     }
 
     private Gtk.Grid get_general_page () {
@@ -166,6 +193,8 @@ public class Printers.PrinterPage : Gtk.Grid {
         var grid = new Gtk.Grid ();
         grid.column_spacing = 12;
         grid.row_spacing = 6;
+        int cancel = 0;
+        //unowned CUPS.HTTP http = CUPS.connect_destination (dest, 0, 0, ref cancel, char[] resource, null);
         return grid;
     }
 
