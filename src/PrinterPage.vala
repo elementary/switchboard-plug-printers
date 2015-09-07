@@ -190,12 +190,7 @@ public class Printers.PrinterPage : Gtk.Grid {
     }
 
     private Gtk.Grid get_options_page () {
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 12;
-        grid.row_spacing = 6;
-        int cancel = 0;
-        //unowned CUPS.HTTP http = CUPS.connect_destination (dest, 0, 0, ref cancel, char[] resource, null);
-        return grid;
+        return new OptionsPage (dest);
     }
 
     private string human_readable_reason (string reason) {

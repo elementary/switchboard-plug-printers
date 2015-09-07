@@ -16,6 +16,7 @@ include (ValaPrecompile)
 vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Plug.vala
     PrinterPage.vala
+    OptionsPage.vala
     JobsView.vala
     EditableTitle.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala

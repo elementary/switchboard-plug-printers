@@ -68,6 +68,23 @@ namespace CUPS {
 		OPTIONS
 	}
 
+	[CCode (cname = "cupsCopyDestInfo")]
+	public CUPS.DestinationInformation copy_destination_information (CUPS.HTTP.HTTP http, CUPS.Destination dest);
+	[CCode (cname = "cupsCheckDestSupported")]
+	public int check_destination_supported (CUPS.HTTP.HTTP http, CUPS.Destination dest, CUPS.DestinationInformation info, string option, string value);
+
+	[Compact, CCode (cname = "cups_dinfo_t", free_function = "cupsFreeDestInfo")]
+	public class DestinationInformation {
+		
+	}
+
+	[CCode (cname = "cupsFindDestDefault")]
+	public unowned CUPS.IPP.Attribute find_destination_default (CUPS.HTTP.HTTP http, CUPS.Destination dest, CUPS.DestinationInformation info, string option);
+	[CCode (cname = "cupsFindDestReady")]
+	public unowned CUPS.IPP.Attribute find_destination_ready (CUPS.HTTP.HTTP http, CUPS.Destination dest, CUPS.DestinationInformation info, string option);
+	[CCode (cname = "cupsFindDestSupported")]
+	public unowned CUPS.IPP.Attribute find_destination_supported (CUPS.HTTP.HTTP http, CUPS.Destination dest, CUPS.DestinationInformation info, string option);
+
 	[CCode (cname = "cupsGetOption")]
 	public unowned string get_option (string name, [CCode (array_length_pos = 1.1)] Option[] options);
 	[CCode (cname = "cupsAddOption")]
@@ -93,10 +110,6 @@ namespace CUPS {
 		public static unowned Destination? get_dest (string name, string? instance, [CCode (array_length_pos = 0.9)] Destination[] dests);
 		[CCode (cname = "cupsGetDests")]
 		public static int get_dests ([CCode (array_length = false)] out unowned Destination[] dests);
-
-		public PPD.File get_ppd () {
-			return new PPD.File (CUPS.get_ppd (this.name));
-		}
 
 		/**
 		 * The type of authentication required for printing to this destination:
@@ -292,328 +305,7 @@ namespace CUPS {
 	[CCode (cname = "cups_ahash_func_t", cheader_filename = "cups/array.h")]
 	public delegate int ArrayHashFunc (void * element);
 
-	// cups_file_t will not be bound unless someone comes up with a
-	// compelling reason, or wants to do it themselves.
-
-	[CCode (cheader_filename = "cups/ppd.h", lower_case_cprefix = "ppd_")]
-	namespace PPD {
-		[CCode (cname = "PPD_VERSION")]
-		public const double VERSION;
-		[CCode (cname = "PPD_MAX_NAME")]
-		public const int MAX_NAME;
-		[CCode (cname = "PPD_MAX_TEXT")]
-		public const int MAX_TEXT;
-		[CCode (cname = "PPD_MAX_LINE")]
-		public const int MAX_LINE;
-
-		[CCode (cname = "ppd_ui_t")]
-		public enum UI {
-			BOOLEAN,
-			PICKONE,
-			PICKMANY
-		}
-
-		[CCode (cname = "ppd_section_t", cprefix = "PPD_ORDER_")]
-		public enum Section {
-			ANY,
-			DOCUMENT,
-			EXIT,
-			JCL,
-			PAGE,
-			PROLOG
-		}
-
-		[CCode (cname = "ppd_cs_t", cprefix = "PPD_CS_")]
-		public enum Colorspace {
-			CMYK,
-			CMY,
-			GRAY,
-			RGB,
-			RGBK,
-			N
-		}
-
-		[CCode (cname = "ppd_status_t", cprefix = "PPD_")]
-		public enum Status {
-			OK,
-			FILE_OPEN_ERROR,
-			NULL_FILE,
-			ALLOC_ERROR,
-			MISSING_PPDADOBE4,
-			MISSING_VALUE,
-			INTERNAL_ERROR,
-			BAD_OPEN_GROUP,
-			NESTED_OPEN_GROUP,
-			BAD_OPEN_UI,
-			NESTED_OPEN_UI,
-			BAD_ORDER_DEPENDENCY,
-			BAD_UI_CONSTRAINTS,
-			MISSING_ASTERISK,
-			LINE_TOO_LONG,
-			ILLEGAL_CHARACTER,
-			ILLEGAL_MAIN_KEYWORD,
-			ILLEGAL_OPTION_KEYWORD,
-			ILLEGAL_TRANSLATION,
-			ILLEGAL_WHITESPACE,
-			BAD_CUSTOM_PARAM;
-
-			[CCode (cname = "ppdErrorString")]
-			public unowned string to_string ();
-		}
-
-		[CCode (cname = "ppd_conform_t")]
-		public enum Conform {
-			RELAXED,
-			STRICT
-		}
-
-		[CCode (cname = "ppd_attr_s")]
-		public struct Attribute {
-			public string name;
-			public string spec;
-			public string text;
-			public string value;
-		}
-
-		[CCode (cname = "ppd_choice_t")]
-		public struct Choice {
-			public char marked;
-			public string choice;
-			public string text;
-			public string code;
-			public Option * option;
-		}
-
-		[CCode (cname = "ppd_option_t")]
-		public struct Option {
-			public char conflicted;
-			public string keyword;
-			public string defchoice;
-			public string text;
-			public UI ui;
-			public Section section;
-			public float order;
-			[CCode (array_length_cname = "num_choices")]
-			public Choice[] choices;
-
-			[CCode (cname = "ppdFindChoice")]
-			public unowned Choice? find_choice (string option);
-		}
-
-		[CCode (cname = "ppd_group_t")]
-		public struct Group {
-			public string text;
-			public string name;
-			[CCode (array_length_cname = "num_options")]
-			public Option[] options;
-			[CCode (array_length_cname = "num_subgroups")]
-			public Group[] subgroups;
-		}
-
-		[CCode (cname = "ppd_const_t")]
-		public struct Constraint {
-			public string option1;
-			public string choice1;
-			public string option2;
-			public string choice2;
-		}
-
-		[CCode (cname = "ppd_size_t")]
-		public struct Size {
-			public int marked;
-			public string name;
-			public float width;
-			public float length;
-			public float left;
-			public float bottom;
-			public float right;
-			public float top;
-		}
-
-		[CCode (cname = "ppd_emul_t")]
-		public struct Emulation {
-			public string name;
-			public string start;
-			public string stop;
-		}
-
-		[CCode (cname = "ppd_profile_t")]
-		public struct Profile {
-			public string resolution;
-			public string media_type;
-			public float density;
-			public float gamma;
-			[CCode (array_length = false)]
-			public float[][] matrix;
-		}
-
-		[CCode (cname = "ppd_cptype_t", cprefix = "PPD_CUSTOM_")]
-		public enum CPType {
-			CURVE,
-			INT,
-			INTCURVE,
-			PASSCODE,
-			PASSWORD,
-			POINTS,
-			REAL,
-			STRING
-		}
-
-		[CCode (cname = "ppd_cplimit_t")]
-		public struct CPLimit {
-			public float custom_curve;
-			public int custom_int;
-			public float custom_invcurve;
-			public int custom_passcode;
-			public int custom_password;
-			public float custom_points;
-			public float custom_real;
-			public int custom_string;
-		}
-
-		[CCode (cname = "ppd_cpvalue_t")]
-		public struct CPValue {
-			public float custom_curve;
-			public int custom_int;
-			public float custom_invcurve;
-			public string custom_passcode;
-			public string custom_password;
-			public float custom_points;
-			public float custom_real;
-			public string custom_string;
-		}
-
-		[CCode (cname = "ppd_cparam_t")]
-		public struct CParam {
-			public string name;
-			public string text;
-			public int order;
-			public CPType type;
-			public CPLimit minimum;
-			public CPLimit maximum;
-			public CPValue current;
-		}
-
-		[CCode (cname = "ppd_coption_t")]
-		public struct COption {
-			public string keyword;
-			public Option * option;
-			public int marked;
-			public Array @params;
-
-			public unowned CParam? find_custom_param (string name);
-			public unowned CParam? first_custom_param (COption opt);
-			public unowned CParam? next_custom_param ();
-		}
-
-		[Compact, CCode (cname = "ppd_file_t", free_function = "ppdClose")]
-		public class File {
-			public int language_level;
-			public int color_devices;
-			public int variable_sizes;
-			public int accurate_screens;
-			public int contone_only;
-			public int landscape;
-			public int model_number;
-			public int manual_copies;
-			public int throughput;
-			public Colorspace colorspace;
-			public string patches;
-			[CCode (array_length_cname = "num_emulations")]
-			public Emulation[] emulations;
-			public string jcl_begin;
-			public string jcl_ps;
-			public string jcl_end;
-			public string lang_encoding;
-			public string lang_version;
-			public string modelname;
-			public string ttrasterizer;
-			public string manufacturer;
-			public string product;
-			public string nickname;
-			public string shortnickname;
-			[CCode (array_length_cname = "num_groups")]
-			public Group[] groups;
-			[CCode (array_length_cname = "num_sizes")]
-			public Size[] sizes;
-			public float custom_min[2];
-			public float custom_max[2];
-			public float margins[4];
-			[CCode (array_length_cname = "num_consts")]
-			public Constraint[] consts;
-			[CCode (array_length_cname = "num_fonts")]
-			public string[] fonts;
-			[CCode (array_length_cname = "num_profiles")]
-			public Profile[] profiles;
-			[CCode (array_length_cname = "num_filters")]
-			public string[] filters;
-			public string protocols;
-			public string pcfilename;
-
-			[CCode (cname = "ppdOpen")]
-			public File.open (GLib.FileStream fp);
-			[CCode (cname = "ppdOpenFd")]
-			public File.open_fd (int fd);
-			[CCode (cname = "ppdOpenFile")]
-			public File (string filename);
-
-			[CCode (cname = "ppdCollect")]
-			public int collect (Section section, Choice *** choices);
-			[CCode (cname = "ppdConflicts")]
-			public int conflicts ();
-			[CCode (cname = "ppdEmit")]
-			public int emit (GLib.FileStream fp, Section section);
-			[CCode (cname = "ppdEmitFd")]
-			public int emit_fd (int fd, Section section);
-			[CCode (cname = "ppdEmitJCL")]
-			public int emit_jcl (GLib.FileStream fp, int job_id, string user, string title);
-			[CCode (cname = "ppdFindMarkedChoice")]
-			public unowned Choice? find_marked_choice (string keyword);
-			[CCode (cname = "ppdFindOption")]
-			public unowned Choice? find_option (string keyword);
-			[CCode (cname = "ppdIsMarked")]
-			public int is_marked (string keyword, string option);
-			[CCode (cname = "ppdMarkDefaults")]
-			public void mark_defaults ();
-			[CCode (cname = "ppdMarkOption")]
-			public int mark_option (string keyword, string option);
-			[CCode (cname = "ppdPageLength")]
-			public float page_length (string name);
-			[CCode (cname = "ppdPageSize")]
-			public Size page_size (string name);
-			[CCode (cname = "ppdPageWidth")]
-			public float page_width (string name);
-			[CCode (cname = "ppdFindAttr")]
-			public unowned Attribute? find_attribute (string name, string spec);
-			[CCode (cname = "ppdFindAttrNext")]
-			public unowned Attribute? find_attribute_next (string name, string spec);
-			[CCode (cname = "ppdCollect2")]
-			public int collect2 (Section section, float min_order, Choice *** choices);
-			[CCode (cname = "ppdEmitAfterOrder")]
-			public int emit_after_order (GLib.FileStream fp, Section section, int limit, float min_order);
-			[CCode (cname = "ppdEmitJCLEnd")]
-			public int emit_jcl_end (GLib.FileStream fp);
-			[CCode (cname = "ppdEmitString")]
-			public string emit_string (Section section, float min_order);
-			[CCode (cname = "ppdFindCustomOption")]
-			public unowned COption? find_custom_option (string keyword);
-			[CCode (cname = "ppdFirstCustomOption")]
-			public unowned COption? first_custom_option (string name);
-			[CCode (cname = "ppdNextOption")]
-			public unowned COption? next_option ();
-			[CCode (cname = "ppdLocalize")]
-			public int localize ();
-			[CCode (cname = "ppdLocalizeIPPReason")]
-			public unowned string localize_ipp_reason (string reason, string scheme, char[] buffer);
-		}
-
-		[CCode (cname = "ppdLastError")]
-		public static Status last_error (out int line);
-		[CCode (cname = "ppdSetConformance")]
-		public static void set_conformance (Conform c);
-	}
-
-	[CCode (cheader_filename = "cups/ipp.h", lower_case_cprefix = "ppd_")]
+	[CCode (cheader_filename = "cups/ipp.h", lower_case_cprefix = "ipp_")]
 	namespace IPP {
 		[CCode (cname = "IPP_PORT")]
 		public const int PORT;
@@ -662,7 +354,11 @@ namespace CUPS {
 			MIMETYPE,
 			MEMBERNAME,
 			MASK,
-			COPY
+			COPY;
+			[CCode(cname = "ippTagString")]
+			public unowned string to_string ();
+			[CCode(cname = "ippTagValue")]
+			public static CUPS.IPP.Tag from_string (string name);
 		}
 
 		[CCode (cname = "ipp_res_t", cprefix = "IPP_RES_")]
@@ -806,7 +502,11 @@ namespace CUPS {
 			CUPS_GET_PPDS,
 			CUPS_MOVE_JOB,
 			CUPS_AUTHENTICATE_JOB,
-			CUPS_GET_PPD
+			CUPS_GET_PPD;
+			[CCode(cname = "ippOpString")]
+			public unowned string to_string ();
+			[CCode(cname = "ippOpValue")]
+			public static CUPS.IPP.Operation from_string (string name);
 		}
 
 		[CCode (cname = "ipp_status_t", cprefix = "IPP_")]
@@ -855,7 +555,11 @@ namespace CUPS {
 			PRINTER_BUSY,
 			ERROR_JOB_CANCELED,
 			MULTIPLE_JOBS_NOT_SUPPORTED,
-			PRINTER_IS_DEACTIVATED
+			PRINTER_IS_DEACTIVATED;
+			[CCode(cname = "ippErrorString")]
+			public unowned string to_string ();
+			[CCode(cname = "ippErrorValue")]
+			public static CUPS.IPP.Status from_string (string name);
 		}
 
 		[CCode (cname = "struct { ipp_uchar_t version[2]; int op_status; int request_id; }")]
@@ -899,17 +603,76 @@ namespace CUPS {
 		}
 
 		[CCode (cname = "ipp_attribute_t")]
-		public struct Attribute {
-			//public Attribute? next;
+		public class Attribute {
+			public Attribute? next;
 			public Tag group_tag;
 			public Tag value_tag;
 			public string name;
-			//[CCode (array_length_cname = "num_values")]
-			//public Value[] values;
+			public int num_values;
+			[CCode (array_length_cname = "num_values")]
+			public unowned CUPS.IPP.Value[] values;
+			[CCode(cname = "ippGetCount")]
+			public int get_count ();
+			[CCode(cname = "ippGetDate")]
+			public uchar[] get_date (int element);
+			[CCode(cname = "ippGetBoolean")]
+			public int get_bool (int element);
+			[CCode(cname = "ippGetCollection")]
+			public unowned CUPS.IPP.IPP get_collection (int element);
+			[CCode(cname = "ippGetGroupTag")]
+			public CUPS.IPP.Tag get_group_tag (int element);
+			[CCode(cname = "ippGetInteger")]
+			public int get_integer (int element);
+			[CCode(cname = "ippGetName")]
+			public unowned string get_name ();
+			[CCode(cname = "ippGetOctetString")]
+			public void* get_octet_string (int element, out int datalen);
+			[CCode(cname = "ippGetOperation")]
+			public CUPS.IPP.Operation get_operation ();
+			[CCode(cname = "ippGetRange")]
+			public int get_range (int element, out int upper_value);
+			[CCode(cname = "ippGetResolution")]
+			public int get_resolution (int element, out int y_res, out CUPS.IPP.Resolution units);
+			[CCode(cname = "ippGetString")]
+			public unowned string get_string (int element, string? language = null);
+			[CCode(cname = "ippGetValueTag")]
+			public CUPS.IPP.Tag get_value_tag ();
+		}
+
+		[CCode (cname = "ipp_value_t", cheader_filename = "cups/ipp.h")]
+		public struct Value {
+			public int integer;
+			public char boolean;
+			public uchar date[11];
+			[CCode(cname = "resolution.xres")]
+			public int resolution_x;
+			[CCode(cname = "resolution.yres")]
+			public int resolution_y;
+			[CCode(cname = "resolution.units")]
+			public CUPS.IPP.Resolution resolution_units;
+
+			[CCode(cname = "range.lower")]
+			public int range_lower;
+			[CCode(cname = "range.upper")]
+			public int range_upper;
+
+			[CCode(cname = "string.language")]
+			public string string_language;
+			[CCode(cname = "string.text")]
+			public string string_text;
+
+			[CCode(cname = "unknown.length")]
+			public int unknown_length;
+			[CCode(cname = "unknown.data")]
+			public void* unknown_data;
+
+			public CUPS.IPP.IPP collection;
 		}
 
 		[CCode (cname = "ippPort")]
 		public static int port ();
+		[CCode (cname = "ippSetPort")]
+		public static void set_port (int port);
 
 		[Compact, CCode (cname = "ipp_t", free_function = "ippDelete")]
 		public class IPP {
@@ -926,12 +689,40 @@ namespace CUPS {
 			public IPP ();
 			[CCode (cname = "ippNewRequest")]
 			public IPP.request (Operation op);
+			[CCode (cname = "ippNewResponse")]
+			public IPP.response (CUPS.IPP.IPP request);
+			[CCode (cname = "ippFirstAttribute")]
+			public unowned Attribute first_attribute ();
+			[CCode (cname = "ippNextAttribute")]
+			public unowned Attribute next_attribute ();
 			[CCode (cname = "ippAddBoolean")]
 			public unowned Attribute add_boolean (Tag group, string name, char value);
 			[CCode (cname = "ippAddBooleans")]
-			public unowned Attribute add_booleanns (Tag group, string name, [CCode (array_length_pos = 0.9)] char[] values);
+			public unowned Attribute add_booleans (Tag group, string name, [CCode (array_length_pos = 0.9)] char[] values);
 			[CCode (cname = "ippAddString")]
 			public unowned Attribute add_string (Tag group, Tag type, string name, string? charset, string value);
+			[CCode (cname = "ippAddStrings")]
+			public unowned Attribute add_strings (Tag group, Tag type, string name, string? language, [CCode (array_length_pos = 3.9)] string[] values);
+			[CCode(cname = "ippGetRequestId")]
+			public int get_request_id ();
+			[CCode(cname = "ippGetState")]
+			public CUPS.IPP.State get_state ();
+			[CCode(cname = "ippSetState")]
+			public int set_state (CUPS.IPP.State state);
+			[CCode(cname = "ippGetStatusCode")]
+			public CUPS.IPP.Status get_status_code ();
+			[CCode(cname = "ippSetStatusCode")]
+			public int set_status_code (CUPS.IPP.Status status);
+			[CCode(cname = "ippGetVersion")]
+			public int get_version (out int minor);
+			[CCode(cname = "ippSetVersion")]
+			public int set_version (int major, int minor);
+			[CCode(cname = "ippLength")]
+			public size_t length ();
+			[CCode(cname = "ippFindAttribute")]
+			public unowned CUPS.IPP.Attribute find_attribute (string name, CUPS.IPP.Tag type);
+			[CCode(cname = "ippFindNextAttribute")]
+			public unowned CUPS.IPP.Attribute find_next_attribute (string name, CUPS.IPP.Tag type);
 		}
 	}
 
@@ -976,6 +767,51 @@ namespace CUPS {
 
 			public IPP.IPP do_request (owned IPP.IPP request, string resource);
 			public IPP.IPP do_file_request (owned IPP.IPP request, string resource, string filename);
+		}
+	}
+
+	namespace Attributes {
+		[CCode (cname = "CUPS_NUMBER_UP_SUPPORTED")]
+		public const string NUMBER_UP_SUPPORTED;
+		[CCode (cname = "\"number-up-default\"")]
+		public const string NUMBER_UP_DEFAULT;
+
+		[CCode (cname = "CUPS_SIDES_SUPPORTED")]
+		public const string SIDES_SUPPORTED;
+		[CCode (cname = "\"sides-default\"")]
+		public const string SIDES_DEFAULT;
+
+		[CCode (cname = "CUPS_ORIENTATION_SUPPORTED")]
+		public const string ORIENTATION_SUPPORTED;
+		[CCode (cname = "\"orientation-requested-default\"")]
+		public const string ORIENTATION_DEFAULT;
+
+		[CCode (cname = "CUPS_MEDIA_SUPPORTED")]
+		public const string MEDIA_SUPPORTED;
+		[CCode (cname = "\"media-supported-default\"")]
+		public const string MEDIA_DEFAULT;
+
+		[CCode (cname = "\"media-size-supported\"")]
+		public const string MEDIA_SIZE_SUPPORTED;
+
+		namespace Sided {
+			[CCode (cname = "CUPS_SIDES_ONE_SIDED")]
+			public const string ONE;
+			[CCode (cname = "CUPS_SIDES_TWO_SIDED_PORTRAIT")]
+			public const string TWO_LONG_EDGE;
+			[CCode (cname = "CUPS_SIDES_TWO_SIDED_LANDSCAPE")]
+			public const string TWO_SHORT_EDGE;
+		}
+
+		namespace Orientation {
+			[CCode (cname = "3")]
+			public const int PORTRAIT;
+			[CCode (cname = "4")]
+			public const int LANDSCAPE;
+			[CCode (cname = "5")]
+			public const int REVERSE_PORTRAIT;
+			[CCode (cname = "6")]
+			public const int REVERSE_LANDSCAPE;
 		}
 	}
 }
