@@ -26,6 +26,7 @@ namespace Printers {
 
     public class Plug : Switchboard.Plug {
         Gtk.Paned main_paned;
+        CUPSNotifier notifier;
 
         public Plug () {
             Object (category: Category.HARDWARE,
@@ -52,6 +53,25 @@ namespace Printers {
                     var row = new PrinterRow (dests[i]);
                     list_box.add (row);
                     stack.add (row.page);
+                }
+
+                try {
+                    notifier = Bus.get_proxy_sync (BusType.SYSTEM, "org.cups.cupsd.Notifier",
+                                                                      "/org/cups/cupsd/Notifier");
+                    notifier.printer_modified.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs) => {
+                        warning ("");
+                    });
+                    notifier.server_stopped.connect ((str) => {
+                        warning (str);
+                    });
+                    notifier.server_restarted.connect ((str) => {
+                        warning (str);
+                    });
+                    notifier.server_started.connect ((str) => {
+                        warning (str);
+                    });
+                } catch (IOError e) {
+                    critical (e.message);
                 }
 
                 main_paned.show_all ();

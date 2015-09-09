@@ -414,7 +414,7 @@ namespace CUPS {
 			HIGH
 		}
 
-		[CCode (cname = "ipp_jstate_t", cprefix = "IPP_JOB_")]
+		[CCode (cname = "ipp_jstate_t", cprefix = "IPP_JOB_", has_type_id = false)]
 		public enum JobState {
 			PENDING,
 			HELD,

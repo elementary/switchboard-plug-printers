@@ -22,18 +22,25 @@
 
 public class Printers.JobsView : Gtk.Frame {
     private unowned CUPS.Destination dest;
+    private Gtk.ListStore list_store;
 
     public JobsView (CUPS.Destination dest) {
         this.dest = dest;
         // The Job view
-        var list_store = new Gtk.ListStore (7, typeof (GLib.Icon), typeof (string), typeof (string), typeof (string), typeof (bool), typeof (GLib.Icon), typeof (bool));
-        Gtk.TreeIter iter;
+        list_store = new Gtk.ListStore (8, typeof (GLib.Icon),
+                                           typeof (string),
+                                           typeof (string),
+                                           typeof (string),
+                                           typeof (bool),
+                                           typeof (GLib.Icon),
+                                           typeof (bool),
+                                           typeof (CUPS.IPP.JobState));
         var job_grid = new Gtk.Grid ();
         job_grid.orientation = Gtk.Orientation.VERTICAL;
 
         var view = new Gtk.TreeView.with_model (list_store);
         view.headers_visible = false;
-        view.tooltip_column = 3;
+        view.tooltip_column = 2;
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
         scrolled.add (view);
@@ -48,7 +55,7 @@ public class Printers.JobsView : Gtk.Frame {
         column.expand = true;
         column.resizable = true;
         view.insert_column (column, -1);
-        column = new Gtk.TreeViewColumn.with_attributes ("", cell, "text", 2);
+        column = new Gtk.TreeViewColumn.with_attributes ("", cell, "text", 3);
         column.resizable = true;
         view.insert_column (column, -1);
         column = new Gtk.TreeViewColumn.with_attributes ("", cellpixbuf, "gicon", 5, "visible", 6);
@@ -56,30 +63,21 @@ public class Printers.JobsView : Gtk.Frame {
         column = new Gtk.TreeViewColumn.with_attributes ("", cellspin, "active", 4, "visible", 4);
         view.insert_column (column, -1);
 
+        list_store.set_default_sort_func (compare);
+
         unowned CUPS.Job[] jobs;
         var jobs_number = dest.get_jobs (out jobs, 1, CUPS.WhichJobs.ALL);
         for (int i = 0; i < jobs_number; i++) {
-            list_store.append (out iter);
-            string date;
             unowned CUPS.Job job = jobs[i];
-            if (job.completed_time != 0) {
-                var date_time = new DateTime.from_unix_local (job.completed_time);
-                date = date_time.format ("%F %T");
-            } else if (job.processing_time != 0) {
-                var date_time = new DateTime.from_unix_local (job.processing_time);
-                date = date_time.format ("%F %T");
-            } else {
-                var date_time = new DateTime.from_unix_local (job.creation_time);
-                date = date_time.format ("%F %T");
+            switch (job.state) {
+                case CUPS.IPP.JobState.CANCELED:
+                case CUPS.IPP.JobState.ABORTED:
+                case CUPS.IPP.JobState.COMPLETED:
+                    continue;
+                default:
+                    add_job (job);
+                    continue;
             }
-
-            list_store.set (iter, 0, new ThemedIcon (job.format.replace ("/", "-")),
-                                  1, job.title,
-                                  2, human_readable_job_state (job.state),
-                                  3, date,
-                                  4, job.state == CUPS.IPP.JobState.PROCESSING,
-                                  5, job_state_icon (job.state),
-                                  6, job.state != CUPS.IPP.JobState.PROCESSING);
         }
 
         var toolbar = new Gtk.Toolbar ();
@@ -105,11 +103,74 @@ public class Printers.JobsView : Gtk.Frame {
         add (job_grid);
     }
 
+    private void add_job (CUPS.Job job) {
+        Gtk.TreeIter iter;
+        list_store.append (out iter);
+        var date_time = get_used_time (job);
+        string date = date_time.format ("%F %T");
+
+        list_store.set (iter, 0, new ThemedIcon (job.format.replace ("/", "-")),
+                              1, job.title,
+                              2, human_readable_job_state (job.state),
+                              3, date,
+                              4, job.state == CUPS.IPP.JobState.PROCESSING,
+                              5, job_state_icon (job.state),
+                              6, job.state != CUPS.IPP.JobState.PROCESSING,
+                              7, job.state);
+    }
+
     private void toggle_finished (Gtk.ToggleToolButton button) {
         if (button.active == true) {
             button.label = _("Hide completed jobs");
+
+            unowned CUPS.Job[] jobs;
+            var jobs_number = dest.get_jobs (out jobs, 1, CUPS.WhichJobs.ALL);
+            for (int i = 0; i < jobs_number; i++) {
+                unowned CUPS.Job job = jobs[i];
+                switch (job.state) {
+                    case CUPS.IPP.JobState.CANCELED:
+                    case CUPS.IPP.JobState.ABORTED:
+                    case CUPS.IPP.JobState.COMPLETED:
+                        add_job (job);
+                        continue;
+                    default:
+                        continue;
+                }
+            }
         } else {
             button.label = _("Show completed jobs");
+            Gtk.TreeIter? iter;
+            var iters = new Gee.TreeSet<Gtk.TreeIter?> ();
+            if (list_store.get_iter_first (out iter)) {
+                do {
+                    Value val;
+                    list_store.get_value (iter, 7, out val);
+                    CUPS.IPP.JobState state = (CUPS.IPP.JobState)val.get_int ();
+                    switch (state) {
+                        case CUPS.IPP.JobState.CANCELED:
+                        case CUPS.IPP.JobState.ABORTED:
+                        case CUPS.IPP.JobState.COMPLETED:
+                            iters.add (iter);
+                            continue;
+                        default:
+                            continue;
+                    }
+                } while (list_store.iter_next (ref iter));
+            }
+
+            foreach (var _iter in iters) {
+                list_store.remove (_iter);
+            }
+        }
+    }
+
+    private DateTime get_used_time (CUPS.Job job) {
+        if (job.completed_time != 0) {
+            return new DateTime.from_unix_local (job.completed_time);
+        } else if (job.processing_time != 0) {
+            return new DateTime.from_unix_local (job.processing_time);
+        } else {
+            return new DateTime.from_unix_local (job.creation_time);
         }
     }
 
@@ -148,5 +209,12 @@ public class Printers.JobsView : Gtk.Frame {
             default:
                 return new ThemedIcon ("process-completed-symbolic");
         }
+    }
+
+    static int compare (Gtk.TreeModel model, Gtk.TreeIter a, Gtk.TreeIter b) {
+        Value vala, valb;
+        model.get_value (a, 7, out vala);
+        model.get_value (b, 7, out valb);
+        return 0;
     }
 }
