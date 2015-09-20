@@ -26,7 +26,7 @@ namespace Printers {
 
     public class Plug : Switchboard.Plug {
         Gtk.Paned main_paned;
-        CUPSNotifier notifier;
+        Cups.Notifier notifier;
 
         public Plug () {
             Object (category: Category.HARDWARE,
@@ -47,10 +47,10 @@ namespace Printers {
                 var stack = new Gtk.Stack ();
                 main_paned.pack1 (scrolled, false, false);
                 main_paned.pack2 (stack, true, false);
-                unowned CUPS.Destination[] dests;
-                var num = CUPS.get_dests (out dests);
-                for (int i = 0; i < num; i++) {
-                    var row = new PrinterRow (dests[i]);
+                unowned CUPS.Destination[] dests = CUPS.get_destinations ();
+                foreach (unowned CUPS.Destination dest in dests) {
+                    var printer = new Printer (dest);
+                    var row = new PrinterRow (printer);
                     list_box.add (row);
                     stack.add (row.page);
                 }
@@ -58,8 +58,11 @@ namespace Printers {
                 try {
                     notifier = Bus.get_proxy_sync (BusType.SYSTEM, "org.cups.cupsd.Notifier",
                                                                       "/org/cups/cupsd/Notifier");
+                    notifier.printer_state_changed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs) => {
+                        warning (text);
+                    });
                     notifier.printer_modified.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs) => {
-                        warning ("");
+                        warning (text);
                     });
                     notifier.server_stopped.connect ((str) => {
                         warning (str);

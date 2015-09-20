@@ -21,7 +21,7 @@
  */
 
 [DBus (name = "org.cups.cupsd.Notifier")]
-interface CUPSNotifier : Object {
+interface Cups.Notifier : Object {
     public signal void server_restarted (string text);
     public signal void server_started (string text);
     public signal void server_stopped (string text);

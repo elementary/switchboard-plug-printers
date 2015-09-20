@@ -21,60 +21,33 @@
  */
 
 public class Printers.OptionsPage : Gtk.Grid {
-    private unowned CUPS.Destination dest;
+    private Printer printer;
 
-    public OptionsPage (CUPS.Destination dest) {
-        this.dest = dest;
+    public OptionsPage (Printer printer) {
+        this.printer = printer;
         expand = true;
         margin = 12;
         column_spacing = 12;
         row_spacing = 6;
 
-        var printer_uri = "ipp://localhost/printers/%s".printf (dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, printer_uri);
-
-        string[] attributes = { CUPS.Attributes.NUMBER_UP_SUPPORTED,
-                                CUPS.Attributes.NUMBER_UP_DEFAULT,
-                                CUPS.Attributes.SIDES_SUPPORTED,
-                                CUPS.Attributes.SIDES_DEFAULT,
-                                CUPS.Attributes.ORIENTATION_SUPPORTED,
-                                CUPS.Attributes.ORIENTATION_DEFAULT,
-                                CUPS.Attributes.MEDIA_SUPPORTED,
-                                CUPS.Attributes.MEDIA_DEFAULT,
-                                CUPS.Attributes.MEDIA_SIZE_SUPPORTED };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
-            build_pages_per_sheet (request);
-            build_two_sided (request);
-            build_orientation (request);
-            build_page_size (request);
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-        }
+        build_pages_per_sheet ();
+        build_two_sided ();
+        build_orientation ();
+        build_page_size ();
     }
 
-    private void build_pages_per_sheet (CUPS.IPP.IPP result) {
-        int default_page = 1;
-        unowned CUPS.IPP.Attribute attr = result.find_attribute (CUPS.Attributes.NUMBER_UP_DEFAULT, CUPS.IPP.Tag.ZERO);
-        if (attr.get_count () > 0) {
-            default_page = attr.get_integer (0);
-        }
-
-        var box = new Granite.Widgets.ModeButton ();
-        attr = result.find_attribute (CUPS.Attributes.NUMBER_UP_SUPPORTED, CUPS.IPP.Tag.ZERO);
-        for (int i = 0; i < attr.get_count (); i++) {
-            var page = attr.get_integer (i);
-            var index = box.append_text ("%d".printf (page));
-            if (page == default_page) {
-                box.selected = index;
+    private void build_pages_per_sheet () {
+        var pages_per_sheet = new Gee.TreeSet<int> ();
+        var default_page = printer.get_pages_per_sheet (pages_per_sheet);
+        if (pages_per_sheet.size > 1) {
+            var box = new Granite.Widgets.ModeButton ();
+            foreach (var page in pages_per_sheet) {
+                var index = box.append_text ("%d".printf (page));
+                if (page == default_page) {
+                    box.selected = index;
+                }
             }
-        }
 
-        if (attr.get_count () > 1) {
             var label = new Gtk.Label (_("Pages per Sheet:"));
             label.hexpand = true;
             ((Gtk.Misc) label).xalign = 1;
@@ -83,39 +56,37 @@ public class Printers.OptionsPage : Gtk.Grid {
         }
     }
 
-    private void build_two_sided (CUPS.IPP.IPP result) {
-        string default_attribute = CUPS.Attributes.Sided.ONE;
-        unowned CUPS.IPP.Attribute attr = result.find_attribute (CUPS.Attributes.SIDES_DEFAULT, CUPS.IPP.Tag.ZERO);
-        if (attr.get_count () > 0) {
-            default_attribute = attr.get_string (0);
-        }
+    private void build_two_sided () {
+        var sides = new Gee.TreeSet<string> ();
+        var default_side = printer.get_sides (sides);
+        if (sides.size > 1) {
+            var grid = new Gtk.Grid ();
+            grid.orientation = Gtk.Orientation.HORIZONTAL;
+            var two_switch = new Gtk.Switch ();
+            var switch_grid = new Gtk.Grid ();
+            switch_grid.add (two_switch);
+            switch_grid.valign = Gtk.Align.CENTER;
+            grid.add (switch_grid);
 
-        var grid = new Gtk.Grid ();
-        grid.orientation = Gtk.Orientation.HORIZONTAL;
-        var two_switch = new Gtk.Switch ();
-        var switch_grid = new Gtk.Grid ();
-        switch_grid.add (two_switch);
-        switch_grid.valign = Gtk.Align.CENTER;
-        grid.add (switch_grid);
-        attr = result.find_attribute (CUPS.Attributes.SIDES_SUPPORTED, CUPS.IPP.Tag.ZERO);
-        if (attr.get_count () > 2) {
-            var two_mode = new Granite.Widgets.ModeButton ();
-            two_switch.bind_property ("active", two_mode, "sensitive");
-            grid.add (two_mode);
-            var index = two_mode.append_text (_("Long Edge (Standard)"));
-            if (default_attribute == CUPS.Attributes.Sided.TWO_LONG_EDGE) {
-                two_mode.selected = index;
-            }
-            index = two_mode.append_text (_("Short Edge (Flip)"));
-            if (default_attribute == CUPS.Attributes.Sided.TWO_SHORT_EDGE) {
-                two_mode.selected = index;
-            }
-            if (default_attribute == CUPS.Attributes.Sided.ONE) {
-                two_mode.sensitive = false;
-            }
-        }
+            if (sides.size > 2) {
+                var two_mode = new Granite.Widgets.ModeButton ();
+                two_switch.bind_property ("active", two_mode, "sensitive");
+                grid.add (two_mode);
+                var index = two_mode.append_text (_("Long Edge (Standard)"));
+                if (default_side == CUPS.Attributes.Sided.TWO_LONG_EDGE) {
+                    two_mode.selected = index;
+                }
 
-        if (attr.get_count () > 1) {
+                index = two_mode.append_text (_("Short Edge (Flip)"));
+                if (default_side == CUPS.Attributes.Sided.TWO_SHORT_EDGE) {
+                    two_mode.selected = index;
+                }
+
+                if (default_side == CUPS.Attributes.Sided.ONE) {
+                    two_mode.sensitive = false;
+                }
+            }
+
             var label = new Gtk.Label (_("Two sided:"));
             label.hexpand = true;
             ((Gtk.Misc) label).xalign = 1;
@@ -124,37 +95,29 @@ public class Printers.OptionsPage : Gtk.Grid {
         }
     }
 
-    private void build_orientation (CUPS.IPP.IPP result) {
-        int default_attribute = 4;
-        unowned CUPS.IPP.Attribute attr = result.find_attribute (CUPS.Attributes.ORIENTATION_DEFAULT, CUPS.IPP.Tag.ZERO);
-        if (attr.get_count () > 0) {
-            default_attribute = attr.get_integer (0);
-            if (default_attribute < 0) {
-                default_attribute = 4;
+    private void build_orientation () {
+        var orientations = new Gee.TreeSet<int> ();
+        var default_orientation = printer.get_orientations (orientations);
+        if (orientations.size > 1) {
+            var combobox = new Gtk.ComboBoxText ();
+            foreach (var orientation in orientations) {
+                switch (orientation) {
+                    case CUPS.Attributes.Orientation.PORTRAIT:
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.PORTRAIT), _("Portrait"));
+                        break;
+                    case CUPS.Attributes.Orientation.LANDSCAPE:
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.LANDSCAPE), _("Landcape"));
+                        break;
+                    case CUPS.Attributes.Orientation.REVERSE_PORTRAIT:
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_PORTRAIT), _("Reverse Portrait"));
+                        break;
+                    case CUPS.Attributes.Orientation.REVERSE_LANDSCAPE:
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_LANDSCAPE), _("Reverse Landcape"));
+                        break;
+                }
             }
-        }
 
-        var combobox = new Gtk.ComboBoxText ();
-        attr = result.find_attribute (CUPS.Attributes.ORIENTATION_SUPPORTED, CUPS.IPP.Tag.ZERO);
-        for (int i = 0; i < attr.get_count (); i++) {
-            switch (attr.get_integer (i)) {
-                case CUPS.Attributes.Orientation.PORTRAIT:
-                    combobox.append ("%d".printf (CUPS.Attributes.Orientation.PORTRAIT), _("Portrait"));
-                    break;
-                case CUPS.Attributes.Orientation.LANDSCAPE:
-                    combobox.append ("%d".printf (CUPS.Attributes.Orientation.LANDSCAPE), _("Landcape"));
-                    break;
-                case CUPS.Attributes.Orientation.REVERSE_PORTRAIT:
-                    combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_PORTRAIT), _("Reverse Portrait"));
-                    break;
-                case CUPS.Attributes.Orientation.REVERSE_LANDSCAPE:
-                    combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_LANDSCAPE), _("Reverse Landcape"));
-                    break;
-            }
-        }
-        combobox.set_active_id ("%d".printf (default_attribute));
-
-        if (attr.get_count () > 1) {
+            combobox.set_active_id ("%d".printf (default_orientation));
             var label = new Gtk.Label (_("Orientation:"));
             label.hexpand = true;
             ((Gtk.Misc) label).xalign = 1;
@@ -163,11 +126,11 @@ public class Printers.OptionsPage : Gtk.Grid {
         }
     }
 
-    private void build_page_size (CUPS.IPP.IPP result) {
+    private void build_page_size () {
         //int default_attribute = 4;
-        unowned CUPS.IPP.Attribute attr = result.find_attribute (CUPS.Attributes.MEDIA_DEFAULT, CUPS.IPP.Tag.ZERO);
+        /*unowned CUPS.IPP.Attribute attr = result.find_attribute (CUPS.Attributes.MEDIA_DEFAULT, CUPS.IPP.Tag.ZERO);
         if (attr.get_count () > 0) {
-            warning (attr.get_string (0));
+            warning (attr.get_string (0));*/
             /*default_attribute = attr.get_integer (0);
             if (default_attribute < 0) {
                 default_attribute = 4;
@@ -196,9 +159,9 @@ public class Printers.OptionsPage : Gtk.Grid {
 
                 result = g_list_prepend (result, page_setup);
             }*/
-        }
+        //}
 
-        var combobox = new Gtk.ComboBoxText ();
+        /*var combobox = new Gtk.ComboBoxText ();
         attr = result.find_attribute (CUPS.Attributes.MEDIA_SIZE_SUPPORTED, CUPS.IPP.Tag.ZERO);
         var paper_sizes = new Gee.LinkedList<Array<double?>> ();
         for (int i = 0; i < attr.get_count (); i++) {
@@ -223,6 +186,6 @@ public class Printers.OptionsPage : Gtk.Grid {
             ((Gtk.Misc) label).xalign = 1;
             attach (label, 0, 3, 1, 1);
             attach (combobox, 1, 3, 1, 1);
-        }
+        }*/
     }
 }

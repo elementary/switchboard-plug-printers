@@ -21,11 +21,11 @@
  */
 
 public class Printers.JobsView : Gtk.Frame {
-    private unowned CUPS.Destination dest;
+    private Printer printer;
     private Gtk.ListStore list_store;
 
-    public JobsView (CUPS.Destination dest) {
-        this.dest = dest;
+    public JobsView (Printer printer) {
+        this.printer = printer;
         // The Job view
         list_store = new Gtk.ListStore (8, typeof (GLib.Icon),
                                            typeof (string),
@@ -65,11 +65,9 @@ public class Printers.JobsView : Gtk.Frame {
 
         list_store.set_default_sort_func (compare);
 
-        unowned CUPS.Job[] jobs;
-        var jobs_number = dest.get_jobs (out jobs, 1, CUPS.WhichJobs.ALL);
-        for (int i = 0; i < jobs_number; i++) {
-            unowned CUPS.Job job = jobs[i];
-            switch (job.state) {
+        var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
+        foreach (var job in jobs) {
+            switch (job.cjob.state) {
                 case CUPS.IPP.JobState.CANCELED:
                 case CUPS.IPP.JobState.ABORTED:
                 case CUPS.IPP.JobState.COMPLETED:
@@ -103,31 +101,29 @@ public class Printers.JobsView : Gtk.Frame {
         add (job_grid);
     }
 
-    private void add_job (CUPS.Job job) {
+    private void add_job (Job job) {
         Gtk.TreeIter iter;
         list_store.append (out iter);
-        var date_time = get_used_time (job);
+        var date_time = job.get_used_time ();
         string date = date_time.format ("%F %T");
 
-        list_store.set (iter, 0, new ThemedIcon (job.format.replace ("/", "-")),
-                              1, job.title,
-                              2, human_readable_job_state (job.state),
+        list_store.set (iter, 0, new ThemedIcon (job.cjob.format.replace ("/", "-")),
+                              1, job.cjob.title,
+                              2, job.translated_job_state (),
                               3, date,
-                              4, job.state == CUPS.IPP.JobState.PROCESSING,
-                              5, job_state_icon (job.state),
-                              6, job.state != CUPS.IPP.JobState.PROCESSING,
-                              7, job.state);
+                              4, job.cjob.state == CUPS.IPP.JobState.PROCESSING,
+                              5, job.state_icon (),
+                              6, job.cjob.state != CUPS.IPP.JobState.PROCESSING,
+                              7, job.cjob.state);
     }
 
     private void toggle_finished (Gtk.ToggleToolButton button) {
         if (button.active == true) {
             button.label = _("Hide completed jobs");
 
-            unowned CUPS.Job[] jobs;
-            var jobs_number = dest.get_jobs (out jobs, 1, CUPS.WhichJobs.ALL);
-            for (int i = 0; i < jobs_number; i++) {
-                unowned CUPS.Job job = jobs[i];
-                switch (job.state) {
+            var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
+            foreach (var job in jobs) {
+                switch (job.cjob.state) {
                     case CUPS.IPP.JobState.CANCELED:
                     case CUPS.IPP.JobState.ABORTED:
                     case CUPS.IPP.JobState.COMPLETED:
@@ -161,53 +157,6 @@ public class Printers.JobsView : Gtk.Frame {
             foreach (var _iter in iters) {
                 list_store.remove (_iter);
             }
-        }
-    }
-
-    private DateTime get_used_time (CUPS.Job job) {
-        if (job.completed_time != 0) {
-            return new DateTime.from_unix_local (job.completed_time);
-        } else if (job.processing_time != 0) {
-            return new DateTime.from_unix_local (job.processing_time);
-        } else {
-            return new DateTime.from_unix_local (job.creation_time);
-        }
-    }
-
-    private string human_readable_job_state (CUPS.IPP.JobState state) {
-        switch (state) {
-            case CUPS.IPP.JobState.PENDING:
-                return _("Job Pending");
-            case CUPS.IPP.JobState.HELD:
-                return _("On Held");
-            case CUPS.IPP.JobState.PROCESSING:
-                return _("Processing…");
-            case CUPS.IPP.JobState.STOPPED:
-                return _("Job Stopped");
-            case CUPS.IPP.JobState.CANCELED:
-                return _("Job Canceled");
-            case CUPS.IPP.JobState.ABORTED:
-                return _("Job Aborded");
-            case CUPS.IPP.JobState.COMPLETED:
-            default:
-                return _("Job Completed");
-        }
-    }
-
-    private GLib.Icon? job_state_icon (CUPS.IPP.JobState state) {
-        switch (state) {
-            case CUPS.IPP.JobState.PENDING:
-            case CUPS.IPP.JobState.PROCESSING:
-                return null;
-            case CUPS.IPP.JobState.HELD:
-            case CUPS.IPP.JobState.STOPPED:
-                return new ThemedIcon ("media-playback-pause");
-            case CUPS.IPP.JobState.CANCELED:
-            case CUPS.IPP.JobState.ABORTED:
-                return new ThemedIcon ("process-error-symbolic");
-            case CUPS.IPP.JobState.COMPLETED:
-            default:
-                return new ThemedIcon ("process-completed-symbolic");
         }
     }
 

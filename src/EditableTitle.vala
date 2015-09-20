@@ -21,14 +21,14 @@
  */
 
 public class Printers.EditableTitle : Gtk.EventBox {
-    private unowned CUPS.Destination dest;
+    private Printer printer;
 
-    public EditableTitle (CUPS.Destination dest) {
-        this.dest = dest;
+    public EditableTitle (Printer printer) {
+        this.printer = printer;
         valign = Gtk.Align.CENTER;
         events |= Gdk.EventMask.ENTER_NOTIFY_MASK;
         events |= Gdk.EventMask.LEAVE_NOTIFY_MASK;
-        var name = new Gtk.Label (dest.printer_info);
+        var name = new Gtk.Label (printer.info);
         ((Gtk.Misc) name).xalign = 0;
         name.get_style_context ().add_class ("h2");
 

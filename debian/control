@@ -14,7 +14,7 @@ Homepage: https://launchpad.net/switchboard-plug-printers
 
 Package: switchboard-plug-printers
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, cups-pk-helper
 Enhances: switchboard
 Description: Printers plug for Switchboard
  This plug configures all available printers.

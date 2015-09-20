@@ -23,7 +23,7 @@
  */
 
 /* Status:
- *   cups.h, array.h, and ppd.h are mostly done. Nothing else is, but
+ *   cups.h, array.h are mostly done. Nothing else is, but
  *   patches are welcome. I'm not sure if I'll ever get around to
  *   finishing them unless there is a demand (what I need is done), so
  *   if you're actually using these let me know.
@@ -37,7 +37,7 @@ namespace CUPS {
 	public const int VERSION_PATCH;
 	public const int DATE_ANY;
 
-	[CCode (canme = "cups_ptype_t")]
+	[CCode (cname = "cups_ptype_t")]
 	public enum PriterType {
 		LOCAL,
 		CLASS,
@@ -56,7 +56,7 @@ namespace CUPS {
 		MEDIUM,
 		LARGE,
 		VARIABLE,
-		IMPLICIT,
+		IMPLICIT, /* Deprecated */
 		DEFAULT,
 		FAX,
 		REJECTING,
@@ -64,7 +64,7 @@ namespace CUPS {
 		NOT_SHARED,
 		AUTHENTICATED,
 		COMMANDS,
-		DISCOVERED,
+		DISCOVERED, /* Deprecated */
 		OPTIONS
 	}
 
@@ -84,11 +84,17 @@ namespace CUPS {
 	public unowned CUPS.IPP.Attribute find_destination_ready (CUPS.HTTP.HTTP http, CUPS.Destination dest, CUPS.DestinationInformation info, string option);
 	[CCode (cname = "cupsFindDestSupported")]
 	public unowned CUPS.IPP.Attribute find_destination_supported (CUPS.HTTP.HTTP http, CUPS.Destination dest, CUPS.DestinationInformation info, string option);
+	[CCode (cname = "cupsLocalizeDestOption")]
+	public unowned string localize_destination_option (CUPS.HTTP.HTTP http, CUPS.Destination dest, CUPS.DestinationInformation info, string option);
+	[CCode (cname = "cupsLocalizeDestValue")]
+	public unowned string localize_destination_value (CUPS.HTTP.HTTP http, CUPS.Destination dest, CUPS.DestinationInformation info, string option, string value);
 
 	[CCode (cname = "cupsGetOption")]
 	public unowned string get_option (string name, [CCode (array_length_pos = 1.1)] Option[] options);
 	[CCode (cname = "cupsAddOption")]
 	public int add_option (string name, string value, int num_options, [CCode (array_length = false)] ref Option[] options);
+	[CCode (cname = "cupsLastError")]
+	public CUPS.IPP.Status last_error ();
 
 	[CCode (cname = "cups_option_t", destroy_function = "")]
 	public struct Option {
@@ -100,7 +106,16 @@ namespace CUPS {
 	public struct Destination {
 		public string name;
 		public string instance;
-		public int is_default;
+		[CCode (cname = "is_default")]
+		public int _is_default;
+		public bool is_default {
+			get {
+				return _is_default == 1;
+			}
+			set {
+				_is_default = value ? 1 : 0;
+			}
+		}
 		public int num_options;
 		[CCode (array_length_cname = "num_options")]
 		public Option[] options;
@@ -111,129 +126,8 @@ namespace CUPS {
 		[CCode (cname = "cupsGetDests")]
 		public static int get_dests ([CCode (array_length = false)] out unowned Destination[] dests);
 
-		/**
-		 * The type of authentication required for printing to this destination:
-		 * "none", "username,password", "domain,username,password", or "negotiate" (Kerberos)
-		 */
-		public string auth_info_required {
-			get {
-				return CUPS.get_option ("auth-info-required", this.options);
-			}
-			set {
-				this.num_options = CUPS.add_option ("auth-info-required", value, this.options.length, ref this.options);
-			}
-		}
-
-		/**
-		 * The human-readable description of the destination such as "My Laser Printer".
-		 */
-		public string printer_info {
-			get {
-				return CUPS.get_option ("printer-info", this.options);
-			}
-			set {
-				this.num_options = CUPS.add_option ("printer-info", value, this.options.length, ref this.options);
-			}
-		}
-
-		/**
-		 * "true" if the destination is accepting new jobs, "false" if not.
-		 */
-		public bool is_accepting_jobs {
-			get {
-				return bool.parse (CUPS.get_option ("printer-is-accepting-jobs", this.options));
-			}
-			set {
-				this.num_options = CUPS.add_option ("printer-is-accepting-jobs", value.to_string (), this.options.length, ref this.options);
-			}
-		}
-
-		/**
-		 * "true" if the destination is being shared with other computers, "false" if not.
-		 */
-		public bool is_shared {
-			get {
-				return bool.parse (CUPS.get_option ("printer-is-shared", this.options));
-			}
-			set {
-				this.num_options = CUPS.add_option ("printer-is-shared", value.to_string (), this.options.length, ref this.options);
-			}
-		}
-
-		/**
-		 * The human-readable make and model of the destination such as "HP LaserJet 4000 Series".
-		 */
-		public string printer_location {
-			get {
-				return CUPS.get_option ("printer-location", this.options);
-			}
-			set {
-				this.num_options = CUPS.add_option ("printer-location", value, this.options.length, ref this.options);
-			}
-		}
-
-		/**
-		 * The human-readable make and model of the destination such as "HP LaserJet 4000 Series".
-		 */
-		public string printer_make_and_model {
-			get {
-				return CUPS.get_option ("printer-make-and-model", this.options);
-			}
-			set {
-				this.num_options = CUPS.add_option ("printer-make-and-model", value, this.options.length, ref this.options);
-			}
-		}
-
-		/**
-		 * "3" if the destination is idle, "4" if the destination is printing a job, and "5" if the destination is stopped.
-		 */
-		public string printer_state {
-			get {
-				return CUPS.get_option ("printer-state", this.options);
-			}
-			set {
-				this.num_options = CUPS.add_option ("printer-state", value, this.options.length, ref this.options);
-			}
-		}
-
-		/**
-		 * The UNIX time when the destination entered the current state.
-		 */
-		public string printer_state_change_time {
-			get {
-				return CUPS.get_option ("printer-state-change-time", this.options);
-			}
-			set {
-				this.num_options = CUPS.add_option ("printer-state-change-time", value, this.options.length, ref this.options);
-			}
-		}
-
-		/**
-		 * Additional comma-delimited state keywords for the destination such as "media-tray-empty-error" and "toner-low-warning".
-		 */
-		public string printer_state_reasons {
-			get {
-				return CUPS.get_option ("printer-state-reasons", this.options);
-			}
-			set {
-				this.num_options = CUPS.add_option ("printer-state-reasons", value, this.options.length, ref this.options);
-			}
-		}
-
-		/**
-		 * The cups_printer_t value associated with the destination.
-		 */
-		public string printer_type {
-			get {
-				return CUPS.get_option ("printer-type", this.options);
-			}
-			set {
-				this.num_options = CUPS.add_option ("printer-type", value, this.options.length, ref this.options);
-			}
-		}
-
-		public int get_jobs (out unowned CUPS.Job[] jobs, int myjobs, CUPS.WhichJobs whichjobs) {
-		    return CUPS.get_jobs (out jobs, this.name, myjobs, whichjobs);
+		public unowned CUPS.Job[] get_jobs (bool my_jobs, CUPS.WhichJobs whichjobs) {
+			return CUPS.get_jobs (this.name, my_jobs, whichjobs);
 		}
 
 		public int print_file (string filename, string title, Option[]? options) {
@@ -249,7 +143,13 @@ namespace CUPS {
 	}
 
 	[CCode (cname = "cupsGetJobs")]
-	public int get_jobs ([CCode (array_length = false)] out unowned CUPS.Job[] jobs, string name, int myjobs, CUPS.WhichJobs whichjobs);
+	private int _get_jobs ([CCode (array_length = false)] out unowned CUPS.Job[] jobs, string name, int my_jobs, CUPS.WhichJobs whichjobs);
+	public unowned CUPS.Job[] get_jobs (string name, bool my_jobs, CUPS.WhichJobs whichjobs) {
+		unowned CUPS.Job[] temp;
+		var len = _get_jobs (out temp, name, my_jobs ? 1 : 0, whichjobs);
+		temp.length = len;
+		return temp;
+	}
 
 	[CCode (cname = "cups_job_t")]
 	public struct Job {
@@ -266,16 +166,31 @@ namespace CUPS {
 		public time_t processing_time;
 	}
 
+	[CCode (cname = "cups_size_t")]
+	public struct Size {
+		public char media[128];
+		public int width;
+		public int length;
+		public int bottom;
+		public int left;
+		public int right;
+		public int top;
+	}
+
 	[CCode (cname = "cupsPrintFile")]
 	public int print_file (string printer, string filename, string title, [CCode (array_length_pos = 3.9)] Option[]? options);
 	[CCode (cname = "cupsGetDests")]
-	public int get_dests ([CCode (array_length = false)] out unowned Destination[] dests);
-	[CCode (cname = "cupsGetPPD")]
-	public unowned string get_ppd (string printer);
+	private int _get_destinations ([CCode (array_length = false)] out unowned CUPS.Destination[] destinations);
+	public unowned CUPS.Destination[] get_destinations () {
+		unowned CUPS.Destination[] temp;
+		var len = _get_destinations (out temp);
+		temp.length = len;
+		return temp;
+	}
 	[CCode (cname = "cupsUser")]
-	public unowned string user ();
+	public unowned string get_user ();
 	[CCode (cname = "cupsServer")]
-	public unowned string server ();
+	public unowned string get_server ();
 
 	/* Better alternatives exist in both GLib and Gee. */
 	[Compact, CCode (cname = "cups_array_t", copy_function = "cupsArrayDup", free_function = "cupsArrayDelete", cheader_filename = "cups/array.h")]
@@ -564,32 +479,28 @@ namespace CUPS {
 
 		[CCode (cname = "struct { ipp_uchar_t version[2]; int op_status; int request_id; }")]
 		public struct RequestAny {
-			[CCode (array_length = false)]
-			public uchar[] version;
+			public uchar version[2];
 			public int op_status;
 			public int request_id;
 		}
 
 		[CCode (cname = "struct { ipp_uchar_t version[2]; ipp_op_t operation_id; int request_id; }")]
 		public struct RequestOperation {
-			[CCode (array_length = false)]
-			public uchar[] version;
+			public uchar version[2];
 			public Operation operation_id;
 			public int request_id;
 		}
 
 		[CCode (cname = "struct { ipp_uchar_t version[2]; ipp_status_t status_code; int request_id; }")]
 		public struct RequestStatus {
-			[CCode (array_length = false)]
-			public uchar[] version;
+			public uchar version[2];
 			public Status status_code;
 			public int request_id;
 		}
 
 		[CCode (cname = "struct { ipp_uchar_t version[2]; ipp_status_t status_code; int request_id; }")]
 		public struct RequestEvent {
-			[CCode (array_length = false)]
-			public uchar[] version;
+			public uchar version[2];
 			public Status status_code;
 			public int request_id;
 		}
@@ -614,15 +525,18 @@ namespace CUPS {
 			[CCode(cname = "ippGetCount")]
 			public int get_count ();
 			[CCode(cname = "ippGetDate")]
-			public uchar[] get_date (int element);
+			public uchar[] get_date (int element = 0);
 			[CCode(cname = "ippGetBoolean")]
-			public int get_bool (int element);
+			private int _get_bool (int element);
+			public bool get_bool (int element = 0) {
+				return _get_bool (element) == 1;
+			}
 			[CCode(cname = "ippGetCollection")]
-			public unowned CUPS.IPP.IPP get_collection (int element);
+			public unowned CUPS.IPP.IPP get_collection (int element = 0);
 			[CCode(cname = "ippGetGroupTag")]
-			public CUPS.IPP.Tag get_group_tag (int element);
+			public CUPS.IPP.Tag get_group_tag (int element = 0);
 			[CCode(cname = "ippGetInteger")]
-			public int get_integer (int element);
+			public int get_integer (int element = 0);
 			[CCode(cname = "ippGetName")]
 			public unowned string get_name ();
 			[CCode(cname = "ippGetOctetString")]
@@ -634,7 +548,7 @@ namespace CUPS {
 			[CCode(cname = "ippGetResolution")]
 			public int get_resolution (int element, out int y_res, out CUPS.IPP.Resolution units);
 			[CCode(cname = "ippGetString")]
-			public unowned string get_string (int element, string? language = null);
+			public unowned string get_string (int element = 0, string? language = null);
 			[CCode(cname = "ippGetValueTag")]
 			public CUPS.IPP.Tag get_value_tag ();
 		}
@@ -696,9 +610,20 @@ namespace CUPS {
 			[CCode (cname = "ippNextAttribute")]
 			public unowned Attribute next_attribute ();
 			[CCode (cname = "ippAddBoolean")]
-			public unowned Attribute add_boolean (Tag group, string name, char value);
+			private unowned Attribute _add_boolean (Tag group, string name, char value);
+			public unowned Attribute add_boolean (Tag group, string name, bool value) {
+				return _add_boolean (group, name, value ? 1 : 0);
+			}
 			[CCode (cname = "ippAddBooleans")]
-			public unowned Attribute add_booleans (Tag group, string name, [CCode (array_length_pos = 0.9)] char[] values);
+			private unowned Attribute _add_booleans (Tag group, string name, [CCode (array_length_pos = 0.9)] char[] values);
+			public unowned Attribute add_booleans (Tag group, string name, bool[] values) {
+				char[] char_values;
+				foreach (var val in values) {
+					char_values += val ? 1 : 0;
+				}
+
+				return _add_booleans (group, name, char_values);
+			}
 			[CCode (cname = "ippAddString")]
 			public unowned Attribute add_string (Tag group, Tag type, string name, string? charset, string value);
 			[CCode (cname = "ippAddStrings")]
@@ -716,7 +641,10 @@ namespace CUPS {
 			[CCode(cname = "ippGetVersion")]
 			public int get_version (out int minor);
 			[CCode(cname = "ippSetVersion")]
-			public int set_version (int major, int minor);
+			private int _set_version (int major, int minor);
+			public bool set_version (int major, int minor) {
+				return _set_version (major, minor) == 1;
+			}
 			[CCode(cname = "ippLength")]
 			public size_t length ();
 			[CCode(cname = "ippFindAttribute")]
@@ -727,6 +655,15 @@ namespace CUPS {
 	}
 
 	namespace HTTP {
+		[CCode (cname = "HTTP_MAX_URI")]
+		public const int MAX_URI;
+		[CCode (cname = "HTTP_MAX_HOST")]
+		public const int MAX_HOST;
+		[CCode (cname = "HTTP_MAX_BUFFER")]
+		public const int MAX_BUFFER;
+		[CCode (cname = "HTTP_MAX_VALUE")]
+		public const int MAX_VALUE;
+
 		[CCode (cname = "http_uri_status_t", cprefix = "HTTP_URI_")]
 		public enum URIStatus {
 			BAD_ARGUMENTS,
@@ -765,8 +702,82 @@ namespace CUPS {
 			[CCode (cname = "httpConnect")]
 			public HTTP (string host, int port);
 
-			public IPP.IPP do_request (owned IPP.IPP request, string resource);
-			public IPP.IPP do_file_request (owned IPP.IPP request, string resource, string filename);
+			public IPP.IPP do_request (IPP.IPP request, string resource);
+			public IPP.IPP do_file_request (IPP.IPP request, string resource, string filename);
+		}
+	}
+
+	namespace Lang {
+
+		[CCode (cname = "cups_encoding_t", cprefix = "CUPS_")]
+		public enum Encoding {
+			AUTO_ENCODING = -1,		/* Auto-detect the encoding @private@ */
+			US_ASCII,				/* US ASCII */
+			ISO8859_1,				/* ISO-8859-1 */
+			ISO8859_2,				/* ISO-8859-2 */
+			ISO8859_3,				/* ISO-8859-3 */
+			ISO8859_4,				/* ISO-8859-4 */
+			ISO8859_5,				/* ISO-8859-5 */
+			ISO8859_6,				/* ISO-8859-6 */
+			ISO8859_7,				/* ISO-8859-7 */
+			ISO8859_8,				/* ISO-8859-8 */
+			ISO8859_9,				/* ISO-8859-9 */
+			ISO8859_10,				/* ISO-8859-10 */
+			UTF8,					/* UTF-8 */
+			ISO8859_13,				/* ISO-8859-13 */
+			ISO8859_14,				/* ISO-8859-14 */
+			ISO8859_15,				/* ISO-8859-15 */
+			WINDOWS_874,			/* CP-874 */
+			WINDOWS_1250,			/* CP-1250 */
+			WINDOWS_1251,			/* CP-1251 */
+			WINDOWS_1252,			/* CP-1252 */
+			WINDOWS_1253,			/* CP-1253 */
+			WINDOWS_1254,			/* CP-1254 */
+			WINDOWS_1255,			/* CP-1255 */
+			WINDOWS_1256,			/* CP-1256 */
+			WINDOWS_1257,			/* CP-1257 */
+			WINDOWS_1258,			/* CP-1258 */
+			KOI8_R,					/* KOI-8-R */
+			KOI8_U,					/* KOI-8-U */
+			ISO8859_11,				/* ISO-8859-11 */
+			ISO8859_16,				/* ISO-8859-16 */
+			MAC_ROMAN,				/* MacRoman */
+
+			WINDOWS_932,			/* Japanese JIS X0208-1990 */
+			WINDOWS_936,			/* Simplified Chinese GB 2312-80 */
+			WINDOWS_949,			/* Korean KS C5601-1992 */
+			WINDOWS_950,			/* Traditional Chinese Big Five */
+			WINDOWS_1361,			/* Korean Johab */
+
+			EUC_CN,					/* EUC Simplified Chinese */
+			EUC_JP,					/* EUC Japanese */
+			EUC_KR,					/* EUC Korean */
+			EUC_TW,					/* EUC Traditional Chinese */
+			JIS_X0213;				/* JIS X0213 aka Shift JIS */
+			[CCode(cname = "_cupsEncodingName")]
+			public unowned string to_string ();
+		}
+
+
+		[Compact, CCode (cname = "cups_lang_t", free_function = "cupsLangFree")]
+		public class Lang {
+			CUPS.Lang.Lang next;
+			int used;
+			Encoding encoding;
+			char language[16];
+
+			[CCode (cname = "cupsLangGet")]
+			public Lang (string language);
+			[CCode (cname = "cupsLangDefault")]
+			public Lang.default ();
+
+			[CCode (cname = "cupsLangEncoding")]
+			public unowned string get_encoding ();
+			[CCode (cname = "_cupsLangString")]
+			public unowned string get_string (string message);
+
+			[CCode (cname = "cupsLangFlush")]
+			public static void flush ();
 		}
 	}
 

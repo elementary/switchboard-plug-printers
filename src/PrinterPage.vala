@@ -21,64 +21,11 @@
  */
 
 public class Printers.PrinterPage : Gtk.Grid {
-    private static string[] reasons = {
-        "toner-low",
-        "toner-empty",
-        "developer-low",
-        "developer-empty",
-        "marker-supply-low",
-        "marker-supply-empty",
-        "cover-open",
-        "door-open",
-        "media-low",
-        "media-empty",
-        "offline",
-        "paused",
-        "marker-waste-almost-full",
-        "marker-waste-full",
-        "opc-near-eol",
-        "opc-life-over"
-    };
+    private Printer printer;
+    private Cups.PkHelper pk_helper;
 
-    private static string[] statuses = {
-        /// Translators: The printer is low on toner
-        N_("Low on toner"),
-        /// Translators: The printer has no toner left
-        N_("Out of toner"),
-        /// Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-        N_("Low on developer"),
-        /// Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-        N_("Out of developer"),
-        /// Translators: "marker" is one color bin of the printer
-        N_("Low on a marker supply"),
-        /// Translators: "marker" is one color bin of the printer
-        N_("Out of a marker supply"),
-        /// Translators: One or more covers on the printer are open
-        N_("Open cover"),
-        /// Translators: One or more doors on the printer are open
-        N_("Open door"),
-        /// Translators: At least one input tray is low on media
-        N_("Low on paper"),
-        /// Translators: At least one input tray is empty
-        N_("Out of paper"),
-        /// Translators: The printer is offline
-        NC_("printer state", "Offline"),
-        /// Translators: Someone has stopped the Printer
-        NC_("printer state", "Stopped"),
-        /// Translators: The printer marker supply waste receptacle is almost full
-        N_("Waste receptacle almost full"),
-        /// Translators: The printer marker supply waste receptacle is full
-        N_("Waste receptacle full"),
-        /// Translators: Optical photo conductors are used in laser printers
-        N_("The optical photo conductor is near end of life"),
-        /// Translators: Optical photo conductors are used in laser printers
-        N_("The optical photo conductor is no longer functioning")
-    };
-
-    private unowned CUPS.Destination dest;
-
-    public PrinterPage (CUPS.Destination dest) {
-        this.dest = dest;
+    public PrinterPage (Printer printer) {
+        this.printer = printer;
         expand = true;
         margin = 12;
         column_spacing = 12;
@@ -93,12 +40,13 @@ public class Printers.PrinterPage : Gtk.Grid {
         attach (stack_switcher, 0, 1, 3, 1);
         attach (stack, 0, 2, 3, 1);
         show_all ();
+
     }
 
     private void create_header () {
         var image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DIALOG);
 
-        var editable_title = new EditableTitle (dest);
+        var editable_title = new EditableTitle (printer);
 
         var expander = new Gtk.Grid ();
         expander.hexpand = true;
@@ -108,6 +56,10 @@ public class Printers.PrinterPage : Gtk.Grid {
         info_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
         var enable_switch = new Gtk.Switch ();
+        enable_switch.active = printer.state != "5" && printer.is_accepting_jobs;
+        enable_switch.notify["active"].connect (() => {
+            printer.enabled = enable_switch.active;
+        });
 
         var right_grid = new Gtk.Grid ();
         right_grid.column_spacing = 12;
@@ -129,7 +81,7 @@ public class Printers.PrinterPage : Gtk.Grid {
             }
         });
 
-        var state = new Gtk.Label (human_readable_reason (dest.printer_state_reasons));
+        var state = new Gtk.Label (printer.state_reasons_localized);
         state.hexpand = true;
         ((Gtk.Misc) state).xalign = 0;
         attach (image, 0, 0, 1, 1);
@@ -144,7 +96,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         location_label.hexpand = true;
 
         var location_entry = new Gtk.Entry ();
-        location_entry.text = dest.printer_location ?? "";
+        location_entry.text = printer.location ?? "";
         location_entry.hexpand = true;
         location_entry.halign = Gtk.Align.START;
         location_entry.placeholder_text = _("Location of the printer");
@@ -174,10 +126,17 @@ public class Printers.PrinterPage : Gtk.Grid {
         grid.column_spacing = 12;
         grid.row_spacing = 6;
 
-        var jobs_view = new JobsView (dest);
+        var jobs_view = new JobsView (printer);
 
         var default_check = new Gtk.CheckButton.with_label (_("Use as Default Printer"));
-        default_check.active = dest.is_default == 1;
+        default_check.active = printer.is_default;
+        default_check.notify["active"].connect (() => {
+            if (default_check.active) {
+                printer.is_default = true;
+            } else {
+                default_check.active = true;
+            }
+        });
         var expander_grid = new Gtk.Grid ();
         expander_grid.hexpand = true;
         var print_test = new Gtk.Button.with_label (_("Print Test Page"));
@@ -190,32 +149,26 @@ public class Printers.PrinterPage : Gtk.Grid {
     }
 
     private Gtk.Grid get_options_page () {
-        return new OptionsPage (dest);
-    }
-
-    private string human_readable_reason (string reason) {
-        for (int i = 0; i < reasons.length; i++) {
-            if (reasons[i] in reason) {
-                return _(statuses[i]);
-            }
-        }
-
-        return reason;
+        return new OptionsPage (printer);
     }
 }
 
 public class Printers.PrinterRow : Gtk.ListBoxRow {
     public PrinterPage page;
+    private Printer printer;
     private Gtk.Image printer_image;
     private Gtk.Image status_image;
     private Gtk.Label name_label;
     private Gtk.Label status_label;
 
-    public PrinterRow (CUPS.Destination dest) {
-        name_label = new Gtk.Label (dest.printer_info);
+    public PrinterRow (Printer printer) {
+        this.printer = printer;
+        name_label = new Gtk.Label (printer.info);
         name_label.get_style_context ().add_class ("h3");
         ((Gtk.Misc) name_label).xalign = 0;
-        status_label = new Gtk.Label ("Ready");
+        status_label = new Gtk.Label (printer.state_reasons_localized);
+        status_label.tooltip_text = printer.state_reasons_localized;
+        status_label.ellipsize = Pango.EllipsizeMode.END;
         ((Gtk.Misc) status_label).xalign = 0;
         printer_image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DND);
         status_image = new Gtk.Image.from_icon_name ("user-available", Gtk.IconSize.MENU);
@@ -232,7 +185,17 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         grid.attach (name_label, 1, 0, 1, 1);
         grid.attach (status_label, 1, 1, 1, 1);
         add (grid);
-        page = new PrinterPage (dest);
+        page = new PrinterPage (printer);
+        update_status ();
+        printer.enabled_changed.connect (update_status);
         show_all ();
+    }
+    
+    private void update_status () {
+        if (printer.enabled) {
+            status_image.icon_name = "user-available";
+        } else {
+            status_image.icon_name = "user-busy";
+        }
     }
 }

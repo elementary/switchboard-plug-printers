@@ -20,6 +20,9 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     JobsView.vala
     EditableTitle.vala
     CUPSNotifier.vala
+    CUPSPkHelper.vala
+    Objects/Printer.vala
+    Objects/Job.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gtk+-3.0
