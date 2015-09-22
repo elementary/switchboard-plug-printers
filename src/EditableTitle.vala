@@ -29,6 +29,7 @@ public class Printers.EditableTitle : Gtk.EventBox {
         events |= Gdk.EventMask.ENTER_NOTIFY_MASK;
         events |= Gdk.EventMask.LEAVE_NOTIFY_MASK;
         var name = new Gtk.Label (printer.info);
+        name.ellipsize = Pango.EllipsizeMode.END;
         ((Gtk.Misc) name).xalign = 0;
         name.get_style_context ().add_class ("h2");
 

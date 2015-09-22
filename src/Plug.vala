@@ -44,6 +44,7 @@ namespace Printers {
                 var scrolled = new Gtk.ScrolledWindow (null, null);
                 scrolled.add (list_box);
                 scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
+                scrolled.width_request = 250;
                 var stack = new Gtk.Stack ();
                 main_paned.pack1 (scrolled, false, false);
                 main_paned.pack2 (stack, true, false);
@@ -56,8 +57,7 @@ namespace Printers {
                 }
 
                 try {
-                    notifier = Bus.get_proxy_sync (BusType.SYSTEM, "org.cups.cupsd.Notifier",
-                                                                      "/org/cups/cupsd/Notifier");
+                    notifier = Bus.get_proxy_sync (BusType.SYSTEM, "org.cups.cupsd.Notifier", "/org/cups/cupsd/Notifier");
                     notifier.printer_state_changed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs) => {
                         warning (text);
                     });

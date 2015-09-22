@@ -30,10 +30,17 @@ public class Printers.OptionsPage : Gtk.Grid {
         column_spacing = 12;
         row_spacing = 6;
 
+        var expand_left = new Gtk.Grid ();
+        expand_left.hexpand = true;
+        var expand_right = new Gtk.Grid ();
+        expand_right.hexpand = true;
+        attach (expand_left, 0, 0, 1, 1);
+        attach (expand_right, 1, 0, 1, 1);
         build_pages_per_sheet ();
         build_two_sided ();
         build_orientation ();
         build_page_size ();
+        printer.get_all ();
     }
 
     private void build_pages_per_sheet () {
@@ -49,7 +56,6 @@ public class Printers.OptionsPage : Gtk.Grid {
             }
 
             var label = new Gtk.Label (_("Pages per Sheet:"));
-            label.hexpand = true;
             ((Gtk.Misc) label).xalign = 1;
             attach (label, 0, 0, 1, 1);
             attach (box, 1, 0, 1, 1);
@@ -88,7 +94,6 @@ public class Printers.OptionsPage : Gtk.Grid {
             }
 
             var label = new Gtk.Label (_("Two sided:"));
-            label.hexpand = true;
             ((Gtk.Misc) label).xalign = 1;
             attach (label, 0, 1, 1, 1);
             attach (grid, 1, 1, 1, 1);
@@ -119,7 +124,6 @@ public class Printers.OptionsPage : Gtk.Grid {
 
             combobox.set_active_id ("%d".printf (default_orientation));
             var label = new Gtk.Label (_("Orientation:"));
-            label.hexpand = true;
             ((Gtk.Misc) label).xalign = 1;
             attach (label, 0, 2, 1, 1);
             attach (combobox, 1, 2, 1, 1);

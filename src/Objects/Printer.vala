@@ -381,4 +381,26 @@ public class Printers.Printer : GLib.Object {
             return -1;
         }
     }
+
+    public void get_all () {
+        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
+        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
+        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
+
+        string[] attributes = { "all" };
+
+        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
+        request.do_request (CUPS.HTTP.DEFAULT);
+
+        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+            unowned CUPS.IPP.Attribute attr = request.first_attribute ();
+            while (attr != null) {
+                warning (attr.get_name ());
+                attr = request.next_attribute ();
+            }
+        } else {
+            critical ("Error: %s", request.get_status_code ().to_string ());
+        }
+    }
 }
