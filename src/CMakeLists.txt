@@ -16,9 +16,11 @@ include (ValaPrecompile)
 vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Plug.vala
     PrinterPage.vala
+    PrinterList.vala
     OptionsPage.vala
     JobsView.vala
     EditableTitle.vala
+    InkLevel.vala
     CUPSNotifier.vala
     CUPSPkHelper.vala
     Objects/Printer.vala

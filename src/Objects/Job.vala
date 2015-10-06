@@ -22,9 +22,61 @@
 
 public class Printers.Job : GLib.Object {
     public unowned CUPS.Job cjob;
+    public signal void stopped ();
+    public signal void completed ();
+    public signal void state_changed ();
 
-    public Job (CUPS.Job cjob) {
+    private Printer printer;
+    private int uid;
+
+    public Job (CUPS.Job cjob, Printer printer) {
         this.cjob = cjob;
+        this.printer = printer;
+        uid = cjob.id;
+        unowned Cups.Notifier notifier = Cups.get_notifier ();
+        if (cjob.state != CUPS.IPP.JobState.CANCELED && cjob.state != CUPS.IPP.JobState.ABORTED && cjob.state != CUPS.IPP.JobState.COMPLETED) {
+            notifier.job_completed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+                if (job_id == uid) {
+                    completed ();
+                }
+            });
+
+            notifier.job_stopped.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+                if (job_id == uid) {
+                    stopped ();
+                }
+            });
+
+            notifier.job_state_changed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+                if (job_id == uid) {
+                    state_changed ();
+                }
+            });
+        }
+    }
+
+    public void pause () {
+        try {
+            Cups.get_pk_helper ().job_set_hold_until (uid, "indefinite");
+        } catch (Error e) {
+            critical (e.message);
+        }
+    }
+
+    public void stop () {
+        try {
+            Cups.get_pk_helper ().job_cancel_purge (uid, false);
+        } catch (Error e) {
+            critical (e.message);
+        }
+    }
+
+    public void resume () {
+        try {
+            Cups.get_pk_helper ().job_set_hold_until (uid, "no-hold");
+        } catch (Error e) {
+            critical (e.message);
+        }
     }
 
     public DateTime get_used_time () {

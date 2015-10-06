@@ -22,7 +22,6 @@
 
 public class Printers.PrinterPage : Gtk.Grid {
     private Printer printer;
-    private Cups.PkHelper pk_helper;
 
     public PrinterPage (Printer printer) {
         this.printer = printer;
@@ -81,15 +80,9 @@ public class Printers.PrinterPage : Gtk.Grid {
             }
         });
 
-        var state = new Gtk.Label (printer.state_reasons_localized);
-        state.hexpand = true;
-        ((Gtk.Misc) state).xalign = 0;
         attach (image, 0, 0, 1, 1);
         attach (editable_title, 1, 0, 1, 1);
         attach (right_grid, 2, 0, 1, 1);
-
-        var status_label = new Gtk.Label ("Status:");
-        ((Gtk.Misc) status_label).xalign = 1;
 
         var location_label = new Gtk.Label ("Location:");
         ((Gtk.Misc) location_label).xalign = 1;
@@ -108,16 +101,17 @@ public class Printers.PrinterPage : Gtk.Grid {
         ip_label_.selectable = true;
         ((Gtk.Misc) ip_label_).xalign = 0;
 
+        var ink_level = new InkLevel (printer);
+
         var info_grid = new Gtk.Grid ();
         info_grid.margin = 6;
         info_grid.column_spacing = 12;
         info_grid.row_spacing = 6;
-        info_grid.attach (status_label, 0, 0, 1, 1);
-        info_grid.attach (state, 1, 0, 1, 1);
-        info_grid.attach (location_label, 0, 1, 1, 1);
-        info_grid.attach (location_entry, 1, 1, 1, 1);
-        info_grid.attach (ip_label, 0, 2, 1, 1);
-        info_grid.attach (ip_label_, 1, 2, 1, 1);
+        info_grid.attach (location_label, 0, 0, 1, 1);
+        info_grid.attach (location_entry, 1, 0, 1, 1);
+        info_grid.attach (ip_label, 0, 1, 1, 1);
+        info_grid.attach (ip_label_, 1, 1, 1, 1);
+        info_grid.attach (ink_level, 0, 2, 2, 1);
         info_popover.add (info_grid);
     }
 

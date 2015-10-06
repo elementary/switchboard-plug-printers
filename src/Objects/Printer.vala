@@ -21,19 +21,6 @@
  */
 
 public class Printers.Printer : GLib.Object {
-    private static Cups.PkHelper pk_helper = null;
-    public static unowned Cups.PkHelper get_pk_helper () {
-        if (pk_helper == null) {
-            try {
-                pk_helper = Bus.get_proxy_sync (BusType.SYSTEM, "org.opensuse.CupsPkHelper.Mechanism", "/");
-            } catch (IOError e) {
-                critical (e.message);
-            }
-        }
-
-        return pk_helper;
-    }
-
     private static string[] reasons = {
         "toner-low",
         "toner-empty",
@@ -105,13 +92,13 @@ public class Printers.Printer : GLib.Object {
         set {
             if (!value) {
                 try {
-                    get_pk_helper ().printer_set_enabled (dest.name, false);
+                    Cups.get_pk_helper ().printer_set_enabled (dest.name, false);
                 } catch (Error e) {
                     critical (e.message);
                 }
 
                 try {
-                    get_pk_helper ().printer_set_accept_jobs (dest.name, false);
+                    Cups.get_pk_helper ().printer_set_accept_jobs (dest.name, false);
                 } catch (Error e) {
                     critical (e.message);
                 }
@@ -120,7 +107,7 @@ public class Printers.Printer : GLib.Object {
             } else {
                 if (state == "5") {
                     try {
-                        get_pk_helper ().printer_set_enabled (dest.name, true);
+                        Cups.get_pk_helper ().printer_set_enabled (dest.name, true);
                     } catch (Error e) {
                         critical (e.message);
                     }
@@ -128,7 +115,7 @@ public class Printers.Printer : GLib.Object {
 
                 if (is_accepting_jobs == false) {
                     try {
-                        get_pk_helper ().printer_set_accept_jobs (dest.name, true);
+                        Cups.get_pk_helper ().printer_set_accept_jobs (dest.name, true);
                     } catch (Error e) {
                         critical (e.message);
                     }
@@ -146,8 +133,12 @@ public class Printers.Printer : GLib.Object {
 
         set {
             if (value == true) {
-                get_pk_helper ().printer_set_default (dest.name);
-                default_changed ();
+                try {
+                    Cups.get_pk_helper ().printer_set_default (dest.name);
+                    default_changed ();
+                } catch (Error e) {
+                    critical (e.message);
+                }
             }
         }
     }
@@ -170,8 +161,12 @@ public class Printers.Printer : GLib.Object {
             return CUPS.get_option ("printer-info", dest.options);
         }
         set {
-            get_pk_helper ().printer_set_info (dest.name, value);
-            dest.num_options = CUPS.add_option ("printer-info", value, dest.options.length, ref dest.options);
+            try {
+                Cups.get_pk_helper ().printer_set_info (dest.name, value);
+                dest.num_options = CUPS.add_option ("printer-info", value, dest.options.length, ref dest.options);
+            } catch (Error e) {
+                critical (e.message);
+            }
         }
     }
 
@@ -183,8 +178,12 @@ public class Printers.Printer : GLib.Object {
             return bool.parse (CUPS.get_option ("printer-is-accepting-jobs", dest.options));
         }
         set {
-            get_pk_helper ().printer_set_accept_jobs (dest.name, value);
-            dest.num_options = CUPS.add_option ("printer-is-accepting-jobs", value.to_string (), dest.options.length, ref dest.options);
+            try {
+                Cups.get_pk_helper ().printer_set_accept_jobs (dest.name, value);
+                dest.num_options = CUPS.add_option ("printer-is-accepting-jobs", value.to_string (), dest.options.length, ref dest.options);
+            } catch (Error e) {
+                critical (e.message);
+            }
         }
     }
 
@@ -196,8 +195,12 @@ public class Printers.Printer : GLib.Object {
             return bool.parse (CUPS.get_option ("printer-is-shared", dest.options));
         }
         set {
-            get_pk_helper ().printer_set_shared (dest.name, value);
-            dest.num_options = CUPS.add_option ("printer-is-shared", value.to_string (), dest.options.length, ref dest.options);
+            try {
+                Cups.get_pk_helper ().printer_set_shared (dest.name, value);
+                dest.num_options = CUPS.add_option ("printer-is-shared", value.to_string (), dest.options.length, ref dest.options);
+            } catch (Error e) {
+                critical (e.message);
+            }
         }
     }
 
@@ -209,8 +212,12 @@ public class Printers.Printer : GLib.Object {
             return CUPS.get_option ("printer-location", dest.options);
         }
         set {
-            get_pk_helper ().printer_set_location (dest.name, value);
-            dest.num_options = CUPS.add_option ("printer-location", value, dest.options.length, ref dest.options);
+            try {
+                Cups.get_pk_helper ().printer_set_location (dest.name, value);
+                dest.num_options = CUPS.add_option ("printer-location", value, dest.options.length, ref dest.options);
+            } catch (Error e) {
+                critical (e.message);
+            }
         }
     }
 
@@ -289,7 +296,7 @@ public class Printers.Printer : GLib.Object {
         var jobs = new Gee.TreeSet<Job> ();
         unowned CUPS.Job[] cjobs = dest.get_jobs (my_jobs, whichjobs);
         foreach (unowned CUPS.Job cjob in cjobs) {
-            var job = new Job (cjob);
+            var job = new Job (cjob, this);
             jobs.add (job);
         }
 
@@ -327,7 +334,7 @@ public class Printers.Printer : GLib.Object {
     }
 
     public void set_default_pages (string new_default) {
-        unowned Cups.PkHelper pk_helper = get_pk_helper ();
+        unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
         try {
             pk_helper.printer_delete_option_default (dest.name, "number-up");
             pk_helper.printer_add_option_default (dest.name, "number-up", {new_default});
@@ -367,7 +374,7 @@ public class Printers.Printer : GLib.Object {
     }
 
     public void set_default_side (string new_default) {
-        unowned Cups.PkHelper pk_helper = get_pk_helper ();
+        unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
         try {
             pk_helper.printer_delete_option_default (dest.name, "sides");
             pk_helper.printer_add_option_default (dest.name, "sides", {new_default});
@@ -412,7 +419,7 @@ public class Printers.Printer : GLib.Object {
     }
 
     public void set_default_orientation (string new_default) {
-        unowned Cups.PkHelper pk_helper = get_pk_helper ();
+        unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
         try {
             pk_helper.printer_delete_option_default (dest.name, "orientation-requested");
             pk_helper.printer_add_option_default (dest.name, "orientation-requested", {new_default});
@@ -452,7 +459,7 @@ public class Printers.Printer : GLib.Object {
     }
 
     public void set_default_output_bin (string new_default) {
-        unowned Cups.PkHelper pk_helper = get_pk_helper ();
+        unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
         try {
             pk_helper.printer_delete_option_default (dest.name, "output-bin");
             pk_helper.printer_add_option_default (dest.name, "output-bin", {new_default});
@@ -492,7 +499,7 @@ public class Printers.Printer : GLib.Object {
     }
 
     public void set_default_print_color_mode (string new_default) {
-        unowned Cups.PkHelper pk_helper = get_pk_helper ();
+        unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
         try {
             pk_helper.printer_delete_option_default (dest.name, "print-color-mode");
             pk_helper.printer_add_option_default (dest.name, "print-color-mode", {new_default});

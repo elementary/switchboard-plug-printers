@@ -21,7 +21,7 @@
  */
 
 [DBus (name = "org.cups.cupsd.Notifier")]
-interface Cups.Notifier : Object {
+public interface Cups.Notifier : Object {
     public signal void server_restarted (string text);
     public signal void server_started (string text);
     public signal void server_stopped (string text);
@@ -45,3 +45,19 @@ interface Cups.Notifier : Object {
     public signal void job_state (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs, uint32 job_id, uint32 job_state, string job_state_reason, string job_name, uint32 job_impressions_completed);
     public signal void job_state_changed (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs, uint32 job_id, uint32 job_state, string job_state_reason, string job_name, uint32 job_impressions_completed);
 }
+
+namespace Cups {
+    private static Cups.Notifier notifier = null;
+    public static unowned Cups.Notifier get_notifier () {
+        if (notifier == null) {
+            try {
+                notifier = Bus.get_proxy_sync (BusType.SYSTEM, "org.cups.cupsd.Notifier", "/org/cups/cupsd/Notifier");
+            } catch (IOError e) {
+                critical (e.message);
+            }
+        }
+
+        return notifier;
+    }
+}
+

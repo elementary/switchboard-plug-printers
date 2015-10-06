@@ -83,18 +83,22 @@ public class Printers.JobsView : Gtk.Frame {
         toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
         toolbar.get_style_context ().add_class ("inline-toolbar");
         var start_pause_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("media-playback-start-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
-        toolbar.add (start_pause_button);
+        start_pause_button.sensitive = false;
         var stop_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("media-playback-stop-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
-        toolbar.add (stop_button);
+        stop_button.sensitive = false;
         var expander = new Gtk.ToolItem ();
         expander.set_expand (true);
         expander.visible_vertical = false;
-        toolbar.add (expander);
+
         var show_all_button = new Gtk.ToggleToolButton ();
         show_all_button.label = _("Show completed jobs");
         show_all_button.toggled.connect (() => {
             toggle_finished (show_all_button);
         });
+
+        toolbar.add (start_pause_button);
+        toolbar.add (stop_button);
+        toolbar.add (expander);
         toolbar.add (show_all_button);
 
         var alert = new Granite.Widgets.AlertView (_("No jobs"), _("There are no jobs on the queue"), "document");

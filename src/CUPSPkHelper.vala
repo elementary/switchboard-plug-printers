@@ -56,3 +56,18 @@ public interface Cups.PkHelper : Object {
     public abstract string job_restart (int jobid) throws Error;
     public abstract string job_set_hold_until (int jobid, string job_hold_until) throws Error;
 }
+
+namespace Cups {
+    private static Cups.PkHelper pk_helper = null;
+    public static unowned Cups.PkHelper get_pk_helper () {
+        if (pk_helper == null) {
+            try {
+                pk_helper = Bus.get_proxy_sync (BusType.SYSTEM, "org.opensuse.CupsPkHelper.Mechanism", "/");
+            } catch (IOError e) {
+                critical (e.message);
+            }
+        }
+
+        return pk_helper;
+    }
+}
