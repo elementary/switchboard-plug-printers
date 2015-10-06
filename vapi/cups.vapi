@@ -782,28 +782,48 @@ namespace CUPS {
 	}
 
 	namespace Attributes {
+		[CCode (cname = "CUPS_MEDIA_SUPPORTED")]
+		public const string MEDIA_SUPPORTED;
+		[CCode (cname = "\"media-supported-default\"")]
+		public const string MEDIA_DEFAULT;
+
+		[CCode (cname = "\"media-source-supported\"")]
+		public const string MEDIA_SOURCE_SUPPORTED;
+		[CCode (cname = "\"media-source-default\"")]
+		public const string MEDIA_SOURCE_DEFAULT;
+
+		[CCode (cname = "\"media-size-supported\"")]
+		public const string MEDIA_SIZE_SUPPORTED;
+
 		[CCode (cname = "CUPS_NUMBER_UP_SUPPORTED")]
 		public const string NUMBER_UP_SUPPORTED;
 		[CCode (cname = "\"number-up-default\"")]
 		public const string NUMBER_UP_DEFAULT;
-
-		[CCode (cname = "CUPS_SIDES_SUPPORTED")]
-		public const string SIDES_SUPPORTED;
-		[CCode (cname = "\"sides-default\"")]
-		public const string SIDES_DEFAULT;
 
 		[CCode (cname = "CUPS_ORIENTATION_SUPPORTED")]
 		public const string ORIENTATION_SUPPORTED;
 		[CCode (cname = "\"orientation-requested-default\"")]
 		public const string ORIENTATION_DEFAULT;
 
-		[CCode (cname = "CUPS_MEDIA_SUPPORTED")]
-		public const string MEDIA_SUPPORTED;
-		[CCode (cname = "\"media-supported-default\"")]
-		public const string MEDIA_DEFAULT;
+		[CCode (cname = "\"output-bin-supported\"")]
+		public const string OUTPUT_BIN_SUPPORTED;
+		[CCode (cname = "\"output-bin-default\"")]
+		public const string OUTPUT_BIN_DEFAULT;
 
-		[CCode (cname = "\"media-size-supported\"")]
-		public const string MEDIA_SIZE_SUPPORTED;
+		[CCode (cname = "\"print-color-mode-supported\"")]
+		public const string PRINT_COLOR_MODE_SUPPORTED;
+		[CCode (cname = "\"print-color-mode-default\"")]
+		public const string PRINT_COLOR_MODE_DEFAULT;
+
+		[CCode (cname = "\"print-quality-supported\"")]
+		public const string PRINT_QUALITY_SUPPORTED;
+		[CCode (cname = "\"print-quality-default\"")]
+		public const string PRINT_QUALITY_DEFAULT;
+
+		[CCode (cname = "CUPS_SIDES_SUPPORTED")]
+		public const string SIDES_SUPPORTED;
+		[CCode (cname = "\"sides-default\"")]
+		public const string SIDES_DEFAULT;
 
 		namespace Sided {
 			[CCode (cname = "CUPS_SIDES_ONE_SIDED")]

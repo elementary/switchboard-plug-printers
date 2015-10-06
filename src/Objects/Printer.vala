@@ -259,6 +259,10 @@ public class Printers.Printer : GLib.Object {
                 }
             }
 
+            if (reason == "none") {
+                return _("Ready");
+            }
+
             return reason;
         }
     }
@@ -372,9 +376,152 @@ public class Printers.Printer : GLib.Object {
 
             attr = request.find_attribute (CUPS.Attributes.ORIENTATION_DEFAULT, CUPS.IPP.Tag.ZERO);
             if (attr.get_count () > 0) {
-                return attr.get_integer ();
+                int page = attr.get_integer ();
+                if (page >= 3 && page <= 6) {
+                    return page;
+                } else {
+                    return CUPS.Attributes.Orientation.PORTRAIT;
+                }
             } else {
                 return CUPS.Attributes.Orientation.PORTRAIT;
+            }
+        } else {
+            critical ("Error: %s", request.get_status_code ().to_string ());
+            return -1;
+        }
+    }
+
+    public string get_output_bins (Gee.TreeSet<string> output_bins) {
+        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
+        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
+        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
+
+        string[] attributes = { CUPS.Attributes.OUTPUT_BIN_SUPPORTED,
+                                CUPS.Attributes.OUTPUT_BIN_DEFAULT };
+
+        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
+        request.do_request (CUPS.HTTP.DEFAULT);
+
+        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+            unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.OUTPUT_BIN_SUPPORTED, CUPS.IPP.Tag.ZERO);
+            for (int i = 0; i < attr.get_count (); i++) {
+                output_bins.add (attr.get_string (i));
+            }
+
+            attr = request.find_attribute (CUPS.Attributes.OUTPUT_BIN_DEFAULT, CUPS.IPP.Tag.ZERO);
+            if (attr.get_count () > 0) {
+                return attr.get_string ();
+            } else {
+                return "rear";
+            }
+        } else {
+            critical ("Error: %s", request.get_status_code ().to_string ());
+            return "";
+        }
+    }
+
+    public string get_print_color_modes (Gee.TreeSet<string> print_color_modes) {
+        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
+        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
+        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
+
+        string[] attributes = { CUPS.Attributes.PRINT_COLOR_MODE_SUPPORTED,
+                                CUPS.Attributes.PRINT_COLOR_MODE_DEFAULT };
+
+        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
+        request.do_request (CUPS.HTTP.DEFAULT);
+
+        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+            unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.PRINT_COLOR_MODE_SUPPORTED, CUPS.IPP.Tag.ZERO);
+            for (int i = 0; i < attr.get_count (); i++) {
+                print_color_modes.add (attr.get_string (i));
+            }
+
+            attr = request.find_attribute (CUPS.Attributes.PRINT_COLOR_MODE_DEFAULT, CUPS.IPP.Tag.ZERO);
+            if (attr.get_count () > 0) {
+                return attr.get_string ();
+            } else {
+                return "auto";
+            }
+        } else {
+            critical ("Error: %s", request.get_status_code ().to_string ());
+            return "";
+        }
+    }
+
+    public string get_media_sources (Gee.TreeSet<string> media_sources) {
+        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
+        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
+        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
+
+        string[] attributes = { CUPS.Attributes.MEDIA_SOURCE_SUPPORTED,
+                                CUPS.Attributes.MEDIA_SOURCE_DEFAULT };
+
+        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
+        request.do_request (CUPS.HTTP.DEFAULT);
+
+        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+            unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.MEDIA_SOURCE_SUPPORTED, CUPS.IPP.Tag.ZERO);
+            for (int i = 0; i < attr.get_count (); i++) {
+                media_sources.add (attr.get_string (i));
+            }
+
+            attr = request.find_attribute (CUPS.Attributes.MEDIA_SOURCE_DEFAULT, CUPS.IPP.Tag.ZERO);
+            if (attr.get_count () > 0) {
+                return attr.get_string ();
+            } else {
+                return "auto";
+            }
+        } else {
+            critical ("Error: %s", request.get_status_code ().to_string ());
+            return "";
+        }
+    }
+
+    public void set_default_media_source (string new_default) {
+        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
+        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
+        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.SET_PRINTER_ATTRIBUTES);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, CUPS.Attributes.MEDIA_SOURCE_DEFAULT, null, new_default);
+        request.do_request (CUPS.HTTP.DEFAULT);
+        warning (new_default);
+        if (request.get_status_code () > CUPS.IPP.Status.OK) {
+            critical ("Error: %s", request.get_status_code ().to_string ());
+        }
+    }
+
+    public int get_print_qualities (Gee.TreeSet<int> print_qualities) {
+        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
+        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
+        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
+
+        string[] attributes = { CUPS.Attributes.PRINT_QUALITY_SUPPORTED,
+                                CUPS.Attributes.PRINT_QUALITY_DEFAULT };
+
+        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
+        request.do_request (CUPS.HTTP.DEFAULT);
+
+        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+            unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.PRINT_QUALITY_SUPPORTED, CUPS.IPP.Tag.ZERO);
+            for (int i = 0; i < attr.get_count (); i++) {
+                print_qualities.add (attr.get_integer (i));
+            }
+
+            attr = request.find_attribute (CUPS.Attributes.PRINT_QUALITY_DEFAULT, CUPS.IPP.Tag.ZERO);
+            if (attr.get_count () > 0) {
+                int quality = attr.get_integer ();
+                if (quality >= 3 && quality <= 5) {
+                    return quality;
+                } else {
+                    return 4;
+                }
+            } else {
+                return 4;
             }
         } else {
             critical ("Error: %s", request.get_status_code ().to_string ());

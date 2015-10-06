@@ -23,6 +23,7 @@
 public class Printers.JobsView : Gtk.Frame {
     private Printer printer;
     private Gtk.ListStore list_store;
+    private Gtk.Stack stack;
 
     public JobsView (Printer printer) {
         this.printer = printer;
@@ -96,7 +97,19 @@ public class Printers.JobsView : Gtk.Frame {
         });
         toolbar.add (show_all_button);
 
-        job_grid.add (scrolled);
+        var alert = new Granite.Widgets.AlertView (_("No jobs"), _("There are no jobs on the queue"), "document");
+        alert.show_all ();
+
+        stack = new Gtk.Stack ();
+        stack.add_named (scrolled, "jobs");
+        stack.add_named (alert, "no-jobs");
+        if (list_store.iter_n_children (null) > 0) {
+            stack.set_visible_child_name ("jobs");
+        } else {
+            stack.set_visible_child_name ("no-jobs");
+        }
+
+        job_grid.add (stack);
         job_grid.add (toolbar);
         add (job_grid);
     }
@@ -157,6 +170,12 @@ public class Printers.JobsView : Gtk.Frame {
             foreach (var _iter in iters) {
                 list_store.remove (_iter);
             }
+        }
+
+        if (list_store.iter_n_children (null) > 0) {
+            stack.set_visible_child_name ("jobs");
+        } else {
+            stack.set_visible_child_name ("no-jobs");
         }
     }
 

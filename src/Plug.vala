@@ -49,11 +49,20 @@ namespace Printers {
                 main_paned.pack1 (scrolled, false, false);
                 main_paned.pack2 (stack, true, false);
                 unowned CUPS.Destination[] dests = CUPS.get_destinations ();
+                Printer default_printer = null;
                 foreach (unowned CUPS.Destination dest in dests) {
                     var printer = new Printer (dest);
                     var row = new PrinterRow (printer);
                     list_box.add (row);
                     stack.add (row.page);
+                    if (default_printer == null && printer.is_default) {
+                        default_printer = printer;
+                        list_box.select_row (row);
+                    }
+                }
+                
+                if (default_printer != null) {
+                    //Show printer page!
                 }
 
                 try {

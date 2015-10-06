@@ -22,6 +22,7 @@
 
 public class Printers.OptionsPage : Gtk.Grid {
     private Printer printer;
+    private int row_index = 0;
 
     public OptionsPage (Printer printer) {
         this.printer = printer;
@@ -40,6 +41,10 @@ public class Printers.OptionsPage : Gtk.Grid {
         build_two_sided ();
         build_orientation ();
         build_page_size ();
+        build_output_bins ();
+        build_print_color_mode ();
+        build_print_quality ();
+        build_media_source ();
         printer.get_all ();
     }
 
@@ -55,10 +60,11 @@ public class Printers.OptionsPage : Gtk.Grid {
                 }
             }
 
-            var label = new Gtk.Label (_("Pages per Sheet:"));
+            var label = new Gtk.Label (_("Pages per side:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, 0, 1, 1);
-            attach (box, 1, 0, 1, 1);
+            attach (label, 0, row_index, 1, 1);
+            attach (box, 1, row_index, 1, 1);
+            row_index++;
         }
     }
 
@@ -76,14 +82,13 @@ public class Printers.OptionsPage : Gtk.Grid {
 
             if (sides.size > 2) {
                 var two_mode = new Granite.Widgets.ModeButton ();
+                two_mode.hexpand = true;
                 two_switch.bind_property ("active", two_mode, "sensitive");
                 grid.add (two_mode);
-                var index = two_mode.append_text (_("Long Edge (Standard)"));
-                if (default_side == CUPS.Attributes.Sided.TWO_LONG_EDGE) {
-                    two_mode.selected = index;
-                }
+                var index = two_mode.append_text (dgettext ("gtk30", "Long Edge (Standard)"));
+                two_mode.selected = index;
 
-                index = two_mode.append_text (_("Short Edge (Flip)"));
+                index = two_mode.append_text (dgettext ("gtk30", "Short Edge (Flip)"));
                 if (default_side == CUPS.Attributes.Sided.TWO_SHORT_EDGE) {
                     two_mode.selected = index;
                 }
@@ -93,10 +98,11 @@ public class Printers.OptionsPage : Gtk.Grid {
                 }
             }
 
-            var label = new Gtk.Label (_("Two sided:"));
+            var label = new Gtk.Label (_("Two-sided:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, 1, 1, 1);
-            attach (grid, 1, 1, 1, 1);
+            attach (label, 0, row_index, 1, 1);
+            attach (grid, 1, row_index, 1, 1);
+            row_index++;
         }
     }
 
@@ -108,16 +114,16 @@ public class Printers.OptionsPage : Gtk.Grid {
             foreach (var orientation in orientations) {
                 switch (orientation) {
                     case CUPS.Attributes.Orientation.PORTRAIT:
-                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.PORTRAIT), _("Portrait"));
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.PORTRAIT), dgettext ("gtk30", "Portrait"));
                         break;
                     case CUPS.Attributes.Orientation.LANDSCAPE:
-                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.LANDSCAPE), _("Landcape"));
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.LANDSCAPE), dgettext ("gtk30", "Landscape"));
                         break;
                     case CUPS.Attributes.Orientation.REVERSE_PORTRAIT:
-                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_PORTRAIT), _("Reverse Portrait"));
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_PORTRAIT), dgettext ("gtk30", "Reverse portrait"));
                         break;
                     case CUPS.Attributes.Orientation.REVERSE_LANDSCAPE:
-                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_LANDSCAPE), _("Reverse Landcape"));
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_LANDSCAPE), dgettext ("gtk30", "Reverse landscape"));
                         break;
                 }
             }
@@ -125,71 +131,249 @@ public class Printers.OptionsPage : Gtk.Grid {
             combobox.set_active_id ("%d".printf (default_orientation));
             var label = new Gtk.Label (_("Orientation:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, 2, 1, 1);
-            attach (combobox, 1, 2, 1, 1);
+            attach (label, 0, row_index, 1, 1);
+            attach (combobox, 1, row_index, 1, 1);
+            row_index++;
         }
     }
 
     private void build_page_size () {
-        //int default_attribute = 4;
-        /*unowned CUPS.IPP.Attribute attr = result.find_attribute (CUPS.Attributes.MEDIA_DEFAULT, CUPS.IPP.Tag.ZERO);
-        if (attr.get_count () > 0) {
-            warning (attr.get_string (0));*/
-            /*default_attribute = attr.get_integer (0);
-            if (default_attribute < 0) {
-                default_attribute = 4;
-            }*/
-            /*MediaSize *media_size;
-            GList     *media_iter;
-            GList     *media_size_iter;
-            gchar     *media;
+        
+    }
 
-            for (media_iter = cups_printer->media_supported,
-                media_size_iter = cups_printer->media_size_supported;
-                media_size_iter != NULL;
-                media_iter = media_iter->next,
-                media_size_iter = media_size_iter->next)
-            {
-                media = (gchar *) media_iter->data;
-                media_size = (MediaSize *) media_size_iter->data;
-
-                page_setup = create_page_setup_from_media (media,
-                                                           media_size,
-                                                           cups_printer->media_margin_default_set,
-                                                           cups_printer->media_bottom_margin_default,
-                                                           cups_printer->media_top_margin_default,
-                                                           cups_printer->media_left_margin_default,
-                                                           cups_printer->media_right_margin_default);
-
-                result = g_list_prepend (result, page_setup);
-            }*/
-        //}
-
-        /*var combobox = new Gtk.ComboBoxText ();
-        attr = result.find_attribute (CUPS.Attributes.MEDIA_SIZE_SUPPORTED, CUPS.IPP.Tag.ZERO);
-        var paper_sizes = new Gee.LinkedList<Array<double?>> ();
-        for (int i = 0; i < attr.get_count (); i++) {
-            var size = new Array<double?> ();
-            unowned CUPS.IPP.IPP media_size_collection = attr.get_collection (i);
-            size.append_val (media_size_collection.find_attribute ("x-dimension", CUPS.IPP.Tag.INTEGER).get_integer (0) / 100.0);
-            size.append_val (media_size_collection.find_attribute ("y-dimension", CUPS.IPP.Tag.INTEGER).get_integer (0) / 100.0);
-            if (size.index (0) != (-1 / 100.0) && size.index (1) != (-1 / 100.0)) {
-                paper_sizes.add (size);
+    private void build_print_color_mode () {
+        var print_color_modes = new Gee.TreeSet<string> ();
+        var default_color_mode = printer.get_print_color_modes (print_color_modes);
+        if (print_color_modes.size > 1) {
+            var combobox = new Gtk.ComboBoxText ();
+            foreach (var print_color_mode in print_color_modes) {
+                switch (print_color_mode) {
+                    case "auto":
+                        combobox.append (print_color_mode, _("Automatic"));
+                        break;
+                    case "bi-level":
+                        combobox.append (print_color_mode, _("One Color"));
+                        break;
+                    case "color":
+                        combobox.append (print_color_mode, _("Color"));
+                        break;
+                    case "highlight":
+                        combobox.append (print_color_mode, _("One Color + Black"));
+                        break;
+                    case "monochrome":
+                        combobox.append (print_color_mode, _("Greyscale"));
+                        break;
+                    case "process-bi-level":
+                        combobox.append (print_color_mode, _("Processed Color"));
+                        break;
+                    case "process-monochrome":
+                        combobox.append (print_color_mode, _("Processed Greyscale"));
+                        break;
+                }
             }
-        }
 
-        attr = result.find_attribute (CUPS.Attributes.MEDIA_SUPPORTED, CUPS.IPP.Tag.ZERO);
-        var media_supported = new Gee.LinkedList<string> ();
-        for (int i = 0; i < attr.get_count (); i++) {
-            media_supported.add (attr.get_string (i));
-        }
-
-        if (attr.get_count () > 1) {
-            var label = new Gtk.Label (_("Page Size:"));
-            label.hexpand = true;
+            combobox.set_active_id (default_color_mode);
+            var label = new Gtk.Label (_("Color mode:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, 3, 1, 1);
-            attach (combobox, 1, 3, 1, 1);
-        }*/
+            attach (label, 0, row_index, 1, 1);
+            attach (combobox, 1, row_index, 1, 1);
+            row_index++;
+        }
+    }
+
+    private void build_output_bins () {
+        var output_bins = new Gee.TreeSet<string> ();
+        var default_output_bin = printer.get_output_bins (output_bins);
+        if (output_bins.size > 1) {
+            var combobox = new Gtk.ComboBoxText ();
+            foreach (var output_bin in output_bins) {
+                switch (output_bin) {
+                    case "top":
+                        combobox.append (output_bin, dgettext ("gtk30", "Top Bin"));
+                        break;
+                    case "middle":
+                        combobox.append (output_bin, dgettext ("gtk30", "Middle Bin"));
+                        break;
+                    case "bottom":
+                        combobox.append (output_bin, dgettext ("gtk30", "Bottom Bin"));
+                        break;
+                    case "side":
+                        combobox.append (output_bin, dgettext ("gtk30", "Side Bin"));
+                        break;
+                    case "left":
+                        combobox.append (output_bin, dgettext ("gtk30", "Left Bin"));
+                        break;
+                    case "right":
+                        combobox.append (output_bin, dgettext ("gtk30", "Right Bin"));
+                        break;
+                    case "center":
+                        combobox.append (output_bin, dgettext ("gtk30", "Center Bin"));
+                        break;
+                    case "rear":
+                        combobox.append (output_bin, dgettext ("gtk30", "Rear Bin"));
+                        break;
+                    case "face-up":
+                        combobox.append (output_bin, dgettext ("gtk30", "Face Up Bin"));
+                        break;
+                    case "face-down":
+                        combobox.append (output_bin, dgettext ("gtk30", "Face Down Bin"));
+                        break;
+                    case "large-capacity":
+                        combobox.append (output_bin, dgettext ("gtk30", "Large Capacity Bin"));
+                        break;
+                    case "my-mailbox":
+                        combobox.append (output_bin, dgettext ("gtk30", "My Mailbox"));
+                        break;
+                    default:
+                        if ("stacker-" in output_bin) {
+                            int number = int.parse (output_bin.replace ("stacker-", ""));
+                            combobox.append (output_bin, dgettext ("gtk30", "Stacker %d").printf (number));
+                        } else if ("mailbox-" in output_bin) {
+                            int number = int.parse (output_bin.replace ("mailbox-", ""));
+                            combobox.append (output_bin, dgettext ("gtk30", "Mailbox %d").printf (number));
+                        } else if ("tray-" in output_bin) {
+                            int number = int.parse (output_bin.replace ("tray-", ""));
+                            combobox.append (output_bin, dgettext ("gtk30", "Tray %d").printf (number));
+                        } else {
+                            combobox.append (output_bin, output_bin);
+                        }
+
+                        break;
+                }
+            }
+
+            combobox.set_active_id (default_output_bin);
+            var label = new Gtk.Label (_("Output Tray:"));
+            ((Gtk.Misc) label).xalign = 1;
+            attach (label, 0, row_index, 1, 1);
+            attach (combobox, 1, row_index, 1, 1);
+            row_index++;
+        }
+    }
+
+    private void build_print_quality () {
+        var print_qualities = new Gee.TreeSet<int> ();
+        var default_print_quality = printer.get_print_qualities (print_qualities);
+        if (print_qualities.size > 1) {
+            var combobox = new Gtk.ComboBoxText ();
+            foreach (var print_quality in print_qualities) {
+                switch (print_quality) {
+                    case 3:
+                        combobox.append ("%d".printf (print_quality), _("Draft"));
+                        break;
+                    case 4:
+                        combobox.append ("%d".printf (print_quality), _("Normal"));
+                        break;
+                    case 5:
+                        combobox.append ("%d".printf (print_quality), _("High"));
+                        break;
+                }
+            }
+
+            combobox.set_active_id ("%d".printf (default_print_quality));
+            var label = new Gtk.Label (_("Quality:"));
+            ((Gtk.Misc) label).xalign = 1;
+            attach (label, 0, row_index, 1, 1);
+            attach (combobox, 1, row_index, 1, 1);
+            row_index++;
+        }
+    }
+
+    private void build_media_source () {
+        var media_sources = new Gee.TreeSet<string> ();
+        var default_media_source = printer.get_media_sources (media_sources);
+        if (media_sources.size > 1) {
+            var combobox = new Gtk.ComboBoxText ();
+            foreach (var media_source in media_sources) {
+                switch (media_source) {
+                    case "alternate":
+                        combobox.append (media_source, _("Alternate Tray"));
+                        break;
+                    case "alternate-roll":
+                        combobox.append (media_source, _("Alternate Roll"));
+                        break;
+                    case "auto":
+                        combobox.append (media_source, _("Automatic"));
+                        break;
+                    case "bottom":
+                        combobox.append (media_source, _("Bottom"));
+                        break;
+                    case "by-pass-tray":
+                        combobox.append (media_source, _("By-pass Tray"));
+                        break;
+                    case "center":
+                        combobox.append (media_source, _("Center"));
+                        break;
+                    case "continuous":
+                        combobox.append (media_source, _("Continuous Autofeed"));
+                        break;
+                    case "disk":
+                        combobox.append (media_source, _("Disk"));
+                        break;
+                    case "envelope":
+                        combobox.append (media_source, _("Envelope"));
+                        break;
+                    case "hagaki":
+                        combobox.append (media_source, _("Hagaki"));
+                        break;
+                    case "large-capacity":
+                        combobox.append (media_source, _("Large Capacity"));
+                        break;
+                    case "left":
+                        combobox.append (media_source, _("Left"));
+                        break;
+                    case "main":
+                        combobox.append (media_source, _("Main Tray"));
+                        break;
+                    case "main-roll":
+                        combobox.append (media_source, _("Main Roll"));
+                        break;
+                    case "manual":
+                        combobox.append (media_source, _("Manual"));
+                        break;
+                    case "middle":
+                        combobox.append (media_source, _("Middle"));
+                        break;
+                    case "photo":
+                        combobox.append (media_source, _("Photo"));
+                        break;
+                    case "asf":
+                    case "rear":
+                        combobox.append (media_source, _("Rear"));
+                        break;
+                    case "right":
+                        combobox.append (media_source, _("Right"));
+                        break;
+                    case "side":
+                        combobox.append (media_source, _("Side"));
+                        break;
+                    case "top":
+                        combobox.append (media_source, _("Top"));
+                        break;
+                    default:
+                        if ("roll-" in media_source) {
+                            int number = int.parse (media_source.replace ("roll-", ""));
+                            combobox.append (media_source, _("Roll %d").printf (number));
+                        } else if ("tray-" in media_source) {
+                            int number = int.parse (media_source.replace ("tray-", ""));
+                            combobox.append (media_source, _("Tray %d").printf (number));
+                        } else {
+                            combobox.append (media_source, media_source);
+                        }
+
+                        break;
+                }
+            }
+
+            combobox.set_active_id (default_media_source);
+            combobox.changed.connect (() => {
+                printer.set_default_media_source (combobox.get_active_id ());
+            });
+            var label = new Gtk.Label (_("Paper Source:"));
+            ((Gtk.Misc) label).xalign = 1;
+            attach (label, 0, row_index, 1, 1);
+            attach (combobox, 1, row_index, 1, 1);
+            row_index++;
+        }
     }
 }
