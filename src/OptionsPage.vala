@@ -60,6 +60,10 @@ public class Printers.OptionsPage : Gtk.Grid {
                 }
             }
 
+            box.mode_changed.connect ((w) => {
+                var label = w as Gtk.Label;
+                printer.set_default_pages (label.label);
+            });
             var label = new Gtk.Label (_("Pages per side:"));
             ((Gtk.Misc) label).xalign = 1;
             attach (label, 0, row_index, 1, 1);
@@ -85,19 +89,52 @@ public class Printers.OptionsPage : Gtk.Grid {
                 two_mode.hexpand = true;
                 two_switch.bind_property ("active", two_mode, "sensitive");
                 grid.add (two_mode);
-                var index = two_mode.append_text (dgettext ("gtk30", "Long Edge (Standard)"));
-                two_mode.selected = index;
-
-                index = two_mode.append_text (dgettext ("gtk30", "Short Edge (Flip)"));
-                if (default_side == CUPS.Attributes.Sided.TWO_SHORT_EDGE) {
-                    two_mode.selected = index;
+                two_mode.append_text (dgettext ("gtk30", "Long Edge (Standard)"));
+                two_mode.selected = 0;
+                two_mode.append_text (dgettext ("gtk30", "Short Edge (Flip)"));
+                switch (default_side) {
+                    case CUPS.Attributes.Sided.TWO_LONG_EDGE:
+                        two_mode.selected = 0;
+                        two_switch.active = true;
+                        break;
+                    case CUPS.Attributes.Sided.TWO_SHORT_EDGE:
+                        two_mode.selected = 1;
+                        two_switch.active = true;
+                        break;
+                    case CUPS.Attributes.Sided.ONE:
+                        two_switch.active = false;
+                        two_mode.sensitive = false;
+                        break;
                 }
 
-                if (default_side == CUPS.Attributes.Sided.ONE) {
-                    two_mode.sensitive = false;
-                }
+                two_mode.notify["selected"].connect (() => {
+                    if (two_mode.selected == 0) {
+                        printer.set_default_side (CUPS.Attributes.Sided.TWO_LONG_EDGE);
+                    } else {
+                        printer.set_default_side (CUPS.Attributes.Sided.TWO_SHORT_EDGE);
+                    }
+                });
+
+                two_switch.notify["active"].connect (() => {
+                    if (two_switch.active) {
+                        if (two_mode.selected == 0) {
+                            printer.set_default_side (CUPS.Attributes.Sided.TWO_LONG_EDGE);
+                        } else {
+                            printer.set_default_side (CUPS.Attributes.Sided.TWO_SHORT_EDGE);
+                        }
+                    } else {
+                        printer.set_default_side (CUPS.Attributes.Sided.ONE);
+                    }
+                });
+            } else {
+                two_switch.notify["active"].connect (() => {
+                    if (two_switch.active) {
+                        printer.set_default_side (CUPS.Attributes.Sided.TWO_LONG_EDGE);
+                    } else {
+                        printer.set_default_side (CUPS.Attributes.Sided.ONE);
+                    }
+                });
             }
-
             var label = new Gtk.Label (_("Two-sided:"));
             ((Gtk.Misc) label).xalign = 1;
             attach (label, 0, row_index, 1, 1);
@@ -129,6 +166,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             }
 
             combobox.set_active_id ("%d".printf (default_orientation));
+            combobox.changed.connect (() => {
+                printer.set_default_orientation (combobox.get_active_id ());
+            });
             var label = new Gtk.Label (_("Orientation:"));
             ((Gtk.Misc) label).xalign = 1;
             attach (label, 0, row_index, 1, 1);
@@ -173,6 +213,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             }
 
             combobox.set_active_id (default_color_mode);
+            combobox.changed.connect (() => {
+                printer.set_default_print_color_mode (combobox.get_active_id ());
+            });
             var label = new Gtk.Label (_("Color mode:"));
             ((Gtk.Misc) label).xalign = 1;
             attach (label, 0, row_index, 1, 1);
@@ -243,6 +286,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             }
 
             combobox.set_active_id (default_output_bin);
+            combobox.changed.connect (() => {
+                printer.set_default_output_bin (combobox.get_active_id ());
+            });
             var label = new Gtk.Label (_("Output Tray:"));
             ((Gtk.Misc) label).xalign = 1;
             attach (label, 0, row_index, 1, 1);

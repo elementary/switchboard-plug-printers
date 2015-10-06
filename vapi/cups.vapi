@@ -405,6 +405,7 @@ namespace CUPS {
 			PRIVATE,
 			CUPS_GET_DEFAULT,
 			CUPS_GET_PRINTERS,
+			[CCode(cname = "CUPS_ADD_MODIFY_PRINTER")]
 			CUPS_ADD_MODIFY_PRINTER,
 			CUPS_DELETE_PRINTER,
 			CUPS_GET_CLASSES,
@@ -789,7 +790,7 @@ namespace CUPS {
 
 		[CCode (cname = "\"media-source-supported\"")]
 		public const string MEDIA_SOURCE_SUPPORTED;
-		[CCode (cname = "\"media-source-default\"")]
+		[CCode (cname = "\"media-source-default-default\"")]
 		public const string MEDIA_SOURCE_DEFAULT;
 
 		[CCode (cname = "\"media-size-supported\"")]

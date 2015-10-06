@@ -326,6 +326,16 @@ public class Printers.Printer : GLib.Object {
         }
     }
 
+    public void set_default_pages (string new_default) {
+        unowned Cups.PkHelper pk_helper = get_pk_helper ();
+        try {
+            pk_helper.printer_delete_option_default (dest.name, "number-up");
+            pk_helper.printer_add_option_default (dest.name, "number-up", {new_default});
+        } catch (Error e) {
+            critical (e.message);
+        }
+    }
+
     public string get_sides (Gee.TreeSet<string> sides) {
         char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
         CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
@@ -353,6 +363,16 @@ public class Printers.Printer : GLib.Object {
         } else {
             critical ("Error: %s", request.get_status_code ().to_string ());
             return "";
+        }
+    }
+
+    public void set_default_side (string new_default) {
+        unowned Cups.PkHelper pk_helper = get_pk_helper ();
+        try {
+            pk_helper.printer_delete_option_default (dest.name, "sides");
+            pk_helper.printer_add_option_default (dest.name, "sides", {new_default});
+        } catch (Error e) {
+            critical (e.message);
         }
     }
 
@@ -391,6 +411,16 @@ public class Printers.Printer : GLib.Object {
         }
     }
 
+    public void set_default_orientation (string new_default) {
+        unowned Cups.PkHelper pk_helper = get_pk_helper ();
+        try {
+            pk_helper.printer_delete_option_default (dest.name, "orientation-requested");
+            pk_helper.printer_add_option_default (dest.name, "orientation-requested", {new_default});
+        } catch (Error e) {
+            critical (e.message);
+        }
+    }
+
     public string get_output_bins (Gee.TreeSet<string> output_bins) {
         char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
         CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
@@ -421,6 +451,16 @@ public class Printers.Printer : GLib.Object {
         }
     }
 
+    public void set_default_output_bin (string new_default) {
+        unowned Cups.PkHelper pk_helper = get_pk_helper ();
+        try {
+            pk_helper.printer_delete_option_default (dest.name, "output-bin");
+            pk_helper.printer_add_option_default (dest.name, "output-bin", {new_default});
+        } catch (Error e) {
+            critical (e.message);
+        }
+    }
+
     public string get_print_color_modes (Gee.TreeSet<string> print_color_modes) {
         char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
         CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
@@ -448,6 +488,16 @@ public class Printers.Printer : GLib.Object {
         } else {
             critical ("Error: %s", request.get_status_code ().to_string ());
             return "";
+        }
+    }
+
+    public void set_default_print_color_mode (string new_default) {
+        unowned Cups.PkHelper pk_helper = get_pk_helper ();
+        try {
+            pk_helper.printer_delete_option_default (dest.name, "print-color-mode");
+            pk_helper.printer_add_option_default (dest.name, "print-color-mode", {new_default});
+        } catch (Error e) {
+            critical (e.message);
         }
     }
 
@@ -482,16 +532,7 @@ public class Printers.Printer : GLib.Object {
     }
 
     public void set_default_media_source (string new_default) {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.SET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, CUPS.Attributes.MEDIA_SOURCE_DEFAULT, null, new_default);
-        request.do_request (CUPS.HTTP.DEFAULT);
-        warning (new_default);
-        if (request.get_status_code () > CUPS.IPP.Status.OK) {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-        }
+        //TODO
     }
 
     public int get_print_qualities (Gee.TreeSet<int> print_qualities) {
