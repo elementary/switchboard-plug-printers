@@ -292,6 +292,10 @@ public class Printers.Printer : GLib.Object {
         this.dest = dest;
     }
 
+    public bool is_offline () {
+        return "offline" in state_reasons;
+    }
+
     public Gee.TreeSet<Job> get_jobs (bool my_jobs, CUPS.WhichJobs whichjobs) {
         var jobs = new Gee.TreeSet<Job> ();
         unowned CUPS.Job[] cjobs = dest.get_jobs (my_jobs, whichjobs);

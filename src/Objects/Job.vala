@@ -125,4 +125,39 @@ public class Printers.Job : GLib.Object {
                 return new ThemedIcon ("process-completed-symbolic");
         }
     }
+
+    public GLib.Icon get_file_icon () {
+        var title = cjob.title.down ();
+        if (".png" in title || ".jpg" in title || ".jpeg" in title || ".bmp" in title) {
+            return new ThemedIcon ("image-x-generic");
+        } else if (".xcf" in title) {
+            return new ThemedIcon ("image-x-xcf");
+        } else if (".svg" in title) {
+            return new ThemedIcon ("image-x-svg+xml");
+        } else if (".pdf" in title) {
+            return new ThemedIcon ("application-pdf");
+        }
+
+        return new ThemedIcon (cjob.format.replace ("/", "-"));
+    }
+
+    public string get_hold_until () {
+        char[] job_uri = new char[CUPS.HTTP.MAX_URI];
+        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, job_uri, "ipp", null, "localhost", 0, "/jobs/%d", uid);
+        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_JOB_ATTRIBUTES);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "job-uri", null, (string)job_uri);
+
+        string[] attributes = { "job-hold-until" };
+
+        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
+        request.do_request (CUPS.HTTP.DEFAULT);
+
+        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+            unowned CUPS.IPP.Attribute attr = request.find_attribute ("job-hold-until", CUPS.IPP.Tag.ZERO);
+            return attr.get_string ();
+        } else {
+            critical ("Error: %s", request.get_status_code ().to_string ());
+            return "no-hold";
+        }
+    }
 }

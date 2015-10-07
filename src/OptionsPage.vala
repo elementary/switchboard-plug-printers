@@ -36,7 +36,7 @@ public class Printers.OptionsPage : Gtk.Grid {
         var expand_right = new Gtk.Grid ();
         expand_right.hexpand = true;
         attach (expand_left, 0, 0, 1, 1);
-        attach (expand_right, 1, 0, 1, 1);
+        attach (expand_right, 3, 0, 1, 1);
         build_pages_per_sheet ();
         build_two_sided ();
         build_orientation ();
@@ -66,8 +66,8 @@ public class Printers.OptionsPage : Gtk.Grid {
             });
             var label = new Gtk.Label (_("Pages per side:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, row_index, 1, 1);
-            attach (box, 1, row_index, 1, 1);
+            attach (label, 1, row_index, 1, 1);
+            attach (box, 2, row_index, 1, 1);
             row_index++;
         }
     }
@@ -137,8 +137,8 @@ public class Printers.OptionsPage : Gtk.Grid {
             }
             var label = new Gtk.Label (_("Two-sided:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, row_index, 1, 1);
-            attach (grid, 1, row_index, 1, 1);
+            attach (label, 1, row_index, 1, 1);
+            attach (grid, 2, row_index, 1, 1);
             row_index++;
         }
     }
@@ -171,8 +171,8 @@ public class Printers.OptionsPage : Gtk.Grid {
             });
             var label = new Gtk.Label (_("Orientation:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, row_index, 1, 1);
-            attach (combobox, 1, row_index, 1, 1);
+            attach (label, 1, row_index, 1, 1);
+            attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
     }
@@ -218,8 +218,8 @@ public class Printers.OptionsPage : Gtk.Grid {
             });
             var label = new Gtk.Label (_("Color mode:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, row_index, 1, 1);
-            attach (combobox, 1, row_index, 1, 1);
+            attach (label, 1, row_index, 1, 1);
+            attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
     }
@@ -291,8 +291,8 @@ public class Printers.OptionsPage : Gtk.Grid {
             });
             var label = new Gtk.Label (_("Output Tray:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, row_index, 1, 1);
-            attach (combobox, 1, row_index, 1, 1);
+            attach (label, 1, row_index, 1, 1);
+            attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
     }
@@ -319,8 +319,8 @@ public class Printers.OptionsPage : Gtk.Grid {
             combobox.set_active_id ("%d".printf (default_print_quality));
             var label = new Gtk.Label (_("Quality:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, row_index, 1, 1);
-            attach (combobox, 1, row_index, 1, 1);
+            attach (label, 1, row_index, 1, 1);
+            attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
     }
@@ -417,8 +417,8 @@ public class Printers.OptionsPage : Gtk.Grid {
             });
             var label = new Gtk.Label (_("Paper Source:"));
             ((Gtk.Misc) label).xalign = 1;
-            attach (label, 0, row_index, 1, 1);
-            attach (combobox, 1, row_index, 1, 1);
+            attach (label, 1, row_index, 1, 1);
+            attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
     }

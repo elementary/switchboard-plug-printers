@@ -187,7 +187,9 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     }
     
     private void update_status () {
-        if (printer.enabled) {
+        if (printer.is_offline ()) {
+            status_image.icon_name = "user-offline";
+        } else if (printer.enabled) {
             status_image.icon_name = "user-available";
         } else {
             status_image.icon_name = "user-busy";
