@@ -64,6 +64,7 @@ public class Printers.OptionsPage : Gtk.Grid {
                 var label = w as Gtk.Label;
                 printer.set_default_pages (label.label);
             });
+
             var label = new Gtk.Label (_("Pages per side:"));
             ((Gtk.Misc) label).xalign = 1;
             attach (label, 1, row_index, 1, 1);
@@ -77,6 +78,7 @@ public class Printers.OptionsPage : Gtk.Grid {
         var default_side = printer.get_sides (sides);
         if (sides.size > 1) {
             var grid = new Gtk.Grid ();
+            grid.column_spacing = 12;
             grid.orientation = Gtk.Orientation.HORIZONTAL;
             var two_switch = new Gtk.Switch ();
             var switch_grid = new Gtk.Grid ();
@@ -178,7 +180,24 @@ public class Printers.OptionsPage : Gtk.Grid {
     }
 
     private void build_page_size () {
-        
+        var media_sizes = new Gee.TreeSet<string> ();
+        var default_media_source = printer.get_media_sizes (media_sizes);
+        if (media_sizes.size > 1) {
+            var combobox = new Gtk.ComboBoxText ();
+            foreach (var media_size in media_sizes) {
+                var papersize = new Gtk.PaperSize (media_size);
+                combobox.append (media_size, papersize.get_display_name ());
+            }
+
+            combobox.changed.connect (() => {
+                
+            });
+            var label = new Gtk.Label (_("Media Size:"));
+            ((Gtk.Misc) label).xalign = 1;
+            attach (label, 1, row_index, 1, 1);
+            attach (combobox, 2, row_index, 1, 1);
+            row_index++;
+        }
     }
 
     private void build_print_color_mode () {
@@ -332,6 +351,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             var combobox = new Gtk.ComboBoxText ();
             foreach (var media_source in media_sources) {
                 switch (media_source) {
+                    case "alloc-paper":
+                        combobox.append (media_source, _("Paper Allocation"));
+                        break;
                     case "alternate":
                         combobox.append (media_source, _("Alternate Tray"));
                         break;
@@ -353,6 +375,7 @@ public class Printers.OptionsPage : Gtk.Grid {
                     case "continuous":
                         combobox.append (media_source, _("Continuous Autofeed"));
                         break;
+                    case "cd":
                     case "disk":
                         combobox.append (media_source, _("Disk"));
                         break;

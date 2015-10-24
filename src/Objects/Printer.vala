@@ -542,6 +542,36 @@ public class Printers.Printer : GLib.Object {
         }
     }
 
+    public string get_media_sizes (Gee.TreeSet<string> media_sizes) {
+        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
+        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
+        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
+
+        string[] attributes = { CUPS.Attributes.MEDIA_SUPPORTED,
+                                CUPS.Attributes.MEDIA_DEFAULT };
+
+        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
+        request.do_request (CUPS.HTTP.DEFAULT);
+
+        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+            unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.MEDIA_SUPPORTED, CUPS.IPP.Tag.ZERO);
+            for (int i = 0; i < attr.get_count (); i++) {
+                media_sizes.add (attr.get_string (i));
+            }
+
+            attr = request.find_attribute (CUPS.Attributes.MEDIA_DEFAULT, CUPS.IPP.Tag.ZERO);
+            if (attr.get_count () > 0) {
+                return attr.get_string ();
+            } else {
+                return "auto";
+            }
+        } else {
+            critical ("Error: %s", request.get_status_code ().to_string ());
+            return "";
+        }
+    }
+
     public void set_default_media_source (string new_default) {
         //TODO
     }

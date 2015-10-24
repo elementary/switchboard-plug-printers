@@ -219,6 +219,12 @@ namespace CUPS {
 	public delegate int ArrayFunc (void * first, void * second);
 	[CCode (cname = "cups_ahash_func_t", cheader_filename = "cups/array.h")]
 	public delegate int ArrayHashFunc (void * element);
+	[CCode (cname = "CUPS_TIMEOUT_DEFAULT")]
+	public int TIMEOUT_DEFAULT;
+	[CCode (cname = "CUPS_INCLUDE_ALL")]
+	public unowned string INCLUDE_ALL;
+	[CCode (cname = "CUPS_EXCLUDE_NONE")]
+	public unowned string EXCLUDE_NONE;
 
 	[CCode (cheader_filename = "cups/ipp.h", lower_case_cprefix = "ipp_")]
 	namespace IPP {
@@ -407,17 +413,29 @@ namespace CUPS {
 			CUPS_GET_PRINTERS,
 			[CCode(cname = "CUPS_ADD_MODIFY_PRINTER")]
 			CUPS_ADD_MODIFY_PRINTER,
+			[CCode(cname = "CUPS_DELETE_PRINTER")]
 			CUPS_DELETE_PRINTER,
+			[CCode(cname = "CUPS_GET_CLASSES")]
 			CUPS_GET_CLASSES,
+			[CCode(cname = "CUPS_ADD_MODIFY_CLASS")]
 			CUPS_ADD_MODIFY_CLASS,
+			[CCode(cname = "CUPS_DELETE_CLASS")]
 			CUPS_DELETE_CLASS,
+			[CCode(cname = "CUPS_ACCEPT_JOBS")]
 			CUPS_ACCEPT_JOBS,
+			[CCode(cname = "CUPS_REJECT_JOBS")]
 			CUPS_REJECT_JOBS,
+			[CCode(cname = "CUPS_SET_DEFAULT")]
 			CUPS_SET_DEFAULT,
+			[CCode(cname = "CUPS_GET_DEVICES")]
 			CUPS_GET_DEVICES,
+			[CCode(cname = "CUPS_GET_PPDS")]
 			CUPS_GET_PPDS,
+			[CCode(cname = "CUPS_MOVE_JOB")]
 			CUPS_MOVE_JOB,
+			[CCode(cname = "CUPS_AUTHENTICATE_JOB")]
 			CUPS_AUTHENTICATE_JOB,
+			[CCode(cname = "CUPS_GET_PPD")]
 			CUPS_GET_PPD;
 			[CCode(cname = "ippOpString")]
 			public unowned string to_string ();

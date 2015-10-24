@@ -149,7 +149,7 @@ public class Printers.PrinterPage : Gtk.Grid {
 
 public class Printers.PrinterRow : Gtk.ListBoxRow {
     public PrinterPage page;
-    private Printer printer;
+    public Printer printer;
     private Gtk.Image printer_image;
     private Gtk.Image status_image;
     private Gtk.Label name_label;

@@ -14,6 +14,7 @@ ensure_vala_version ("0.22.0" MINIMUM)
 include (ValaPrecompile)
 # Add all your vala files and requires packages to the List below to include them in the build
 vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
+    AddPopover.vala
     Plug.vala
     PrinterPage.vala
     PrinterList.vala
