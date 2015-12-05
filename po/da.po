@@ -2,102 +2,326 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-04 00:38+0200\n"
-"PO-Revision-Date: 2015-09-03 23:37+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-10-06 15:15+0200\n"
+"PO-Revision-Date: 2015-12-04 15:11+0000\n"
+"Last-Translator: Jimmy Merrild Krag <jimmy@kragenet.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-04 05:42+0000\n"
-"X-Generator: Launchpad (build 17706)\n"
+"X-Launchpad-Export-Date: 2015-12-05 05:48+0000\n"
+"X-Generator: Launchpad (build 17862)\n"
+
+#: ../src/OptionsPage.vala:63
+msgid "Pages per side:"
+msgstr "Sider pr. ark:"
+
+#: ../src/OptionsPage.vala:101
+msgid "Two-sided:"
+msgstr "To-sidet:"
+
+#: ../src/OptionsPage.vala:132
+msgid "Orientation:"
+msgstr "Orientering:"
+
+#: ../src/OptionsPage.vala:152 ../src/OptionsPage.vala:296
+msgid "Automatic"
+msgstr "Automatisk"
+
+#: ../src/OptionsPage.vala:155
+msgid "One Color"
+msgstr "Én Farve"
+
+#: ../src/OptionsPage.vala:158
+msgid "Color"
+msgstr "Farve"
+
+#: ../src/OptionsPage.vala:161
+msgid "One Color + Black"
+msgstr "Én Farve + Sort"
+
+#: ../src/OptionsPage.vala:164
+msgid "Greyscale"
+msgstr "Gråtoneskala"
+
+#: ../src/OptionsPage.vala:167
+msgid "Processed Color"
+msgstr ""
+
+#: ../src/OptionsPage.vala:170
+msgid "Processed Greyscale"
+msgstr "Processeret gråtoneskala"
+
+#: ../src/OptionsPage.vala:176
+msgid "Color mode:"
+msgstr "Farvetilstand:"
+
+#: ../src/OptionsPage.vala:246
+msgid "Output Tray:"
+msgstr "Udbakke:"
+
+#: ../src/OptionsPage.vala:262
+msgid "Draft"
+msgstr "Udkast"
+
+#: ../src/OptionsPage.vala:265
+msgid "Normal"
+msgstr "Normal"
+
+#: ../src/OptionsPage.vala:268
+msgid "High"
+msgstr "Høj"
+
+#: ../src/OptionsPage.vala:274
+msgid "Quality:"
+msgstr "Kvalitet:"
+
+#: ../src/OptionsPage.vala:290
+msgid "Alternate Tray"
+msgstr "Alternativ bakke"
+
+#: ../src/OptionsPage.vala:293
+msgid "Alternate Roll"
+msgstr "Alternativ rulle"
+
+#: ../src/OptionsPage.vala:299
+msgid "Bottom"
+msgstr "Bund"
+
+#: ../src/OptionsPage.vala:302
+msgid "By-pass Tray"
+msgstr "Bypass-bakke"
+
+#: ../src/OptionsPage.vala:305
+msgid "Center"
+msgstr "Center"
+
+#: ../src/OptionsPage.vala:308
+msgid "Continuous Autofeed"
+msgstr "Kontinuerlig autofødning"
+
+#: ../src/OptionsPage.vala:311
+msgid "Disk"
+msgstr "Disk"
+
+#: ../src/OptionsPage.vala:314
+msgid "Envelope"
+msgstr "Kuvert"
+
+#: ../src/OptionsPage.vala:317
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: ../src/OptionsPage.vala:320
+msgid "Large Capacity"
+msgstr "Stor kapacitet"
+
+#: ../src/OptionsPage.vala:323
+msgid "Left"
+msgstr "Venstre"
+
+#: ../src/OptionsPage.vala:326
+msgid "Main Tray"
+msgstr "Hovedbakke"
+
+#: ../src/OptionsPage.vala:329
+msgid "Main Roll"
+msgstr "Hovedrulle"
+
+#: ../src/OptionsPage.vala:332
+msgid "Manual"
+msgstr "Manuel"
+
+#: ../src/OptionsPage.vala:335
+msgid "Middle"
+msgstr "Midt"
+
+#: ../src/OptionsPage.vala:338
+msgid "Photo"
+msgstr "Billede"
+
+#: ../src/OptionsPage.vala:342
+msgid "Rear"
+msgstr "Bag"
+
+#: ../src/OptionsPage.vala:345
+msgid "Right"
+msgstr "Højre"
+
+#: ../src/OptionsPage.vala:348
+msgid "Side"
+msgstr "Side"
+
+#: ../src/OptionsPage.vala:351
+msgid "Top"
+msgstr "Top"
+
+#: ../src/OptionsPage.vala:356
+msgid "Roll %d"
+msgstr "Rulle %d"
+
+#: ../src/OptionsPage.vala:359
+msgid "Tray %d"
+msgstr "Bakke %d"
+
+#: ../src/OptionsPage.vala:372
+msgid "Paper Source:"
+msgstr "Papirkilde:"
+
+#: ../src/JobsView.vala:94 ../src/JobsView.vala:150
+msgid "Show completed jobs"
+msgstr "Vis fuldførte opgaver"
+
+#: ../src/JobsView.vala:100
+msgid "No jobs"
+msgstr "Ingen opgaver"
+
+#: ../src/JobsView.vala:100
+msgid "There are no jobs on the queue"
+msgstr "Der er ingen opgaver i kø"
+
+#: ../src/JobsView.vala:135
+msgid "Hide completed jobs"
+msgstr "Skjul fuldførte opgaver"
 
 #. / Translators: The printer is low on toner
-#: ../src/PrinterPage.vala:45
+#: ../src/Objects/Printer.vala:58
 msgid "Low on toner"
-msgstr ""
+msgstr "Lavt tonerniveau"
 
 #. / Translators: The printer has no toner left
-#: ../src/PrinterPage.vala:47
+#: ../src/Objects/Printer.vala:60
 msgid "Out of toner"
-msgstr ""
+msgstr "Løbet tør for toner"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/PrinterPage.vala:49
+#: ../src/Objects/Printer.vala:62
 msgid "Low on developer"
-msgstr ""
+msgstr "Lav beholdning af fremkaldervæske"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/PrinterPage.vala:51
+#: ../src/Objects/Printer.vala:64
 msgid "Out of developer"
-msgstr ""
+msgstr "Løbet tør for fremkaldervæske"
 
 #. / Translators: "marker" is one color bin of the printer
-#: ../src/PrinterPage.vala:53
+#: ../src/Objects/Printer.vala:66
 msgid "Low on a marker supply"
-msgstr ""
+msgstr "Lav beholdning af markerfarve"
 
 #. / Translators: "marker" is one color bin of the printer
-#: ../src/PrinterPage.vala:55
+#: ../src/Objects/Printer.vala:68
 msgid "Out of a marker supply"
-msgstr ""
+msgstr "Løbet tør for markerfarve"
 
 #. / Translators: One or more covers on the printer are open
-#: ../src/PrinterPage.vala:57
+#: ../src/Objects/Printer.vala:70
 msgid "Open cover"
-msgstr ""
+msgstr "Kabinet åbent"
 
 #. / Translators: One or more doors on the printer are open
-#: ../src/PrinterPage.vala:59
+#: ../src/Objects/Printer.vala:72
 msgid "Open door"
-msgstr ""
+msgstr "Låge åben"
 
 #. / Translators: At least one input tray is low on media
-#: ../src/PrinterPage.vala:61
+#: ../src/Objects/Printer.vala:74
 msgid "Low on paper"
-msgstr ""
+msgstr "Lavt papirniveau"
 
 #. / Translators: At least one input tray is empty
-#: ../src/PrinterPage.vala:63
+#: ../src/Objects/Printer.vala:76
 msgid "Out of paper"
-msgstr ""
+msgstr "Løbet tør for papir"
 
 #. / Translators: The printer is offline
-#: ../src/PrinterPage.vala:65
+#: ../src/Objects/Printer.vala:78
 msgctxt "printer state"
 msgid "Offline"
-msgstr ""
+msgstr "Ikke tilsluttet"
 
 #. / Translators: Someone has stopped the Printer
-#: ../src/PrinterPage.vala:67
+#: ../src/Objects/Printer.vala:80
 msgctxt "printer state"
 msgid "Stopped"
-msgstr ""
+msgstr "Stoppet"
 
 #. / Translators: The printer marker supply waste receptacle is almost full
-#: ../src/PrinterPage.vala:69
+#: ../src/Objects/Printer.vala:82
 msgid "Waste receptacle almost full"
-msgstr ""
+msgstr "Affaldsbeholderen er næsten fuld"
 
 #. / Translators: The printer marker supply waste receptacle is full
-#: ../src/PrinterPage.vala:71
+#: ../src/Objects/Printer.vala:84
 msgid "Waste receptacle full"
-msgstr ""
+msgstr "Affaldsbeholderen er fuld"
 
 #. / Translators: Optical photo conductors are used in laser printers
-#: ../src/PrinterPage.vala:73
+#: ../src/Objects/Printer.vala:86
 msgid "The optical photo conductor is near end of life"
-msgstr ""
+msgstr "Lyslederen er snart slidt op"
 
 #. / Translators: Optical photo conductors are used in laser printers
-#: ../src/PrinterPage.vala:75
+#: ../src/Objects/Printer.vala:88
 msgid "The optical photo conductor is no longer functioning"
+msgstr "Lyslederen fungerer ikke længere"
+
+#: ../src/Objects/Printer.vala:263
+msgid "Ready"
+msgstr "Klar"
+
+#: ../src/Objects/Job.vala:43
+msgid "Job Pending"
+msgstr "Opgave venter"
+
+#: ../src/Objects/Job.vala:45
+msgid "On Held"
 msgstr ""
 
-#: ../src/Plug.vala:33
-msgid "Printers"
-msgstr ""
+#: ../src/Objects/Job.vala:47
+msgid "Processing…"
+msgstr "Behandler..."
+
+#: ../src/Objects/Job.vala:49
+msgid "Job Stopped"
+msgstr "Opgave stoppet"
+
+#: ../src/Objects/Job.vala:51
+msgid "Job Canceled"
+msgstr "Opgave annulleret"
+
+#: ../src/Objects/Job.vala:53
+msgid "Job Aborded"
+msgstr "Opgave afbrudt"
+
+#: ../src/Objects/Job.vala:56
+msgid "Job Completed"
+msgstr "Opgave fuldført"
+
+#: ../src/PrinterPage.vala:37
+msgid "General"
+msgstr "Generelt"
+
+#: ../src/PrinterPage.vala:38
+msgid "Options"
+msgstr "Indstillinger"
+
+#: ../src/PrinterPage.vala:102
+msgid "Location of the printer"
+msgstr "Printerens placering"
+
+#: ../src/PrinterPage.vala:131
+msgid "Use as Default Printer"
+msgstr "Brug som standardprinter"
+
+#: ../src/PrinterPage.vala:142
+msgid "Print Test Page"
+msgstr "Udskriv testside"
 
 #: ../src/Plug.vala:34
+msgid "Printers"
+msgstr "Printere"
+
+#: ../src/Plug.vala:35
 msgid "Change printers settings"
-msgstr ""
+msgstr "Skift printerens indstillinger"
