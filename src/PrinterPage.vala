@@ -84,7 +84,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         attach (editable_title, 1, 0, 1, 1);
         attach (right_grid, 2, 0, 1, 1);
 
-        var location_label = new Gtk.Label ("Location:");
+        var location_label = new Gtk.Label (_("Location:"));
         ((Gtk.Misc) location_label).xalign = 1;
         location_label.hexpand = true;
 
@@ -94,7 +94,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         location_entry.halign = Gtk.Align.START;
         location_entry.placeholder_text = _("Location of the printer");
 
-        var ip_label = new Gtk.Label ("IP Address:");
+        var ip_label = new Gtk.Label (_("IP Address:"));
         ((Gtk.Misc) ip_label).xalign = 1;
 
         var ip_label_ = new Gtk.Label ("localhost");
