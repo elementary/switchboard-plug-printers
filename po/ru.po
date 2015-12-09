@@ -2,326 +2,469 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-06 15:15+0200\n"
-"PO-Revision-Date: 2015-10-21 16:31+0000\n"
-"Last-Translator: Maxim Taranov <png2378@protonmail.ch>\n"
+"POT-Creation-Date: 2015-12-08 14:35-0200\n"
+"PO-Revision-Date: 2015-12-08 22:14+0000\n"
+"Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-05 05:49+0000\n"
+"X-Launchpad-Export-Date: 2015-12-09 05:55+0000\n"
 "X-Generator: Launchpad (build 17862)\n"
 
-#: ../src/OptionsPage.vala:63
-msgid "Pages per side:"
-msgstr "Страниц на листе:"
+#: ../src/PrinterList.vala:48
+msgid "Add Printer…"
+msgstr "Добавить принтер..."
 
-#: ../src/OptionsPage.vala:101
-msgid "Two-sided:"
-msgstr "Двусторонние:"
+#: ../src/PrinterList.vala:50
+msgid "Remove Printer"
+msgstr "Удалить принтер"
 
-#: ../src/OptionsPage.vala:132
-msgid "Orientation:"
-msgstr "Ориентация:"
+#: ../src/PrinterList.vala:77
+msgid ""
+"By removing '%s' you'll lose all print history\n"
+"and configuration associated with it."
+msgstr ""
+"При удалении '%s' вы потеряете всю его \n"
+"историю печати и конфигурацию."
 
-#: ../src/OptionsPage.vala:152 ../src/OptionsPage.vala:296
-msgid "Automatic"
-msgstr "Автоматически"
+#: ../src/PrinterList.vala:82
+msgid "Remove"
+msgstr "Удалить"
 
-#: ../src/OptionsPage.vala:155
-msgid "One Color"
-msgstr "Один цвет"
+#: ../src/Plug.vala:33
+msgid "Printers"
+msgstr "Принтеры"
 
-#: ../src/OptionsPage.vala:158
-msgid "Color"
-msgstr "Цвет"
+#: ../src/Plug.vala:34
+msgid "Change printers settings"
+msgstr "Изменение настроек принтеров"
 
-#: ../src/OptionsPage.vala:161
-msgid "One Color + Black"
-msgstr "Один цвет + черный"
+#. / Tranlators: This is a protocol name, please keep the (https).
+#: ../src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Протокол печати через Интернет (https)"
 
-#: ../src/OptionsPage.vala:164
-msgid "Greyscale"
-msgstr "Оттенки серого"
+#. / Tranlators: This is a protocol name, please keep the (http).
+#: ../src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Протокол печати через Интернет (http)"
 
-#: ../src/OptionsPage.vala:167
-msgid "Processed Color"
-msgstr "Обработанный цвет"
+#. / Tranlators: This is a protocol name, please keep the (ipp).
+#: ../src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Протокол печати через Интернет (ipp)"
 
-#: ../src/OptionsPage.vala:170
-msgid "Processed Greyscale"
-msgstr "Обработанный оттенок серого"
+#. / Tranlators: This is a protocol name, please keep the (ipps).
+#: ../src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Протокол печати через Интернет (ipps)"
 
-#: ../src/OptionsPage.vala:176
-msgid "Color mode:"
-msgstr "Цветовой режим:"
+#. / Tranlators: This is a protocol name, please keep the (ipp14).
+#: ../src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Протокол печати через Интернет (ipp14)"
 
-#: ../src/OptionsPage.vala:246
-msgid "Output Tray:"
-msgstr "Выходной лоток:"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR-сервер или принтер"
 
-#: ../src/OptionsPage.vala:262
-msgid "Draft"
-msgstr "Черновой"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
 
-#: ../src/OptionsPage.vala:265
-msgid "Normal"
-msgstr "Обычный"
+#: ../src/AddPopover.vala:79
+msgid "Impossible to list all available printers"
+msgstr "Невозможно перечислить все доступные принтеры"
 
-#: ../src/OptionsPage.vala:268
-msgid "High"
-msgstr "Высокий"
+#: ../src/AddPopover.vala:202
+msgid "Refresh the printer list"
+msgstr "Обновить список принтеров"
 
-#: ../src/OptionsPage.vala:274
-msgid "Quality:"
-msgstr "Качество:"
+#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
+msgid "Next"
+msgstr "Далее"
 
-#: ../src/OptionsPage.vala:290
-msgid "Alternate Tray"
-msgstr "Альтернативный лоток:"
+#: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
+msgid "General"
+msgstr "Общие"
 
-#: ../src/OptionsPage.vala:293
-msgid "Alternate Roll"
-msgstr "Альтернативный рулон:"
+#: ../src/AddPopover.vala:257
+msgid "Connection:"
+msgstr "Подключение:"
 
-#: ../src/OptionsPage.vala:299
-msgid "Bottom"
-msgstr "Нижний край"
+#: ../src/AddPopover.vala:264
+msgid "Description:"
+msgstr "Описание:"
 
-#: ../src/OptionsPage.vala:302
-msgid "By-pass Tray"
-msgstr "Лоток ручной подачи"
+#: ../src/AddPopover.vala:270
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
 
-#: ../src/OptionsPage.vala:305
-msgid "Center"
-msgstr "По центру"
+#: ../src/AddPopover.vala:274
+msgid "Location:"
+msgstr "Расположение:"
 
-#: ../src/OptionsPage.vala:308
-msgid "Continuous Autofeed"
-msgstr "Непрерывная автоподача"
+#: ../src/AddPopover.vala:279
+msgid "Lab 1 or John's desk"
+msgstr "Лаборатория 1"
 
-#: ../src/OptionsPage.vala:311
-msgid "Disk"
-msgstr "Диск"
+#: ../src/AddPopover.vala:281
+msgid "Driver"
+msgstr "Драйвер"
 
-#: ../src/OptionsPage.vala:314
-msgid "Envelope"
-msgstr "Контейнер"
+#: ../src/AddPopover.vala:351
+msgid "Previous"
+msgstr "Назад"
 
-#: ../src/OptionsPage.vala:317
-msgid "Hagaki"
-msgstr "Hagaki"
+#: ../src/AddPopover.vala:579
+msgid "(recommended)"
+msgstr "(рекомендуемый)"
 
-#: ../src/OptionsPage.vala:320
-msgid "Large Capacity"
-msgstr "Большая емкость"
+#: ../src/AddPopover.vala:641
+msgid "Local Printers"
+msgstr "Локальные принтеры"
 
-#: ../src/OptionsPage.vala:323
-msgid "Left"
-msgstr "По левому краю"
+#: ../src/AddPopover.vala:647
+msgid "Network Printers"
+msgstr "Сетевые принтеры"
 
-#: ../src/OptionsPage.vala:326
-msgid "Main Tray"
-msgstr "Основной лоток"
+#: ../src/AddPopover.vala:653
+msgid "Available Network Printers"
+msgstr "Доступные сетевые принтеры"
 
-#: ../src/OptionsPage.vala:329
-msgid "Main Roll"
-msgstr "Основной рулон"
+#: ../src/PrinterPage.vala:37
+msgid "Options"
+msgstr "Опции"
 
-#: ../src/OptionsPage.vala:332
-msgid "Manual"
-msgstr "Вручную"
+#: ../src/PrinterPage.vala:95
+msgid "Location of the printer"
+msgstr "Расположение принтера"
 
-#: ../src/OptionsPage.vala:335
-msgid "Middle"
-msgstr "В центре"
+#: ../src/PrinterPage.vala:125
+msgid "Use as Default Printer"
+msgstr "Использовать как принтер по умолчанию"
 
-#: ../src/OptionsPage.vala:338
-msgid "Photo"
-msgstr "Фото"
+#: ../src/PrinterPage.vala:136
+msgid "Print Test Page"
+msgstr "Печать пробной страницы"
 
-#: ../src/OptionsPage.vala:342
-msgid "Rear"
-msgstr "Задний"
-
-#: ../src/OptionsPage.vala:345
-msgid "Right"
-msgstr "По правому краю"
-
-#: ../src/OptionsPage.vala:348
-msgid "Side"
-msgstr "Сторона"
-
-#: ../src/OptionsPage.vala:351
-msgid "Top"
-msgstr "Верхний край"
-
-#: ../src/OptionsPage.vala:356
-msgid "Roll %d"
-msgstr "Рулон %d"
-
-#: ../src/OptionsPage.vala:359
-msgid "Tray %d"
-msgstr "Лоток %d"
-
-#: ../src/OptionsPage.vala:372
-msgid "Paper Source:"
-msgstr "Источник бумаги:"
-
-#: ../src/JobsView.vala:94 ../src/JobsView.vala:150
+#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
 msgid "Show completed jobs"
 msgstr "Показать завершенные задания"
 
-#: ../src/JobsView.vala:100
+#: ../src/JobsView.vala:89
 msgid "No jobs"
 msgstr "Нет заданий"
 
-#: ../src/JobsView.vala:100
+#: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
 msgstr "Нет заданий в очереди"
 
-#: ../src/JobsView.vala:135
+#: ../src/JobsView.vala:203
 msgid "Hide completed jobs"
 msgstr "Скрыть завершенные задания"
 
+#: ../src/InkLevel.vala:90
+msgid "Black (PGBK)"
+msgstr "Чёрный (PGBK)"
+
+#: ../src/InkLevel.vala:93
+msgid "Black (BK)"
+msgstr "Чёрный (BK)"
+
+#: ../src/InkLevel.vala:96
+msgid "Black"
+msgstr "Чёрный"
+
+#: ../src/InkLevel.vala:99
+msgid "Yellow"
+msgstr "Жёлтый"
+
+#: ../src/InkLevel.vala:102
+msgid "Cyan"
+msgstr "Бирюзовый"
+
+#: ../src/InkLevel.vala:105
+msgid "Magenta"
+msgstr "Фиолетовый"
+
+#: ../src/OptionsPage.vala:68
+msgid "Pages per side:"
+msgstr "Страниц на листе:"
+
+#: ../src/OptionsPage.vala:140
+msgid "Two-sided:"
+msgstr "Двусторонние:"
+
+#: ../src/OptionsPage.vala:174
+msgid "Orientation:"
+msgstr "Ориентация:"
+
+#: ../src/OptionsPage.vala:195
+msgid "Media Size:"
+msgstr "Размер бумаги:"
+
+#: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
+msgid "Automatic"
+msgstr "Автоматически"
+
+#: ../src/OptionsPage.vala:214
+msgid "One Color"
+msgstr "Один цвет"
+
+#: ../src/OptionsPage.vala:217
+msgid "Color"
+msgstr "Цвет"
+
+#: ../src/OptionsPage.vala:220
+msgid "One Color + Black"
+msgstr "Один цвет + черный"
+
+#: ../src/OptionsPage.vala:223
+msgid "Greyscale"
+msgstr "Оттенки серого"
+
+#: ../src/OptionsPage.vala:226
+msgid "Processed Color"
+msgstr "Обработанный цвет"
+
+#: ../src/OptionsPage.vala:229
+msgid "Processed Greyscale"
+msgstr "Обработанный оттенок серого"
+
+#: ../src/OptionsPage.vala:238
+msgid "Color mode:"
+msgstr "Цветовой режим:"
+
+#: ../src/OptionsPage.vala:311
+msgid "Output Tray:"
+msgstr "Выходной лоток:"
+
+#: ../src/OptionsPage.vala:327
+msgid "Draft"
+msgstr "Черновой"
+
+#: ../src/OptionsPage.vala:330
+msgid "Normal"
+msgstr "Обычный"
+
+#: ../src/OptionsPage.vala:333
+msgid "High"
+msgstr "Высокий"
+
+#: ../src/OptionsPage.vala:339
+msgid "Quality:"
+msgstr "Качество:"
+
+#: ../src/OptionsPage.vala:355
+msgid "Paper Allocation"
+msgstr "Положение бумаги"
+
+#: ../src/OptionsPage.vala:358
+msgid "Alternate Tray"
+msgstr "Альтернативный лоток:"
+
+#: ../src/OptionsPage.vala:361
+msgid "Alternate Roll"
+msgstr "Альтернативный рулон:"
+
+#: ../src/OptionsPage.vala:367
+msgid "Bottom"
+msgstr "Нижний край"
+
+#: ../src/OptionsPage.vala:370
+msgid "By-pass Tray"
+msgstr "Лоток ручной подачи"
+
+#: ../src/OptionsPage.vala:373
+msgid "Center"
+msgstr "По центру"
+
+#: ../src/OptionsPage.vala:376
+msgid "Continuous Autofeed"
+msgstr "Непрерывная автоподача"
+
+#: ../src/OptionsPage.vala:380
+msgid "Disk"
+msgstr "Диск"
+
+#: ../src/OptionsPage.vala:383
+msgid "Envelope"
+msgstr "Контейнер"
+
+#: ../src/OptionsPage.vala:386
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: ../src/OptionsPage.vala:389
+msgid "Large Capacity"
+msgstr "Большая емкость"
+
+#: ../src/OptionsPage.vala:392
+msgid "Left"
+msgstr "По левому краю"
+
+#: ../src/OptionsPage.vala:395
+msgid "Main Tray"
+msgstr "Основной лоток"
+
+#: ../src/OptionsPage.vala:398
+msgid "Main Roll"
+msgstr "Основной рулон"
+
+#: ../src/OptionsPage.vala:401
+msgid "Manual"
+msgstr "Вручную"
+
+#: ../src/OptionsPage.vala:404
+msgid "Middle"
+msgstr "В центре"
+
+#: ../src/OptionsPage.vala:407
+msgid "Photo"
+msgstr "Фото"
+
+#: ../src/OptionsPage.vala:411
+msgid "Rear"
+msgstr "Задний"
+
+#: ../src/OptionsPage.vala:414
+msgid "Right"
+msgstr "По правому краю"
+
+#: ../src/OptionsPage.vala:417
+msgid "Side"
+msgstr "Сторона"
+
+#: ../src/OptionsPage.vala:420
+msgid "Top"
+msgstr "Верхний край"
+
+#: ../src/OptionsPage.vala:425
+msgid "Roll %d"
+msgstr "Рулон %d"
+
+#: ../src/OptionsPage.vala:428
+msgid "Tray %d"
+msgstr "Лоток %d"
+
+#: ../src/OptionsPage.vala:441
+msgid "Paper Source:"
+msgstr "Источник бумаги:"
+
+#: ../src/Objects/Job.vala:95
+msgid "Job Pending"
+msgstr "Задание ожидает"
+
+#: ../src/Objects/Job.vala:97
+msgid "On Held"
+msgstr "В режиме ожидания"
+
+#: ../src/Objects/Job.vala:99
+msgid "Processing…"
+msgstr "В процессе..."
+
+#: ../src/Objects/Job.vala:101
+msgid "Job Stopped"
+msgstr "Задание остановлено"
+
+#: ../src/Objects/Job.vala:103
+msgid "Job Canceled"
+msgstr "Задание отменено"
+
+#: ../src/Objects/Job.vala:105
+msgid "Job Aborded"
+msgstr "Задание прервано"
+
+#: ../src/Objects/Job.vala:108
+msgid "Job Completed"
+msgstr "Задание завершено"
+
 #. / Translators: The printer is low on toner
-#: ../src/Objects/Printer.vala:58
+#: ../src/Objects/Printer.vala:45
 msgid "Low on toner"
 msgstr "Низкий уровень тонера"
 
 #. / Translators: The printer has no toner left
-#: ../src/Objects/Printer.vala:60
+#: ../src/Objects/Printer.vala:47
 msgid "Out of toner"
 msgstr "Тонер закончился"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:62
+#: ../src/Objects/Printer.vala:49
 msgid "Low on developer"
 msgstr "Мало проявителя"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:64
+#: ../src/Objects/Printer.vala:51
 msgid "Out of developer"
 msgstr "Проявитель закончился"
 
 #. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:66
+#: ../src/Objects/Printer.vala:53
 msgid "Low on a marker supply"
 msgstr "Маркер скоро закончится"
 
 #. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:68
+#: ../src/Objects/Printer.vala:55
 msgid "Out of a marker supply"
 msgstr "Ресурсы маркера закончились"
 
 #. / Translators: One or more covers on the printer are open
-#: ../src/Objects/Printer.vala:70
+#: ../src/Objects/Printer.vala:57
 msgid "Open cover"
 msgstr "Открыта крышка"
 
 #. / Translators: One or more doors on the printer are open
-#: ../src/Objects/Printer.vala:72
+#: ../src/Objects/Printer.vala:59
 msgid "Open door"
 msgstr "Открыта дверца"
 
 #. / Translators: At least one input tray is low on media
-#: ../src/Objects/Printer.vala:74
+#: ../src/Objects/Printer.vala:61
 msgid "Low on paper"
 msgstr "Мало бумаги"
 
 #. / Translators: At least one input tray is empty
-#: ../src/Objects/Printer.vala:76
+#: ../src/Objects/Printer.vala:63
 msgid "Out of paper"
 msgstr "Нет бумаги"
 
 #. / Translators: The printer is offline
-#: ../src/Objects/Printer.vala:78
+#: ../src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
 msgstr "Автономный режим"
 
 #. / Translators: Someone has stopped the Printer
-#: ../src/Objects/Printer.vala:80
+#: ../src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
 msgstr "Остановлен"
 
 #. / Translators: The printer marker supply waste receptacle is almost full
-#: ../src/Objects/Printer.vala:82
+#: ../src/Objects/Printer.vala:69
 msgid "Waste receptacle almost full"
 msgstr "Резервуар почти полон"
 
 #. / Translators: The printer marker supply waste receptacle is full
-#: ../src/Objects/Printer.vala:84
+#: ../src/Objects/Printer.vala:71
 msgid "Waste receptacle full"
 msgstr "Резервуар заполнен"
 
 #. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:86
+#: ../src/Objects/Printer.vala:73
 msgid "The optical photo conductor is near end of life"
 msgstr "Фотобарабан скоро выйдет из строя"
 
 #. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:88
+#: ../src/Objects/Printer.vala:75
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Фотобарабан не работает"
 
-#: ../src/Objects/Printer.vala:263
+#: ../src/Objects/Printer.vala:270
 msgid "Ready"
 msgstr "Готов к работе"
-
-#: ../src/Objects/Job.vala:43
-msgid "Job Pending"
-msgstr "Задание ожидает"
-
-#: ../src/Objects/Job.vala:45
-msgid "On Held"
-msgstr "В режиме ожидания"
-
-#: ../src/Objects/Job.vala:47
-msgid "Processing…"
-msgstr "В процессе..."
-
-#: ../src/Objects/Job.vala:49
-msgid "Job Stopped"
-msgstr "Задание остановлено"
-
-#: ../src/Objects/Job.vala:51
-msgid "Job Canceled"
-msgstr "Задание отменено"
-
-#: ../src/Objects/Job.vala:53
-msgid "Job Aborded"
-msgstr "Задание прервано"
-
-#: ../src/Objects/Job.vala:56
-msgid "Job Completed"
-msgstr "Задание завершено"
-
-#: ../src/PrinterPage.vala:37
-msgid "General"
-msgstr "Общие"
-
-#: ../src/PrinterPage.vala:38
-msgid "Options"
-msgstr "Опции"
-
-#: ../src/PrinterPage.vala:102
-msgid "Location of the printer"
-msgstr "Расположение принтера"
-
-#: ../src/PrinterPage.vala:131
-msgid "Use as Default Printer"
-msgstr "Использовать как принтер по умолчанию"
-
-#: ../src/PrinterPage.vala:142
-msgid "Print Test Page"
-msgstr "Печать пробной страницы"
-
-#: ../src/Plug.vala:34
-msgid "Printers"
-msgstr "Принтеры"
-
-#: ../src/Plug.vala:35
-msgid "Change printers settings"
-msgstr "Изменение настроек принтеров"

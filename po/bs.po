@@ -2,326 +2,467 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-06 15:15+0200\n"
+"POT-Creation-Date: 2015-12-08 14:35-0200\n"
 "PO-Revision-Date: 2015-09-03 23:37+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-05 05:48+0000\n"
+"X-Launchpad-Export-Date: 2015-12-09 05:54+0000\n"
 "X-Generator: Launchpad (build 17862)\n"
 
-#: ../src/OptionsPage.vala:63
-msgid "Pages per side:"
+#: ../src/PrinterList.vala:48
+msgid "Add Printer…"
 msgstr ""
 
-#: ../src/OptionsPage.vala:101
-msgid "Two-sided:"
+#: ../src/PrinterList.vala:50
+msgid "Remove Printer"
 msgstr ""
 
-#: ../src/OptionsPage.vala:132
-msgid "Orientation:"
+#: ../src/PrinterList.vala:77
+msgid ""
+"By removing '%s' you'll lose all print history\n"
+"and configuration associated with it."
 msgstr ""
 
-#: ../src/OptionsPage.vala:152 ../src/OptionsPage.vala:296
-msgid "Automatic"
+#: ../src/PrinterList.vala:82
+msgid "Remove"
 msgstr ""
 
-#: ../src/OptionsPage.vala:155
-msgid "One Color"
+#: ../src/Plug.vala:33
+msgid "Printers"
 msgstr ""
 
-#: ../src/OptionsPage.vala:158
-msgid "Color"
+#: ../src/Plug.vala:34
+msgid "Change printers settings"
 msgstr ""
 
-#: ../src/OptionsPage.vala:161
-msgid "One Color + Black"
+#. / Tranlators: This is a protocol name, please keep the (https).
+#: ../src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
 msgstr ""
 
-#: ../src/OptionsPage.vala:164
-msgid "Greyscale"
+#. / Tranlators: This is a protocol name, please keep the (http).
+#: ../src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
 msgstr ""
 
-#: ../src/OptionsPage.vala:167
-msgid "Processed Color"
+#. / Tranlators: This is a protocol name, please keep the (ipp).
+#: ../src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
 msgstr ""
 
-#: ../src/OptionsPage.vala:170
-msgid "Processed Greyscale"
+#. / Tranlators: This is a protocol name, please keep the (ipps).
+#: ../src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
 msgstr ""
 
-#: ../src/OptionsPage.vala:176
-msgid "Color mode:"
+#. / Tranlators: This is a protocol name, please keep the (ipp14).
+#: ../src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
 msgstr ""
 
-#: ../src/OptionsPage.vala:246
-msgid "Output Tray:"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
 msgstr ""
 
-#: ../src/OptionsPage.vala:262
-msgid "Draft"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
 msgstr ""
 
-#: ../src/OptionsPage.vala:265
-msgid "Normal"
+#: ../src/AddPopover.vala:79
+msgid "Impossible to list all available printers"
 msgstr ""
 
-#: ../src/OptionsPage.vala:268
-msgid "High"
+#: ../src/AddPopover.vala:202
+msgid "Refresh the printer list"
 msgstr ""
 
-#: ../src/OptionsPage.vala:274
-msgid "Quality:"
+#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
+msgid "Next"
 msgstr ""
 
-#: ../src/OptionsPage.vala:290
-msgid "Alternate Tray"
+#: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
+msgid "General"
 msgstr ""
 
-#: ../src/OptionsPage.vala:293
-msgid "Alternate Roll"
+#: ../src/AddPopover.vala:257
+msgid "Connection:"
 msgstr ""
 
-#: ../src/OptionsPage.vala:299
-msgid "Bottom"
+#: ../src/AddPopover.vala:264
+msgid "Description:"
 msgstr ""
 
-#: ../src/OptionsPage.vala:302
-msgid "By-pass Tray"
+#: ../src/AddPopover.vala:270
+msgid "BrandPrinter X3000"
 msgstr ""
 
-#: ../src/OptionsPage.vala:305
-msgid "Center"
+#: ../src/AddPopover.vala:274
+msgid "Location:"
 msgstr ""
 
-#: ../src/OptionsPage.vala:308
-msgid "Continuous Autofeed"
+#: ../src/AddPopover.vala:279
+msgid "Lab 1 or John's desk"
 msgstr ""
 
-#: ../src/OptionsPage.vala:311
-msgid "Disk"
+#: ../src/AddPopover.vala:281
+msgid "Driver"
 msgstr ""
 
-#: ../src/OptionsPage.vala:314
-msgid "Envelope"
+#: ../src/AddPopover.vala:351
+msgid "Previous"
 msgstr ""
 
-#: ../src/OptionsPage.vala:317
-msgid "Hagaki"
+#: ../src/AddPopover.vala:579
+msgid "(recommended)"
 msgstr ""
 
-#: ../src/OptionsPage.vala:320
-msgid "Large Capacity"
+#: ../src/AddPopover.vala:641
+msgid "Local Printers"
 msgstr ""
 
-#: ../src/OptionsPage.vala:323
-msgid "Left"
+#: ../src/AddPopover.vala:647
+msgid "Network Printers"
 msgstr ""
 
-#: ../src/OptionsPage.vala:326
-msgid "Main Tray"
+#: ../src/AddPopover.vala:653
+msgid "Available Network Printers"
 msgstr ""
 
-#: ../src/OptionsPage.vala:329
-msgid "Main Roll"
+#: ../src/PrinterPage.vala:37
+msgid "Options"
 msgstr ""
 
-#: ../src/OptionsPage.vala:332
-msgid "Manual"
+#: ../src/PrinterPage.vala:95
+msgid "Location of the printer"
 msgstr ""
 
-#: ../src/OptionsPage.vala:335
-msgid "Middle"
+#: ../src/PrinterPage.vala:125
+msgid "Use as Default Printer"
 msgstr ""
 
-#: ../src/OptionsPage.vala:338
-msgid "Photo"
+#: ../src/PrinterPage.vala:136
+msgid "Print Test Page"
 msgstr ""
 
-#: ../src/OptionsPage.vala:342
-msgid "Rear"
-msgstr ""
-
-#: ../src/OptionsPage.vala:345
-msgid "Right"
-msgstr ""
-
-#: ../src/OptionsPage.vala:348
-msgid "Side"
-msgstr ""
-
-#: ../src/OptionsPage.vala:351
-msgid "Top"
-msgstr ""
-
-#: ../src/OptionsPage.vala:356
-msgid "Roll %d"
-msgstr ""
-
-#: ../src/OptionsPage.vala:359
-msgid "Tray %d"
-msgstr ""
-
-#: ../src/OptionsPage.vala:372
-msgid "Paper Source:"
-msgstr ""
-
-#: ../src/JobsView.vala:94 ../src/JobsView.vala:150
+#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
 msgid "Show completed jobs"
 msgstr ""
 
-#: ../src/JobsView.vala:100
+#: ../src/JobsView.vala:89
 msgid "No jobs"
 msgstr ""
 
-#: ../src/JobsView.vala:100
+#: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
 msgstr ""
 
-#: ../src/JobsView.vala:135
+#: ../src/JobsView.vala:203
 msgid "Hide completed jobs"
 msgstr ""
 
+#: ../src/InkLevel.vala:90
+msgid "Black (PGBK)"
+msgstr ""
+
+#: ../src/InkLevel.vala:93
+msgid "Black (BK)"
+msgstr ""
+
+#: ../src/InkLevel.vala:96
+msgid "Black"
+msgstr ""
+
+#: ../src/InkLevel.vala:99
+msgid "Yellow"
+msgstr ""
+
+#: ../src/InkLevel.vala:102
+msgid "Cyan"
+msgstr ""
+
+#: ../src/InkLevel.vala:105
+msgid "Magenta"
+msgstr ""
+
+#: ../src/OptionsPage.vala:68
+msgid "Pages per side:"
+msgstr ""
+
+#: ../src/OptionsPage.vala:140
+msgid "Two-sided:"
+msgstr ""
+
+#: ../src/OptionsPage.vala:174
+msgid "Orientation:"
+msgstr ""
+
+#: ../src/OptionsPage.vala:195
+msgid "Media Size:"
+msgstr ""
+
+#: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
+msgid "Automatic"
+msgstr ""
+
+#: ../src/OptionsPage.vala:214
+msgid "One Color"
+msgstr ""
+
+#: ../src/OptionsPage.vala:217
+msgid "Color"
+msgstr ""
+
+#: ../src/OptionsPage.vala:220
+msgid "One Color + Black"
+msgstr ""
+
+#: ../src/OptionsPage.vala:223
+msgid "Greyscale"
+msgstr ""
+
+#: ../src/OptionsPage.vala:226
+msgid "Processed Color"
+msgstr ""
+
+#: ../src/OptionsPage.vala:229
+msgid "Processed Greyscale"
+msgstr ""
+
+#: ../src/OptionsPage.vala:238
+msgid "Color mode:"
+msgstr ""
+
+#: ../src/OptionsPage.vala:311
+msgid "Output Tray:"
+msgstr ""
+
+#: ../src/OptionsPage.vala:327
+msgid "Draft"
+msgstr ""
+
+#: ../src/OptionsPage.vala:330
+msgid "Normal"
+msgstr ""
+
+#: ../src/OptionsPage.vala:333
+msgid "High"
+msgstr ""
+
+#: ../src/OptionsPage.vala:339
+msgid "Quality:"
+msgstr ""
+
+#: ../src/OptionsPage.vala:355
+msgid "Paper Allocation"
+msgstr ""
+
+#: ../src/OptionsPage.vala:358
+msgid "Alternate Tray"
+msgstr ""
+
+#: ../src/OptionsPage.vala:361
+msgid "Alternate Roll"
+msgstr ""
+
+#: ../src/OptionsPage.vala:367
+msgid "Bottom"
+msgstr ""
+
+#: ../src/OptionsPage.vala:370
+msgid "By-pass Tray"
+msgstr ""
+
+#: ../src/OptionsPage.vala:373
+msgid "Center"
+msgstr ""
+
+#: ../src/OptionsPage.vala:376
+msgid "Continuous Autofeed"
+msgstr ""
+
+#: ../src/OptionsPage.vala:380
+msgid "Disk"
+msgstr ""
+
+#: ../src/OptionsPage.vala:383
+msgid "Envelope"
+msgstr ""
+
+#: ../src/OptionsPage.vala:386
+msgid "Hagaki"
+msgstr ""
+
+#: ../src/OptionsPage.vala:389
+msgid "Large Capacity"
+msgstr ""
+
+#: ../src/OptionsPage.vala:392
+msgid "Left"
+msgstr ""
+
+#: ../src/OptionsPage.vala:395
+msgid "Main Tray"
+msgstr ""
+
+#: ../src/OptionsPage.vala:398
+msgid "Main Roll"
+msgstr ""
+
+#: ../src/OptionsPage.vala:401
+msgid "Manual"
+msgstr ""
+
+#: ../src/OptionsPage.vala:404
+msgid "Middle"
+msgstr ""
+
+#: ../src/OptionsPage.vala:407
+msgid "Photo"
+msgstr ""
+
+#: ../src/OptionsPage.vala:411
+msgid "Rear"
+msgstr ""
+
+#: ../src/OptionsPage.vala:414
+msgid "Right"
+msgstr ""
+
+#: ../src/OptionsPage.vala:417
+msgid "Side"
+msgstr ""
+
+#: ../src/OptionsPage.vala:420
+msgid "Top"
+msgstr ""
+
+#: ../src/OptionsPage.vala:425
+msgid "Roll %d"
+msgstr ""
+
+#: ../src/OptionsPage.vala:428
+msgid "Tray %d"
+msgstr ""
+
+#: ../src/OptionsPage.vala:441
+msgid "Paper Source:"
+msgstr ""
+
+#: ../src/Objects/Job.vala:95
+msgid "Job Pending"
+msgstr ""
+
+#: ../src/Objects/Job.vala:97
+msgid "On Held"
+msgstr ""
+
+#: ../src/Objects/Job.vala:99
+msgid "Processing…"
+msgstr ""
+
+#: ../src/Objects/Job.vala:101
+msgid "Job Stopped"
+msgstr ""
+
+#: ../src/Objects/Job.vala:103
+msgid "Job Canceled"
+msgstr ""
+
+#: ../src/Objects/Job.vala:105
+msgid "Job Aborded"
+msgstr ""
+
+#: ../src/Objects/Job.vala:108
+msgid "Job Completed"
+msgstr ""
+
 #. / Translators: The printer is low on toner
-#: ../src/Objects/Printer.vala:58
+#: ../src/Objects/Printer.vala:45
 msgid "Low on toner"
 msgstr ""
 
 #. / Translators: The printer has no toner left
-#: ../src/Objects/Printer.vala:60
+#: ../src/Objects/Printer.vala:47
 msgid "Out of toner"
 msgstr ""
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:62
+#: ../src/Objects/Printer.vala:49
 msgid "Low on developer"
 msgstr ""
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:64
+#: ../src/Objects/Printer.vala:51
 msgid "Out of developer"
 msgstr ""
 
 #. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:66
+#: ../src/Objects/Printer.vala:53
 msgid "Low on a marker supply"
 msgstr ""
 
 #. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:68
+#: ../src/Objects/Printer.vala:55
 msgid "Out of a marker supply"
 msgstr ""
 
 #. / Translators: One or more covers on the printer are open
-#: ../src/Objects/Printer.vala:70
+#: ../src/Objects/Printer.vala:57
 msgid "Open cover"
 msgstr ""
 
 #. / Translators: One or more doors on the printer are open
-#: ../src/Objects/Printer.vala:72
+#: ../src/Objects/Printer.vala:59
 msgid "Open door"
 msgstr ""
 
 #. / Translators: At least one input tray is low on media
-#: ../src/Objects/Printer.vala:74
+#: ../src/Objects/Printer.vala:61
 msgid "Low on paper"
 msgstr ""
 
 #. / Translators: At least one input tray is empty
-#: ../src/Objects/Printer.vala:76
+#: ../src/Objects/Printer.vala:63
 msgid "Out of paper"
 msgstr ""
 
 #. / Translators: The printer is offline
-#: ../src/Objects/Printer.vala:78
+#: ../src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
 msgstr ""
 
 #. / Translators: Someone has stopped the Printer
-#: ../src/Objects/Printer.vala:80
+#: ../src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
 msgstr ""
 
 #. / Translators: The printer marker supply waste receptacle is almost full
-#: ../src/Objects/Printer.vala:82
+#: ../src/Objects/Printer.vala:69
 msgid "Waste receptacle almost full"
 msgstr ""
 
 #. / Translators: The printer marker supply waste receptacle is full
-#: ../src/Objects/Printer.vala:84
+#: ../src/Objects/Printer.vala:71
 msgid "Waste receptacle full"
 msgstr ""
 
 #. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:86
+#: ../src/Objects/Printer.vala:73
 msgid "The optical photo conductor is near end of life"
 msgstr ""
 
 #. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:88
+#: ../src/Objects/Printer.vala:75
 msgid "The optical photo conductor is no longer functioning"
 msgstr ""
 
-#: ../src/Objects/Printer.vala:263
+#: ../src/Objects/Printer.vala:270
 msgid "Ready"
-msgstr ""
-
-#: ../src/Objects/Job.vala:43
-msgid "Job Pending"
-msgstr ""
-
-#: ../src/Objects/Job.vala:45
-msgid "On Held"
-msgstr ""
-
-#: ../src/Objects/Job.vala:47
-msgid "Processing…"
-msgstr ""
-
-#: ../src/Objects/Job.vala:49
-msgid "Job Stopped"
-msgstr ""
-
-#: ../src/Objects/Job.vala:51
-msgid "Job Canceled"
-msgstr ""
-
-#: ../src/Objects/Job.vala:53
-msgid "Job Aborded"
-msgstr ""
-
-#: ../src/Objects/Job.vala:56
-msgid "Job Completed"
-msgstr ""
-
-#: ../src/PrinterPage.vala:37
-msgid "General"
-msgstr ""
-
-#: ../src/PrinterPage.vala:38
-msgid "Options"
-msgstr ""
-
-#: ../src/PrinterPage.vala:102
-msgid "Location of the printer"
-msgstr ""
-
-#: ../src/PrinterPage.vala:131
-msgid "Use as Default Printer"
-msgstr ""
-
-#: ../src/PrinterPage.vala:142
-msgid "Print Test Page"
-msgstr ""
-
-#: ../src/Plug.vala:34
-msgid "Printers"
-msgstr ""
-
-#: ../src/Plug.vala:35
-msgid "Change printers settings"
 msgstr ""
