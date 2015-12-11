@@ -2,144 +2,35 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-08 14:35-0200\n"
-"PO-Revision-Date: 2015-11-01 20:23+0000\n"
-"Last-Translator: Jarppi <Unknown>\n"
+"POT-Creation-Date: 2015-12-09 14:50-0200\n"
+"PO-Revision-Date: 2015-12-10 08:14+0000\n"
+"Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-09 05:54+0000\n"
-"X-Generator: Launchpad (build 17862)\n"
+"X-Launchpad-Export-Date: 2015-12-11 06:34+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
 
-#: ../src/PrinterList.vala:48
-msgid "Add Printer…"
-msgstr ""
-
-#: ../src/PrinterList.vala:50
-msgid "Remove Printer"
-msgstr ""
-
-#: ../src/PrinterList.vala:77
-msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
-msgstr ""
-
-#: ../src/PrinterList.vala:82
-msgid "Remove"
-msgstr ""
-
-#: ../src/Plug.vala:33
-msgid "Printers"
-msgstr "Tulostimet"
-
-#: ../src/Plug.vala:34
-msgid "Change printers settings"
-msgstr "Muuta tulostinten asetuksia"
-
-#. / Tranlators: This is a protocol name, please keep the (https).
-#: ../src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (http).
-#: ../src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipp).
-#: ../src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipps).
-#: ../src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: ../src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr ""
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr ""
-
-#: ../src/AddPopover.vala:79
-msgid "Impossible to list all available printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:202
-msgid "Refresh the printer list"
-msgstr ""
-
-#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
-msgid "Next"
-msgstr ""
-
-#: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
+#: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
 msgid "General"
 msgstr "Yleiset"
-
-#: ../src/AddPopover.vala:257
-msgid "Connection:"
-msgstr ""
-
-#: ../src/AddPopover.vala:264
-msgid "Description:"
-msgstr ""
-
-#: ../src/AddPopover.vala:270
-msgid "BrandPrinter X3000"
-msgstr ""
-
-#: ../src/AddPopover.vala:274
-msgid "Location:"
-msgstr ""
-
-#: ../src/AddPopover.vala:279
-msgid "Lab 1 or John's desk"
-msgstr ""
-
-#: ../src/AddPopover.vala:281
-msgid "Driver"
-msgstr ""
-
-#: ../src/AddPopover.vala:351
-msgid "Previous"
-msgstr ""
-
-#: ../src/AddPopover.vala:579
-msgid "(recommended)"
-msgstr ""
-
-#: ../src/AddPopover.vala:641
-msgid "Local Printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:647
-msgid "Network Printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:653
-msgid "Available Network Printers"
-msgstr ""
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
 msgstr "Valinnat"
 
+#: ../src/PrinterPage.vala:87 ../src/AddPopover.vala:274
+msgid "Location:"
+msgstr "Sijainti:"
+
 #: ../src/PrinterPage.vala:95
 msgid "Location of the printer"
 msgstr "Tulostimen sijainti"
+
+#: ../src/PrinterPage.vala:97
+msgid "IP Address:"
+msgstr "IP-osoite:"
 
 #: ../src/PrinterPage.vala:125
 msgid "Use as Default Printer"
@@ -149,45 +40,33 @@ msgstr "Käytä oletustulostimena"
 msgid "Print Test Page"
 msgstr "Tulosta testisivu"
 
-#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
-msgid "Show completed jobs"
-msgstr "Näytä valmistuneet työt"
+#: ../src/Plug.vala:33
+msgid "Printers"
+msgstr "Tulostimet"
 
-#: ../src/JobsView.vala:89
-msgid "No jobs"
-msgstr "Ei töitä"
+#: ../src/Plug.vala:34
+msgid "Change printers settings"
+msgstr "Muuta tulostinten asetuksia"
 
-#: ../src/JobsView.vala:89
-msgid "There are no jobs on the queue"
-msgstr "Jonossa ei ole töitä"
+#: ../src/PrinterList.vala:48
+msgid "Add Printer…"
+msgstr "Lisää tulostin…"
 
-#: ../src/JobsView.vala:203
-msgid "Hide completed jobs"
-msgstr "Piilota valmistuneet työt"
+#: ../src/PrinterList.vala:50
+msgid "Remove Printer"
+msgstr "Poista tulostin"
 
-#: ../src/InkLevel.vala:90
-msgid "Black (PGBK)"
+#: ../src/PrinterList.vala:77
+msgid ""
+"By removing '%s' you'll lose all print history\n"
+"and configuration associated with it."
 msgstr ""
+"Jos '%s' poistetaan, kaikki sen tulostushistoria\n"
+"ja siihen liitetyt määritykset poistetaan."
 
-#: ../src/InkLevel.vala:93
-msgid "Black (BK)"
-msgstr ""
-
-#: ../src/InkLevel.vala:96
-msgid "Black"
-msgstr ""
-
-#: ../src/InkLevel.vala:99
-msgid "Yellow"
-msgstr ""
-
-#: ../src/InkLevel.vala:102
-msgid "Cyan"
-msgstr ""
-
-#: ../src/InkLevel.vala:105
-msgid "Magenta"
-msgstr ""
+#: ../src/PrinterList.vala:82
+msgid "Remove"
+msgstr "Poista"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
@@ -323,7 +202,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:407
 msgid "Photo"
-msgstr ""
+msgstr "Valokuva"
 
 #: ../src/OptionsPage.vala:411
 msgid "Rear"
@@ -353,33 +232,133 @@ msgstr ""
 msgid "Paper Source:"
 msgstr "Paperilähde:"
 
-#: ../src/Objects/Job.vala:95
-msgid "Job Pending"
-msgstr "Työ odottaa"
+#. / Tranlators: This is a protocol name, please keep the (https).
+#: ../src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Internet Printing Protocol (https)"
 
-#: ../src/Objects/Job.vala:97
-msgid "On Held"
+#. / Tranlators: This is a protocol name, please keep the (http).
+#: ../src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Internet Printing Protocol (http)"
+
+#. / Tranlators: This is a protocol name, please keep the (ipp).
+#: ../src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Internet Printing Protocol (ipp)"
+
+#. / Tranlators: This is a protocol name, please keep the (ipps).
+#: ../src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Internet Printing Protocol (ipps)"
+
+#. / Tranlators: This is a protocol name, please keep the (ipp14).
+#: ../src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Internet Printing Protocol (ipp14)"
+
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR-palvelin tai -tulostin"
+
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: ../src/AddPopover.vala:79
+msgid "Impossible to list all available printers"
+msgstr ""
+"Kaikkien saatavilla olevien tulostimen luettelointi ei ole mahdollista"
+
+#: ../src/AddPopover.vala:202
+msgid "Refresh the printer list"
+msgstr "Päivitä tulostinluettelo"
+
+#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
+msgid "Next"
+msgstr "Seuraava"
+
+#: ../src/AddPopover.vala:257
+msgid "Connection:"
+msgstr "Yhteys:"
+
+#: ../src/AddPopover.vala:264
+msgid "Description:"
+msgstr "Kuvaus:"
+
+#: ../src/AddPopover.vala:270
+msgid "BrandPrinter X3000"
 msgstr ""
 
-#: ../src/Objects/Job.vala:99
-msgid "Processing…"
-msgstr "Prosessoidaan…"
-
-#: ../src/Objects/Job.vala:101
-msgid "Job Stopped"
-msgstr "Työ pysäytetty"
-
-#: ../src/Objects/Job.vala:103
-msgid "Job Canceled"
-msgstr "Työ peruttu"
-
-#: ../src/Objects/Job.vala:105
-msgid "Job Aborded"
+#: ../src/AddPopover.vala:279
+msgid "Lab 1 or John's desk"
 msgstr ""
 
-#: ../src/Objects/Job.vala:108
-msgid "Job Completed"
-msgstr "Työ valmistui"
+#: ../src/AddPopover.vala:281
+msgid "Driver"
+msgstr "Ajuri"
+
+#: ../src/AddPopover.vala:351
+msgid "Previous"
+msgstr "Edellinen"
+
+#: ../src/AddPopover.vala:579
+msgid "(recommended)"
+msgstr "(suositeltu)"
+
+#: ../src/AddPopover.vala:641
+msgid "Local Printers"
+msgstr "Paikalliset tulostimet"
+
+#: ../src/AddPopover.vala:647
+msgid "Network Printers"
+msgstr "Verkkotulostimet"
+
+#: ../src/AddPopover.vala:653
+msgid "Available Network Printers"
+msgstr "Saatavilla olevat verkkotulostimet"
+
+#: ../src/InkLevel.vala:90
+msgid "Black (PGBK)"
+msgstr ""
+
+#: ../src/InkLevel.vala:93
+msgid "Black (BK)"
+msgstr ""
+
+#: ../src/InkLevel.vala:96
+msgid "Black"
+msgstr ""
+
+#: ../src/InkLevel.vala:99
+msgid "Yellow"
+msgstr "Keltainen"
+
+#: ../src/InkLevel.vala:102
+msgid "Cyan"
+msgstr "Syaani"
+
+#: ../src/InkLevel.vala:105
+msgid "Magenta"
+msgstr "Magenta"
+
+#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
+msgid "Show completed jobs"
+msgstr "Näytä valmistuneet työt"
+
+#: ../src/JobsView.vala:89
+msgid "No jobs"
+msgstr "Ei töitä"
+
+#: ../src/JobsView.vala:89
+msgid "There are no jobs on the queue"
+msgstr "Jonossa ei ole töitä"
+
+#: ../src/JobsView.vala:203
+msgid "Hide completed jobs"
+msgstr "Piilota valmistuneet työt"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -466,3 +445,31 @@ msgstr "Valojohdeyksikkö on rikki"
 #: ../src/Objects/Printer.vala:270
 msgid "Ready"
 msgstr "Valmis"
+
+#: ../src/Objects/Job.vala:95
+msgid "Job Pending"
+msgstr "Työ odottaa"
+
+#: ../src/Objects/Job.vala:97
+msgid "On Held"
+msgstr ""
+
+#: ../src/Objects/Job.vala:99
+msgid "Processing…"
+msgstr "Prosessoidaan…"
+
+#: ../src/Objects/Job.vala:101
+msgid "Job Stopped"
+msgstr "Työ pysäytetty"
+
+#: ../src/Objects/Job.vala:103
+msgid "Job Canceled"
+msgstr "Työ peruttu"
+
+#: ../src/Objects/Job.vala:105
+msgid "Job Aborded"
+msgstr ""
+
+#: ../src/Objects/Job.vala:108
+msgid "Job Completed"
+msgstr "Työ valmistui"

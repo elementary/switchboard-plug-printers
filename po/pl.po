@@ -2,144 +2,35 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-08 14:35-0200\n"
-"PO-Revision-Date: 2015-12-08 10:48+0000\n"
+"POT-Creation-Date: 2015-12-09 14:50-0200\n"
+"PO-Revision-Date: 2015-12-09 12:12+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-09 05:55+0000\n"
-"X-Generator: Launchpad (build 17862)\n"
+"X-Launchpad-Export-Date: 2015-12-11 06:34+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
 
-#: ../src/PrinterList.vala:48
-msgid "Add Printer…"
-msgstr ""
-
-#: ../src/PrinterList.vala:50
-msgid "Remove Printer"
-msgstr ""
-
-#: ../src/PrinterList.vala:77
-msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
-msgstr ""
-
-#: ../src/PrinterList.vala:82
-msgid "Remove"
-msgstr ""
-
-#: ../src/Plug.vala:33
-msgid "Printers"
-msgstr "Drukarki"
-
-#: ../src/Plug.vala:34
-msgid "Change printers settings"
-msgstr "Zmień ustawienia drukarek"
-
-#. / Tranlators: This is a protocol name, please keep the (https).
-#: ../src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (http).
-#: ../src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipp).
-#: ../src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipps).
-#: ../src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: ../src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr ""
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr ""
-
-#: ../src/AddPopover.vala:79
-msgid "Impossible to list all available printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:202
-msgid "Refresh the printer list"
-msgstr ""
-
-#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
-msgid "Next"
-msgstr ""
-
-#: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
+#: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
 msgid "General"
 msgstr "Ogólne"
-
-#: ../src/AddPopover.vala:257
-msgid "Connection:"
-msgstr ""
-
-#: ../src/AddPopover.vala:264
-msgid "Description:"
-msgstr ""
-
-#: ../src/AddPopover.vala:270
-msgid "BrandPrinter X3000"
-msgstr ""
-
-#: ../src/AddPopover.vala:274
-msgid "Location:"
-msgstr ""
-
-#: ../src/AddPopover.vala:279
-msgid "Lab 1 or John's desk"
-msgstr ""
-
-#: ../src/AddPopover.vala:281
-msgid "Driver"
-msgstr ""
-
-#: ../src/AddPopover.vala:351
-msgid "Previous"
-msgstr ""
-
-#: ../src/AddPopover.vala:579
-msgid "(recommended)"
-msgstr ""
-
-#: ../src/AddPopover.vala:641
-msgid "Local Printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:647
-msgid "Network Printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:653
-msgid "Available Network Printers"
-msgstr ""
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
 msgstr "Opcje"
 
+#: ../src/PrinterPage.vala:87 ../src/AddPopover.vala:274
+msgid "Location:"
+msgstr "Położenie:"
+
 #: ../src/PrinterPage.vala:95
 msgid "Location of the printer"
 msgstr "Położenie drukarki"
+
+#: ../src/PrinterPage.vala:97
+msgid "IP Address:"
+msgstr ""
 
 #: ../src/PrinterPage.vala:125
 msgid "Use as Default Printer"
@@ -149,45 +40,31 @@ msgstr "Użyj jako drukarki domyślnej"
 msgid "Print Test Page"
 msgstr "Wydrukuj stronę testową"
 
-#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
-msgid "Show completed jobs"
-msgstr "Wyświetl ukończone zadania"
+#: ../src/Plug.vala:33
+msgid "Printers"
+msgstr "Drukarki"
 
-#: ../src/JobsView.vala:89
-msgid "No jobs"
-msgstr "Brak zadań"
+#: ../src/Plug.vala:34
+msgid "Change printers settings"
+msgstr "Zmień ustawienia drukarek"
 
-#: ../src/JobsView.vala:89
-msgid "There are no jobs on the queue"
-msgstr "Brak zadań w kolejce"
+#: ../src/PrinterList.vala:48
+msgid "Add Printer…"
+msgstr "Dodaj drukarkę..."
 
-#: ../src/JobsView.vala:203
-msgid "Hide completed jobs"
-msgstr "Ukryj ukończone zadania"
+#: ../src/PrinterList.vala:50
+msgid "Remove Printer"
+msgstr "Usuń drukarkę"
 
-#: ../src/InkLevel.vala:90
-msgid "Black (PGBK)"
+#: ../src/PrinterList.vala:77
+msgid ""
+"By removing '%s' you'll lose all print history\n"
+"and configuration associated with it."
 msgstr ""
 
-#: ../src/InkLevel.vala:93
-msgid "Black (BK)"
-msgstr ""
-
-#: ../src/InkLevel.vala:96
-msgid "Black"
-msgstr ""
-
-#: ../src/InkLevel.vala:99
-msgid "Yellow"
-msgstr ""
-
-#: ../src/InkLevel.vala:102
-msgid "Cyan"
-msgstr ""
-
-#: ../src/InkLevel.vala:105
-msgid "Magenta"
-msgstr ""
+#: ../src/PrinterList.vala:82
+msgid "Remove"
+msgstr "Usuń"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
@@ -195,7 +72,7 @@ msgstr "Stron na kartkę:"
 
 #: ../src/OptionsPage.vala:140
 msgid "Two-sided:"
-msgstr "Dwustronna"
+msgstr "Dwustronna:"
 
 #: ../src/OptionsPage.vala:174
 msgid "Orientation:"
@@ -203,7 +80,7 @@ msgstr "Orientacja:"
 
 #: ../src/OptionsPage.vala:195
 msgid "Media Size:"
-msgstr ""
+msgstr "Rozmiar medium:"
 
 #: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
 msgid "Automatic"
@@ -219,7 +96,7 @@ msgstr "Kolor"
 
 #: ../src/OptionsPage.vala:220
 msgid "One Color + Black"
-msgstr ""
+msgstr "Jeden kolor + Czarny"
 
 #: ../src/OptionsPage.vala:223
 msgid "Greyscale"
@@ -227,11 +104,11 @@ msgstr "Odcienie szarości"
 
 #: ../src/OptionsPage.vala:226
 msgid "Processed Color"
-msgstr ""
+msgstr "Kolor przetworzony"
 
 #: ../src/OptionsPage.vala:229
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "Przetworzone odcienie szarości"
 
 #: ../src/OptionsPage.vala:238
 msgid "Color mode:"
@@ -239,7 +116,7 @@ msgstr "Tryb koloru:"
 
 #: ../src/OptionsPage.vala:311
 msgid "Output Tray:"
-msgstr "Podajnik:"
+msgstr "Podajnik wyjściowy:"
 
 #: ../src/OptionsPage.vala:327
 msgid "Draft"
@@ -259,23 +136,23 @@ msgstr "Jakość:"
 
 #: ../src/OptionsPage.vala:355
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Przydział papieru"
 
 #: ../src/OptionsPage.vala:358
 msgid "Alternate Tray"
-msgstr ""
+msgstr "Podajnik dodatkowy"
 
 #: ../src/OptionsPage.vala:361
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Wałek dodatkowy"
 
 #: ../src/OptionsPage.vala:367
 msgid "Bottom"
-msgstr ""
+msgstr "Dół"
 
 #: ../src/OptionsPage.vala:370
 msgid "By-pass Tray"
-msgstr ""
+msgstr "Podajnik ręczny"
 
 #: ../src/OptionsPage.vala:373
 msgid "Center"
@@ -307,11 +184,11 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:395
 msgid "Main Tray"
-msgstr "Główny podajnik"
+msgstr "Podajnik główny"
 
 #: ../src/OptionsPage.vala:398
 msgid "Main Roll"
-msgstr ""
+msgstr "Wałek główny"
 
 #: ../src/OptionsPage.vala:401
 msgid "Manual"
@@ -343,43 +220,142 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:425
 msgid "Roll %d"
-msgstr ""
+msgstr "Wałek %d"
 
 #: ../src/OptionsPage.vala:428
 msgid "Tray %d"
-msgstr ""
+msgstr "Podajnik %d"
 
 #: ../src/OptionsPage.vala:441
 msgid "Paper Source:"
 msgstr "Źródło papieru:"
 
-#: ../src/Objects/Job.vala:95
-msgid "Job Pending"
-msgstr ""
+#. / Tranlators: This is a protocol name, please keep the (https).
+#: ../src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "HTTPS (Internetowy protokół drukowania)"
 
-#: ../src/Objects/Job.vala:97
-msgid "On Held"
-msgstr ""
+#. / Tranlators: This is a protocol name, please keep the (http).
+#: ../src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "HTTP (Internetowy protokół drukowania)"
 
-#: ../src/Objects/Job.vala:99
-msgid "Processing…"
-msgstr "Przetwarzanie..."
+#. / Tranlators: This is a protocol name, please keep the (ipp).
+#: ../src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "IPP (Internetowy protokół drukowania)"
 
-#: ../src/Objects/Job.vala:101
-msgid "Job Stopped"
-msgstr "Zadanie zatrzymane"
+#. / Tranlators: This is a protocol name, please keep the (ipps).
+#: ../src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "IPPS (Internetowy protokół drukowania)"
 
-#: ../src/Objects/Job.vala:103
-msgid "Job Canceled"
-msgstr "Zadanie anulowane"
+#. / Tranlators: This is a protocol name, please keep the (ipp14).
+#: ../src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "IPP14 (Internetowy protokół drukowania)"
 
-#: ../src/Objects/Job.vala:105
-msgid "Job Aborded"
-msgstr ""
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "Komputer lub drukarka LPD/LPR"
 
-#: ../src/Objects/Job.vala:108
-msgid "Job Completed"
-msgstr "Zadanie zakończone"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: ../src/AddPopover.vala:79
+msgid "Impossible to list all available printers"
+msgstr "Nie jest możliwe wypisanie wszystkich dostępnych drukarek"
+
+#: ../src/AddPopover.vala:202
+msgid "Refresh the printer list"
+msgstr "Odśwież listę drukarek"
+
+#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
+msgid "Next"
+msgstr "Dalej"
+
+#: ../src/AddPopover.vala:257
+msgid "Connection:"
+msgstr "Połączenie:"
+
+#: ../src/AddPopover.vala:264
+msgid "Description:"
+msgstr "Opis:"
+
+#: ../src/AddPopover.vala:270
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: ../src/AddPopover.vala:279
+msgid "Lab 1 or John's desk"
+msgstr "Laboratorium 1 lub pulpit Janka"
+
+#: ../src/AddPopover.vala:281
+msgid "Driver"
+msgstr "Sterownik"
+
+#: ../src/AddPopover.vala:351
+msgid "Previous"
+msgstr "Wstecz"
+
+#: ../src/AddPopover.vala:579
+msgid "(recommended)"
+msgstr "(rekomendowane)"
+
+#: ../src/AddPopover.vala:641
+msgid "Local Printers"
+msgstr "Lokalne drukarki"
+
+#: ../src/AddPopover.vala:647
+msgid "Network Printers"
+msgstr "Sieciowe drukarki"
+
+#: ../src/AddPopover.vala:653
+msgid "Available Network Printers"
+msgstr "Dostępne drukarki sieciowe"
+
+#: ../src/InkLevel.vala:90
+msgid "Black (PGBK)"
+msgstr "Czarny (PGBK)"
+
+#: ../src/InkLevel.vala:93
+msgid "Black (BK)"
+msgstr "Czarny (BK)"
+
+#: ../src/InkLevel.vala:96
+msgid "Black"
+msgstr "Czarny"
+
+#: ../src/InkLevel.vala:99
+msgid "Yellow"
+msgstr "Żółty"
+
+#: ../src/InkLevel.vala:102
+msgid "Cyan"
+msgstr "Cyjan"
+
+#: ../src/InkLevel.vala:105
+msgid "Magenta"
+msgstr "Magenta"
+
+#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
+msgid "Show completed jobs"
+msgstr "Wyświetl ukończone zadania"
+
+#: ../src/JobsView.vala:89
+msgid "No jobs"
+msgstr "Brak zadań"
+
+#: ../src/JobsView.vala:89
+msgid "There are no jobs on the queue"
+msgstr "Brak zadań w kolejce"
+
+#: ../src/JobsView.vala:203
+msgid "Hide completed jobs"
+msgstr "Ukryj ukończone zadania"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -466,3 +442,31 @@ msgstr "Warstwa światłoczuła już nie działa"
 #: ../src/Objects/Printer.vala:270
 msgid "Ready"
 msgstr "Gotowa"
+
+#: ../src/Objects/Job.vala:95
+msgid "Job Pending"
+msgstr "Zadanie oczekujące"
+
+#: ../src/Objects/Job.vala:97
+msgid "On Held"
+msgstr ""
+
+#: ../src/Objects/Job.vala:99
+msgid "Processing…"
+msgstr "Przetwarzanie..."
+
+#: ../src/Objects/Job.vala:101
+msgid "Job Stopped"
+msgstr "Zadanie zatrzymane"
+
+#: ../src/Objects/Job.vala:103
+msgid "Job Canceled"
+msgstr "Zadanie anulowane"
+
+#: ../src/Objects/Job.vala:105
+msgid "Job Aborded"
+msgstr "Zadanie przerwane"
+
+#: ../src/Objects/Job.vala:108
+msgid "Job Completed"
+msgstr "Zadanie zakończone"

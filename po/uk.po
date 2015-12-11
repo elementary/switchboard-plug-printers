@@ -2,15 +2,51 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-08 14:35-0200\n"
+"POT-Creation-Date: 2015-12-09 14:50-0200\n"
 "PO-Revision-Date: 2015-09-03 23:38+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-09 05:55+0000\n"
-"X-Generator: Launchpad (build 17862)\n"
+"X-Launchpad-Export-Date: 2015-12-11 06:35+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
+
+#: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
+msgid "General"
+msgstr ""
+
+#: ../src/PrinterPage.vala:37
+msgid "Options"
+msgstr ""
+
+#: ../src/PrinterPage.vala:87 ../src/AddPopover.vala:274
+msgid "Location:"
+msgstr ""
+
+#: ../src/PrinterPage.vala:95
+msgid "Location of the printer"
+msgstr ""
+
+#: ../src/PrinterPage.vala:97
+msgid "IP Address:"
+msgstr ""
+
+#: ../src/PrinterPage.vala:125
+msgid "Use as Default Printer"
+msgstr ""
+
+#: ../src/PrinterPage.vala:136
+msgid "Print Test Page"
+msgstr ""
+
+#: ../src/Plug.vala:33
+msgid "Printers"
+msgstr ""
+
+#: ../src/Plug.vala:34
+msgid "Change printers settings"
+msgstr ""
 
 #: ../src/PrinterList.vala:48
 msgid "Add Printer…"
@@ -28,165 +64,6 @@ msgstr ""
 
 #: ../src/PrinterList.vala:82
 msgid "Remove"
-msgstr ""
-
-#: ../src/Plug.vala:33
-msgid "Printers"
-msgstr ""
-
-#: ../src/Plug.vala:34
-msgid "Change printers settings"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (https).
-#: ../src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (http).
-#: ../src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipp).
-#: ../src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipps).
-#: ../src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: ../src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr ""
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr ""
-
-#: ../src/AddPopover.vala:79
-msgid "Impossible to list all available printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:202
-msgid "Refresh the printer list"
-msgstr ""
-
-#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
-msgid "Next"
-msgstr ""
-
-#: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
-msgid "General"
-msgstr ""
-
-#: ../src/AddPopover.vala:257
-msgid "Connection:"
-msgstr ""
-
-#: ../src/AddPopover.vala:264
-msgid "Description:"
-msgstr ""
-
-#: ../src/AddPopover.vala:270
-msgid "BrandPrinter X3000"
-msgstr ""
-
-#: ../src/AddPopover.vala:274
-msgid "Location:"
-msgstr ""
-
-#: ../src/AddPopover.vala:279
-msgid "Lab 1 or John's desk"
-msgstr ""
-
-#: ../src/AddPopover.vala:281
-msgid "Driver"
-msgstr ""
-
-#: ../src/AddPopover.vala:351
-msgid "Previous"
-msgstr ""
-
-#: ../src/AddPopover.vala:579
-msgid "(recommended)"
-msgstr ""
-
-#: ../src/AddPopover.vala:641
-msgid "Local Printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:647
-msgid "Network Printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:653
-msgid "Available Network Printers"
-msgstr ""
-
-#: ../src/PrinterPage.vala:37
-msgid "Options"
-msgstr ""
-
-#: ../src/PrinterPage.vala:95
-msgid "Location of the printer"
-msgstr ""
-
-#: ../src/PrinterPage.vala:125
-msgid "Use as Default Printer"
-msgstr ""
-
-#: ../src/PrinterPage.vala:136
-msgid "Print Test Page"
-msgstr ""
-
-#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
-msgid "Show completed jobs"
-msgstr ""
-
-#: ../src/JobsView.vala:89
-msgid "No jobs"
-msgstr ""
-
-#: ../src/JobsView.vala:89
-msgid "There are no jobs on the queue"
-msgstr ""
-
-#: ../src/JobsView.vala:203
-msgid "Hide completed jobs"
-msgstr ""
-
-#: ../src/InkLevel.vala:90
-msgid "Black (PGBK)"
-msgstr ""
-
-#: ../src/InkLevel.vala:93
-msgid "Black (BK)"
-msgstr ""
-
-#: ../src/InkLevel.vala:96
-msgid "Black"
-msgstr ""
-
-#: ../src/InkLevel.vala:99
-msgid "Yellow"
-msgstr ""
-
-#: ../src/InkLevel.vala:102
-msgid "Cyan"
-msgstr ""
-
-#: ../src/InkLevel.vala:105
-msgid "Magenta"
 msgstr ""
 
 #: ../src/OptionsPage.vala:68
@@ -353,32 +230,131 @@ msgstr ""
 msgid "Paper Source:"
 msgstr ""
 
-#: ../src/Objects/Job.vala:95
-msgid "Job Pending"
+#. / Tranlators: This is a protocol name, please keep the (https).
+#: ../src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
 msgstr ""
 
-#: ../src/Objects/Job.vala:97
-msgid "On Held"
+#. / Tranlators: This is a protocol name, please keep the (http).
+#: ../src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
 msgstr ""
 
-#: ../src/Objects/Job.vala:99
-msgid "Processing…"
+#. / Tranlators: This is a protocol name, please keep the (ipp).
+#: ../src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
 msgstr ""
 
-#: ../src/Objects/Job.vala:101
-msgid "Job Stopped"
+#. / Tranlators: This is a protocol name, please keep the (ipps).
+#: ../src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
 msgstr ""
 
-#: ../src/Objects/Job.vala:103
-msgid "Job Canceled"
+#. / Tranlators: This is a protocol name, please keep the (ipp14).
+#: ../src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
 msgstr ""
 
-#: ../src/Objects/Job.vala:105
-msgid "Job Aborded"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
 msgstr ""
 
-#: ../src/Objects/Job.vala:108
-msgid "Job Completed"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr ""
+
+#: ../src/AddPopover.vala:79
+msgid "Impossible to list all available printers"
+msgstr ""
+
+#: ../src/AddPopover.vala:202
+msgid "Refresh the printer list"
+msgstr ""
+
+#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
+msgid "Next"
+msgstr ""
+
+#: ../src/AddPopover.vala:257
+msgid "Connection:"
+msgstr ""
+
+#: ../src/AddPopover.vala:264
+msgid "Description:"
+msgstr ""
+
+#: ../src/AddPopover.vala:270
+msgid "BrandPrinter X3000"
+msgstr ""
+
+#: ../src/AddPopover.vala:279
+msgid "Lab 1 or John's desk"
+msgstr ""
+
+#: ../src/AddPopover.vala:281
+msgid "Driver"
+msgstr ""
+
+#: ../src/AddPopover.vala:351
+msgid "Previous"
+msgstr ""
+
+#: ../src/AddPopover.vala:579
+msgid "(recommended)"
+msgstr ""
+
+#: ../src/AddPopover.vala:641
+msgid "Local Printers"
+msgstr ""
+
+#: ../src/AddPopover.vala:647
+msgid "Network Printers"
+msgstr ""
+
+#: ../src/AddPopover.vala:653
+msgid "Available Network Printers"
+msgstr ""
+
+#: ../src/InkLevel.vala:90
+msgid "Black (PGBK)"
+msgstr ""
+
+#: ../src/InkLevel.vala:93
+msgid "Black (BK)"
+msgstr ""
+
+#: ../src/InkLevel.vala:96
+msgid "Black"
+msgstr ""
+
+#: ../src/InkLevel.vala:99
+msgid "Yellow"
+msgstr ""
+
+#: ../src/InkLevel.vala:102
+msgid "Cyan"
+msgstr ""
+
+#: ../src/InkLevel.vala:105
+msgid "Magenta"
+msgstr ""
+
+#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
+msgid "Show completed jobs"
+msgstr ""
+
+#: ../src/JobsView.vala:89
+msgid "No jobs"
+msgstr ""
+
+#: ../src/JobsView.vala:89
+msgid "There are no jobs on the queue"
+msgstr ""
+
+#: ../src/JobsView.vala:203
+msgid "Hide completed jobs"
 msgstr ""
 
 #. / Translators: The printer is low on toner
@@ -465,4 +441,32 @@ msgstr ""
 
 #: ../src/Objects/Printer.vala:270
 msgid "Ready"
+msgstr ""
+
+#: ../src/Objects/Job.vala:95
+msgid "Job Pending"
+msgstr ""
+
+#: ../src/Objects/Job.vala:97
+msgid "On Held"
+msgstr ""
+
+#: ../src/Objects/Job.vala:99
+msgid "Processing…"
+msgstr ""
+
+#: ../src/Objects/Job.vala:101
+msgid "Job Stopped"
+msgstr ""
+
+#: ../src/Objects/Job.vala:103
+msgid "Job Canceled"
+msgstr ""
+
+#: ../src/Objects/Job.vala:105
+msgid "Job Aborded"
+msgstr ""
+
+#: ../src/Objects/Job.vala:108
+msgid "Job Completed"
 msgstr ""

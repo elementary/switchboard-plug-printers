@@ -2,144 +2,35 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-08 14:35-0200\n"
-"PO-Revision-Date: 2015-11-15 11:31+0000\n"
+"POT-Creation-Date: 2015-12-09 14:50-0200\n"
+"PO-Revision-Date: 2015-12-10 22:00+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-09 05:55+0000\n"
-"X-Generator: Launchpad (build 17862)\n"
+"X-Launchpad-Export-Date: 2015-12-11 06:34+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
 
-#: ../src/PrinterList.vala:48
-msgid "Add Printer…"
-msgstr ""
-
-#: ../src/PrinterList.vala:50
-msgid "Remove Printer"
-msgstr ""
-
-#: ../src/PrinterList.vala:77
-msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
-msgstr ""
-
-#: ../src/PrinterList.vala:82
-msgid "Remove"
-msgstr ""
-
-#: ../src/Plug.vala:33
-msgid "Printers"
-msgstr "프린터"
-
-#: ../src/Plug.vala:34
-msgid "Change printers settings"
-msgstr "프린터 설정 변경"
-
-#. / Tranlators: This is a protocol name, please keep the (https).
-#: ../src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (http).
-#: ../src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipp).
-#: ../src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipps).
-#: ../src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: ../src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr ""
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr ""
-
-#: ../src/AddPopover.vala:79
-msgid "Impossible to list all available printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:202
-msgid "Refresh the printer list"
-msgstr ""
-
-#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
-msgid "Next"
-msgstr ""
-
-#: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
+#: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
 msgid "General"
 msgstr "일반 설정"
-
-#: ../src/AddPopover.vala:257
-msgid "Connection:"
-msgstr ""
-
-#: ../src/AddPopover.vala:264
-msgid "Description:"
-msgstr ""
-
-#: ../src/AddPopover.vala:270
-msgid "BrandPrinter X3000"
-msgstr ""
-
-#: ../src/AddPopover.vala:274
-msgid "Location:"
-msgstr ""
-
-#: ../src/AddPopover.vala:279
-msgid "Lab 1 or John's desk"
-msgstr ""
-
-#: ../src/AddPopover.vala:281
-msgid "Driver"
-msgstr ""
-
-#: ../src/AddPopover.vala:351
-msgid "Previous"
-msgstr ""
-
-#: ../src/AddPopover.vala:579
-msgid "(recommended)"
-msgstr ""
-
-#: ../src/AddPopover.vala:641
-msgid "Local Printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:647
-msgid "Network Printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:653
-msgid "Available Network Printers"
-msgstr ""
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
 msgstr "옵션"
 
+#: ../src/PrinterPage.vala:87 ../src/AddPopover.vala:274
+msgid "Location:"
+msgstr "위치:"
+
 #: ../src/PrinterPage.vala:95
 msgid "Location of the printer"
 msgstr "프린터 위치"
+
+#: ../src/PrinterPage.vala:97
+msgid "IP Address:"
+msgstr "IP 주소:"
 
 #: ../src/PrinterPage.vala:125
 msgid "Use as Default Printer"
@@ -149,45 +40,33 @@ msgstr "기본 프린터로 사용함"
 msgid "Print Test Page"
 msgstr "테스트 페이지 인쇄"
 
-#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
-msgid "Show completed jobs"
-msgstr "완료된 인쇄 작업 보기"
+#: ../src/Plug.vala:33
+msgid "Printers"
+msgstr "프린터"
 
-#: ../src/JobsView.vala:89
-msgid "No jobs"
-msgstr "작업 없음"
+#: ../src/Plug.vala:34
+msgid "Change printers settings"
+msgstr "프린터 설정 변경"
 
-#: ../src/JobsView.vala:89
-msgid "There are no jobs on the queue"
-msgstr "대기 열에 작업이 없습니다"
+#: ../src/PrinterList.vala:48
+msgid "Add Printer…"
+msgstr "프린터 추가..."
 
-#: ../src/JobsView.vala:203
-msgid "Hide completed jobs"
-msgstr "끝난 작업 숨기기"
+#: ../src/PrinterList.vala:50
+msgid "Remove Printer"
+msgstr "프린터 제거"
 
-#: ../src/InkLevel.vala:90
-msgid "Black (PGBK)"
+#: ../src/PrinterList.vala:77
+msgid ""
+"By removing '%s' you'll lose all print history\n"
+"and configuration associated with it."
 msgstr ""
+"'%s'를 제거하면 프린터 사용 기록과 함께\n"
+"연관된 프린터 설정이 모두 사라집니다."
 
-#: ../src/InkLevel.vala:93
-msgid "Black (BK)"
-msgstr ""
-
-#: ../src/InkLevel.vala:96
-msgid "Black"
-msgstr ""
-
-#: ../src/InkLevel.vala:99
-msgid "Yellow"
-msgstr ""
-
-#: ../src/InkLevel.vala:102
-msgid "Cyan"
-msgstr ""
-
-#: ../src/InkLevel.vala:105
-msgid "Magenta"
-msgstr ""
+#: ../src/PrinterList.vala:82
+msgid "Remove"
+msgstr "제거"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
@@ -203,7 +82,7 @@ msgstr "용지 방향:"
 
 #: ../src/OptionsPage.vala:195
 msgid "Media Size:"
-msgstr ""
+msgstr "용지 크기:"
 
 #: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
 msgid "Automatic"
@@ -259,7 +138,7 @@ msgstr "품질:"
 
 #: ../src/OptionsPage.vala:355
 msgid "Paper Allocation"
-msgstr ""
+msgstr "용지 할당"
 
 #: ../src/OptionsPage.vala:358
 msgid "Alternate Tray"
@@ -353,33 +232,132 @@ msgstr "%d번 트레이"
 msgid "Paper Source:"
 msgstr "용지 소스:"
 
-#: ../src/Objects/Job.vala:95
-msgid "Job Pending"
-msgstr "작업 보류 중"
+#. / Tranlators: This is a protocol name, please keep the (https).
+#: ../src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "인터넷 인쇄 프로토콜 (https)"
 
-#: ../src/Objects/Job.vala:97
-msgid "On Held"
-msgstr "보류 중"
+#. / Tranlators: This is a protocol name, please keep the (http).
+#: ../src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "인터넷 인쇄 프로토콜 (http)"
 
-#: ../src/Objects/Job.vala:99
-msgid "Processing…"
-msgstr "작업 중..."
+#. / Tranlators: This is a protocol name, please keep the (ipp).
+#: ../src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "인터넷 인쇄 프로토콜 (ipp)"
 
-#: ../src/Objects/Job.vala:101
-msgid "Job Stopped"
-msgstr "작업이 중지 됨"
+#. / Tranlators: This is a protocol name, please keep the (ipps).
+#: ../src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "인터넷 인쇄 프로토콜 (ipps)"
 
-#: ../src/Objects/Job.vala:103
-msgid "Job Canceled"
-msgstr "작업이 취소 됨"
+#. / Tranlators: This is a protocol name, please keep the (ipp14).
+#: ../src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "인터넷 인쇄 프로토콜 (ipp14)"
 
-#: ../src/Objects/Job.vala:105
-msgid "Job Aborded"
-msgstr "작업이 중단 됨"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR 호스트 또는 프린터"
 
-#: ../src/Objects/Job.vala:108
-msgid "Job Completed"
-msgstr "작업이 완료 됨"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: ../src/AddPopover.vala:79
+msgid "Impossible to list all available printers"
+msgstr "사용 가능한 프린터 목록을 볼 수 없습니다"
+
+#: ../src/AddPopover.vala:202
+msgid "Refresh the printer list"
+msgstr "프린터 목록 새로 고침"
+
+#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
+msgid "Next"
+msgstr "다음"
+
+#: ../src/AddPopover.vala:257
+msgid "Connection:"
+msgstr "연결:"
+
+#: ../src/AddPopover.vala:264
+msgid "Description:"
+msgstr "설명:"
+
+#: ../src/AddPopover.vala:270
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: ../src/AddPopover.vala:279
+msgid "Lab 1 or John's desk"
+msgstr "랩 1 또는 사용자 데스크"
+
+#: ../src/AddPopover.vala:281
+msgid "Driver"
+msgstr "드라이버"
+
+#: ../src/AddPopover.vala:351
+msgid "Previous"
+msgstr "이전"
+
+#: ../src/AddPopover.vala:579
+msgid "(recommended)"
+msgstr "(추천)"
+
+#: ../src/AddPopover.vala:641
+msgid "Local Printers"
+msgstr "로컬 프린터"
+
+#: ../src/AddPopover.vala:647
+msgid "Network Printers"
+msgstr "네트워크 프린터"
+
+#: ../src/AddPopover.vala:653
+msgid "Available Network Printers"
+msgstr "새로운 네트워크 프린터 사용 가능"
+
+#: ../src/InkLevel.vala:90
+msgid "Black (PGBK)"
+msgstr "검정색 (PGBK)"
+
+#: ../src/InkLevel.vala:93
+msgid "Black (BK)"
+msgstr "검정색 (BK)"
+
+#: ../src/InkLevel.vala:96
+msgid "Black"
+msgstr "검은색"
+
+#: ../src/InkLevel.vala:99
+msgid "Yellow"
+msgstr "노란색"
+
+#: ../src/InkLevel.vala:102
+msgid "Cyan"
+msgstr "청록색"
+
+#: ../src/InkLevel.vala:105
+msgid "Magenta"
+msgstr "진홍색"
+
+#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
+msgid "Show completed jobs"
+msgstr "완료된 인쇄 작업 보기"
+
+#: ../src/JobsView.vala:89
+msgid "No jobs"
+msgstr "작업 없음"
+
+#: ../src/JobsView.vala:89
+msgid "There are no jobs on the queue"
+msgstr "대기 열에 작업이 없습니다"
+
+#: ../src/JobsView.vala:203
+msgid "Hide completed jobs"
+msgstr "끝난 작업 숨기기"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -466,3 +444,31 @@ msgstr "감광 반도체가 더 이상 작동하지 않습니다"
 #: ../src/Objects/Printer.vala:270
 msgid "Ready"
 msgstr "준비"
+
+#: ../src/Objects/Job.vala:95
+msgid "Job Pending"
+msgstr "작업 보류 중"
+
+#: ../src/Objects/Job.vala:97
+msgid "On Held"
+msgstr "보류 중"
+
+#: ../src/Objects/Job.vala:99
+msgid "Processing…"
+msgstr "작업 중..."
+
+#: ../src/Objects/Job.vala:101
+msgid "Job Stopped"
+msgstr "작업이 중지 됨"
+
+#: ../src/Objects/Job.vala:103
+msgid "Job Canceled"
+msgstr "작업이 취소 됨"
+
+#: ../src/Objects/Job.vala:105
+msgid "Job Aborded"
+msgstr "작업이 중단 됨"
+
+#: ../src/Objects/Job.vala:108
+msgid "Job Completed"
+msgstr "작업이 완료 됨"

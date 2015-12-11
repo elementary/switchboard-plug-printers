@@ -2,15 +2,51 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-08 14:35-0200\n"
-"PO-Revision-Date: 2015-12-08 22:14+0000\n"
-"Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
+"POT-Creation-Date: 2015-12-09 14:50-0200\n"
+"PO-Revision-Date: 2015-12-10 21:09+0000\n"
+"Last-Translator: Maxim Taranov <png2378@protonmail.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-09 05:55+0000\n"
-"X-Generator: Launchpad (build 17862)\n"
+"X-Launchpad-Export-Date: 2015-12-11 06:34+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
+
+#: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
+msgid "General"
+msgstr "Общие"
+
+#: ../src/PrinterPage.vala:37
+msgid "Options"
+msgstr "Опции"
+
+#: ../src/PrinterPage.vala:87 ../src/AddPopover.vala:274
+msgid "Location:"
+msgstr "Расположение:"
+
+#: ../src/PrinterPage.vala:95
+msgid "Location of the printer"
+msgstr "Расположение принтера"
+
+#: ../src/PrinterPage.vala:97
+msgid "IP Address:"
+msgstr "IP-адрес:"
+
+#: ../src/PrinterPage.vala:125
+msgid "Use as Default Printer"
+msgstr "Использовать как принтер по умолчанию"
+
+#: ../src/PrinterPage.vala:136
+msgid "Print Test Page"
+msgstr "Печать пробной страницы"
+
+#: ../src/Plug.vala:33
+msgid "Printers"
+msgstr "Принтеры"
+
+#: ../src/Plug.vala:34
+msgid "Change printers settings"
+msgstr "Изменение настроек принтеров"
 
 #: ../src/PrinterList.vala:48
 msgid "Add Printer…"
@@ -31,165 +67,6 @@ msgstr ""
 #: ../src/PrinterList.vala:82
 msgid "Remove"
 msgstr "Удалить"
-
-#: ../src/Plug.vala:33
-msgid "Printers"
-msgstr "Принтеры"
-
-#: ../src/Plug.vala:34
-msgid "Change printers settings"
-msgstr "Изменение настроек принтеров"
-
-#. / Tranlators: This is a protocol name, please keep the (https).
-#: ../src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Протокол печати через Интернет (https)"
-
-#. / Tranlators: This is a protocol name, please keep the (http).
-#: ../src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Протокол печати через Интернет (http)"
-
-#. / Tranlators: This is a protocol name, please keep the (ipp).
-#: ../src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Протокол печати через Интернет (ipp)"
-
-#. / Tranlators: This is a protocol name, please keep the (ipps).
-#: ../src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Протокол печати через Интернет (ipps)"
-
-#. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: ../src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Протокол печати через Интернет (ipp14)"
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR-сервер или принтер"
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: ../src/AddPopover.vala:79
-msgid "Impossible to list all available printers"
-msgstr "Невозможно перечислить все доступные принтеры"
-
-#: ../src/AddPopover.vala:202
-msgid "Refresh the printer list"
-msgstr "Обновить список принтеров"
-
-#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
-msgid "Next"
-msgstr "Далее"
-
-#: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
-msgid "General"
-msgstr "Общие"
-
-#: ../src/AddPopover.vala:257
-msgid "Connection:"
-msgstr "Подключение:"
-
-#: ../src/AddPopover.vala:264
-msgid "Description:"
-msgstr "Описание:"
-
-#: ../src/AddPopover.vala:270
-msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
-
-#: ../src/AddPopover.vala:274
-msgid "Location:"
-msgstr "Расположение:"
-
-#: ../src/AddPopover.vala:279
-msgid "Lab 1 or John's desk"
-msgstr "Лаборатория 1"
-
-#: ../src/AddPopover.vala:281
-msgid "Driver"
-msgstr "Драйвер"
-
-#: ../src/AddPopover.vala:351
-msgid "Previous"
-msgstr "Назад"
-
-#: ../src/AddPopover.vala:579
-msgid "(recommended)"
-msgstr "(рекомендуемый)"
-
-#: ../src/AddPopover.vala:641
-msgid "Local Printers"
-msgstr "Локальные принтеры"
-
-#: ../src/AddPopover.vala:647
-msgid "Network Printers"
-msgstr "Сетевые принтеры"
-
-#: ../src/AddPopover.vala:653
-msgid "Available Network Printers"
-msgstr "Доступные сетевые принтеры"
-
-#: ../src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Опции"
-
-#: ../src/PrinterPage.vala:95
-msgid "Location of the printer"
-msgstr "Расположение принтера"
-
-#: ../src/PrinterPage.vala:125
-msgid "Use as Default Printer"
-msgstr "Использовать как принтер по умолчанию"
-
-#: ../src/PrinterPage.vala:136
-msgid "Print Test Page"
-msgstr "Печать пробной страницы"
-
-#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
-msgid "Show completed jobs"
-msgstr "Показать завершенные задания"
-
-#: ../src/JobsView.vala:89
-msgid "No jobs"
-msgstr "Нет заданий"
-
-#: ../src/JobsView.vala:89
-msgid "There are no jobs on the queue"
-msgstr "Нет заданий в очереди"
-
-#: ../src/JobsView.vala:203
-msgid "Hide completed jobs"
-msgstr "Скрыть завершенные задания"
-
-#: ../src/InkLevel.vala:90
-msgid "Black (PGBK)"
-msgstr "Чёрный (PGBK)"
-
-#: ../src/InkLevel.vala:93
-msgid "Black (BK)"
-msgstr "Чёрный (BK)"
-
-#: ../src/InkLevel.vala:96
-msgid "Black"
-msgstr "Чёрный"
-
-#: ../src/InkLevel.vala:99
-msgid "Yellow"
-msgstr "Жёлтый"
-
-#: ../src/InkLevel.vala:102
-msgid "Cyan"
-msgstr "Бирюзовый"
-
-#: ../src/InkLevel.vala:105
-msgid "Magenta"
-msgstr "Фиолетовый"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
@@ -355,33 +232,132 @@ msgstr "Лоток %d"
 msgid "Paper Source:"
 msgstr "Источник бумаги:"
 
-#: ../src/Objects/Job.vala:95
-msgid "Job Pending"
-msgstr "Задание ожидает"
+#. / Tranlators: This is a protocol name, please keep the (https).
+#: ../src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Протокол печати через Интернет (https)"
 
-#: ../src/Objects/Job.vala:97
-msgid "On Held"
-msgstr "В режиме ожидания"
+#. / Tranlators: This is a protocol name, please keep the (http).
+#: ../src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Протокол печати через Интернет (http)"
 
-#: ../src/Objects/Job.vala:99
-msgid "Processing…"
-msgstr "В процессе..."
+#. / Tranlators: This is a protocol name, please keep the (ipp).
+#: ../src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Протокол печати через Интернет (ipp)"
 
-#: ../src/Objects/Job.vala:101
-msgid "Job Stopped"
-msgstr "Задание остановлено"
+#. / Tranlators: This is a protocol name, please keep the (ipps).
+#: ../src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Протокол печати через Интернет (ipps)"
 
-#: ../src/Objects/Job.vala:103
-msgid "Job Canceled"
-msgstr "Задание отменено"
+#. / Tranlators: This is a protocol name, please keep the (ipp14).
+#: ../src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Протокол печати через Интернет (ipp14)"
 
-#: ../src/Objects/Job.vala:105
-msgid "Job Aborded"
-msgstr "Задание прервано"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR-сервер или принтер"
 
-#: ../src/Objects/Job.vala:108
-msgid "Job Completed"
-msgstr "Задание завершено"
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: ../src/AddPopover.vala:79
+msgid "Impossible to list all available printers"
+msgstr "Невозможно перечислить все доступные принтеры"
+
+#: ../src/AddPopover.vala:202
+msgid "Refresh the printer list"
+msgstr "Обновить список принтеров"
+
+#: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
+msgid "Next"
+msgstr "Далее"
+
+#: ../src/AddPopover.vala:257
+msgid "Connection:"
+msgstr "Подключение:"
+
+#: ../src/AddPopover.vala:264
+msgid "Description:"
+msgstr "Описание:"
+
+#: ../src/AddPopover.vala:270
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: ../src/AddPopover.vala:279
+msgid "Lab 1 or John's desk"
+msgstr "Лаборатория 1"
+
+#: ../src/AddPopover.vala:281
+msgid "Driver"
+msgstr "Драйвер"
+
+#: ../src/AddPopover.vala:351
+msgid "Previous"
+msgstr "Назад"
+
+#: ../src/AddPopover.vala:579
+msgid "(recommended)"
+msgstr "(рекомендуемый)"
+
+#: ../src/AddPopover.vala:641
+msgid "Local Printers"
+msgstr "Локальные принтеры"
+
+#: ../src/AddPopover.vala:647
+msgid "Network Printers"
+msgstr "Сетевые принтеры"
+
+#: ../src/AddPopover.vala:653
+msgid "Available Network Printers"
+msgstr "Доступные сетевые принтеры"
+
+#: ../src/InkLevel.vala:90
+msgid "Black (PGBK)"
+msgstr "Чёрный (PGBK)"
+
+#: ../src/InkLevel.vala:93
+msgid "Black (BK)"
+msgstr "Чёрный (BK)"
+
+#: ../src/InkLevel.vala:96
+msgid "Black"
+msgstr "Чёрный"
+
+#: ../src/InkLevel.vala:99
+msgid "Yellow"
+msgstr "Жёлтый"
+
+#: ../src/InkLevel.vala:102
+msgid "Cyan"
+msgstr "Бирюзовый"
+
+#: ../src/InkLevel.vala:105
+msgid "Magenta"
+msgstr "Фиолетовый"
+
+#: ../src/JobsView.vala:79 ../src/JobsView.vala:218
+msgid "Show completed jobs"
+msgstr "Показать завершенные задания"
+
+#: ../src/JobsView.vala:89
+msgid "No jobs"
+msgstr "Нет заданий"
+
+#: ../src/JobsView.vala:89
+msgid "There are no jobs on the queue"
+msgstr "Нет заданий в очереди"
+
+#: ../src/JobsView.vala:203
+msgid "Hide completed jobs"
+msgstr "Скрыть завершенные задания"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -468,3 +444,31 @@ msgstr "Фотобарабан не работает"
 #: ../src/Objects/Printer.vala:270
 msgid "Ready"
 msgstr "Готов к работе"
+
+#: ../src/Objects/Job.vala:95
+msgid "Job Pending"
+msgstr "Задание ожидает"
+
+#: ../src/Objects/Job.vala:97
+msgid "On Held"
+msgstr "В режиме ожидания"
+
+#: ../src/Objects/Job.vala:99
+msgid "Processing…"
+msgstr "В процессе..."
+
+#: ../src/Objects/Job.vala:101
+msgid "Job Stopped"
+msgstr "Задание остановлено"
+
+#: ../src/Objects/Job.vala:103
+msgid "Job Canceled"
+msgstr "Задание отменено"
+
+#: ../src/Objects/Job.vala:105
+msgid "Job Aborded"
+msgstr "Задание прервано"
+
+#: ../src/Objects/Job.vala:108
+msgid "Job Completed"
+msgstr "Задание завершено"
