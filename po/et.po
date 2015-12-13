@@ -3,42 +3,42 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-09 14:50-0200\n"
-"PO-Revision-Date: 2015-09-22 17:29+0000\n"
+"PO-Revision-Date: 2015-12-12 15:34+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-11 06:34+0000\n"
+"X-Launchpad-Export-Date: 2015-12-13 05:36+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
 msgid "General"
-msgstr ""
+msgstr "Üldine"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
-msgstr ""
+msgstr "Eelistused"
 
 #: ../src/PrinterPage.vala:87 ../src/AddPopover.vala:274
 msgid "Location:"
-msgstr ""
+msgstr "Asukoht:"
 
 #: ../src/PrinterPage.vala:95
 msgid "Location of the printer"
-msgstr ""
+msgstr "Printeri asukoht"
 
 #: ../src/PrinterPage.vala:97
 msgid "IP Address:"
-msgstr ""
+msgstr "IP-aadress:"
 
 #: ../src/PrinterPage.vala:125
 msgid "Use as Default Printer"
-msgstr ""
+msgstr "Määra vaikimisi printeriks"
 
 #: ../src/PrinterPage.vala:136
 msgid "Print Test Page"
-msgstr ""
+msgstr "Trüki testlehekülg"
 
 #: ../src/Plug.vala:33
 msgid "Printers"
@@ -50,69 +50,71 @@ msgstr "Printeri seadete muutmine"
 
 #: ../src/PrinterList.vala:48
 msgid "Add Printer…"
-msgstr ""
+msgstr "Lisa printer…"
 
 #: ../src/PrinterList.vala:50
 msgid "Remove Printer"
-msgstr ""
+msgstr "Eemalda printer"
 
 #: ../src/PrinterList.vala:77
 msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
+"Eemaldades printeri \"%s\", kaob kogu selle\n"
+"printeri ajalugu koos selle eelistustega."
 
 #: ../src/PrinterList.vala:82
 msgid "Remove"
-msgstr ""
+msgstr "Eemalda"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
-msgstr ""
+msgstr "Lehekülgi lehel:"
 
 #: ../src/OptionsPage.vala:140
 msgid "Two-sided:"
-msgstr ""
+msgstr "Kahepoolne:"
 
 #: ../src/OptionsPage.vala:174
 msgid "Orientation:"
-msgstr ""
+msgstr "Suund:"
 
 #: ../src/OptionsPage.vala:195
 msgid "Media Size:"
-msgstr ""
+msgstr "Meedia suurus:"
 
 #: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
 msgid "Automatic"
-msgstr ""
+msgstr "Automaatne"
 
 #: ../src/OptionsPage.vala:214
 msgid "One Color"
-msgstr ""
+msgstr "Ühevärviline"
 
 #: ../src/OptionsPage.vala:217
 msgid "Color"
-msgstr ""
+msgstr "Värviline"
 
 #: ../src/OptionsPage.vala:220
 msgid "One Color + Black"
-msgstr ""
+msgstr "Üks värv + must värv"
 
 #: ../src/OptionsPage.vala:223
 msgid "Greyscale"
-msgstr ""
+msgstr "Halltoonides"
 
 #: ../src/OptionsPage.vala:226
 msgid "Processed Color"
-msgstr ""
+msgstr "Töödeldud värv"
 
 #: ../src/OptionsPage.vala:229
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "Töödeldud halltoonid"
 
 #: ../src/OptionsPage.vala:238
 msgid "Color mode:"
-msgstr ""
+msgstr "Värvirežiim:"
 
 #: ../src/OptionsPage.vala:311
 msgid "Output Tray:"
@@ -120,23 +122,23 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:327
 msgid "Draft"
-msgstr ""
+msgstr "Mustand"
 
 #: ../src/OptionsPage.vala:330
 msgid "Normal"
-msgstr ""
+msgstr "Tavaline"
 
 #: ../src/OptionsPage.vala:333
 msgid "High"
-msgstr ""
+msgstr "Kõrge"
 
 #: ../src/OptionsPage.vala:339
 msgid "Quality:"
-msgstr ""
+msgstr "Kvaliteet:"
 
 #: ../src/OptionsPage.vala:355
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Paberi jaotus"
 
 #: ../src/OptionsPage.vala:358
 msgid "Alternate Tray"
@@ -148,7 +150,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:367
 msgid "Bottom"
-msgstr ""
+msgstr "All"
 
 #: ../src/OptionsPage.vala:370
 msgid "By-pass Tray"
@@ -156,7 +158,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:373
 msgid "Center"
-msgstr ""
+msgstr "Keskel"
 
 #: ../src/OptionsPage.vala:376
 msgid "Continuous Autofeed"
@@ -164,23 +166,23 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:380
 msgid "Disk"
-msgstr ""
+msgstr "Ketas"
 
 #: ../src/OptionsPage.vala:383
 msgid "Envelope"
-msgstr ""
+msgstr "Ümbrik"
 
 #: ../src/OptionsPage.vala:386
 msgid "Hagaki"
-msgstr ""
+msgstr "Hagaki"
 
 #: ../src/OptionsPage.vala:389
 msgid "Large Capacity"
-msgstr ""
+msgstr "Suure mahtuvusega"
 
 #: ../src/OptionsPage.vala:392
 msgid "Left"
-msgstr ""
+msgstr "Vasak"
 
 #: ../src/OptionsPage.vala:395
 msgid "Main Tray"
@@ -192,31 +194,31 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:401
 msgid "Manual"
-msgstr ""
+msgstr "Käsitsi"
 
 #: ../src/OptionsPage.vala:404
 msgid "Middle"
-msgstr ""
+msgstr "Keskmine"
 
 #: ../src/OptionsPage.vala:407
 msgid "Photo"
-msgstr ""
+msgstr "Foto"
 
 #: ../src/OptionsPage.vala:411
 msgid "Rear"
-msgstr ""
+msgstr "Tagumine"
 
 #: ../src/OptionsPage.vala:414
 msgid "Right"
-msgstr ""
+msgstr "Parem"
 
 #: ../src/OptionsPage.vala:417
 msgid "Side"
-msgstr ""
+msgstr "Külgmine"
 
 #: ../src/OptionsPage.vala:420
 msgid "Top"
-msgstr ""
+msgstr "Üleval"
 
 #: ../src/OptionsPage.vala:425
 msgid "Roll %d"
@@ -228,134 +230,134 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:441
 msgid "Paper Source:"
-msgstr ""
+msgstr "Paberi allikas:"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "Interneti printimise protokoll (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: ../src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "Interneti printimise protokoll (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: ../src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "Interneti printimise protokoll (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "Interneti printimise protokoll (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "Interneti printimise protokoll (ipp)"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "LPD/LPR masin või printer"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "AppSocket/HP JetDirect"
 
 #: ../src/AddPopover.vala:79
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "Kõikide saadaolevate printeri loetlemine pole võimalik"
 
 #: ../src/AddPopover.vala:202
 msgid "Refresh the printer list"
-msgstr ""
+msgstr "Uuenda printeri loendit"
 
 #: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
 msgid "Next"
-msgstr ""
+msgstr "Järgmine"
 
 #: ../src/AddPopover.vala:257
 msgid "Connection:"
-msgstr ""
+msgstr "Ühendus:"
 
 #: ../src/AddPopover.vala:264
 msgid "Description:"
-msgstr ""
+msgstr "Kirjeldus:"
 
 #: ../src/AddPopover.vala:270
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:279
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "Labor 1 või Arturi laud"
 
 #: ../src/AddPopover.vala:281
 msgid "Driver"
-msgstr ""
+msgstr "Draiver"
 
 #: ../src/AddPopover.vala:351
 msgid "Previous"
-msgstr ""
+msgstr "Eelmine"
 
 #: ../src/AddPopover.vala:579
 msgid "(recommended)"
-msgstr ""
+msgstr "(soovitatud)"
 
 #: ../src/AddPopover.vala:641
 msgid "Local Printers"
-msgstr ""
+msgstr "Kohalikud printerid"
 
 #: ../src/AddPopover.vala:647
 msgid "Network Printers"
-msgstr ""
+msgstr "Võrguprinterid"
 
 #: ../src/AddPopover.vala:653
 msgid "Available Network Printers"
-msgstr ""
+msgstr "Saadaolevad võrguprinterid"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "Must (PGBK)"
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
-msgstr ""
+msgstr "Must (BK)"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
-msgstr ""
+msgstr "Must"
 
 #: ../src/InkLevel.vala:99
 msgid "Yellow"
-msgstr ""
+msgstr "Kollane"
 
 #: ../src/InkLevel.vala:102
 msgid "Cyan"
-msgstr ""
+msgstr "Taevasinine"
 
 #: ../src/InkLevel.vala:105
 msgid "Magenta"
-msgstr ""
+msgstr "Magenta"
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:218
 msgid "Show completed jobs"
-msgstr ""
+msgstr "Näita lõpetatud printimistöid"
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
-msgstr ""
+msgstr "Printimistööd puuduvad"
 
 #: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
-msgstr ""
+msgstr "Järjekorras pole ühtegi printimistööd"
 
 #: ../src/JobsView.vala:203
 msgid "Hide completed jobs"
-msgstr ""
+msgstr "Valmis printimistööde peitmine"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -441,32 +443,32 @@ msgstr "Fotosilm ei tööta enam"
 
 #: ../src/Objects/Printer.vala:270
 msgid "Ready"
-msgstr ""
+msgstr "Valmis"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
-msgstr ""
+msgstr "Printimine pooleli"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
-msgstr ""
+msgstr "Ootel"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr ""
+msgstr "Töötlemine…"
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
-msgstr ""
+msgstr "Printimine peatatud"
 
 #: ../src/Objects/Job.vala:103
 msgid "Job Canceled"
-msgstr ""
+msgstr "Printimine tühistatud"
 
 #: ../src/Objects/Job.vala:105
 msgid "Job Aborded"
-msgstr ""
+msgstr "Printimine katkestatud"
 
 #: ../src/Objects/Job.vala:108
 msgid "Job Completed"
-msgstr ""
+msgstr "Printimine valmis"
