@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-09 14:50-0200\n"
-"PO-Revision-Date: 2015-09-03 23:38+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-12-14 14:01+0000\n"
+"Last-Translator: Mykola <mykaua@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-11 06:35+0000\n"
+"X-Launchpad-Export-Date: 2015-12-15 05:44+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
@@ -84,7 +84,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
 msgid "Automatic"
-msgstr ""
+msgstr "Автоматично"
 
 #: ../src/OptionsPage.vala:214
 msgid "One Color"
@@ -92,7 +92,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:217
 msgid "Color"
-msgstr ""
+msgstr "Колір"
 
 #: ../src/OptionsPage.vala:220
 msgid "One Color + Black"
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:367
 msgid "Bottom"
-msgstr ""
+msgstr "Знизу"
 
 #: ../src/OptionsPage.vala:370
 msgid "By-pass Tray"
@@ -156,7 +156,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:373
 msgid "Center"
-msgstr ""
+msgstr "По центру"
 
 #: ../src/OptionsPage.vala:376
 msgid "Continuous Autofeed"
@@ -180,7 +180,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:392
 msgid "Left"
-msgstr ""
+msgstr "Ліворуч"
 
 #: ../src/OptionsPage.vala:395
 msgid "Main Tray"

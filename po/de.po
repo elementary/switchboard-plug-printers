@@ -3,22 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-09 14:50-0200\n"
-"PO-Revision-Date: 2015-09-27 17:00+0000\n"
-"Last-Translator: Stefan Geidel <launchpad@stefangeidel.de>\n"
+"PO-Revision-Date: 2015-12-14 14:06+0000\n"
+"Last-Translator: Kevin Grahl <mail@kevingrahl.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-11 06:34+0000\n"
+"X-Launchpad-Export-Date: 2015-12-15 05:44+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
-msgstr ""
+msgstr "Einstellungen"
 
 #: ../src/PrinterPage.vala:87 ../src/AddPopover.vala:274
 msgid "Location:"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: ../src/PrinterPage.vala:95
 msgid "Location of the printer"
-msgstr ""
+msgstr "Standort des Druckers"
 
 #: ../src/PrinterPage.vala:97
 msgid "IP Address:"
@@ -34,11 +34,11 @@ msgstr ""
 
 #: ../src/PrinterPage.vala:125
 msgid "Use as Default Printer"
-msgstr ""
+msgstr "Als Standarddrucker benutzen"
 
 #: ../src/PrinterPage.vala:136
 msgid "Print Test Page"
-msgstr ""
+msgstr "Testseite drucken"
 
 #: ../src/Plug.vala:33
 msgid "Printers"
@@ -68,15 +68,15 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
-msgstr ""
+msgstr "Seiten pro Blatt:"
 
 #: ../src/OptionsPage.vala:140
 msgid "Two-sided:"
-msgstr ""
+msgstr "Doppelseitig:"
 
 #: ../src/OptionsPage.vala:174
 msgid "Orientation:"
-msgstr ""
+msgstr "Ausrichtung:"
 
 #: ../src/OptionsPage.vala:195
 msgid "Media Size:"
@@ -84,23 +84,23 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
 msgid "Automatic"
-msgstr ""
+msgstr "Automatisch"
 
 #: ../src/OptionsPage.vala:214
 msgid "One Color"
-msgstr ""
+msgstr "Einfarbig"
 
 #: ../src/OptionsPage.vala:217
 msgid "Color"
-msgstr ""
+msgstr "Farbe"
 
 #: ../src/OptionsPage.vala:220
 msgid "One Color + Black"
-msgstr ""
+msgstr "Einfarbig und Schwarzweiß"
 
 #: ../src/OptionsPage.vala:223
 msgid "Greyscale"
-msgstr ""
+msgstr "Graustufen"
 
 #: ../src/OptionsPage.vala:226
 msgid "Processed Color"
@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:238
 msgid "Color mode:"
-msgstr ""
+msgstr "Farbmodus:"
 
 #: ../src/OptionsPage.vala:311
 msgid "Output Tray:"
@@ -120,19 +120,19 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:327
 msgid "Draft"
-msgstr ""
+msgstr "Entwurf"
 
 #: ../src/OptionsPage.vala:330
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: ../src/OptionsPage.vala:333
 msgid "High"
-msgstr ""
+msgstr "Hoch"
 
 #: ../src/OptionsPage.vala:339
 msgid "Quality:"
-msgstr ""
+msgstr "Qualität:"
 
 #: ../src/OptionsPage.vala:355
 msgid "Paper Allocation"
@@ -176,7 +176,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:389
 msgid "Large Capacity"
-msgstr ""
+msgstr "Hohe Kapazität"
 
 #: ../src/OptionsPage.vala:392
 msgid "Left"
@@ -196,11 +196,11 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:404
 msgid "Middle"
-msgstr ""
+msgstr "Mitte"
 
 #: ../src/OptionsPage.vala:407
 msgid "Photo"
-msgstr ""
+msgstr "Foto"
 
 #: ../src/OptionsPage.vala:411
 msgid "Rear"
@@ -208,11 +208,11 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:414
 msgid "Right"
-msgstr ""
+msgstr "Rechts"
 
 #: ../src/OptionsPage.vala:417
 msgid "Side"
-msgstr ""
+msgstr "Seite"
 
 #: ../src/OptionsPage.vala:420
 msgid "Top"
@@ -224,11 +224,11 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:428
 msgid "Tray %d"
-msgstr ""
+msgstr "Ablage %d"
 
 #: ../src/OptionsPage.vala:441
 msgid "Paper Source:"
-msgstr ""
+msgstr "Papier-Quelle:"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
@@ -343,19 +343,19 @@ msgstr ""
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:218
 msgid "Show completed jobs"
-msgstr ""
+msgstr "Abgeschlossene Aufträge anzeigen"
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
-msgstr ""
+msgstr "Keine Aufträge"
 
 #: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
-msgstr ""
+msgstr "Es befinden sich keine Aufträge in der Warteschlange"
 
 #: ../src/JobsView.vala:203
 msgid "Hide completed jobs"
-msgstr ""
+msgstr "Verberge abgeschlossene Aufträge"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -380,12 +380,12 @@ msgstr "Entwicklerflüssigkeit leer"
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:53
 msgid "Low on a marker supply"
-msgstr "Eine Farbpatrone fast leer"
+msgstr "Eine Farbpatrone ist fast leer"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:55
 msgid "Out of a marker supply"
-msgstr "Eine Farbpatrone leer"
+msgstr "Eine Farbpatrone ist leer"
 
 #. / Translators: One or more covers on the printer are open
 #: ../src/Objects/Printer.vala:57
@@ -441,11 +441,11 @@ msgstr "Der optische Bildübertrager funktioniert nicht mehr"
 
 #: ../src/Objects/Printer.vala:270
 msgid "Ready"
-msgstr ""
+msgstr "Startbereit"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
-msgstr ""
+msgstr "Auftrag ausstehend"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
@@ -453,20 +453,20 @@ msgstr ""
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr ""
+msgstr "Bearbeiten …"
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
-msgstr ""
+msgstr "Auftrag gestoppt"
 
 #: ../src/Objects/Job.vala:103
 msgid "Job Canceled"
-msgstr ""
+msgstr "Auftrag abgebrochen"
 
 #: ../src/Objects/Job.vala:105
 msgid "Job Aborded"
-msgstr ""
+msgstr "Auftrag gescheitert"
 
 #: ../src/Objects/Job.vala:108
 msgid "Job Completed"
-msgstr ""
+msgstr "Auftrag erledigt"
