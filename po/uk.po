@@ -3,58 +3,58 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-09 14:50-0200\n"
-"PO-Revision-Date: 2015-12-14 14:01+0000\n"
-"Last-Translator: Mykola <mykaua@gmail.com>\n"
+"PO-Revision-Date: 2015-12-15 08:58+0000\n"
+"Last-Translator: Bogdan Lisnenko <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-15 05:44+0000\n"
+"X-Launchpad-Export-Date: 2015-12-16 06:02+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
 msgid "General"
-msgstr ""
+msgstr "Загальне"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
-msgstr ""
+msgstr "Параметри"
 
 #: ../src/PrinterPage.vala:87 ../src/AddPopover.vala:274
 msgid "Location:"
-msgstr ""
+msgstr "Розташування:"
 
 #: ../src/PrinterPage.vala:95
 msgid "Location of the printer"
-msgstr ""
+msgstr "Розташування принтера"
 
 #: ../src/PrinterPage.vala:97
 msgid "IP Address:"
-msgstr ""
+msgstr "IP-адреса:"
 
 #: ../src/PrinterPage.vala:125
 msgid "Use as Default Printer"
-msgstr ""
+msgstr "Використовувати як типовий принтер"
 
 #: ../src/PrinterPage.vala:136
 msgid "Print Test Page"
-msgstr ""
+msgstr "Надрукувати пробну сторінку"
 
 #: ../src/Plug.vala:33
 msgid "Printers"
-msgstr ""
+msgstr "Принтери"
 
 #: ../src/Plug.vala:34
 msgid "Change printers settings"
-msgstr ""
+msgstr "Змінити налаштування принтера"
 
 #: ../src/PrinterList.vala:48
 msgid "Add Printer…"
-msgstr ""
+msgstr "Додати принтер..."
 
 #: ../src/PrinterList.vala:50
 msgid "Remove Printer"
-msgstr ""
+msgstr "Вилучити принтер"
 
 #: ../src/PrinterList.vala:77
 msgid ""
@@ -64,23 +64,23 @@ msgstr ""
 
 #: ../src/PrinterList.vala:82
 msgid "Remove"
-msgstr ""
+msgstr "Вилучити"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
-msgstr ""
+msgstr "Сторінок на аркуші:"
 
 #: ../src/OptionsPage.vala:140
 msgid "Two-sided:"
-msgstr ""
+msgstr "Двосторонній:"
 
 #: ../src/OptionsPage.vala:174
 msgid "Orientation:"
-msgstr ""
+msgstr "Орієнтація:"
 
 #: ../src/OptionsPage.vala:195
 msgid "Media Size:"
-msgstr ""
+msgstr "Розмір аркуша:"
 
 #: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
 msgid "Automatic"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:223
 msgid "Greyscale"
-msgstr ""
+msgstr "Градації сірого"
 
 #: ../src/OptionsPage.vala:226
 msgid "Processed Color"
@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:238
 msgid "Color mode:"
-msgstr ""
+msgstr "Режим кольору:"
 
 #: ../src/OptionsPage.vala:311
 msgid "Output Tray:"
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:327
 msgid "Draft"
-msgstr ""
+msgstr "Чернетка"
 
 #: ../src/OptionsPage.vala:330
 msgid "Normal"
@@ -128,11 +128,11 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:333
 msgid "High"
-msgstr ""
+msgstr "Високий"
 
 #: ../src/OptionsPage.vala:339
 msgid "Quality:"
-msgstr ""
+msgstr "Якість:"
 
 #: ../src/OptionsPage.vala:355
 msgid "Paper Allocation"
