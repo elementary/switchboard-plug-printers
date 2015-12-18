@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-09 14:50-0200\n"
-"PO-Revision-Date: 2015-12-09 12:12+0000\n"
+"PO-Revision-Date: 2015-12-17 14:47+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-11 06:34+0000\n"
+"X-Launchpad-Export-Date: 2015-12-18 05:58+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
@@ -30,7 +30,7 @@ msgstr "Położenie drukarki"
 
 #: ../src/PrinterPage.vala:97
 msgid "IP Address:"
-msgstr ""
+msgstr "Adres IP:"
 
 #: ../src/PrinterPage.vala:125
 msgid "Use as Default Printer"
@@ -61,6 +61,8 @@ msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
+"Usuwając '%s' stracisz całą historię wydruku\n"
+"oraz powiązaną konfigurację."
 
 #: ../src/PrinterList.vala:82
 msgid "Remove"
@@ -160,7 +162,7 @@ msgstr "Wyśrodkuj"
 
 #: ../src/OptionsPage.vala:376
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "Automatyczny podajnik ciągły"
 
 #: ../src/OptionsPage.vala:380
 msgid "Disk"
@@ -176,11 +178,11 @@ msgstr "Karta Hagaki"
 
 #: ../src/OptionsPage.vala:389
 msgid "Large Capacity"
-msgstr ""
+msgstr "Duża pojemność"
 
 #: ../src/OptionsPage.vala:392
 msgid "Left"
-msgstr ""
+msgstr "Lewy"
 
 #: ../src/OptionsPage.vala:395
 msgid "Main Tray"
@@ -196,7 +198,7 @@ msgstr "Ręcznie"
 
 #: ../src/OptionsPage.vala:404
 msgid "Middle"
-msgstr ""
+msgstr "Środek"
 
 #: ../src/OptionsPage.vala:407
 msgid "Photo"
@@ -204,11 +206,11 @@ msgstr "Zdjęcie"
 
 #: ../src/OptionsPage.vala:411
 msgid "Rear"
-msgstr ""
+msgstr "Tył"
 
 #: ../src/OptionsPage.vala:414
 msgid "Right"
-msgstr ""
+msgstr "Prawy"
 
 #: ../src/OptionsPage.vala:417
 msgid "Side"
@@ -216,7 +218,7 @@ msgstr "Strona"
 
 #: ../src/OptionsPage.vala:420
 msgid "Top"
-msgstr ""
+msgstr "Góra"
 
 #: ../src/OptionsPage.vala:425
 msgid "Roll %d"
@@ -449,7 +451,7 @@ msgstr "Zadanie oczekujące"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
-msgstr ""
+msgstr "Wstrzymane"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
