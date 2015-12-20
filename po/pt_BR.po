@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-09 14:50-0200\n"
-"PO-Revision-Date: 2015-11-03 17:16+0000\n"
+"PO-Revision-Date: 2015-12-18 09:43+0000\n"
 "Last-Translator: Leonardo Lemos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-11 06:35+0000\n"
+"X-Launchpad-Export-Date: 2015-12-20 07:04+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
@@ -22,7 +22,7 @@ msgstr "Opções"
 
 #: ../src/PrinterPage.vala:87 ../src/AddPopover.vala:274
 msgid "Location:"
-msgstr ""
+msgstr "Localização:"
 
 #: ../src/PrinterPage.vala:95
 msgid "Location of the printer"
@@ -30,7 +30,7 @@ msgstr "Localização da impressora"
 
 #: ../src/PrinterPage.vala:97
 msgid "IP Address:"
-msgstr ""
+msgstr "Endereço IP:"
 
 #: ../src/PrinterPage.vala:125
 msgid "Use as Default Printer"
@@ -50,21 +50,23 @@ msgstr "Altere configurações das impressoras"
 
 #: ../src/PrinterList.vala:48
 msgid "Add Printer…"
-msgstr ""
+msgstr "Adicionar impressora..."
 
 #: ../src/PrinterList.vala:50
 msgid "Remove Printer"
-msgstr ""
+msgstr "Remover impressora"
 
 #: ../src/PrinterList.vala:77
 msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
+"Removendo '%s' você perderá todo o histórico \n"
+"de impressão e configurações associadas à ele."
 
 #: ../src/PrinterList.vala:82
 msgid "Remove"
-msgstr ""
+msgstr "Remover"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
@@ -80,7 +82,7 @@ msgstr "Orientação:"
 
 #: ../src/OptionsPage.vala:195
 msgid "Media Size:"
-msgstr ""
+msgstr "Tamanho de mídia:"
 
 #: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
 msgid "Automatic"
@@ -136,7 +138,7 @@ msgstr "Qualidade:"
 
 #: ../src/OptionsPage.vala:355
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Alocação de papel"
 
 #: ../src/OptionsPage.vala:358
 msgid "Alternate Tray"
@@ -233,113 +235,113 @@ msgstr "Origem do papel:"
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "Protocolo de Impressão para Internet (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: ../src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "Protocolo de Impressão para Internet (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: ../src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "Protocolo de Impressão para Internet (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "Protocolo de Impressão para Internet (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "Protocolo de Impressão da Internet (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "LPD/LPR Hospedeiro ou Impressora"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "AppSocket/HP JetDirect"
 
 #: ../src/AddPopover.vala:79
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "Impossível listar todas as impressoras disponíveis"
 
 #: ../src/AddPopover.vala:202
 msgid "Refresh the printer list"
-msgstr ""
+msgstr "Atualizar a lista de impressoras"
 
 #: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
 msgid "Next"
-msgstr ""
+msgstr "Próxima"
 
 #: ../src/AddPopover.vala:257
 msgid "Connection:"
-msgstr ""
+msgstr "Conexão:"
 
 #: ../src/AddPopover.vala:264
 msgid "Description:"
-msgstr ""
+msgstr "Descrição:"
 
 #: ../src/AddPopover.vala:270
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:279
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "Laboratório 1 ou Mesa do João"
 
 #: ../src/AddPopover.vala:281
 msgid "Driver"
-msgstr ""
+msgstr "Driver"
 
 #: ../src/AddPopover.vala:351
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: ../src/AddPopover.vala:579
 msgid "(recommended)"
-msgstr ""
+msgstr "(recomendado)"
 
 #: ../src/AddPopover.vala:641
 msgid "Local Printers"
-msgstr ""
+msgstr "Impressoras locais"
 
 #: ../src/AddPopover.vala:647
 msgid "Network Printers"
-msgstr ""
+msgstr "Impressoras na rede"
 
 #: ../src/AddPopover.vala:653
 msgid "Available Network Printers"
-msgstr ""
+msgstr "Impressoras disponíveis na rede"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "Preto (PGBK)"
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
-msgstr ""
+msgstr "Preto (BK)"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
-msgstr ""
+msgstr "Preto"
 
 #: ../src/InkLevel.vala:99
 msgid "Yellow"
-msgstr ""
+msgstr "Amarelo"
 
 #: ../src/InkLevel.vala:102
 msgid "Cyan"
-msgstr ""
+msgstr "Ciano"
 
 #: ../src/InkLevel.vala:105
 msgid "Magenta"
-msgstr ""
+msgstr "Magenta"
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:218
 msgid "Show completed jobs"
