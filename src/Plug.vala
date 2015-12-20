@@ -31,7 +31,7 @@ namespace Printers {
             Object (category: Category.HARDWARE,
                     code_name: Build.PLUGCODENAME,
                     display_name: _("Printers"),
-                    description: _("Change printers settings"),
+                    description: _("Configure printers, manage print queues, and view ink levels"),
                     icon: "printer");
             plug = this;
         }
