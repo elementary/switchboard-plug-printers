@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-21 12:31-0200\n"
-"PO-Revision-Date: 2015-12-17 14:47+0000\n"
-"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
+"PO-Revision-Date: 2015-12-28 09:18+0000\n"
+"Last-Translator: Damian Woźniak <fiszet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-25 05:44+0000\n"
+"X-Launchpad-Export-Date: 2015-12-29 05:40+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
@@ -47,6 +47,8 @@ msgstr "Drukarki"
 #: ../src/Plug.vala:34
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
+"Konfiguruj drukarki, zarządzaj kolejkami wydruku oraz sprawdź poziom "
+"atramentu"
 
 #: ../src/PrinterList.vala:48
 msgid "Add Printer…"
