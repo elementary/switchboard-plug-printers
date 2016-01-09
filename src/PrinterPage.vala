@@ -158,14 +158,15 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     public PrinterRow (Printer printer) {
         this.printer = printer;
         name_label = new Gtk.Label (printer.info);
-        name_label.get_style_context ().add_class ("h3");
         name_label.ellipsize = Pango.EllipsizeMode.END;
         ((Gtk.Misc) name_label).xalign = 0;
-        status_label = new Gtk.Label (printer.state_reasons_localized);
+        status_label = new Gtk.Label ("<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons_localized)));
+        status_label.use_markup = true;
         status_label.tooltip_text = printer.state_reasons_localized;
         status_label.ellipsize = Pango.EllipsizeMode.END;
         ((Gtk.Misc) status_label).xalign = 0;
         printer_image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DND);
+        printer_image.pixel_size = 32;
         status_image = new Gtk.Image.from_icon_name ("user-available", Gtk.IconSize.MENU);
         status_image.halign = status_image.valign = Gtk.Align.END;
         var overlay = new Gtk.Overlay ();
