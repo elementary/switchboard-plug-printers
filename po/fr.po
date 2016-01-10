@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-21 12:31-0200\n"
-"PO-Revision-Date: 2015-12-14 08:25+0000\n"
+"PO-Revision-Date: 2016-01-09 17:39+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-25 05:44+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-01-10 05:33+0000\n"
+"X-Generator: Launchpad (build 17881)\n"
 
 #: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
 msgid "General"
@@ -47,6 +47,8 @@ msgstr "Imprimantes"
 #: ../src/Plug.vala:34
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
+"Configurer les imprimantes, gérer les tâches en cours et vérifier les "
+"niveaux d'encre."
 
 #: ../src/PrinterList.vala:48
 msgid "Add Printer…"
@@ -82,7 +84,7 @@ msgstr "Orientation :"
 
 #: ../src/OptionsPage.vala:195
 msgid "Media Size:"
-msgstr ""
+msgstr "Taille du Papier :"
 
 #: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
 msgid "Automatic"
@@ -118,7 +120,7 @@ msgstr "Mode de couleur :"
 
 #: ../src/OptionsPage.vala:311
 msgid "Output Tray:"
-msgstr ""
+msgstr "Bac de sortie :"
 
 #: ../src/OptionsPage.vala:327
 msgid "Draft"
@@ -230,7 +232,7 @@ msgstr "Bac %d"
 
 #: ../src/OptionsPage.vala:441
 msgid "Paper Source:"
-msgstr ""
+msgstr "Source du Papier :"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
@@ -443,11 +445,11 @@ msgstr "Le photo-conducteur optique n'est plus en état"
 
 #: ../src/Objects/Printer.vala:270
 msgid "Ready"
-msgstr ""
+msgstr "Prêt"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
-msgstr ""
+msgstr "Tâche en attente"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
@@ -455,15 +457,15 @@ msgstr ""
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr ""
+msgstr "Traitement…"
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
-msgstr ""
+msgstr "Tâche arrêtée"
 
 #: ../src/Objects/Job.vala:103
 msgid "Job Canceled"
-msgstr ""
+msgstr "Tâche annulée"
 
 #: ../src/Objects/Job.vala:105
 msgid "Job Aborded"
@@ -471,4 +473,4 @@ msgstr ""
 
 #: ../src/Objects/Job.vala:108
 msgid "Job Completed"
-msgstr ""
+msgstr "Tâche terminée"
