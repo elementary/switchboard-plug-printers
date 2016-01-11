@@ -308,18 +308,10 @@ public class Printers.Printer : GLib.Object {
     }
 
     public int get_pages_per_sheet (Gee.TreeSet<int> pages_per_sheet) {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-
         string[] attributes = { CUPS.Attributes.NUMBER_UP_SUPPORTED,
                                 CUPS.Attributes.NUMBER_UP_DEFAULT };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+        try {
+            var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.NUMBER_UP_SUPPORTED, CUPS.IPP.Tag.ZERO);
             for (int i = 0; i < attr.get_count (); i++) {
                 pages_per_sheet.add (attr.get_integer (i));
@@ -328,13 +320,12 @@ public class Printers.Printer : GLib.Object {
             attr = request.find_attribute (CUPS.Attributes.NUMBER_UP_DEFAULT, CUPS.IPP.Tag.ZERO);
             if (attr.get_count () > 0) {
                 return attr.get_integer ();
-            } else {
-                return 1;
             }
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-            return -1;
+        } catch (Error e) {
+            critical ("Error: %s", e.message);
         }
+
+        return 1;
     }
 
     public void set_default_pages (string new_default) {
@@ -348,18 +339,10 @@ public class Printers.Printer : GLib.Object {
     }
 
     public string get_sides (Gee.TreeSet<string> sides) {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-
         string[] attributes = { CUPS.Attributes.SIDES_SUPPORTED,
                                 CUPS.Attributes.SIDES_DEFAULT };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+        try {
+            var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.SIDES_SUPPORTED, CUPS.IPP.Tag.ZERO);
             for (int i = 0; i < attr.get_count (); i++) {
                 sides.add (attr.get_string (i));
@@ -368,13 +351,12 @@ public class Printers.Printer : GLib.Object {
             attr = request.find_attribute (CUPS.Attributes.SIDES_DEFAULT, CUPS.IPP.Tag.ZERO);
             if (attr.get_count () > 0) {
                 return attr.get_string ();
-            } else {
-                return CUPS.Attributes.Sided.ONE;
             }
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-            return "";
+        } catch (Error e) {
+            critical ("Error: %s", e.message);
         }
+
+        return CUPS.Attributes.Sided.ONE;
     }
 
     public void set_default_side (string new_default) {
@@ -388,18 +370,10 @@ public class Printers.Printer : GLib.Object {
     }
 
     public int get_orientations (Gee.TreeSet<int> orientations) {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-
         string[] attributes = { CUPS.Attributes.ORIENTATION_SUPPORTED,
                                 CUPS.Attributes.ORIENTATION_DEFAULT };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+        try {
+            var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.ORIENTATION_SUPPORTED, CUPS.IPP.Tag.ZERO);
             for (int i = 0; i < attr.get_count (); i++) {
                 orientations.add (attr.get_integer (i));
@@ -410,16 +384,13 @@ public class Printers.Printer : GLib.Object {
                 int page = attr.get_integer ();
                 if (page >= 3 && page <= 6) {
                     return page;
-                } else {
-                    return CUPS.Attributes.Orientation.PORTRAIT;
                 }
-            } else {
-                return CUPS.Attributes.Orientation.PORTRAIT;
             }
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-            return -1;
+        } catch (Error e) {
+            critical ("Error: %s", e.message);
         }
+
+        return CUPS.Attributes.Orientation.PORTRAIT;
     }
 
     public void set_default_orientation (string new_default) {
@@ -433,18 +404,10 @@ public class Printers.Printer : GLib.Object {
     }
 
     public string get_output_bins (Gee.TreeSet<string> output_bins) {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-
         string[] attributes = { CUPS.Attributes.OUTPUT_BIN_SUPPORTED,
                                 CUPS.Attributes.OUTPUT_BIN_DEFAULT };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+        try {
+            var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.OUTPUT_BIN_SUPPORTED, CUPS.IPP.Tag.ZERO);
             for (int i = 0; i < attr.get_count (); i++) {
                 output_bins.add (attr.get_string (i));
@@ -453,13 +416,12 @@ public class Printers.Printer : GLib.Object {
             attr = request.find_attribute (CUPS.Attributes.OUTPUT_BIN_DEFAULT, CUPS.IPP.Tag.ZERO);
             if (attr.get_count () > 0) {
                 return attr.get_string ();
-            } else {
-                return "rear";
             }
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-            return "";
+        } catch (Error e) {
+            critical ("Error: %s", e.message);
         }
+
+        return "rear";
     }
 
     public void set_default_output_bin (string new_default) {
@@ -473,18 +435,10 @@ public class Printers.Printer : GLib.Object {
     }
 
     public string get_print_color_modes (Gee.TreeSet<string> print_color_modes) {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-
         string[] attributes = { CUPS.Attributes.PRINT_COLOR_MODE_SUPPORTED,
                                 CUPS.Attributes.PRINT_COLOR_MODE_DEFAULT };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+        try {
+            var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.PRINT_COLOR_MODE_SUPPORTED, CUPS.IPP.Tag.ZERO);
             for (int i = 0; i < attr.get_count (); i++) {
                 print_color_modes.add (attr.get_string (i));
@@ -493,13 +447,12 @@ public class Printers.Printer : GLib.Object {
             attr = request.find_attribute (CUPS.Attributes.PRINT_COLOR_MODE_DEFAULT, CUPS.IPP.Tag.ZERO);
             if (attr.get_count () > 0) {
                 return attr.get_string ();
-            } else {
-                return "auto";
             }
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-            return "";
+        } catch (Error e) {
+            critical ("Error: %s", e.message);
         }
+
+        return "auto";
     }
 
     public void set_default_print_color_mode (string new_default) {
@@ -513,18 +466,10 @@ public class Printers.Printer : GLib.Object {
     }
 
     public string get_media_sources (Gee.TreeSet<string> media_sources) {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-
         string[] attributes = { CUPS.Attributes.MEDIA_SOURCE_SUPPORTED,
                                 CUPS.Attributes.MEDIA_SOURCE_DEFAULT };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+        try {
+            var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.MEDIA_SOURCE_SUPPORTED, CUPS.IPP.Tag.ZERO);
             for (int i = 0; i < attr.get_count (); i++) {
                 media_sources.add (attr.get_string (i));
@@ -533,28 +478,19 @@ public class Printers.Printer : GLib.Object {
             attr = request.find_attribute (CUPS.Attributes.MEDIA_SOURCE_DEFAULT, CUPS.IPP.Tag.ZERO);
             if (attr.get_count () > 0) {
                 return attr.get_string ();
-            } else {
-                return "auto";
             }
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-            return "";
+        } catch (Error e) {
+            critical ("Error: %s", e.message);
         }
+
+        return "auto";
     }
 
     public string get_media_sizes (Gee.TreeSet<string> media_sizes) {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-
         string[] attributes = { CUPS.Attributes.MEDIA_SUPPORTED,
                                 CUPS.Attributes.MEDIA_DEFAULT };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+        try {
+            var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.MEDIA_SUPPORTED, CUPS.IPP.Tag.ZERO);
             for (int i = 0; i < attr.get_count (); i++) {
                 media_sizes.add (attr.get_string (i));
@@ -563,13 +499,12 @@ public class Printers.Printer : GLib.Object {
             attr = request.find_attribute (CUPS.Attributes.MEDIA_DEFAULT, CUPS.IPP.Tag.ZERO);
             if (attr.get_count () > 0) {
                 return attr.get_string ();
-            } else {
-                return "auto";
             }
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-            return "";
+        } catch (Error e) {
+            critical ("Error: %s", e.message);
         }
+
+        return "auto";
     }
 
     public void set_default_media_source (string new_default) {
@@ -577,18 +512,10 @@ public class Printers.Printer : GLib.Object {
     }
 
     public int get_print_qualities (Gee.TreeSet<int> print_qualities) {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-
         string[] attributes = { CUPS.Attributes.PRINT_QUALITY_SUPPORTED,
                                 CUPS.Attributes.PRINT_QUALITY_DEFAULT };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+        try {
+            var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.find_attribute (CUPS.Attributes.PRINT_QUALITY_SUPPORTED, CUPS.IPP.Tag.ZERO);
             for (int i = 0; i < attr.get_count (); i++) {
                 print_qualities.add (attr.get_integer (i));
@@ -599,37 +526,43 @@ public class Printers.Printer : GLib.Object {
                 int quality = attr.get_integer ();
                 if (quality >= 3 && quality <= 5) {
                     return quality;
-                } else {
-                    return 4;
                 }
-            } else {
-                return 4;
             }
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-            return -1;
+        } catch (Error e) {
+            critical ("Error: %s", e.message);
         }
+
+        return 4;
     }
 
     public void get_all () {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-
         string[] attributes = { "all" };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
+        try {
+            var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.first_attribute ();
             while (attr != null) {
                 warning (attr.get_name ());
                 attr = request.next_attribute ();
             }
+        } catch (Error e) {
+            critical ("Error: %s", e.message);
+        }
+    }
+
+    private CUPS.IPP.IPP request_attributes (string[] attributes) throws GLib.Error {
+        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
+        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
+        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
+
+        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
+        request.do_request (CUPS.HTTP.DEFAULT);
+
+        var status_code = request.get_status_code ();
+        if (status_code <= CUPS.IPP.Status.OK_CONFLICT) {
+            return request;
         } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
+            throw new GLib.IOError.FAILED (status_code.to_string ());
         }
     }
 }
