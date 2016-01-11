@@ -33,8 +33,8 @@ public class Printers.PrinterPage : Gtk.Grid {
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.halign = Gtk.Align.CENTER;
         stack_switcher.set_stack (stack);
-        stack.add_titled (get_general_page (), "general", _("General"));
-        stack.add_titled (get_options_page (), "options", _("Options"));
+        stack.add_titled (new JobsView (printer), "general", _("General"));
+        stack.add_titled (new OptionsPage (printer), "options", _("Options"));
         create_header ();
         attach (stack_switcher, 0, 1, 3, 1);
         attach (stack, 0, 2, 3, 1);
@@ -45,7 +45,11 @@ public class Printers.PrinterPage : Gtk.Grid {
     private void create_header () {
         var image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DIALOG);
 
-        var editable_title = new EditableTitle (printer);
+        var editable_title = new EditableTitle (printer.info);
+        editable_title.get_style_context ().add_class ("h2");
+        editable_title.title_edited.connect ((new_title) => {
+            printer.info = new_title;
+        });
 
         var expander = new Gtk.Grid ();
         expander.hexpand = true;
@@ -72,6 +76,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         info_popover.hide.connect (() => {
             info_button.active = false;
         });
+
         info_button.toggled.connect (() => {
             if (info_button.active == true) {
                 info_popover.show_all ();
@@ -94,33 +99,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         location_entry.halign = Gtk.Align.START;
         location_entry.placeholder_text = _("Location of the printer");
 
-        var ip_label = new Gtk.Label (_("IP Address:"));
-        ((Gtk.Misc) ip_label).xalign = 1;
-
-        var ip_label_ = new Gtk.Label ("localhost");
-        ip_label_.selectable = true;
-        ((Gtk.Misc) ip_label_).xalign = 0;
-
         var ink_level = new InkLevel (printer);
-
-        var info_grid = new Gtk.Grid ();
-        info_grid.margin = 6;
-        info_grid.column_spacing = 12;
-        info_grid.row_spacing = 6;
-        info_grid.attach (location_label, 0, 0, 1, 1);
-        info_grid.attach (location_entry, 1, 0, 1, 1);
-        info_grid.attach (ip_label, 0, 1, 1, 1);
-        info_grid.attach (ip_label_, 1, 1, 1, 1);
-        info_grid.attach (ink_level, 0, 2, 2, 1);
-        info_popover.add (info_grid);
-    }
-
-    private Gtk.Grid get_general_page () {
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 12;
-        grid.row_spacing = 6;
-
-        var jobs_view = new JobsView (printer);
 
         var default_check = new Gtk.CheckButton.with_label (_("Use as Default Printer"));
         default_check.active = printer.is_default;
@@ -131,19 +110,19 @@ public class Printers.PrinterPage : Gtk.Grid {
                 default_check.active = true;
             }
         });
-        var expander_grid = new Gtk.Grid ();
-        expander_grid.hexpand = true;
+
         var print_test = new Gtk.Button.with_label (_("Print Test Page"));
 
-        grid.attach (jobs_view, 0, 0, 3, 1);
-        grid.attach (default_check, 0, 1, 1, 1);
-        grid.attach (expander_grid, 1, 1, 1, 1);
-        grid.attach (print_test, 2, 1, 1, 1);
-        return grid;
-    }
-
-    private Gtk.Grid get_options_page () {
-        return new OptionsPage (printer);
+        var info_grid = new Gtk.Grid ();
+        info_grid.margin = 6;
+        info_grid.column_spacing = 12;
+        info_grid.row_spacing = 6;
+        info_grid.attach (location_label, 0, 0, 1, 1);
+        info_grid.attach (location_entry, 1, 0, 1, 1);
+        info_grid.attach (default_check, 0, 1, 2, 1);
+        info_grid.attach (ink_level, 0, 2, 2, 1);
+        info_grid.attach (print_test, 0, 3, 2, 1);
+        info_popover.add (info_grid);
     }
 }
 

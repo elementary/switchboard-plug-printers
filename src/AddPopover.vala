@@ -400,7 +400,10 @@ public class Printers.AddPopover : Gtk.Popover {
                     uri = connection_entry.text;
                 }
 
-                Cups.get_pk_helper ().printer_add (name, uri, selected_driver.ppd_name, description_entry.text, location_entry.text);
+                var pk_helper = Cups.get_pk_helper ();
+                pk_helper.printer_add (name, uri, selected_driver.ppd_name, description_entry.text, location_entry.text);
+                pk_helper.printer_set_enabled (name, true);
+                pk_helper.printer_set_accept_jobs (name, true);
             } catch (Error e) {
                 critical (e.message);
             }

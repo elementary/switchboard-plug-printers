@@ -21,35 +21,46 @@
  */
 
 public class Printers.EditableTitle : Gtk.EventBox {
-    private Printer printer;
+    public signal void title_edited (string new_title);
+    private Gtk.Label title;
+    private Gtk.Entry entry;
+    private Gtk.Stack stack;
+    private Gtk.Grid grid;
 
-    public EditableTitle (Printer printer) {
-        this.printer = printer;
+    public EditableTitle (string? title_name) {
         valign = Gtk.Align.CENTER;
         events |= Gdk.EventMask.ENTER_NOTIFY_MASK;
         events |= Gdk.EventMask.LEAVE_NOTIFY_MASK;
-        var name = new Gtk.Label (printer.info);
-        name.ellipsize = Pango.EllipsizeMode.END;
-        ((Gtk.Misc) name).xalign = 0;
-        name.get_style_context ().add_class ("h2");
 
-        var edit_button = new Gtk.ToggleButton ();
+        title = new Gtk.Label (title_name);
+        title.ellipsize = Pango.EllipsizeMode.END;
+        ((Gtk.Misc) title).xalign = 0;
+
+        var edit_button = new Gtk.Button ();
         edit_button.image = new Gtk.Image.from_icon_name ("edit-symbolic", Gtk.IconSize.MENU);
+        edit_button.tooltip_text = _("Edit");
         edit_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
         var button_revealer = new Gtk.Revealer ();
+        button_revealer.valign = Gtk.Align.CENTER;
         button_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
         button_revealer.add (edit_button);
-        var button_grid = new Gtk.Grid ();
-        button_grid.valign = Gtk.Align.CENTER;
-        button_grid.add (button_revealer);
 
-        var grid = new Gtk.Grid ();
+        grid = new Gtk.Grid ();
         grid.valign = Gtk.Align.CENTER;
         grid.column_spacing = 12;
         grid.orientation = Gtk.Orientation.HORIZONTAL;
-        grid.add (name);
-        grid.add (button_grid);
-        add (grid);
+        grid.add (title);
+        grid.add (button_revealer);
+
+        entry = new Gtk.Entry ();
+        entry.secondary_icon_name = "go-jump-symbolic";
+        entry.secondary_icon_tooltip_text = _("Edit");
+
+        stack = new Gtk.Stack ();
+        stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+        stack.add (grid);
+        stack.add (entry);
+        add (stack);
 
         enter_notify_event.connect ((event) => {
             if (event.detail != Gdk.NotifyType.INFERIOR) {
@@ -66,5 +77,27 @@ public class Printers.EditableTitle : Gtk.EventBox {
 
             return false;
         });
+
+        edit_button.clicked.connect (() => {
+            entry.text = title.label;
+            stack.set_visible_child (entry);
+        });
+
+        entry.activate.connect (() => validate ());
+        entry.icon_release.connect ((p0, p1) => {
+            if (p0 == Gtk.EntryIconPosition.SECONDARY) {
+                validate ();
+            }
+        });
+    }
+
+    public void set_title (string new_title) {
+        title.label = new_title;
+    }
+
+    private void validate () {
+        title.label = entry.text;
+        title_edited (entry.text);
+        stack.set_visible_child (grid);
     }
 }
