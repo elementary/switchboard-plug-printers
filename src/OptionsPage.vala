@@ -186,9 +186,10 @@ public class Printers.OptionsPage : Gtk.Grid {
             var combobox = new Gtk.ComboBoxText ();
             foreach (var media_size in media_sizes) {
                 var papersize = new Gtk.PaperSize (media_size);
-                combobox.append (media_size, papersize.get_display_name ());
+                combobox.append (papersize.get_name (), papersize.get_display_name ());
             }
 
+            combobox.set_active_id (default_media_source);
             combobox.changed.connect (() => {
                 
             });

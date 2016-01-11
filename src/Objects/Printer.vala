@@ -504,11 +504,27 @@ public class Printers.Printer : GLib.Object {
             critical ("Error: %s", e.message);
         }
 
-        return "auto";
+        return Gtk.PaperSize.get_default ().dup ();
+    }
+
+    public void set_default_media_size (string new_default) {
+        unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
+        try {
+            pk_helper.printer_delete_option_default (dest.name, CUPS.Attributes.MEDIA_DEFAULT);
+            pk_helper.printer_add_option_default (dest.name, CUPS.Attributes.MEDIA_DEFAULT, {new_default});
+        } catch (Error e) {
+            critical (e.message);
+        }
     }
 
     public void set_default_media_source (string new_default) {
-        //TODO
+        unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
+        try {
+            pk_helper.printer_delete_option_default (dest.name, CUPS.Attributes.MEDIA_SOURCE_DEFAULT);
+            pk_helper.printer_add_option_default (dest.name, CUPS.Attributes.MEDIA_SOURCE_DEFAULT, {new_default});
+        } catch (Error e) {
+            critical (e.message);
+        }
     }
 
     public int get_print_qualities (Gee.TreeSet<int> print_qualities) {
@@ -541,7 +557,7 @@ public class Printers.Printer : GLib.Object {
             var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.first_attribute ();
             while (attr != null) {
-                warning (attr.get_name ());
+                message (attr.get_name ());
                 attr = request.next_attribute ();
             }
         } catch (Error e) {
