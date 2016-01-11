@@ -97,7 +97,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         location_entry.text = printer.location ?? "";
         location_entry.hexpand = true;
         location_entry.halign = Gtk.Align.START;
-        location_entry.placeholder_text = _("Location of the printer");
+        location_entry.placeholder_text = _("Lab 1 or John's Desk");
 
         var ink_level = new InkLevel (printer);
 
