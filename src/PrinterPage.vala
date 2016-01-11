@@ -137,6 +137,7 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     public PrinterRow (Printer printer) {
         this.printer = printer;
         name_label = new Gtk.Label (printer.info);
+        name_label.get_style_context ().add_class ("h3");
         name_label.ellipsize = Pango.EllipsizeMode.END;
         ((Gtk.Misc) name_label).xalign = 0;
         status_label = new Gtk.Label ("<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons_localized)));
