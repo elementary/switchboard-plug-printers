@@ -96,8 +96,10 @@ public class Printers.EditableTitle : Gtk.EventBox {
     }
 
     private void validate () {
-        title.label = entry.text;
-        title_edited (entry.text);
+        if (entry.text.strip () != "" && title.label != entry.text) {
+            title.label = entry.text;
+            title_edited (entry.text);
+        }
         stack.set_visible_child (grid);
     }
 }
