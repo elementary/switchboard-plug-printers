@@ -2,237 +2,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-21 12:31-0200\n"
-"PO-Revision-Date: 2016-01-09 17:39+0000\n"
+"POT-Creation-Date: 2016-01-11 19:17+0100\n"
+"PO-Revision-Date: 2016-01-11 19:03+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-10 05:33+0000\n"
+"X-Launchpad-Export-Date: 2016-01-12 05:47+0000\n"
 "X-Generator: Launchpad (build 17881)\n"
 
-#: ../src/PrinterPage.vala:36 ../src/AddPopover.vala:252
-msgid "General"
-msgstr "Général"
+#: ../src/InkLevel.vala:90
+msgid "Black (PGBK)"
+msgstr "Noir (PGBK)"
 
-#: ../src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Options"
+#: ../src/InkLevel.vala:93
+msgid "Black (BK)"
+msgstr "Noir (BK)"
 
-#: ../src/PrinterPage.vala:87 ../src/AddPopover.vala:274
-msgid "Location:"
-msgstr "Emplacement :"
+#: ../src/InkLevel.vala:96
+msgid "Black"
+msgstr "Noir"
 
-#: ../src/PrinterPage.vala:95
-msgid "Location of the printer"
-msgstr "Emplacement de l'imprimante"
+#: ../src/InkLevel.vala:99
+msgid "Yellow"
+msgstr "Jaune"
 
-#: ../src/PrinterPage.vala:97
-msgid "IP Address:"
-msgstr "Adresse IP :"
+#: ../src/InkLevel.vala:102
+msgid "Cyan"
+msgstr "Cyan"
 
-#: ../src/PrinterPage.vala:125
-msgid "Use as Default Printer"
-msgstr "Utiliser comme imprimante par défaut"
-
-#: ../src/PrinterPage.vala:136
-msgid "Print Test Page"
-msgstr "Imprimer la page de test"
-
-#: ../src/Plug.vala:33
-msgid "Printers"
-msgstr "Imprimantes"
-
-#: ../src/Plug.vala:34
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-"Configurer les imprimantes, gérer les tâches en cours et vérifier les "
-"niveaux d'encre."
-
-#: ../src/PrinterList.vala:48
-msgid "Add Printer…"
-msgstr "Ajouter une imprimante…"
-
-#: ../src/PrinterList.vala:50
-msgid "Remove Printer"
-msgstr "Supprimer l'imprimante"
-
-#: ../src/PrinterList.vala:77
-msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
-msgstr ""
-"En supprimant '%s' vous perdrez tout historique\n"
-"et la configuration attachés à celle-ci."
-
-#: ../src/PrinterList.vala:82
-msgid "Remove"
-msgstr "Supprimer"
-
-#: ../src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "Pages par côté :"
-
-#: ../src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "Recto-Verso :"
-
-#: ../src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "Orientation :"
-
-#: ../src/OptionsPage.vala:195
-msgid "Media Size:"
-msgstr "Taille du Papier :"
-
-#: ../src/OptionsPage.vala:211 ../src/OptionsPage.vala:364
-msgid "Automatic"
-msgstr "Automatique"
-
-#: ../src/OptionsPage.vala:214
-msgid "One Color"
-msgstr "Une couleur"
-
-#: ../src/OptionsPage.vala:217
-msgid "Color"
-msgstr "Couleur"
-
-#: ../src/OptionsPage.vala:220
-msgid "One Color + Black"
-msgstr "Une couleur + Noir"
-
-#: ../src/OptionsPage.vala:223
-msgid "Greyscale"
-msgstr "Niveaux de gris"
-
-#: ../src/OptionsPage.vala:226
-msgid "Processed Color"
-msgstr ""
-
-#: ../src/OptionsPage.vala:229
-msgid "Processed Greyscale"
-msgstr ""
-
-#: ../src/OptionsPage.vala:238
-msgid "Color mode:"
-msgstr "Mode de couleur :"
-
-#: ../src/OptionsPage.vala:311
-msgid "Output Tray:"
-msgstr "Bac de sortie :"
-
-#: ../src/OptionsPage.vala:327
-msgid "Draft"
-msgstr "Brouillon"
-
-#: ../src/OptionsPage.vala:330
-msgid "Normal"
-msgstr "Standard"
-
-#: ../src/OptionsPage.vala:333
-msgid "High"
-msgstr "Élevée"
-
-#: ../src/OptionsPage.vala:339
-msgid "Quality:"
-msgstr "Qualité :"
-
-#: ../src/OptionsPage.vala:355
-msgid "Paper Allocation"
-msgstr ""
-
-#: ../src/OptionsPage.vala:358
-msgid "Alternate Tray"
-msgstr ""
-
-#: ../src/OptionsPage.vala:361
-msgid "Alternate Roll"
-msgstr ""
-
-#: ../src/OptionsPage.vala:367
-msgid "Bottom"
-msgstr "Bas"
-
-#: ../src/OptionsPage.vala:370
-msgid "By-pass Tray"
-msgstr ""
-
-#: ../src/OptionsPage.vala:373
-msgid "Center"
-msgstr "Centre"
-
-#: ../src/OptionsPage.vala:376
-msgid "Continuous Autofeed"
-msgstr ""
-
-#: ../src/OptionsPage.vala:380
-msgid "Disk"
-msgstr "Disque"
-
-#: ../src/OptionsPage.vala:383
-msgid "Envelope"
-msgstr "Enveloppe"
-
-#: ../src/OptionsPage.vala:386
-msgid "Hagaki"
-msgstr "Hagaki"
-
-#: ../src/OptionsPage.vala:389
-msgid "Large Capacity"
-msgstr "Grande capacité"
-
-#: ../src/OptionsPage.vala:392
-msgid "Left"
-msgstr "Gauche"
-
-#: ../src/OptionsPage.vala:395
-msgid "Main Tray"
-msgstr "Bac principal"
-
-#: ../src/OptionsPage.vala:398
-msgid "Main Roll"
-msgstr ""
-
-#: ../src/OptionsPage.vala:401
-msgid "Manual"
-msgstr "Manuelle"
-
-#: ../src/OptionsPage.vala:404
-msgid "Middle"
-msgstr "Milieu"
-
-#: ../src/OptionsPage.vala:407
-msgid "Photo"
-msgstr "Photo"
-
-#: ../src/OptionsPage.vala:411
-msgid "Rear"
-msgstr "Arrière"
-
-#: ../src/OptionsPage.vala:414
-msgid "Right"
-msgstr "Droit"
-
-#: ../src/OptionsPage.vala:417
-msgid "Side"
-msgstr "Côté"
-
-#: ../src/OptionsPage.vala:420
-msgid "Top"
-msgstr "Haut"
-
-#: ../src/OptionsPage.vala:425
-msgid "Roll %d"
-msgstr ""
-
-#: ../src/OptionsPage.vala:428
-msgid "Tray %d"
-msgstr "Bac %d"
-
-#: ../src/OptionsPage.vala:441
-msgid "Paper Source:"
-msgstr "Source du Papier :"
+#: ../src/InkLevel.vala:105
+msgid "Magenta"
+msgstr "Magenta"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
@@ -281,6 +83,10 @@ msgstr "Actualiser la liste des imprimantes"
 msgid "Next"
 msgstr "Suivant"
 
+#: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
+msgid "General"
+msgstr "Général"
+
 #: ../src/AddPopover.vala:257
 msgid "Connection:"
 msgstr "Connexion :"
@@ -292,6 +98,10 @@ msgstr "Description :"
 #: ../src/AddPopover.vala:270
 msgid "BrandPrinter X3000"
 msgstr "MaqueImprimante 3000"
+
+#: ../src/AddPopover.vala:274 ../src/PrinterPage.vala:92
+msgid "Location:"
+msgstr "Emplacement :"
 
 #: ../src/AddPopover.vala:279
 msgid "Lab 1 or John's desk"
@@ -305,45 +115,185 @@ msgstr "Pilote"
 msgid "Previous"
 msgstr "Précédent"
 
-#: ../src/AddPopover.vala:579
+#: ../src/AddPopover.vala:582
 msgid "(recommended)"
 msgstr "(recommandé)"
 
-#: ../src/AddPopover.vala:641
+#: ../src/AddPopover.vala:644
 msgid "Local Printers"
 msgstr "Imprimantes locales"
 
-#: ../src/AddPopover.vala:647
+#: ../src/AddPopover.vala:650
 msgid "Network Printers"
 msgstr "Imprimantes réseau"
 
-#: ../src/AddPopover.vala:653
+#: ../src/AddPopover.vala:656
 msgid "Available Network Printers"
 msgstr "Imprimantes réseau disponibles"
 
-#: ../src/InkLevel.vala:90
-msgid "Black (PGBK)"
-msgstr "Noir (PGBK)"
+#: ../src/OptionsPage.vala:68
+msgid "Pages per side:"
+msgstr "Pages par côté :"
 
-#: ../src/InkLevel.vala:93
-msgid "Black (BK)"
-msgstr "Noir (BK)"
+#: ../src/OptionsPage.vala:140
+msgid "Two-sided:"
+msgstr "Recto-Verso :"
 
-#: ../src/InkLevel.vala:96
-msgid "Black"
-msgstr "Noir"
+#: ../src/OptionsPage.vala:174
+msgid "Orientation:"
+msgstr "Orientation :"
 
-#: ../src/InkLevel.vala:99
-msgid "Yellow"
-msgstr "Jaune"
+#: ../src/OptionsPage.vala:196
+msgid "Media Size:"
+msgstr "Taille du Papier :"
 
-#: ../src/InkLevel.vala:102
-msgid "Cyan"
-msgstr "Cyan"
+#: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
+msgid "Automatic"
+msgstr "Automatique"
 
-#: ../src/InkLevel.vala:105
-msgid "Magenta"
-msgstr "Magenta"
+#: ../src/OptionsPage.vala:215
+msgid "One Color"
+msgstr "Une couleur"
+
+#: ../src/OptionsPage.vala:218
+msgid "Color"
+msgstr "Couleur"
+
+#: ../src/OptionsPage.vala:221
+msgid "One Color + Black"
+msgstr "Une couleur + Noir"
+
+#: ../src/OptionsPage.vala:224
+msgid "Greyscale"
+msgstr "Niveaux de gris"
+
+#: ../src/OptionsPage.vala:227
+msgid "Processed Color"
+msgstr ""
+
+#: ../src/OptionsPage.vala:230
+msgid "Processed Greyscale"
+msgstr ""
+
+#: ../src/OptionsPage.vala:239
+msgid "Color mode:"
+msgstr "Mode de couleur :"
+
+#: ../src/OptionsPage.vala:312
+msgid "Output Tray:"
+msgstr "Bac de sortie :"
+
+#: ../src/OptionsPage.vala:328
+msgid "Draft"
+msgstr "Brouillon"
+
+#: ../src/OptionsPage.vala:331
+msgid "Normal"
+msgstr "Standard"
+
+#: ../src/OptionsPage.vala:334
+msgid "High"
+msgstr "Élevée"
+
+#: ../src/OptionsPage.vala:340
+msgid "Quality:"
+msgstr "Qualité :"
+
+#: ../src/OptionsPage.vala:356
+msgid "Paper Allocation"
+msgstr ""
+
+#: ../src/OptionsPage.vala:359
+msgid "Alternate Tray"
+msgstr ""
+
+#: ../src/OptionsPage.vala:362
+msgid "Alternate Roll"
+msgstr ""
+
+#: ../src/OptionsPage.vala:368
+msgid "Bottom"
+msgstr "Bas"
+
+#: ../src/OptionsPage.vala:371
+msgid "By-pass Tray"
+msgstr ""
+
+#: ../src/OptionsPage.vala:374
+msgid "Center"
+msgstr "Centre"
+
+#: ../src/OptionsPage.vala:377
+msgid "Continuous Autofeed"
+msgstr ""
+
+#: ../src/OptionsPage.vala:381
+msgid "Disk"
+msgstr "Disque"
+
+#: ../src/OptionsPage.vala:384
+msgid "Envelope"
+msgstr "Enveloppe"
+
+#: ../src/OptionsPage.vala:387
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: ../src/OptionsPage.vala:390
+msgid "Large Capacity"
+msgstr "Grande capacité"
+
+#: ../src/OptionsPage.vala:393
+msgid "Left"
+msgstr "Gauche"
+
+#: ../src/OptionsPage.vala:396
+msgid "Main Tray"
+msgstr "Bac principal"
+
+#: ../src/OptionsPage.vala:399
+msgid "Main Roll"
+msgstr ""
+
+#: ../src/OptionsPage.vala:402
+msgid "Manual"
+msgstr "Manuelle"
+
+#: ../src/OptionsPage.vala:405
+msgid "Middle"
+msgstr "Milieu"
+
+#: ../src/OptionsPage.vala:408
+msgid "Photo"
+msgstr "Photo"
+
+#: ../src/OptionsPage.vala:412
+msgid "Rear"
+msgstr "Arrière"
+
+#: ../src/OptionsPage.vala:415
+msgid "Right"
+msgstr "Droit"
+
+#: ../src/OptionsPage.vala:418
+msgid "Side"
+msgstr "Côté"
+
+#: ../src/OptionsPage.vala:421
+msgid "Top"
+msgstr "Haut"
+
+#: ../src/OptionsPage.vala:426
+msgid "Roll %d"
+msgstr ""
+
+#: ../src/OptionsPage.vala:429
+msgid "Tray %d"
+msgstr "Bac %d"
+
+#: ../src/OptionsPage.vala:442
+msgid "Paper Source:"
+msgstr "Source du Papier :"
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:218
 msgid "Show completed jobs"
@@ -474,3 +424,53 @@ msgstr ""
 #: ../src/Objects/Job.vala:108
 msgid "Job Completed"
 msgstr "Tâche terminée"
+
+#: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Éditer"
+
+#: ../src/PrinterPage.vala:37
+msgid "Options"
+msgstr "Options"
+
+#: ../src/PrinterPage.vala:100
+msgid "Lab 1 or John's Desk"
+msgstr "Labo 1 ou Bureau de Jean"
+
+#: ../src/PrinterPage.vala:104
+msgid "Use as Default Printer"
+msgstr "Utiliser comme imprimante par défaut"
+
+#: ../src/PrinterPage.vala:114
+msgid "Print Test Page"
+msgstr "Imprimer la page de test"
+
+#: ../src/Plug.vala:33
+msgid "Printers"
+msgstr "Imprimantes"
+
+#: ../src/Plug.vala:34
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr ""
+"Configurer les imprimantes, gérer les tâches en cours et vérifier les "
+"niveaux d'encre."
+
+#: ../src/PrinterList.vala:48
+msgid "Add Printer…"
+msgstr "Ajouter une imprimante…"
+
+#: ../src/PrinterList.vala:50
+msgid "Remove Printer"
+msgstr "Supprimer l'imprimante"
+
+#: ../src/PrinterList.vala:77
+msgid ""
+"By removing '%s' you'll lose all print history\n"
+"and configuration associated with it."
+msgstr ""
+"En supprimant '%s' vous perdrez tout historique\n"
+"et la configuration attachés à celle-ci."
+
+#: ../src/PrinterList.vala:82
+msgid "Remove"
+msgstr "Supprimer"
