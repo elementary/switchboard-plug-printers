@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:17+0100\n"
-"PO-Revision-Date: 2016-01-12 21:18+0000\n"
+"PO-Revision-Date: 2016-01-13 19:17+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-13 05:59+0000\n"
+"X-Launchpad-Export-Date: 2016-01-14 06:19+0000\n"
 "X-Generator: Launchpad (build 17886)\n"
 
 #: ../src/InkLevel.vala:90
@@ -301,15 +301,15 @@ msgstr "Mostra i lavori completati"
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
-msgstr "Nessun processo"
+msgstr "Nessun lavoro"
 
 #: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
-msgstr "Non ci sono processi in coda"
+msgstr "Non ci sono lavori in coda"
 
 #: ../src/JobsView.vala:203
 msgid "Hide completed jobs"
-msgstr "Nascondi i processi completati"
+msgstr "Nascondi i lavori completati"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -400,7 +400,7 @@ msgstr "Pronto"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
-msgstr "Processo sospeso"
+msgstr "Lavoro sospeso"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
@@ -408,23 +408,23 @@ msgstr "In attesa"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr "Elaborazione in corso ..."
+msgstr "Elaborazione in corso..."
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
-msgstr "Il processo è stato interrotto"
+msgstr "Il lavoro è stato interrotto"
 
 #: ../src/Objects/Job.vala:103
 msgid "Job Canceled"
-msgstr "Processo annullato"
+msgstr "Lavoro annullato"
 
 #: ../src/Objects/Job.vala:105
 msgid "Job Aborded"
-msgstr "Processo abortito"
+msgstr "Lavoro abortito"
 
 #: ../src/Objects/Job.vala:108
 msgid "Job Completed"
-msgstr "Processo completato"
+msgstr "Lavoro completato"
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
