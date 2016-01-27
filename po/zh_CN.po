@@ -3,81 +3,81 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:17+0100\n"
-"PO-Revision-Date: 2015-12-28 04:55+0000\n"
+"PO-Revision-Date: 2016-01-26 13:03+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-12 05:48+0000\n"
-"X-Generator: Launchpad (build 17881)\n"
+"X-Launchpad-Export-Date: 2016-01-27 05:37+0000\n"
+"X-Generator: Launchpad (build 17902)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "黑色 (PGBK)"
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
-msgstr ""
+msgstr "黑色 (BK)"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
-msgstr ""
+msgstr "黑色"
 
 #: ../src/InkLevel.vala:99
 msgid "Yellow"
-msgstr ""
+msgstr "黄色"
 
 #: ../src/InkLevel.vala:102
 msgid "Cyan"
-msgstr ""
+msgstr "青色"
 
 #: ../src/InkLevel.vala:105
 msgid "Magenta"
-msgstr ""
+msgstr "品红"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "互联网打印协议（HTTPS）"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: ../src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "互联网打印协议（HTTP）"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: ../src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "互联网打印协议（IPP）"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "互联网打印协议（IPPS）"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "互联网打印协议（IPP14）"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "LPD/LPR 主机或打印机"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "应用接口/HP JetDirect"
 
 #: ../src/AddPopover.vala:79
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "无法列出所有可用打印机"
 
 #: ../src/AddPopover.vala:202
 msgid "Refresh the printer list"
-msgstr ""
+msgstr "刷新打印机列表"
 
 #: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
 msgid "Next"
@@ -89,15 +89,15 @@ msgstr "常规"
 
 #: ../src/AddPopover.vala:257
 msgid "Connection:"
-msgstr ""
+msgstr "连接："
 
 #: ../src/AddPopover.vala:264
 msgid "Description:"
-msgstr ""
+msgstr "描述："
 
 #: ../src/AddPopover.vala:270
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:274 ../src/PrinterPage.vala:92
 msgid "Location:"
@@ -105,11 +105,11 @@ msgstr "位置："
 
 #: ../src/AddPopover.vala:279
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "Lab 1 或 John's desk"
 
 #: ../src/AddPopover.vala:281
 msgid "Driver"
-msgstr ""
+msgstr "驱动"
 
 #: ../src/AddPopover.vala:351
 msgid "Previous"
@@ -117,19 +117,19 @@ msgstr ""
 
 #: ../src/AddPopover.vala:582
 msgid "(recommended)"
-msgstr ""
+msgstr "（推荐）"
 
 #: ../src/AddPopover.vala:644
 msgid "Local Printers"
-msgstr ""
+msgstr "本地打印机"
 
 #: ../src/AddPopover.vala:650
 msgid "Network Printers"
-msgstr ""
+msgstr "网络打印机"
 
 #: ../src/AddPopover.vala:656
 msgid "Available Network Printers"
-msgstr ""
+msgstr "可用的网络打印机"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
@@ -145,7 +145,7 @@ msgstr "方向："
 
 #: ../src/OptionsPage.vala:196
 msgid "Media Size:"
-msgstr ""
+msgstr "媒体大小："
 
 #: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
 msgid "Automatic"
@@ -181,7 +181,7 @@ msgstr "颜色模式："
 
 #: ../src/OptionsPage.vala:312
 msgid "Output Tray:"
-msgstr ""
+msgstr "输出盘："
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
@@ -201,15 +201,15 @@ msgstr "质量："
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
-msgstr ""
+msgstr "纸张分配"
 
 #: ../src/OptionsPage.vala:359
 msgid "Alternate Tray"
-msgstr ""
+msgstr "备用托盘"
 
 #: ../src/OptionsPage.vala:362
 msgid "Alternate Roll"
-msgstr ""
+msgstr "备用卷"
 
 #: ../src/OptionsPage.vala:368
 msgid "Bottom"
@@ -217,7 +217,7 @@ msgstr "底部"
 
 #: ../src/OptionsPage.vala:371
 msgid "By-pass Tray"
-msgstr ""
+msgstr "支路托盘"
 
 #: ../src/OptionsPage.vala:374
 msgid "Center"
@@ -229,7 +229,7 @@ msgstr "连续自动供纸"
 
 #: ../src/OptionsPage.vala:381
 msgid "Disk"
-msgstr ""
+msgstr "磁盘"
 
 #: ../src/OptionsPage.vala:384
 msgid "Envelope"
@@ -249,11 +249,11 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
-msgstr ""
+msgstr "主托盘"
 
 #: ../src/OptionsPage.vala:399
 msgid "Main Roll"
-msgstr ""
+msgstr "主卷"
 
 #: ../src/OptionsPage.vala:402
 msgid "Manual"
@@ -285,11 +285,11 @@ msgstr "顶部"
 
 #: ../src/OptionsPage.vala:426
 msgid "Roll %d"
-msgstr ""
+msgstr "卷 %d"
 
 #: ../src/OptionsPage.vala:429
 msgid "Tray %d"
-msgstr ""
+msgstr "托盘 %d"
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
@@ -427,7 +427,7 @@ msgstr "任务已完成"
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
@@ -435,7 +435,7 @@ msgstr "选项"
 
 #: ../src/PrinterPage.vala:100
 msgid "Lab 1 or John's Desk"
-msgstr ""
+msgstr "Lab 1 或 John's Desk"
 
 #: ../src/PrinterPage.vala:104
 msgid "Use as Default Printer"
