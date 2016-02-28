@@ -3,181 +3,181 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:17+0100\n"
-"PO-Revision-Date: 2015-09-03 23:37+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-02-27 14:52+0000\n"
+"Last-Translator: momit rahman <momitrahman@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-12 05:47+0000\n"
-"X-Generator: Launchpad (build 17881)\n"
+"X-Launchpad-Export-Date: 2016-02-28 05:53+0000\n"
+"X-Generator: Launchpad (build 17925)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "কালো (PGBK)"
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
-msgstr ""
+msgstr "কালো (BK)"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
-msgstr ""
+msgstr "কালো"
 
 #: ../src/InkLevel.vala:99
 msgid "Yellow"
-msgstr ""
+msgstr "হলুদ"
 
 #: ../src/InkLevel.vala:102
 msgid "Cyan"
-msgstr ""
+msgstr "সবজে নীল"
 
 #: ../src/InkLevel.vala:105
 msgid "Magenta"
-msgstr ""
+msgstr "টকটকে লাল"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "ইন্টারনেট প্রিন্টিং প্রোটোকল (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: ../src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "ইন্টারনেট প্রিন্টিং প্রোটোকল (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: ../src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "ইন্টারনেট প্রিন্টিং প্রোটোকল (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "ইন্টারনেট প্রিন্টিং প্রোটোকল (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "ইন্টারনেট প্রিন্টিং প্রোটোকল (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "LPD/LPR হোস্ট অথবা প্রিন্টার"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "AppSocket/HP JetDirect"
 
 #: ../src/AddPopover.vala:79
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "ব্যবহারযোগ্য সবগুলো প্রিন্টার এর তালিকা করা সম্ভব না"
 
 #: ../src/AddPopover.vala:202
 msgid "Refresh the printer list"
-msgstr ""
+msgstr "প্রিন্টার এর তালিকা রিফ্রেশ করুন"
 
 #: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
 msgid "Next"
-msgstr ""
+msgstr "পরবর্তী ধাপ"
 
 #: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
 msgid "General"
-msgstr ""
+msgstr "সাধারন"
 
 #: ../src/AddPopover.vala:257
 msgid "Connection:"
-msgstr ""
+msgstr "সংযোগ:"
 
 #: ../src/AddPopover.vala:264
 msgid "Description:"
-msgstr ""
+msgstr "বিবরণ:"
 
 #: ../src/AddPopover.vala:270
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:274 ../src/PrinterPage.vala:92
 msgid "Location:"
-msgstr ""
+msgstr "অবস্থানঃ"
 
 #: ../src/AddPopover.vala:279
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "Lab 1 or John's desk"
 
 #: ../src/AddPopover.vala:281
 msgid "Driver"
-msgstr ""
+msgstr "ড্রাইভার"
 
 #: ../src/AddPopover.vala:351
 msgid "Previous"
-msgstr ""
+msgstr "পূর্ববর্তী ধাপ"
 
 #: ../src/AddPopover.vala:582
 msgid "(recommended)"
-msgstr ""
+msgstr "(গ্রহণযোগ্য বেশি)"
 
 #: ../src/AddPopover.vala:644
 msgid "Local Printers"
-msgstr ""
+msgstr "নিজস্ব প্রিন্টার"
 
 #: ../src/AddPopover.vala:650
 msgid "Network Printers"
-msgstr ""
+msgstr "নেটওয়ার্ক প্রিন্টার"
 
 #: ../src/AddPopover.vala:656
 msgid "Available Network Printers"
-msgstr ""
+msgstr "ব্যবহারযোগ্য নেটওয়ার্ক প্রিন্টার"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
-msgstr ""
+msgstr "এক পার্শ্বীয় পৃষ্ঠা সংখ্যাঃ"
 
 #: ../src/OptionsPage.vala:140
 msgid "Two-sided:"
-msgstr ""
+msgstr "দুই পার্শ্বীয়  পৃষ্ঠা সংখ্যাঃ"
 
 #: ../src/OptionsPage.vala:174
 msgid "Orientation:"
-msgstr ""
+msgstr "অবস্থানঃঃ"
 
 #: ../src/OptionsPage.vala:196
 msgid "Media Size:"
-msgstr ""
+msgstr "মিডিয়া এর পরিমাণঃ"
 
 #: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
 msgid "Automatic"
-msgstr ""
+msgstr "স্বয়ংক্রিয়"
 
 #: ../src/OptionsPage.vala:215
 msgid "One Color"
-msgstr ""
+msgstr "এক রং"
 
 #: ../src/OptionsPage.vala:218
 msgid "Color"
-msgstr ""
+msgstr "রং"
 
 #: ../src/OptionsPage.vala:221
 msgid "One Color + Black"
-msgstr ""
+msgstr "এক রং  + কালো"
 
 #: ../src/OptionsPage.vala:224
 msgid "Greyscale"
-msgstr ""
+msgstr "Greyscale"
 
 #: ../src/OptionsPage.vala:227
 msgid "Processed Color"
-msgstr ""
+msgstr "প্রক্রিয়াজাত রং"
 
 #: ../src/OptionsPage.vala:230
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "প্রক্রিয়াজাত Greyscale"
 
 #: ../src/OptionsPage.vala:239
 msgid "Color mode:"
-msgstr ""
+msgstr "রং এর ধরনঃ"
 
 #: ../src/OptionsPage.vala:312
 msgid "Output Tray:"
@@ -185,19 +185,19 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
-msgstr ""
+msgstr "খসড়া"
 
 #: ../src/OptionsPage.vala:331
 msgid "Normal"
-msgstr ""
+msgstr "সাধারণ"
 
 #: ../src/OptionsPage.vala:334
 msgid "High"
-msgstr ""
+msgstr "বেশী"
 
 #: ../src/OptionsPage.vala:340
 msgid "Quality:"
-msgstr ""
+msgstr "গুনগত মানঃ"
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
@@ -213,7 +213,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:368
 msgid "Bottom"
-msgstr ""
+msgstr "নীচে"
 
 #: ../src/OptionsPage.vala:371
 msgid "By-pass Tray"
