@@ -3,85 +3,85 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:17+0100\n"
-"PO-Revision-Date: 2015-12-14 14:06+0000\n"
-"Last-Translator: Kevin Grahl <mail@kevingrahl.de>\n"
+"PO-Revision-Date: 2016-03-08 14:25+0000\n"
+"Last-Translator: Artem Anufrij <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-12 05:47+0000\n"
-"X-Generator: Launchpad (build 17881)\n"
+"X-Launchpad-Export-Date: 2016-03-09 06:06+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "Schwarz (PGBK)"
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
-msgstr ""
+msgstr "Schwarz (BK)"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
-msgstr ""
+msgstr "Schwarz"
 
 #: ../src/InkLevel.vala:99
 msgid "Yellow"
-msgstr ""
+msgstr "Gelb"
 
 #: ../src/InkLevel.vala:102
 msgid "Cyan"
-msgstr ""
+msgstr "Türkis"
 
 #: ../src/InkLevel.vala:105
 msgid "Magenta"
-msgstr ""
+msgstr "Magenta"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "Internet Druckerdienst Protokoll (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: ../src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "Internet Druckerdienst Protokoll (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: ../src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "Internet Druckerdienst Protokoll (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "Internet Druckerdienst Protokoll (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "Internet Druckerdienst Protokoll (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "LPD/LPR-Rechner oder -Drucker"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "AppSocket/HP JetDirect"
 
 #: ../src/AddPopover.vala:79
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "Nicht möglich alle verfügbaren Drucker aufzulisten"
 
 #: ../src/AddPopover.vala:202
 msgid "Refresh the printer list"
-msgstr ""
+msgstr "Druckerliste aktualisieren"
 
 #: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
 msgid "Next"
-msgstr ""
+msgstr "Weiter"
 
 #: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
 msgid "General"
@@ -89,47 +89,47 @@ msgstr "Allgemein"
 
 #: ../src/AddPopover.vala:257
 msgid "Connection:"
-msgstr ""
+msgstr "Verbindung:"
 
 #: ../src/AddPopover.vala:264
 msgid "Description:"
-msgstr ""
+msgstr "Beschreibung:"
 
 #: ../src/AddPopover.vala:270
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:274 ../src/PrinterPage.vala:92
 msgid "Location:"
-msgstr ""
+msgstr "Ort:"
 
 #: ../src/AddPopover.vala:279
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "Labor 1 oder Johns Schreibtisch"
 
 #: ../src/AddPopover.vala:281
 msgid "Driver"
-msgstr ""
+msgstr "Treiber"
 
 #: ../src/AddPopover.vala:351
 msgid "Previous"
-msgstr ""
+msgstr "Vorheriger"
 
 #: ../src/AddPopover.vala:582
 msgid "(recommended)"
-msgstr ""
+msgstr "(empfohlen)"
 
 #: ../src/AddPopover.vala:644
 msgid "Local Printers"
-msgstr ""
+msgstr "Lokale Drucker"
 
 #: ../src/AddPopover.vala:650
 msgid "Network Printers"
-msgstr ""
+msgstr "Netzwerkdrucker"
 
 #: ../src/AddPopover.vala:656
 msgid "Available Network Printers"
-msgstr ""
+msgstr "Verfügbare Netzwerkdrucker"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
@@ -181,7 +181,7 @@ msgstr "Farbmodus:"
 
 #: ../src/OptionsPage.vala:312
 msgid "Output Tray:"
-msgstr ""
+msgstr "Ausgabe Fach:"
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
@@ -201,15 +201,15 @@ msgstr "Qualität:"
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Papier Belegung"
 
 #: ../src/OptionsPage.vala:359
 msgid "Alternate Tray"
-msgstr ""
+msgstr "Alternatives Fach"
 
 #: ../src/OptionsPage.vala:362
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Alternative Rolle"
 
 #: ../src/OptionsPage.vala:368
 msgid "Bottom"
@@ -229,7 +229,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:381
 msgid "Disk"
-msgstr ""
+msgstr "Datenträger"
 
 #: ../src/OptionsPage.vala:384
 msgid "Envelope"
@@ -249,11 +249,11 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
-msgstr ""
+msgstr "Hauptfach"
 
 #: ../src/OptionsPage.vala:399
 msgid "Main Roll"
-msgstr ""
+msgstr "Hauptrolle"
 
 #: ../src/OptionsPage.vala:402
 msgid "Manual"
@@ -285,7 +285,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:426
 msgid "Roll %d"
-msgstr ""
+msgstr "Rolle %d"
 
 #: ../src/OptionsPage.vala:429
 msgid "Tray %d"
@@ -403,7 +403,7 @@ msgstr "Auftrag ausstehend"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
-msgstr ""
+msgstr "Angehalten"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
@@ -427,7 +427,7 @@ msgstr "Auftrag erledigt"
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
-msgstr ""
+msgstr "Bearbeiten"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
@@ -435,7 +435,7 @@ msgstr "Einstellungen"
 
 #: ../src/PrinterPage.vala:100
 msgid "Lab 1 or John's Desk"
-msgstr ""
+msgstr "Labor 1 oder Johns Schreibtisch"
 
 #: ../src/PrinterPage.vala:104
 msgid "Use as Default Printer"
@@ -452,21 +452,25 @@ msgstr "Drucker"
 #: ../src/Plug.vala:34
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
+"Konfiguriere Drucker, verwalte Druckwarteschlange und zeige Tintenfüllstand "
+"an"
 
 #: ../src/PrinterList.vala:48
 msgid "Add Printer…"
-msgstr ""
+msgstr "Drucker hinzufügen …"
 
 #: ../src/PrinterList.vala:50
 msgid "Remove Printer"
-msgstr ""
+msgstr "Drucker entfernen"
 
 #: ../src/PrinterList.vala:77
 msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
+"Wenn Sie '%s' entfernen, werden Sie den gesamten Druckverlauf\n"
+"und die verbundene Konfiguration verlieren."
 
 #: ../src/PrinterList.vala:82
 msgid "Remove"
-msgstr ""
+msgstr "Entfernen"
