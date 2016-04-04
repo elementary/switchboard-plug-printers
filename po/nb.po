@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:17+0100\n"
-"PO-Revision-Date: 2016-03-12 16:36+0000\n"
-"Last-Translator: ProsjektX <Unknown>\n"
+"PO-Revision-Date: 2016-04-03 18:14+0000\n"
+"Last-Translator: Aleksander Leraand <aleksander9109@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-13 05:58+0000\n"
-"X-Generator: Launchpad (build 17939)\n"
+"X-Launchpad-Export-Date: 2016-04-04 05:45+0000\n"
+"X-Generator: Launchpad (build 17972)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -64,7 +64,7 @@ msgstr ""
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "LPD/LPR vert eller skriver"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:79
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "Umulig å liste opp alle tilgjengelige skrivere"
 
 #: ../src/AddPopover.vala:202
 msgid "Refresh the printer list"
@@ -81,19 +81,19 @@ msgstr ""
 
 #: ../src/AddPopover.vala:211 ../src/AddPopover.vala:358
 msgid "Next"
-msgstr ""
+msgstr "Neste"
 
 #: ../src/AddPopover.vala:252 ../src/PrinterPage.vala:36
 msgid "General"
-msgstr ""
+msgstr "Generelt"
 
 #: ../src/AddPopover.vala:257
 msgid "Connection:"
-msgstr ""
+msgstr "Forbindelse:"
 
 #: ../src/AddPopover.vala:264
 msgid "Description:"
-msgstr ""
+msgstr "Beskrivelse:"
 
 #: ../src/AddPopover.vala:270
 msgid "BrandPrinter X3000"
@@ -101,7 +101,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:274 ../src/PrinterPage.vala:92
 msgid "Location:"
-msgstr ""
+msgstr "Plassering:"
 
 #: ../src/AddPopover.vala:279
 msgid "Lab 1 or John's desk"
@@ -109,27 +109,27 @@ msgstr ""
 
 #: ../src/AddPopover.vala:281
 msgid "Driver"
-msgstr ""
+msgstr "Driver"
 
 #: ../src/AddPopover.vala:351
 msgid "Previous"
-msgstr ""
+msgstr "Forrige"
 
 #: ../src/AddPopover.vala:582
 msgid "(recommended)"
-msgstr ""
+msgstr "(anbefalt)"
 
 #: ../src/AddPopover.vala:644
 msgid "Local Printers"
-msgstr ""
+msgstr "Lokale skrivere"
 
 #: ../src/AddPopover.vala:650
 msgid "Network Printers"
-msgstr ""
+msgstr "Netverksskrivere"
 
 #: ../src/AddPopover.vala:656
 msgid "Available Network Printers"
-msgstr ""
+msgstr "Tilgjengelige nettverksskrivere"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
@@ -165,7 +165,7 @@ msgstr "En farge + sort"
 
 #: ../src/OptionsPage.vala:224
 msgid "Greyscale"
-msgstr ""
+msgstr "Gråtoner"
 
 #: ../src/OptionsPage.vala:227
 msgid "Processed Color"
@@ -229,11 +229,11 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:381
 msgid "Disk"
-msgstr ""
+msgstr "Lagringsplass"
 
 #: ../src/OptionsPage.vala:384
 msgid "Envelope"
-msgstr ""
+msgstr "Konvolutt"
 
 #: ../src/OptionsPage.vala:387
 msgid "Hagaki"
@@ -241,7 +241,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:390
 msgid "Large Capacity"
-msgstr ""
+msgstr "Stor kapasitet"
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
@@ -257,7 +257,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:402
 msgid "Manual"
-msgstr ""
+msgstr "Håndbok"
 
 #: ../src/OptionsPage.vala:405
 msgid "Middle"
@@ -265,7 +265,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:408
 msgid "Photo"
-msgstr ""
+msgstr "Bilde"
 
 #: ../src/OptionsPage.vala:412
 msgid "Rear"
@@ -273,7 +273,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
-msgstr ""
+msgstr "Høyre"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
@@ -293,11 +293,11 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
-msgstr ""
+msgstr "Papirkilde"
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:218
 msgid "Show completed jobs"
-msgstr ""
+msgstr "Vis fullførte jobber"
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
@@ -439,11 +439,11 @@ msgstr ""
 
 #: ../src/PrinterPage.vala:104
 msgid "Use as Default Printer"
-msgstr ""
+msgstr "Bruk som standard skriver"
 
 #: ../src/PrinterPage.vala:114
 msgid "Print Test Page"
-msgstr ""
+msgstr "Skriv ut testside"
 
 #: ../src/Plug.vala:33
 msgid "Printers"
@@ -451,22 +451,24 @@ msgstr "Skrivere"
 
 #: ../src/Plug.vala:34
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
+msgstr "Konfigurer skrivere, behandle utskriftskøer og se blekknivåer"
 
 #: ../src/PrinterList.vala:48
 msgid "Add Printer…"
-msgstr ""
+msgstr "Leg til skriver"
 
 #: ../src/PrinterList.vala:50
 msgid "Remove Printer"
-msgstr ""
+msgstr "Fjern skriver"
 
 #: ../src/PrinterList.vala:77
 msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
+"Ved å fjerne '%s' mister du all utskriftshistorikk\n"
+"og konfigurasjon assosiert med den."
 
 #: ../src/PrinterList.vala:82
 msgid "Remove"
-msgstr ""
+msgstr "Fjern"
