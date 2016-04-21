@@ -25,6 +25,7 @@ public class Printers.PrinterList : Gtk.Grid {
     public signal void focused_printer_page (Gtk.Widget widget);
 
     Gtk.ListBox list_box;
+    Printers.AddPopover add_popover;
 
     public PrinterList () {
         
@@ -62,9 +63,16 @@ public class Printers.PrinterList : Gtk.Grid {
         });
 
         add_button.clicked.connect (() => {
-            var popover = new Printers.AddPopover ();
-            popover.relative_to = add_button;
-            popover.show_all ();
+            if (add_popover != null) {
+                if (add_popover.visible) {
+                    return;
+                } else {
+                    add_popover.destroy ();
+                }
+            }
+
+            add_popover = new Printers.AddPopover (add_button);
+            add_popover.show_all ();
         });
 
         remove_button.clicked.connect (() => {

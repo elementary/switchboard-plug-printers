@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015 Pantheon Developers (https://launchpad.net/switchboard-plug-printers)
+ * Copyright (c) 2015-2016 elementary LLC.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -112,6 +112,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         });
 
         var print_test = new Gtk.Button.with_label (_("Print Test Page"));
+        print_test.clicked.connect (() => print_test_page ());
 
         var info_grid = new Gtk.Grid ();
         info_grid.margin = 6;
@@ -124,60 +125,52 @@ public class Printers.PrinterPage : Gtk.Grid {
         info_grid.attach (print_test, 0, 3, 2, 1);
         info_popover.add (info_grid);
     }
-}
 
-public class Printers.PrinterRow : Gtk.ListBoxRow {
-    public PrinterPage page;
-    public Printer printer;
-    private Gtk.Image printer_image;
-    private Gtk.Image status_image;
-    private Gtk.Label name_label;
-    private Gtk.Label status_label;
+    private string? get_testprint_filename (string datadir) {
+        string[] testprints = {"/data/testprint", "/data/testprint.ps"};
+        foreach (var testprint in testprints) {
+            string filename = datadir + testprint;
+            if (Posix.access (filename, Posix.R_OK) == 0) {
+                return filename;
+            }
+        }
 
-    public PrinterRow (Printer printer) {
-        this.printer = printer;
-        name_label = new Gtk.Label (printer.info);
-        name_label.get_style_context ().add_class ("h3");
-        name_label.ellipsize = Pango.EllipsizeMode.END;
-        ((Gtk.Misc) name_label).xalign = 0;
-        status_label = new Gtk.Label ("<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons_localized)));
-        status_label.use_markup = true;
-        status_label.tooltip_text = printer.state_reasons_localized;
-        status_label.ellipsize = Pango.EllipsizeMode.END;
-        ((Gtk.Misc) status_label).xalign = 0;
-        printer_image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DND);
-        printer_image.pixel_size = 32;
-        status_image = new Gtk.Image.from_icon_name ("user-available", Gtk.IconSize.MENU);
-        status_image.halign = status_image.valign = Gtk.Align.END;
-        var overlay = new Gtk.Overlay ();
-        overlay.width_request = 38;
-        overlay.add (printer_image);
-        overlay.add_overlay (status_image);
-        var grid = new Gtk.Grid ();
-        grid.margin = 6;
-        grid.margin_start = 3;
-        grid.column_spacing = 3;
-        grid.attach (overlay, 0, 0, 1, 2);
-        grid.attach (name_label, 1, 0, 1, 1);
-        grid.attach (status_label, 1, 1, 1, 1);
-        add (grid);
-        page = new PrinterPage (printer);
-        update_status ();
-        printer.enabled_changed.connect (update_status);
-        show_all ();
-        printer.deleted.connect (() => {
-            page.destroy ();
-            destroy ();
-        });
+        return null;
     }
-    
-    private void update_status () {
-        if (printer.is_offline ()) {
-            status_image.icon_name = "user-offline";
-        } else if (printer.enabled) {
-            status_image.icon_name = "user-available";
+
+    private void print_test_page () {
+        string? filename = null;
+        var datadir = GLib.Environment.get_variable ("CUPS_DATADIR");
+        if (datadir != null) {
+            filename = get_testprint_filename (datadir);
         } else {
-            status_image.icon_name = "user-busy";
+            string[] dirs = { "/usr/share/cups", "/usr/local/share/cups" };
+            foreach (var dir in dirs) {
+                filename = get_testprint_filename (dir);
+                if (filename != null) {
+                    break;
+                }
+            }
+        }
+
+        if (filename != null) {
+            var type = int.parse (printer.printer_type);
+            string printer_uri, resource;
+            if (CUPS.PriterType.CLASS in type) {
+                printer_uri = "ipp://localhost/classes/%s".printf (printer.dest.name);
+                resource = "/classes/%s".printf (printer.dest.name);
+            } else {
+                printer_uri = "ipp://localhost/printers/%s".printf (printer.dest.name);
+                resource = "/printers/%s".printf (printer.dest.name);
+            }
+
+            var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.PRINT_JOB);
+            request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, printer_uri);
+            request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.NAME, "requesting-user-name", null, CUPS.get_user ());
+            /// TRANSLATORS: Name of the test page job
+            request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.NAME, "job-name", null, _("Test page"));
+            request.do_file_request (CUPS.HTTP.DEFAULT, resource, filename);
         }
     }
 }
+

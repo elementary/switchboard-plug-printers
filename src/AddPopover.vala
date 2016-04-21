@@ -52,14 +52,16 @@ public class Printers.AddPopover : Gtk.Popover {
     Gtk.TreeView make_view;
     Printers.DeviceDriver selected_driver = null;
     Cancellable driver_cancellable;
-    public AddPopover () {
+    public AddPopover (Gtk.Widget relative_widget) {
+        Object (relative_to: relative_widget, modal: false);
+        search_device ();
     }
 
     construct {
-        width_request = 400;
-        height_request = 300;
         stack = new Gtk.Stack ();
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
+        stack.width_request = 500;
+        stack.height_request = 350;
 
         devices_list_stack = new Gtk.Stack ();
         devices_list_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
@@ -83,32 +85,8 @@ public class Printers.AddPopover : Gtk.Popover {
         drivers = new Gee.LinkedList<Printers.DeviceDriver> ();
 
         add (stack);
-        search_device ();
         stack.set_visible_child (devices_list_stack);
         spinner.start ();
-        show_all ();
-    }
-
-    public override void get_preferred_width (out int minimum_width, out int natural_width) {
-        base.get_preferred_width (out minimum_width, out natural_width);
-        if (minimum_width < 250) {
-            minimum_width = 250;
-        }
-
-        if (natural_width < minimum_width) {
-            natural_width = minimum_width;
-        }
-    }
-
-    public override void get_preferred_height (out int minimum_height, out int natural_height) {
-        base.get_preferred_height (out minimum_height, out natural_height);
-        if (minimum_height < 300) {
-            minimum_height = 300;
-        }
-
-        if (natural_height < minimum_height) {
-            natural_height = minimum_height;
-        }
     }
 
     private void search_device () {
@@ -129,7 +107,6 @@ public class Printers.AddPopover : Gtk.Popover {
                             tempdevices.set (number, tempdevice);
                         }
 
-                        warning ("missing: %s => %s", key_vars[0], val);
                         switch (key_vars[0]) {
                             case "device-make-and-model":
                                 if (val != "Unknown") {
@@ -157,7 +134,7 @@ public class Printers.AddPopover : Gtk.Popover {
                                 tempdevice.device_id = val;
                                 break;
                             default:
-                                warning ("missing: %s => %s", key_vars[0], val);
+                                debug ("missing: %s => %s", key_vars[0], val);
                                 break;
                         }
                     });
@@ -182,13 +159,13 @@ public class Printers.AddPopover : Gtk.Popover {
         var devices_grid = new Gtk.Grid ();
         devices_grid.row_spacing = 6;
         devices_grid.column_spacing = 12;
-        devices_grid.margin_bottom = 3;
+        devices_grid.margin_bottom = 6;
         var devices_list = new Gtk.ListBox ();
         devices_list.expand = true;
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
         scrolled.add (devices_list);
-        devices_grid.attach (scrolled, 0, 0, 3, 1);
+        devices_grid.attach (scrolled, 0, 0, 2, 1);
         devices_list.set_header_func ((Gtk.ListBoxUpdateHeaderFunc)temp_device_list_header);
         devices_list.set_sort_func ((Gtk.ListBoxSortFunc)temp_device_list_sort);
 
@@ -196,22 +173,20 @@ public class Printers.AddPopover : Gtk.Popover {
             devices_list.add (new TempDeviceRow (tempdevice));
         }
 
-        var refresh_button = new Gtk.Button.from_icon_name ("view-refresh", Gtk.IconSize.BUTTON);
-        refresh_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        refresh_button.margin_start = 3;
+        var refresh_button = new Gtk.Button.with_label (_("Refresh"));
+        refresh_button.hexpand = true;
+        refresh_button.halign = Gtk.Align.START;
+        refresh_button.margin_start = 6;
         refresh_button.tooltip_text = _("Refresh the printer list");
         devices_grid.attach (refresh_button, 0, 1, 1, 1);
 
-        var expander = new Gtk.Grid ();
-        expander.hexpand = true;
-        devices_grid.attach (expander, 1, 1, 1, 1);
-
-        var next_button = new Gtk.Button.from_icon_name ("go-next", Gtk.IconSize.BUTTON);
-        next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        next_button.tooltip_text = _("Next");
-        next_button.margin_end = 3;
+        var next_button = new Gtk.Button.with_label (_("Next"));
+        next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.hexpand = true;
+        next_button.halign = Gtk.Align.END;
+        next_button.margin_end = 6;
         next_button.sensitive = false;
-        devices_grid.attach (next_button, 2, 1, 1, 1);
+        devices_grid.attach (next_button, 1, 1, 1, 1);
 
         devices_list.row_selected.connect ((row) => {
             next_button.sensitive = (row != null);
@@ -249,39 +224,32 @@ public class Printers.AddPopover : Gtk.Popover {
         device_grid.expand = true;
         device_grid.row_spacing = 6;
         device_grid.column_spacing = 12;
-        var general_header = new Gtk.Label (_("General"));
-        general_header.get_style_context ().add_class ("h4");
-        general_header.margin_start = 6;
-        ((Gtk.Misc)general_header).xalign = 0;
+        device_grid.margin_top = 12;
 
         var connection_label = new Gtk.Label (_("Connection:"));
-        connection_label.margin_start = 3;
+        connection_label.margin_start = 12;
         ((Gtk.Misc)connection_label).xalign = 1;
         var connection_entry = new Gtk.Entry ();
-        connection_entry.margin_end = 3;
+        connection_entry.margin_end = 6;
+        connection_entry.hexpand = true;
         connection_entry.placeholder_text = "ipp://hostname/ipp/port1";
 
         var description_label = new Gtk.Label (_("Description:"));
-        description_label.margin_start = 3;
+        description_label.margin_start = 12;
         ((Gtk.Misc)description_label).xalign = 1;
-        description_label.hexpand = true;
         var description_entry = new Gtk.Entry ();
-        description_entry.margin_end = 3;
+        description_entry.margin_end = 6;
         description_entry.placeholder_text = _("BrandPrinter X3000");
         description_entry.hexpand = true;
         description_entry.text = temp_device.get_model_from_id () ?? "";
 
         var location_label = new Gtk.Label (_("Location:"));
-        location_label.margin_start = 3;
+        location_label.margin_start = 12;
         ((Gtk.Misc)location_label).xalign = 1;
         var location_entry = new Gtk.Entry ();
-        location_entry.margin_end = 3;
+        location_entry.margin_end = 6;
+        location_entry.hexpand = true;
         location_entry.placeholder_text = _("Lab 1 or John's desk");
-
-        var driver_header = new Gtk.Label (_("Driver"));
-        driver_header.get_style_context ().add_class ("h4");
-        driver_header.margin_start = 6;
-        ((Gtk.Misc)driver_header).xalign = 0;
 
         drivers_stack = new Gtk.Stack ();
         drivers_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
@@ -343,42 +311,38 @@ public class Printers.AddPopover : Gtk.Popover {
 
         var button_grid = new Gtk.Grid ();
         button_grid.orientation = Gtk.Orientation.HORIZONTAL;
-        button_grid.margin = 3;
-        button_grid.margin_top = 0;
+        button_grid.margin = 6;
 
-        var previous_button = new Gtk.Button.from_icon_name ("go-previous", Gtk.IconSize.BUTTON);
-        previous_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        previous_button.tooltip_text = _("Previous");
+        var previous_button = new Gtk.Button.with_label (_("Previous"));
+        previous_button.hexpand = true;
+        previous_button.halign = Gtk.Align.START;
+        previous_button.tooltip_text = _("Select an other printer or protocol");
 
-        var expander = new Gtk.Grid ();
-        expander.hexpand = true;
-
-        var next_button = new Gtk.Button.from_icon_name ("go-next", Gtk.IconSize.BUTTON);
-        next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        next_button.tooltip_text = _("Next");
+        var next_button = new Gtk.Button.with_label (_("Add"));
+        next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.hexpand = true;
+        next_button.halign = Gtk.Align.END;
+        next_button.tooltip_text = _("Add the configured printer");
         next_button.sensitive = false;
 
         button_grid.add (previous_button);
-        button_grid.add (expander);
         button_grid.add (next_button);
 
-        device_grid.attach (general_header, 0, 0, 2, 1);
-        device_grid.attach (description_label, 0, 2, 1, 1);
-        device_grid.attach (description_entry, 1, 2, 1, 1);
+        device_grid.attach (description_label, 0, 1, 1, 1);
+        device_grid.attach (description_entry, 1, 1, 1, 1);
         if (":" in temp_device.device_uri) {
             description_entry.grab_focus ();
         } else {
             connection_entry.text = temp_device.device_uri;
-            device_grid.attach (connection_label, 0, 1, 1, 1);
-            device_grid.attach (connection_entry, 1, 1, 1, 1);
+            device_grid.attach (connection_label, 0, 0, 1, 1);
+            device_grid.attach (connection_entry, 1, 0, 1, 1);
             connection_entry.grab_focus ();
         }
 
-        device_grid.attach (location_label, 0, 3, 1, 1);
-        device_grid.attach (location_entry, 1, 3, 1, 1);
-        device_grid.attach (driver_header, 0, 4, 2, 1);
-        device_grid.attach (drivers_stack, 0, 5, 2, 1);
-        device_grid.attach (button_grid, 0, 6, 2, 1);
+        device_grid.attach (location_label, 0, 2, 1, 1);
+        device_grid.attach (location_entry, 1, 2, 1, 1);
+        device_grid.attach (drivers_stack, 0, 3, 2, 1);
+        device_grid.attach (button_grid, 0, 4, 2, 1);
         device_grid.show_all ();
 
         stack.add (device_grid);
@@ -640,34 +604,33 @@ public class Printers.AddPopover : Gtk.Popover {
     private static void temp_device_list_header (TempDeviceRow row, TempDeviceRow? before) {
         if (before == null || before.temp_device.device_class != row.temp_device.device_class) {
             switch (row.temp_device.device_class) {
+                case "serial":
+                    row.set_header (create_header_label (_("Serial")));
+                    break;
                 case "direct":
-                    var header = new Gtk.Label (_("Local Printers"));
-                    header.get_style_context ().add_class ("h4");
-                    ((Gtk.Misc)header).xalign = 0;
-                    row.set_header (header);
+                    row.set_header (create_header_label (_("Local Printers")));
                     break;
                 case "network":
-                    var header = new Gtk.Label (_("Network Printers"));
-                    header.get_style_context ().add_class ("h4");
-                    ((Gtk.Misc)header).xalign = 0;
-                    row.set_header (header);
+                    row.set_header (create_header_label (_("Network Printers")));
                     break;
                 case "ok-network":
-                    var header = new Gtk.Label (_("Available Network Printers"));
-                    header.get_style_context ().add_class ("h4");
-                    ((Gtk.Misc)header).xalign = 0;
-                    row.set_header (header);
+                    row.set_header (create_header_label (_("Available Network Printers")));
                     break;
                 default:
-                    var header = new Gtk.Label (row.temp_device.device_class);
-                    header.get_style_context ().add_class ("h4");
-                    ((Gtk.Misc)header).xalign = 0;
-                    row.set_header (header);
+                    row.set_header (create_header_label (row.temp_device.device_class));
                     break;
             }
         } else {
             row.set_header (null);
         }
+    }
+
+    private static Gtk.Label create_header_label (string name) {
+        var header = new Gtk.Label (name);
+        header.get_style_context ().add_class ("h4");
+        header.margin_start = 3;
+        ((Gtk.Misc)header).xalign = 0;
+        return header;
     }
 
     public class TempDeviceRow : Gtk.ListBoxRow {
@@ -676,6 +639,7 @@ public class Printers.AddPopover : Gtk.Popover {
             this.temp_device = temp_device;
             var grid = new Gtk.Grid ();
             var label = new Gtk.Label (temp_device.device_info);
+            get_style_context ().add_class (Gtk.STYLE_CLASS_MENUITEM);
             label.margin_left = 12;
             label.margin_top = 3;
             label.margin_bottom = 3;

@@ -37,7 +37,7 @@ namespace CUPS {
 	public const int VERSION_PATCH;
 	public const int DATE_ANY;
 
-	[CCode (cname = "cups_ptype_t")]
+	[CCode (cname = "cups_ptype_t", cprefix = "CUPS_PRINTER_")]
 	public enum PriterType {
 		LOCAL,
 		CLASS,
@@ -617,6 +617,8 @@ namespace CUPS {
 			// there is no ippCopy()
 			[ReturnsModifiedPointer, CCode (cname = "cupsDoRequest", instance_pos = 1.1)]
 			public void do_request (HTTP.HTTP http, string resource = "/");
+			[ReturnsModifiedPointer, CCode (cname = "cupsDoFileRequest", instance_pos = 1.1)]
+			public void do_file_request (HTTP.HTTP http, string resource, string filename);
 
 			[CCode (cname = "ippNew")]
 			public IPP ();

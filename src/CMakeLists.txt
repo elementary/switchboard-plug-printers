@@ -17,6 +17,7 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     AddPopover.vala
     Plug.vala
     PrinterPage.vala
+    PrinterRow.vala
     PrinterList.vala
     OptionsPage.vala
     JobsView.vala
@@ -32,6 +33,7 @@ PACKAGES
     switchboard-2.0
     granite
     cups
+    posix
 OPTIONS
     --thread
     --target-glib=2.32
