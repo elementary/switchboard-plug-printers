@@ -42,37 +42,37 @@ public class Printers.Printer : GLib.Object {
 
     private static string[] statuses = {
         /// Translators: The printer is low on toner
-        N_("Low on toner"),
+        NC_("printer state", "Low on toner"),
         /// Translators: The printer has no toner left
-        N_("Out of toner"),
+        NC_("printer state", "Out of toner"),
         /// Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-        N_("Low on developer"),
+        NC_("printer state", "Low on developer"),
         /// Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-        N_("Out of developer"),
+        NC_("printer state", "Out of developer"),
         /// Translators: "marker" is one color bin of the printer
-        N_("Low on a marker supply"),
+        NC_("printer state", "Low on a marker supply"),
         /// Translators: "marker" is one color bin of the printer
-        N_("Out of a marker supply"),
+        NC_("printer state", "Out of a marker supply"),
         /// Translators: One or more covers on the printer are open
-        N_("Open cover"),
+        NC_("printer state", "Open cover"),
         /// Translators: One or more doors on the printer are open
-        N_("Open door"),
+        NC_("printer state", "Open door"),
         /// Translators: At least one input tray is low on media
-        N_("Low on paper"),
+        NC_("printer state", "Low on paper"),
         /// Translators: At least one input tray is empty
-        N_("Out of paper"),
+        NC_("printer state", "Out of paper"),
         /// Translators: The printer is offline
         NC_("printer state", "Offline"),
         /// Translators: Someone has stopped the Printer
         NC_("printer state", "Stopped"),
         /// Translators: The printer marker supply waste receptacle is almost full
-        N_("Waste receptacle almost full"),
+        NC_("printer state", "Waste receptacle almost full"),
         /// Translators: The printer marker supply waste receptacle is full
-        N_("Waste receptacle full"),
+        NC_("printer state", "Waste receptacle full"),
         /// Translators: Optical photo conductors are used in laser printers
-        N_("The optical photo conductor is near end of life"),
+        NC_("printer state", "The optical photo conductor is near end of life"),
         /// Translators: Optical photo conductors are used in laser printers
-        N_("The optical photo conductor is no longer functioning")
+        NC_("printer state", "The optical photo conductor is no longer functioning")
     };
 
     /***********
@@ -80,6 +80,7 @@ public class Printers.Printer : GLib.Object {
      ***********/
     public signal void enabled_changed ();
     public signal void default_changed ();
+    public signal void deleted ();
 
     /**************
      * Properties *
@@ -262,7 +263,7 @@ public class Printers.Printer : GLib.Object {
             unowned string reason = state_reasons;
             for (int i = 0; i < reasons.length; i++) {
                 if (reasons[i] in reason) {
-                    return _(statuses[i]);
+                    return dpgettext(Build.GETTEXT_PACKAGE, "printer state" + "\004" + statuses[i], "printer state".length);
                 }
             }
 

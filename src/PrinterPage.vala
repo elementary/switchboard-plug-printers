@@ -165,6 +165,10 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         update_status ();
         printer.enabled_changed.connect (update_status);
         show_all ();
+        printer.deleted.connect (() => {
+            page.destroy ();
+            destroy ();
+        });
     }
     
     private void update_status () {

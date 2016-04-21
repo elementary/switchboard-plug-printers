@@ -104,4 +104,14 @@ public class Printers.PrinterList : Gtk.Grid {
             list_box.select_row (row);
         }
     }
+
+    public void remove_printer (string printer_name) {
+        list_box.get_children ().foreach ((child) => {
+            if (child is PrinterRow) {
+                if (((PrinterRow) child).printer.dest.name == printer_name) {
+                    ((PrinterRow) child).printer.deleted ();
+                }
+            }
+        });
+    }
 }

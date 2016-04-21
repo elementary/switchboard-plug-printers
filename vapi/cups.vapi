@@ -532,7 +532,7 @@ namespace CUPS {
 			public RequestEvent @event;
 		}
 
-		[CCode (cname = "ipp_attribute_t")]
+		[Compact, CCode (cname = "ipp_attribute_t")]
 		public class Attribute {
 			public Attribute? next;
 			public Tag group_tag;
@@ -643,6 +643,10 @@ namespace CUPS {
 
 				return _add_booleans (group, name, char_values);
 			}
+			[CCode (cname = "ippAddInteger")]
+			public unowned Attribute add_integer (Tag group, Tag type, string name, int value);
+			[CCode (cname = "ippAddIntegers")]
+			public unowned Attribute add_integers (Tag group, Tag type, string name, [CCode (array_length_pos = 2.9)] string[] values);
 			[CCode (cname = "ippAddString")]
 			public unowned Attribute add_string (Tag group, Tag type, string name, string? charset, string value);
 			[CCode (cname = "ippAddStrings")]
