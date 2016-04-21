@@ -156,11 +156,11 @@ public class Cups.Notifier : Object {
         var state = parameters.get_child_value (3).get_uint32 ();
         var state_reasons = parameters.get_child_value (4).get_string ();
         var is_accepting_jobs = parameters.get_child_value (5).get_boolean ();
-        var job_id = parameters.get_child_value (5).get_uint32 ();
-        var job_state = parameters.get_child_value (5).get_uint32 ();
-        var job_state_reason = parameters.get_child_value (5).get_string ();
-        var job_name = parameters.get_child_value (5).get_string ();
-        var job_impressions_completed = parameters.get_child_value (5).get_uint32 ();
+        var job_id = parameters.get_child_value (6).get_uint32 ();
+        var job_state = parameters.get_child_value (7).get_uint32 ();
+        var job_state_reason = parameters.get_child_value (8).get_string ();
+        var job_name = parameters.get_child_value (9).get_string ();
+        var job_impressions_completed = parameters.get_child_value (10).get_uint32 ();
         switch (signal_name) {
             case "JobCreated":
                 job_created (text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);

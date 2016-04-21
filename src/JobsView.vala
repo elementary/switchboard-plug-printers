@@ -183,6 +183,21 @@ public class Printers.JobsView : Gtk.Frame {
         job_grid.add (stack);
         job_grid.add (toolbar);
         add (job_grid);
+
+        unowned Cups.Notifier notifier  = Cups.Notifier.get_default ();
+        notifier.job_created.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+            if (printer.dest.name != name) {
+                return;
+            }
+
+            var jobs_ = printer.get_jobs (true, CUPS.WhichJobs.ALL);
+            foreach (var job in jobs_) {
+                if (job.cjob.id == job_id) {
+                    add_job (job);
+                    break;
+                }
+            }
+        });
     }
 
     private void add_job (Job job) {

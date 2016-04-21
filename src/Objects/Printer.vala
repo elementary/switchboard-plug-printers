@@ -263,7 +263,7 @@ public class Printers.Printer : GLib.Object {
             unowned string reason = state_reasons;
             for (int i = 0; i < reasons.length; i++) {
                 if (reasons[i] in reason) {
-                    return dpgettext(Build.GETTEXT_PACKAGE, "printer state" + "\004" + statuses[i], "printer state".length);
+                    return dpgettext(Build.GETTEXT_PACKAGE, "printer state" + "\004" + statuses[i], "printer state".length + 1);
                 }
             }
 

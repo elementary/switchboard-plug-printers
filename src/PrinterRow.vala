@@ -57,6 +57,13 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         add (grid);
         page = new PrinterPage (printer);
         update_status ();
+        Cups.Notifier.get_default ().printer_state_changed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs) => {
+            if (printer.dest.name == name) {
+                update_status ();
+                status_label.tooltip_text = printer.state_reasons_localized;
+            }
+        });
+
         printer.enabled_changed.connect (update_status);
         show_all ();
         printer.deleted.connect (() => {
