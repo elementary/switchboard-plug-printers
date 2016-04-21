@@ -25,10 +25,11 @@ namespace Printers {
     public static Plug plug;
 
     public class Plug : Switchboard.Plug {
-        Gtk.Paned main_paned;
+        Gtk.Stack main_stack;
         public static const uint RENEW_INTERVAL = 500;
         public static const int SUBSCRIPTION_DURATION = 600;
         private int subscription_id = -1;
+        private Printers.AddPopover add_popover;
 
         public Plug () {
             Object (category: Category.HARDWARE,
@@ -40,14 +41,42 @@ namespace Printers {
         }
 
         public override Gtk.Widget get_widget () {
-            if (main_paned == null) {
-                main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
+            if (main_stack == null) {
+                main_stack = new Gtk.Stack ();
+                var main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
                 var stack = new Gtk.Stack ();
                 var list = new PrinterList ();
                 main_paned.pack1 (list, false, false);
                 main_paned.pack2 (stack, true, false);
+
+                var welcome = new Granite.Widgets.Welcome (_("No Printers"), _("Add a printer to begin printing"));
+                var add_index = welcome.append ("printer-new", _("Add Printer"), _("Search for the printer you need"));
+                welcome.activated.connect (() => {
+                    var widget = welcome.get_button_from_index (add_index);
+                    if (add_popover != null) {
+                        if (add_popover.visible) {
+                            return;
+                        } else {
+                            add_popover.destroy ();
+                        }
+                    }
+
+                    add_popover = new Printers.AddPopover (widget);
+                    add_popover.show_all ();
+                });
+
+                main_stack.add (welcome);
+                main_stack.add (main_paned);
+                main_stack.show_all ();
+                main_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+
                 list.new_printer_page.connect ((w) => {
                     stack.add (w);
+                    if (list.has_printer ()) {
+                        main_stack.set_visible_child (main_paned);
+                    } else {
+                        main_stack.set_visible_child (welcome);
+                    }
                 });
 
                 list.focused_printer_page.connect ((w) => {
@@ -77,7 +106,12 @@ namespace Printers {
                 });
 
                 notifier.printer_deleted.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs) => {
-                   list.remove_printer (name);
+                    list.remove_printer (name);
+                    if (list.has_printer ()) {
+                        main_stack.set_visible_child (main_paned);
+                    } else {
+                        main_stack.set_visible_child (welcome);
+                    }
                 });
 
                 new_subscription.begin ();
@@ -86,14 +120,14 @@ namespace Printers {
                     return GLib.Source.CONTINUE;
                 });
 
-                if (default_printer != null) {
-                    //Show printer page!
+                if (list.has_printer ()) {
+                    main_stack.set_visible_child (main_paned);
+                } else {
+                    main_stack.set_visible_child (welcome);
                 }
-
-                main_paned.show_all ();
             }
 
-            return main_paned;
+            return main_stack;
         }
 
         public override void shown () {

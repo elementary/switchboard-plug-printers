@@ -104,6 +104,10 @@ public class Printers.PrinterList : Gtk.Grid {
         });
     }
 
+    public bool has_printer () {
+        return list_box.get_children ().length () > 0;
+    }
+
     public void add_printer (Printer printer) {
         var row = new PrinterRow (printer);
         list_box.add (row);
