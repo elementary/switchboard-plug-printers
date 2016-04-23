@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-01-20 17:23+0000\n"
+"PO-Revision-Date: 2016-04-22 15:16+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-22 05:50+0000\n"
+"X-Launchpad-Export-Date: 2016-04-23 05:41+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #: ../src/InkLevel.vala:90
@@ -97,7 +97,7 @@ msgstr "사용 가능한 프린터 목록을 볼 수 없습니다"
 
 #: ../src/AddPopover.vala:176
 msgid "Refresh"
-msgstr ""
+msgstr "새로 고침"
 
 #: ../src/AddPopover.vala:180
 msgid "Refresh the printer list"
@@ -125,7 +125,7 @@ msgstr "위치:"
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
-msgstr "랩 1 또는 사용자 데스크"
+msgstr "연구실 1 또는 누군가의 책상"
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
@@ -133,15 +133,15 @@ msgstr "이전"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
-msgstr ""
+msgstr "다른 프린터 또는 프로토콜 선택"
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
-msgstr ""
+msgstr "추가"
 
 #: ../src/AddPopover.vala:325
 msgid "Add the configured printer"
-msgstr ""
+msgstr "설정한 프린터 추가"
 
 #: ../src/AddPopover.vala:546
 msgid "(recommended)"
@@ -149,7 +149,7 @@ msgstr "(추천)"
 
 #: ../src/AddPopover.vala:608
 msgid "Serial"
-msgstr ""
+msgstr "일련번호"
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
@@ -161,67 +161,67 @@ msgstr "네트워크 프린터"
 
 #: ../src/AddPopover.vala:617
 msgid "Available Network Printers"
-msgstr "새로운 네트워크 프린터 사용 가능"
+msgstr "사용 가능한 네트워크 프린터"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
-msgstr ""
+msgstr "토너 부족"
 
 #. / Translators: The printer has no toner left
 #: ../src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
-msgstr ""
+msgstr "토너 없음"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: ../src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
-msgstr ""
+msgstr "현상액 부족"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: ../src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
-msgstr ""
+msgstr "현상액 없음"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr ""
+msgstr "마커 공급 부족"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr ""
+msgstr "마커 공급 없음"
 
 #. / Translators: One or more covers on the printer are open
 #: ../src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
-msgstr ""
+msgstr "덮개 열림"
 
 #. / Translators: One or more doors on the printer are open
 #: ../src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
-msgstr ""
+msgstr "문 열림"
 
 #. / Translators: At least one input tray is low on media
 #: ../src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
-msgstr ""
+msgstr "용지 부족"
 
 #. / Translators: At least one input tray is empty
 #: ../src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr ""
+msgstr "용지 없음"
 
 #. / Translators: The printer is offline
 #: ../src/Objects/Printer.vala:65
@@ -239,29 +239,29 @@ msgstr "정지 됨"
 #: ../src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
-msgstr ""
+msgstr "찌꺼기 보관함이 거의 가득 찼습니다"
 
 #. / Translators: The printer marker supply waste receptacle is full
 #: ../src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
-msgstr ""
+msgstr "찌꺼기 보관함이 가득 찼습니다"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: ../src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr ""
+msgstr "감광 반도체의 수명이 거의 다 되었습니다"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: ../src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
+msgstr "감광 반도체가 더 이상 작동하지 않습니다"
 
 #: ../src/Objects/Printer.vala:271
 msgid "Ready"
-msgstr "준비"
+msgstr "사용함"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
@@ -301,7 +301,7 @@ msgstr "옵션"
 
 #: ../src/PrinterPage.vala:100
 msgid "Lab 1 or John's Desk"
-msgstr "랩 1 또는 사용자의 컴퓨터"
+msgstr "연구실 1 또는 누군가의 책상"
 
 #: ../src/PrinterPage.vala:104
 msgid "Use as Default Printer"
@@ -309,12 +309,12 @@ msgstr "기본 프린터로 사용함"
 
 #: ../src/PrinterPage.vala:114
 msgid "Print Test Page"
-msgstr "테스트 페이지 인쇄"
+msgstr "시험 페이지 인쇄"
 
 #. / TRANSLATORS: Name of the test page job
 #: ../src/PrinterPage.vala:171
 msgid "Test page"
-msgstr ""
+msgstr "시험 페이지"
 
 #: ../src/Plug.vala:37
 msgid "Printers"
@@ -326,19 +326,19 @@ msgstr "프린터 설정하기, 인쇄 대기 관리하기, 잉크 잔량 확인
 
 #: ../src/Plug.vala:52
 msgid "No Printers"
-msgstr ""
+msgstr "프린터 없음"
 
 #: ../src/Plug.vala:52
 msgid "Add a printer to begin printing"
-msgstr ""
+msgstr "인쇄하시려면 프린터를 추가하세요"
 
 #: ../src/Plug.vala:53
 msgid "Add Printer"
-msgstr ""
+msgstr "프린터 추가"
 
 #: ../src/Plug.vala:53
 msgid "Search for the printer you need"
-msgstr ""
+msgstr "사용할 프린터 검색하기"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
@@ -502,7 +502,7 @@ msgstr "%d번 트레이"
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
-msgstr "용지 소스:"
+msgstr "용지 공급:"
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
