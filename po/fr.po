@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-01-11 19:03+0000\n"
+"PO-Revision-Date: 2016-04-23 23:53+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-22 05:49+0000\n"
+"X-Launchpad-Export-Date: 2016-04-24 06:11+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #: ../src/InkLevel.vala:90
@@ -97,7 +97,7 @@ msgstr "Impossible de lister les imprimantes disponibles"
 
 #: ../src/AddPopover.vala:176
 msgid "Refresh"
-msgstr ""
+msgstr "Actualiser"
 
 #: ../src/AddPopover.vala:180
 msgid "Refresh the printer list"
@@ -133,15 +133,15 @@ msgstr "Précédent"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
-msgstr ""
+msgstr "Sélectionner une autre imprimante ou protocole"
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
-msgstr ""
+msgstr "Ajouter"
 
 #: ../src/AddPopover.vala:325
 msgid "Add the configured printer"
-msgstr ""
+msgstr "Ajouter l'imprimante configurée"
 
 #: ../src/AddPopover.vala:546
 msgid "(recommended)"
@@ -149,7 +149,7 @@ msgstr "(recommandé)"
 
 #: ../src/AddPopover.vala:608
 msgid "Serial"
-msgstr ""
+msgstr "Série"
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
@@ -167,61 +167,61 @@ msgstr "Imprimantes réseau disponibles"
 #: ../src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
-msgstr ""
+msgstr "Toner pratiquement épuisé"
 
 #. / Translators: The printer has no toner left
 #: ../src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
-msgstr ""
+msgstr "Plus de toner"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: ../src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
-msgstr ""
+msgstr "Révélateur presque épuisé"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: ../src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
-msgstr ""
+msgstr "Plus de révélateur"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr ""
+msgstr "Cartouche de couleur pratiquement vide"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr ""
+msgstr "Encre épuisée dans une cartouche"
 
 #. / Translators: One or more covers on the printer are open
 #: ../src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
-msgstr ""
+msgstr "Couvercle ouvert"
 
 #. / Translators: One or more doors on the printer are open
 #: ../src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
-msgstr ""
+msgstr "Porte ouverte"
 
 #. / Translators: At least one input tray is low on media
 #: ../src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
-msgstr ""
+msgstr "Pratiquement plus de papier"
 
 #. / Translators: At least one input tray is empty
 #: ../src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr ""
+msgstr "Plus de papier"
 
 #. / Translators: The printer is offline
 #: ../src/Objects/Printer.vala:65
@@ -239,25 +239,25 @@ msgstr "Arrêtée"
 #: ../src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
-msgstr ""
+msgstr "Récipient à déchets pratiquement plein"
 
 #. / Translators: The printer marker supply waste receptacle is full
 #: ../src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
-msgstr ""
+msgstr "Récipient à déchets plein"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: ../src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr ""
+msgstr "Le photo-conducteur optique est pratiquement en fin de vie"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: ../src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
+msgstr "Le photo-conducteur optique n'est plus en état"
 
 #: ../src/Objects/Printer.vala:271
 msgid "Ready"
@@ -269,7 +269,7 @@ msgstr "Tâche en attente"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
-msgstr ""
+msgstr "En attente"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
@@ -285,7 +285,7 @@ msgstr "Tâche annulée"
 
 #: ../src/Objects/Job.vala:105
 msgid "Job Aborded"
-msgstr ""
+msgstr "Tâche interrompue"
 
 #: ../src/Objects/Job.vala:108
 msgid "Job Completed"
@@ -314,7 +314,7 @@ msgstr "Imprimer la page de test"
 #. / TRANSLATORS: Name of the test page job
 #: ../src/PrinterPage.vala:171
 msgid "Test page"
-msgstr ""
+msgstr "Page de test"
 
 #: ../src/Plug.vala:37
 msgid "Printers"
@@ -328,19 +328,19 @@ msgstr ""
 
 #: ../src/Plug.vala:52
 msgid "No Printers"
-msgstr ""
+msgstr "Aucune imprimante"
 
 #: ../src/Plug.vala:52
 msgid "Add a printer to begin printing"
-msgstr ""
+msgstr "Ajoutez une imprimante pour commencer à imprimer"
 
 #: ../src/Plug.vala:53
 msgid "Add Printer"
-msgstr ""
+msgstr "Ajouter une imprimante"
 
 #: ../src/Plug.vala:53
 msgid "Search for the printer you need"
-msgstr ""
+msgstr "Recherchez l'imprimante que vous désirez utiliser"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
