@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-04-30 12:13+0000\n"
-"Last-Translator: Melih Güçlü <melihguclu@hotmail.com>\n"
+"PO-Revision-Date: 2016-05-03 01:35+0000\n"
+"Last-Translator: mistrafantastic <mistrafantastic@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-01 05:55+0000\n"
+"X-Launchpad-Export-Date: 2016-05-03 05:47+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #: ../src/InkLevel.vala:90
@@ -105,31 +105,31 @@ msgstr "Yazıcı listesini yenile"
 
 #: ../src/AddPopover.vala:183
 msgid "Next"
-msgstr ""
+msgstr "İleri"
 
 #: ../src/AddPopover.vala:229
 msgid "Connection:"
-msgstr ""
+msgstr "Bağlantı:"
 
 #: ../src/AddPopover.vala:237
 msgid "Description:"
-msgstr ""
+msgstr "Açıklama:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
-msgstr ""
+msgstr "Konum:"
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "Laboratuvar 1 ya da Sadık'ın masası"
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
-msgstr ""
+msgstr "Önceki"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
@@ -145,7 +145,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:546
 msgid "(recommended)"
-msgstr ""
+msgstr "(tavsiye edilen)"
 
 #: ../src/AddPopover.vala:608
 msgid "Serial"
@@ -153,15 +153,15 @@ msgstr ""
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
-msgstr ""
+msgstr "Yerel Yazıcılar"
 
 #: ../src/AddPopover.vala:614
 msgid "Network Printers"
-msgstr ""
+msgstr "Ağ Yazıcıları"
 
 #: ../src/AddPopover.vala:617
 msgid "Available Network Printers"
-msgstr ""
+msgstr "Mevcut Ağ Yazıcıları"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -269,7 +269,7 @@ msgstr "İş bekliyor"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
-msgstr ""
+msgstr "Beklemede"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
@@ -342,7 +342,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
-msgstr ""
+msgstr "Yüz başına sayfa"
 
 #: ../src/OptionsPage.vala:140
 msgid "Two-sided:"
@@ -354,7 +354,7 @@ msgstr "Yönlendirme"
 
 #: ../src/OptionsPage.vala:196
 msgid "Media Size:"
-msgstr ""
+msgstr "Medya Boyutu:"
 
 #: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
 msgid "Automatic"
@@ -390,7 +390,7 @@ msgstr "Renk modu:"
 
 #: ../src/OptionsPage.vala:312
 msgid "Output Tray:"
-msgstr ""
+msgstr "Çıkış Tepsisi"
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
@@ -410,15 +410,15 @@ msgstr "Kalite:"
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Kağıt Paylaştırma"
 
 #: ../src/OptionsPage.vala:359
 msgid "Alternate Tray"
-msgstr ""
+msgstr "Alternatif Tepsi"
 
 #: ../src/OptionsPage.vala:362
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Alternatif Besleme"
 
 #: ../src/OptionsPage.vala:368
 msgid "Bottom"
@@ -426,7 +426,7 @@ msgstr "Alt"
 
 #: ../src/OptionsPage.vala:371
 msgid "By-pass Tray"
-msgstr ""
+msgstr "Atlama Tepsisi"
 
 #: ../src/OptionsPage.vala:374
 msgid "Center"
@@ -434,7 +434,7 @@ msgstr "Merkez"
 
 #: ../src/OptionsPage.vala:377
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "Sürekli Oto besleme"
 
 #: ../src/OptionsPage.vala:381
 msgid "Disk"
