@@ -558,7 +558,7 @@ public class Printers.Printer : GLib.Object {
             var request = request_attributes (attributes);
             unowned CUPS.IPP.Attribute attr = request.first_attribute ();
             while (attr != null) {
-                message (attr.get_name ());
+                debug (attr.get_name ());
                 attr = request.next_attribute ();
             }
         } catch (Error e) {

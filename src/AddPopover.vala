@@ -53,7 +53,7 @@ public class Printers.AddPopover : Gtk.Popover {
     Printers.DeviceDriver selected_driver = null;
     Cancellable driver_cancellable;
     public AddPopover (Gtk.Widget relative_widget) {
-        Object (relative_to: relative_widget, modal: false);
+        Object (relative_to: relative_widget);
         search_device ();
     }
 
@@ -61,7 +61,7 @@ public class Printers.AddPopover : Gtk.Popover {
         stack = new Gtk.Stack ();
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
         stack.width_request = 500;
-        stack.height_request = 350;
+        stack.height_request = 300;
 
         devices_list_stack = new Gtk.Stack ();
         devices_list_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
