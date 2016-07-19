@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-07-17 14:49+0000\n"
+"PO-Revision-Date: 2016-07-18 14:32+0000\n"
 "Last-Translator: kay van der Zander <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-07-18 05:40+0000\n"
-"X-Generator: Launchpad (build 18140)\n"
+"X-Launchpad-Export-Date: 2016-07-19 06:13+0000\n"
+"X-Generator: Launchpad (build 18147)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -22,7 +22,7 @@ msgstr "Zwart (BK)"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
-msgstr ""
+msgstr "Zwart"
 
 #: ../src/InkLevel.vala:99
 msgid "Yellow"
@@ -117,7 +117,7 @@ msgstr "Omschrijving:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "MerkPrinter X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
@@ -125,7 +125,7 @@ msgstr "Locatie"
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "Lab 1 of John's bureau"
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
@@ -173,7 +173,7 @@ msgstr "weinig toner inhoud"
 #: ../src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
-msgstr ""
+msgstr "Geen toner meer"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: ../src/Objects/Printer.vala:49
@@ -269,7 +269,7 @@ msgstr "Gereed"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
-msgstr ""
+msgstr "Taak in wachtrij"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
@@ -326,7 +326,7 @@ msgstr "Printers"
 
 #: ../src/Plug.vala:38
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
+msgstr "Configureer printers, beheer printers en bekijk inkt levels"
 
 #: ../src/Plug.vala:52
 msgid "No Printers"
@@ -342,7 +342,7 @@ msgstr "Printer toevoegen"
 
 #: ../src/Plug.vala:53
 msgid "Search for the printer you need"
-msgstr ""
+msgstr "Zoek voor de printer die u nodig hebt"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
@@ -358,7 +358,7 @@ msgstr "Orientatie:"
 
 #: ../src/OptionsPage.vala:196
 msgid "Media Size:"
-msgstr ""
+msgstr "media grootte"
 
 #: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
 msgid "Automatic"
@@ -382,11 +382,11 @@ msgstr "Grijstinten"
 
 #: ../src/OptionsPage.vala:227
 msgid "Processed Color"
-msgstr ""
+msgstr "Verwerkte kleur"
 
 #: ../src/OptionsPage.vala:230
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "Verwerkte grijstinten"
 
 #: ../src/OptionsPage.vala:239
 msgid "Color mode:"
@@ -394,7 +394,7 @@ msgstr "Kleurmodus:"
 
 #: ../src/OptionsPage.vala:312
 msgid "Output Tray:"
-msgstr ""
+msgstr "uitvoerlade"
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
@@ -414,11 +414,11 @@ msgstr "Kwaliteit:"
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
-msgstr ""
+msgstr "papier benodigdheden"
 
 #: ../src/OptionsPage.vala:359
 msgid "Alternate Tray"
-msgstr ""
+msgstr "alternatieve papier la"
 
 #: ../src/OptionsPage.vala:362
 msgid "Alternate Roll"
@@ -502,11 +502,11 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:429
 msgid "Tray %d"
-msgstr ""
+msgstr "Uitvoerlade %d"
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
-msgstr ""
+msgstr "Papier invoer"
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
