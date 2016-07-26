@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-07-24 15:01+0000\n"
+"PO-Revision-Date: 2016-07-25 18:06+0000\n"
 "Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-07-25 05:39+0000\n"
-"X-Generator: Launchpad (build 18147)\n"
+"X-Launchpad-Export-Date: 2016-07-26 05:43+0000\n"
+"X-Generator: Launchpad (build 18153)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -50,7 +50,7 @@ msgid ""
 "and configuration associated with it."
 msgstr ""
 "Z odstranitvijo '%s' boste izgubili celotno zgodovino\n"
-"tiskanja in nastavitve v povezavi s tiskalnikom."
+"tiskanja in vse nastavitve v povezavi s tiskalnikom."
 
 #: ../src/PrinterList.vala:90
 msgid "Remove"
@@ -510,7 +510,7 @@ msgstr "Uredi"
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:233
 msgid "Show completed jobs"
-msgstr "Pokaži dokončana opravila"
+msgstr "Pokaži končana opravila"
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
