@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2015-09-03 23:37+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-08-02 21:32+0000\n"
+"Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-22 05:50+0000\n"
-"X-Generator: Launchpad (build 17995)\n"
+"X-Launchpad-Export-Date: 2016-08-03 06:15+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -22,37 +22,39 @@ msgstr ""
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
-msgstr ""
+msgstr "Juoda"
 
 #: ../src/InkLevel.vala:99
 msgid "Yellow"
-msgstr ""
+msgstr "Geltona"
 
 #: ../src/InkLevel.vala:102
 msgid "Cyan"
-msgstr ""
+msgstr "Žydra"
 
 #: ../src/InkLevel.vala:105
 msgid "Magenta"
-msgstr ""
+msgstr "Purpurinė"
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr ""
+msgstr "Pridėti spausdintuvą..."
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
-msgstr ""
+msgstr "Šalinti spausdintuvą"
 
 #: ../src/PrinterList.vala:85
 msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
+"Šalindami \"%s\", jūs prarasite visą spausdinimo istoriją\n"
+"ir su juo susietą konfigūraciją."
 
 #: ../src/PrinterList.vala:90
 msgid "Remove"
-msgstr ""
+msgstr "Šalinti"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
@@ -87,63 +89,63 @@ msgstr ""
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "AppSocket/HP JetDirect"
 
 #: ../src/AddPopover.vala:81
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "Neįmanoma išvardyti visų prieinamų spausdintuvų"
 
 #: ../src/AddPopover.vala:176
 msgid "Refresh"
-msgstr ""
+msgstr "Įkelti iš naujo"
 
 #: ../src/AddPopover.vala:180
 msgid "Refresh the printer list"
-msgstr ""
+msgstr "Iš naujo įkelti spausdintuvų sąrašą"
 
 #: ../src/AddPopover.vala:183
 msgid "Next"
-msgstr ""
+msgstr "Kitas"
 
 #: ../src/AddPopover.vala:229
 msgid "Connection:"
-msgstr ""
+msgstr "Ryšys:"
 
 #: ../src/AddPopover.vala:237
 msgid "Description:"
-msgstr ""
+msgstr "Aprašas:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "PavadinimasSpausdintuvas X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
-msgstr ""
+msgstr "Vieta:"
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "1 kabinetas ar Jono stalas"
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
-msgstr ""
+msgstr "Ankstesnis"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
-msgstr ""
+msgstr "Pasirinkti kitą spausdintuvą ar protokolą"
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
-msgstr ""
+msgstr "Pridėti"
 
 #: ../src/AddPopover.vala:325
 msgid "Add the configured printer"
-msgstr ""
+msgstr "Pridėti sukonfigūruotą spausdintuvą"
 
 #: ../src/AddPopover.vala:546
 msgid "(recommended)"
-msgstr ""
+msgstr "(rekomenduojama)"
 
 #: ../src/AddPopover.vala:608
 msgid "Serial"
@@ -151,15 +153,15 @@ msgstr ""
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
-msgstr ""
+msgstr "Vietiniai spausdintuvai"
 
 #: ../src/AddPopover.vala:614
 msgid "Network Printers"
-msgstr ""
+msgstr "Tinklo spausdintuvai"
 
 #: ../src/AddPopover.vala:617
 msgid "Available Network Printers"
-msgstr ""
+msgstr "Prieinami tinklo spausdintuvai"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -201,7 +203,7 @@ msgstr ""
 #: ../src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
-msgstr ""
+msgstr "Atidarytas dangtis"
 
 #. / Translators: One or more doors on the printer are open
 #: ../src/Objects/Printer.vala:59
@@ -231,7 +233,7 @@ msgstr ""
 #: ../src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
-msgstr ""
+msgstr "Sustabdytas"
 
 #. / Translators: The printer marker supply waste receptacle is almost full
 #: ../src/Objects/Printer.vala:69
@@ -259,7 +261,7 @@ msgstr ""
 
 #: ../src/Objects/Printer.vala:271
 msgid "Ready"
-msgstr ""
+msgstr "Pasiruošę"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
@@ -271,7 +273,7 @@ msgstr ""
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr ""
+msgstr "Vykdoma..."
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
@@ -291,7 +293,7 @@ msgstr ""
 
 #: ../src/PrinterPage.vala:36
 msgid "General"
-msgstr ""
+msgstr "Bendra"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
