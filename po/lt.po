@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-08-03 20:58+0000\n"
+"PO-Revision-Date: 2016-08-06 12:14+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-04 05:49+0000\n"
+"X-Launchpad-Export-Date: 2016-08-07 05:50+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/InkLevel.vala:90
@@ -84,7 +84,7 @@ msgstr ""
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "LPD/LPR serveris ar spausdintuvas"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
@@ -215,13 +215,13 @@ msgstr ""
 #: ../src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
-msgstr ""
+msgstr "Baigiasi popierius"
 
 #. / Translators: At least one input tray is empty
 #: ../src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr ""
+msgstr "Nėra popieriaus"
 
 #. / Translators: The printer is offline
 #: ../src/Objects/Printer.vala:65
@@ -261,7 +261,7 @@ msgstr ""
 
 #: ../src/Objects/Printer.vala:271
 msgid "Ready"
-msgstr "Pasiruošę"
+msgstr "Pasiruošęs"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
@@ -277,19 +277,19 @@ msgstr "Vykdoma..."
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
-msgstr ""
+msgstr "Darbas sustabdytas"
 
 #: ../src/Objects/Job.vala:103
 msgid "Job Canceled"
-msgstr ""
+msgstr "Darbas atšauktas"
 
 #: ../src/Objects/Job.vala:105
 msgid "Job Aborded"
-msgstr ""
+msgstr "Darbas nutrauktas"
 
 #: ../src/Objects/Job.vala:108
 msgid "Job Completed"
-msgstr ""
+msgstr "Darbas užbaigtas"
 
 #: ../src/PrinterPage.vala:36
 msgid "General"
@@ -309,12 +309,12 @@ msgstr "Naudoti kaip numatytąjį spausdintuvą"
 
 #: ../src/PrinterPage.vala:114
 msgid "Print Test Page"
-msgstr ""
+msgstr "Spausdinti bandomąjį puslapį"
 
 #. / TRANSLATORS: Name of the test page job
 #: ../src/PrinterPage.vala:171
 msgid "Test page"
-msgstr ""
+msgstr "Bandomasis puslapis"
 
 #: ../src/Plug.vala:37
 msgid "Printers"
@@ -343,7 +343,7 @@ msgstr "Ieškokite reikiamo spausdintuvo"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
-msgstr ""
+msgstr "Puslapių vienoje pusėje:"
 
 #: ../src/OptionsPage.vala:140
 msgid "Two-sided:"
@@ -351,7 +351,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:174
 msgid "Orientation:"
-msgstr ""
+msgstr "Padėtis:"
 
 #: ../src/OptionsPage.vala:196
 msgid "Media Size:"
@@ -359,51 +359,51 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
 msgid "Automatic"
-msgstr ""
+msgstr "Automatiškai"
 
 #: ../src/OptionsPage.vala:215
 msgid "One Color"
-msgstr ""
+msgstr "Viena spalva"
 
 #: ../src/OptionsPage.vala:218
 msgid "Color"
-msgstr ""
+msgstr "Spalvotai"
 
 #: ../src/OptionsPage.vala:221
 msgid "One Color + Black"
-msgstr ""
+msgstr "Viena spalva + juoda"
 
 #: ../src/OptionsPage.vala:224
 msgid "Greyscale"
-msgstr ""
+msgstr "Pilkumo tonais"
 
 #: ../src/OptionsPage.vala:227
 msgid "Processed Color"
-msgstr ""
+msgstr "Apdorota spalva"
 
 #: ../src/OptionsPage.vala:230
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "Apdoroti pilkumo tonai"
 
 #: ../src/OptionsPage.vala:239
 msgid "Color mode:"
-msgstr ""
+msgstr "Spalvos veiksena:"
 
 #: ../src/OptionsPage.vala:312
 msgid "Output Tray:"
-msgstr ""
+msgstr "Išvesties dėklas:"
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
-msgstr ""
+msgstr "Juodraštis"
 
 #: ../src/OptionsPage.vala:331
 msgid "Normal"
-msgstr ""
+msgstr "Normali"
 
 #: ../src/OptionsPage.vala:334
 msgid "High"
-msgstr ""
+msgstr "Aukšta"
 
 #: ../src/OptionsPage.vala:340
 msgid "Quality:"
@@ -447,7 +447,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:387
 msgid "Hagaki"
-msgstr ""
+msgstr "Hagaki"
 
 #: ../src/OptionsPage.vala:390
 msgid "Large Capacity"
@@ -459,7 +459,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
-msgstr ""
+msgstr "Pagrindinis dėklas"
 
 #: ../src/OptionsPage.vala:399
 msgid "Main Roll"
@@ -503,7 +503,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
-msgstr ""
+msgstr "Popieriaus šaltinis:"
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
@@ -511,16 +511,16 @@ msgstr ""
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:233
 msgid "Show completed jobs"
-msgstr ""
+msgstr "Rodyti užbaigtus darbus"
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
-msgstr ""
+msgstr "Darbų nėra"
 
 #: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
-msgstr ""
+msgstr "Eilėje nėra jokių darbų"
 
 #: ../src/JobsView.vala:218
 msgid "Hide completed jobs"
-msgstr ""
+msgstr "Slėpti užbaigtus darbus"

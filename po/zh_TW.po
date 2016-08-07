@@ -1,225 +1,228 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2015-09-13 14:06+0000\n"
+"PO-Revision-Date: 2016-08-07 04:40+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-22 05:50+0000\n"
-"X-Generator: Launchpad (build 17995)\n"
+"X-Launchpad-Export-Date: 2016-08-07 05:50+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
+"Language: zh_TW\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "黑色（PGBK）"
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
-msgstr ""
+msgstr "黑色（BK）"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
-msgstr ""
+msgstr "黑色"
 
 #: ../src/InkLevel.vala:99
 msgid "Yellow"
-msgstr ""
+msgstr "黃色"
 
 #: ../src/InkLevel.vala:102
 msgid "Cyan"
-msgstr ""
+msgstr "青藍色"
 
 #: ../src/InkLevel.vala:105
 msgid "Magenta"
-msgstr ""
+msgstr "洋紅色"
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr ""
+msgstr "加入印表機…"
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
-msgstr ""
+msgstr "移除印表機"
 
 #: ../src/PrinterList.vala:85
 msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
+"移除「%s」後您將失去所有列印記錄\n"
+"和其相關設定。"
 
 #: ../src/PrinterList.vala:90
 msgid "Remove"
-msgstr ""
+msgstr "移除"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "網際網路列印協定 (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: ../src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "網際網路列印協定 (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: ../src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "網際網路列印協定 (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "網際網路列印協定 (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "網際網路列印協定 (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "LPD/LPR 主機或印表機"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "AppSocket/HP JetDirect"
 
 #: ../src/AddPopover.vala:81
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "無法列出所有可用的印表機"
 
 #: ../src/AddPopover.vala:176
 msgid "Refresh"
-msgstr ""
+msgstr "重整"
 
 #: ../src/AddPopover.vala:180
 msgid "Refresh the printer list"
-msgstr ""
+msgstr "重新整理印表機清單"
 
 #: ../src/AddPopover.vala:183
 msgid "Next"
-msgstr ""
+msgstr "下一個"
 
 #: ../src/AddPopover.vala:229
 msgid "Connection:"
-msgstr ""
+msgstr "連線："
 
 #: ../src/AddPopover.vala:237
 msgid "Description:"
-msgstr ""
+msgstr "描述："
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
-msgstr ""
+msgstr "位置："
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "例如「實驗室一」或「小明的桌子」"
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
-msgstr ""
+msgstr "上一個"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
-msgstr ""
+msgstr "選取其他印表機或通訊協定"
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
-msgstr ""
+msgstr "加入"
 
 #: ../src/AddPopover.vala:325
 msgid "Add the configured printer"
-msgstr ""
+msgstr "加入已設定的印表機"
 
 #: ../src/AddPopover.vala:546
 msgid "(recommended)"
-msgstr ""
+msgstr "（建議）"
 
 #: ../src/AddPopover.vala:608
 msgid "Serial"
-msgstr ""
+msgstr "序列埠"
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
-msgstr ""
+msgstr "本地端印表機"
 
 #: ../src/AddPopover.vala:614
 msgid "Network Printers"
-msgstr ""
+msgstr "網路印表機"
 
 #: ../src/AddPopover.vala:617
 msgid "Available Network Printers"
-msgstr ""
+msgstr "可使用的網路印表機"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
-msgstr ""
+msgstr "碳粉不足"
 
 #. / Translators: The printer has no toner left
 #: ../src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
-msgstr ""
+msgstr "碳粉用完"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: ../src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
-msgstr ""
+msgstr "顯像劑不足"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: ../src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
-msgstr ""
+msgstr "顯像劑用完"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr ""
+msgstr "墨水匣不足"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr ""
+msgstr "墨水匣用完"
 
 #. / Translators: One or more covers on the printer are open
 #: ../src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
-msgstr ""
+msgstr "外殼開啟"
 
 #. / Translators: One or more doors on the printer are open
 #: ../src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
-msgstr ""
+msgstr "紙匣門開啟"
 
 #. / Translators: At least one input tray is low on media
 #: ../src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
-msgstr ""
+msgstr "紙張不足"
 
 #. / Translators: At least one input tray is empty
 #: ../src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr ""
+msgstr "紙張用盡"
 
 #. / Translators: The printer is offline
 #: ../src/Objects/Printer.vala:65
@@ -237,82 +240,82 @@ msgstr "已停止"
 #: ../src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
-msgstr ""
+msgstr "廢墨收集器將滿"
 
 #. / Translators: The printer marker supply waste receptacle is full
 #: ../src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
-msgstr ""
+msgstr "廢墨收集器已滿"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: ../src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr ""
+msgstr "感光鼓接近使用壽命"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: ../src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
+msgstr "感光鼓已無法使用"
 
 #: ../src/Objects/Printer.vala:271
 msgid "Ready"
-msgstr ""
+msgstr "準備就緒"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
-msgstr ""
+msgstr "工作擱置中"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
-msgstr ""
+msgstr "暫停"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr ""
+msgstr "處理中…"
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
-msgstr ""
+msgstr "工作已停止"
 
 #: ../src/Objects/Job.vala:103
 msgid "Job Canceled"
-msgstr ""
+msgstr "工作已取消"
 
 #: ../src/Objects/Job.vala:105
 msgid "Job Aborded"
-msgstr ""
+msgstr "工作已中止"
 
 #: ../src/Objects/Job.vala:108
 msgid "Job Completed"
-msgstr ""
+msgstr "工作已完成"
 
 #: ../src/PrinterPage.vala:36
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
-msgstr ""
+msgstr "選項"
 
 #: ../src/PrinterPage.vala:100
 msgid "Lab 1 or John's Desk"
-msgstr ""
+msgstr "例如「實驗室一」或「小明的桌子」"
 
 #: ../src/PrinterPage.vala:104
 msgid "Use as Default Printer"
-msgstr ""
+msgstr "作為預設印表機"
 
 #: ../src/PrinterPage.vala:114
 msgid "Print Test Page"
-msgstr ""
+msgstr "列印測試頁"
 
 #. / TRANSLATORS: Name of the test page job
 #: ../src/PrinterPage.vala:171
 msgid "Test page"
-msgstr ""
+msgstr "測試頁"
 
 #: ../src/Plug.vala:37
 msgid "Printers"
@@ -320,204 +323,204 @@ msgstr "印表機"
 
 #: ../src/Plug.vala:38
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
+msgstr "設定印表機、管理印表機佇列、和查看墨水量"
 
 #: ../src/Plug.vala:52
 msgid "No Printers"
-msgstr ""
+msgstr "無印表機"
 
 #: ../src/Plug.vala:52
 msgid "Add a printer to begin printing"
-msgstr ""
+msgstr "加入印表機以開始列印"
 
 #: ../src/Plug.vala:53
 msgid "Add Printer"
-msgstr ""
+msgstr "加入印表機"
 
 #: ../src/Plug.vala:53
 msgid "Search for the printer you need"
-msgstr ""
+msgstr "搜尋您所需要的印表機"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
-msgstr ""
+msgstr "每面頁數："
 
 #: ../src/OptionsPage.vala:140
 msgid "Two-sided:"
-msgstr ""
+msgstr "雙面："
 
 #: ../src/OptionsPage.vala:174
 msgid "Orientation:"
-msgstr ""
+msgstr "方向："
 
 #: ../src/OptionsPage.vala:196
 msgid "Media Size:"
-msgstr ""
+msgstr "媒體尺寸："
 
 #: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
 msgid "Automatic"
-msgstr ""
+msgstr "自動"
 
 #: ../src/OptionsPage.vala:215
 msgid "One Color"
-msgstr ""
+msgstr "單色"
 
 #: ../src/OptionsPage.vala:218
 msgid "Color"
-msgstr ""
+msgstr "色彩"
 
 #: ../src/OptionsPage.vala:221
 msgid "One Color + Black"
-msgstr ""
+msgstr "單色 + 黑色"
 
 #: ../src/OptionsPage.vala:224
 msgid "Greyscale"
-msgstr ""
+msgstr "灰階"
 
 #: ../src/OptionsPage.vala:227
 msgid "Processed Color"
-msgstr ""
+msgstr "處理後色彩"
 
 #: ../src/OptionsPage.vala:230
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "處理後灰階"
 
 #: ../src/OptionsPage.vala:239
 msgid "Color mode:"
-msgstr ""
+msgstr "色彩模式："
 
 #: ../src/OptionsPage.vala:312
 msgid "Output Tray:"
-msgstr ""
+msgstr "出紙匣："
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
-msgstr ""
+msgstr "草稿"
 
 #: ../src/OptionsPage.vala:331
 msgid "Normal"
-msgstr ""
+msgstr "一般"
 
 #: ../src/OptionsPage.vala:334
 msgid "High"
-msgstr ""
+msgstr "高級"
 
 #: ../src/OptionsPage.vala:340
 msgid "Quality:"
-msgstr ""
+msgstr "品質："
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
-msgstr ""
+msgstr "紙張分配"
 
 #: ../src/OptionsPage.vala:359
 msgid "Alternate Tray"
-msgstr ""
+msgstr "替代紙匣"
 
 #: ../src/OptionsPage.vala:362
 msgid "Alternate Roll"
-msgstr ""
+msgstr "替代滾筒"
 
 #: ../src/OptionsPage.vala:368
 msgid "Bottom"
-msgstr ""
+msgstr "底部"
 
 #: ../src/OptionsPage.vala:371
 msgid "By-pass Tray"
-msgstr ""
+msgstr "手送紙匣"
 
 #: ../src/OptionsPage.vala:374
 msgid "Center"
-msgstr ""
+msgstr "中心"
 
 #: ../src/OptionsPage.vala:377
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "持續自動送紙"
 
 #: ../src/OptionsPage.vala:381
 msgid "Disk"
-msgstr ""
+msgstr "光碟"
 
 #: ../src/OptionsPage.vala:384
 msgid "Envelope"
-msgstr ""
+msgstr "封套"
 
 #: ../src/OptionsPage.vala:387
 msgid "Hagaki"
-msgstr ""
+msgstr "Hagaki 卡紙"
 
 #: ../src/OptionsPage.vala:390
 msgid "Large Capacity"
-msgstr ""
+msgstr "大容量"
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
-msgstr ""
+msgstr "左側"
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
-msgstr ""
+msgstr "主要紙匣"
 
 #: ../src/OptionsPage.vala:399
 msgid "Main Roll"
-msgstr ""
+msgstr "主要滾筒"
 
 #: ../src/OptionsPage.vala:402
 msgid "Manual"
-msgstr ""
+msgstr "手動"
 
 #: ../src/OptionsPage.vala:405
 msgid "Middle"
-msgstr ""
+msgstr "中間"
 
 #: ../src/OptionsPage.vala:408
 msgid "Photo"
-msgstr ""
+msgstr "相片"
 
 #: ../src/OptionsPage.vala:412
 msgid "Rear"
-msgstr ""
+msgstr "後側"
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
-msgstr ""
+msgstr "右側"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
-msgstr ""
+msgstr "側面"
 
 #: ../src/OptionsPage.vala:421
 msgid "Top"
-msgstr ""
+msgstr "頂端"
 
 #: ../src/OptionsPage.vala:426
 msgid "Roll %d"
-msgstr ""
+msgstr "滾筒 %d"
 
 #: ../src/OptionsPage.vala:429
 msgid "Tray %d"
-msgstr ""
+msgstr "紙匣 %d"
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
-msgstr ""
+msgstr "紙張來源："
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
-msgstr ""
+msgstr "編輯"
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:233
 msgid "Show completed jobs"
-msgstr ""
+msgstr "顯示完成的工作"
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
-msgstr ""
+msgstr "沒有工作"
 
 #: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
-msgstr ""
+msgstr "佇列中已沒有工作"
 
 #: ../src/JobsView.vala:218
 msgid "Hide completed jobs"
-msgstr ""
+msgstr "隱藏完成的工作"

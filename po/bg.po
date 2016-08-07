@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-08-05 07:26+0000\n"
-"Last-Translator: Адмирал АнимЕ <Unknown>\n"
+"PO-Revision-Date: 2016-08-06 17:55+0000\n"
+"Last-Translator: Stanislav <stunito0o0o0@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-06 05:51+0000\n"
+"X-Launchpad-Export-Date: 2016-08-07 05:50+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/InkLevel.vala:90
@@ -49,6 +49,8 @@ msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
+"Ако премахнете '%s'  ще изгубите цялата история на принтирането,\n"
+"както и конфигурацията направена за това устройство."
 
 #: ../src/PrinterList.vala:90
 msgid "Remove"
@@ -143,7 +145,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:546
 msgid "(recommended)"
-msgstr ""
+msgstr "(препоръчително)"
 
 #: ../src/AddPopover.vala:608
 msgid "Serial"
@@ -159,107 +161,107 @@ msgstr "Мрежови печатащи машини"
 
 #: ../src/AddPopover.vala:617
 msgid "Available Network Printers"
-msgstr ""
+msgstr "Налични мрежови принтери"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
-msgstr ""
+msgstr "Тонерът е на привършване"
 
 #. / Translators: The printer has no toner left
 #: ../src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
-msgstr ""
+msgstr "Няма тонер"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: ../src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
-msgstr ""
+msgstr "Проявителят е на привършване"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: ../src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
-msgstr ""
+msgstr "Няма проявител"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr ""
+msgstr "Мастилото е на привършване"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr ""
+msgstr "Няма мастило"
 
 #. / Translators: One or more covers on the printer are open
 #: ../src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
-msgstr ""
+msgstr "Отворен капак"
 
 #. / Translators: One or more doors on the printer are open
 #: ../src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
-msgstr ""
+msgstr "Отворена вратичка"
 
 #. / Translators: At least one input tray is low on media
 #: ../src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
-msgstr ""
+msgstr "Хартията е на привършване"
 
 #. / Translators: At least one input tray is empty
 #: ../src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr ""
+msgstr "Няма хартия"
 
 #. / Translators: The printer is offline
 #: ../src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
-msgstr ""
+msgstr "Офлайн"
 
 #. / Translators: Someone has stopped the Printer
 #: ../src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
-msgstr ""
+msgstr "Спрян"
 
 #. / Translators: The printer marker supply waste receptacle is almost full
 #: ../src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
-msgstr ""
+msgstr "Контейнерът за отпадъчно мастило е почти пълен"
 
 #. / Translators: The printer marker supply waste receptacle is full
 #: ../src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
-msgstr ""
+msgstr "Контейнерът за отпадъчно мастило е пълен"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: ../src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr ""
+msgstr "Барабанът е почти износен"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: ../src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
+msgstr "Барабанът е износен"
 
 #: ../src/Objects/Printer.vala:271
 msgid "Ready"
-msgstr ""
+msgstr "В готовност"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
@@ -271,7 +273,7 @@ msgstr ""
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr ""
+msgstr "Обработване..."
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
@@ -279,7 +281,7 @@ msgstr ""
 
 #: ../src/Objects/Job.vala:103
 msgid "Job Canceled"
-msgstr ""
+msgstr "Задачата е отменена"
 
 #: ../src/Objects/Job.vala:105
 msgid "Job Aborded"
@@ -295,7 +297,7 @@ msgstr ""
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
-msgstr ""
+msgstr "Настройки"
 
 #: ../src/PrinterPage.vala:100
 msgid "Lab 1 or John's Desk"
@@ -307,12 +309,12 @@ msgstr "Използване като печатаща машина по под�
 
 #: ../src/PrinterPage.vala:114
 msgid "Print Test Page"
-msgstr ""
+msgstr "Печат на пробна страница"
 
 #. / TRANSLATORS: Name of the test page job
 #: ../src/PrinterPage.vala:171
 msgid "Test page"
-msgstr ""
+msgstr "Пробна страница"
 
 #: ../src/Plug.vala:37
 msgid "Printers"
@@ -321,6 +323,8 @@ msgstr "Печатащи машини"
 #: ../src/Plug.vala:38
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
+"Настройка на принтерите, управление на опашките за печат и проверка на "
+"нивото на мастилото"
 
 #: ../src/Plug.vala:52
 msgid "No Printers"
@@ -328,7 +332,7 @@ msgstr "Няма печатащи машини"
 
 #: ../src/Plug.vala:52
 msgid "Add a printer to begin printing"
-msgstr ""
+msgstr "Добавете принтер, за да започнете да печатате"
 
 #: ../src/Plug.vala:53
 msgid "Add Printer"
@@ -340,15 +344,15 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
-msgstr ""
+msgstr "Страници на страна:"
 
 #: ../src/OptionsPage.vala:140
 msgid "Two-sided:"
-msgstr ""
+msgstr "Двустранно:"
 
 #: ../src/OptionsPage.vala:174
 msgid "Orientation:"
-msgstr ""
+msgstr "Ориентация:"
 
 #: ../src/OptionsPage.vala:196
 msgid "Media Size:"
@@ -356,23 +360,23 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
 msgid "Automatic"
-msgstr ""
+msgstr "Автоматично"
 
 #: ../src/OptionsPage.vala:215
 msgid "One Color"
-msgstr ""
+msgstr "Едноцветно"
 
 #: ../src/OptionsPage.vala:218
 msgid "Color"
-msgstr ""
+msgstr "Цветно"
 
 #: ../src/OptionsPage.vala:221
 msgid "One Color + Black"
-msgstr ""
+msgstr "Едноцветно + черно-бяло"
 
 #: ../src/OptionsPage.vala:224
 msgid "Greyscale"
-msgstr ""
+msgstr "Скала на сивото"
 
 #: ../src/OptionsPage.vala:227
 msgid "Processed Color"
@@ -384,7 +388,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:239
 msgid "Color mode:"
-msgstr ""
+msgstr "Цветови режим:"
 
 #: ../src/OptionsPage.vala:312
 msgid "Output Tray:"
@@ -392,7 +396,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
-msgstr ""
+msgstr "Чернова"
 
 #: ../src/OptionsPage.vala:331
 msgid "Normal"
@@ -404,7 +408,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:340
 msgid "Quality:"
-msgstr ""
+msgstr "Качество:"
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
@@ -496,28 +500,28 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:429
 msgid "Tray %d"
-msgstr ""
+msgstr "Тава %d"
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
-msgstr ""
+msgstr "Източник на хартията:"
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
-msgstr ""
+msgstr "Редактиране"
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:233
 msgid "Show completed jobs"
-msgstr ""
+msgstr "Показване на завършените задачи"
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
-msgstr ""
+msgstr "Няма задачи"
 
 #: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
-msgstr ""
+msgstr "В опашката няма задачи"
 
 #: ../src/JobsView.vala:218
 msgid "Hide completed jobs"
-msgstr ""
+msgstr "Скриване на завършените задачи"
