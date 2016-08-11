@@ -1,5 +1,5 @@
-switchboard-plug-printers (0.1) unstable; urgency=low
+switchboard-plug-printers (0.1) xenial; urgency=medium
 
   * Initial Release.
 
- -- Corentin Noël <corentin@elementary.io>  Thu, 3 Sep 2015 21:37:48 +0100
+ -- Cody Garver <cody@elementary.io>  Thu, 11 Aug 2016 05:17:30 -0500
