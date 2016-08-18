@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-08-09 13:36+0000\n"
+"PO-Revision-Date: 2016-08-17 15:02+0000\n"
 "Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-10 05:46+0000\n"
+"X-Launchpad-Export-Date: 2016-08-18 06:05+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/InkLevel.vala:90
@@ -448,7 +448,7 @@ msgstr "はがき"
 
 #: ../src/OptionsPage.vala:390
 msgid "Large Capacity"
-msgstr ""
+msgstr "大容量"
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
@@ -460,7 +460,7 @@ msgstr "メイントレイ"
 
 #: ../src/OptionsPage.vala:399
 msgid "Main Roll"
-msgstr ""
+msgstr "メインロール"
 
 #: ../src/OptionsPage.vala:402
 msgid "Manual"
@@ -492,7 +492,7 @@ msgstr "上"
 
 #: ../src/OptionsPage.vala:426
 msgid "Roll %d"
-msgstr ""
+msgstr "ロール %d"
 
 #: ../src/OptionsPage.vala:429
 msgid "Tray %d"
@@ -520,4 +520,4 @@ msgstr "キューにジョブがありません"
 
 #: ../src/JobsView.vala:218
 msgid "Hide completed jobs"
-msgstr ""
+msgstr "完了したジョブを隠す"
