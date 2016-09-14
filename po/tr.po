@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-05-09 19:48+0000\n"
+"PO-Revision-Date: 2016-09-13 10:36+0000\n"
 "Last-Translator: Melih Güçlü <melihguclu@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-10 05:56+0000\n"
-"X-Generator: Launchpad (build 18025)\n"
+"X-Launchpad-Export-Date: 2016-09-14 06:32+0000\n"
+"X-Generator: Launchpad (build 18186)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -467,7 +467,7 @@ msgstr "Ana Rulo"
 
 #: ../src/OptionsPage.vala:402
 msgid "Manual"
-msgstr "Manuel"
+msgstr "Elle"
 
 #: ../src/OptionsPage.vala:405
 msgid "Middle"
