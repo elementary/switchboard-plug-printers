@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-06-19 15:42+0000\n"
+"PO-Revision-Date: 2016-09-29 07:11+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-20 06:19+0000\n"
-"X-Generator: Launchpad (build 18097)\n"
+"X-Launchpad-Export-Date: 2016-09-30 06:39+0000\n"
+"X-Generator: Launchpad (build 18204)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -454,7 +454,7 @@ msgstr "大容量"
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
-msgstr ""
+msgstr "左侧"
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
@@ -470,7 +470,7 @@ msgstr "手动"
 
 #: ../src/OptionsPage.vala:405
 msgid "Middle"
-msgstr ""
+msgstr "中间"
 
 #: ../src/OptionsPage.vala:408
 msgid "Photo"
@@ -478,15 +478,15 @@ msgstr "照片"
 
 #: ../src/OptionsPage.vala:412
 msgid "Rear"
-msgstr ""
+msgstr "后侧"
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
-msgstr ""
+msgstr "右侧"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
-msgstr ""
+msgstr "边缘"
 
 #: ../src/OptionsPage.vala:421
 msgid "Top"
