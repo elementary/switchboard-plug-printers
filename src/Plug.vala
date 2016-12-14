@@ -32,11 +32,14 @@ namespace Printers {
         private Printers.AddPopover add_popover;
 
         public Plug () {
+            var settings = new Gee.TreeMap<string, string?> (null, null);
+            settings.set ("printer", "null");
             Object (category: Category.HARDWARE,
                     code_name: Build.PLUGCODENAME,
                     display_name: _("Printers"),
                     description: _("Configure printers, manage print queues, and view ink levels"),
-                    icon: "printer");
+                    icon: "printer",
+                    supported_settings: settings);
             plug = this;
         }
 
