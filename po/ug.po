@@ -1,24 +1,25 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-01-02 04:20+0000\n"
+"PO-Revision-Date: 2017-01-02 07:57+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-02 05:28+0000\n"
+"X-Launchpad-Export-Date: 2017-01-03 06:20+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
+"Language: ug\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "قارا (PGBK)"
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
-msgstr ""
+msgstr "قارا (BK)"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
@@ -38,7 +39,7 @@ msgstr "ھال رەڭ"
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr ""
+msgstr "پرىنتېر قىتىش...."
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
@@ -49,6 +50,8 @@ msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
+"'%s' نى چىقىرىۋەتكەندىن كىيىن سىزنىڭ بارلىق بىسىش خاتىرىڭىز\n"
+"ۋە بۇ ئۈسكۈنە بىلەن مۇناسىۋەتلىك بولغان بارلىق تەڭشەكلىرىڭىز يوقايدۇ."
 
 #: ../src/PrinterList.vala:90
 msgid "Remove"
@@ -72,12 +75,12 @@ msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipp)"
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
@@ -87,11 +90,11 @@ msgstr "LPD/LPR كومپيۇتېر ياكى پرىنتېر"
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "ئەپ ئۇلانما ئىغىزى/HP JetDirect"
 
 #: ../src/AddPopover.vala:81
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "ئىشلەتكىلى بولىدىغان پرىنتېرلارنىڭ ھەممىسىنى كۆرسەتكىلى بولمىدى"
 
 #: ../src/AddPopover.vala:176
 msgid "Refresh"
@@ -99,7 +102,7 @@ msgstr "يېڭىلاش"
 
 #: ../src/AddPopover.vala:180
 msgid "Refresh the printer list"
-msgstr ""
+msgstr "پرىنتېر تىزىملىكىنى يىڭىلاش"
 
 #: ../src/AddPopover.vala:183
 msgid "Next"
@@ -115,7 +118,7 @@ msgstr "چۈشەندۈرۈش:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
@@ -123,7 +126,7 @@ msgstr "ئورنى:"
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "Lab 1 ياكى John's desk"
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
@@ -131,7 +134,7 @@ msgstr "ئالدىنقىسى"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
-msgstr ""
+msgstr "باشقا پرىنتېر ياكى بىسىش كىلىشىمى تاللاڭ"
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
@@ -139,15 +142,15 @@ msgstr "قىتىش"
 
 #: ../src/AddPopover.vala:325
 msgid "Add the configured printer"
-msgstr ""
+msgstr "تەڭشەلگەن پرىنتېر قىتىش"
 
 #: ../src/AddPopover.vala:546
 msgid "(recommended)"
-msgstr ""
+msgstr "(تەۋسىيە قىلىنغان)"
 
 #: ../src/AddPopover.vala:608
 msgid "Serial"
-msgstr "ئارقىمۇئارقا"
+msgstr "تەرتىپ نومۇرى"
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
@@ -155,11 +158,11 @@ msgstr "يەرلىك پرىنتېرلار"
 
 #: ../src/AddPopover.vala:614
 msgid "Network Printers"
-msgstr ""
+msgstr "تور پرىنتېرلىرى"
 
 #: ../src/AddPopover.vala:617
 msgid "Available Network Printers"
-msgstr ""
+msgstr "ئىشلەتكىلى بولىدىغان تور پرىنتېرلىرى"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -171,7 +174,7 @@ msgstr "سىياھ ئاز قالدى"
 #: ../src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
-msgstr "سىياھ تۈگەپ كەتتى"
+msgstr "سىياھ تۈگىدى"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: ../src/Objects/Printer.vala:49
@@ -183,19 +186,19 @@ msgstr "تەسۋىر روشەنلەشتۈرگۈچ ئاز قالدى"
 #: ../src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
-msgstr "تەسۋىر روشەنلەشتۈرگۈچ تۈگەپ قالدى"
+msgstr "تەسۋىر روشەنلەشتۈرگۈچ تۈگىدى"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr "بەلگە سىياھ تەمىنلەش ئاز قالدى"
+msgstr "بەلگە سىياھى ئاز قالدى"
 
 #. / Translators: "marker" is one color bin of the printer
 #: ../src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr "بەلگە سىياھ تەمىنلەش تۈگەپ قالدى"
+msgstr "بەلگە سىياھى تۈگىدى"
 
 #. / Translators: One or more covers on the printer are open
 #: ../src/Objects/Printer.vala:57
@@ -219,13 +222,13 @@ msgstr "قەغەز ئاز قالدى"
 #: ../src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr "قەغەز يېتىشمىدى"
+msgstr "قەغەز تۈگىدى"
 
 #. / Translators: The printer is offline
 #: ../src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
-msgstr "توردا يوق"
+msgstr "تورغا ئۇلانمىغان"
 
 #. / Translators: Someone has stopped the Printer
 #: ../src/Objects/Printer.vala:67
@@ -249,13 +252,13 @@ msgstr "ئەخلەت قاچىسى توشۇپ قالدى"
 #: ../src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr "نۇر سەزگۈچنىڭ ئۆمرى ئاز قالدى"
+msgstr "ئوپتىكىلىق سۈرەت دىرىژورىنىڭ ئۆمرى ئاز قالدى"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: ../src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr "نۇر سەزگۈچ خىزمەت قىلالمايدۇ"
+msgstr "ئوپتىكىلىق سۈرەت دىرىژورى خىزمەت قىلالمايدۇ"
 
 #: ../src/Objects/Printer.vala:271
 msgid "Ready"
@@ -263,31 +266,31 @@ msgstr "تەييار بولدى"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
-msgstr ""
+msgstr "ۋەزىپە توختىتىپ قويۇلدى"
 
 #: ../src/Objects/Job.vala:97
 msgid "On Held"
-msgstr ""
+msgstr "ساقلاۋاتىدۇ"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr ""
+msgstr "بىرتەرەپ قىلىۋاتىدۇ...."
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
-msgstr ""
+msgstr "ۋەزىپە توختىدى"
 
 #: ../src/Objects/Job.vala:103
 msgid "Job Canceled"
-msgstr ""
+msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
 
 #: ../src/Objects/Job.vala:105
 msgid "Job Aborded"
-msgstr ""
+msgstr "ۋەزىپە توختىتىلدى"
 
 #: ../src/Objects/Job.vala:108
 msgid "Job Completed"
-msgstr ""
+msgstr "ۋەزىپە تاماملاندى"
 
 #: ../src/PrinterPage.vala:36
 msgid "General"
@@ -295,15 +298,15 @@ msgstr "ئادەتتىكى تەڭشەكلەر"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
-msgstr "تاللانمىلار"
+msgstr "پارامىتېرلار"
 
 #: ../src/PrinterPage.vala:100
 msgid "Lab 1 or John's Desk"
-msgstr ""
+msgstr "Lab 1 ياكى John's desk"
 
 #: ../src/PrinterPage.vala:104
 msgid "Use as Default Printer"
-msgstr ""
+msgstr "سۈكۈتتىكى پرىنتېر قىلىپ ئىشلىتىش"
 
 #: ../src/PrinterPage.vala:114
 msgid "Print Test Page"
@@ -320,15 +323,15 @@ msgstr "پرىنتېرلار"
 
 #: ../src/Plug.vala:38
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
+msgstr "پرىنتېرلارنى تەڭشەش، بىسىش سىپىنى باشقۇرۇش، قالغان سىياھنى كۆرۈش"
 
 #: ../src/Plug.vala:52
 msgid "No Printers"
-msgstr ""
+msgstr "پرىنتېر يوق"
 
 #: ../src/Plug.vala:52
 msgid "Add a printer to begin printing"
-msgstr ""
+msgstr "پرىنتېر قىتىپ بىسىشنى باشلاڭ"
 
 #: ../src/Plug.vala:53
 msgid "Add Printer"
@@ -336,15 +339,15 @@ msgstr "پرىنتېر قوشۇش"
 
 #: ../src/Plug.vala:53
 msgid "Search for the printer you need"
-msgstr ""
+msgstr "ئىھتىياجلىق پرىنتېرنى ئىزدەڭ"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
-msgstr "ھەر بىر يۈزىدىكى بەت سانى:"
+msgstr "ھەر بىر تەرەپتىكى بەت سانى:"
 
 #: ../src/OptionsPage.vala:140
 msgid "Two-sided:"
-msgstr ""
+msgstr "ئىككى تەرەپ:"
 
 #: ../src/OptionsPage.vala:174
 msgid "Orientation:"
@@ -352,7 +355,7 @@ msgstr "يۆنىلىشى:"
 
 #: ../src/OptionsPage.vala:196
 msgid "Media Size:"
-msgstr ""
+msgstr "مېدىئا چوڭلۇقى:"
 
 #: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
 msgid "Automatic"
@@ -360,7 +363,7 @@ msgstr "ئاپتوماتىك"
 
 #: ../src/OptionsPage.vala:215
 msgid "One Color"
-msgstr ""
+msgstr "يەككە رەڭ"
 
 #: ../src/OptionsPage.vala:218
 msgid "Color"
@@ -368,31 +371,31 @@ msgstr "رەڭ"
 
 #: ../src/OptionsPage.vala:221
 msgid "One Color + Black"
-msgstr ""
+msgstr "يەككە رەڭ + قارا"
 
 #: ../src/OptionsPage.vala:224
 msgid "Greyscale"
-msgstr ""
+msgstr "كۈلرەڭ"
 
 #: ../src/OptionsPage.vala:227
 msgid "Processed Color"
-msgstr ""
+msgstr "بىرتەرەپ قىلىنغان رەڭ"
 
 #: ../src/OptionsPage.vala:230
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "بىرتەرەپ قىلىنغان كۈلرەڭ"
 
 #: ../src/OptionsPage.vala:239
 msgid "Color mode:"
-msgstr "رەڭگى:"
+msgstr "رەڭ ئەندىزىسى:"
 
 #: ../src/OptionsPage.vala:312
 msgid "Output Tray:"
-msgstr ""
+msgstr "چىقىرىش جازىسى:"
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
-msgstr "دەسلەپكى نۇسخا"
+msgstr "ئورىگىنال"
 
 #: ../src/OptionsPage.vala:331
 msgid "Normal"
@@ -408,15 +411,15 @@ msgstr "سۈپىتى:"
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
-msgstr ""
+msgstr "قەغەز تەقسىماتى"
 
 #: ../src/OptionsPage.vala:359
 msgid "Alternate Tray"
-msgstr ""
+msgstr "زاپاس جازا"
 
 #: ../src/OptionsPage.vala:362
 msgid "Alternate Roll"
-msgstr ""
+msgstr "زاپاس ئورام"
 
 #: ../src/OptionsPage.vala:368
 msgid "Bottom"
@@ -424,15 +427,15 @@ msgstr "ئاستى"
 
 #: ../src/OptionsPage.vala:371
 msgid "By-pass Tray"
-msgstr ""
+msgstr "تارماق جازا"
 
 #: ../src/OptionsPage.vala:374
 msgid "Center"
-msgstr "ئوتتۇرىغا توغرىلاش"
+msgstr "ئوتتۇرىسى"
 
 #: ../src/OptionsPage.vala:377
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "داۋاملىق ئاپتوماتىك قەغەز تەمىنلەش"
 
 #: ../src/OptionsPage.vala:381
 msgid "Disk"
@@ -444,11 +447,11 @@ msgstr "لېپاپ"
 
 #: ../src/OptionsPage.vala:387
 msgid "Hagaki"
-msgstr ""
+msgstr "ياپونچە ئاتكرېتكا"
 
 #: ../src/OptionsPage.vala:390
 msgid "Large Capacity"
-msgstr ""
+msgstr "چوڭ سىغىم"
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
@@ -456,11 +459,11 @@ msgstr "سول"
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
-msgstr ""
+msgstr "ئاساسىي جازا"
 
 #: ../src/OptionsPage.vala:399
 msgid "Main Roll"
-msgstr ""
+msgstr "ئاساسىي ئورام"
 
 #: ../src/OptionsPage.vala:402
 msgid "Manual"
@@ -492,15 +495,15 @@ msgstr "ئۈستى"
 
 #: ../src/OptionsPage.vala:426
 msgid "Roll %d"
-msgstr ""
+msgstr "ئورام %d"
 
 #: ../src/OptionsPage.vala:429
 msgid "Tray %d"
-msgstr ""
+msgstr "جازا %d"
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
-msgstr ""
+msgstr "قەغەز مەنبەسى:"
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
@@ -512,12 +515,12 @@ msgstr "تاماملانغان ۋەزىپىلەرنى كۆرسىتىش"
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
-msgstr ""
+msgstr "ۋەزىپە يوق"
 
 #: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
-msgstr ""
+msgstr "ۋەزىپە سىپىدە ۋەزىپە يوق"
 
 #: ../src/JobsView.vala:218
 msgid "Hide completed jobs"
-msgstr ""
+msgstr "تاماملانغان ۋەزىپىلەرنى كۆرسەتمەسلىك"
