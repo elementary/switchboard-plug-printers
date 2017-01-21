@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2015-12-14 15:58+0000\n"
-"Last-Translator: Giannis Perrakis <Unknown>\n"
+"PO-Revision-Date: 2017-01-19 18:09+0000\n"
+"Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-22 05:46+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
+"X-Launchpad-Export-Date: 2017-01-21 07:14+0000\n"
+"X-Generator: Launchpad (build 18302)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
-msgstr ""
+msgstr "Μαύρο"
 
 #: ../src/InkLevel.vala:99
 msgid "Yellow"
-msgstr ""
+msgstr "Κίτρινο"
 
 #: ../src/InkLevel.vala:102
 msgid "Cyan"
@@ -97,23 +97,23 @@ msgstr ""
 
 #: ../src/AddPopover.vala:176
 msgid "Refresh"
-msgstr ""
+msgstr "Ανανέωση"
 
 #: ../src/AddPopover.vala:180
 msgid "Refresh the printer list"
-msgstr ""
+msgstr "Ανανέωση της λίστας εκτυπωτών"
 
 #: ../src/AddPopover.vala:183
 msgid "Next"
-msgstr ""
+msgstr "Επόμενο"
 
 #: ../src/AddPopover.vala:229
 msgid "Connection:"
-msgstr ""
+msgstr "Σύνδεση:"
 
 #: ../src/AddPopover.vala:237
 msgid "Description:"
-msgstr ""
+msgstr "Περιγραφή:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
@@ -129,11 +129,11 @@ msgstr ""
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
-msgstr ""
+msgstr "Προηγούμενο"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
-msgstr ""
+msgstr "Επιλέξτε έναν άλλον εκτυπωτή ή πρωτόκολλο"
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
@@ -153,15 +153,15 @@ msgstr ""
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
-msgstr ""
+msgstr "Τοπικοί εκτυπωτές"
 
 #: ../src/AddPopover.vala:614
 msgid "Network Printers"
-msgstr ""
+msgstr "Εκτυπωτές δικτύου"
 
 #: ../src/AddPopover.vala:617
 msgid "Available Network Printers"
-msgstr ""
+msgstr "Διαθέσιμοι εκτυπωτές δικτύου"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -221,7 +221,7 @@ msgstr ""
 #: ../src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr ""
+msgstr "Τελείωσε το χαρτί"
 
 #. / Translators: The printer is offline
 #: ../src/Objects/Printer.vala:65
