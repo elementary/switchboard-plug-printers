@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-01-27 08:20+0000\n"
+"PO-Revision-Date: 2017-02-08 20:31+0000\n"
 "Last-Translator: Rokar <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-28 06:13+0000\n"
-"X-Generator: Launchpad (build 18315)\n"
+"X-Launchpad-Export-Date: 2017-02-09 06:06+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
-msgstr ""
+msgstr "Reş(RŞ)"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
@@ -95,7 +95,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:176
 msgid "Refresh"
-msgstr ""
+msgstr "Nû Bike"
 
 #: ../src/AddPopover.vala:180
 msgid "Refresh the printer list"
@@ -103,7 +103,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:183
 msgid "Next"
-msgstr ""
+msgstr "Pêşve"
 
 #: ../src/AddPopover.vala:229
 msgid "Connection:"
@@ -111,7 +111,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:237
 msgid "Description:"
-msgstr ""
+msgstr "Daxûyanî:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
@@ -119,7 +119,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
-msgstr ""
+msgstr "Cîh"
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
@@ -127,7 +127,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
-msgstr ""
+msgstr "Paş de"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
@@ -135,7 +135,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
-msgstr ""
+msgstr "Zêde bike"
 
 #: ../src/AddPopover.vala:325
 msgid "Add the configured printer"
@@ -219,19 +219,19 @@ msgstr ""
 #: ../src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr ""
+msgstr "Li derveyî rûpel"
 
 #. / Translators: The printer is offline
 #: ../src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
-msgstr ""
+msgstr "Ne liser"
 
 #. / Translators: Someone has stopped the Printer
 #: ../src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
-msgstr ""
+msgstr "Hat sekinandin"
 
 #. / Translators: The printer marker supply waste receptacle is almost full
 #: ../src/Objects/Printer.vala:69
@@ -259,7 +259,7 @@ msgstr ""
 
 #: ../src/Objects/Printer.vala:271
 msgid "Ready"
-msgstr ""
+msgstr "Amade"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
@@ -291,11 +291,11 @@ msgstr ""
 
 #: ../src/PrinterPage.vala:36
 msgid "General"
-msgstr ""
+msgstr "Gîştî"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
-msgstr ""
+msgstr "Vebijêrk"
 
 #: ../src/PrinterPage.vala:100
 msgid "Lab 1 or John's Desk"
@@ -316,7 +316,7 @@ msgstr ""
 
 #: ../src/Plug.vala:37
 msgid "Printers"
-msgstr ""
+msgstr "Çapger"
 
 #: ../src/Plug.vala:38
 msgid "Configure printers, manage print queues, and view ink levels"
@@ -356,19 +356,19 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
 msgid "Automatic"
-msgstr ""
+msgstr "Bixwe"
 
 #: ../src/OptionsPage.vala:215
 msgid "One Color"
-msgstr ""
+msgstr "yek Reng"
 
 #: ../src/OptionsPage.vala:218
 msgid "Color"
-msgstr ""
+msgstr "Reng"
 
 #: ../src/OptionsPage.vala:221
 msgid "One Color + Black"
-msgstr ""
+msgstr "yek Reng + Reş"
 
 #: ../src/OptionsPage.vala:224
 msgid "Greyscale"
@@ -392,15 +392,15 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
-msgstr ""
+msgstr "Pêşnûma"
 
 #: ../src/OptionsPage.vala:331
 msgid "Normal"
-msgstr ""
+msgstr "Asayî"
 
 #: ../src/OptionsPage.vala:334
 msgid "High"
-msgstr ""
+msgstr "Bilind"
 
 #: ../src/OptionsPage.vala:340
 msgid "Quality:"
@@ -420,7 +420,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:368
 msgid "Bottom"
-msgstr ""
+msgstr "Bin"
 
 #: ../src/OptionsPage.vala:371
 msgid "By-pass Tray"
@@ -428,7 +428,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:374
 msgid "Center"
-msgstr ""
+msgstr "Navîn"
 
 #: ../src/OptionsPage.vala:377
 msgid "Continuous Autofeed"
@@ -436,7 +436,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:381
 msgid "Disk"
-msgstr ""
+msgstr "Dîsk"
 
 #: ../src/OptionsPage.vala:384
 msgid "Envelope"
@@ -452,7 +452,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
-msgstr ""
+msgstr "Çepê"
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
@@ -464,15 +464,15 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:402
 msgid "Manual"
-msgstr ""
+msgstr "Bi Destan"
 
 #: ../src/OptionsPage.vala:405
 msgid "Middle"
-msgstr ""
+msgstr "Navend"
 
 #: ../src/OptionsPage.vala:408
 msgid "Photo"
-msgstr ""
+msgstr "Wêne"
 
 #: ../src/OptionsPage.vala:412
 msgid "Rear"
@@ -480,7 +480,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
-msgstr ""
+msgstr "Rast"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
@@ -488,7 +488,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:421
 msgid "Top"
-msgstr ""
+msgstr "Jor"
 
 #: ../src/OptionsPage.vala:426
 msgid "Roll %d"
@@ -504,7 +504,7 @@ msgstr ""
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
-msgstr ""
+msgstr "Sererast bike"
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:233
 msgid "Show completed jobs"
