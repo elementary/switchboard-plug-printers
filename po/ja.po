@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-02-10 06:09+0000\n"
+"PO-Revision-Date: 2017-02-11 08:10+0000\n"
 "Last-Translator: Ryo Nakano <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-11 05:56+0000\n"
+"X-Launchpad-Export-Date: 2017-02-12 06:28+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/InkLevel.vala:90
@@ -326,11 +326,11 @@ msgstr "プリンターの設定、プリントキューの管理、インク残
 
 #: ../src/Plug.vala:52
 msgid "No Printers"
-msgstr "プリンターなし"
+msgstr "プリンターがありません"
 
 #: ../src/Plug.vala:52
 msgid "Add a printer to begin printing"
-msgstr "印刷開始のためプリンタを追加する"
+msgstr "印刷を開始するためにプリンターを追加します"
 
 #: ../src/Plug.vala:53
 msgid "Add Printer"
