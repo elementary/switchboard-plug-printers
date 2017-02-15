@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-02-11 21:22+0000\n"
+"PO-Revision-Date: 2017-02-14 21:12+0000\n"
 "Last-Translator: Rokar <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:28+0000\n"
+"X-Launchpad-Export-Date: 2017-02-15 06:49+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/InkLevel.vala:90
@@ -38,11 +38,11 @@ msgstr "boyeya sora şîn"
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr ""
+msgstr "çapker zêde bike..."
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
-msgstr ""
+msgstr "çapker rakirin"
 
 #: ../src/PrinterList.vala:85
 msgid ""
@@ -143,11 +143,11 @@ msgstr ""
 
 #: ../src/AddPopover.vala:546
 msgid "(recommended)"
-msgstr ""
+msgstr "(pêşniyar kirin)"
 
 #: ../src/AddPopover.vala:608
 msgid "Serial"
-msgstr ""
+msgstr "Zincîre"
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
@@ -155,11 +155,11 @@ msgstr ""
 
 #: ../src/AddPopover.vala:614
 msgid "Network Printers"
-msgstr ""
+msgstr "çapgere Tor"
 
 #: ../src/AddPopover.vala:617
 msgid "Available Network Printers"
-msgstr ""
+msgstr "çapgere Tor na berdeste"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -271,23 +271,23 @@ msgstr ""
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr ""
+msgstr "pêvajo..."
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
-msgstr ""
+msgstr "Kar rawestandî"
 
 #: ../src/Objects/Job.vala:103
 msgid "Job Canceled"
-msgstr ""
+msgstr "Kar rakirî"
 
 #: ../src/Objects/Job.vala:105
 msgid "Job Aborded"
-msgstr ""
+msgstr "Kar êxistî"
 
 #: ../src/Objects/Job.vala:108
 msgid "Job Completed"
-msgstr ""
+msgstr "Kar temamkirî"
 
 #: ../src/PrinterPage.vala:36
 msgid "General"
@@ -307,12 +307,12 @@ msgstr ""
 
 #: ../src/PrinterPage.vala:114
 msgid "Print Test Page"
-msgstr ""
+msgstr "Pel Becerribîne çap bike"
 
 #. / TRANSLATORS: Name of the test page job
 #: ../src/PrinterPage.vala:171
 msgid "Test page"
-msgstr ""
+msgstr "Pel Becerribîne"
 
 #: ../src/Plug.vala:37
 msgid "Printers"
@@ -324,7 +324,7 @@ msgstr ""
 
 #: ../src/Plug.vala:52
 msgid "No Printers"
-msgstr ""
+msgstr "na çapker"
 
 #: ../src/Plug.vala:52
 msgid "Add a printer to begin printing"
@@ -332,7 +332,7 @@ msgstr ""
 
 #: ../src/Plug.vala:53
 msgid "Add Printer"
-msgstr ""
+msgstr "çapker zêde  bike"
 
 #: ../src/Plug.vala:53
 msgid "Search for the printer you need"
@@ -404,7 +404,7 @@ msgstr "Bilind"
 
 #: ../src/OptionsPage.vala:340
 msgid "Quality:"
-msgstr ""
+msgstr "çawanî:"
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
@@ -476,7 +476,7 @@ msgstr "Wêne"
 
 #: ../src/OptionsPage.vala:412
 msgid "Rear"
-msgstr ""
+msgstr "Pişt"
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
@@ -484,7 +484,7 @@ msgstr "Rast"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
-msgstr ""
+msgstr "Alî"
 
 #: ../src/OptionsPage.vala:421
 msgid "Top"
@@ -492,11 +492,11 @@ msgstr "Jor"
 
 #: ../src/OptionsPage.vala:426
 msgid "Roll %d"
-msgstr ""
+msgstr "Pêçan %d"
 
 #: ../src/OptionsPage.vala:429
 msgid "Tray %d"
-msgstr ""
+msgstr "Piyan %d"
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
@@ -512,7 +512,7 @@ msgstr ""
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
-msgstr ""
+msgstr "na Kar"
 
 #: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
