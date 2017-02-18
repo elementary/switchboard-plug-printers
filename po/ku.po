@@ -3,18 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-02-14 21:12+0000\n"
-"Last-Translator: Rokar <Unknown>\n"
+"PO-Revision-Date: 2017-02-17 19:53+0000\n"
+"Last-Translator: Rokar ✌ <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-15 06:49+0000\n"
+"X-Launchpad-Export-Date: 2017-02-18 05:58+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "Reş (PGBK)"
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
@@ -57,27 +57,27 @@ msgstr "Rake"
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "Internet çapgerî protokol (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: ../src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "Internet çapgerî protokol (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: ../src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "Internet çapgerî protokol (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "Internet çapgerî protokol (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "Internet çapgerî protokol (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
@@ -115,7 +115,7 @@ msgstr "Daxûyanî:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "ŞirketeÇapger X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
@@ -151,7 +151,7 @@ msgstr "Zincîre"
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
-msgstr ""
+msgstr "Çapgerin herêmî"
 
 #: ../src/AddPopover.vala:614
 msgid "Network Printers"
@@ -440,7 +440,7 @@ msgstr "Dîsk"
 
 #: ../src/OptionsPage.vala:384
 msgid "Envelope"
-msgstr ""
+msgstr "Zerf"
 
 #: ../src/OptionsPage.vala:387
 msgid "Hagaki"
