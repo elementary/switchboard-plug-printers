@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-01-19 18:09+0000\n"
+"PO-Revision-Date: 2017-02-19 11:48+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-21 07:14+0000\n"
-"X-Generator: Launchpad (build 18302)\n"
+"X-Launchpad-Export-Date: 2017-02-20 06:04+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr "Προσθήκη Εκτυπωτή"
+msgstr "Προσθήκη εκτυπωτή..."
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../src/PrinterList.vala:90
 msgid "Remove"
-msgstr "Κατάργηση"
+msgstr "Αφαίρεση"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
@@ -137,7 +137,7 @@ msgstr "Επιλέξτε έναν άλλον εκτυπωτή ή πρωτόκο�
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
-msgstr ""
+msgstr "Προσθήκη"
 
 #: ../src/AddPopover.vala:325
 msgid "Add the configured printer"
@@ -227,7 +227,7 @@ msgstr "Τελείωσε το χαρτί"
 #: ../src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
-msgstr ""
+msgstr "Εκτός σύνδεσης"
 
 #. / Translators: Someone has stopped the Printer
 #: ../src/Objects/Printer.vala:67
@@ -261,7 +261,7 @@ msgstr ""
 
 #: ../src/Objects/Printer.vala:271
 msgid "Ready"
-msgstr ""
+msgstr "Έτοιμος"
 
 #: ../src/Objects/Job.vala:95
 msgid "Job Pending"
@@ -314,7 +314,7 @@ msgstr "Εκτύπωση δοκιμαστικής σελίδας"
 #. / TRANSLATORS: Name of the test page job
 #: ../src/PrinterPage.vala:171
 msgid "Test page"
-msgstr ""
+msgstr "Δοκιμαστική σελίδα"
 
 #: ../src/Plug.vala:37
 msgid "Printers"
@@ -326,19 +326,19 @@ msgstr ""
 
 #: ../src/Plug.vala:52
 msgid "No Printers"
-msgstr ""
+msgstr "Κανένας εκτυπωτής"
 
 #: ../src/Plug.vala:52
 msgid "Add a printer to begin printing"
-msgstr ""
+msgstr "Προσθέστε έναν εκτυπωτή για να ξεκινήσετε να εκτυπώνετε"
 
 #: ../src/Plug.vala:53
 msgid "Add Printer"
-msgstr ""
+msgstr "Προσθήκη εκτυπωτή"
 
 #: ../src/Plug.vala:53
 msgid "Search for the printer you need"
-msgstr ""
+msgstr "Αναζήτηση για τον εκτυπωτή που χρειάζεστε"
 
 #: ../src/OptionsPage.vala:68
 msgid "Pages per side:"
