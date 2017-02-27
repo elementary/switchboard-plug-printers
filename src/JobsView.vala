@@ -251,7 +251,11 @@ public class Printers.JobsView : Gtk.Frame {
             }
 
             foreach (var _iter in iters) {
+#if VALA_0_36
+                list_store.remove (ref _iter);
+#else
                 list_store.remove (_iter);
+#endif
             }
         }
 
