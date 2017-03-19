@@ -3,22 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-10-30 16:32+0000\n"
-"Last-Translator: Jussi M <jussi.murtomaa@gmail.com>\n"
+"PO-Revision-Date: 2017-03-18 14:01+0000\n"
+"Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
+"X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
+"X-Generator: Launchpad (build 18332)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "Musta (PGBK)"
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
-msgstr ""
+msgstr "Musta (BK)"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
@@ -411,7 +411,7 @@ msgstr "Laatu:"
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Paperin varaaminen"
 
 #: ../src/OptionsPage.vala:359
 msgid "Alternate Tray"
@@ -455,7 +455,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
-msgstr ""
+msgstr "Vasen"
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
@@ -471,7 +471,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:405
 msgid "Middle"
-msgstr ""
+msgstr "Keski"
 
 #: ../src/OptionsPage.vala:408
 msgid "Photo"
@@ -483,7 +483,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
-msgstr ""
+msgstr "Oikea"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
