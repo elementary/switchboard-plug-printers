@@ -3,22 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-08-13 08:27+0000\n"
-"Last-Translator: Aleksander Leraand <aleksander9109@gmail.com>\n"
+"PO-Revision-Date: 2017-04-01 22:39+0000\n"
+"Last-Translator: Allan Nordhøy <comradekingu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
+"X-Launchpad-Export-Date: 2017-04-05 07:49+0000\n"
+"X-Generator: Launchpad (build 18335)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "Svart (PGBK)"
 
 #: ../src/InkLevel.vala:93
 msgid "Black (BK)"
-msgstr ""
+msgstr "Svart (BK)"
 
 #: ../src/InkLevel.vala:96
 msgid "Black"
@@ -79,7 +79,7 @@ msgstr "Internet Printing Protocol (ipps)"
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "Internett Printing Protokoll (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
@@ -89,7 +89,7 @@ msgstr "LPD/LPR vert eller skriver"
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "AppSocket/HP JetDirect"
 
 #: ../src/AddPopover.vala:81
 msgid "Impossible to list all available printers"
@@ -117,7 +117,7 @@ msgstr "Beskrivelse:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
@@ -133,7 +133,7 @@ msgstr "Forrige"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
-msgstr ""
+msgstr "Velg en annen skriver eller protokoll"
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
@@ -141,7 +141,7 @@ msgstr "Legg til"
 
 #: ../src/AddPopover.vala:325
 msgid "Add the configured printer"
-msgstr ""
+msgstr "Legg til den oppsatte printeren"
 
 #: ../src/AddPopover.vala:546
 msgid "(recommended)"
@@ -314,7 +314,7 @@ msgstr "Skriv ut testside"
 #. / TRANSLATORS: Name of the test page job
 #: ../src/PrinterPage.vala:171
 msgid "Test page"
-msgstr ""
+msgstr "Testside"
 
 #: ../src/Plug.vala:37
 msgid "Printers"
@@ -378,11 +378,11 @@ msgstr "Gråtoner"
 
 #: ../src/OptionsPage.vala:227
 msgid "Processed Color"
-msgstr ""
+msgstr "Behandlet farge"
 
 #: ../src/OptionsPage.vala:230
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "Behandlet gråtone"
 
 #: ../src/OptionsPage.vala:239
 msgid "Color mode:"
@@ -390,7 +390,7 @@ msgstr "Fargemodus:"
 
 #: ../src/OptionsPage.vala:312
 msgid "Output Tray:"
-msgstr ""
+msgstr "Papirskuff:"
 
 #: ../src/OptionsPage.vala:328
 msgid "Draft"
@@ -410,11 +410,11 @@ msgstr "Kvalitet:"
 
 #: ../src/OptionsPage.vala:356
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Papirtilgang"
 
 #: ../src/OptionsPage.vala:359
 msgid "Alternate Tray"
-msgstr ""
+msgstr "Alternativ papirmating"
 
 #: ../src/OptionsPage.vala:362
 msgid "Alternate Roll"
@@ -434,7 +434,7 @@ msgstr "Midtstill"
 
 #: ../src/OptionsPage.vala:377
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "Kontinuerlig automatisk mating"
 
 #: ../src/OptionsPage.vala:381
 msgid "Disk"
@@ -446,7 +446,7 @@ msgstr "Konvolutt"
 
 #: ../src/OptionsPage.vala:387
 msgid "Hagaki"
-msgstr ""
+msgstr "Hagaki"
 
 #: ../src/OptionsPage.vala:390
 msgid "Large Capacity"
@@ -458,11 +458,11 @@ msgstr "Venstre"
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
-msgstr ""
+msgstr "Hovedpapirmater"
 
 #: ../src/OptionsPage.vala:399
 msgid "Main Roll"
-msgstr ""
+msgstr "Hovedrulle"
 
 #: ../src/OptionsPage.vala:402
 msgid "Manual"
@@ -470,7 +470,7 @@ msgstr "Håndbok"
 
 #: ../src/OptionsPage.vala:405
 msgid "Middle"
-msgstr ""
+msgstr "Midten"
 
 #: ../src/OptionsPage.vala:408
 msgid "Photo"
@@ -478,7 +478,7 @@ msgstr "Bilde"
 
 #: ../src/OptionsPage.vala:412
 msgid "Rear"
-msgstr ""
+msgstr "Bak"
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
@@ -486,19 +486,19 @@ msgstr "Høyre"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
-msgstr ""
+msgstr "Siden"
 
 #: ../src/OptionsPage.vala:421
 msgid "Top"
-msgstr ""
+msgstr "Toppen"
 
 #: ../src/OptionsPage.vala:426
 msgid "Roll %d"
-msgstr ""
+msgstr "Rulle %d"
 
 #: ../src/OptionsPage.vala:429
 msgid "Tray %d"
-msgstr ""
+msgstr "Papirmater %d"
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
@@ -506,7 +506,7 @@ msgstr "Papirkilde"
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
-msgstr ""
+msgstr "Rediger"
 
 #: ../src/JobsView.vala:79 ../src/JobsView.vala:233
 msgid "Show completed jobs"
@@ -514,12 +514,12 @@ msgstr "Vis fullførte jobber"
 
 #: ../src/JobsView.vala:89
 msgid "No jobs"
-msgstr ""
+msgstr "Ingen jobber"
 
 #: ../src/JobsView.vala:89
 msgid "There are no jobs on the queue"
-msgstr ""
+msgstr "Ingen jobber i køa"
 
 #: ../src/JobsView.vala:218
 msgid "Hide completed jobs"
-msgstr ""
+msgstr "Skjul fullførte jobber"
