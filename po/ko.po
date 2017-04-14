@@ -3,14 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-04-22 15:16+0000\n"
+"PO-Revision-Date: 2017-04-14 12:23+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Korean <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/ko/>\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -38,7 +41,7 @@ msgstr "진홍색"
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr "프린터 추가..."
+msgstr "프린터 추가…"
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
@@ -89,7 +92,7 @@ msgstr "LPD/LPR 호스트 또는 프린터"
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
+msgstr "앱 소켓/HP JetDirect"
 
 #: ../src/AddPopover.vala:81
 msgid "Impossible to list all available printers"
@@ -117,7 +120,7 @@ msgstr "설명:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
+msgstr "브랜드 프린터 X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
@@ -273,7 +276,7 @@ msgstr "보류 중"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr "작업 중..."
+msgstr "작업 중…"
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
