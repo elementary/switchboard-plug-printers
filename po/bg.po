@@ -3,14 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-08-06 17:55+0000\n"
-"Last-Translator: Stanislav <stunito0o0o0@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-14 16:48+0000\n"
+"Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
+"Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/bg/>\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -59,27 +62,27 @@ msgstr "Премахване"
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "Мрежово принтиранеl (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: ../src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "Мрежово принтиране (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: ../src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "Мрежово принтиране (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "Мрежово принтиране  (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "Мрежово принтиране (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
@@ -93,7 +96,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:81
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "Невъзможно е да изредя всички намерени принтери"
 
 #: ../src/AddPopover.vala:176
 msgid "Refresh"
@@ -109,7 +112,7 @@ msgstr "Следващ"
 
 #: ../src/AddPopover.vala:229
 msgid "Connection:"
-msgstr ""
+msgstr "Връзка:"
 
 #: ../src/AddPopover.vala:237
 msgid "Description:"
@@ -117,7 +120,7 @@ msgstr "Описание:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
@@ -125,11 +128,11 @@ msgstr "Местоположение:"
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "Лаборатория 1 или Бюрото на Иван"
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
-msgstr ""
+msgstr "Предишен"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
@@ -137,11 +140,11 @@ msgstr ""
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
-msgstr "Добавяне"
+msgstr "Добави"
 
 #: ../src/AddPopover.vala:325
 msgid "Add the configured printer"
-msgstr ""
+msgstr "Добавете настроения принтер"
 
 #: ../src/AddPopover.vala:546
 msgid "(recommended)"
@@ -149,7 +152,7 @@ msgstr "(препоръчително)"
 
 #: ../src/AddPopover.vala:608
 msgid "Serial"
-msgstr ""
+msgstr "Сериен"
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
@@ -293,7 +296,7 @@ msgstr ""
 
 #: ../src/PrinterPage.vala:36
 msgid "General"
-msgstr ""
+msgstr "Общи"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
@@ -432,7 +435,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:374
 msgid "Center"
-msgstr ""
+msgstr "Център"
 
 #: ../src/OptionsPage.vala:377
 msgid "Continuous Autofeed"
@@ -456,7 +459,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
-msgstr ""
+msgstr "Ляво"
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
@@ -484,7 +487,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
-msgstr ""
+msgstr "Дясно"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
