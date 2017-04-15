@@ -3,14 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-04-01 22:39+0000\n"
-"Last-Translator: Allan Nordhøy <comradekingu@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-15 23:24+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål "
+"<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
+"printers/nb/>\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:49+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -38,7 +42,7 @@ msgstr "Magentarød"
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr "Leg til skriver"
+msgstr "Legg til skriver…"
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
@@ -59,22 +63,22 @@ msgstr "Fjern"
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr "Internet Printing Protocol (https)"
+msgstr "Internett-Printing-Protokoll (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: ../src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr "Internet Printing Protocol (http)"
+msgstr "Internett-Printing-Protokoll (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: ../src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr "Internet Printing Protocol (ipp)"
+msgstr "Internett-Printing-Protokoll (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr "Internet Printing Protocol (ipps)"
+msgstr "Internett-Printing-Protokoll (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
@@ -117,7 +121,7 @@ msgstr "Beskrivelse:"
 
 #: ../src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
+msgstr "MerkePrinter X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
@@ -149,7 +153,7 @@ msgstr "(anbefalt)"
 
 #: ../src/AddPopover.vala:608
 msgid "Serial"
-msgstr ""
+msgstr "Seriell"
 
 #: ../src/AddPopover.vala:611
 msgid "Local Printers"
@@ -273,7 +277,7 @@ msgstr "På hold"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr "Behandler..."
+msgstr "Behandler…"
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
@@ -417,20 +421,22 @@ msgid "Alternate Tray"
 msgstr "Alternativ papirmating"
 
 #: ../src/OptionsPage.vala:362
+#, fuzzy
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Alternativ papirmater"
 
 #: ../src/OptionsPage.vala:368
 msgid "Bottom"
 msgstr "Nederst"
 
 #: ../src/OptionsPage.vala:371
+#, fuzzy
 msgid "By-pass Tray"
-msgstr ""
+msgstr "Alternativ skuff"
 
 #: ../src/OptionsPage.vala:374
 msgid "Center"
-msgstr "Midtstill"
+msgstr "Senter"
 
 #: ../src/OptionsPage.vala:377
 msgid "Continuous Autofeed"
@@ -502,7 +508,7 @@ msgstr "Papirmater %d"
 
 #: ../src/OptionsPage.vala:442
 msgid "Paper Source:"
-msgstr "Papirkilde"
+msgstr "Papirkilde:"
 
 #: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
 msgid "Edit"
