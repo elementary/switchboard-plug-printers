@@ -3,14 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2016-10-09 10:46+0000\n"
-"Last-Translator: Ivan Vrljić <vrlja92@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-17 14:18+0000\n"
+"Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
+"Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/hr/>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -38,7 +42,7 @@ msgstr "Ljubičasta"
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr "Dodaj pisač..."
+msgstr "Dodaj pisač…"
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
@@ -273,7 +277,7 @@ msgstr "Na čekanju"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr "Obrađivanje..."
+msgstr "Obrađivanje…"
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
@@ -324,7 +328,7 @@ msgstr "Pisači"
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Podesite pisače, upravljajte zadacima ispisa i pogledajte razinu tinte u "
-"tonerima."
+"tonerima"
 
 #: ../src/Plug.vala:52
 msgid "No Printers"
@@ -456,7 +460,7 @@ msgstr "Velik kapacitet"
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
-msgstr "Lijevo"
+msgstr "Lijeva"
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
@@ -484,7 +488,7 @@ msgstr "Straga"
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
-msgstr "Desno"
+msgstr "Desna"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
