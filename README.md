@@ -5,11 +5,12 @@
 
 You'll need the following dependencies:
 
-* cmake (>= 2.8)
+* cmake
+* libcups2-dev
 * libswitchboard-2.0-dev
 * libgranite-dev
 * libgtk-3-dev
-* valac (>= 0.22)
+* valac
 
 It's recommended to create a clean build environment
 
