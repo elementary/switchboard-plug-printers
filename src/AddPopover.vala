@@ -12,10 +12,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * Library General Public License for more details.
  *
- * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
- * Boston, MA 02111-1307, USA.
+ * You should have received a copy of the GNU General Public
+ * License along with this program; if not, write to the
+ * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
+ * Boston, MA 02110-1301, USA.
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
@@ -430,7 +430,7 @@ public class Printers.AddPopover : Gtk.Popover {
                     if (driver == null) {
                         driver = new Printers.DeviceDriver ();
                     }
-                    
+
                     switch (attr.get_name ()) {
                         case "ppd-name":
                             driver.ppd_name = attr.get_string ();
@@ -658,7 +658,7 @@ public class Printers.TempDevice : GLib.Object {
     public string device_info = null;
     public string device_id = null;
     public TempDevice () {
-        
+
     }
 
     public string? get_make_from_id () {
@@ -711,7 +711,7 @@ public class Printers.DeviceDriver : GLib.Object {
     public string ppd_type = null;
     public int ppd_model_number = 0;
     public DeviceDriver () {
-        
+
     }
 
     public string? get_model_from_id () {
