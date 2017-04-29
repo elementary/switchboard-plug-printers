@@ -14,8 +14,8 @@
  *
  * You should have received a copy of the GNU Library General Public
  * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
- * Boston, MA 02111-1307, USA.
+ * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
+ * Boston, MA 02110-1301, USA.
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
@@ -134,15 +134,15 @@ namespace Printers {
         }
 
         public override void shown () {
-            
+
         }
 
         public override void hidden () {
-            
+
         }
 
         public override void search_callback (string location) {
-            
+
         }
 
         // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
