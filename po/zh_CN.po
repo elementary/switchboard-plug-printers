@@ -3,14 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-03-16 07:57+0000\n"
+"PO-Revision-Date: 2017-05-08 03:23+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Chinese (Simplified) "
+"<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
+"printers/zh_CN/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
-"X-Generator: Launchpad (build 18332)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -54,7 +58,7 @@ msgstr ""
 
 #: ../src/PrinterList.vala:90
 msgid "Remove"
-msgstr "移除"
+msgstr "删除"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
@@ -454,7 +458,7 @@ msgstr "大容量"
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
-msgstr "左侧"
+msgstr "左键"
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
@@ -482,7 +486,7 @@ msgstr "后侧"
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
-msgstr "右侧"
+msgstr "右键"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
