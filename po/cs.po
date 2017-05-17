@@ -3,14 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2015-09-03 23:37+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-05-17 22:52+0000\n"
+"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/cs/>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
 
 #: ../src/InkLevel.vala:90
 msgid "Black (PGBK)"
@@ -38,21 +41,23 @@ msgstr ""
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr ""
+msgstr "Přidat tiskárnu…"
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
-msgstr ""
+msgstr "Odebrat tiskárnu"
 
 #: ../src/PrinterList.vala:85
 msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
+"Odebráním '%s' ztratíte veškerou historii tisku\n"
+"a nastavení, která jsou s ní spojená."
 
 #: ../src/PrinterList.vala:90
 msgid "Remove"
-msgstr ""
+msgstr "Odebrat"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: ../src/AddPopover.vala:27
@@ -91,7 +96,7 @@ msgstr ""
 
 #: ../src/AddPopover.vala:81
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "Nelze vypsat všechny dostupné tiskárny"
 
 #: ../src/AddPopover.vala:176
 msgid "Refresh"
@@ -291,7 +296,7 @@ msgstr ""
 
 #: ../src/PrinterPage.vala:36
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
 #: ../src/PrinterPage.vala:37
 msgid "Options"
@@ -428,7 +433,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:374
 msgid "Center"
-msgstr ""
+msgstr "Střed"
 
 #: ../src/OptionsPage.vala:377
 msgid "Continuous Autofeed"
@@ -452,7 +457,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:393
 msgid "Left"
-msgstr ""
+msgstr "Levé"
 
 #: ../src/OptionsPage.vala:396
 msgid "Main Tray"
@@ -480,7 +485,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
-msgstr ""
+msgstr "Pravé"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
