@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-06-21 00:27+0000\n"
+"PO-Revision-Date: 2017-07-04 09:01+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) "
 "<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
@@ -42,7 +42,7 @@ msgstr "品红"
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr "添加打印机..."
+msgstr "添加打印机…"
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
@@ -277,7 +277,7 @@ msgstr "等待中"
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr "处理中..."
+msgstr "处理中…"
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
@@ -378,7 +378,7 @@ msgstr "单色 + 黑色"
 
 #: ../src/OptionsPage.vala:224
 msgid "Greyscale"
-msgstr "灰度"
+msgstr "黑白"
 
 #: ../src/OptionsPage.vala:227
 msgid "Processed Color"
@@ -386,7 +386,7 @@ msgstr "经处理的彩色"
 
 #: ../src/OptionsPage.vala:230
 msgid "Processed Greyscale"
-msgstr "经处理的灰度"
+msgstr "经处理的黑白"
 
 #: ../src/OptionsPage.vala:239
 msgid "Color mode:"
@@ -430,7 +430,7 @@ msgstr "底部"
 
 #: ../src/OptionsPage.vala:371
 msgid "By-pass Tray"
-msgstr "支路托盘"
+msgstr "侧面托盘"
 
 #: ../src/OptionsPage.vala:374
 msgid "Center"
