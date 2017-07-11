@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-07-11 06:10+0000\n"
-"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
+"PO-Revision-Date: 2017-07-11 11:46+0000\n"
+"Last-Translator: Mattias Ezequiel Mignone <memignone@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/es/>\n"
 "Language: es\n"
@@ -67,27 +67,27 @@ msgstr "Protocolo de impresión en internet (https)"
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: ../src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr "Protocolo de impresión por Internet (http)"
+msgstr "Protocolo de Impresión por Internet (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: ../src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr "Protocolo de impresión por Internet (ipp)"
+msgstr "Protocolo de Impresión por Internet (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: ../src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr "Protocolo de impresión por Internet (ipps)"
+msgstr "Protocolo de Impresión por Internet (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: ../src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr "Protocolo de impresión por Internet (ipp14)"
+msgstr "Protocolo de Impresión por Internet (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr "Equipo o impresora LPD/LPR"
+msgstr "Equipo o Impresora LPD/LPR"
 
 #. / Tranlators: This is a protocol name.
 #: ../src/AddPopover.vala:39
@@ -96,7 +96,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: ../src/AddPopover.vala:81
 msgid "Impossible to list all available printers"
-msgstr "Imposible enumerar todas las impresoras disponibles"
+msgstr "Imposible listar todas las impresoras disponibles"
 
 #: ../src/AddPopover.vala:176
 msgid "Refresh"
