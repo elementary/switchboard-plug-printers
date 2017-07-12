@@ -1,3 +1,9 @@
+switchboard-plug-printers (0.1.1) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Wed, 12 Jul 2017 14:35:41 -0500
+
 switchboard-plug-printers (0.1) xenial; urgency=medium
 
   * Initial Release.
