@@ -43,6 +43,7 @@ public class Printers.JobsView : Gtk.Frame {
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
         scrolled.add (view);
+        scrolled.show_all ();
 
         var cell = new Gtk.CellRendererText ();
         var cellell = new Gtk.CellRendererText ();
