@@ -122,13 +122,18 @@ public class Printers.JobsView : Gtk.Frame {
                     start_pause_button.icon_name = "media-playback-start-symbolic";
                 }
 
-                if (job.state_icon () == null) {
-                    start_pause_button.sensitive = true;
-                    stop_button.sensitive = true;
-                } else {
-                    start_pause_button.icon_name = "media-playback-pause-symbolic";
-                    start_pause_button.sensitive = false;
-                    stop_button.sensitive = false;
+                switch (job.cjob.state) {
+                    case CUPS.IPP.JobState.PENDING:
+                    case CUPS.IPP.JobState.PROCESSING:
+                    case CUPS.IPP.JobState.HELD:
+                        start_pause_button.sensitive = true;
+                        stop_button.sensitive = true;
+                        break;
+                    default:
+                        start_pause_button.icon_name = "media-playback-pause-symbolic";
+                        start_pause_button.sensitive = false;
+                        stop_button.sensitive = false;
+                        break;
                 }
             } else {
                 start_pause_button.icon_name = "media-playback-pause-symbolic";
