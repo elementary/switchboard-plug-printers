@@ -26,8 +26,8 @@ namespace Printers {
 
     public class Plug : Switchboard.Plug {
         Gtk.Stack main_stack;
-        public static const uint RENEW_INTERVAL = 500;
-        public static const int SUBSCRIPTION_DURATION = 600;
+        public const uint RENEW_INTERVAL = 500;
+        public const int SUBSCRIPTION_DURATION = 600;
         private int subscription_id = -1;
         private Printers.AddPopover add_popover;
 
