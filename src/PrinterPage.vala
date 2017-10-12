@@ -73,9 +73,6 @@ public class Printers.PrinterPage : Gtk.Grid {
         right_grid.add (enable_switch);
 
         var info_popover = new Gtk.Popover (info_button);
-        info_popover.hide.connect (() => {
-            info_button.active = false;
-        });
 
         info_button.toggled.connect (() => {
             if (info_button.active == true) {
@@ -98,6 +95,9 @@ public class Printers.PrinterPage : Gtk.Grid {
         location_entry.hexpand = true;
         location_entry.halign = Gtk.Align.START;
         location_entry.placeholder_text = _("Lab 1 or John's Desk");
+        location_entry.activate.connect (() => {
+            printer.location = location_entry.text;
+        });
 
         var ink_level = new InkLevel (printer);
 
@@ -113,6 +113,11 @@ public class Printers.PrinterPage : Gtk.Grid {
 
         var print_test = new Gtk.Button.with_label (_("Print Test Page"));
         print_test.clicked.connect (() => print_test_page ());
+
+        info_popover.hide.connect (() => {
+            info_button.active = false;
+            location_entry.text = printer.location ?? "";
+        });
 
         var info_grid = new Gtk.Grid ();
         info_grid.margin = 6;
