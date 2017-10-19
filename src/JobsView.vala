@@ -278,6 +278,8 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             ((Gtk.Spinner)state).start ();
         }
 
+        job.state_changed.connect (update_state);
+
         grid.attach (state, 3, 0);
 
         add (grid);
@@ -285,7 +287,14 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     }
 
     public void update_state () {
+        if (job.state_icon () != null) {
+            state = new Gtk.Image.from_gicon (job.state_icon (), Gtk.IconSize.MENU);
+        } else {
+            state = new Gtk.Spinner ();
+            ((Gtk.Spinner)state).active = true;
+            ((Gtk.Spinner)state).start ();
+        }
+
         grid.tooltip_text = job.translated_job_state ();
-        state = new Gtk.Image.from_gicon (job.state_icon (), Gtk.IconSize.MENU);
     }
 }
