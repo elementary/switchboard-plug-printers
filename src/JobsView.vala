@@ -217,6 +217,8 @@ public class Printers.JobsView : Gtk.Frame {
                               2, job.translated_job_state (),
                               3, date,
                               4, job);
+
+        stack.set_visible_child_name ("jobs");
     }
 
     private void toggle_finished (Gtk.ToggleToolButton button) {
