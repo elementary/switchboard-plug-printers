@@ -181,7 +181,7 @@ public class Printers.JobsView : Gtk.Frame {
     }
 
     private void add_job (Job job) {
-        list_box.add (new JobRow (job));
+        list_box.add (new JobRow (printer, job));
         list_box.invalidate_sort ();
     }
 
@@ -239,6 +239,7 @@ public class Printers.JobsView : Gtk.Frame {
 
 public class Printers.JobRow : Gtk.ListBoxRow {
     public Job job { get; private set; }
+    private Printer printer;
 
     private Gtk.Grid grid;
     private Gtk.Image icon;
@@ -247,7 +248,8 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     private Gtk.Widget state;
 
 
-    public JobRow (Job job) {
+    public JobRow (Printer printer, Job job) {
+        this.printer = printer;
         this.job = job;
 
         grid = new Gtk.Grid ();
@@ -279,6 +281,8 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         }
 
         job.state_changed.connect (update_state);
+        job.completed.connect (update_state);
+        job.stopped.connect (update_state);
 
         grid.attach (state, 3, 0);
 
@@ -287,6 +291,14 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     }
 
     public void update_state () {
+        var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
+        foreach (var _job in jobs) {
+            if (_job.cjob.id == job.cjob.id) {
+                job = _job;
+                break;
+            }
+        }
+
         if (job.state_icon () != null) {
             state = new Gtk.Image.from_gicon (job.state_icon (), Gtk.IconSize.MENU);
         } else {
@@ -294,6 +306,9 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             ((Gtk.Spinner)state).active = true;
             ((Gtk.Spinner)state).start ();
         }
+        grid.remove_column (3);
+        grid.attach (state, 3, 0);
+        show_all ();
 
         grid.tooltip_text = job.translated_job_state ();
     }
