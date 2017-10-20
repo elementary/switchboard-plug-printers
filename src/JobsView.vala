@@ -242,11 +242,6 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     private Printer printer;
 
     private Gtk.Grid grid;
-    private Gtk.Image icon;
-    private Gtk.Label title;
-    private Gtk.Label date;
-    private Gtk.Widget state;
-
 
     public JobRow (Printer printer, Job job) {
         this.printer = printer;
@@ -258,10 +253,10 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         grid.row_spacing = 6;
         grid.margin = 6;
 
-        icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.MENU);
+        Gtk.Image icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.MENU);
         grid.attach (icon, 0, 0);
 
-        title = new Gtk.Label (job.cjob.title);
+        Gtk.Label title = new Gtk.Label (job.cjob.title);
         title.hexpand = true;
         title.halign = Gtk.Align.START;
         title.ellipsize = Pango.EllipsizeMode.END;
@@ -269,9 +264,10 @@ public class Printers.JobRow : Gtk.ListBoxRow {
 
         var date_time = job.get_used_time ();
         string date_string = date_time.format ("%F %T");
-        date = new Gtk.Label (date_string);
+        Gtk.Label date = new Gtk.Label (date_string);
         grid.attach (date, 2, 0);
 
+        Gtk.Widget state;
         if (job.state_icon () != null) {
             state = new Gtk.Image.from_gicon (job.state_icon (), Gtk.IconSize.MENU);
         } else {
@@ -279,12 +275,11 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             ((Gtk.Spinner)state).active = true;
             ((Gtk.Spinner)state).start ();
         }
+        grid.attach (state, 3, 0);
 
         job.state_changed.connect (update_state);
         job.completed.connect (update_state);
         job.stopped.connect (update_state);
-
-        grid.attach (state, 3, 0);
 
         add (grid);
         show_all ();
@@ -299,6 +294,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             }
         }
 
+        Gtk.Widget state;
         if (job.state_icon () != null) {
             state = new Gtk.Image.from_gicon (job.state_icon (), Gtk.IconSize.MENU);
         } else {
