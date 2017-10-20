@@ -47,6 +47,12 @@ public class Printers.Job : GLib.Object {
                 }
             });
 
+            notifier.job_state.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+                if (job_id == uid) {
+                    state_changed ();
+                }
+            });
+
             notifier.job_state_changed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
                 if (job_id == uid) {
                     state_changed ();
