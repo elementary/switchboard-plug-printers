@@ -75,7 +75,7 @@ public class Printers.JobsView : Gtk.Frame {
                 case CUPS.IPP.JobState.COMPLETED:
                     continue;
                 default:
-                    add_job (job);
+                    list_box.add (new JobRow (printer, job));
                     continue;
             }
         }
@@ -167,16 +167,11 @@ public class Printers.JobsView : Gtk.Frame {
             var jobs_ = printer.get_jobs (true, CUPS.WhichJobs.ALL);
             foreach (var job in jobs_) {
                 if (job.cjob.id == job_id) {
-                    add_job (job);
+                    list_box.add (new JobRow (printer, job));
                     break;
                 }
             }
         });
-    }
-
-    private void add_job (Job job) {
-        list_box.add (new JobRow (printer, job));
-        list_box.invalidate_sort ();
     }
 
     private void toggle_finished (Gtk.ToggleToolButton button) {
@@ -189,7 +184,7 @@ public class Printers.JobsView : Gtk.Frame {
                     case CUPS.IPP.JobState.CANCELED:
                     case CUPS.IPP.JobState.ABORTED:
                     case CUPS.IPP.JobState.COMPLETED:
-                        add_job (job);
+                        list_box.add (new JobRow (printer, job));
                         continue;
                     default:
                         continue;
