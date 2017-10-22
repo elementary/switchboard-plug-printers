@@ -132,22 +132,26 @@ public class Printers.InkLevel : Gtk.Grid {
             }
 
             attr = request.find_attribute ("marker-levels", CUPS.IPP.Tag.ZERO);
-            for (int i = 0; i < attr.get_count () && i < colors.size; i++) {
+            int bound = int.min (attr.get_count (), colors.size);
+            for (int i = 0; i < bound; i++) {
                 colors.get (i).level = attr.get_integer (i);
             }
 
             attr = request.find_attribute ("marker-high-levels", CUPS.IPP.Tag.ZERO);
-            for (int i = 0; i < attr.get_count () && i < colors.size; i++) {
+            bound = int.min (attr.get_count (), colors.size);
+            for (int i = 0; i < bound; i++) {
                 colors.get (i).level_max = attr.get_integer (i);
             }
 
             attr = request.find_attribute ("marker-low-levels", CUPS.IPP.Tag.ZERO);
-            for (int i = 0; i < attr.get_count () && i < colors.size; i++) {
+            bound = int.min (attr.get_count (), colors.size);
+            for (int i = 0; i < bound; i++) {
                 colors.get (i).level_min = attr.get_integer (i);
             }
 
             attr = request.find_attribute ("marker-names", CUPS.IPP.Tag.ZERO);
-            for (int i = 0; i < attr.get_count () && i < colors.size; i++) {
+            bound = int.min (attr.get_count (), colors.size);
+            for (int i = 0; i < bound; i++) {
                 colors.get (i).name = attr.get_string (i);
             }
         } else {
