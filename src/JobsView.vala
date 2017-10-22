@@ -22,46 +22,22 @@
 
 public class Printers.JobsView : Gtk.Frame {
     private Printer printer;
-    private Gtk.ListStore list_store;
-    private Gtk.Stack stack;
+    private Gtk.ListBox list_box;
 
     public JobsView (Printer printer) {
         this.printer = printer;
-        // The Job view
-        list_store = new Gtk.ListStore (5, typeof (GLib.Icon),
-                                           typeof (string),
-                                           typeof (string),
-                                           typeof (string),
-                                           typeof (Job));
+
         var job_grid = new Gtk.Grid ();
         job_grid.orientation = Gtk.Orientation.VERTICAL;
 
-        var view = new Gtk.TreeView.with_model (list_store);
-        view.headers_visible = false;
-        view.tooltip_column = 2;
-        view.get_selection ().set_mode (Gtk.SelectionMode.SINGLE);
+        list_box = new Gtk.ListBox ();
+        list_box.set_selection_mode (Gtk.SelectionMode.SINGLE);
+        list_box.set_sort_func (compare);
+
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
-        scrolled.add (view);
+        scrolled.add (list_box);
         scrolled.show_all ();
-
-        var cell = new Gtk.CellRendererText ();
-        var cellell = new Gtk.CellRendererText ();
-        cellell.ellipsize = Pango.EllipsizeMode.END;
-        var cellpixbuf = new Gtk.CellRendererPixbuf ();
-        view.insert_column_with_attributes (-1, "", cellpixbuf, "gicon", 0);
-        var column = new Gtk.TreeViewColumn.with_attributes ("", cellell, "text", 1);
-        column.expand = true;
-        column.resizable = true;
-        view.insert_column (column, -1);
-        column = new Gtk.TreeViewColumn.with_attributes ("", cell, "text", 3);
-        column.resizable = true;
-        view.insert_column (column, -1);
-        var jobrenderer = new JobProcessingCellRenderer ();
-        column = new Gtk.TreeViewColumn.with_attributes ("", jobrenderer, "job", 4);
-        view.insert_column (column, -1);
-
-        list_store.set_default_sort_func (compare);
 
         var toolbar = new Gtk.Toolbar ();
         toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
@@ -89,11 +65,7 @@ public class Printers.JobsView : Gtk.Frame {
 
         var alert = new Granite.Widgets.AlertView (_("No jobs"), _("There are no jobs on the queue"), "document");
         alert.show_all ();
-
-        stack = new Gtk.Stack ();
-        stack.add_named (scrolled, "jobs");
-        stack.add_named (alert, "no-jobs");
-        stack.set_visible_child_name ("no-jobs");
+        list_box.set_placeholder ((Gtk.Widget) alert);
 
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
         foreach (var job in jobs) {
@@ -103,19 +75,17 @@ public class Printers.JobsView : Gtk.Frame {
                 case CUPS.IPP.JobState.COMPLETED:
                     continue;
                 default:
-                    add_job (job);
-                    stack.set_visible_child_name ("jobs");
+                    list_box.add (new JobRow (printer, job));
                     continue;
             }
         }
 
-        view.cursor_changed.connect (() => {
-            Gtk.TreeModel model;
-            Gtk.TreeIter iter;
-            if (view.get_selection ().get_selected (out model, out iter)) {
-                Value val;
-                model.get_value (iter, 4, out val);
-                var job = (Job) val.get_object ();
+        list_box.row_selected.connect (() => {
+            JobRow job_row = list_box.get_selected_row () as JobRow;
+
+            if (job_row != null) {
+                var job = job_row.job;
+
                 if (job.get_hold_until () == "no-hold") {
                     start_pause_button.icon_name = "media-playback-pause-symbolic";
                 } else {
@@ -143,12 +113,11 @@ public class Printers.JobsView : Gtk.Frame {
         });
 
         start_pause_button.clicked.connect (() => {
-            Gtk.TreeModel model;
-            Gtk.TreeIter iter;
-            if (view.get_selection ().get_selected (out model, out iter)) {
-                Value val;
-                model.get_value (iter, 4, out val);
-                var job = (Job) val.get_object ();
+            JobRow job_row = list_box.get_selected_row () as JobRow;
+
+            if (job_row != null) {
+                var job = job_row.job;
+
                 unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
                 if (job.get_hold_until () == "no-hold") {
                     try {
@@ -169,12 +138,11 @@ public class Printers.JobsView : Gtk.Frame {
         });
 
         stop_button.clicked.connect (() => {
-            Gtk.TreeModel model;
-            Gtk.TreeIter iter;
-            if (view.get_selection ().get_selected (out model, out iter)) {
-                Value val;
-                model.get_value (iter, 4, out val);
-                var job = (Job) val.get_object ();
+            JobRow job_row = list_box.get_selected_row () as JobRow;
+
+            if (job_row != null) {
+                var job = job_row.job;
+
                 unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
                 try {
                     pk_helper.job_cancel_purge (job.cjob.id, false);
@@ -186,7 +154,7 @@ public class Printers.JobsView : Gtk.Frame {
             }
         });
 
-        job_grid.add (stack);
+        job_grid.add (scrolled);
         job_grid.add (toolbar);
         add (job_grid);
 
@@ -199,24 +167,11 @@ public class Printers.JobsView : Gtk.Frame {
             var jobs_ = printer.get_jobs (true, CUPS.WhichJobs.ALL);
             foreach (var job in jobs_) {
                 if (job.cjob.id == job_id) {
-                    add_job (job);
+                    list_box.add (new JobRow (printer, job));
                     break;
                 }
             }
         });
-    }
-
-    private void add_job (Job job) {
-        Gtk.TreeIter iter;
-        list_store.append (out iter);
-        var date_time = job.get_used_time ();
-        string date = date_time.format ("%F %T");
-
-        list_store.set (iter, 0, job.get_file_icon (),
-                              1, job.cjob.title,
-                              2, job.translated_job_state (),
-                              3, date,
-                              4, job);
     }
 
     private void toggle_finished (Gtk.ToggleToolButton button) {
@@ -229,7 +184,7 @@ public class Printers.JobsView : Gtk.Frame {
                     case CUPS.IPP.JobState.CANCELED:
                     case CUPS.IPP.JobState.ABORTED:
                     case CUPS.IPP.JobState.COMPLETED:
-                        add_job (job);
+                        list_box.add (new JobRow (printer, job));
                         continue;
                     default:
                         continue;
@@ -237,78 +192,103 @@ public class Printers.JobsView : Gtk.Frame {
             }
         } else {
             button.label = _("Show completed jobs");
-            Gtk.TreeIter? iter;
-            var iters = new Gee.TreeSet<Gtk.TreeIter?> ();
-            if (list_store.get_iter_first (out iter)) {
-                do {
-                    Value val;
-                    list_store.get_value (iter, 4, out val);
-                    CUPS.IPP.JobState state = ((Job)val.get_object ()).cjob.state;
-                    switch (state) {
-                        case CUPS.IPP.JobState.CANCELED:
-                        case CUPS.IPP.JobState.ABORTED:
-                        case CUPS.IPP.JobState.COMPLETED:
-                            iters.add (iter);
-                            continue;
-                        default:
-                            continue;
-                    }
-                } while (list_store.iter_next (ref iter));
-            }
 
-            foreach (var _iter in iters) {
-#if VALA_0_36
-                list_store.remove (ref _iter);
-#else
-                list_store.remove (_iter);
-#endif
-            }
-        }
+            foreach (Gtk.Widget widget in list_box.get_children ()) {
+                JobRow job_row = widget as JobRow;
 
-        if (list_store.iter_n_children (null) > 0) {
-            stack.set_visible_child_name ("jobs");
-        } else {
-            stack.set_visible_child_name ("no-jobs");
+                if (job_row == null) {
+                    continue;
+                }
+
+                switch (job_row.job.cjob.state) {
+                    case CUPS.IPP.JobState.CANCELED:
+                    case CUPS.IPP.JobState.ABORTED:
+                    case CUPS.IPP.JobState.COMPLETED:
+                        list_box.remove (job_row);
+                        continue;
+                    default:
+                        continue;
+                }
+            }
         }
     }
 
-    static int compare (Gtk.TreeModel model, Gtk.TreeIter a, Gtk.TreeIter b) {
-        Value vala, valb;
-        model.get_value (a, 4, out vala);
-        model.get_value (b, 4, out valb);
-        var timea = ((Job) vala.get_object ()).get_used_time ();
-        var timeb = ((Job) valb.get_object ()).get_used_time ();
-        return timea.compare (timeb);
+    static int compare (Gtk.ListBoxRow a, Gtk.ListBoxRow b) {
+        var timea = (((JobRow)a).job.get_used_time ());
+        var timeb = (((JobRow)b).job.get_used_time ());
+        return timeb.compare (timea);
     }
 }
 
-public class Printers.JobProcessingCellRenderer : Gtk.CellRendererSpinner {
+public class Printers.JobRow : Gtk.ListBoxRow {
+    public Job job { get; private set; }
+    private Printer printer;
 
-    /* icon property set by the tree column */
-    public Job job { get; set; default=null;}
-    private Gtk.CellRendererPixbuf cellrendererpixbuf;
+    private Gtk.Grid grid;
 
-    public JobProcessingCellRenderer () {
+    public JobRow (Printer printer, Job job) {
+        this.printer = printer;
+        this.job = job;
 
-    }
+        grid = new Gtk.Grid ();
+        grid.tooltip_text = job.translated_job_state ();
+        grid.column_spacing = 6;
+        grid.row_spacing = 6;
+        grid.margin = 6;
 
-    construct {
-        cellrendererpixbuf = new Gtk.CellRendererPixbuf ();
-        size = Gtk.IconSize.MENU;
-        active = true;
-    }
+        Gtk.Image icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.MENU);
+        grid.attach (icon, 0, 0);
 
-    /* render method */
-    public override void render (Cairo.Context ctx, Gtk.Widget widget,
-                                 Gdk.Rectangle background_area,
-                                 Gdk.Rectangle cell_area,
-                                 Gtk.CellRendererState flags) {
-        var gicon = job.state_icon ();
-        if (gicon == null) {
-            base.render (ctx, widget, background_area, cell_area, flags);
+        Gtk.Label title = new Gtk.Label (job.cjob.title);
+        title.hexpand = true;
+        title.halign = Gtk.Align.START;
+        title.ellipsize = Pango.EllipsizeMode.END;
+        grid.attach (title, 1, 0);
+
+        var date_time = job.get_used_time ();
+        string date_string = date_time.format ("%F %T");
+        Gtk.Label date = new Gtk.Label (date_string);
+        grid.attach (date, 2, 0);
+
+        Gtk.Widget state;
+        if (job.state_icon () != null) {
+            state = new Gtk.Image.from_gicon (job.state_icon (), Gtk.IconSize.MENU);
         } else {
-            cellrendererpixbuf.gicon = gicon;
-            cellrendererpixbuf.render (ctx, widget, background_area, cell_area, flags);
+            state = new Gtk.Spinner ();
+            ((Gtk.Spinner)state).active = true;
+            ((Gtk.Spinner)state).start ();
         }
+        grid.attach (state, 3, 0);
+
+        job.state_changed.connect (update_state);
+        job.completed.connect (update_state);
+        job.stopped.connect (update_state);
+
+        add (grid);
+        show_all ();
+    }
+
+    public void update_state () {
+        var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
+        foreach (var _job in jobs) {
+            if (_job.cjob.id == job.cjob.id) {
+                job = _job;
+                break;
+            }
+        }
+
+        Gtk.Widget state;
+        if (job.state_icon () != null) {
+            state = new Gtk.Image.from_gicon (job.state_icon (), Gtk.IconSize.MENU);
+        } else {
+            state = new Gtk.Spinner ();
+            ((Gtk.Spinner)state).active = true;
+            ((Gtk.Spinner)state).start ();
+        }
+        grid.remove_column (3);
+        grid.attach (state, 3, 0);
+        show_all ();
+
+        grid.tooltip_text = job.translated_job_state ();
     }
 }
