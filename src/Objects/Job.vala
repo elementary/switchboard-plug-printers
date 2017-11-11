@@ -100,7 +100,7 @@ public class Printers.Job : GLib.Object {
             case CUPS.IPP.JobState.PENDING:
                 return _("Job Pending");
             case CUPS.IPP.JobState.HELD:
-                return _("On Held");
+                return _("On Hold");
             case CUPS.IPP.JobState.PROCESSING:
                 return _("Processing…");
             case CUPS.IPP.JobState.STOPPED:
@@ -108,7 +108,7 @@ public class Printers.Job : GLib.Object {
             case CUPS.IPP.JobState.CANCELED:
                 return _("Job Canceled");
             case CUPS.IPP.JobState.ABORTED:
-                return _("Job Aborded");
+                return _("Job Aborted");
             case CUPS.IPP.JobState.COMPLETED:
             default:
                 return _("Job Completed");
