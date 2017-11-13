@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-21 23:38+0200\n"
+"POT-Creation-Date: 2017-11-13 12:38-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,35 @@ msgstr ""
 msgid "Magenta"
 msgstr ""
 
+#: ../src/PrinterPage.vala:36
+msgid "General"
+msgstr ""
+
+#: ../src/PrinterPage.vala:37
+msgid "Options"
+msgstr ""
+
+#: ../src/PrinterPage.vala:89 ../src/AddPopover.vala:246
+msgid "Location:"
+msgstr ""
+
+#: ../src/PrinterPage.vala:97
+msgid "Lab 1 or John's Desk"
+msgstr ""
+
+#: ../src/PrinterPage.vala:104
+msgid "Use as Default Printer"
+msgstr ""
+
+#: ../src/PrinterPage.vala:114
+msgid "Print Test Page"
+msgstr ""
+
+#. / TRANSLATORS: Name of the test page job
+#: ../src/PrinterPage.vala:176
+msgid "Test page"
+msgstr ""
+
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
 msgstr ""
@@ -57,290 +86,6 @@ msgstr ""
 
 #: ../src/PrinterList.vala:90
 msgid "Remove"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (https).
-#: ../src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (http).
-#: ../src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipp).
-#: ../src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipps).
-#: ../src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: ../src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr ""
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr ""
-
-#: ../src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:176
-msgid "Refresh"
-msgstr ""
-
-#: ../src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr ""
-
-#: ../src/AddPopover.vala:183
-msgid "Next"
-msgstr ""
-
-#: ../src/AddPopover.vala:229
-msgid "Connection:"
-msgstr ""
-
-#: ../src/AddPopover.vala:237
-msgid "Description:"
-msgstr ""
-
-#: ../src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr ""
-
-#: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
-msgid "Location:"
-msgstr ""
-
-#: ../src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr ""
-
-#: ../src/AddPopover.vala:316
-msgid "Previous"
-msgstr ""
-
-#: ../src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr ""
-
-#: ../src/AddPopover.vala:321
-msgid "Add"
-msgstr ""
-
-#: ../src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr ""
-
-#: ../src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr ""
-
-#: ../src/AddPopover.vala:608
-msgid "Serial"
-msgstr ""
-
-#: ../src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr ""
-
-#: ../src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr ""
-
-#. / Translators: The printer is low on toner
-#: ../src/Objects/Printer.vala:45
-msgctxt "printer state"
-msgid "Low on toner"
-msgstr ""
-
-#. / Translators: The printer has no toner left
-#: ../src/Objects/Printer.vala:47
-msgctxt "printer state"
-msgid "Out of toner"
-msgstr ""
-
-#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:49
-msgctxt "printer state"
-msgid "Low on developer"
-msgstr ""
-
-#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:51
-msgctxt "printer state"
-msgid "Out of developer"
-msgstr ""
-
-#. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:53
-msgctxt "printer state"
-msgid "Low on a marker supply"
-msgstr ""
-
-#. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:55
-msgctxt "printer state"
-msgid "Out of a marker supply"
-msgstr ""
-
-#. / Translators: One or more covers on the printer are open
-#: ../src/Objects/Printer.vala:57
-msgctxt "printer state"
-msgid "Open cover"
-msgstr ""
-
-#. / Translators: One or more doors on the printer are open
-#: ../src/Objects/Printer.vala:59
-msgctxt "printer state"
-msgid "Open door"
-msgstr ""
-
-#. / Translators: At least one input tray is low on media
-#: ../src/Objects/Printer.vala:61
-msgctxt "printer state"
-msgid "Low on paper"
-msgstr ""
-
-#. / Translators: At least one input tray is empty
-#: ../src/Objects/Printer.vala:63
-msgctxt "printer state"
-msgid "Out of paper"
-msgstr ""
-
-#. / Translators: The printer is offline
-#: ../src/Objects/Printer.vala:65
-msgctxt "printer state"
-msgid "Offline"
-msgstr ""
-
-#. / Translators: Someone has stopped the Printer
-#: ../src/Objects/Printer.vala:67
-msgctxt "printer state"
-msgid "Stopped"
-msgstr ""
-
-#. / Translators: The printer marker supply waste receptacle is almost full
-#: ../src/Objects/Printer.vala:69
-msgctxt "printer state"
-msgid "Waste receptacle almost full"
-msgstr ""
-
-#. / Translators: The printer marker supply waste receptacle is full
-#: ../src/Objects/Printer.vala:71
-msgctxt "printer state"
-msgid "Waste receptacle full"
-msgstr ""
-
-#. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:73
-msgctxt "printer state"
-msgid "The optical photo conductor is near end of life"
-msgstr ""
-
-#. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:75
-msgctxt "printer state"
-msgid "The optical photo conductor is no longer functioning"
-msgstr ""
-
-#: ../src/Objects/Printer.vala:271
-msgid "Ready"
-msgstr ""
-
-#: ../src/Objects/Job.vala:95
-msgid "Job Pending"
-msgstr ""
-
-#: ../src/Objects/Job.vala:97
-msgid "On Held"
-msgstr ""
-
-#: ../src/Objects/Job.vala:99
-msgid "Processing…"
-msgstr ""
-
-#: ../src/Objects/Job.vala:101
-msgid "Job Stopped"
-msgstr ""
-
-#: ../src/Objects/Job.vala:103
-msgid "Job Canceled"
-msgstr ""
-
-#: ../src/Objects/Job.vala:105
-msgid "Job Aborded"
-msgstr ""
-
-#: ../src/Objects/Job.vala:108
-msgid "Job Completed"
-msgstr ""
-
-#: ../src/PrinterPage.vala:36
-msgid "General"
-msgstr ""
-
-#: ../src/PrinterPage.vala:37
-msgid "Options"
-msgstr ""
-
-#: ../src/PrinterPage.vala:100
-msgid "Lab 1 or John's Desk"
-msgstr ""
-
-#: ../src/PrinterPage.vala:104
-msgid "Use as Default Printer"
-msgstr ""
-
-#: ../src/PrinterPage.vala:114
-msgid "Print Test Page"
-msgstr ""
-
-#. / TRANSLATORS: Name of the test page job
-#: ../src/PrinterPage.vala:171
-msgid "Test page"
-msgstr ""
-
-#: ../src/Plug.vala:37
-msgid "Printers"
-msgstr ""
-
-#: ../src/Plug.vala:38
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-
-#: ../src/Plug.vala:52
-msgid "No Printers"
-msgstr ""
-
-#: ../src/Plug.vala:52
-msgid "Add a printer to begin printing"
-msgstr ""
-
-#: ../src/Plug.vala:53
-msgid "Add Printer"
-msgstr ""
-
-#: ../src/Plug.vala:53
-msgid "Search for the printer you need"
 msgstr ""
 
 #: ../src/OptionsPage.vala:68
@@ -511,18 +256,273 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: ../src/JobsView.vala:79 ../src/JobsView.vala:233
+#: ../src/JobsView.vala:56 ../src/JobsView.vala:194
 msgid "Show completed jobs"
 msgstr ""
 
-#: ../src/JobsView.vala:89
+#: ../src/JobsView.vala:66
 msgid "No jobs"
 msgstr ""
 
-#: ../src/JobsView.vala:89
+#: ../src/JobsView.vala:66
 msgid "There are no jobs on the queue"
 msgstr ""
 
-#: ../src/JobsView.vala:218
+#: ../src/JobsView.vala:179
 msgid "Hide completed jobs"
+msgstr ""
+
+#: ../src/Objects/Job.vala:101
+msgid "Job Pending"
+msgstr ""
+
+#: ../src/Objects/Job.vala:103
+msgid "On Hold"
+msgstr ""
+
+#: ../src/Objects/Job.vala:105
+msgid "Processing…"
+msgstr ""
+
+#: ../src/Objects/Job.vala:107
+msgid "Job Stopped"
+msgstr ""
+
+#: ../src/Objects/Job.vala:109
+msgid "Job Canceled"
+msgstr ""
+
+#: ../src/Objects/Job.vala:111
+msgid "Job Aborted"
+msgstr ""
+
+#: ../src/Objects/Job.vala:114
+msgid "Job Completed"
+msgstr ""
+
+#. / Translators: The printer is low on toner
+#: ../src/Objects/Printer.vala:45
+msgctxt "printer state"
+msgid "Low on toner"
+msgstr ""
+
+#. / Translators: The printer has no toner left
+#: ../src/Objects/Printer.vala:47
+msgctxt "printer state"
+msgid "Out of toner"
+msgstr ""
+
+#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/Objects/Printer.vala:49
+msgctxt "printer state"
+msgid "Low on developer"
+msgstr ""
+
+#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/Objects/Printer.vala:51
+msgctxt "printer state"
+msgid "Out of developer"
+msgstr ""
+
+#. / Translators: "marker" is one color bin of the printer
+#: ../src/Objects/Printer.vala:53
+msgctxt "printer state"
+msgid "Low on a marker supply"
+msgstr ""
+
+#. / Translators: "marker" is one color bin of the printer
+#: ../src/Objects/Printer.vala:55
+msgctxt "printer state"
+msgid "Out of a marker supply"
+msgstr ""
+
+#. / Translators: One or more covers on the printer are open
+#: ../src/Objects/Printer.vala:57
+msgctxt "printer state"
+msgid "Open cover"
+msgstr ""
+
+#. / Translators: One or more doors on the printer are open
+#: ../src/Objects/Printer.vala:59
+msgctxt "printer state"
+msgid "Open door"
+msgstr ""
+
+#. / Translators: At least one input tray is low on media
+#: ../src/Objects/Printer.vala:61
+msgctxt "printer state"
+msgid "Low on paper"
+msgstr ""
+
+#. / Translators: At least one input tray is empty
+#: ../src/Objects/Printer.vala:63
+msgctxt "printer state"
+msgid "Out of paper"
+msgstr ""
+
+#. / Translators: The printer is offline
+#: ../src/Objects/Printer.vala:65
+msgctxt "printer state"
+msgid "Offline"
+msgstr ""
+
+#. / Translators: Someone has stopped the Printer
+#: ../src/Objects/Printer.vala:67
+msgctxt "printer state"
+msgid "Stopped"
+msgstr ""
+
+#. / Translators: The printer marker supply waste receptacle is almost full
+#: ../src/Objects/Printer.vala:69
+msgctxt "printer state"
+msgid "Waste receptacle almost full"
+msgstr ""
+
+#. / Translators: The printer marker supply waste receptacle is full
+#: ../src/Objects/Printer.vala:71
+msgctxt "printer state"
+msgid "Waste receptacle full"
+msgstr ""
+
+#. / Translators: Optical photo conductors are used in laser printers
+#: ../src/Objects/Printer.vala:73
+msgctxt "printer state"
+msgid "The optical photo conductor is near end of life"
+msgstr ""
+
+#. / Translators: Optical photo conductors are used in laser printers
+#: ../src/Objects/Printer.vala:75
+msgctxt "printer state"
+msgid "The optical photo conductor is no longer functioning"
+msgstr ""
+
+#: ../src/Objects/Printer.vala:271
+msgid "Ready"
+msgstr ""
+
+#. / Tranlators: This is a protocol name, please keep the (https).
+#: ../src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr ""
+
+#. / Tranlators: This is a protocol name, please keep the (http).
+#: ../src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr ""
+
+#. / Tranlators: This is a protocol name, please keep the (ipp).
+#: ../src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr ""
+
+#. / Tranlators: This is a protocol name, please keep the (ipps).
+#: ../src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr ""
+
+#. / Tranlators: This is a protocol name, please keep the (ipp14).
+#: ../src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr ""
+
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr ""
+
+#. / Tranlators: This is a protocol name.
+#: ../src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr ""
+
+#: ../src/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr ""
+
+#: ../src/AddPopover.vala:176
+msgid "Refresh"
+msgstr ""
+
+#: ../src/AddPopover.vala:180
+msgid "Refresh the printer list"
+msgstr ""
+
+#: ../src/AddPopover.vala:183
+msgid "Next"
+msgstr ""
+
+#: ../src/AddPopover.vala:229
+msgid "Connection:"
+msgstr ""
+
+#: ../src/AddPopover.vala:237
+msgid "Description:"
+msgstr ""
+
+#: ../src/AddPopover.vala:242
+msgid "BrandPrinter X3000"
+msgstr ""
+
+#: ../src/AddPopover.vala:252
+msgid "Lab 1 or John's desk"
+msgstr ""
+
+#: ../src/AddPopover.vala:316
+msgid "Previous"
+msgstr ""
+
+#: ../src/AddPopover.vala:319
+msgid "Select an other printer or protocol"
+msgstr ""
+
+#: ../src/AddPopover.vala:321
+msgid "Add"
+msgstr ""
+
+#: ../src/AddPopover.vala:325
+msgid "Add the configured printer"
+msgstr ""
+
+#: ../src/AddPopover.vala:546
+msgid "(recommended)"
+msgstr ""
+
+#: ../src/AddPopover.vala:608
+msgid "Serial"
+msgstr ""
+
+#: ../src/AddPopover.vala:611
+msgid "Local Printers"
+msgstr ""
+
+#: ../src/AddPopover.vala:614
+msgid "Network Printers"
+msgstr ""
+
+#: ../src/AddPopover.vala:617
+msgid "Available Network Printers"
+msgstr ""
+
+#: ../src/Plug.vala:39
+msgid "Printers"
+msgstr ""
+
+#: ../src/Plug.vala:40
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr ""
+
+#: ../src/Plug.vala:55
+msgid "No Printers"
+msgstr ""
+
+#: ../src/Plug.vala:55
+msgid "Add a printer to begin printing"
+msgstr ""
+
+#: ../src/Plug.vala:56
+msgid "Add Printer"
+msgstr ""
+
+#: ../src/Plug.vala:56
+msgid "Search for the printer you need"
 msgstr ""
