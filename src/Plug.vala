@@ -74,7 +74,7 @@ namespace Printers {
                 main_stack.show_all ();
                 main_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
 
-                list.new_printer_page.add.connect (() => {
+                list.new_printer_page.connect (() => {
                     main_stack.set_visible_child (main_paned);
                 });
 
