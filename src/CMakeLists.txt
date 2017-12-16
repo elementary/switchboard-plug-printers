@@ -17,7 +17,6 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     AddPopover.vala
     Plug.vala
     PrinterPage.vala
-    PrinterRow.vala
     PrinterList.vala
     OptionsPage.vala
     JobsView.vala
