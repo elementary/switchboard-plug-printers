@@ -70,7 +70,15 @@ public class Printers.InkLevel : Gtk.Grid {
             level.expand = true;
             var context = level.get_style_context ();
             context.add_class ("coloredlevelbar");
+            var split = color.color.split ("#");
+
             var css_color = STYLE_CLASS.printf (color.color);
+            if (split.length > 2) {
+                css_color = STYLE_CLASS.printf ("#" + split[1]);
+            } else if (color.color == "none") {
+                css_color = STYLE_CLASS.printf ("#3689e6");
+            }
+
             var provider = new Gtk.CssProvider ();
             try {
                 provider.load_from_data (css_color, css_color.length);
