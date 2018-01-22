@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-09-03 00:19+0000\n"
-"Last-Translator: Ryo Nakano <rmfmada3q@gmail.com>\n"
+"PO-Revision-Date: 2018-01-23 00:06+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/ja/>\n"
 "Language: ja\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.16\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: ../src/InkLevel.vala:90
@@ -124,7 +124,7 @@ msgstr "BrandPrinter X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
-msgstr "場所："
+msgstr "場所:"
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
@@ -132,11 +132,11 @@ msgstr "研究室1、ジョンの机など"
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
-msgstr "前"
+msgstr "前へ"
 
 #: ../src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
-msgstr "他のプリンタやープロトコルを選択してください"
+msgstr "他のプリンターやプロトコルを選択してください"
 
 #: ../src/AddPopover.vala:321
 msgid "Add"
@@ -164,7 +164,7 @@ msgstr "ネットワークプリンター"
 
 #: ../src/AddPopover.vala:617
 msgid "Available Network Printers"
-msgstr "利用できるネットワークプリンター"
+msgstr "利用可能なネットワークプリンター"
 
 #. / Translators: The printer is low on toner
 #: ../src/Objects/Printer.vala:45
@@ -212,7 +212,7 @@ msgstr "カバーが開いています"
 #: ../src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
-msgstr "扉が開いています"
+msgstr "ドアが開いています"
 
 #. / Translators: At least one input tray is low on media
 #: ../src/Objects/Printer.vala:61
@@ -280,7 +280,7 @@ msgstr "動作中…"
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
-msgstr "動作が停止しました"
+msgstr "動作を停止しました"
 
 #: ../src/Objects/Job.vala:103
 msgid "Job Canceled"
