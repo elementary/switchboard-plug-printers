@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2018-01-23 00:06+0000\n"
+"PO-Revision-Date: 2018-01-27 00:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/ja/>\n"
@@ -128,7 +128,7 @@ msgstr "場所:"
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
-msgstr "研究室1、ジョンの机など"
+msgstr "場所を入力"
 
 #: ../src/AddPopover.vala:316
 msgid "Previous"
@@ -304,7 +304,7 @@ msgstr "オプション"
 
 #: ../src/PrinterPage.vala:100
 msgid "Lab 1 or John's Desk"
-msgstr "研究室1、ジョンの机など"
+msgstr "場所を入力"
 
 #: ../src/PrinterPage.vala:104
 msgid "Use as Default Printer"
