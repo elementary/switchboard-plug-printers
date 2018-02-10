@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2018-02-05 00:11+0000\n"
+"PO-Revision-Date: 2018-02-11 00:09+0000\n"
 "Last-Translator: Rokar <mail@rokar.de>\n"
 "Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/ku/>\n"
@@ -41,7 +41,7 @@ msgstr "boyeya sora şîn"
 
 #: ../src/PrinterList.vala:49
 msgid "Add Printer…"
-msgstr "çapker zêde bike..."
+msgstr "çapker zêde bike …"
 
 #: ../src/PrinterList.vala:51
 msgid "Remove Printer"
@@ -122,7 +122,7 @@ msgstr "ŞirketeÇapger X3000"
 
 #: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
 msgid "Location:"
-msgstr "Cîh"
+msgstr "Cîh:"
 
 #: ../src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
@@ -274,7 +274,7 @@ msgstr ""
 
 #: ../src/Objects/Job.vala:99
 msgid "Processing…"
-msgstr "pêvajo..."
+msgstr "pêvajo …"
 
 #: ../src/Objects/Job.vala:101
 msgid "Job Stopped"
@@ -431,7 +431,7 @@ msgstr ""
 
 #: ../src/OptionsPage.vala:374
 msgid "Center"
-msgstr "Navîn"
+msgstr "navîn"
 
 #: ../src/OptionsPage.vala:377
 msgid "Continuous Autofeed"
@@ -483,7 +483,7 @@ msgstr "Pişt"
 
 #: ../src/OptionsPage.vala:415
 msgid "Right"
-msgstr "Rast"
+msgstr "Raste"
 
 #: ../src/OptionsPage.vala:418
 msgid "Side"
