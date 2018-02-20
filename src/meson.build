@@ -24,7 +24,7 @@ gettext_data = configuration_data()
 gettext_data.set('GETTEXT_PACKAGE', gettext_name)
 gettext_declaration = configure_file(
     configuration: gettext_data,
-    input: join_paths(meson.source_root(), 'config.vala.cmake'),
+    input: 'config.vala.in',
     output: '@BASENAME@'
 )
 
