@@ -1,0 +1,13 @@
+src/PrinterRow.vala
+src/PrinterPage.vala
+src/PrinterList.vala
+src/Plug.vala
+src/OptionsPage.vala
+src/JobsView.vala
+src/InkLevel.vala
+src/EditableTitle.vala
+src/CUPSPkHelper.vala
+src/CUPSNotifier.vala
+src/AddPopover.vala
+src/Objects/Printer.vala
+src/Objects/Job.vala

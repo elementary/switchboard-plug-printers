@@ -35,7 +35,7 @@ namespace Printers {
             var settings = new Gee.TreeMap<string, string?> (null, null);
             settings.set ("printer", null);
             Object (category: Category.HARDWARE,
-                    code_name: Build.PLUGCODENAME,
+                    code_name: "pantheon-printers",
                     display_name: _("Printers"),
                     description: _("Configure printers, manage print queues, and view ink levels"),
                     icon: "printer",
