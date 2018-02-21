@@ -1,0 +1,593 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the printers-plug package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: printers-plug\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-20 18:47-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/PrinterPage.vala:36
+msgid "General"
+msgstr ""
+
+#: src/PrinterPage.vala:37
+msgid "Options"
+msgstr ""
+
+#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+msgid "Location:"
+msgstr ""
+
+#: src/PrinterPage.vala:97
+msgid "Lab 1 or John's Desk"
+msgstr ""
+
+#: src/PrinterPage.vala:104
+msgid "Use as Default Printer"
+msgstr ""
+
+#: src/PrinterPage.vala:114
+msgid "Print Test Page"
+msgstr ""
+
+#: src/PrinterPage.vala:176
+msgid "Test page"
+msgstr ""
+
+#: src/PrinterList.vala:49
+msgid "Add Printer…"
+msgstr ""
+
+#: src/PrinterList.vala:51
+msgid "Remove Printer"
+msgstr ""
+
+#: src/PrinterList.vala:85
+#, c-format
+msgid ""
+"By removing '%s' you'll lose all print history\n"
+"and configuration associated with it."
+msgstr ""
+
+#: src/PrinterList.vala:90
+msgid "Remove"
+msgstr ""
+
+#: src/Plug.vala:39
+msgid "Printers"
+msgstr ""
+
+#: src/Plug.vala:40
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr ""
+
+#: src/Plug.vala:55
+msgid "No Printers"
+msgstr ""
+
+#: src/Plug.vala:55
+msgid "Add a printer to begin printing"
+msgstr ""
+
+#: src/Plug.vala:56
+msgid "Add Printer"
+msgstr ""
+
+#: src/Plug.vala:56
+msgid "Search for the printer you need"
+msgstr ""
+
+#: src/OptionsPage.vala:68
+msgid "Pages per side:"
+msgstr ""
+
+#: src/OptionsPage.vala:94
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/OptionsPage.vala:96
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/OptionsPage.vala:140
+msgid "Two-sided:"
+msgstr ""
+
+#: src/OptionsPage.vala:156
+msgid "Portrait"
+msgstr ""
+
+#: src/OptionsPage.vala:159
+msgid "Landscape"
+msgstr ""
+
+#: src/OptionsPage.vala:162
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/OptionsPage.vala:165
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/OptionsPage.vala:174
+msgid "Orientation:"
+msgstr ""
+
+#: src/OptionsPage.vala:196
+msgid "Media Size:"
+msgstr ""
+
+#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
+msgid "Automatic"
+msgstr ""
+
+#: src/OptionsPage.vala:215
+msgid "One Color"
+msgstr ""
+
+#: src/OptionsPage.vala:218
+msgid "Color"
+msgstr ""
+
+#: src/OptionsPage.vala:221
+msgid "One Color + Black"
+msgstr ""
+
+#: src/OptionsPage.vala:224
+msgid "Greyscale"
+msgstr ""
+
+#: src/OptionsPage.vala:227
+msgid "Processed Color"
+msgstr ""
+
+#: src/OptionsPage.vala:230
+msgid "Processed Greyscale"
+msgstr ""
+
+#: src/OptionsPage.vala:239
+msgid "Color mode:"
+msgstr ""
+
+#: src/OptionsPage.vala:255
+msgid "Top Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:258
+msgid "Middle Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:261
+msgid "Bottom Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:264
+msgid "Side Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:267
+msgid "Left Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:270
+msgid "Right Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:273
+msgid "Center Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:276
+msgid "Rear Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:279
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:282
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:285
+msgid "Large Capacity Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:288
+msgid "My Mailbox"
+msgstr ""
+
+#: src/OptionsPage.vala:293
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/OptionsPage.vala:296
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
+#, c-format
+msgid "Tray %d"
+msgstr ""
+
+#: src/OptionsPage.vala:312
+msgid "Output Tray:"
+msgstr ""
+
+#: src/OptionsPage.vala:328
+msgid "Draft"
+msgstr ""
+
+#: src/OptionsPage.vala:331
+msgid "Normal"
+msgstr ""
+
+#: src/OptionsPage.vala:334
+msgid "High"
+msgstr ""
+
+#: src/OptionsPage.vala:340
+msgid "Quality:"
+msgstr ""
+
+#: src/OptionsPage.vala:356
+msgid "Paper Allocation"
+msgstr ""
+
+#: src/OptionsPage.vala:359
+msgid "Alternate Tray"
+msgstr ""
+
+#: src/OptionsPage.vala:362
+msgid "Alternate Roll"
+msgstr ""
+
+#: src/OptionsPage.vala:368
+msgid "Bottom"
+msgstr ""
+
+#: src/OptionsPage.vala:371
+msgid "By-pass Tray"
+msgstr ""
+
+#: src/OptionsPage.vala:374
+msgid "Center"
+msgstr ""
+
+#: src/OptionsPage.vala:377
+msgid "Continuous Autofeed"
+msgstr ""
+
+#: src/OptionsPage.vala:381
+msgid "Disk"
+msgstr ""
+
+#: src/OptionsPage.vala:384
+msgid "Envelope"
+msgstr ""
+
+#: src/OptionsPage.vala:387
+msgid "Hagaki"
+msgstr ""
+
+#: src/OptionsPage.vala:390
+msgid "Large Capacity"
+msgstr ""
+
+#: src/OptionsPage.vala:393
+msgid "Left"
+msgstr ""
+
+#: src/OptionsPage.vala:396
+msgid "Main Tray"
+msgstr ""
+
+#: src/OptionsPage.vala:399
+msgid "Main Roll"
+msgstr ""
+
+#: src/OptionsPage.vala:402
+msgid "Manual"
+msgstr ""
+
+#: src/OptionsPage.vala:405
+msgid "Middle"
+msgstr ""
+
+#: src/OptionsPage.vala:408
+msgid "Photo"
+msgstr ""
+
+#: src/OptionsPage.vala:412
+msgid "Rear"
+msgstr ""
+
+#: src/OptionsPage.vala:415
+msgid "Right"
+msgstr ""
+
+#: src/OptionsPage.vala:418
+msgid "Side"
+msgstr ""
+
+#: src/OptionsPage.vala:421
+msgid "Top"
+msgstr ""
+
+#: src/OptionsPage.vala:426
+#, c-format
+msgid "Roll %d"
+msgstr ""
+
+#: src/OptionsPage.vala:442
+msgid "Paper Source:"
+msgstr ""
+
+#: src/JobsView.vala:56 src/JobsView.vala:194
+msgid "Show completed jobs"
+msgstr ""
+
+#: src/JobsView.vala:66
+msgid "No jobs"
+msgstr ""
+
+#: src/JobsView.vala:66
+msgid "There are no jobs on the queue"
+msgstr ""
+
+#: src/JobsView.vala:179
+msgid "Hide completed jobs"
+msgstr ""
+
+#: src/InkLevel.vala:98
+msgid "Black (PGBK)"
+msgstr ""
+
+#: src/InkLevel.vala:101
+msgid "Black (BK)"
+msgstr ""
+
+#: src/InkLevel.vala:104
+msgid "Black"
+msgstr ""
+
+#: src/InkLevel.vala:107
+msgid "Yellow"
+msgstr ""
+
+#: src/InkLevel.vala:110
+msgid "Cyan"
+msgstr ""
+
+#: src/InkLevel.vala:113
+msgid "Magenta"
+msgstr ""
+
+#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
+msgid "Edit"
+msgstr ""
+
+#: src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr ""
+
+#: src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr ""
+
+#: src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr ""
+
+#: src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr ""
+
+#: src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr ""
+
+#: src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr ""
+
+#: src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr ""
+
+#: src/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr ""
+
+#: src/AddPopover.vala:176
+msgid "Refresh"
+msgstr ""
+
+#: src/AddPopover.vala:180
+msgid "Refresh the printer list"
+msgstr ""
+
+#: src/AddPopover.vala:183
+msgid "Next"
+msgstr ""
+
+#: src/AddPopover.vala:229
+msgid "Connection:"
+msgstr ""
+
+#: src/AddPopover.vala:237
+msgid "Description:"
+msgstr ""
+
+#: src/AddPopover.vala:242
+msgid "BrandPrinter X3000"
+msgstr ""
+
+#: src/AddPopover.vala:252
+msgid "Lab 1 or John's desk"
+msgstr ""
+
+#: src/AddPopover.vala:316
+msgid "Previous"
+msgstr ""
+
+#: src/AddPopover.vala:319
+msgid "Select an other printer or protocol"
+msgstr ""
+
+#: src/AddPopover.vala:321
+msgid "Add"
+msgstr ""
+
+#: src/AddPopover.vala:325
+msgid "Add the configured printer"
+msgstr ""
+
+#: src/AddPopover.vala:546
+msgid "(recommended)"
+msgstr ""
+
+#: src/AddPopover.vala:608
+msgid "Serial"
+msgstr ""
+
+#: src/AddPopover.vala:611
+msgid "Local Printers"
+msgstr ""
+
+#: src/AddPopover.vala:614
+msgid "Network Printers"
+msgstr ""
+
+#: src/AddPopover.vala:617
+msgid "Available Network Printers"
+msgstr ""
+
+#: src/Objects/Printer.vala:45
+msgctxt "printer state"
+msgid "Low on toner"
+msgstr ""
+
+#: src/Objects/Printer.vala:47
+msgctxt "printer state"
+msgid "Out of toner"
+msgstr ""
+
+#: src/Objects/Printer.vala:49
+msgctxt "printer state"
+msgid "Low on developer"
+msgstr ""
+
+#: src/Objects/Printer.vala:51
+msgctxt "printer state"
+msgid "Out of developer"
+msgstr ""
+
+#: src/Objects/Printer.vala:53
+msgctxt "printer state"
+msgid "Low on a marker supply"
+msgstr ""
+
+#: src/Objects/Printer.vala:55
+msgctxt "printer state"
+msgid "Out of a marker supply"
+msgstr ""
+
+#: src/Objects/Printer.vala:57
+msgctxt "printer state"
+msgid "Open cover"
+msgstr ""
+
+#: src/Objects/Printer.vala:59
+msgctxt "printer state"
+msgid "Open door"
+msgstr ""
+
+#: src/Objects/Printer.vala:61
+msgctxt "printer state"
+msgid "Low on paper"
+msgstr ""
+
+#: src/Objects/Printer.vala:63
+msgctxt "printer state"
+msgid "Out of paper"
+msgstr ""
+
+#: src/Objects/Printer.vala:65
+msgctxt "printer state"
+msgid "Offline"
+msgstr ""
+
+#: src/Objects/Printer.vala:67
+msgctxt "printer state"
+msgid "Stopped"
+msgstr ""
+
+#: src/Objects/Printer.vala:69
+msgctxt "printer state"
+msgid "Waste receptacle almost full"
+msgstr ""
+
+#: src/Objects/Printer.vala:71
+msgctxt "printer state"
+msgid "Waste receptacle full"
+msgstr ""
+
+#: src/Objects/Printer.vala:73
+msgctxt "printer state"
+msgid "The optical photo conductor is near end of life"
+msgstr ""
+
+#: src/Objects/Printer.vala:75
+msgctxt "printer state"
+msgid "The optical photo conductor is no longer functioning"
+msgstr ""
+
+#: src/Objects/Printer.vala:266
+msgid "printer state"
+msgstr ""
+
+#: src/Objects/Printer.vala:271
+msgid "Ready"
+msgstr ""
+
+#: src/Objects/Job.vala:101
+msgid "Job Pending"
+msgstr ""
+
+#: src/Objects/Job.vala:103
+msgid "On Hold"
+msgstr ""
+
+#: src/Objects/Job.vala:105
+msgid "Processing…"
+msgstr ""
+
+#: src/Objects/Job.vala:107
+msgid "Job Stopped"
+msgstr ""
+
+#: src/Objects/Job.vala:109
+msgid "Job Canceled"
+msgstr ""
+
+#: src/Objects/Job.vala:111
+msgid "Job Aborted"
+msgstr ""
+
+#: src/Objects/Job.vala:114
+msgid "Job Completed"
+msgstr ""
