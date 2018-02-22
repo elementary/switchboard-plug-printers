@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-21 17:03-0800\n"
-"PO-Revision-Date: 2017-04-14 23:35+0000\n"
+"PO-Revision-Date: 2018-02-22 01:19+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/fr/>\n"
+"Language-Team: French <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:36
@@ -96,11 +96,11 @@ msgstr "Pages par côté :"
 
 #: src/OptionsPage.vala:94
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Bord long (Standard)"
 
 #: src/OptionsPage.vala:96
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Bord court (Retourné)"
 
 #: src/OptionsPage.vala:140
 msgid "Two-sided:"
@@ -108,19 +108,19 @@ msgstr "Recto-Verso :"
 
 #: src/OptionsPage.vala:156
 msgid "Portrait"
-msgstr ""
+msgstr "Portrait"
 
 #: src/OptionsPage.vala:159
 msgid "Landscape"
-msgstr ""
+msgstr "Paysage"
 
 #: src/OptionsPage.vala:162
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Portrait inversé"
 
 #: src/OptionsPage.vala:165
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Paysage inversé"
 
 #: src/OptionsPage.vala:174
 msgid "Orientation:"
@@ -164,69 +164,61 @@ msgstr "Mode de couleur :"
 
 #: src/OptionsPage.vala:255
 msgid "Top Bin"
-msgstr ""
+msgstr "Haut"
 
 #: src/OptionsPage.vala:258
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Milieu"
+msgstr "Compartiment du milieu"
 
 #: src/OptionsPage.vala:261
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Bas"
+msgstr "Compartiment du bas"
 
 #: src/OptionsPage.vala:264
-#, fuzzy
 msgid "Side Bin"
-msgstr "Côté"
+msgstr "Compartiment du côté"
 
 #: src/OptionsPage.vala:267
-#, fuzzy
 msgid "Left Bin"
-msgstr "Gauche"
+msgstr "Compartiment de gauche"
 
 #: src/OptionsPage.vala:270
-#, fuzzy
 msgid "Right Bin"
-msgstr "Droit"
+msgstr "Compartiment de droite"
 
 #: src/OptionsPage.vala:273
-#, fuzzy
 msgid "Center Bin"
-msgstr "Centre"
+msgstr "Compartiment du centre"
 
 #: src/OptionsPage.vala:276
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Arrière"
+msgstr "Compartiment arrière"
 
 #: src/OptionsPage.vala:279
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Face vers le haut"
 
 #: src/OptionsPage.vala:282
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Face vers le bas"
 
 #: src/OptionsPage.vala:285
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Grande capacité"
+msgstr "Compartiment de grande capacité"
 
 #: src/OptionsPage.vala:288
 msgid "My Mailbox"
-msgstr ""
+msgstr "Ma boîte mail"
 
 #: src/OptionsPage.vala:293
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Empileur %d"
 
 #: src/OptionsPage.vala:296
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Boîte mail %d"
 
 #: src/OptionsPage.vala:299 src/OptionsPage.vala:429
 #, c-format
@@ -575,7 +567,6 @@ msgid "Job Pending"
 msgstr "Tâche en attente"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "En attente"
 
@@ -592,7 +583,6 @@ msgid "Job Canceled"
 msgstr "Tâche annulée"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
 msgstr "Tâche interrompue"
 
