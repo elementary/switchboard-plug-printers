@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-21 17:03-0800\n"
-"PO-Revision-Date: 2017-05-01 14:45+0000\n"
+"PO-Revision-Date: 2018-02-23 00:05+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/he/>\n"
+"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:36
@@ -106,19 +106,19 @@ msgstr "דו־צדדי:"
 
 #: src/OptionsPage.vala:156
 msgid "Portrait"
-msgstr ""
+msgstr "לאורך"
 
 #: src/OptionsPage.vala:159
 msgid "Landscape"
-msgstr ""
+msgstr "לרוחב"
 
 #: src/OptionsPage.vala:162
 msgid "Reverse portrait"
-msgstr ""
+msgstr "הפוך לאורך"
 
 #: src/OptionsPage.vala:165
 msgid "Reverse landscape"
-msgstr ""
+msgstr "הפוך רוחב"
 
 #: src/OptionsPage.vala:174
 msgid "Orientation:"
@@ -162,69 +162,61 @@ msgstr "מצב צבע:"
 
 #: src/OptionsPage.vala:255
 msgid "Top Bin"
-msgstr ""
+msgstr "סל עליון"
 
 #: src/OptionsPage.vala:258
-#, fuzzy
 msgid "Middle Bin"
-msgstr "אמצעי"
+msgstr "סל אמצעי"
 
 #: src/OptionsPage.vala:261
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "תחתון"
+msgstr "סל תחתון"
 
 #: src/OptionsPage.vala:264
-#, fuzzy
 msgid "Side Bin"
-msgstr "צד"
+msgstr "סל צדי"
 
 #: src/OptionsPage.vala:267
-#, fuzzy
 msgid "Left Bin"
-msgstr "שמאל"
+msgstr "סל שמאלי"
 
 #: src/OptionsPage.vala:270
-#, fuzzy
 msgid "Right Bin"
-msgstr "ימין"
+msgstr "סל ימני"
 
 #: src/OptionsPage.vala:273
-#, fuzzy
 msgid "Center Bin"
-msgstr "מרכז"
+msgstr "סל מרכזי"
 
 #: src/OptionsPage.vala:276
-#, fuzzy
 msgid "Rear Bin"
-msgstr "אחורי"
+msgstr "סל אחורי"
 
 #: src/OptionsPage.vala:279
 msgid "Face Up Bin"
-msgstr ""
+msgstr "סל פונה מעלה"
 
 #: src/OptionsPage.vala:282
 msgid "Face Down Bin"
-msgstr ""
+msgstr "סל פונה מטה"
 
 #: src/OptionsPage.vala:285
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "קיבולת גבוהה"
+msgstr "סל קיבולת גבוהה"
 
 #: src/OptionsPage.vala:288
 msgid "My Mailbox"
-msgstr ""
+msgstr "תיבת הדואר שלי"
 
 #: src/OptionsPage.vala:293
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "מערום %d"
 
 #: src/OptionsPage.vala:296
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "תיבת דואר %d"
 
 #: src/OptionsPage.vala:299 src/OptionsPage.vala:429
 #, c-format
@@ -573,7 +565,6 @@ msgid "Job Pending"
 msgstr "משימה ממתינה"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "מוחזקת"
 
@@ -590,7 +581,6 @@ msgid "Job Canceled"
 msgstr "המשימה בוטלה"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
 msgstr "המשימה הושמדה"
 
