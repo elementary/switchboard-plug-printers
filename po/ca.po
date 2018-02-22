@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-21 17:03-0800\n"
-"PO-Revision-Date: 2017-05-04 15:24+0000\n"
+"PO-Revision-Date: 2018-02-22 14:08+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:36
@@ -96,11 +96,11 @@ msgstr "Pàgines per cara:"
 
 #: src/OptionsPage.vala:94
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Cantó llarg (estàndard)"
 
 #: src/OptionsPage.vala:96
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Cantó curt (apaïsat)"
 
 #: src/OptionsPage.vala:140
 msgid "Two-sided:"
@@ -108,19 +108,19 @@ msgstr "Doble cara:"
 
 #: src/OptionsPage.vala:156
 msgid "Portrait"
-msgstr ""
+msgstr "Retrat"
 
 #: src/OptionsPage.vala:159
 msgid "Landscape"
-msgstr ""
+msgstr "Paisatge"
 
 #: src/OptionsPage.vala:162
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Retrat invers"
 
 #: src/OptionsPage.vala:165
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Paisatge invers"
 
 #: src/OptionsPage.vala:174
 msgid "Orientation:"
@@ -164,69 +164,61 @@ msgstr "Mode del color:"
 
 #: src/OptionsPage.vala:255
 msgid "Top Bin"
-msgstr ""
+msgstr "A dalt"
 
 #: src/OptionsPage.vala:258
-#, fuzzy
 msgid "Middle Bin"
 msgstr "Al mig"
 
 #: src/OptionsPage.vala:261
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Inferior"
+msgstr "A baix"
 
 #: src/OptionsPage.vala:264
-#, fuzzy
 msgid "Side Bin"
 msgstr "Lateral"
 
 #: src/OptionsPage.vala:267
-#, fuzzy
 msgid "Left Bin"
 msgstr "Esquerra"
 
 #: src/OptionsPage.vala:270
-#, fuzzy
 msgid "Right Bin"
 msgstr "Dreta"
 
 #: src/OptionsPage.vala:273
-#, fuzzy
 msgid "Center Bin"
 msgstr "Centre"
 
 #: src/OptionsPage.vala:276
-#, fuzzy
 msgid "Rear Bin"
 msgstr "Posterior"
 
 #: src/OptionsPage.vala:279
 msgid "Face Up Bin"
-msgstr ""
+msgstr "De cara a dalt"
 
 #: src/OptionsPage.vala:282
 msgid "Face Down Bin"
-msgstr ""
+msgstr "De cara a baix"
 
 #: src/OptionsPage.vala:285
-#, fuzzy
 msgid "Large Capacity Bin"
 msgstr "De gran capacitat"
 
 #: src/OptionsPage.vala:288
 msgid "My Mailbox"
-msgstr ""
+msgstr "La meva bústia"
 
 #: src/OptionsPage.vala:293
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Pila %d"
 
 #: src/OptionsPage.vala:296
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Bústia %d"
 
 #: src/OptionsPage.vala:299 src/OptionsPage.vala:429
 #, c-format
@@ -575,7 +567,6 @@ msgid "Job Pending"
 msgstr "Tasca pendent"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "En espera"
 
@@ -592,7 +583,6 @@ msgid "Job Canceled"
 msgstr "Tasca cancel·lada"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
 msgstr "Tasca avortada"
 
