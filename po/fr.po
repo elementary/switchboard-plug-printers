@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-21 17:03-0800\n"
-"PO-Revision-Date: 2018-02-22 01:19+0000\n"
+"PO-Revision-Date: 2018-02-23 00:05+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/fr/>\n"
@@ -57,7 +57,7 @@ msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 msgstr ""
-"En supprimant '%s' vous perdrez tout historique\n"
+"En supprimant « %s » vous perdrez tout historique\n"
 "et la configuration attachés à celle-ci."
 
 #: src/PrinterList.vala:90
@@ -164,7 +164,7 @@ msgstr "Mode de couleur :"
 
 #: src/OptionsPage.vala:255
 msgid "Top Bin"
-msgstr "Haut"
+msgstr "Compartiment du haut"
 
 #: src/OptionsPage.vala:258
 msgid "Middle Bin"
