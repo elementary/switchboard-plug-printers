@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: printers-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 18:47-0600\n"
+"POT-Creation-Date: 2018-02-21 17:03-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -554,10 +554,6 @@ msgstr ""
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
-
-#: src/Objects/Printer.vala:266
-msgid "printer state"
 msgstr ""
 
 #: src/Objects/Printer.vala:271
