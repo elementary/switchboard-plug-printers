@@ -3,15 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-21 17:03-0800\n"
-"PO-Revision-Date: 2016-05-10 17:33+0000\n"
-"Last-Translator: Giovanni Caligaris <giovannicaligaris@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-02-23 18:49+0000\n"
+"Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
+"Language-Team: English (Canada) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"printers/en_CA/>\n"
+"Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
 
 #: src/PrinterPage.vala:36
 msgid "General"
@@ -92,11 +95,11 @@ msgstr "Pages per side:"
 
 #: src/OptionsPage.vala:94
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Long Edge (Standard)"
 
 #: src/OptionsPage.vala:96
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Short Edge (Flip)"
 
 #: src/OptionsPage.vala:140
 msgid "Two-sided:"
@@ -104,19 +107,19 @@ msgstr "Two-sided:"
 
 #: src/OptionsPage.vala:156
 msgid "Portrait"
-msgstr ""
+msgstr "Portrait"
 
 #: src/OptionsPage.vala:159
 msgid "Landscape"
-msgstr ""
+msgstr "Landscape"
 
 #: src/OptionsPage.vala:162
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Reverse portrait"
 
 #: src/OptionsPage.vala:165
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Reverse landscape"
 
 #: src/OptionsPage.vala:174
 msgid "Orientation:"
@@ -136,7 +139,7 @@ msgstr "One Color"
 
 #: src/OptionsPage.vala:218
 msgid "Color"
-msgstr "Color"
+msgstr "Colour"
 
 #: src/OptionsPage.vala:221
 msgid "One Color + Black"
@@ -160,69 +163,61 @@ msgstr "Color mode:"
 
 #: src/OptionsPage.vala:255
 msgid "Top Bin"
-msgstr ""
+msgstr "Top Bin"
 
 #: src/OptionsPage.vala:258
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Middle"
+msgstr "Middle Bin"
 
 #: src/OptionsPage.vala:261
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Bottom"
+msgstr "Bottom Bin"
 
 #: src/OptionsPage.vala:264
-#, fuzzy
 msgid "Side Bin"
-msgstr "Side"
+msgstr "Side Bin"
 
 #: src/OptionsPage.vala:267
-#, fuzzy
 msgid "Left Bin"
-msgstr "Left"
+msgstr "Left Bin"
 
 #: src/OptionsPage.vala:270
-#, fuzzy
 msgid "Right Bin"
-msgstr "Right"
+msgstr "Right Bin"
 
 #: src/OptionsPage.vala:273
-#, fuzzy
 msgid "Center Bin"
-msgstr "Center"
+msgstr "Centre Bin"
 
 #: src/OptionsPage.vala:276
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Rear"
+msgstr "Rear Bin"
 
 #: src/OptionsPage.vala:279
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Face Up Bin"
 
 #: src/OptionsPage.vala:282
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Face Down Bin"
 
 #: src/OptionsPage.vala:285
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Large Capacity"
+msgstr "Large Capacity Bin"
 
 #: src/OptionsPage.vala:288
 msgid "My Mailbox"
-msgstr ""
+msgstr "My Mailbox"
 
 #: src/OptionsPage.vala:293
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Stacker %d"
 
 #: src/OptionsPage.vala:296
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Mailbox %d"
 
 #: src/OptionsPage.vala:299 src/OptionsPage.vala:429
 #, c-format
@@ -571,9 +566,8 @@ msgid "Job Pending"
 msgstr "Job Pending"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
-msgstr "On Held"
+msgstr "On Hold"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
@@ -588,9 +582,8 @@ msgid "Job Canceled"
 msgstr "Job Canceled"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "Job Aborded"
+msgstr "Job Aborted"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
