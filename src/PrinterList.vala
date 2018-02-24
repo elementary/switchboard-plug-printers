@@ -22,13 +22,15 @@
 
 public class Printers.PrinterList : Gtk.Grid {
     public signal void new_printer_page (Gtk.Widget widget);
-    public signal void focused_printer_page (Gtk.Widget widget);
+
+    public Gtk.Stack stack { get; construct; }
+    public bool has_child { get; private set; default=false; }
 
     Gtk.ListBox list_box;
     Printers.AddPopover add_popover;
 
-    public PrinterList () {
-
+    public PrinterList (Gtk.Stack stack) {
+        Object (stack: stack);
     }
 
     construct {
@@ -58,7 +60,7 @@ public class Printers.PrinterList : Gtk.Grid {
         list_box.row_selected.connect ((row) => {
             remove_button.sensitive = (row != null);
             if (row != null) {
-                focused_printer_page (((PrinterRow) row).page);
+                stack.set_visible_child (((PrinterRow) row).page);
             }
         });
 
@@ -82,14 +84,16 @@ public class Printers.PrinterList : Gtk.Grid {
             grid.row_spacing = 6;
             grid.column_spacing = 6;
             var printer = ((PrinterRow)list_box.get_selected_row ()).printer;
-            var label = new Gtk.Label (_("By removing '%s' you'll lose all print history\nand configuration associated with it.").printf (printer.info));
+            var label = new Gtk.Label (_("By removing '%s' you'll lose all print history and configuration associated with it.").printf (printer.info));
+            label.max_width_chars = 48;
             label.wrap = true;
             var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
             image.halign = Gtk.Align.CENTER;
             image.valign = Gtk.Align.CENTER;
             var button = new Gtk.Button.with_label (_("Remove"));
+            button.halign = Gtk.Align.END;
             button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
-            grid.attach (image, 0, 0, 1, 2);
+            grid.attach (image, 0, 0, 1, 1);
             grid.attach (label, 1, 0, 1, 1);
             grid.attach (button, 1, 1, 1, 1);
             popover.add (grid);
@@ -102,28 +106,33 @@ public class Printers.PrinterList : Gtk.Grid {
                 }
             });
         });
-    }
 
-    public bool has_printer () {
-        return list_box.get_children ().length () > 0;
+        unowned PrinterManager manager = PrinterManager.get_default ();
+        foreach (var printer in manager.get_printers ()) {
+            add_printer (printer);
+        }
+
+        manager.printer_added.connect ((printer) => add_printer (printer));
     }
 
     public void add_printer (Printer printer) {
         var row = new PrinterRow (printer);
         list_box.add (row);
-        new_printer_page (row.page);
+        stack.add (row.page);
         if (printer.is_default) {
             list_box.select_row (row);
         }
-    }
 
-    public void remove_printer (string printer_name) {
-        list_box.get_children ().foreach ((child) => {
-            if (child is PrinterRow) {
-                if (((PrinterRow) child).printer.dest.name == printer_name) {
-                    ((PrinterRow) child).printer.deleted ();
+        has_child = true;
+        row.destroy.connect (() => {
+            uint i = 0;
+            list_box.get_children ().foreach ((child) => {
+                if (child != row) {
+                    i++;
                 }
-            }
+            });
+
+            has_child = i > 0;
         });
     }
 }
