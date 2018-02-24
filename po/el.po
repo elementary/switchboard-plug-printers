@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-21 23:38+0200\n"
+"POT-Creation-Date: 2018-02-21 17:03-0800\n"
 "PO-Revision-Date: 2017-08-31 23:37+0000\n"
 "Last-Translator: Grammatopoulos Athanasios-Vasi <darkthanos.gr@gmail.com>\n"
-"Language-Team: Greek <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-printers/el/>\n"
+"Language-Team: Greek <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-printers/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,39 +15,44 @@ msgstr ""
 "X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: ../src/InkLevel.vala:90
-msgid "Black (PGBK)"
+#: src/PrinterPage.vala:36
+msgid "General"
+msgstr "Γενικά"
+
+#: src/PrinterPage.vala:37
+msgid "Options"
+msgstr "Επιλογές"
+
+#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+msgid "Location:"
+msgstr "Τοποθεσία:"
+
+#: src/PrinterPage.vala:97
+msgid "Lab 1 or John's Desk"
 msgstr ""
 
-#: ../src/InkLevel.vala:93
-msgid "Black (BK)"
-msgstr ""
+#: src/PrinterPage.vala:104
+msgid "Use as Default Printer"
+msgstr "Ορισμός ως προεπιλεγμένου εκτυπωτή"
 
-#: ../src/InkLevel.vala:96
-msgid "Black"
-msgstr "Μαύρο"
+#: src/PrinterPage.vala:114
+msgid "Print Test Page"
+msgstr "Εκτύπωση δοκιμαστικής σελίδας"
 
-#: ../src/InkLevel.vala:99
-msgid "Yellow"
-msgstr "Κίτρινο"
+#: src/PrinterPage.vala:176
+msgid "Test page"
+msgstr "Δοκιμαστική σελίδα"
 
-#: ../src/InkLevel.vala:102
-msgid "Cyan"
-msgstr ""
-
-#: ../src/InkLevel.vala:105
-msgid "Magenta"
-msgstr ""
-
-#: ../src/PrinterList.vala:49
+#: src/PrinterList.vala:49
 msgid "Add Printer…"
 msgstr "Προσθήκη εκτυπωτή..."
 
-#: ../src/PrinterList.vala:51
+#: src/PrinterList.vala:51
 msgid "Remove Printer"
 msgstr "Αφαίρεση εκτυπωτή"
 
-#: ../src/PrinterList.vala:85
+#: src/PrinterList.vala:85
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
@@ -55,474 +60,533 @@ msgstr ""
 "Αφαιρώντας τον '%s' θα χάσετε όλο το ιστορικό εκτυπώσεων σας\n"
 "καθώς και τις παραμέτρους ρύθμισης του"
 
-#: ../src/PrinterList.vala:90
+#: src/PrinterList.vala:90
 msgid "Remove"
 msgstr "Αφαίρεση"
 
-#. / Tranlators: This is a protocol name, please keep the (https).
-#: ../src/AddPopover.vala:27
+#: src/Plug.vala:39
+msgid "Printers"
+msgstr "Εκτυπωτές"
+
+#: src/Plug.vala:40
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr ""
+
+#: src/Plug.vala:55
+msgid "No Printers"
+msgstr "Κανένας εκτυπωτής"
+
+#: src/Plug.vala:55
+msgid "Add a printer to begin printing"
+msgstr "Προσθέστε έναν εκτυπωτή για να ξεκινήσετε να εκτυπώνετε"
+
+#: src/Plug.vala:56
+msgid "Add Printer"
+msgstr "Προσθήκη εκτυπωτή"
+
+#: src/Plug.vala:56
+msgid "Search for the printer you need"
+msgstr "Αναζήτηση για τον εκτυπωτή που χρειάζεστε"
+
+#: src/OptionsPage.vala:68
+msgid "Pages per side:"
+msgstr "Σελίδες ανά πλευρά:"
+
+#: src/OptionsPage.vala:94
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/OptionsPage.vala:96
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/OptionsPage.vala:140
+msgid "Two-sided:"
+msgstr "Διπλής όψεως"
+
+#: src/OptionsPage.vala:156
+msgid "Portrait"
+msgstr ""
+
+#: src/OptionsPage.vala:159
+msgid "Landscape"
+msgstr ""
+
+#: src/OptionsPage.vala:162
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/OptionsPage.vala:165
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/OptionsPage.vala:174
+msgid "Orientation:"
+msgstr "Προσανατολισμός:"
+
+#: src/OptionsPage.vala:196
+msgid "Media Size:"
+msgstr ""
+
+#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
+msgid "Automatic"
+msgstr "Αυτόματα"
+
+#: src/OptionsPage.vala:215
+msgid "One Color"
+msgstr ""
+
+#: src/OptionsPage.vala:218
+msgid "Color"
+msgstr "Χρώμα"
+
+#: src/OptionsPage.vala:221
+msgid "One Color + Black"
+msgstr "Ένα Χρώμα + Μαύρο"
+
+#: src/OptionsPage.vala:224
+msgid "Greyscale"
+msgstr "Κλίμακα του γκρι"
+
+#: src/OptionsPage.vala:227
+msgid "Processed Color"
+msgstr ""
+
+#: src/OptionsPage.vala:230
+msgid "Processed Greyscale"
+msgstr ""
+
+#: src/OptionsPage.vala:239
+msgid "Color mode:"
+msgstr "Λειτουργία χρώματος:"
+
+#: src/OptionsPage.vala:255
+msgid "Top Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:258
+msgid "Middle Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:261
+msgid "Bottom Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:264
+msgid "Side Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:267
+#, fuzzy
+msgid "Left Bin"
+msgstr "Αριστερά"
+
+#: src/OptionsPage.vala:270
+#, fuzzy
+msgid "Right Bin"
+msgstr "Δεξιά"
+
+#: src/OptionsPage.vala:273
+#, fuzzy
+msgid "Center Bin"
+msgstr "Κέντρο"
+
+#: src/OptionsPage.vala:276
+msgid "Rear Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:279
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:282
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:285
+msgid "Large Capacity Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:288
+msgid "My Mailbox"
+msgstr ""
+
+#: src/OptionsPage.vala:293
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/OptionsPage.vala:296
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
+#, c-format
+msgid "Tray %d"
+msgstr ""
+
+#: src/OptionsPage.vala:312
+msgid "Output Tray:"
+msgstr "Δίσκος Εξόδου:"
+
+#: src/OptionsPage.vala:328
+msgid "Draft"
+msgstr "Πρόχειρο"
+
+#: src/OptionsPage.vala:331
+msgid "Normal"
+msgstr "Κανονική λειτουργία"
+
+#: src/OptionsPage.vala:334
+msgid "High"
+msgstr "Υψηλό"
+
+#: src/OptionsPage.vala:340
+msgid "Quality:"
+msgstr "Ποιότητα:"
+
+#: src/OptionsPage.vala:356
+msgid "Paper Allocation"
+msgstr ""
+
+#: src/OptionsPage.vala:359
+msgid "Alternate Tray"
+msgstr ""
+
+#: src/OptionsPage.vala:362
+msgid "Alternate Roll"
+msgstr ""
+
+#: src/OptionsPage.vala:368
+msgid "Bottom"
+msgstr ""
+
+#: src/OptionsPage.vala:371
+msgid "By-pass Tray"
+msgstr ""
+
+#: src/OptionsPage.vala:374
+msgid "Center"
+msgstr "Κέντρο"
+
+#: src/OptionsPage.vala:377
+msgid "Continuous Autofeed"
+msgstr ""
+
+#: src/OptionsPage.vala:381
+msgid "Disk"
+msgstr ""
+
+#: src/OptionsPage.vala:384
+msgid "Envelope"
+msgstr ""
+
+#: src/OptionsPage.vala:387
+msgid "Hagaki"
+msgstr ""
+
+#: src/OptionsPage.vala:390
+msgid "Large Capacity"
+msgstr ""
+
+#: src/OptionsPage.vala:393
+msgid "Left"
+msgstr "Αριστερά"
+
+#: src/OptionsPage.vala:396
+msgid "Main Tray"
+msgstr ""
+
+#: src/OptionsPage.vala:399
+msgid "Main Roll"
+msgstr ""
+
+#: src/OptionsPage.vala:402
+msgid "Manual"
+msgstr ""
+
+#: src/OptionsPage.vala:405
+msgid "Middle"
+msgstr ""
+
+#: src/OptionsPage.vala:408
+msgid "Photo"
+msgstr ""
+
+#: src/OptionsPage.vala:412
+msgid "Rear"
+msgstr ""
+
+#: src/OptionsPage.vala:415
+msgid "Right"
+msgstr "Δεξιά"
+
+#: src/OptionsPage.vala:418
+msgid "Side"
+msgstr ""
+
+#: src/OptionsPage.vala:421
+msgid "Top"
+msgstr ""
+
+#: src/OptionsPage.vala:426
+#, c-format
+msgid "Roll %d"
+msgstr ""
+
+#: src/OptionsPage.vala:442
+msgid "Paper Source:"
+msgstr ""
+
+#: src/JobsView.vala:56 src/JobsView.vala:194
+msgid "Show completed jobs"
+msgstr ""
+
+#: src/JobsView.vala:66
+msgid "No jobs"
+msgstr ""
+
+#: src/JobsView.vala:66
+msgid "There are no jobs on the queue"
+msgstr ""
+
+#: src/JobsView.vala:179
+msgid "Hide completed jobs"
+msgstr ""
+
+#: src/InkLevel.vala:98
+msgid "Black (PGBK)"
+msgstr ""
+
+#: src/InkLevel.vala:101
+msgid "Black (BK)"
+msgstr ""
+
+#: src/InkLevel.vala:104
+msgid "Black"
+msgstr "Μαύρο"
+
+#: src/InkLevel.vala:107
+msgid "Yellow"
+msgstr "Κίτρινο"
+
+#: src/InkLevel.vala:110
+msgid "Cyan"
+msgstr ""
+
+#: src/InkLevel.vala:113
+msgid "Magenta"
+msgstr ""
+
+#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
+msgid "Edit"
+msgstr ""
+
+#: src/AddPopover.vala:27
 msgid "Internet Printing Protocol (https)"
 msgstr ""
 
-#. / Tranlators: This is a protocol name, please keep the (http).
-#: ../src/AddPopover.vala:29
+#: src/AddPopover.vala:29
 msgid "Internet Printing Protocol (http)"
 msgstr ""
 
-#. / Tranlators: This is a protocol name, please keep the (ipp).
-#: ../src/AddPopover.vala:31
+#: src/AddPopover.vala:31
 msgid "Internet Printing Protocol (ipp)"
 msgstr ""
 
-#. / Tranlators: This is a protocol name, please keep the (ipps).
-#: ../src/AddPopover.vala:33
+#: src/AddPopover.vala:33
 msgid "Internet Printing Protocol (ipps)"
 msgstr ""
 
-#. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: ../src/AddPopover.vala:35
+#: src/AddPopover.vala:35
 msgid "Internet Printing Protocol (ipp14)"
 msgstr ""
 
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:37
+#: src/AddPopover.vala:37
 msgid "LPD/LPR Host or Printer"
 msgstr ""
 
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:39
+#: src/AddPopover.vala:39
 msgid "AppSocket/HP JetDirect"
 msgstr ""
 
-#: ../src/AddPopover.vala:81
+#: src/AddPopover.vala:81
 msgid "Impossible to list all available printers"
 msgstr ""
 
-#: ../src/AddPopover.vala:176
+#: src/AddPopover.vala:176
 msgid "Refresh"
 msgstr "Ανανέωση"
 
-#: ../src/AddPopover.vala:180
+#: src/AddPopover.vala:180
 msgid "Refresh the printer list"
 msgstr "Ανανέωση της λίστας εκτυπωτών"
 
-#: ../src/AddPopover.vala:183
+#: src/AddPopover.vala:183
 msgid "Next"
 msgstr "Επόμενο"
 
-#: ../src/AddPopover.vala:229
+#: src/AddPopover.vala:229
 msgid "Connection:"
 msgstr "Σύνδεση:"
 
-#: ../src/AddPopover.vala:237
+#: src/AddPopover.vala:237
 msgid "Description:"
 msgstr "Περιγραφή:"
 
-#: ../src/AddPopover.vala:242
+#: src/AddPopover.vala:242
 msgid "BrandPrinter X3000"
 msgstr ""
 
-#: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
-msgid "Location:"
-msgstr "Τοποθεσία:"
-
-#: ../src/AddPopover.vala:252
+#: src/AddPopover.vala:252
 msgid "Lab 1 or John's desk"
 msgstr ""
 
-#: ../src/AddPopover.vala:316
+#: src/AddPopover.vala:316
 msgid "Previous"
 msgstr "Προηγούμενο"
 
-#: ../src/AddPopover.vala:319
+#: src/AddPopover.vala:319
 msgid "Select an other printer or protocol"
 msgstr "Επιλέξτε έναν άλλον εκτυπωτή ή πρωτόκολλο"
 
-#: ../src/AddPopover.vala:321
+#: src/AddPopover.vala:321
 msgid "Add"
 msgstr "Προσθήκη"
 
-#: ../src/AddPopover.vala:325
+#: src/AddPopover.vala:325
 msgid "Add the configured printer"
 msgstr ""
 
-#: ../src/AddPopover.vala:546
+#: src/AddPopover.vala:546
 msgid "(recommended)"
 msgstr ""
 
-#: ../src/AddPopover.vala:608
+#: src/AddPopover.vala:608
 msgid "Serial"
 msgstr ""
 
-#: ../src/AddPopover.vala:611
+#: src/AddPopover.vala:611
 msgid "Local Printers"
 msgstr "Τοπικοί εκτυπωτές"
 
-#: ../src/AddPopover.vala:614
+#: src/AddPopover.vala:614
 msgid "Network Printers"
 msgstr "Εκτυπωτές δικτύου"
 
-#: ../src/AddPopover.vala:617
+#: src/AddPopover.vala:617
 msgid "Available Network Printers"
 msgstr "Διαθέσιμοι εκτυπωτές δικτύου"
 
-#. / Translators: The printer is low on toner
-#: ../src/Objects/Printer.vala:45
+#: src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
 msgstr ""
 
-#. / Translators: The printer has no toner left
-#: ../src/Objects/Printer.vala:47
+#: src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
 msgstr ""
 
-#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:49
+#: src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
 msgstr ""
 
-#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:51
+#: src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
 msgstr ""
 
-#. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:53
+#: src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
 msgstr ""
 
-#. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:55
+#: src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
 msgstr ""
 
-#. / Translators: One or more covers on the printer are open
-#: ../src/Objects/Printer.vala:57
+#: src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
 msgstr ""
 
-#. / Translators: One or more doors on the printer are open
-#: ../src/Objects/Printer.vala:59
+#: src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
 msgstr ""
 
-#. / Translators: At least one input tray is low on media
-#: ../src/Objects/Printer.vala:61
+#: src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
 msgstr ""
 
-#. / Translators: At least one input tray is empty
-#: ../src/Objects/Printer.vala:63
+#: src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
 msgstr "Τελείωσε το χαρτί"
 
-#. / Translators: The printer is offline
-#: ../src/Objects/Printer.vala:65
+#: src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
 msgstr "Εκτός σύνδεσης"
 
-#. / Translators: Someone has stopped the Printer
-#: ../src/Objects/Printer.vala:67
+#: src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
 msgstr ""
 
-#. / Translators: The printer marker supply waste receptacle is almost full
-#: ../src/Objects/Printer.vala:69
+#: src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
 msgstr ""
 
-#. / Translators: The printer marker supply waste receptacle is full
-#: ../src/Objects/Printer.vala:71
+#: src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
 msgstr ""
 
-#. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:73
+#: src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
 msgstr ""
 
-#. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:75
+#: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr ""
 
-#: ../src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:271
 msgid "Ready"
 msgstr "Έτοιμος"
 
-#: ../src/Objects/Job.vala:95
+#: src/Objects/Job.vala:101
 msgid "Job Pending"
 msgstr ""
 
-#: ../src/Objects/Job.vala:97
-msgid "On Held"
+#: src/Objects/Job.vala:103
+msgid "On Hold"
 msgstr ""
 
-#: ../src/Objects/Job.vala:99
+#: src/Objects/Job.vala:105
 msgid "Processing…"
 msgstr ""
 
-#: ../src/Objects/Job.vala:101
+#: src/Objects/Job.vala:107
 msgid "Job Stopped"
 msgstr ""
 
-#: ../src/Objects/Job.vala:103
+#: src/Objects/Job.vala:109
 msgid "Job Canceled"
 msgstr ""
 
-#: ../src/Objects/Job.vala:105
-msgid "Job Aborded"
+#: src/Objects/Job.vala:111
+msgid "Job Aborted"
 msgstr ""
 
-#: ../src/Objects/Job.vala:108
+#: src/Objects/Job.vala:114
 msgid "Job Completed"
-msgstr ""
-
-#: ../src/PrinterPage.vala:36
-msgid "General"
-msgstr "Γενικά"
-
-#: ../src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Επιλογές"
-
-#: ../src/PrinterPage.vala:100
-msgid "Lab 1 or John's Desk"
-msgstr ""
-
-#: ../src/PrinterPage.vala:104
-msgid "Use as Default Printer"
-msgstr "Ορισμός ως προεπιλεγμένου εκτυπωτή"
-
-#: ../src/PrinterPage.vala:114
-msgid "Print Test Page"
-msgstr "Εκτύπωση δοκιμαστικής σελίδας"
-
-#. / TRANSLATORS: Name of the test page job
-#: ../src/PrinterPage.vala:171
-msgid "Test page"
-msgstr "Δοκιμαστική σελίδα"
-
-#: ../src/Plug.vala:37
-msgid "Printers"
-msgstr "Εκτυπωτές"
-
-#: ../src/Plug.vala:38
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-
-#: ../src/Plug.vala:52
-msgid "No Printers"
-msgstr "Κανένας εκτυπωτής"
-
-#: ../src/Plug.vala:52
-msgid "Add a printer to begin printing"
-msgstr "Προσθέστε έναν εκτυπωτή για να ξεκινήσετε να εκτυπώνετε"
-
-#: ../src/Plug.vala:53
-msgid "Add Printer"
-msgstr "Προσθήκη εκτυπωτή"
-
-#: ../src/Plug.vala:53
-msgid "Search for the printer you need"
-msgstr "Αναζήτηση για τον εκτυπωτή που χρειάζεστε"
-
-#: ../src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "Σελίδες ανά πλευρά:"
-
-#: ../src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "Διπλής όψεως"
-
-#: ../src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "Προσανατολισμός:"
-
-#: ../src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr ""
-
-#: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "Αυτόματα"
-
-#: ../src/OptionsPage.vala:215
-msgid "One Color"
-msgstr ""
-
-#: ../src/OptionsPage.vala:218
-msgid "Color"
-msgstr "Χρώμα"
-
-#: ../src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "Ένα Χρώμα + Μαύρο"
-
-#: ../src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "Κλίμακα του γκρι"
-
-#: ../src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr ""
-
-#: ../src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr ""
-
-#: ../src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "Λειτουργία χρώματος:"
-
-#: ../src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "Δίσκος Εξόδου:"
-
-#: ../src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Πρόχειρο"
-
-#: ../src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "Κανονική λειτουργία"
-
-#: ../src/OptionsPage.vala:334
-msgid "High"
-msgstr "Υψηλό"
-
-#: ../src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Ποιότητα:"
-
-#: ../src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr ""
-
-#: ../src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr ""
-
-#: ../src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr ""
-
-#: ../src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr ""
-
-#: ../src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr ""
-
-#: ../src/OptionsPage.vala:374
-msgid "Center"
-msgstr "Κέντρο"
-
-#: ../src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr ""
-
-#: ../src/OptionsPage.vala:381
-msgid "Disk"
-msgstr ""
-
-#: ../src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr ""
-
-#: ../src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr ""
-
-#: ../src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr ""
-
-#: ../src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Αριστερά"
-
-#: ../src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr ""
-
-#: ../src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr ""
-
-#: ../src/OptionsPage.vala:402
-msgid "Manual"
-msgstr ""
-
-#: ../src/OptionsPage.vala:405
-msgid "Middle"
-msgstr ""
-
-#: ../src/OptionsPage.vala:408
-msgid "Photo"
-msgstr ""
-
-#: ../src/OptionsPage.vala:412
-msgid "Rear"
-msgstr ""
-
-#: ../src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Δεξιά"
-
-#: ../src/OptionsPage.vala:418
-msgid "Side"
-msgstr ""
-
-#: ../src/OptionsPage.vala:421
-msgid "Top"
-msgstr ""
-
-#: ../src/OptionsPage.vala:426
-msgid "Roll %d"
-msgstr ""
-
-#: ../src/OptionsPage.vala:429
-msgid "Tray %d"
-msgstr ""
-
-#: ../src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr ""
-
-#: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
-msgid "Edit"
-msgstr ""
-
-#: ../src/JobsView.vala:79 ../src/JobsView.vala:233
-msgid "Show completed jobs"
-msgstr ""
-
-#: ../src/JobsView.vala:89
-msgid "No jobs"
-msgstr ""
-
-#: ../src/JobsView.vala:89
-msgid "There are no jobs on the queue"
-msgstr ""
-
-#: ../src/JobsView.vala:218
-msgid "Hide completed jobs"
 msgstr ""

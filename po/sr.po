@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-21 23:38+0200\n"
+"POT-Creation-Date: 2018-02-21 17:03-0800\n"
 "PO-Revision-Date: 2017-01-08 09:21+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <(nothing)>\n"
@@ -18,39 +18,44 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 "X-Generator: Launchpad (build 18330)\n"
 
-#: ../src/InkLevel.vala:90
-msgid "Black (PGBK)"
-msgstr "Црна (ПГБК)"
+#: src/PrinterPage.vala:36
+msgid "General"
+msgstr "Опште"
 
-#: ../src/InkLevel.vala:93
-msgid "Black (BK)"
-msgstr "Црна (БК)"
+#: src/PrinterPage.vala:37
+msgid "Options"
+msgstr "Могућности"
 
-#: ../src/InkLevel.vala:96
-msgid "Black"
-msgstr "Црна"
+#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+msgid "Location:"
+msgstr "Место:"
 
-#: ../src/InkLevel.vala:99
-msgid "Yellow"
-msgstr "Жута"
+#: src/PrinterPage.vala:97
+msgid "Lab 1 or John's Desk"
+msgstr "Лаб 1 или Перин сто"
 
-#: ../src/InkLevel.vala:102
-msgid "Cyan"
-msgstr "Плавичаста"
+#: src/PrinterPage.vala:104
+msgid "Use as Default Printer"
+msgstr "Користи као сновни штампач"
 
-#: ../src/InkLevel.vala:105
-msgid "Magenta"
-msgstr "Ружичаста"
+#: src/PrinterPage.vala:114
+msgid "Print Test Page"
+msgstr "Одштампај пробну страницу"
 
-#: ../src/PrinterList.vala:49
+#: src/PrinterPage.vala:176
+msgid "Test page"
+msgstr "Пробна страница"
+
+#: src/PrinterList.vala:49
 msgid "Add Printer…"
 msgstr "Додај штампач…"
 
-#: ../src/PrinterList.vala:51
+#: src/PrinterList.vala:51
 msgid "Remove Printer"
 msgstr "Уклони штампач"
 
-#: ../src/PrinterList.vala:85
+#: src/PrinterList.vala:85
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
@@ -58,476 +63,542 @@ msgstr ""
 "Ако уклоните „%s“ изгубићете сав историјат штампања\n"
 "и подешавања њему придружена."
 
-#: ../src/PrinterList.vala:90
+#: src/PrinterList.vala:90
 msgid "Remove"
 msgstr "Уклони"
 
-#. / Tranlators: This is a protocol name, please keep the (https).
-#: ../src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Интернет протокол штампања (https)"
-
-#. / Tranlators: This is a protocol name, please keep the (http).
-#: ../src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Интернет протокол штампања (http)"
-
-#. / Tranlators: This is a protocol name, please keep the (ipp).
-#: ../src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Интернет протокол штампања (ipp)"
-
-#. / Tranlators: This is a protocol name, please keep the (ipps).
-#: ../src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Интернет протокол штампања (ipps)"
-
-#. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: ../src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Интернет протокол штампања (ipp14)"
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "ЛПД/ЛПР домаћин или штампач"
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: ../src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Не могу да испишем све доступне штампаче"
-
-#: ../src/AddPopover.vala:176
-msgid "Refresh"
-msgstr "Освежи"
-
-#: ../src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr "Освежите списак штампача"
-
-#: ../src/AddPopover.vala:183
-msgid "Next"
-msgstr "Следеће"
-
-#: ../src/AddPopover.vala:229
-msgid "Connection:"
-msgstr "Веза:"
-
-#: ../src/AddPopover.vala:237
-msgid "Description:"
-msgstr "Опис:"
-
-#: ../src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
-
-#: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
-msgid "Location:"
-msgstr "Место:"
-
-#: ../src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr "Лаб 1 или Перин сто"
-
-#: ../src/AddPopover.vala:316
-msgid "Previous"
-msgstr "Претходно"
-
-#: ../src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr "Изаберите неки други штампач или протокол"
-
-#: ../src/AddPopover.vala:321
-msgid "Add"
-msgstr "Додај"
-
-#: ../src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr "Додајте подешени штампач"
-
-#: ../src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr "(препоручено)"
-
-#: ../src/AddPopover.vala:608
-msgid "Serial"
-msgstr "Серијски"
-
-#: ../src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr "Локални штампачи"
-
-#: ../src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr "Мрежни штампачи"
-
-#: ../src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr "Доступни мрежни штампачи"
-
-#. / Translators: The printer is low on toner
-#: ../src/Objects/Printer.vala:45
-msgctxt "printer state"
-msgid "Low on toner"
-msgstr "Понестаје тонера"
-
-#. / Translators: The printer has no toner left
-#: ../src/Objects/Printer.vala:47
-msgctxt "printer state"
-msgid "Out of toner"
-msgstr "Нема више тонера"
-
-#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:49
-msgctxt "printer state"
-msgid "Low on developer"
-msgstr "Понестаје развијача"
-
-#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:51
-msgctxt "printer state"
-msgid "Out of developer"
-msgstr "Нема више развијача"
-
-#. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:53
-msgctxt "printer state"
-msgid "Low on a marker supply"
-msgstr "Понестаје маркера"
-
-#. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:55
-msgctxt "printer state"
-msgid "Out of a marker supply"
-msgstr "Нема више маркера"
-
-#. / Translators: One or more covers on the printer are open
-#: ../src/Objects/Printer.vala:57
-msgctxt "printer state"
-msgid "Open cover"
-msgstr "Подигнут поклопац"
-
-#. / Translators: One or more doors on the printer are open
-#: ../src/Objects/Printer.vala:59
-msgctxt "printer state"
-msgid "Open door"
-msgstr "Отворена вратанца"
-
-#. / Translators: At least one input tray is low on media
-#: ../src/Objects/Printer.vala:61
-msgctxt "printer state"
-msgid "Low on paper"
-msgstr "Понестаје папира"
-
-#. / Translators: At least one input tray is empty
-#: ../src/Objects/Printer.vala:63
-msgctxt "printer state"
-msgid "Out of paper"
-msgstr "Нема више папира"
-
-#. / Translators: The printer is offline
-#: ../src/Objects/Printer.vala:65
-msgctxt "printer state"
-msgid "Offline"
-msgstr "Искључен"
-
-#. / Translators: Someone has stopped the Printer
-#: ../src/Objects/Printer.vala:67
-msgctxt "printer state"
-msgid "Stopped"
-msgstr "Заустављен"
-
-#. / Translators: The printer marker supply waste receptacle is almost full
-#: ../src/Objects/Printer.vala:69
-msgctxt "printer state"
-msgid "Waste receptacle almost full"
-msgstr "Посуда за отпад је скоро пуна"
-
-#. / Translators: The printer marker supply waste receptacle is full
-#: ../src/Objects/Printer.vala:71
-msgctxt "printer state"
-msgid "Waste receptacle full"
-msgstr "Посуда за отпад је пуна"
-
-#. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:73
-msgctxt "printer state"
-msgid "The optical photo conductor is near end of life"
-msgstr "Оптички проводник фотографија је при крају живота"
-
-#. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:75
-msgctxt "printer state"
-msgid "The optical photo conductor is no longer functioning"
-msgstr "Оптички проводник фотографија више не функционише"
-
-#: ../src/Objects/Printer.vala:271
-msgid "Ready"
-msgstr "Спреман"
-
-#: ../src/Objects/Job.vala:95
-msgid "Job Pending"
-msgstr "На чекању"
-
-#: ../src/Objects/Job.vala:97
-msgid "On Held"
-msgstr "Задржан"
-
-#: ../src/Objects/Job.vala:99
-msgid "Processing…"
-msgstr "Обрађујем…"
-
-#: ../src/Objects/Job.vala:101
-msgid "Job Stopped"
-msgstr "Заустављен"
-
-#: ../src/Objects/Job.vala:103
-msgid "Job Canceled"
-msgstr "Отказан"
-
-#: ../src/Objects/Job.vala:105
-msgid "Job Aborded"
-msgstr "Прекинут"
-
-#: ../src/Objects/Job.vala:108
-msgid "Job Completed"
-msgstr "Завршен"
-
-#: ../src/PrinterPage.vala:36
-msgid "General"
-msgstr "Опште"
-
-#: ../src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Могућности"
-
-#: ../src/PrinterPage.vala:100
-msgid "Lab 1 or John's Desk"
-msgstr "Лаб 1 или Перин сто"
-
-#: ../src/PrinterPage.vala:104
-msgid "Use as Default Printer"
-msgstr "Користи као сновни штампач"
-
-#: ../src/PrinterPage.vala:114
-msgid "Print Test Page"
-msgstr "Одштампај пробну страницу"
-
-#. / TRANSLATORS: Name of the test page job
-#: ../src/PrinterPage.vala:171
-msgid "Test page"
-msgstr "Пробна страница"
-
-#: ../src/Plug.vala:37
+#: src/Plug.vala:39
 msgid "Printers"
 msgstr "Штампачи"
 
-#: ../src/Plug.vala:38
+#: src/Plug.vala:40
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Подесите штампаче, управљајте редоследом штампања и преконтролишите нивое "
 "мастила"
 
-#: ../src/Plug.vala:52
+#: src/Plug.vala:55
 msgid "No Printers"
 msgstr "Нема штампача"
 
-#: ../src/Plug.vala:52
+#: src/Plug.vala:55
 msgid "Add a printer to begin printing"
 msgstr "Додајте штампач да започнете са штампањем"
 
-#: ../src/Plug.vala:53
+#: src/Plug.vala:56
 msgid "Add Printer"
 msgstr "Додај штампач"
 
-#: ../src/Plug.vala:53
+#: src/Plug.vala:56
 msgid "Search for the printer you need"
 msgstr "Тражим штампач који вам треба"
 
-#: ../src/OptionsPage.vala:68
+#: src/OptionsPage.vala:68
 msgid "Pages per side:"
 msgstr "Страница по страни:"
 
-#: ../src/OptionsPage.vala:140
+#: src/OptionsPage.vala:94
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/OptionsPage.vala:96
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/OptionsPage.vala:140
 msgid "Two-sided:"
 msgstr "Двострано:"
 
-#: ../src/OptionsPage.vala:174
+#: src/OptionsPage.vala:156
+msgid "Portrait"
+msgstr ""
+
+#: src/OptionsPage.vala:159
+msgid "Landscape"
+msgstr ""
+
+#: src/OptionsPage.vala:162
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/OptionsPage.vala:165
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/OptionsPage.vala:174
 msgid "Orientation:"
 msgstr "Усмерење:"
 
-#: ../src/OptionsPage.vala:196
+#: src/OptionsPage.vala:196
 msgid "Media Size:"
 msgstr "Величина медија:"
 
-#: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
+#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
 msgid "Automatic"
 msgstr "Самостално"
 
-#: ../src/OptionsPage.vala:215
+#: src/OptionsPage.vala:215
 msgid "One Color"
 msgstr "Једна боја"
 
-#: ../src/OptionsPage.vala:218
+#: src/OptionsPage.vala:218
 msgid "Color"
 msgstr "Боја"
 
-#: ../src/OptionsPage.vala:221
+#: src/OptionsPage.vala:221
 msgid "One Color + Black"
 msgstr "Једна боја + црна"
 
-#: ../src/OptionsPage.vala:224
+#: src/OptionsPage.vala:224
 msgid "Greyscale"
 msgstr "Тонови сиве"
 
-#: ../src/OptionsPage.vala:227
+#: src/OptionsPage.vala:227
 msgid "Processed Color"
 msgstr "Обрађена боја"
 
-#: ../src/OptionsPage.vala:230
+#: src/OptionsPage.vala:230
 msgid "Processed Greyscale"
 msgstr "Обрађени тонови сиве"
 
-#: ../src/OptionsPage.vala:239
+#: src/OptionsPage.vala:239
 msgid "Color mode:"
 msgstr "Режим боје:"
 
-#: ../src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "Излазна фиока:"
+#: src/OptionsPage.vala:255
+msgid "Top Bin"
+msgstr ""
 
-#: ../src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Нацрт"
-
-#: ../src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "Обичан"
-
-#: ../src/OptionsPage.vala:334
-msgid "High"
-msgstr "Висок"
-
-#: ../src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Квалитет:"
-
-#: ../src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "Додела папира"
-
-#: ../src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "Наизменична фиока"
-
-#: ../src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr "Наизменична ролна"
-
-#: ../src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "Доле"
-
-#: ../src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr "Заобиђи фиоку"
-
-#: ../src/OptionsPage.vala:374
-msgid "Center"
-msgstr "По средини"
-
-#: ../src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr "Непрекидно самохрањење"
-
-#: ../src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "Диск"
-
-#: ../src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "Коверта"
-
-#: ../src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "Хагаки"
-
-#: ../src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr "Велика запремина"
-
-#: ../src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Лево"
-
-#: ../src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "Главна фиока"
-
-#: ../src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr "Главна ролна"
-
-#: ../src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "Ручно"
-
-#: ../src/OptionsPage.vala:405
-msgid "Middle"
+#: src/OptionsPage.vala:258
+#, fuzzy
+msgid "Middle Bin"
 msgstr "Средина"
 
-#: ../src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "Фотографија"
+#: src/OptionsPage.vala:261
+#, fuzzy
+msgid "Bottom Bin"
+msgstr "Доле"
 
-#: ../src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "Иза"
-
-#: ../src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Десно"
-
-#: ../src/OptionsPage.vala:418
-msgid "Side"
+#: src/OptionsPage.vala:264
+#, fuzzy
+msgid "Side Bin"
 msgstr "Са стране"
 
-#: ../src/OptionsPage.vala:421
-msgid "Top"
-msgstr "Горе"
+#: src/OptionsPage.vala:267
+#, fuzzy
+msgid "Left Bin"
+msgstr "Лево"
 
-#: ../src/OptionsPage.vala:426
-msgid "Roll %d"
-msgstr "Ролна %d"
+#: src/OptionsPage.vala:270
+#, fuzzy
+msgid "Right Bin"
+msgstr "Десно"
 
-#: ../src/OptionsPage.vala:429
+#: src/OptionsPage.vala:273
+#, fuzzy
+msgid "Center Bin"
+msgstr "По средини"
+
+#: src/OptionsPage.vala:276
+#, fuzzy
+msgid "Rear Bin"
+msgstr "Иза"
+
+#: src/OptionsPage.vala:279
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:282
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:285
+#, fuzzy
+msgid "Large Capacity Bin"
+msgstr "Велика запремина"
+
+#: src/OptionsPage.vala:288
+msgid "My Mailbox"
+msgstr ""
+
+#: src/OptionsPage.vala:293
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/OptionsPage.vala:296
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
+#, c-format
 msgid "Tray %d"
 msgstr "Фиока %d"
 
-#: ../src/OptionsPage.vala:442
+#: src/OptionsPage.vala:312
+msgid "Output Tray:"
+msgstr "Излазна фиока:"
+
+#: src/OptionsPage.vala:328
+msgid "Draft"
+msgstr "Нацрт"
+
+#: src/OptionsPage.vala:331
+msgid "Normal"
+msgstr "Обичан"
+
+#: src/OptionsPage.vala:334
+msgid "High"
+msgstr "Висок"
+
+#: src/OptionsPage.vala:340
+msgid "Quality:"
+msgstr "Квалитет:"
+
+#: src/OptionsPage.vala:356
+msgid "Paper Allocation"
+msgstr "Додела папира"
+
+#: src/OptionsPage.vala:359
+msgid "Alternate Tray"
+msgstr "Наизменична фиока"
+
+#: src/OptionsPage.vala:362
+msgid "Alternate Roll"
+msgstr "Наизменична ролна"
+
+#: src/OptionsPage.vala:368
+msgid "Bottom"
+msgstr "Доле"
+
+#: src/OptionsPage.vala:371
+msgid "By-pass Tray"
+msgstr "Заобиђи фиоку"
+
+#: src/OptionsPage.vala:374
+msgid "Center"
+msgstr "По средини"
+
+#: src/OptionsPage.vala:377
+msgid "Continuous Autofeed"
+msgstr "Непрекидно самохрањење"
+
+#: src/OptionsPage.vala:381
+msgid "Disk"
+msgstr "Диск"
+
+#: src/OptionsPage.vala:384
+msgid "Envelope"
+msgstr "Коверта"
+
+#: src/OptionsPage.vala:387
+msgid "Hagaki"
+msgstr "Хагаки"
+
+#: src/OptionsPage.vala:390
+msgid "Large Capacity"
+msgstr "Велика запремина"
+
+#: src/OptionsPage.vala:393
+msgid "Left"
+msgstr "Лево"
+
+#: src/OptionsPage.vala:396
+msgid "Main Tray"
+msgstr "Главна фиока"
+
+#: src/OptionsPage.vala:399
+msgid "Main Roll"
+msgstr "Главна ролна"
+
+#: src/OptionsPage.vala:402
+msgid "Manual"
+msgstr "Ручно"
+
+#: src/OptionsPage.vala:405
+msgid "Middle"
+msgstr "Средина"
+
+#: src/OptionsPage.vala:408
+msgid "Photo"
+msgstr "Фотографија"
+
+#: src/OptionsPage.vala:412
+msgid "Rear"
+msgstr "Иза"
+
+#: src/OptionsPage.vala:415
+msgid "Right"
+msgstr "Десно"
+
+#: src/OptionsPage.vala:418
+msgid "Side"
+msgstr "Са стране"
+
+#: src/OptionsPage.vala:421
+msgid "Top"
+msgstr "Горе"
+
+#: src/OptionsPage.vala:426
+#, c-format
+msgid "Roll %d"
+msgstr "Ролна %d"
+
+#: src/OptionsPage.vala:442
 msgid "Paper Source:"
 msgstr "Извор папира:"
 
-#: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Уреди"
-
-#: ../src/JobsView.vala:79 ../src/JobsView.vala:233
+#: src/JobsView.vala:56 src/JobsView.vala:194
 msgid "Show completed jobs"
 msgstr "Прикажи завршене послове"
 
-#: ../src/JobsView.vala:89
+#: src/JobsView.vala:66
 msgid "No jobs"
 msgstr "Нема послова"
 
-#: ../src/JobsView.vala:89
+#: src/JobsView.vala:66
 msgid "There are no jobs on the queue"
 msgstr "Нема послова у реду"
 
-#: ../src/JobsView.vala:218
+#: src/JobsView.vala:179
 msgid "Hide completed jobs"
 msgstr "Сакриј завршене послове"
+
+#: src/InkLevel.vala:98
+msgid "Black (PGBK)"
+msgstr "Црна (ПГБК)"
+
+#: src/InkLevel.vala:101
+msgid "Black (BK)"
+msgstr "Црна (БК)"
+
+#: src/InkLevel.vala:104
+msgid "Black"
+msgstr "Црна"
+
+#: src/InkLevel.vala:107
+msgid "Yellow"
+msgstr "Жута"
+
+#: src/InkLevel.vala:110
+msgid "Cyan"
+msgstr "Плавичаста"
+
+#: src/InkLevel.vala:113
+msgid "Magenta"
+msgstr "Ружичаста"
+
+#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Уреди"
+
+#: src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Интернет протокол штампања (https)"
+
+#: src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Интернет протокол штампања (http)"
+
+#: src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Интернет протокол штампања (ipp)"
+
+#: src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Интернет протокол штампања (ipps)"
+
+#: src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Интернет протокол штампања (ipp14)"
+
+#: src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "ЛПД/ЛПР домаћин или штампач"
+
+#: src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "Не могу да испишем све доступне штампаче"
+
+#: src/AddPopover.vala:176
+msgid "Refresh"
+msgstr "Освежи"
+
+#: src/AddPopover.vala:180
+msgid "Refresh the printer list"
+msgstr "Освежите списак штампача"
+
+#: src/AddPopover.vala:183
+msgid "Next"
+msgstr "Следеће"
+
+#: src/AddPopover.vala:229
+msgid "Connection:"
+msgstr "Веза:"
+
+#: src/AddPopover.vala:237
+msgid "Description:"
+msgstr "Опис:"
+
+#: src/AddPopover.vala:242
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: src/AddPopover.vala:252
+msgid "Lab 1 or John's desk"
+msgstr "Лаб 1 или Перин сто"
+
+#: src/AddPopover.vala:316
+msgid "Previous"
+msgstr "Претходно"
+
+#: src/AddPopover.vala:319
+msgid "Select an other printer or protocol"
+msgstr "Изаберите неки други штампач или протокол"
+
+#: src/AddPopover.vala:321
+msgid "Add"
+msgstr "Додај"
+
+#: src/AddPopover.vala:325
+msgid "Add the configured printer"
+msgstr "Додајте подешени штампач"
+
+#: src/AddPopover.vala:546
+msgid "(recommended)"
+msgstr "(препоручено)"
+
+#: src/AddPopover.vala:608
+msgid "Serial"
+msgstr "Серијски"
+
+#: src/AddPopover.vala:611
+msgid "Local Printers"
+msgstr "Локални штампачи"
+
+#: src/AddPopover.vala:614
+msgid "Network Printers"
+msgstr "Мрежни штампачи"
+
+#: src/AddPopover.vala:617
+msgid "Available Network Printers"
+msgstr "Доступни мрежни штампачи"
+
+#: src/Objects/Printer.vala:45
+msgctxt "printer state"
+msgid "Low on toner"
+msgstr "Понестаје тонера"
+
+#: src/Objects/Printer.vala:47
+msgctxt "printer state"
+msgid "Out of toner"
+msgstr "Нема више тонера"
+
+#: src/Objects/Printer.vala:49
+msgctxt "printer state"
+msgid "Low on developer"
+msgstr "Понестаје развијача"
+
+#: src/Objects/Printer.vala:51
+msgctxt "printer state"
+msgid "Out of developer"
+msgstr "Нема више развијача"
+
+#: src/Objects/Printer.vala:53
+msgctxt "printer state"
+msgid "Low on a marker supply"
+msgstr "Понестаје маркера"
+
+#: src/Objects/Printer.vala:55
+msgctxt "printer state"
+msgid "Out of a marker supply"
+msgstr "Нема више маркера"
+
+#: src/Objects/Printer.vala:57
+msgctxt "printer state"
+msgid "Open cover"
+msgstr "Подигнут поклопац"
+
+#: src/Objects/Printer.vala:59
+msgctxt "printer state"
+msgid "Open door"
+msgstr "Отворена вратанца"
+
+#: src/Objects/Printer.vala:61
+msgctxt "printer state"
+msgid "Low on paper"
+msgstr "Понестаје папира"
+
+#: src/Objects/Printer.vala:63
+msgctxt "printer state"
+msgid "Out of paper"
+msgstr "Нема више папира"
+
+#: src/Objects/Printer.vala:65
+msgctxt "printer state"
+msgid "Offline"
+msgstr "Искључен"
+
+#: src/Objects/Printer.vala:67
+msgctxt "printer state"
+msgid "Stopped"
+msgstr "Заустављен"
+
+#: src/Objects/Printer.vala:69
+msgctxt "printer state"
+msgid "Waste receptacle almost full"
+msgstr "Посуда за отпад је скоро пуна"
+
+#: src/Objects/Printer.vala:71
+msgctxt "printer state"
+msgid "Waste receptacle full"
+msgstr "Посуда за отпад је пуна"
+
+#: src/Objects/Printer.vala:73
+msgctxt "printer state"
+msgid "The optical photo conductor is near end of life"
+msgstr "Оптички проводник фотографија је при крају живота"
+
+#: src/Objects/Printer.vala:75
+msgctxt "printer state"
+msgid "The optical photo conductor is no longer functioning"
+msgstr "Оптички проводник фотографија више не функционише"
+
+#: src/Objects/Printer.vala:271
+msgid "Ready"
+msgstr "Спреман"
+
+#: src/Objects/Job.vala:101
+msgid "Job Pending"
+msgstr "На чекању"
+
+#: src/Objects/Job.vala:103
+#, fuzzy
+msgid "On Hold"
+msgstr "Задржан"
+
+#: src/Objects/Job.vala:105
+msgid "Processing…"
+msgstr "Обрађујем…"
+
+#: src/Objects/Job.vala:107
+msgid "Job Stopped"
+msgstr "Заустављен"
+
+#: src/Objects/Job.vala:109
+msgid "Job Canceled"
+msgstr "Отказан"
+
+#: src/Objects/Job.vala:111
+#, fuzzy
+msgid "Job Aborted"
+msgstr "Прекинут"
+
+#: src/Objects/Job.vala:114
+msgid "Job Completed"
+msgstr "Завршен"

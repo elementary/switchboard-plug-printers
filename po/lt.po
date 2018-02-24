@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-21 23:38+0200\n"
-"PO-Revision-Date: 2017-09-30 20:19+0000\n"
+"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"PO-Revision-Date: 2018-02-24 00:04+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/lt/>\n"
@@ -13,42 +13,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
 "n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
-"X-Generator: Weblate 2.16\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: ../src/InkLevel.vala:90
-msgid "Black (PGBK)"
-msgstr "Juoda (PGBK)"
+#: src/PrinterPage.vala:36
+msgid "General"
+msgstr "Bendra"
 
-#: ../src/InkLevel.vala:93
-msgid "Black (BK)"
-msgstr "Juoda (BK)"
+#: src/PrinterPage.vala:37
+msgid "Options"
+msgstr "Parinktys"
 
-#: ../src/InkLevel.vala:96
-msgid "Black"
-msgstr "Juoda"
+#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+msgid "Location:"
+msgstr "Vieta:"
 
-#: ../src/InkLevel.vala:99
-msgid "Yellow"
-msgstr "Geltona"
+#: src/PrinterPage.vala:97
+msgid "Lab 1 or John's Desk"
+msgstr "1 kabinetas ar Jono stalas"
 
-#: ../src/InkLevel.vala:102
-msgid "Cyan"
-msgstr "Žydra"
+#: src/PrinterPage.vala:104
+msgid "Use as Default Printer"
+msgstr "Naudoti kaip numatytąjį spausdintuvą"
 
-#: ../src/InkLevel.vala:105
-msgid "Magenta"
-msgstr "Purpurinė"
+#: src/PrinterPage.vala:114
+msgid "Print Test Page"
+msgstr "Spausdinti bandomąjį puslapį"
 
-#: ../src/PrinterList.vala:49
+#: src/PrinterPage.vala:176
+msgid "Test page"
+msgstr "Bandomasis puslapis"
+
+#: src/PrinterList.vala:49
 msgid "Add Printer…"
 msgstr "Pridėti spausdintuvą…"
 
-#: ../src/PrinterList.vala:51
+#: src/PrinterList.vala:51
 msgid "Remove Printer"
 msgstr "Šalinti spausdintuvą"
 
-#: ../src/PrinterList.vala:85
+#: src/PrinterList.vala:85
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
@@ -56,475 +61,540 @@ msgstr ""
 "Pašalinę \"%s\", jūs prarasite visą spausdinimo istoriją\n"
 "ir su šiuo spausdintuvu susietą konfigūraciją."
 
-#: ../src/PrinterList.vala:90
+#: src/PrinterList.vala:90
 msgid "Remove"
 msgstr "Šalinti"
 
-#. / Tranlators: This is a protocol name, please keep the (https).
-#: ../src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Interneto spausdinimo protokolas (https)"
-
-#. / Tranlators: This is a protocol name, please keep the (http).
-#: ../src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Interneto spausdinimo protokolas (http)"
-
-#. / Tranlators: This is a protocol name, please keep the (ipp).
-#: ../src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Interneto spausdinimo protokolas (ipp)"
-
-#. / Tranlators: This is a protocol name, please keep the (ipps).
-#: ../src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Interneto spausdinimo protokolas (ipps)"
-
-#. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: ../src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Interneto spausdinimo protokolas (ipp14)"
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR serveris ar spausdintuvas"
-
-#. / Tranlators: This is a protocol name.
-#: ../src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: ../src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Neįmanoma išvardyti visų prieinamų spausdintuvų"
-
-#: ../src/AddPopover.vala:176
-msgid "Refresh"
-msgstr "Įkelti iš naujo"
-
-#: ../src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr "Iš naujo įkelti spausdintuvų sąrašą"
-
-#: ../src/AddPopover.vala:183
-msgid "Next"
-msgstr "Kitas"
-
-#: ../src/AddPopover.vala:229
-msgid "Connection:"
-msgstr "Ryšys:"
-
-#: ../src/AddPopover.vala:237
-msgid "Description:"
-msgstr "Aprašas:"
-
-#: ../src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr "SpausdintuvoPavadinimas X3000"
-
-#: ../src/AddPopover.vala:246 ../src/PrinterPage.vala:92
-msgid "Location:"
-msgstr "Vieta:"
-
-#: ../src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr "1 kabinetas ar Jono stalas"
-
-#: ../src/AddPopover.vala:316
-msgid "Previous"
-msgstr "Ankstesnis"
-
-#: ../src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr "Pasirinkti kitą spausdintuvą ar protokolą"
-
-#: ../src/AddPopover.vala:321
-msgid "Add"
-msgstr "Pridėti"
-
-#: ../src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr "Pridėti sukonfigūruotą spausdintuvą"
-
-#: ../src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr "(rekomenduojama)"
-
-#: ../src/AddPopover.vala:608
-msgid "Serial"
-msgstr "Serijinis"
-
-#: ../src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr "Vietiniai spausdintuvai"
-
-#: ../src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr "Tinklo spausdintuvai"
-
-#: ../src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr "Prieinami tinklo spausdintuvai"
-
-#. / Translators: The printer is low on toner
-#: ../src/Objects/Printer.vala:45
-msgctxt "printer state"
-msgid "Low on toner"
-msgstr "Baigiasi dažai"
-
-#. / Translators: The printer has no toner left
-#: ../src/Objects/Printer.vala:47
-msgctxt "printer state"
-msgid "Out of toner"
-msgstr "Nėra dažų"
-
-#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:49
-msgctxt "printer state"
-msgid "Low on developer"
-msgstr "Baigiasi ryškalas"
-
-#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/Objects/Printer.vala:51
-msgctxt "printer state"
-msgid "Out of developer"
-msgstr "Nėra ryškalo"
-
-#. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:53
-msgctxt "printer state"
-msgid "Low on a marker supply"
-msgstr "Baigiasi spalvos tiekimas"
-
-#. / Translators: "marker" is one color bin of the printer
-#: ../src/Objects/Printer.vala:55
-msgctxt "printer state"
-msgid "Out of a marker supply"
-msgstr "Nėra spalvos tiekimo"
-
-#. / Translators: One or more covers on the printer are open
-#: ../src/Objects/Printer.vala:57
-msgctxt "printer state"
-msgid "Open cover"
-msgstr "Atidarytas dangtis"
-
-#. / Translators: One or more doors on the printer are open
-#: ../src/Objects/Printer.vala:59
-msgctxt "printer state"
-msgid "Open door"
-msgstr "Atvertos durelės"
-
-#. / Translators: At least one input tray is low on media
-#: ../src/Objects/Printer.vala:61
-msgctxt "printer state"
-msgid "Low on paper"
-msgstr "Baigiasi popierius"
-
-#. / Translators: At least one input tray is empty
-#: ../src/Objects/Printer.vala:63
-msgctxt "printer state"
-msgid "Out of paper"
-msgstr "Nėra popieriaus"
-
-#. / Translators: The printer is offline
-#: ../src/Objects/Printer.vala:65
-msgctxt "printer state"
-msgid "Offline"
-msgstr "Išsijungęs"
-
-#. / Translators: Someone has stopped the Printer
-#: ../src/Objects/Printer.vala:67
-msgctxt "printer state"
-msgid "Stopped"
-msgstr "Sustabdytas"
-
-#. / Translators: The printer marker supply waste receptacle is almost full
-#: ../src/Objects/Printer.vala:69
-msgctxt "printer state"
-msgid "Waste receptacle almost full"
-msgstr "Atliekų talpykla yra beveik pilna"
-
-#. / Translators: The printer marker supply waste receptacle is full
-#: ../src/Objects/Printer.vala:71
-msgctxt "printer state"
-msgid "Waste receptacle full"
-msgstr "Atliekų talpykla yra pilna"
-
-#. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:73
-msgctxt "printer state"
-msgid "The optical photo conductor is near end of life"
-msgstr "Optinio fotolaidininko tarnavimo laikas beveik baigėsi"
-
-#. / Translators: Optical photo conductors are used in laser printers
-#: ../src/Objects/Printer.vala:75
-msgctxt "printer state"
-msgid "The optical photo conductor is no longer functioning"
-msgstr "Optinis fotolaidininkas daugiau nebeveikia"
-
-#: ../src/Objects/Printer.vala:271
-msgid "Ready"
-msgstr "Pasiruošęs"
-
-#: ../src/Objects/Job.vala:95
-msgid "Job Pending"
-msgstr "Darbas laukia"
-
-#: ../src/Objects/Job.vala:97
-msgid "On Held"
-msgstr "Sulaikytas"
-
-#: ../src/Objects/Job.vala:99
-msgid "Processing…"
-msgstr "Vykdoma…"
-
-#: ../src/Objects/Job.vala:101
-msgid "Job Stopped"
-msgstr "Darbas sustabdytas"
-
-#: ../src/Objects/Job.vala:103
-msgid "Job Canceled"
-msgstr "Darbas atšauktas"
-
-#: ../src/Objects/Job.vala:105
-msgid "Job Aborded"
-msgstr "Darbas nutrauktas"
-
-#: ../src/Objects/Job.vala:108
-msgid "Job Completed"
-msgstr "Darbas užbaigtas"
-
-#: ../src/PrinterPage.vala:36
-msgid "General"
-msgstr "Bendra"
-
-#: ../src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Parinktys"
-
-#: ../src/PrinterPage.vala:100
-msgid "Lab 1 or John's Desk"
-msgstr "1 kabinetas ar Jono stalas"
-
-#: ../src/PrinterPage.vala:104
-msgid "Use as Default Printer"
-msgstr "Naudoti kaip numatytąjį spausdintuvą"
-
-#: ../src/PrinterPage.vala:114
-msgid "Print Test Page"
-msgstr "Spausdinti bandomąjį puslapį"
-
-#. / TRANSLATORS: Name of the test page job
-#: ../src/PrinterPage.vala:171
-msgid "Test page"
-msgstr "Bandomasis puslapis"
-
-#: ../src/Plug.vala:37
+#: src/Plug.vala:39
 msgid "Printers"
 msgstr "Spausdintuvai"
 
-#: ../src/Plug.vala:38
+#: src/Plug.vala:40
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Konfigūruoti spausdintuvus, tvarkyti spausdinimo eiles, žiūrėti rašalo lygius"
 
-#: ../src/Plug.vala:52
+#: src/Plug.vala:55
 msgid "No Printers"
 msgstr "Nėra spausdintuvų"
 
-#: ../src/Plug.vala:52
+#: src/Plug.vala:55
 msgid "Add a printer to begin printing"
 msgstr "Norėdami pradėti spausdinimą, pridėkite spausdintuvą"
 
-#: ../src/Plug.vala:53
+#: src/Plug.vala:56
 msgid "Add Printer"
 msgstr "Pridėti spausdintuvą"
 
-#: ../src/Plug.vala:53
+#: src/Plug.vala:56
 msgid "Search for the printer you need"
 msgstr "Ieškokite reikiamo spausdintuvo"
 
-#: ../src/OptionsPage.vala:68
+#: src/OptionsPage.vala:68
 msgid "Pages per side:"
 msgstr "Puslapių vienoje pusėje:"
 
-#: ../src/OptionsPage.vala:140
+#: src/OptionsPage.vala:94
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/OptionsPage.vala:96
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/OptionsPage.vala:140
 msgid "Two-sided:"
 msgstr "Abipusis spausdinimas:"
 
-#: ../src/OptionsPage.vala:174
+#: src/OptionsPage.vala:156
+msgid "Portrait"
+msgstr ""
+
+#: src/OptionsPage.vala:159
+msgid "Landscape"
+msgstr ""
+
+#: src/OptionsPage.vala:162
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/OptionsPage.vala:165
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/OptionsPage.vala:174
 msgid "Orientation:"
 msgstr "Padėtis:"
 
-#: ../src/OptionsPage.vala:196
+#: src/OptionsPage.vala:196
 msgid "Media Size:"
 msgstr "Popieriaus dydis:"
 
-#: ../src/OptionsPage.vala:212 ../src/OptionsPage.vala:365
+#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
 msgid "Automatic"
 msgstr "Automatiškai"
 
-#: ../src/OptionsPage.vala:215
+#: src/OptionsPage.vala:215
 msgid "One Color"
 msgstr "Viena spalva"
 
-#: ../src/OptionsPage.vala:218
+#: src/OptionsPage.vala:218
 msgid "Color"
 msgstr "Spalvotai"
 
-#: ../src/OptionsPage.vala:221
+#: src/OptionsPage.vala:221
 msgid "One Color + Black"
 msgstr "Viena spalva + juoda"
 
-#: ../src/OptionsPage.vala:224
+#: src/OptionsPage.vala:224
 msgid "Greyscale"
 msgstr "Pilkumo tonais"
 
-#: ../src/OptionsPage.vala:227
+#: src/OptionsPage.vala:227
 msgid "Processed Color"
 msgstr "Apdorota spalva"
 
-#: ../src/OptionsPage.vala:230
+#: src/OptionsPage.vala:230
 msgid "Processed Greyscale"
 msgstr "Apdoroti pilkumo tonai"
 
-#: ../src/OptionsPage.vala:239
+#: src/OptionsPage.vala:239
 msgid "Color mode:"
 msgstr "Spalvos veiksena:"
 
-#: ../src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "Išvesties dėklas:"
+#: src/OptionsPage.vala:255
+msgid "Top Bin"
+msgstr ""
 
-#: ../src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Juodraštis"
-
-#: ../src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "Normali"
-
-#: ../src/OptionsPage.vala:334
-msgid "High"
-msgstr "Aukšta"
-
-#: ../src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Kokybė:"
-
-#: ../src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "Popieriaus paskirstymas"
-
-#: ../src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "Alternatyvusis dėklas"
-
-#: ../src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr "Alternatyvusis rulonas"
-
-#: ../src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "Apačioje"
-
-#: ../src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr "Apeiti dėklą"
-
-#: ../src/OptionsPage.vala:374
-msgid "Center"
-msgstr "Centras"
-
-#: ../src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr "Nepertraukiamas automatinis padavimas"
-
-#: ../src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "Diskas"
-
-#: ../src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "Vokas"
-
-#: ../src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "Hagaki"
-
-#: ../src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr "Didelės talpos"
-
-#: ../src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Kairė"
-
-#: ../src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "Pagrindinis dėklas"
-
-#: ../src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr "Pagrindinis rulonas"
-
-#: ../src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "Rankinis"
-
-#: ../src/OptionsPage.vala:405
-msgid "Middle"
+#: src/OptionsPage.vala:258
+#, fuzzy
+msgid "Middle Bin"
 msgstr "Viduryje"
 
-#: ../src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "Nuotrauka"
+#: src/OptionsPage.vala:261
+#, fuzzy
+msgid "Bottom Bin"
+msgstr "Apačioje"
 
-#: ../src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "Galinis"
-
-#: ../src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Dešinė"
-
-#: ../src/OptionsPage.vala:418
-msgid "Side"
+#: src/OptionsPage.vala:264
+#, fuzzy
+msgid "Side Bin"
 msgstr "Šoninis"
 
-#: ../src/OptionsPage.vala:421
-msgid "Top"
-msgstr "Viršuje"
+#: src/OptionsPage.vala:267
+#, fuzzy
+msgid "Left Bin"
+msgstr "Kairė"
 
-#: ../src/OptionsPage.vala:426
-msgid "Roll %d"
-msgstr "Rulonas %d"
+#: src/OptionsPage.vala:270
+#, fuzzy
+msgid "Right Bin"
+msgstr "Dešinė"
 
-#: ../src/OptionsPage.vala:429
+#: src/OptionsPage.vala:273
+#, fuzzy
+msgid "Center Bin"
+msgstr "Centras"
+
+#: src/OptionsPage.vala:276
+#, fuzzy
+msgid "Rear Bin"
+msgstr "Galinis"
+
+#: src/OptionsPage.vala:279
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:282
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/OptionsPage.vala:285
+#, fuzzy
+msgid "Large Capacity Bin"
+msgstr "Didelės talpos"
+
+#: src/OptionsPage.vala:288
+msgid "My Mailbox"
+msgstr ""
+
+#: src/OptionsPage.vala:293
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/OptionsPage.vala:296
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
+#, c-format
 msgid "Tray %d"
 msgstr "Dėklas %d"
 
-#: ../src/OptionsPage.vala:442
+#: src/OptionsPage.vala:312
+msgid "Output Tray:"
+msgstr "Išvesties dėklas:"
+
+#: src/OptionsPage.vala:328
+msgid "Draft"
+msgstr "Juodraštis"
+
+#: src/OptionsPage.vala:331
+msgid "Normal"
+msgstr "Normali"
+
+#: src/OptionsPage.vala:334
+msgid "High"
+msgstr "Aukšta"
+
+#: src/OptionsPage.vala:340
+msgid "Quality:"
+msgstr "Kokybė:"
+
+#: src/OptionsPage.vala:356
+msgid "Paper Allocation"
+msgstr "Popieriaus paskirstymas"
+
+#: src/OptionsPage.vala:359
+msgid "Alternate Tray"
+msgstr "Alternatyvusis dėklas"
+
+#: src/OptionsPage.vala:362
+msgid "Alternate Roll"
+msgstr "Alternatyvusis rulonas"
+
+#: src/OptionsPage.vala:368
+msgid "Bottom"
+msgstr "Apačioje"
+
+#: src/OptionsPage.vala:371
+msgid "By-pass Tray"
+msgstr "Apeiti dėklą"
+
+#: src/OptionsPage.vala:374
+msgid "Center"
+msgstr "Centras"
+
+#: src/OptionsPage.vala:377
+msgid "Continuous Autofeed"
+msgstr "Nepertraukiamas automatinis padavimas"
+
+#: src/OptionsPage.vala:381
+msgid "Disk"
+msgstr "Diskas"
+
+#: src/OptionsPage.vala:384
+msgid "Envelope"
+msgstr "Vokas"
+
+#: src/OptionsPage.vala:387
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: src/OptionsPage.vala:390
+msgid "Large Capacity"
+msgstr "Didelės talpos"
+
+#: src/OptionsPage.vala:393
+msgid "Left"
+msgstr "Kairė"
+
+#: src/OptionsPage.vala:396
+msgid "Main Tray"
+msgstr "Pagrindinis dėklas"
+
+#: src/OptionsPage.vala:399
+msgid "Main Roll"
+msgstr "Pagrindinis rulonas"
+
+#: src/OptionsPage.vala:402
+msgid "Manual"
+msgstr "Rankinis"
+
+#: src/OptionsPage.vala:405
+msgid "Middle"
+msgstr "Viduryje"
+
+#: src/OptionsPage.vala:408
+msgid "Photo"
+msgstr "Nuotrauka"
+
+#: src/OptionsPage.vala:412
+msgid "Rear"
+msgstr "Galinis"
+
+#: src/OptionsPage.vala:415
+msgid "Right"
+msgstr "Dešinė"
+
+#: src/OptionsPage.vala:418
+msgid "Side"
+msgstr "Šoninis"
+
+#: src/OptionsPage.vala:421
+msgid "Top"
+msgstr "Viršuje"
+
+#: src/OptionsPage.vala:426
+#, c-format
+msgid "Roll %d"
+msgstr "Rulonas %d"
+
+#: src/OptionsPage.vala:442
 msgid "Paper Source:"
 msgstr "Popieriaus šaltinis:"
 
-#: ../src/EditableTitle.vala:41 ../src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Taisyti"
-
-#: ../src/JobsView.vala:79 ../src/JobsView.vala:233
+#: src/JobsView.vala:56 src/JobsView.vala:194
 msgid "Show completed jobs"
 msgstr "Rodyti užbaigtus darbus"
 
-#: ../src/JobsView.vala:89
+#: src/JobsView.vala:66
 msgid "No jobs"
 msgstr "Darbų nėra"
 
-#: ../src/JobsView.vala:89
+#: src/JobsView.vala:66
 msgid "There are no jobs on the queue"
 msgstr "Eilėje nėra jokių darbų"
 
-#: ../src/JobsView.vala:218
+#: src/JobsView.vala:179
 msgid "Hide completed jobs"
 msgstr "Slėpti užbaigtus darbus"
+
+#: src/InkLevel.vala:98
+msgid "Black (PGBK)"
+msgstr "Juoda (PGBK)"
+
+#: src/InkLevel.vala:101
+msgid "Black (BK)"
+msgstr "Juoda (BK)"
+
+#: src/InkLevel.vala:104
+msgid "Black"
+msgstr "Juoda"
+
+#: src/InkLevel.vala:107
+msgid "Yellow"
+msgstr "Geltona"
+
+#: src/InkLevel.vala:110
+msgid "Cyan"
+msgstr "Žydra"
+
+#: src/InkLevel.vala:113
+msgid "Magenta"
+msgstr "Purpurinė"
+
+#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Taisyti"
+
+#: src/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Interneto spausdinimo protokolas (https)"
+
+#: src/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Interneto spausdinimo protokolas (http)"
+
+#: src/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Interneto spausdinimo protokolas (ipp)"
+
+#: src/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Interneto spausdinimo protokolas (ipps)"
+
+#: src/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Interneto spausdinimo protokolas (ipp14)"
+
+#: src/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR serveris ar spausdintuvas"
+
+#: src/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "Neįmanoma išvardyti visų prieinamų spausdintuvų"
+
+#: src/AddPopover.vala:176
+msgid "Refresh"
+msgstr "Įkelti iš naujo"
+
+#: src/AddPopover.vala:180
+msgid "Refresh the printer list"
+msgstr "Iš naujo įkelti spausdintuvų sąrašą"
+
+#: src/AddPopover.vala:183
+msgid "Next"
+msgstr "Kitas"
+
+#: src/AddPopover.vala:229
+msgid "Connection:"
+msgstr "Ryšys:"
+
+#: src/AddPopover.vala:237
+msgid "Description:"
+msgstr "Aprašas:"
+
+#: src/AddPopover.vala:242
+msgid "BrandPrinter X3000"
+msgstr "SpausdintuvoPavadinimas X3000"
+
+#: src/AddPopover.vala:252
+msgid "Lab 1 or John's desk"
+msgstr "1 kabinetas ar Jono stalas"
+
+#: src/AddPopover.vala:316
+msgid "Previous"
+msgstr "Ankstesnis"
+
+#: src/AddPopover.vala:319
+msgid "Select an other printer or protocol"
+msgstr "Pasirinkti kitą spausdintuvą ar protokolą"
+
+#: src/AddPopover.vala:321
+msgid "Add"
+msgstr "Pridėti"
+
+#: src/AddPopover.vala:325
+msgid "Add the configured printer"
+msgstr "Pridėti sukonfigūruotą spausdintuvą"
+
+#: src/AddPopover.vala:546
+msgid "(recommended)"
+msgstr "(rekomenduojama)"
+
+#: src/AddPopover.vala:608
+msgid "Serial"
+msgstr "Serijinis"
+
+#: src/AddPopover.vala:611
+msgid "Local Printers"
+msgstr "Vietiniai spausdintuvai"
+
+#: src/AddPopover.vala:614
+msgid "Network Printers"
+msgstr "Tinklo spausdintuvai"
+
+#: src/AddPopover.vala:617
+msgid "Available Network Printers"
+msgstr "Prieinami tinklo spausdintuvai"
+
+#: src/Objects/Printer.vala:45
+msgctxt "printer state"
+msgid "Low on toner"
+msgstr "Baigiasi dažai"
+
+#: src/Objects/Printer.vala:47
+msgctxt "printer state"
+msgid "Out of toner"
+msgstr "Nėra dažų"
+
+#: src/Objects/Printer.vala:49
+msgctxt "printer state"
+msgid "Low on developer"
+msgstr "Baigiasi ryškalas"
+
+#: src/Objects/Printer.vala:51
+msgctxt "printer state"
+msgid "Out of developer"
+msgstr "Nėra ryškalo"
+
+#: src/Objects/Printer.vala:53
+msgctxt "printer state"
+msgid "Low on a marker supply"
+msgstr "Baigiasi spalvos tiekimas"
+
+#: src/Objects/Printer.vala:55
+msgctxt "printer state"
+msgid "Out of a marker supply"
+msgstr "Nėra spalvos tiekimo"
+
+#: src/Objects/Printer.vala:57
+msgctxt "printer state"
+msgid "Open cover"
+msgstr "Atidarytas dangtis"
+
+#: src/Objects/Printer.vala:59
+msgctxt "printer state"
+msgid "Open door"
+msgstr "Atvertos durelės"
+
+#: src/Objects/Printer.vala:61
+msgctxt "printer state"
+msgid "Low on paper"
+msgstr "Baigiasi popierius"
+
+#: src/Objects/Printer.vala:63
+msgctxt "printer state"
+msgid "Out of paper"
+msgstr "Nėra popieriaus"
+
+#: src/Objects/Printer.vala:65
+msgctxt "printer state"
+msgid "Offline"
+msgstr "Išsijungęs"
+
+#: src/Objects/Printer.vala:67
+msgctxt "printer state"
+msgid "Stopped"
+msgstr "Sustabdytas"
+
+#: src/Objects/Printer.vala:69
+msgctxt "printer state"
+msgid "Waste receptacle almost full"
+msgstr "Atliekų talpykla yra beveik pilna"
+
+#: src/Objects/Printer.vala:71
+msgctxt "printer state"
+msgid "Waste receptacle full"
+msgstr "Atliekų talpykla yra pilna"
+
+#: src/Objects/Printer.vala:73
+msgctxt "printer state"
+msgid "The optical photo conductor is near end of life"
+msgstr "Optinio fotolaidininko tarnavimo laikas beveik baigėsi"
+
+#: src/Objects/Printer.vala:75
+msgctxt "printer state"
+msgid "The optical photo conductor is no longer functioning"
+msgstr "Optinis fotolaidininkas daugiau nebeveikia"
+
+#: src/Objects/Printer.vala:271
+msgid "Ready"
+msgstr "Pasiruošęs"
+
+#: src/Objects/Job.vala:101
+msgid "Job Pending"
+msgstr "Darbas laukia"
+
+#: src/Objects/Job.vala:103
+#, fuzzy
+msgid "On Hold"
+msgstr "Sulaikytas"
+
+#: src/Objects/Job.vala:105
+msgid "Processing…"
+msgstr "Vykdoma…"
+
+#: src/Objects/Job.vala:107
+msgid "Job Stopped"
+msgstr "Darbas sustabdytas"
+
+#: src/Objects/Job.vala:109
+msgid "Job Canceled"
+msgstr "Darbo atsisakyta"
+
+#: src/Objects/Job.vala:111
+msgid "Job Aborted"
+msgstr "Darbas nutrauktas"
+
+#: src/Objects/Job.vala:114
+msgid "Job Completed"
+msgstr "Darbas užbaigtas"
