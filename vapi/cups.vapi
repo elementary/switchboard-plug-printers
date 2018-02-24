@@ -90,7 +90,7 @@ namespace CUPS {
 	public unowned string localize_destination_value (CUPS.HTTP.HTTP http, CUPS.Destination dest, CUPS.DestinationInformation info, string option, string value);
 
 	[CCode (cname = "cupsGetOption")]
-	public unowned string get_option (string name, [CCode (array_length_pos = 1.1)] Option[] options);
+	public unowned string? get_option (string name, [CCode (array_length_pos = 1.1)] Option[] options);
 	[CCode (cname = "cupsAddOption")]
 	public int add_option (string name, string value, int num_options, [CCode (array_length = false)] ref Option[] options);
 	[CCode (cname = "cupsLastError")]
