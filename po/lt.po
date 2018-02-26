@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-21 17:03-0800\n"
-"PO-Revision-Date: 2018-02-24 00:04+0000\n"
+"PO-Revision-Date: 2018-02-26 21:37+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/lt/>\n"
@@ -30,7 +30,7 @@ msgstr "Vieta:"
 
 #: src/PrinterPage.vala:97
 msgid "Lab 1 or John's Desk"
-msgstr "1 kabinetas ar Jono stalas"
+msgstr "1 kabinetas arba Jono stalas"
 
 #: src/PrinterPage.vala:104
 msgid "Use as Default Printer"
@@ -96,11 +96,11 @@ msgstr "Puslapių vienoje pusėje:"
 
 #: src/OptionsPage.vala:94
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Ilgasis kraštas (Standartinis)"
 
 #: src/OptionsPage.vala:96
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Trumpasis kraštas (Apverstas)"
 
 #: src/OptionsPage.vala:140
 msgid "Two-sided:"
@@ -108,19 +108,19 @@ msgstr "Abipusis spausdinimas:"
 
 #: src/OptionsPage.vala:156
 msgid "Portrait"
-msgstr ""
+msgstr "Stačias"
 
 #: src/OptionsPage.vala:159
 msgid "Landscape"
-msgstr ""
+msgstr "Gulsčias"
 
 #: src/OptionsPage.vala:162
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Atvirkštinis stačias"
 
 #: src/OptionsPage.vala:165
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Atvirkštinis gulsčias"
 
 #: src/OptionsPage.vala:174
 msgid "Orientation:"
@@ -164,69 +164,61 @@ msgstr "Spalvos veiksena:"
 
 #: src/OptionsPage.vala:255
 msgid "Top Bin"
-msgstr ""
+msgstr "Viršutinis dėklas"
 
 #: src/OptionsPage.vala:258
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Viduryje"
+msgstr "Vidurinysis dėklas"
 
 #: src/OptionsPage.vala:261
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Apačioje"
+msgstr "Apatinis dėklas"
 
 #: src/OptionsPage.vala:264
-#, fuzzy
 msgid "Side Bin"
-msgstr "Šoninis"
+msgstr "Šoninis dėklas"
 
 #: src/OptionsPage.vala:267
-#, fuzzy
 msgid "Left Bin"
-msgstr "Kairė"
+msgstr "Kairysis dėklas"
 
 #: src/OptionsPage.vala:270
-#, fuzzy
 msgid "Right Bin"
-msgstr "Dešinė"
+msgstr "Dešinysis dėklas"
 
 #: src/OptionsPage.vala:273
-#, fuzzy
 msgid "Center Bin"
-msgstr "Centras"
+msgstr "Centrinis dėklas"
 
 #: src/OptionsPage.vala:276
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Galinis"
+msgstr "Galinis dėklas"
 
 #: src/OptionsPage.vala:279
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Priekinės pusės dėklas"
 
 #: src/OptionsPage.vala:282
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Galinės pusės dėklas"
 
 #: src/OptionsPage.vala:285
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Didelės talpos"
+msgstr "Didelės talpos dėklas"
 
 #: src/OptionsPage.vala:288
 msgid "My Mailbox"
-msgstr ""
+msgstr "Mano pašto dėžutė"
 
 #: src/OptionsPage.vala:293
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Dėtuvė %d"
 
 #: src/OptionsPage.vala:296
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Pašto dėžutė %d"
 
 #: src/OptionsPage.vala:299 src/OptionsPage.vala:429
 #, c-format
@@ -575,7 +567,6 @@ msgid "Job Pending"
 msgstr "Darbas laukia"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "Sulaikytas"
 
