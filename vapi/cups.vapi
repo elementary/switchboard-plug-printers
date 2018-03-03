@@ -38,7 +38,7 @@ namespace CUPS {
 	public const int DATE_ANY;
 
 	[CCode (cname = "cups_ptype_t", cprefix = "CUPS_PRINTER_")]
-	public enum PriterType {
+	public enum PrinterType {
 		LOCAL,
 		CLASS,
 		REMOTE,
@@ -75,7 +75,7 @@ namespace CUPS {
 
 	[Compact, CCode (cname = "cups_dinfo_t", free_function = "cupsFreeDestInfo")]
 	public class DestinationInformation {
-		
+
 	}
 
 	[CCode (cname = "cupsFindDestDefault")]

@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-21 17:03-0800\n"
-"PO-Revision-Date: 2017-03-18 14:01+0000\n"
-"Last-Translator: Jiri Grönroos <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-02-25 00:09+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/fi/>\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
-"X-Generator: Launchpad (build 18332)\n"
 
 #: src/PrinterPage.vala:36
 msgid "General"
@@ -585,9 +587,8 @@ msgid "Job Canceled"
 msgstr "Työ peruttu"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "Työ valmistui"
+msgstr "Työ lopetettu"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
