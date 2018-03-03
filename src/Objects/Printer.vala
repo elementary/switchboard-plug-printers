@@ -176,7 +176,12 @@ public class Printers.Printer : GLib.Object {
      */
     public bool is_accepting_jobs {
         get {
-            return bool.parse (CUPS.get_option ("printer-is-accepting-jobs", dest.options));
+            unowned string? cups_result = CUPS.get_option ("printer-is-accepting-jobs", dest.options);
+            if (cups_result == null) {
+                return false;
+            }
+
+            return bool.parse (cups_result);
         }
         set {
             try {
@@ -193,7 +198,12 @@ public class Printers.Printer : GLib.Object {
      */
     public bool is_shared {
         get {
-            return bool.parse (CUPS.get_option ("printer-is-shared", dest.options));
+            unowned string? cups_result = CUPS.get_option ("printer-is-shared", dest.options);
+            if (cups_result == null) {
+                return false;
+            }
+
+            return bool.parse (cups_result);
         }
         set {
             try {
@@ -208,7 +218,7 @@ public class Printers.Printer : GLib.Object {
     /**
      * The human-readable location of the destination such as "Lab 4".
      */
-    public string location {
+    public string? location {
         get {
             return CUPS.get_option ("printer-location", dest.options);
         }
@@ -225,7 +235,7 @@ public class Printers.Printer : GLib.Object {
     /**
      * The human-readable make and model of the destination such as "HP LaserJet 4000 Series".
      */
-    public string make_and_model {
+    public string? make_and_model {
         get {
             return CUPS.get_option ("printer-make-and-model", dest.options);
         }
@@ -234,7 +244,7 @@ public class Printers.Printer : GLib.Object {
     /**
      * "3" if the destination is idle, "4" if the destination is printing a job, and "5" if the destination is stopped.
      */
-    public string state {
+    public string? state {
         get {
             return CUPS.get_option ("printer-state", dest.options);
         }
@@ -243,7 +253,7 @@ public class Printers.Printer : GLib.Object {
     /**
      * The UNIX time when the destination entered the current state.
      */
-    public string state_change_time {
+    public string? state_change_time {
         get {
             return CUPS.get_option ("printer-state-change-time", dest.options);
         }
@@ -260,15 +270,17 @@ public class Printers.Printer : GLib.Object {
 
     public string state_reasons_localized {
         get {
-            unowned string reason = state_reasons;
-            for (int i = 0; i < reasons.length; i++) {
-                if (reasons[i] in reason) {
-                    return dpgettext2 (Build.GETTEXT_PACKAGE, statuses[i], "printer state");
-                }
+            unowned string? reason = state_reasons;
+            if (reason == null || reason == "none") {
+                return _("Ready");
             }
 
-            if (reason == "none") {
-                return _("Ready");
+            warning ("%s", reason);
+
+            for (int i = 0; i < reasons.length; i++) {
+                if (reasons[i] in reason) {
+                    return dpgettext2 (Build.GETTEXT_PACKAGE, "printer state", statuses[i]);
+                }
             }
 
             return reason;
@@ -278,7 +290,7 @@ public class Printers.Printer : GLib.Object {
     /**
      * The cups_printer_t value associated with the destination.
      */
-    public string printer_type {
+    public string? printer_type {
         get {
             return CUPS.get_option ("printer-type", dest.options);
         }
@@ -294,7 +306,12 @@ public class Printers.Printer : GLib.Object {
     }
 
     public bool is_offline () {
-        return "offline" in state_reasons;
+        var reason = state_reasons;
+        if (reason == null) {
+            return false;
+        }
+
+        return "offline" in reason;
     }
 
     public Gee.TreeSet<Job> get_jobs (bool my_jobs, CUPS.WhichJobs whichjobs) {
