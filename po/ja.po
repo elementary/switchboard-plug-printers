@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-21 17:03-0800\n"
-"PO-Revision-Date: 2018-01-27 00:07+0000\n"
+"PO-Revision-Date: 2018-03-20 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/ja/>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -94,11 +94,11 @@ msgstr "1枚あたりのページ数:"
 
 #: src/OptionsPage.vala:94
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "長辺とじ (標準)"
 
 #: src/OptionsPage.vala:96
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "短辺とじ (フリップ)"
 
 #: src/OptionsPage.vala:140
 msgid "Two-sided:"
@@ -106,19 +106,19 @@ msgstr "両面印刷:"
 
 #: src/OptionsPage.vala:156
 msgid "Portrait"
-msgstr ""
+msgstr "縦方向"
 
 #: src/OptionsPage.vala:159
 msgid "Landscape"
-msgstr ""
+msgstr "横方向"
 
 #: src/OptionsPage.vala:162
 msgid "Reverse portrait"
-msgstr ""
+msgstr "縦方向 (逆向き)"
 
 #: src/OptionsPage.vala:165
 msgid "Reverse landscape"
-msgstr ""
+msgstr "横方向 (逆向き)"
 
 #: src/OptionsPage.vala:174
 msgid "Orientation:"
@@ -150,11 +150,11 @@ msgstr "グレースケール"
 
 #: src/OptionsPage.vala:227
 msgid "Processed Color"
-msgstr ""
+msgstr "カラー"
 
 #: src/OptionsPage.vala:230
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "グレースケール"
 
 #: src/OptionsPage.vala:239
 msgid "Color mode:"
@@ -321,7 +321,7 @@ msgstr "写真"
 
 #: src/OptionsPage.vala:412
 msgid "Rear"
-msgstr "リア"
+msgstr "後面"
 
 #: src/OptionsPage.vala:415
 msgid "Right"
@@ -342,7 +342,7 @@ msgstr "ロール %d"
 
 #: src/OptionsPage.vala:442
 msgid "Paper Source:"
-msgstr "紙のソース："
+msgstr "用紙のソース:"
 
 #: src/JobsView.vala:56 src/JobsView.vala:194
 msgid "Show completed jobs"
@@ -418,7 +418,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/AddPopover.vala:81
 msgid "Impossible to list all available printers"
-msgstr "有効なすべてのプリンターの一覧を作成できません"
+msgstr "利用可能なすべてのプリンターの一覧を作成できません"
 
 #: src/AddPopover.vala:176
 msgid "Refresh"
@@ -573,7 +573,6 @@ msgid "Job Pending"
 msgstr "動作保留"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "保留"
 
@@ -583,17 +582,16 @@ msgstr "動作中…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
-msgstr "動作を停止しました"
+msgstr "ジョブを停止しました"
 
 #: src/Objects/Job.vala:109
 msgid "Job Canceled"
-msgstr "動作をキャンセルしました"
+msgstr "ジョブをキャンセルしました"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "動作を中断しました"
+msgstr "ジョブを中断しました"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
-msgstr "動作を完了しました"
+msgstr "ジョブを完了しました"
