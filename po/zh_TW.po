@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-21 17:03-0800\n"
-"PO-Revision-Date: 2018-02-24 11:45+0000\n"
+"PO-Revision-Date: 2018-02-25 00:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -282,7 +282,7 @@ msgstr "封套"
 
 #: src/OptionsPage.vala:387
 msgid "Hagaki"
-msgstr "Hagaki 卡紙"
+msgstr "日式明信片"
 
 #: src/OptionsPage.vala:390
 msgid "Large Capacity"

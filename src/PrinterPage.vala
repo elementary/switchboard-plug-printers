@@ -183,7 +183,7 @@ public class Printers.PrinterPage : Granite.SettingsPage {
         if (filename != null) {
             var type = int.parse (printer.printer_type);
             string printer_uri, resource;
-            if (CUPS.PriterType.CLASS in type) {
+            if (CUPS.PrinterType.CLASS in type) {
                 printer_uri = "ipp://localhost/classes/%s".printf (printer.dest.name);
                 resource = "/classes/%s".printf (printer.dest.name);
             } else {
