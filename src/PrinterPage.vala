@@ -20,15 +20,38 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.PrinterPage : Gtk.Grid {
-    private Printer printer;
+public class Printers.PrinterPage : Granite.SettingsPage {
+    public Printer printer;
+    private Gtk.Grid grid;
 
     public PrinterPage (Printer printer) {
         this.printer = printer;
-        expand = true;
-        margin = 12;
-        column_spacing = 12;
-        row_spacing = 6;
+        icon_name = "printer";
+        title = printer.info;
+        status = printer.state_reasons_localized;
+        update_status_type ();
+
+        Cups.Notifier.get_default ().printer_state_changed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs) => {
+            if (printer.dest.name == name) {
+                update_status_type ();
+                status = printer.state_reasons_localized;
+            }
+        });
+
+        printer.enabled_changed.connect (update_status_type);
+
+        printer.deleted.connect (() => {
+            destroy ();
+        });
+
+        grid = new Gtk.Grid ();
+        grid.expand = true;
+        grid.margin = 12;
+        grid.column_spacing = 12;
+        grid.row_spacing = 6;
+
+        add (grid);
+
         var stack = new Gtk.Stack ();
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.halign = Gtk.Align.CENTER;
@@ -36,10 +59,9 @@ public class Printers.PrinterPage : Gtk.Grid {
         stack.add_titled (new JobsView (printer), "general", _("General"));
         stack.add_titled (new OptionsPage (printer), "options", _("Options"));
         create_header ();
-        attach (stack_switcher, 0, 1, 3, 1);
-        attach (stack, 0, 2, 3, 1);
+        grid.attach (stack_switcher, 0, 1, 3, 1);
+        grid.attach (stack, 0, 2, 3, 1);
         show_all ();
-
     }
 
     private void create_header () {
@@ -82,9 +104,9 @@ public class Printers.PrinterPage : Gtk.Grid {
             }
         });
 
-        attach (image, 0, 0, 1, 1);
-        attach (editable_title, 1, 0, 1, 1);
-        attach (right_grid, 2, 0, 1, 1);
+        grid.attach (image, 0, 0, 1, 1);
+        grid.attach (editable_title, 1, 0, 1, 1);
+        grid.attach (right_grid, 2, 0, 1, 1);
 
         var location_label = new Gtk.Label (_("Location:"));
         ((Gtk.Misc) location_label).xalign = 1;
@@ -175,6 +197,16 @@ public class Printers.PrinterPage : Gtk.Grid {
             /// TRANSLATORS: Name of the test page job
             request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.NAME, "job-name", null, _("Test page"));
             request.do_file_request (CUPS.HTTP.DEFAULT, resource, filename);
+        }
+    }
+
+    private void update_status_type () {
+        if (printer.is_offline ()) {
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+        } else if (printer.enabled) {
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+        } else {
+            status_type = Granite.SettingsPage.StatusType.WARNING;
         }
     }
 }

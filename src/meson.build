@@ -1,5 +1,4 @@
 plug_files = files(
-    'PrinterRow.vala',
     'PrinterPage.vala',
     'PrinterList.vala',
     'Plug.vala',

@@ -48,7 +48,8 @@ namespace Printers {
                 main_stack = new Gtk.Stack ();
                 var main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
                 var stack = new Gtk.Stack ();
-                var list = new PrinterList ();
+                var list = new PrinterList (stack);
+
                 main_paned.pack1 (list, false, false);
                 main_paned.pack2 (stack, true, false);
 
@@ -73,17 +74,8 @@ namespace Printers {
                 main_stack.show_all ();
                 main_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
 
-                list.new_printer_page.connect ((w) => {
-                    stack.add (w);
-                    if (list.has_printer ()) {
-                        main_stack.set_visible_child (main_paned);
-                    } else {
-                        main_stack.set_visible_child (welcome);
-                    }
-                });
-
-                list.focused_printer_page.connect ((w) => {
-                    stack.set_visible_child (w);
+                list.new_printer_page.connect (() => {
+                    main_stack.set_visible_child (main_paned);
                 });
 
                 unowned CUPS.Destination[] dests = CUPS.get_destinations ();
