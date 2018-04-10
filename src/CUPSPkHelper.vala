@@ -26,7 +26,7 @@ public interface Cups.PkHelper : Object {
     public abstract string file_put (string resource, string filename) throws Error;
     public abstract void server_get_settings (out string error, out GLib.HashTable<string, string> settings) throws Error;
     public abstract string server_set_settings (GLib.HashTable<string, string> settings) throws Error;
-    public abstract void devices_get (int timeout, int limit, string[] include_schemes, string[] exclude_schemes, out string error, out GLib.HashTable<string, string> devices) throws Error;
+    public abstract async void devices_get (int timeout, int limit, string[] include_schemes, string[] exclude_schemes, out string error, out GLib.HashTable<string, string> devices) throws Error;
 
     public abstract string printer_add (string name, string uri, string ppd, string info, string location) throws Error;
     public abstract string printer_add_with_ppd_file (string name, string uri, string ppd, string info, string location) throws Error;

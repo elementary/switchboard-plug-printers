@@ -75,6 +75,14 @@ public class Printers.Printer : GLib.Object {
         NC_("printer state", "The optical photo conductor is no longer functioning")
     };
 
+    public struct ColorLevel {
+        int level;
+        int level_max;
+        int level_min;
+        string color;
+        string name;
+    }
+
     /***********
      * Signals *
      ***********/
@@ -150,7 +158,7 @@ public class Printers.Printer : GLib.Object {
      */
     public string auth_info_required {
         get {
-            return CUPS.get_option ("auth-info-required", dest.options);
+            return CUPS.get_option ("auth-info-required", dest.options) ?? "none";
         }
     }
 
@@ -159,7 +167,7 @@ public class Printers.Printer : GLib.Object {
      */
     public string info {
         get {
-            return CUPS.get_option ("printer-info", dest.options);
+            return CUPS.get_option ("printer-info", dest.options) ?? "";
         }
         set {
             try {
@@ -176,7 +184,12 @@ public class Printers.Printer : GLib.Object {
      */
     public bool is_accepting_jobs {
         get {
-            return bool.parse (CUPS.get_option ("printer-is-accepting-jobs", dest.options));
+            unowned string? cups_result = CUPS.get_option ("printer-is-accepting-jobs", dest.options);
+            if (cups_result == null) {
+                return false;
+            }
+
+            return bool.parse (cups_result);
         }
         set {
             try {
@@ -193,7 +206,12 @@ public class Printers.Printer : GLib.Object {
      */
     public bool is_shared {
         get {
-            return bool.parse (CUPS.get_option ("printer-is-shared", dest.options));
+            unowned string? cups_result = CUPS.get_option ("printer-is-shared", dest.options);
+            if (cups_result == null) {
+                return false;
+            }
+
+            return bool.parse (cups_result);
         }
         set {
             try {
@@ -210,7 +228,7 @@ public class Printers.Printer : GLib.Object {
      */
     public string location {
         get {
-            return CUPS.get_option ("printer-location", dest.options);
+            return CUPS.get_option ("printer-location", dest.options) ?? "";
         }
         set {
             try {
@@ -225,7 +243,7 @@ public class Printers.Printer : GLib.Object {
     /**
      * The human-readable make and model of the destination such as "HP LaserJet 4000 Series".
      */
-    public string make_and_model {
+    public string? make_and_model {
         get {
             return CUPS.get_option ("printer-make-and-model", dest.options);
         }
@@ -234,7 +252,7 @@ public class Printers.Printer : GLib.Object {
     /**
      * "3" if the destination is idle, "4" if the destination is printing a job, and "5" if the destination is stopped.
      */
-    public string state {
+    public string? state {
         get {
             return CUPS.get_option ("printer-state", dest.options);
         }
@@ -243,7 +261,7 @@ public class Printers.Printer : GLib.Object {
     /**
      * The UNIX time when the destination entered the current state.
      */
-    public string state_change_time {
+    public string? state_change_time {
         get {
             return CUPS.get_option ("printer-state-change-time", dest.options);
         }
@@ -252,23 +270,23 @@ public class Printers.Printer : GLib.Object {
     /**
      * Additional comma-delimited state keywords for the destination such as "media-tray-empty-error" and "toner-low-warning".
      */
-    public string state_reasons {
+    private string? state_reasons_raw {
         get {
             return CUPS.get_option ("printer-state-reasons", dest.options);
         }
     }
 
-    public string state_reasons_localized {
+    public string state_reasons {
         get {
-            unowned string reason = state_reasons;
-            for (int i = 0; i < reasons.length; i++) {
-                if (reasons[i] in reason) {
-                    return dpgettext2 (Build.GETTEXT_PACKAGE, statuses[i], "printer state");
-                }
+            unowned string? reason = state_reasons_raw;
+            if (reason == null || reason == "none") {
+                return _("Ready");
             }
 
-            if (reason == "none") {
-                return _("Ready");
+            for (int i = 0; i < reasons.length; i++) {
+                if (reasons[i] in reason) {
+                    return dpgettext2 (Build.GETTEXT_PACKAGE, "printer state", statuses[i]);
+                }
             }
 
             return reason;
@@ -278,7 +296,7 @@ public class Printers.Printer : GLib.Object {
     /**
      * The cups_printer_t value associated with the destination.
      */
-    public string printer_type {
+    public string? printer_type {
         get {
             return CUPS.get_option ("printer-type", dest.options);
         }
@@ -294,7 +312,12 @@ public class Printers.Printer : GLib.Object {
     }
 
     public bool is_offline () {
-        return "offline" in state_reasons;
+        var reason = state_reasons_raw;
+        if (reason == null) {
+            return false;
+        }
+
+        return "offline" in reason;
     }
 
     public Gee.TreeSet<Job> get_jobs (bool my_jobs, CUPS.WhichJobs whichjobs) {
@@ -581,5 +604,96 @@ public class Printers.Printer : GLib.Object {
         } else {
             throw new GLib.IOError.FAILED (status_code.to_string ());
         }
+    }
+
+    public Gee.ArrayList<ColorLevel?> get_color_levels () {
+        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
+        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", dest.name);
+        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
+        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
+
+        const string[] attributes = { "marker-colors",
+                                      "marker-levels",
+                                      "marker-names",
+                                      "marker-high-levels",
+                                      "marker-low-levels" };
+
+        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
+        request.do_request (CUPS.HTTP.DEFAULT);
+
+        var found_colors = new Gee.ArrayList<ColorLevel?> ();
+        var status_code = request.get_status_code ();
+        if (status_code <= CUPS.IPP.Status.OK_CONFLICT) {
+            unowned CUPS.IPP.Attribute attr = request.find_attribute ("marker-colors", CUPS.IPP.Tag.ZERO);
+            for (int i = 0; i < attr.get_count (); i++) {
+                var color = ColorLevel ();
+                color.color = attr.get_string (i);
+                found_colors.add (color);
+            }
+
+            var color_size = found_colors.size;
+
+            attr = request.find_attribute ("marker-levels", CUPS.IPP.Tag.ZERO);
+            int bound = int.min (attr.get_count (), color_size);
+            for (int i = 0; i < bound; i++) {
+                found_colors[i].level = attr.get_integer (i);
+            }
+
+            attr = request.find_attribute ("marker-high-levels", CUPS.IPP.Tag.ZERO);
+            bound = int.min (attr.get_count (), color_size);
+            for (int i = 0; i < bound; i++) {
+                found_colors[i].level_max = attr.get_integer (i);
+            }
+
+            attr = request.find_attribute ("marker-low-levels", CUPS.IPP.Tag.ZERO);
+            bound = int.min (attr.get_count (), color_size);
+            for (int i = 0; i < bound; i++) {
+                found_colors[i].level_min = attr.get_integer (i);
+            }
+
+            attr = request.find_attribute ("marker-names", CUPS.IPP.Tag.ZERO);
+            bound = int.min (attr.get_count (), color_size);
+            for (int i = 0; i < bound; i++) {
+                found_colors[i].name = attr.get_string (i);
+            }
+        } else {
+            critical ("Error: %s", status_code.to_string ());
+        }
+
+        found_colors.sort ((a, b) => {
+            Gdk.RGBA col_a = {}, col_b = {};
+            col_a.parse (a.color);
+            col_b.parse (b.color);
+
+            if (col_a.green > 0.8 && col_a.blue > 0.8 && col_a.red < 0.3)
+                return -1;
+
+            if (col_b.green > 0.8 && col_b.blue > 0.8 && col_b.red < 0.3)
+                return 1;
+
+            if (col_a.green < 0.3 && col_a.blue > 0.8 && col_a.red > 0.8)
+                return -1;
+
+            if (col_b.green < 0.3 && col_b.blue > 0.8 && col_b.red > 0.8)
+                return 1;
+
+            if (col_a.green > 0.8 && col_a.blue < 0.3 && col_a.red > 0.8)
+                return -1;
+
+            if (col_b.green > 0.8 && col_b.blue < 0.3 && col_b.red > 0.8)
+                return 1;
+
+            var a_tot = col_a.green + col_a.blue + col_a.red;
+            var b_tot = col_b.green + col_b.blue + col_b.red;
+            if (a_tot > b_tot) {
+                return 1;
+            } else if (a_tot == b_tot) {
+                return 0;
+            } else {
+                return -1;
+            }
+        });
+
+        return found_colors;
     }
 }

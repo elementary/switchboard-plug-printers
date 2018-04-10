@@ -54,7 +54,7 @@ public class Printers.AddPopover : Gtk.Popover {
     Cancellable driver_cancellable;
     public AddPopover (Gtk.Widget relative_widget) {
         Object (relative_to: relative_widget);
-        search_device ();
+        search_device.begin ();
     }
 
     construct {
@@ -89,69 +89,62 @@ public class Printers.AddPopover : Gtk.Popover {
         spinner.start ();
     }
 
-    private void search_device () {
-        new Thread<void*> (null, () => {
+    private async void search_device () {
+        try {
             string error;
             GLib.HashTable<string, string> devices;
-            try {
-                Cups.get_pk_helper ().devices_get (CUPS.TIMEOUT_DEFAULT, -1, {CUPS.INCLUDE_ALL}, {CUPS.EXCLUDE_NONE}, out error, out devices);
-                if (error != null) {
-                    var tempdevices = new Gee.HashMap<int, Printers.TempDevice> (null, null);
-                    devices.foreach ((key, val) => {
-                        var key_vars = key.split (":", 2);
-                        int number = int.parse (key_vars[1]);
-                        Printers.TempDevice tempdevice;
-                        tempdevice = tempdevices.get (number);
-                        if (tempdevice == null) {
-                            tempdevice = new Printers.TempDevice ();
-                            tempdevices.set (number, tempdevice);
-                        }
+            yield Cups.get_pk_helper ().devices_get (CUPS.TIMEOUT_DEFAULT, -1, {}, {}, out error, out devices);
+            if (error != null) {
+                var tempdevices = new Gee.HashMap<int, Printers.TempDevice> (null, null);
+                devices.foreach ((key, val) => {
+                    var key_vars = key.split (":", 2);
+                    int number = int.parse (key_vars[1]);
+                    Printers.TempDevice tempdevice;
+                    tempdevice = tempdevices.get (number);
+                    if (tempdevice == null) {
+                        tempdevice = new Printers.TempDevice ();
+                        tempdevices.set (number, tempdevice);
+                    }
 
-                        switch (key_vars[0]) {
-                            case "device-make-and-model":
-                                if (val != "Unknown") {
-                                    tempdevice.device_make_and_model = val;
-                                }
-                                break;
-                            case "device-class":
-                                if (val == "network" && tempdevice.device_uri != null && ":" in tempdevice.device_uri) {
-                                    tempdevice.device_class = "ok-network";
-                                } else {
-                                    tempdevice.device_class = val;
-                                }
+                    switch (key_vars[0]) {
+                        case "device-make-and-model":
+                            if (val != "Unknown") {
+                                tempdevice.device_make_and_model = val;
+                            }
+                            break;
+                        case "device-class":
+                            if (val == "network" && tempdevice.device_uri != null && ":" in tempdevice.device_uri) {
+                                tempdevice.device_class = "ok-network";
+                            } else {
+                                tempdevice.device_class = val;
+                            }
 
-                                break;
-                            case "device-uri":
-                                tempdevice.device_uri = val;
-                                if (tempdevice.device_class != null && tempdevice.device_class == "network" && ":" in tempdevice.device_uri) {
-                                    tempdevice.device_class = "ok-network";
-                                }
-                                break;
-                            case "device-info":
-                                tempdevice.device_info = _(val);
-                                break;
-                            case "device-id":
-                                tempdevice.device_id = val;
-                                break;
-                            default:
-                                debug ("missing: %s => %s", key_vars[0], val);
-                                break;
-                        }
-                    });
+                            break;
+                        case "device-uri":
+                            tempdevice.device_uri = val;
+                            if (tempdevice.device_class != null && tempdevice.device_class == "network" && ":" in tempdevice.device_uri) {
+                                tempdevice.device_class = "ok-network";
+                            }
+                            break;
+                        case "device-info":
+                            tempdevice.device_info = _(val);
+                            break;
+                        case "device-id":
+                            tempdevice.device_id = val;
+                            break;
+                        default:
+                            debug ("missing: %s => %s", key_vars[0], val);
+                            break;
+                    }
+                });
 
-                    Idle.add (() => {
-                        process_devices (tempdevices.values);
-                        return GLib.Source.REMOVE;
-                    });
-                } else {
-                    show_error (error);
-                }
-            } catch (Error e) {
-                critical (e.message);
+                process_devices (tempdevices.values);
+            } else {
+                show_error (error);
             }
-
-            return null;
-        });
+        } catch (Error e) {
+            show_error (e.message);
+        }
     }
 
     // Once devices are available.
@@ -202,7 +195,8 @@ public class Printers.AddPopover : Gtk.Popover {
                 devices_grid.destroy ();
                 return GLib.Source.REMOVE;
             });
-            search_device ();
+
+            search_device.begin ();
         });
 
         devices_grid.show_all ();

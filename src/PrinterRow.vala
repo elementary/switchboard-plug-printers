@@ -22,7 +22,7 @@
 
 public class Printers.PrinterRow : Gtk.ListBoxRow {
     public PrinterPage page;
-    public Printer printer;
+    public unowned Printer printer;
     private Gtk.Image printer_image;
     private Gtk.Image status_image;
     private Gtk.Label name_label;
@@ -30,13 +30,12 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
 
     public PrinterRow (Printer printer) {
         this.printer = printer;
-        name_label = new Gtk.Label (printer.info);
+        name_label = new Gtk.Label (null);
         name_label.get_style_context ().add_class ("h3");
         name_label.ellipsize = Pango.EllipsizeMode.END;
         ((Gtk.Misc) name_label).xalign = 0;
-        status_label = new Gtk.Label ("<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons_localized)));
+        status_label = new Gtk.Label (null);
         status_label.use_markup = true;
-        status_label.tooltip_text = printer.state_reasons_localized;
         status_label.ellipsize = Pango.EllipsizeMode.END;
         ((Gtk.Misc) status_label).xalign = 0;
         printer_image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DND);
@@ -56,13 +55,11 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         grid.attach (status_label, 1, 1, 1, 1);
         add (grid);
         page = new PrinterPage (printer);
+
         update_status ();
-        Cups.Notifier.get_default ().printer_state_changed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs) => {
-            if (printer.dest.name == name) {
-                update_status ();
-                status_label.tooltip_text = printer.state_reasons_localized;
-            }
-        });
+        printer.notify["state-reasons"].connect (() => update_status ());
+        printer.bind_property ("info", this, "tooltip-text", GLib.BindingFlags.SYNC_CREATE);
+        printer.bind_property ("info", name_label, "label", GLib.BindingFlags.SYNC_CREATE);
 
         printer.enabled_changed.connect (update_status);
         show_all ();
@@ -73,6 +70,7 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     }
 
     private void update_status () {
+        status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
         if (printer.is_offline ()) {
             status_image.icon_name = "user-offline";
         } else if (printer.enabled) {

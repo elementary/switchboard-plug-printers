@@ -21,7 +21,7 @@
  */
 
 public class Printers.PrinterPage : Gtk.Grid {
-    private Printer printer;
+    private unowned Printer printer;
 
     public PrinterPage (Printer printer) {
         this.printer = printer;

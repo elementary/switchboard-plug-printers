@@ -21,8 +21,7 @@
  */
 
 public class Printers.InkLevel : Gtk.Grid {
-    private Printer printer;
-    private Gee.ArrayList<ColorLevel> colors;
+    public unowned Printer printer { get; construct; }
     private const string STYLE_CLASS =
     """@define-color levelbar_color %s;
     .coloredlevelbar.fill-block {
@@ -55,13 +54,18 @@ public class Printers.InkLevel : Gtk.Grid {
     """;
 
     public InkLevel (Printer printer) {
+        Object (printer: printer);
+    }
+
+    construct {
         orientation = Gtk.Orientation.HORIZONTAL;
-        height_request = 100;
         column_spacing = 6;
-        colors = new Gee.ArrayList<ColorLevel> ();
-        this.printer = printer;
-        populate_values ();
-        foreach (var color in colors) {
+        var colors = printer.get_color_levels ();
+        if (!colors.is_empty) {
+            height_request = 100;
+        }
+
+        foreach (Printer.ColorLevel color in colors) {
             var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max);
             level.orientation = Gtk.Orientation.VERTICAL;
             level.value = color.level;
@@ -114,102 +118,5 @@ public class Printers.InkLevel : Gtk.Grid {
         }
 
         return name;
-    }
-
-    private void populate_values () {
-        char[] printer_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, printer_uri, "ipp", null, "localhost", 0, "/printers/%s", printer.dest.name);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
-
-        string[] attributes = { "marker-colors",
-                                "marker-levels",
-                                "marker-names",
-                                "marker-high-levels",
-                                "marker-low-levels" };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
-            unowned CUPS.IPP.Attribute attr = request.find_attribute ("marker-colors", CUPS.IPP.Tag.ZERO);
-            for (int i = 0; i < attr.get_count (); i++) {
-                var color = new ColorLevel ();
-                color.color = attr.get_string (i);
-                colors.add (color);
-            }
-
-            attr = request.find_attribute ("marker-levels", CUPS.IPP.Tag.ZERO);
-            int bound = int.min (attr.get_count (), colors.size);
-            for (int i = 0; i < bound; i++) {
-                colors.get (i).level = attr.get_integer (i);
-            }
-
-            attr = request.find_attribute ("marker-high-levels", CUPS.IPP.Tag.ZERO);
-            bound = int.min (attr.get_count (), colors.size);
-            for (int i = 0; i < bound; i++) {
-                colors.get (i).level_max = attr.get_integer (i);
-            }
-
-            attr = request.find_attribute ("marker-low-levels", CUPS.IPP.Tag.ZERO);
-            bound = int.min (attr.get_count (), colors.size);
-            for (int i = 0; i < bound; i++) {
-                colors.get (i).level_min = attr.get_integer (i);
-            }
-
-            attr = request.find_attribute ("marker-names", CUPS.IPP.Tag.ZERO);
-            bound = int.min (attr.get_count (), colors.size);
-            for (int i = 0; i < bound; i++) {
-                colors.get (i).name = attr.get_string (i);
-            }
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-        }
-
-        colors.sort ((a, b) => {
-            Gdk.RGBA col_a = {}, col_b = {};
-            col_a.parse (a.color);
-            col_b.parse (b.color);
-
-            if (col_a.green > 0.8 && col_a.blue > 0.8 && col_a.red < 0.3)
-                return -1;
-
-            if (col_b.green > 0.8 && col_b.blue > 0.8 && col_b.red < 0.3)
-                return 1;
-
-            if (col_a.green < 0.3 && col_a.blue > 0.8 && col_a.red > 0.8)
-                return -1;
-
-            if (col_b.green < 0.3 && col_b.blue > 0.8 && col_b.red > 0.8)
-                return 1;
-
-            if (col_a.green > 0.8 && col_a.blue < 0.3 && col_a.red > 0.8)
-                return -1;
-
-            if (col_b.green > 0.8 && col_b.blue < 0.3 && col_b.red > 0.8)
-                return 1;
-
-            var a_tot = col_a.green + col_a.blue + col_a.red;
-            var b_tot = col_b.green + col_b.blue + col_b.red;
-            if (a_tot > b_tot) {
-                return 1;
-            } else if (a_tot == b_tot) {
-                return 0;
-            } else {
-                return -1;
-            }
-        });
-    }
-
-    public class ColorLevel : GLib.Object {
-        public int level = 0;
-        public int level_max = 0;
-        public int level_min = 0;
-        public string color = null;
-        public string name = null;
-
-        public ColorLevel () {
-
-        }
     }
 }

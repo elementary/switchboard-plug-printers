@@ -11,6 +11,7 @@ plug_files = files(
     'CUPSNotifier.vala',
     'AddPopover.vala',
     'Objects/Printer.vala',
+    'Objects/PrinterManager.vala',
     'Objects/Job.vala'
 )
 
