@@ -101,7 +101,10 @@ public class Printers.PrinterPage : Gtk.Grid {
 
         var ink_level = new InkLevel (printer);
 
-        var default_check = new Gtk.CheckButton.with_label (_("Use as Default Printer"));
+        var default_check = new Gtk.ModelButton ();
+        default_check.text = _("Use as Default Printer");
+        default_check.role = Gtk.ButtonRole.CHECK;
+
         default_check.active = printer.is_default;
         default_check.notify["active"].connect (() => {
             if (default_check.active) {
@@ -111,7 +114,8 @@ public class Printers.PrinterPage : Gtk.Grid {
             }
         });
 
-        var print_test = new Gtk.Button.with_label (_("Print Test Page"));
+        var print_test = new Gtk.ModelButton ();
+        print_test.text = _("Print Test Page");
         print_test.clicked.connect (() => print_test_page ());
 
         info_popover.hide.connect (() => {
@@ -120,15 +124,23 @@ public class Printers.PrinterPage : Gtk.Grid {
         });
 
         var info_grid = new Gtk.Grid ();
-        info_grid.margin = 6;
+        info_grid.margin = 12;
         info_grid.column_spacing = 12;
-        info_grid.row_spacing = 6;
+        info_grid.row_spacing = 12;
         info_grid.attach (location_label, 0, 0, 1, 1);
         info_grid.attach (location_entry, 1, 0, 1, 1);
-        info_grid.attach (default_check, 0, 1, 2, 1);
         info_grid.attach (ink_level, 0, 2, 2, 1);
-        info_grid.attach (print_test, 0, 3, 2, 1);
-        info_popover.add (info_grid);
+
+        var menu_grid = new Gtk.Grid ();
+        menu_grid.margin_bottom = 3;
+        menu_grid.orientation = Gtk.Orientation.VERTICAL;
+        menu_grid.row_spacing = 3;
+        menu_grid.add (info_grid);
+        menu_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
+        menu_grid.add (default_check);
+        menu_grid.add (print_test);
+
+        info_popover.add (menu_grid);
     }
 
     private string? get_testprint_filename (string datadir) {
