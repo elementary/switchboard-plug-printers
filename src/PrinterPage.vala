@@ -29,12 +29,16 @@ public class Printers.PrinterPage : Gtk.Grid {
         margin = 12;
         column_spacing = 12;
         row_spacing = 6;
+
         var stack = new Gtk.Stack ();
+
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.halign = Gtk.Align.CENTER;
-        stack_switcher.set_stack (stack);
-        stack.add_titled (new JobsView (printer), "general", _("General"));
-        stack.add_titled (new OptionsPage (printer), "options", _("Options"));
+        stack_switcher.homogeneous = true;
+        stack_switcher.stack = stack;
+        stack.add_titled (new JobsView (printer), "general", _("Print Queue"));
+        stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
+
         create_header ();
         attach (stack_switcher, 0, 1, 3, 1);
         attach (stack, 0, 2, 3, 1);
@@ -53,38 +57,6 @@ public class Printers.PrinterPage : Gtk.Grid {
 
         var expander = new Gtk.Grid ();
         expander.hexpand = true;
-
-        var info_button = new Gtk.ToggleButton ();
-        info_button.image = new Gtk.Image.from_icon_name ("help-info-symbolic", Gtk.IconSize.MENU);
-        info_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-
-        var enable_switch = new Gtk.Switch ();
-        enable_switch.active = printer.state != "5" && printer.is_accepting_jobs;
-        enable_switch.notify["active"].connect (() => {
-            printer.enabled = enable_switch.active;
-        });
-
-        var right_grid = new Gtk.Grid ();
-        right_grid.column_spacing = 12;
-        right_grid.orientation = Gtk.Orientation.HORIZONTAL;
-        right_grid.valign = Gtk.Align.CENTER;
-        right_grid.add (expander);
-        right_grid.add (info_button);
-        right_grid.add (enable_switch);
-
-        var info_popover = new Gtk.Popover (info_button);
-
-        info_button.toggled.connect (() => {
-            if (info_button.active == true) {
-                info_popover.show_all ();
-            } else {
-                info_popover.hide ();
-            }
-        });
-
-        attach (image, 0, 0, 1, 1);
-        attach (editable_title, 1, 0, 1, 1);
-        attach (right_grid, 2, 0, 1, 1);
 
         var location_label = new Gtk.Label (_("Location:"));
         ((Gtk.Misc) location_label).xalign = 1;
@@ -118,11 +90,6 @@ public class Printers.PrinterPage : Gtk.Grid {
         print_test.text = _("Print Test Page");
         print_test.clicked.connect (() => print_test_page ());
 
-        info_popover.hide.connect (() => {
-            info_button.active = false;
-            location_entry.text = printer.location ?? "";
-        });
-
         var info_grid = new Gtk.Grid ();
         info_grid.margin = 12;
         info_grid.column_spacing = 12;
@@ -139,8 +106,38 @@ public class Printers.PrinterPage : Gtk.Grid {
         menu_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         menu_grid.add (default_check);
         menu_grid.add (print_test);
+        menu_grid.show_all ();
 
+        var info_popover = new Gtk.Popover (null);
         info_popover.add (menu_grid);
+
+        var info_button = new Gtk.MenuButton ();
+        info_button.image = new Gtk.Image.from_icon_name ("view-more-symbolic", Gtk.IconSize.MENU);
+        info_button.popover = info_popover;
+        info_button.tooltip_text = _("Settings & Supplies");
+        info_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
+        var enable_switch = new Gtk.Switch ();
+        enable_switch.active = printer.state != "5" && printer.is_accepting_jobs;
+        enable_switch.notify["active"].connect (() => {
+            printer.enabled = enable_switch.active;
+        });
+
+        var right_grid = new Gtk.Grid ();
+        right_grid.column_spacing = 12;
+        right_grid.orientation = Gtk.Orientation.HORIZONTAL;
+        right_grid.valign = Gtk.Align.CENTER;
+        right_grid.add (expander);
+        right_grid.add (info_button);
+        right_grid.add (enable_switch);
+
+        attach (image, 0, 0, 1, 1);
+        attach (editable_title, 1, 0, 1, 1);
+        attach (right_grid, 2, 0, 1, 1);
+
+        info_popover.hide.connect (() => {
+            location_entry.text = printer.location ?? "";
+        });
     }
 
     private string? get_testprint_filename (string datadir) {
