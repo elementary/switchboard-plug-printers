@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-10 16:21-0700\n"
 "PO-Revision-Date: 2018-02-22 14:08+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-printers/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-printers/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,78 +15,83 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "General"
+#: src/PrinterPage.vala:39
+#, fuzzy
+msgid "Print Queue"
+msgstr "Impressores"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Opcions"
+#: src/PrinterPage.vala:40
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:61 src/AddPopover.vala:240
 msgid "Location:"
 msgstr "Ubicació:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:69
 msgid "Lab 1 or John's Desk"
 msgstr "Laboratori 1 o Escriptori del Joan"
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:77
 msgid "Use as Default Printer"
 msgstr "Usa com a impressora per defecte"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:90
 msgid "Print Test Page"
 msgstr "Imprimeix una pàgina de prova"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:117
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:185
 msgid "Test page"
 msgstr "Pàgina de prova"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "Afegeix una impressora…"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "Suprimeix la impressora"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "Si elimineu la impressora %s, en perdreu tot l'historial\n"
 "d'impressió i la configuració que hi està associada."
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "Suprimeix"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "Impressores"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Configureu impressores, gestioneu cues d'impressió i controleu els nivells "
 "de tinta"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "Cap impressora"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "Afegiu una impressora per començar a imprimir"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "Afegeix una impressora"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "Cerqueu la impressora que us cal"
 
@@ -343,38 +348,39 @@ msgid "Show completed jobs"
 msgstr "Mostra les tasques fetes"
 
 #: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "Sense tasques"
+msgid "Print Queue Is Empty"
+msgstr ""
 
 #: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
+#, fuzzy
+msgid "There are no pending jobs in the queue."
 msgstr "No hi ha tasques a la cua"
 
 #: src/JobsView.vala:179
 msgid "Hide completed jobs"
 msgstr "Amaga les tasques fetes"
 
-#: src/InkLevel.vala:98
+#: src/InkLevel.vala:102
 msgid "Black (PGBK)"
 msgstr "Negre (PGBK)"
 
-#: src/InkLevel.vala:101
+#: src/InkLevel.vala:105
 msgid "Black (BK)"
 msgstr "Negre (BK)"
 
-#: src/InkLevel.vala:104
+#: src/InkLevel.vala:108
 msgid "Black"
 msgstr "Negre"
 
-#: src/InkLevel.vala:107
+#: src/InkLevel.vala:111
 msgid "Yellow"
 msgstr "Groc"
 
-#: src/InkLevel.vala:110
+#: src/InkLevel.vala:114
 msgid "Cyan"
 msgstr "Cian"
 
-#: src/InkLevel.vala:113
+#: src/InkLevel.vala:117
 msgid "Magenta"
 msgstr "Magenta"
 
@@ -414,67 +420,67 @@ msgstr "AppSocket/HP JetDirect"
 msgid "Impossible to list all available printers"
 msgstr "No és possible llistar totes les impressores disponibles"
 
-#: src/AddPopover.vala:176
+#: src/AddPopover.vala:169
 msgid "Refresh"
 msgstr "Actualitza"
 
-#: src/AddPopover.vala:180
+#: src/AddPopover.vala:173
 msgid "Refresh the printer list"
 msgstr "Actualitza la llista d'impressores"
 
-#: src/AddPopover.vala:183
+#: src/AddPopover.vala:176
 msgid "Next"
 msgstr "Següent"
 
-#: src/AddPopover.vala:229
+#: src/AddPopover.vala:223
 msgid "Connection:"
 msgstr "Connexió:"
 
-#: src/AddPopover.vala:237
+#: src/AddPopover.vala:231
 msgid "Description:"
 msgstr "Descripció:"
 
-#: src/AddPopover.vala:242
+#: src/AddPopover.vala:236
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/AddPopover.vala:252
+#: src/AddPopover.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "Laboratori 1 o Escriptori del Joan"
 
-#: src/AddPopover.vala:316
+#: src/AddPopover.vala:310
 msgid "Previous"
 msgstr "Anterior"
 
-#: src/AddPopover.vala:319
+#: src/AddPopover.vala:313
 msgid "Select an other printer or protocol"
 msgstr "Seleccioneu una altra impressora o protocol"
 
-#: src/AddPopover.vala:321
+#: src/AddPopover.vala:315
 msgid "Add"
 msgstr "Afegeix"
 
-#: src/AddPopover.vala:325
+#: src/AddPopover.vala:319
 msgid "Add the configured printer"
 msgstr "Afegeix la impressora configurada"
 
-#: src/AddPopover.vala:546
+#: src/AddPopover.vala:540
 msgid "(recommended)"
 msgstr "(recomanat)"
 
-#: src/AddPopover.vala:608
+#: src/AddPopover.vala:602
 msgid "Serial"
 msgstr "Número de sèrie"
 
-#: src/AddPopover.vala:611
+#: src/AddPopover.vala:605
 msgid "Local Printers"
 msgstr "Impressores locals"
 
-#: src/AddPopover.vala:614
+#: src/AddPopover.vala:608
 msgid "Network Printers"
 msgstr "Impressores de xarxa"
 
-#: src/AddPopover.vala:617
+#: src/AddPopover.vala:611
 msgid "Available Network Printers"
 msgstr "Impressores de xarxa disponibles"
 
@@ -558,7 +564,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "El conductor òptic fotogràfic ja no funciona"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "A punt"
 
@@ -589,3 +595,12 @@ msgstr "Tasca avortada"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Tasca feta"
+
+#~ msgid "General"
+#~ msgstr "General"
+
+#~ msgid "Options"
+#~ msgstr "Opcions"
+
+#~ msgid "No jobs"
+#~ msgstr "Sense tasques"

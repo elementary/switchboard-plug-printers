@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-10 16:21-0700\n"
 "PO-Revision-Date: 2017-04-17 14:18+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,78 +16,83 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "Općenito"
+#: src/PrinterPage.vala:39
+#, fuzzy
+msgid "Print Queue"
+msgstr "Pisači"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Mogućnosti"
+#: src/PrinterPage.vala:40
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:61 src/AddPopover.vala:240
 msgid "Location:"
 msgstr "Lokacija:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:69
 msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 ili Goranov radni stoll"
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:77
 msgid "Use as Default Printer"
 msgstr "Koristi kao zadani pisač"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:90
 msgid "Print Test Page"
 msgstr "Ispiši testnu stranicu"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:117
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:185
 msgid "Test page"
 msgstr "Testna stranica"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "Dodaj pisač…"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "Ukloni pisač"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "Uklanjanjem '%s' izgubit ćete svu povijest ispisa\n"
 "i podešavanja povezana s njima."
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "Ukloni"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "Pisači"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Podesite pisače, upravljajte zadacima ispisa i pogledajte razinu tinte u "
 "tonerima"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "Nema pisača"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "Dodajte pisač za početak ispisivanja"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "Dodaj pisač"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "Potražite potreban pisač"
 
@@ -352,38 +357,39 @@ msgid "Show completed jobs"
 msgstr "Prikaži završene zadatke"
 
 #: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "Nema zadataka"
+msgid "Print Queue Is Empty"
+msgstr ""
 
 #: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
+#, fuzzy
+msgid "There are no pending jobs in the queue."
 msgstr "Nema zadataka na čekanju"
 
 #: src/JobsView.vala:179
 msgid "Hide completed jobs"
 msgstr "Sakrij završene zadatke"
 
-#: src/InkLevel.vala:98
+#: src/InkLevel.vala:102
 msgid "Black (PGBK)"
 msgstr "Crna (PGBK)"
 
-#: src/InkLevel.vala:101
+#: src/InkLevel.vala:105
 msgid "Black (BK)"
 msgstr "Crna (BK)"
 
-#: src/InkLevel.vala:104
+#: src/InkLevel.vala:108
 msgid "Black"
 msgstr "Crna"
 
-#: src/InkLevel.vala:107
+#: src/InkLevel.vala:111
 msgid "Yellow"
 msgstr "Žuta"
 
-#: src/InkLevel.vala:110
+#: src/InkLevel.vala:114
 msgid "Cyan"
 msgstr "Modra"
 
-#: src/InkLevel.vala:113
+#: src/InkLevel.vala:117
 msgid "Magenta"
 msgstr "Ljubičasta"
 
@@ -423,67 +429,67 @@ msgstr "Priključnica aplikacije/HP JetDirect"
 msgid "Impossible to list all available printers"
 msgstr "Nemoguće je prikazati sve dostupne pisače"
 
-#: src/AddPopover.vala:176
+#: src/AddPopover.vala:169
 msgid "Refresh"
 msgstr "Osvježi"
 
-#: src/AddPopover.vala:180
+#: src/AddPopover.vala:173
 msgid "Refresh the printer list"
 msgstr "Osvježi popis pisača"
 
-#: src/AddPopover.vala:183
+#: src/AddPopover.vala:176
 msgid "Next"
 msgstr "Sljedeća"
 
-#: src/AddPopover.vala:229
+#: src/AddPopover.vala:223
 msgid "Connection:"
 msgstr "Povezivanje:"
 
-#: src/AddPopover.vala:237
+#: src/AddPopover.vala:231
 msgid "Description:"
 msgstr "Opis:"
 
-#: src/AddPopover.vala:242
+#: src/AddPopover.vala:236
 msgid "BrandPrinter X3000"
 msgstr "BrandPisač X3000"
 
-#: src/AddPopover.vala:252
+#: src/AddPopover.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "Lab 1 ili Goranov radni stol"
 
-#: src/AddPopover.vala:316
+#: src/AddPopover.vala:310
 msgid "Previous"
 msgstr "Prijašnje"
 
-#: src/AddPopover.vala:319
+#: src/AddPopover.vala:313
 msgid "Select an other printer or protocol"
 msgstr "Odaberi drugi protokol pisača"
 
-#: src/AddPopover.vala:321
+#: src/AddPopover.vala:315
 msgid "Add"
 msgstr "Dodaj"
 
-#: src/AddPopover.vala:325
+#: src/AddPopover.vala:319
 msgid "Add the configured printer"
 msgstr "Dodaj podešeni pisač"
 
-#: src/AddPopover.vala:546
+#: src/AddPopover.vala:540
 msgid "(recommended)"
 msgstr "(preporučljivo)"
 
-#: src/AddPopover.vala:608
+#: src/AddPopover.vala:602
 msgid "Serial"
 msgstr "Serijski"
 
-#: src/AddPopover.vala:611
+#: src/AddPopover.vala:605
 msgid "Local Printers"
 msgstr "Lokalni pisači"
 
-#: src/AddPopover.vala:614
+#: src/AddPopover.vala:608
 msgid "Network Printers"
 msgstr "Mrežni pisači"
 
-#: src/AddPopover.vala:617
+#: src/AddPopover.vala:611
 msgid "Available Network Printers"
 msgstr "Dostupni mrežni pisači"
 
@@ -567,7 +573,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Optički fotografski vodič je istrošen"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Spreman"
 
@@ -600,3 +606,12 @@ msgstr "Zadatak prekinut"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Zadatak završen"
+
+#~ msgid "General"
+#~ msgstr "Općenito"
+
+#~ msgid "Options"
+#~ msgstr "Mogućnosti"
+
+#~ msgid "No jobs"
+#~ msgstr "Nema zadataka"

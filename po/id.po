@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-10 16:21-0700\n"
 "PO-Revision-Date: 2017-08-22 11:16+0000\n"
 "Last-Translator: Aprianto Nursetiawan <noersetiawan@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/"
@@ -15,74 +15,78 @@ msgstr ""
 "X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "Umum"
-
-#: src/PrinterPage.vala:37
-msgid "Options"
+#: src/PrinterPage.vala:39
+msgid "Print Queue"
 msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:40
+msgid "Page Setup"
+msgstr ""
+
+#: src/PrinterPage.vala:61 src/AddPopover.vala:240
 msgid "Location:"
 msgstr ""
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:69
 msgid "Lab 1 or John's Desk"
 msgstr ""
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:77
 msgid "Use as Default Printer"
 msgstr ""
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:90
 msgid "Print Test Page"
 msgstr ""
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:117
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:185
 msgid "Test page"
 msgstr ""
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr ""
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr ""
 
-#: src/PrinterList.vala:85
+#: src/PrinterList.vala:87
 #, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "Hapus"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr ""
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr ""
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr ""
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr ""
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr ""
 
@@ -342,38 +346,38 @@ msgid "Show completed jobs"
 msgstr ""
 
 #: src/JobsView.vala:66
-msgid "No jobs"
+msgid "Print Queue Is Empty"
 msgstr ""
 
 #: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
+msgid "There are no pending jobs in the queue."
 msgstr ""
 
 #: src/JobsView.vala:179
 msgid "Hide completed jobs"
 msgstr ""
 
-#: src/InkLevel.vala:98
+#: src/InkLevel.vala:102
 msgid "Black (PGBK)"
 msgstr ""
 
-#: src/InkLevel.vala:101
+#: src/InkLevel.vala:105
 msgid "Black (BK)"
 msgstr ""
 
-#: src/InkLevel.vala:104
+#: src/InkLevel.vala:108
 msgid "Black"
 msgstr ""
 
-#: src/InkLevel.vala:107
+#: src/InkLevel.vala:111
 msgid "Yellow"
 msgstr ""
 
-#: src/InkLevel.vala:110
+#: src/InkLevel.vala:114
 msgid "Cyan"
 msgstr ""
 
-#: src/InkLevel.vala:113
+#: src/InkLevel.vala:117
 msgid "Magenta"
 msgstr ""
 
@@ -413,67 +417,67 @@ msgstr ""
 msgid "Impossible to list all available printers"
 msgstr ""
 
-#: src/AddPopover.vala:176
+#: src/AddPopover.vala:169
 msgid "Refresh"
 msgstr ""
 
-#: src/AddPopover.vala:180
+#: src/AddPopover.vala:173
 msgid "Refresh the printer list"
 msgstr ""
 
-#: src/AddPopover.vala:183
+#: src/AddPopover.vala:176
 msgid "Next"
 msgstr ""
 
-#: src/AddPopover.vala:229
+#: src/AddPopover.vala:223
 msgid "Connection:"
 msgstr ""
 
-#: src/AddPopover.vala:237
+#: src/AddPopover.vala:231
 msgid "Description:"
 msgstr ""
 
-#: src/AddPopover.vala:242
+#: src/AddPopover.vala:236
 msgid "BrandPrinter X3000"
 msgstr ""
 
-#: src/AddPopover.vala:252
+#: src/AddPopover.vala:246
 msgid "Lab 1 or John's desk"
 msgstr ""
 
-#: src/AddPopover.vala:316
+#: src/AddPopover.vala:310
 msgid "Previous"
 msgstr ""
 
-#: src/AddPopover.vala:319
+#: src/AddPopover.vala:313
 msgid "Select an other printer or protocol"
 msgstr ""
 
-#: src/AddPopover.vala:321
+#: src/AddPopover.vala:315
 msgid "Add"
 msgstr "Tambah"
 
-#: src/AddPopover.vala:325
+#: src/AddPopover.vala:319
 msgid "Add the configured printer"
 msgstr ""
 
-#: src/AddPopover.vala:546
+#: src/AddPopover.vala:540
 msgid "(recommended)"
 msgstr ""
 
-#: src/AddPopover.vala:608
+#: src/AddPopover.vala:602
 msgid "Serial"
 msgstr ""
 
-#: src/AddPopover.vala:611
+#: src/AddPopover.vala:605
 msgid "Local Printers"
 msgstr ""
 
-#: src/AddPopover.vala:614
+#: src/AddPopover.vala:608
 msgid "Network Printers"
 msgstr ""
 
-#: src/AddPopover.vala:617
+#: src/AddPopover.vala:611
 msgid "Available Network Printers"
 msgstr ""
 
@@ -557,7 +561,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr ""
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr ""
 
@@ -588,3 +592,6 @@ msgstr ""
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr ""
+
+#~ msgid "General"
+#~ msgstr "Umum"

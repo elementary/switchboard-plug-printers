@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-10 16:21-0700\n"
 "PO-Revision-Date: 2016-04-22 14:36+0000\n"
 "Last-Translator: Andi Chandler <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,76 +13,81 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 "X-Generator: Launchpad (build 18330)\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "General"
+#: src/PrinterPage.vala:39
+#, fuzzy
+msgid "Print Queue"
+msgstr "Printers"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Options"
+#: src/PrinterPage.vala:40
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:61 src/AddPopover.vala:240
 msgid "Location:"
 msgstr "Location:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:69
 msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 or Fred's Desk"
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:77
 msgid "Use as Default Printer"
 msgstr "Use as Default Printer"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:90
 msgid "Print Test Page"
 msgstr "Print Test Page"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:117
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:185
 msgid "Test page"
 msgstr "Test page"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "Add Printer…"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "Remove Printer"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "By removing '%s' you'll lose all print history\n"
 "and configuration associated with it."
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "Remove"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "Printers"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Configure printers, manage print queues, and view ink levels"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "No Printers"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "Add a printer to begin printing"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "Add Printer"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "Search for the printer you need"
 
@@ -347,38 +352,39 @@ msgid "Show completed jobs"
 msgstr "Show completed jobs"
 
 #: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "No jobs"
+msgid "Print Queue Is Empty"
+msgstr ""
 
 #: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
+#, fuzzy
+msgid "There are no pending jobs in the queue."
 msgstr "There are no jobs on the queue"
 
 #: src/JobsView.vala:179
 msgid "Hide completed jobs"
 msgstr "Hide completed jobs"
 
-#: src/InkLevel.vala:98
+#: src/InkLevel.vala:102
 msgid "Black (PGBK)"
 msgstr "Black (PGBK)"
 
-#: src/InkLevel.vala:101
+#: src/InkLevel.vala:105
 msgid "Black (BK)"
 msgstr "Black (BK)"
 
-#: src/InkLevel.vala:104
+#: src/InkLevel.vala:108
 msgid "Black"
 msgstr "Black"
 
-#: src/InkLevel.vala:107
+#: src/InkLevel.vala:111
 msgid "Yellow"
 msgstr "Yellow"
 
-#: src/InkLevel.vala:110
+#: src/InkLevel.vala:114
 msgid "Cyan"
 msgstr "Cyan"
 
-#: src/InkLevel.vala:113
+#: src/InkLevel.vala:117
 msgid "Magenta"
 msgstr "Magenta"
 
@@ -418,67 +424,67 @@ msgstr "AppSocket/HP JetDirect"
 msgid "Impossible to list all available printers"
 msgstr "Impossible to list all available printers"
 
-#: src/AddPopover.vala:176
+#: src/AddPopover.vala:169
 msgid "Refresh"
 msgstr "Refresh"
 
-#: src/AddPopover.vala:180
+#: src/AddPopover.vala:173
 msgid "Refresh the printer list"
 msgstr "Refresh the printer list"
 
-#: src/AddPopover.vala:183
+#: src/AddPopover.vala:176
 msgid "Next"
 msgstr "Next"
 
-#: src/AddPopover.vala:229
+#: src/AddPopover.vala:223
 msgid "Connection:"
 msgstr "Connection:"
 
-#: src/AddPopover.vala:237
+#: src/AddPopover.vala:231
 msgid "Description:"
 msgstr "Description:"
 
-#: src/AddPopover.vala:242
+#: src/AddPopover.vala:236
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/AddPopover.vala:252
+#: src/AddPopover.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "Lab 1 or John's desk"
 
-#: src/AddPopover.vala:316
+#: src/AddPopover.vala:310
 msgid "Previous"
 msgstr "Previous"
 
-#: src/AddPopover.vala:319
+#: src/AddPopover.vala:313
 msgid "Select an other printer or protocol"
 msgstr "Select another printer or protocol"
 
-#: src/AddPopover.vala:321
+#: src/AddPopover.vala:315
 msgid "Add"
 msgstr "Add"
 
-#: src/AddPopover.vala:325
+#: src/AddPopover.vala:319
 msgid "Add the configured printer"
 msgstr "Add the configured printer"
 
-#: src/AddPopover.vala:546
+#: src/AddPopover.vala:540
 msgid "(recommended)"
 msgstr "(recommended)"
 
-#: src/AddPopover.vala:608
+#: src/AddPopover.vala:602
 msgid "Serial"
 msgstr "Serial"
 
-#: src/AddPopover.vala:611
+#: src/AddPopover.vala:605
 msgid "Local Printers"
 msgstr "Local Printers"
 
-#: src/AddPopover.vala:614
+#: src/AddPopover.vala:608
 msgid "Network Printers"
 msgstr "Network Printers"
 
-#: src/AddPopover.vala:617
+#: src/AddPopover.vala:611
 msgid "Available Network Printers"
 msgstr "Available Network Printers"
 
@@ -562,7 +568,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "The optical photo conductor is no longer functioning"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Ready"
 
@@ -595,3 +601,12 @@ msgstr "Job Aborted"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Job Completed"
+
+#~ msgid "General"
+#~ msgstr "General"
+
+#~ msgid "Options"
+#~ msgstr "Options"
+
+#~ msgid "No jobs"
+#~ msgstr "No jobs"
