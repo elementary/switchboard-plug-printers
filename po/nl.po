@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-21 17:03-0800\n"
-"PO-Revision-Date: 2018-01-09 00:18+0000\n"
-"Last-Translator: stefan t <s.tomeij@gmail.com>\n"
-"Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/nl/>\n"
+"PO-Revision-Date: 2018-04-02 00:05+0000\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
+"Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -94,11 +94,11 @@ msgstr "Pagina's per kant:"
 
 #: src/OptionsPage.vala:94
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Lange zijde (standaard)"
 
 #: src/OptionsPage.vala:96
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Korte zijde (omdraaien)"
 
 #: src/OptionsPage.vala:140
 msgid "Two-sided:"
@@ -106,19 +106,19 @@ msgstr "Dubbelzijdig:"
 
 #: src/OptionsPage.vala:156
 msgid "Portrait"
-msgstr ""
+msgstr "Portret"
 
 #: src/OptionsPage.vala:159
 msgid "Landscape"
-msgstr ""
+msgstr "Landschap"
 
 #: src/OptionsPage.vala:162
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Omgekeerd portret"
 
 #: src/OptionsPage.vala:165
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Omgekeerd landschap"
 
 #: src/OptionsPage.vala:174
 msgid "Orientation:"
@@ -162,40 +162,35 @@ msgstr "Kleurmodus:"
 
 #: src/OptionsPage.vala:255
 msgid "Top Bin"
-msgstr ""
+msgstr "Bovenste lade"
 
 #: src/OptionsPage.vala:258
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Midden"
+msgstr "Middelste lade"
 
 #: src/OptionsPage.vala:261
 msgid "Bottom Bin"
-msgstr ""
+msgstr "Onderste lade"
 
 #: src/OptionsPage.vala:264
 msgid "Side Bin"
-msgstr ""
+msgstr "Zijlade"
 
 #: src/OptionsPage.vala:267
-#, fuzzy
 msgid "Left Bin"
-msgstr "Links"
+msgstr "Linkse lade"
 
 #: src/OptionsPage.vala:270
-#, fuzzy
 msgid "Right Bin"
-msgstr "Rechts"
+msgstr "Rechtse lade"
 
 #: src/OptionsPage.vala:273
-#, fuzzy
 msgid "Center Bin"
-msgstr "Centreren"
+msgstr "Centrale lade"
 
 #: src/OptionsPage.vala:276
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Achterzijde"
+msgstr "Achterste lade"
 
 #: src/OptionsPage.vala:279
 msgid "Face Up Bin"
@@ -574,7 +569,6 @@ msgid "Job Pending"
 msgstr "Taak in afwachting"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "In de wacht"
 
@@ -591,9 +585,8 @@ msgid "Job Canceled"
 msgstr "taak geannuleerd"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "taak afgebroken"
+msgstr "Taak afgebroken"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
