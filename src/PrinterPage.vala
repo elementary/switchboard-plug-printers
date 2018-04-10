@@ -29,12 +29,16 @@ public class Printers.PrinterPage : Gtk.Grid {
         margin = 12;
         column_spacing = 12;
         row_spacing = 6;
+
         var stack = new Gtk.Stack ();
+
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.halign = Gtk.Align.CENTER;
-        stack_switcher.set_stack (stack);
-        stack.add_titled (new JobsView (printer), "general", _("General"));
+        stack_switcher.homogeneous = true;
+        stack_switcher.stack = stack;
+        stack.add_titled (new JobsView (printer), "general", _("Print Queue"));
         stack.add_titled (new OptionsPage (printer), "options", _("Options"));
+
         create_header ();
         attach (stack_switcher, 0, 1, 3, 1);
         attach (stack, 0, 2, 3, 1);
