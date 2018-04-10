@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-10 16:21-0700\n"
 "PO-Revision-Date: 2017-05-21 19:35+0000\n"
 "Last-Translator: Luís Lima <geral@liqensoft.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -15,77 +15,82 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "Geral"
+#: src/PrinterPage.vala:39
+#, fuzzy
+msgid "Print Queue"
+msgstr "Impressoras"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Opções"
+#: src/PrinterPage.vala:40
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:61 src/AddPopover.vala:240
 msgid "Location:"
 msgstr "Localização:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:69
 msgid "Lab 1 or John's Desk"
 msgstr "Sala 1 ou Secretária do João"
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:77
 msgid "Use as Default Printer"
 msgstr "Usar como Impressora por Omissão"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:90
 msgid "Print Test Page"
 msgstr "Imprimir Página de Teste"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:117
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:185
 msgid "Test page"
 msgstr "Página de teste"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "Adicionar Impressora…"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "Remover Impressora"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "Ao remover '%s', irá perder as suas configurações\n"
 "e todo o histórico  de impressões"
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "Remover"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "Impressoras"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Configurar impressoras, gerir filas de impressão e ver nível dos tinteiros"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "Sem Impressoras"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "Adicione uma impressora para começar a imprimir"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "Adicionar Impressora"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "Procurar pela impressora pretendida"
 
@@ -350,38 +355,39 @@ msgid "Show completed jobs"
 msgstr "Mostrar tarefas concluídas"
 
 #: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "Sem tarefas de impressão"
+msgid "Print Queue Is Empty"
+msgstr ""
 
 #: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
+#, fuzzy
+msgid "There are no pending jobs in the queue."
 msgstr "Não há tarefas na fila de impressão"
 
 #: src/JobsView.vala:179
 msgid "Hide completed jobs"
 msgstr "Ocultar tarefas concluídas"
 
-#: src/InkLevel.vala:98
+#: src/InkLevel.vala:102
 msgid "Black (PGBK)"
 msgstr "Preto (PGBK)"
 
-#: src/InkLevel.vala:101
+#: src/InkLevel.vala:105
 msgid "Black (BK)"
 msgstr "Preto (BK)"
 
-#: src/InkLevel.vala:104
+#: src/InkLevel.vala:108
 msgid "Black"
 msgstr "Preto"
 
-#: src/InkLevel.vala:107
+#: src/InkLevel.vala:111
 msgid "Yellow"
 msgstr "Amarelo"
 
-#: src/InkLevel.vala:110
+#: src/InkLevel.vala:114
 msgid "Cyan"
 msgstr "Ciano"
 
-#: src/InkLevel.vala:113
+#: src/InkLevel.vala:117
 msgid "Magenta"
 msgstr "Magenta"
 
@@ -421,67 +427,67 @@ msgstr "AppSocket/HP JetDirect"
 msgid "Impossible to list all available printers"
 msgstr "Impossível listar todas as impressoras disponíveis"
 
-#: src/AddPopover.vala:176
+#: src/AddPopover.vala:169
 msgid "Refresh"
 msgstr "Atualizar"
 
-#: src/AddPopover.vala:180
+#: src/AddPopover.vala:173
 msgid "Refresh the printer list"
 msgstr "Atualizar a lista de impressoras"
 
-#: src/AddPopover.vala:183
+#: src/AddPopover.vala:176
 msgid "Next"
 msgstr "Seguinte"
 
-#: src/AddPopover.vala:229
+#: src/AddPopover.vala:223
 msgid "Connection:"
 msgstr "Ligação:"
 
-#: src/AddPopover.vala:237
+#: src/AddPopover.vala:231
 msgid "Description:"
 msgstr "Descrição:"
 
-#: src/AddPopover.vala:242
+#: src/AddPopover.vala:236
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/AddPopover.vala:252
+#: src/AddPopover.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "Sala 1 ou Secretária do João"
 
-#: src/AddPopover.vala:316
+#: src/AddPopover.vala:310
 msgid "Previous"
 msgstr "Anterior"
 
-#: src/AddPopover.vala:319
+#: src/AddPopover.vala:313
 msgid "Select an other printer or protocol"
 msgstr "Selecione outra impressora ou protocolo"
 
-#: src/AddPopover.vala:321
+#: src/AddPopover.vala:315
 msgid "Add"
 msgstr "Adicionar"
 
-#: src/AddPopover.vala:325
+#: src/AddPopover.vala:319
 msgid "Add the configured printer"
 msgstr "Adicionar a impressora configurada"
 
-#: src/AddPopover.vala:546
+#: src/AddPopover.vala:540
 msgid "(recommended)"
 msgstr "(recomendado)"
 
-#: src/AddPopover.vala:608
+#: src/AddPopover.vala:602
 msgid "Serial"
 msgstr "Série"
 
-#: src/AddPopover.vala:611
+#: src/AddPopover.vala:605
 msgid "Local Printers"
 msgstr "Impressoras Locais"
 
-#: src/AddPopover.vala:614
+#: src/AddPopover.vala:608
 msgid "Network Printers"
 msgstr "Impressoras de Rede"
 
-#: src/AddPopover.vala:617
+#: src/AddPopover.vala:611
 msgid "Available Network Printers"
 msgstr "Impressoras de Rede Disponíveis"
 
@@ -565,7 +571,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "O condutor ótico de imagem deixou de funcionar"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Preparada"
 
@@ -598,3 +604,12 @@ msgstr "Tarefa Abortada"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Tarefa Concluída"
+
+#~ msgid "General"
+#~ msgstr "Geral"
+
+#~ msgid "Options"
+#~ msgstr "Opções"
+
+#~ msgid "No jobs"
+#~ msgstr "Sem tarefas de impressão"
