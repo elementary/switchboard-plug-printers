@@ -37,7 +37,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         stack_switcher.homogeneous = true;
         stack_switcher.stack = stack;
         stack.add_titled (new JobsView (printer), "general", _("Print Queue"));
-        stack.add_titled (new OptionsPage (printer), "options", _("Options"));
+        stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
 
         create_header ();
         attach (stack_switcher, 0, 1, 3, 1);
