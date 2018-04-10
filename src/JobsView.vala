@@ -63,7 +63,7 @@ public class Printers.JobsView : Gtk.Frame {
         toolbar.add (expander);
         toolbar.add (show_all_button);
 
-        var alert = new Granite.Widgets.AlertView (_("No jobs"), _("There are no jobs on the queue"), "document");
+        var alert = new Granite.Widgets.AlertView (_("Print Queue Is Empty"), _("There are no pending jobs in the queue."), "");
         alert.show_all ();
         list_box.set_placeholder ((Gtk.Widget) alert);
 
