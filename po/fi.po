@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 16:21-0700\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2018-02-25 00:09+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
@@ -15,36 +15,36 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:32
 #, fuzzy
 msgid "Print Queue"
 msgstr "Tulostimet"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:33
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:61 src/AddPopover.vala:240
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "Sijainti:"
 
-#: src/PrinterPage.vala:69
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr "Labra 1 tai Juhan pöytä"
 
-#: src/PrinterPage.vala:77
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "Käytä oletustulostimena"
 
-#: src/PrinterPage.vala:90
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "Tulosta testisivu"
 
-#: src/PrinterPage.vala:117
+#: src/PrinterPage.vala:89
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:185
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr "Testisivu"
 
@@ -92,401 +92,6 @@ msgstr "Lisää tulostin"
 #: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "Etsi tarvitsemaasi tulostinta"
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "Sivua per puoli:"
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr ""
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr ""
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "Kaksipuoleinen:"
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "Suunta:"
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr "Median koko:"
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "Automaattinen"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "Yksi väri"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "Väri"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "Yksi väri ja musta"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "Harmaasävy"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr "Prosessoitu väri"
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr "Käsitelty harmaasävy"
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "Väritila:"
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:258
-#, fuzzy
-msgid "Middle Bin"
-msgstr "Keski"
-
-#: src/OptionsPage.vala:261
-#, fuzzy
-msgid "Bottom Bin"
-msgstr "Alaosa"
-
-#: src/OptionsPage.vala:264
-#, fuzzy
-msgid "Side Bin"
-msgstr "Puoli"
-
-#: src/OptionsPage.vala:267
-#, fuzzy
-msgid "Left Bin"
-msgstr "Vasen"
-
-#: src/OptionsPage.vala:270
-#, fuzzy
-msgid "Right Bin"
-msgstr "Oikea"
-
-#: src/OptionsPage.vala:273
-#, fuzzy
-msgid "Center Bin"
-msgstr "Keskitä"
-
-#: src/OptionsPage.vala:276
-msgid "Rear Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:285
-msgid "Large Capacity Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr ""
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr ""
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr ""
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "Taso %d"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr ""
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Luonnos"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "Tavallinen"
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr "Korkea"
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Laatu:"
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "Paperin varaaminen"
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr ""
-
-#: src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr ""
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "Alaosa"
-
-#: src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr "Ohitustaso"
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "Keskitä"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr "Jatkuva automaattisyöttö"
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr ""
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "Kirjekuori"
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "Hagaki"
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr ""
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Vasen"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "Päätaso"
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr ""
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr ""
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr "Keski"
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "Valokuva"
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr ""
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Oikea"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr "Puoli"
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr ""
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr ""
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "Paperilähde:"
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "Näytä valmistuneet työt"
-
-#: src/JobsView.vala:66
-msgid "Print Queue Is Empty"
-msgstr ""
-
-#: src/JobsView.vala:66
-#, fuzzy
-msgid "There are no pending jobs in the queue."
-msgstr "Jonossa ei ole töitä"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "Piilota valmistuneet työt"
-
-#: src/InkLevel.vala:102
-msgid "Black (PGBK)"
-msgstr "Musta (PGBK)"
-
-#: src/InkLevel.vala:105
-msgid "Black (BK)"
-msgstr "Musta (BK)"
-
-#: src/InkLevel.vala:108
-msgid "Black"
-msgstr "Musta"
-
-#: src/InkLevel.vala:111
-msgid "Yellow"
-msgstr "Keltainen"
-
-#: src/InkLevel.vala:114
-msgid "Cyan"
-msgstr "Syaani"
-
-#: src/InkLevel.vala:117
-msgid "Magenta"
-msgstr "Magenta"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Muokkaa"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Internet Printing Protocol (https)"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Internet Printing Protocol (http)"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Internet Printing Protocol (ipp)"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Internet Printing Protocol (ipps)"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Internet Printing Protocol (ipp14)"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR-palvelin tai -tulostin"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Kaikkien saatavilla olevien tulostimen luettelointi ei ole mahdollista"
-
-#: src/AddPopover.vala:169
-msgid "Refresh"
-msgstr "Päivitä"
-
-#: src/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "Päivitä tulostinluettelo"
-
-#: src/AddPopover.vala:176
-msgid "Next"
-msgstr "Seuraava"
-
-#: src/AddPopover.vala:223
-msgid "Connection:"
-msgstr "Yhteys:"
-
-#: src/AddPopover.vala:231
-msgid "Description:"
-msgstr "Kuvaus:"
-
-#: src/AddPopover.vala:236
-msgid "BrandPrinter X3000"
-msgstr ""
-
-#: src/AddPopover.vala:246
-msgid "Lab 1 or John's desk"
-msgstr "Huone 1 tai Jussin pöytä"
-
-#: src/AddPopover.vala:310
-msgid "Previous"
-msgstr "Edellinen"
-
-#: src/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "Valitse toinen tulostin tai protokolla"
-
-#: src/AddPopover.vala:315
-msgid "Add"
-msgstr "Lisää"
-
-#: src/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "Lisää määritetty tulostin"
-
-#: src/AddPopover.vala:540
-msgid "(recommended)"
-msgstr "(suositeltu)"
-
-#: src/AddPopover.vala:602
-msgid "Serial"
-msgstr ""
-
-#: src/AddPopover.vala:605
-msgid "Local Printers"
-msgstr "Paikalliset tulostimet"
-
-#: src/AddPopover.vala:608
-msgid "Network Printers"
-msgstr "Verkkotulostimet"
-
-#: src/AddPopover.vala:611
-msgid "Available Network Printers"
-msgstr "Saatavilla olevat verkkotulostimet"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -599,6 +204,414 @@ msgstr "Työ lopetettu"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Työ valmistui"
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "Työ peruttu"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "Näytä valmistuneet työt"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "Jonossa ei ole töitä"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "Piilota valmistuneet työt"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "Sivua per puoli:"
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "Kaksipuoleinen:"
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "Suunta:"
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr "Median koko:"
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "Automaattinen"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "Yksi väri"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "Väri"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "Yksi väri ja musta"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "Harmaasävy"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr "Prosessoitu väri"
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr "Käsitelty harmaasävy"
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "Väritila:"
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:234
+#, fuzzy
+msgid "Middle Bin"
+msgstr "Keski"
+
+#: src/Views/SetupView.vala:237
+#, fuzzy
+msgid "Bottom Bin"
+msgstr "Alaosa"
+
+#: src/Views/SetupView.vala:240
+#, fuzzy
+msgid "Side Bin"
+msgstr "Puoli"
+
+#: src/Views/SetupView.vala:243
+#, fuzzy
+msgid "Left Bin"
+msgstr "Vasen"
+
+#: src/Views/SetupView.vala:246
+#, fuzzy
+msgid "Right Bin"
+msgstr "Oikea"
+
+#: src/Views/SetupView.vala:249
+#, fuzzy
+msgid "Center Bin"
+msgstr "Keskitä"
+
+#: src/Views/SetupView.vala:252
+msgid "Rear Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:261
+msgid "Large Capacity Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr ""
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "Taso %d"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr ""
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "Luonnos"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr "Tavallinen"
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr "Korkea"
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "Laatu:"
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr "Paperin varaaminen"
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr ""
+
+#: src/Views/SetupView.vala:334
+msgid "Alternate Roll"
+msgstr ""
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr "Alaosa"
+
+#: src/Views/SetupView.vala:343
+msgid "By-pass Tray"
+msgstr "Ohitustaso"
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "Keskitä"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr "Jatkuva automaattisyöttö"
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr ""
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr "Kirjekuori"
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr ""
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "Vasen"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr "Päätaso"
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr ""
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr ""
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr "Keski"
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr "Valokuva"
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr ""
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "Oikea"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr "Puoli"
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr ""
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "Paperilähde:"
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Internet Printing Protocol (https)"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Internet Printing Protocol (http)"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Internet Printing Protocol (ipp)"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Internet Printing Protocol (ipps)"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Internet Printing Protocol (ipp14)"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR-palvelin tai -tulostin"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "Kaikkien saatavilla olevien tulostimen luettelointi ei ole mahdollista"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr "Päivitä"
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "Päivitä tulostinluettelo"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "Seuraava"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "Yhteys:"
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "Kuvaus:"
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr ""
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Huone 1 tai Jussin pöytä"
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "Edellinen"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr "Valitse toinen tulostin tai protokolla"
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr "Lisää"
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr "Lisää määritetty tulostin"
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "(suositeltu)"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr ""
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "Paikalliset tulostimet"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "Verkkotulostimet"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "Saatavilla olevat verkkotulostimet"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "Musta (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "Musta (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "Musta"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "Keltainen"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "Syaani"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "Magenta"
 
 #~ msgid "General"
 #~ msgstr "Yleiset"
