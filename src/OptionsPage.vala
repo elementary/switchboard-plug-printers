@@ -53,7 +53,6 @@ public class Printers.OptionsPage : Gtk.Grid {
         var pages_label = new Gtk.Label (_("Pages per side:"));
         pages_label.xalign = 1;
 
-        margin = 12;
         column_spacing = 12;
         row_spacing = 12;
         attach (pages_label, 1, 0);

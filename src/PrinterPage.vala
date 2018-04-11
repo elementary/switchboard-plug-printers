@@ -28,7 +28,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         expand = true;
         margin = 12;
         column_spacing = 12;
-        row_spacing = 6;
+        row_spacing = 24;
 
         var stack = new Gtk.Stack ();
 
