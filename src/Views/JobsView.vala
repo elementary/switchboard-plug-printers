@@ -229,9 +229,7 @@ public class Printers.JobsView : Gtk.Frame {
 
     [CCode (instance_pos = -1)]
     private void update_header (JobRow row1, JobRow? row2) {
-        if (row2 == null && row1.job.cjob.state != CUPS.IPP.JobState.COMPLETED) {
-            row1.set_header (null);
-        } else if (row2 == null || row1.job.cjob.state != row2.job.cjob.state) {
+        if (row1.job.cjob.state == CUPS.IPP.JobState.COMPLETED && (row2 == null || row1.job.cjob.state != row2.job.cjob.state)) {
             var label = new Gtk.Label (_("Completed Jobs"));
             label.xalign = 0;
             label.margin = 3;
