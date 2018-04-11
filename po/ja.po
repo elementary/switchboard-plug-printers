@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-10 16:21-0700\n"
-"PO-Revision-Date: 2018-03-20 00:12+0000\n"
+"PO-Revision-Date: 2018-04-11 07:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/ja/>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,13 +16,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:39
-#, fuzzy
 msgid "Print Queue"
-msgstr "プリンター"
+msgstr "プリントキュー"
 
 #: src/PrinterPage.vala:40
 msgid "Page Setup"
-msgstr ""
+msgstr "ページセットアップ"
 
 #: src/PrinterPage.vala:61 src/AddPopover.vala:240
 msgid "Location:"
@@ -57,13 +56,11 @@ msgid "Remove Printer"
 msgstr "プリンターの削除"
 
 #: src/PrinterList.vala:87
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
-msgstr ""
-"'%s' を削除するとすべてのプリント履歴と\n"
-"それに関連する設定が削除されます。"
+msgstr "'%s' を削除すると、それに関連するすべてのプリント履歴と設定が削除されます。"
 
 #: src/PrinterList.vala:93
 msgid "Remove"
@@ -224,7 +221,7 @@ msgstr ""
 #: src/OptionsPage.vala:293
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "スタッカー %d"
 
 #: src/OptionsPage.vala:296
 #, c-format
@@ -355,12 +352,11 @@ msgstr "完了した印刷ジョブを表示する"
 
 #: src/JobsView.vala:66
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "プリントキューは空です"
 
 #: src/JobsView.vala:66
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "キューにジョブがありません"
+msgstr "キューには保留中のジョブはありません。"
 
 #: src/JobsView.vala:179
 msgid "Hide completed jobs"
