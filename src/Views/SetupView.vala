@@ -21,59 +21,43 @@
  */
 
 public class Printers.OptionsPage : Gtk.Grid {
-    private Printer printer;
-    private int row_index = 0;
+    public Printer printer { get; construct; }
+    private int row_index = 1;
 
     public OptionsPage (Printer printer) {
-        this.printer = printer;
-        expand = true;
-        margin = 12;
-        column_spacing = 12;
-        row_spacing = 6;
-
-        var expand_left = new Gtk.Grid ();
-        expand_left.hexpand = true;
-        var expand_right = new Gtk.Grid ();
-        expand_right.hexpand = true;
-        attach (expand_left, 0, 0, 1, 1);
-        attach (expand_right, 3, 0, 1, 1);
-        build_pages_per_sheet ();
-        build_two_sided ();
-        build_orientation ();
-        build_page_size ();
-        build_output_bins ();
-        build_print_color_mode ();
-        build_print_quality ();
-        build_media_source ();
-        printer.get_all ();
+        Object (printer: printer);
     }
 
-    private void build_pages_per_sheet () {
+    construct {
         var pages_per_sheet = new Gee.TreeSet<int> ();
         var default_page = printer.get_pages_per_sheet (pages_per_sheet);
-        if (pages_per_sheet.size > 1) {
-            var box = new Granite.Widgets.ModeButton ();
-            foreach (var page in pages_per_sheet) {
-                var index = box.append_text ("%d".printf (page));
-                if (page == default_page) {
-                    box.selected = index;
-                }
-            }
 
-            box.mode_changed.connect ((w) => {
-                var label = w as Gtk.Label;
-                printer.set_default_pages (label.label);
-            });
+        var pages_modebutton = new Granite.Widgets.ModeButton ();
 
-            var label = new Gtk.Label (_("Pages per side:"));
-            ((Gtk.Misc) label).xalign = 1;
-            attach (label, 1, row_index, 1, 1);
-            attach (box, 2, row_index, 1, 1);
-            row_index++;
+        if (pages_per_sheet.size == 1) {
+            pages_modebutton.sensitive = false;
         }
-    }
 
-    private void build_two_sided () {
+        foreach (var page in pages_per_sheet) {
+            var index = pages_modebutton.append_text ("%d".printf (page));
+            if (page == default_page) {
+                pages_modebutton.selected = index;
+            }
+        }
+
+        pages_modebutton.mode_changed.connect ((w) => {
+            var label = w as Gtk.Label;
+            printer.set_default_pages (label.label);
+        });
+
+        var pages_label = new Gtk.Label (_("Pages per side:"));
+        pages_label.xalign = 1;
+
+        column_spacing = 12;
+        row_spacing = 12;
+        attach (pages_label, 1, 0);
+        attach (pages_modebutton, 2, 0);
+
         var sides = new Gee.TreeSet<string> ();
         var default_side = printer.get_sides (sides);
         if (sides.size > 1) {
@@ -143,9 +127,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             attach (grid, 2, row_index, 1, 1);
             row_index++;
         }
-    }
 
-    private void build_orientation () {
         var orientations = new Gee.TreeSet<int> ();
         var default_orientation = printer.get_orientations (orientations);
         if (orientations.size > 1) {
@@ -177,11 +159,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
-    }
 
-    private void build_page_size () {
         var media_sizes = new Gee.TreeSet<string> ();
-        var default_media_source = printer.get_media_sizes (media_sizes);
+        var default_media_sizes = printer.get_media_sizes (media_sizes);
         if (media_sizes.size > 1) {
             var combobox = new Gtk.ComboBoxText ();
             foreach (var media_size in media_sizes) {
@@ -189,7 +169,7 @@ public class Printers.OptionsPage : Gtk.Grid {
                 combobox.append (papersize.get_name (), papersize.get_display_name ());
             }
 
-            combobox.set_active_id (default_media_source);
+            combobox.set_active_id (default_media_sizes);
             combobox.changed.connect (() => {
 
             });
@@ -199,9 +179,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
-    }
 
-    private void build_print_color_mode () {
         var print_color_modes = new Gee.TreeSet<string> ();
         var default_color_mode = printer.get_print_color_modes (print_color_modes);
         if (print_color_modes.size > 1) {
@@ -242,9 +220,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
-    }
 
-    private void build_output_bins () {
         var output_bins = new Gee.TreeSet<string> ();
         var default_output_bin = printer.get_output_bins (output_bins);
         if (output_bins.size > 1) {
@@ -315,9 +291,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
-    }
 
-    private void build_print_quality () {
         var print_qualities = new Gee.TreeSet<int> ();
         var default_print_quality = printer.get_print_qualities (print_qualities);
         if (print_qualities.size > 1) {
@@ -338,14 +312,12 @@ public class Printers.OptionsPage : Gtk.Grid {
 
             combobox.set_active_id ("%d".printf (default_print_quality));
             var label = new Gtk.Label (_("Quality:"));
-            ((Gtk.Misc) label).xalign = 1;
+            label.xalign = 1;
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
-    }
 
-    private void build_media_source () {
         var media_sources = new Gee.TreeSet<string> ();
         var default_media_source = printer.get_media_sources (media_sources);
         if (media_sources.size > 1) {
@@ -445,5 +417,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
         }
+
+        printer.get_all ();
     }
 }

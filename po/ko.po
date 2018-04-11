@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2017-04-14 12:23+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -15,474 +15,83 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "일반 설정"
+#: src/PrinterPage.vala:32
+#, fuzzy
+msgid "Print Queue"
+msgstr "프린터"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "옵션"
+#: src/PrinterPage.vala:33
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "위치:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr "연구실 1 또는 누군가의 책상"
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "기본 프린터로 사용함"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "시험 페이지 인쇄"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:89
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr "시험 페이지"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "프린터 추가…"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "프린터 제거"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "'%s'를 제거하면 프린터 사용 기록과 함께\n"
 "연관된 프린터 설정이 모두 사라집니다."
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "제거"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "프린터"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "프린터 설정하기, 인쇄 대기 관리하기, 잉크 잔량 확인하기"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "프린터 없음"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "인쇄하시려면 프린터를 추가하세요"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "프린터 추가"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "사용할 프린터 검색하기"
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "한 면에 인쇄할 페이지 수:"
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr ""
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr ""
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "양면 인쇄:"
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "용지 방향:"
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr "용지 크기:"
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "자동 설정"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "단색"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "색"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "단색 + 검은색"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "그레이스케일"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr "프로세싱 컬러"
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr "프로세싱 그레이스케일"
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "색상 모드:"
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:258
-#, fuzzy
-msgid "Middle Bin"
-msgstr "가운데"
-
-#: src/OptionsPage.vala:261
-#, fuzzy
-msgid "Bottom Bin"
-msgstr "하단"
-
-#: src/OptionsPage.vala:264
-#, fuzzy
-msgid "Side Bin"
-msgstr "옆면"
-
-#: src/OptionsPage.vala:267
-#, fuzzy
-msgid "Left Bin"
-msgstr "왼쪽"
-
-#: src/OptionsPage.vala:270
-#, fuzzy
-msgid "Right Bin"
-msgstr "오른쪽"
-
-#: src/OptionsPage.vala:273
-#, fuzzy
-msgid "Center Bin"
-msgstr "가운데"
-
-#: src/OptionsPage.vala:276
-#, fuzzy
-msgid "Rear Bin"
-msgstr "뒷면"
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:285
-#, fuzzy
-msgid "Large Capacity Bin"
-msgstr "대용량"
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr ""
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr ""
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr ""
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "%d번 트레이"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "출력 트레이:"
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "보관함"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "일반"
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr "높음"
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "품질:"
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "용지 할당"
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "다른 트레이"
-
-#: src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr "다른 롤"
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "하단"
-
-#: src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr "수동 트레이"
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "가운데"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr "연속 자동 공급"
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "디스크"
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "봉투"
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "우편 엽서"
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr "대용량"
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "왼쪽"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "메인 트레이"
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr "메인 롤"
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "수동 설정"
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr "가운데"
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "사진"
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "뒷면"
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "오른쪽"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr "옆면"
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr "상단"
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr "%d개 롤"
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "용지 공급:"
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "완료된 인쇄 작업 보기"
-
-#: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "작업 없음"
-
-#: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
-msgstr "대기 열에 작업이 없습니다"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "끝난 작업 숨기기"
-
-#: src/InkLevel.vala:98
-msgid "Black (PGBK)"
-msgstr "검은색 (PGBK)"
-
-#: src/InkLevel.vala:101
-msgid "Black (BK)"
-msgstr "검은색 (BK)"
-
-#: src/InkLevel.vala:104
-msgid "Black"
-msgstr "검은색"
-
-#: src/InkLevel.vala:107
-msgid "Yellow"
-msgstr "노란색"
-
-#: src/InkLevel.vala:110
-msgid "Cyan"
-msgstr "청록색"
-
-#: src/InkLevel.vala:113
-msgid "Magenta"
-msgstr "진홍색"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "수정"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "인터넷 인쇄 프로토콜 (https)"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "인터넷 인쇄 프로토콜 (http)"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "인터넷 인쇄 프로토콜 (ipp)"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "인터넷 인쇄 프로토콜 (ipps)"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "인터넷 인쇄 프로토콜 (ipp14)"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR 호스트 또는 프린터"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "앱 소켓/HP JetDirect"
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "사용 가능한 프린터 목록을 볼 수 없습니다"
-
-#: src/AddPopover.vala:176
-msgid "Refresh"
-msgstr "새로 고침"
-
-#: src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr "프린터 목록 새로 고침"
-
-#: src/AddPopover.vala:183
-msgid "Next"
-msgstr "다음"
-
-#: src/AddPopover.vala:229
-msgid "Connection:"
-msgstr "연결:"
-
-#: src/AddPopover.vala:237
-msgid "Description:"
-msgstr "설명:"
-
-#: src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr "브랜드 프린터 X3000"
-
-#: src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr "연구실 1 또는 누군가의 책상"
-
-#: src/AddPopover.vala:316
-msgid "Previous"
-msgstr "이전"
-
-#: src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr "다른 프린터 또는 프로토콜 선택"
-
-#: src/AddPopover.vala:321
-msgid "Add"
-msgstr "추가"
-
-#: src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr "설정한 프린터 추가"
-
-#: src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr "(추천)"
-
-#: src/AddPopover.vala:608
-msgid "Serial"
-msgstr "일련번호"
-
-#: src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr "로컬 프린터"
-
-#: src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr "네트워크 프린터"
-
-#: src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr "사용 가능한 네트워크 프린터"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -564,7 +173,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "감광 반도체가 더 이상 작동하지 않습니다"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "사용함"
 
@@ -597,3 +206,422 @@ msgstr "작업이 중단 됨"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "작업이 완료 됨"
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "작업이 취소 됨"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "완료된 인쇄 작업 보기"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "대기 열에 작업이 없습니다"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "끝난 작업 숨기기"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "한 면에 인쇄할 페이지 수:"
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "양면 인쇄:"
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "용지 방향:"
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr "용지 크기:"
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "자동 설정"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "단색"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "색"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "단색 + 검은색"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "그레이스케일"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr "프로세싱 컬러"
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr "프로세싱 그레이스케일"
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "색상 모드:"
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:234
+#, fuzzy
+msgid "Middle Bin"
+msgstr "가운데"
+
+#: src/Views/SetupView.vala:237
+#, fuzzy
+msgid "Bottom Bin"
+msgstr "하단"
+
+#: src/Views/SetupView.vala:240
+#, fuzzy
+msgid "Side Bin"
+msgstr "옆면"
+
+#: src/Views/SetupView.vala:243
+#, fuzzy
+msgid "Left Bin"
+msgstr "왼쪽"
+
+#: src/Views/SetupView.vala:246
+#, fuzzy
+msgid "Right Bin"
+msgstr "오른쪽"
+
+#: src/Views/SetupView.vala:249
+#, fuzzy
+msgid "Center Bin"
+msgstr "가운데"
+
+#: src/Views/SetupView.vala:252
+#, fuzzy
+msgid "Rear Bin"
+msgstr "뒷면"
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:261
+#, fuzzy
+msgid "Large Capacity Bin"
+msgstr "대용량"
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr ""
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "%d번 트레이"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr "출력 트레이:"
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "보관함"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr "일반"
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr "높음"
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "품질:"
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr "용지 할당"
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr "다른 트레이"
+
+#: src/Views/SetupView.vala:334
+msgid "Alternate Roll"
+msgstr "다른 롤"
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr "하단"
+
+#: src/Views/SetupView.vala:343
+msgid "By-pass Tray"
+msgstr "수동 트레이"
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "가운데"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr "연속 자동 공급"
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr "디스크"
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr "봉투"
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr "우편 엽서"
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr "대용량"
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "왼쪽"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr "메인 트레이"
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr "메인 롤"
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr "수동 설정"
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr "가운데"
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr "사진"
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr "뒷면"
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "오른쪽"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr "옆면"
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr "상단"
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr "%d개 롤"
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "용지 공급:"
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "인터넷 인쇄 프로토콜 (https)"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "인터넷 인쇄 프로토콜 (http)"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "인터넷 인쇄 프로토콜 (ipp)"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "인터넷 인쇄 프로토콜 (ipps)"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "인터넷 인쇄 프로토콜 (ipp14)"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR 호스트 또는 프린터"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "앱 소켓/HP JetDirect"
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "사용 가능한 프린터 목록을 볼 수 없습니다"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr "새로 고침"
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "프린터 목록 새로 고침"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "다음"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "연결:"
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "설명:"
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr "브랜드 프린터 X3000"
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "연구실 1 또는 누군가의 책상"
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "이전"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr "다른 프린터 또는 프로토콜 선택"
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr "추가"
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr "설정한 프린터 추가"
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "(추천)"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr "일련번호"
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "로컬 프린터"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "네트워크 프린터"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "사용 가능한 네트워크 프린터"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "수정"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "검은색 (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "검은색 (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "검은색"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "노란색"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "청록색"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "진홍색"
+
+#~ msgid "General"
+#~ msgstr "일반 설정"
+
+#~ msgid "Options"
+#~ msgstr "옵션"
+
+#~ msgid "No jobs"
+#~ msgstr "작업 없음"

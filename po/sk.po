@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2016-01-11 18:44+0000\n"
 "Last-Translator: Lukáš Papík <stereo839@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,475 +13,84 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 "X-Generator: Launchpad (build 18330)\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "Všeobecné"
+#: src/PrinterPage.vala:32
+#, fuzzy
+msgid "Print Queue"
+msgstr "Tlačiarne"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Možnosti"
+#: src/PrinterPage.vala:33
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "Umiestnenie:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr ""
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "Použiť ako východziu tlačiareň"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "Vytlačiť skúšobnú stránku"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:89
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr ""
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "Pridať tlačiareň..."
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "Odstrániť tlačiareň"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "Odstránením '%s' stratíte celú históriu tlače\n"
 "a konfiguráciu spojenú s tým."
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "Odstrániť"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "Tlačiarne"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Konfigurovať tlačiarne, spravovať tlačovú frontu a zobraziť úroveň atramentu"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr ""
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr ""
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr ""
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr ""
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "Stránok na stranu:"
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr ""
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr ""
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "Obojstranný:"
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "Orientácia:"
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr "Velikosť média:"
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "Automaticky"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "Jedna farba"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "Farba"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "Jedna farba + čierna"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "Odtiene šedej"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr "Spracovaná farba"
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr "Spracované odtiene šedej"
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "Farebný režim:"
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:258
-#, fuzzy
-msgid "Middle Bin"
-msgstr "Stred"
-
-#: src/OptionsPage.vala:261
-#, fuzzy
-msgid "Bottom Bin"
-msgstr "Dole"
-
-#: src/OptionsPage.vala:264
-#, fuzzy
-msgid "Side Bin"
-msgstr "Strana"
-
-#: src/OptionsPage.vala:267
-#, fuzzy
-msgid "Left Bin"
-msgstr "Vľavo"
-
-#: src/OptionsPage.vala:270
-#, fuzzy
-msgid "Right Bin"
-msgstr "Vpravo"
-
-#: src/OptionsPage.vala:273
-#, fuzzy
-msgid "Center Bin"
-msgstr "Na stred"
-
-#: src/OptionsPage.vala:276
-#, fuzzy
-msgid "Rear Bin"
-msgstr "Vzadu"
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:285
-#, fuzzy
-msgid "Large Capacity Bin"
-msgstr "Veľkokapacitné"
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr ""
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr ""
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr ""
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "Zásobník %d"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "Výstupný zásobník:"
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Návrh"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "Normálny"
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr "Vysoká"
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Kvalita:"
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "Pridelenie papieru"
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "Alternatívny zásobník"
-
-#: src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr ""
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "Dole"
-
-#: src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr ""
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "Na stred"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr ""
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "Disk"
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "Obálka"
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "Hagaki"
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr "Veľkokapacitné"
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Vľavo"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "Hlavný zásobník"
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr ""
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "Ručná"
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr "Stred"
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "Fotografia"
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "Vzadu"
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Vpravo"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr "Strana"
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr "Hore"
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr ""
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "Zdroj papiera:"
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "Zobraziť dokončené úlohy"
-
-#: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "Žiadne úlohy"
-
-#: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
-msgstr "Niesu žiadne úlohy v rade"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "Skryť dokončené úlohy"
-
-#: src/InkLevel.vala:98
-msgid "Black (PGBK)"
-msgstr "Čierna (PGBK)"
-
-#: src/InkLevel.vala:101
-msgid "Black (BK)"
-msgstr "Čierna (BK)"
-
-#: src/InkLevel.vala:104
-msgid "Black"
-msgstr "Čierna"
-
-#: src/InkLevel.vala:107
-msgid "Yellow"
-msgstr "Žltá"
-
-#: src/InkLevel.vala:110
-msgid "Cyan"
-msgstr "Azúrová"
-
-#: src/InkLevel.vala:113
-msgid "Magenta"
-msgstr "Purpurová"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Upraviť"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Internetový tlačový protokol (https)"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Internetový tlačový protokol (http)"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Internetový tlačový protokol (ipp)"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Internetový tlačový protokol (ipps)"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Internetový tlačový protokol (ipp14)"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR hostiteľa alebo tlačiarne"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Nemožné uviesť všetky dostupné tlačiarne"
-
-#: src/AddPopover.vala:176
-msgid "Refresh"
-msgstr ""
-
-#: src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr "Obnovte zoznam tlačiarni"
-
-#: src/AddPopover.vala:183
-msgid "Next"
-msgstr "Ďalej"
-
-#: src/AddPopover.vala:229
-msgid "Connection:"
-msgstr "Pripojenie:"
-
-#: src/AddPopover.vala:237
-msgid "Description:"
-msgstr "Popis:"
-
-#: src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
-
-#: src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr "Lab 1 alebo Johnov stôl"
-
-#: src/AddPopover.vala:316
-msgid "Previous"
-msgstr "Predchadzajúci"
-
-#: src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr ""
-
-#: src/AddPopover.vala:321
-msgid "Add"
-msgstr ""
-
-#: src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr ""
-
-#: src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr "(doporučenie)"
-
-#: src/AddPopover.vala:608
-msgid "Serial"
-msgstr ""
-
-#: src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr "Lokálne tlačiarne"
-
-#: src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr "Sieťové tlačiarne"
-
-#: src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr "Dostupné sieťové tlačiarne"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -563,7 +172,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr ""
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Pripravená"
 
@@ -596,3 +205,422 @@ msgstr "Úloha prerušená"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Úloha ukočená"
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "Úloha zrušená"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "Zobraziť dokončené úlohy"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "Niesu žiadne úlohy v rade"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "Skryť dokončené úlohy"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "Stránok na stranu:"
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "Obojstranný:"
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "Orientácia:"
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr "Velikosť média:"
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "Automaticky"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "Jedna farba"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "Farba"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "Jedna farba + čierna"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "Odtiene šedej"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr "Spracovaná farba"
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr "Spracované odtiene šedej"
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "Farebný režim:"
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:234
+#, fuzzy
+msgid "Middle Bin"
+msgstr "Stred"
+
+#: src/Views/SetupView.vala:237
+#, fuzzy
+msgid "Bottom Bin"
+msgstr "Dole"
+
+#: src/Views/SetupView.vala:240
+#, fuzzy
+msgid "Side Bin"
+msgstr "Strana"
+
+#: src/Views/SetupView.vala:243
+#, fuzzy
+msgid "Left Bin"
+msgstr "Vľavo"
+
+#: src/Views/SetupView.vala:246
+#, fuzzy
+msgid "Right Bin"
+msgstr "Vpravo"
+
+#: src/Views/SetupView.vala:249
+#, fuzzy
+msgid "Center Bin"
+msgstr "Na stred"
+
+#: src/Views/SetupView.vala:252
+#, fuzzy
+msgid "Rear Bin"
+msgstr "Vzadu"
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:261
+#, fuzzy
+msgid "Large Capacity Bin"
+msgstr "Veľkokapacitné"
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr ""
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "Zásobník %d"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr "Výstupný zásobník:"
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "Návrh"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr "Normálny"
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr "Vysoká"
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "Kvalita:"
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr "Pridelenie papieru"
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr "Alternatívny zásobník"
+
+#: src/Views/SetupView.vala:334
+msgid "Alternate Roll"
+msgstr ""
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr "Dole"
+
+#: src/Views/SetupView.vala:343
+msgid "By-pass Tray"
+msgstr ""
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "Na stred"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr ""
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr "Disk"
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr "Obálka"
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr "Veľkokapacitné"
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "Vľavo"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr "Hlavný zásobník"
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr ""
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr "Ručná"
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr "Stred"
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr "Fotografia"
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr "Vzadu"
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "Vpravo"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr "Strana"
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr "Hore"
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "Zdroj papiera:"
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Internetový tlačový protokol (https)"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Internetový tlačový protokol (http)"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Internetový tlačový protokol (ipp)"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Internetový tlačový protokol (ipps)"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Internetový tlačový protokol (ipp14)"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR hostiteľa alebo tlačiarne"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "Nemožné uviesť všetky dostupné tlačiarne"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr ""
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "Obnovte zoznam tlačiarni"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "Ďalej"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "Pripojenie:"
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "Popis:"
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Lab 1 alebo Johnov stôl"
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "Predchadzajúci"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr ""
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr ""
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr ""
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "(doporučenie)"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr ""
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "Lokálne tlačiarne"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "Sieťové tlačiarne"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "Dostupné sieťové tlačiarne"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Upraviť"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "Čierna (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "Čierna (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "Čierna"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "Žltá"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "Azúrová"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "Purpurová"
+
+#~ msgid "General"
+#~ msgstr "Všeobecné"
+
+#~ msgid "Options"
+#~ msgstr "Možnosti"
+
+#~ msgid "No jobs"
+#~ msgstr "Žiadne úlohy"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2017-07-11 11:46+0000\n"
 "Last-Translator: Mattias Ezequiel Mignone <memignone@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -15,476 +15,85 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "General"
+#: src/PrinterPage.vala:32
+#, fuzzy
+msgid "Print Queue"
+msgstr "Impresoras"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Opciones"
+#: src/PrinterPage.vala:33
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "Ubicación:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr "Laboratorio 1 o Escritorio de John"
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "Usar como impresora por defecto"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "Imprimir página de prueba"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:89
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr "Página de prueba"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "Añadir impresora…"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "Eliminar impresora"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "Eliminando '%s' perderás todo el histórico de impresión\n"
 "y la configuración asociada a él."
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "Quitar"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "Impresoras"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Configurar impresoras, gestionar colas de impresión  y revisar niveles de "
 "tinta"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "Sin impresoras"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "Añade una impresora para empezar a imprimir"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "Añadir impresora"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "Busca la impresora que necesitas"
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "Páginas por hoja:"
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr ""
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr ""
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "A dos caras:"
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "Orientación:"
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr "Tamaño del soporte:"
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "Automático"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "Monocromo"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "Color"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "Un color + negro"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "Escala de grises"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr "Color procesado"
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr "Escala de grises procesada"
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "Modo de color:"
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:258
-#, fuzzy
-msgid "Middle Bin"
-msgstr "Medio"
-
-#: src/OptionsPage.vala:261
-#, fuzzy
-msgid "Bottom Bin"
-msgstr "Inferior"
-
-#: src/OptionsPage.vala:264
-#, fuzzy
-msgid "Side Bin"
-msgstr "Lateral"
-
-#: src/OptionsPage.vala:267
-#, fuzzy
-msgid "Left Bin"
-msgstr "Izquierda"
-
-#: src/OptionsPage.vala:270
-#, fuzzy
-msgid "Right Bin"
-msgstr "Derecha"
-
-#: src/OptionsPage.vala:273
-#, fuzzy
-msgid "Center Bin"
-msgstr "Centro"
-
-#: src/OptionsPage.vala:276
-#, fuzzy
-msgid "Rear Bin"
-msgstr "Trasero"
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:285
-#, fuzzy
-msgid "Large Capacity Bin"
-msgstr "Gran capacidad"
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr ""
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr ""
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr ""
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "Bandeja %d"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "Bandeja de salida:"
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Borrador"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "Normal"
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr "Alto"
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Calidad:"
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "Reparto de papel"
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "Alternar bandeja"
-
-#: src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr "Alternar carrete"
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "Inferior"
-
-#: src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr "Bandeja derivada"
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "Centro"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr "Alimentación automática"
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "Disco"
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "Sobre"
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "Hagaki"
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr "Gran capacidad"
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Izquierda"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "Bandeja principal"
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr "Carrete principal"
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "Manual"
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr "Medio"
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "Fotografía"
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "Trasero"
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Derecha"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr "Lateral"
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr "Superior"
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr "Carrete %d"
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "Fuente de papel:"
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "Mostrar trabajos completados"
-
-#: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "Sin trabajos"
-
-#: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
-msgstr "No hay trabajos en la cola"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "Ocultar trabajos completados"
-
-#: src/InkLevel.vala:98
-msgid "Black (PGBK)"
-msgstr "Negro (PGBK)"
-
-#: src/InkLevel.vala:101
-msgid "Black (BK)"
-msgstr "Negro (BK)"
-
-#: src/InkLevel.vala:104
-msgid "Black"
-msgstr "Negro"
-
-#: src/InkLevel.vala:107
-msgid "Yellow"
-msgstr "Amarillo"
-
-#: src/InkLevel.vala:110
-msgid "Cyan"
-msgstr "Cian"
-
-#: src/InkLevel.vala:113
-msgid "Magenta"
-msgstr "Magenta"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Editar"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Protocolo de impresión en internet (https)"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Protocolo de Impresión por Internet (http)"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Protocolo de Impresión por Internet (ipp)"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Protocolo de Impresión por Internet (ipps)"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Protocolo de Impresión por Internet (ipp14)"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "Equipo o Impresora LPD/LPR"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Imposible listar todas las impresoras disponibles"
-
-#: src/AddPopover.vala:176
-msgid "Refresh"
-msgstr "Actualizar"
-
-#: src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr "Actualizar la lista de impresoras"
-
-#: src/AddPopover.vala:183
-msgid "Next"
-msgstr "Siguiente"
-
-#: src/AddPopover.vala:229
-msgid "Connection:"
-msgstr "Conexión:"
-
-#: src/AddPopover.vala:237
-msgid "Description:"
-msgstr "Descripción:"
-
-#: src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
-
-#: src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr "Laboratorio 1 o escritorio de John"
-
-#: src/AddPopover.vala:316
-msgid "Previous"
-msgstr "Anterior"
-
-#: src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr "Elige otra impresora o protocolo"
-
-#: src/AddPopover.vala:321
-msgid "Add"
-msgstr "Añadir"
-
-#: src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr "Añade la impresora configurada"
-
-#: src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr "(recomendado)"
-
-#: src/AddPopover.vala:608
-msgid "Serial"
-msgstr "Número de serie"
-
-#: src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr "Impresoras locales"
-
-#: src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr "Impresoras de red"
-
-#: src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr "Impresoras de red disponibles"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -566,7 +175,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "El conductor óptico ya no funciona"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Listo"
 
@@ -599,3 +208,422 @@ msgstr "Trabajo abortado"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Trabajo completado"
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "Trabajo cancelado"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "Mostrar trabajos completados"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "No hay trabajos en la cola"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "Ocultar trabajos completados"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "Páginas por hoja:"
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "A dos caras:"
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "Orientación:"
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr "Tamaño del soporte:"
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "Automático"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "Monocromo"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "Color"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "Un color + negro"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "Escala de grises"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr "Color procesado"
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr "Escala de grises procesada"
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "Modo de color:"
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:234
+#, fuzzy
+msgid "Middle Bin"
+msgstr "Medio"
+
+#: src/Views/SetupView.vala:237
+#, fuzzy
+msgid "Bottom Bin"
+msgstr "Inferior"
+
+#: src/Views/SetupView.vala:240
+#, fuzzy
+msgid "Side Bin"
+msgstr "Lateral"
+
+#: src/Views/SetupView.vala:243
+#, fuzzy
+msgid "Left Bin"
+msgstr "Izquierda"
+
+#: src/Views/SetupView.vala:246
+#, fuzzy
+msgid "Right Bin"
+msgstr "Derecha"
+
+#: src/Views/SetupView.vala:249
+#, fuzzy
+msgid "Center Bin"
+msgstr "Centro"
+
+#: src/Views/SetupView.vala:252
+#, fuzzy
+msgid "Rear Bin"
+msgstr "Trasero"
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:261
+#, fuzzy
+msgid "Large Capacity Bin"
+msgstr "Gran capacidad"
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr ""
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "Bandeja %d"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr "Bandeja de salida:"
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "Borrador"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr "Normal"
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr "Alto"
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "Calidad:"
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr "Reparto de papel"
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr "Alternar bandeja"
+
+#: src/Views/SetupView.vala:334
+msgid "Alternate Roll"
+msgstr "Alternar carrete"
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr "Inferior"
+
+#: src/Views/SetupView.vala:343
+msgid "By-pass Tray"
+msgstr "Bandeja derivada"
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "Centro"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr "Alimentación automática"
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr "Disco"
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr "Sobre"
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr "Gran capacidad"
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "Izquierda"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr "Bandeja principal"
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr "Carrete principal"
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr "Manual"
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr "Medio"
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr "Fotografía"
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr "Trasero"
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "Derecha"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr "Lateral"
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr "Superior"
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr "Carrete %d"
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "Fuente de papel:"
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Protocolo de impresión en internet (https)"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Protocolo de Impresión por Internet (http)"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Protocolo de Impresión por Internet (ipp)"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Protocolo de Impresión por Internet (ipps)"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Protocolo de Impresión por Internet (ipp14)"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "Equipo o Impresora LPD/LPR"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "Imposible listar todas las impresoras disponibles"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr "Actualizar"
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "Actualizar la lista de impresoras"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "Siguiente"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "Conexión:"
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "Descripción:"
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Laboratorio 1 o escritorio de John"
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "Anterior"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr "Elige otra impresora o protocolo"
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr "Añadir"
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr "Añade la impresora configurada"
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "(recomendado)"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr "Número de serie"
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "Impresoras locales"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "Impresoras de red"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "Impresoras de red disponibles"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Editar"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "Negro (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "Negro (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "Negro"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "Amarillo"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "Cian"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "Magenta"
+
+#~ msgid "General"
+#~ msgstr "General"
+
+#~ msgid "Options"
+#~ msgstr "Opciones"
+
+#~ msgid "No jobs"
+#~ msgstr "Sin trabajos"

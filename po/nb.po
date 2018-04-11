@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2017-04-15 23:24+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -15,476 +15,83 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:49+0000\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "Generelt"
+#: src/PrinterPage.vala:32
+#, fuzzy
+msgid "Print Queue"
+msgstr "Skrivere"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Alternativer"
+#: src/PrinterPage.vala:33
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "Plassering:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr "Laboratorie 1 eller Ole's skrivebord"
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "Bruk som standard skriver"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "Skriv ut testside"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:89
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr "Testside"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "Legg til skriver…"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "Fjern skriver"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "Ved å fjerne '%s' mister du all utskriftshistorikk\n"
 "og konfigurasjon assosiert med den."
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "Fjern"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "Skrivere"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Konfigurer skrivere, behandle utskriftskøer og se blekknivåer"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "Ingen skrivere"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "Legg til skriver for å skrive ut"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "Legg til skriver"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "Søk etter skriveren du trenger"
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "Sider per side:"
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr ""
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr ""
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "To-sidig:"
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "Orientering:"
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr "Papirstørrelse:"
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "Automatisk"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "En farge"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "Farge"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "En farge + sort"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "Gråtoner"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr "Behandlet farge"
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr "Behandlet gråtone"
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "Fargemodus:"
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:258
-#, fuzzy
-msgid "Middle Bin"
-msgstr "Midten"
-
-#: src/OptionsPage.vala:261
-#, fuzzy
-msgid "Bottom Bin"
-msgstr "Nederst"
-
-#: src/OptionsPage.vala:264
-#, fuzzy
-msgid "Side Bin"
-msgstr "Siden"
-
-#: src/OptionsPage.vala:267
-#, fuzzy
-msgid "Left Bin"
-msgstr "Venstre"
-
-#: src/OptionsPage.vala:270
-#, fuzzy
-msgid "Right Bin"
-msgstr "Høyre"
-
-#: src/OptionsPage.vala:273
-#, fuzzy
-msgid "Center Bin"
-msgstr "Senter"
-
-#: src/OptionsPage.vala:276
-#, fuzzy
-msgid "Rear Bin"
-msgstr "Bak"
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:285
-#, fuzzy
-msgid "Large Capacity Bin"
-msgstr "Stor kapasitet"
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr ""
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr ""
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr ""
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "Papirmater %d"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "Papirskuff:"
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Kladd"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "Normal"
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr "Høy"
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Kvalitet:"
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "Papirtilgang"
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "Alternativ papirmating"
-
-#: src/OptionsPage.vala:362
-#, fuzzy
-msgid "Alternate Roll"
-msgstr "Alternativ papirmater"
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "Nederst"
-
-#: src/OptionsPage.vala:371
-#, fuzzy
-msgid "By-pass Tray"
-msgstr "Alternativ skuff"
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "Senter"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr "Kontinuerlig automatisk mating"
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "Lagringsplass"
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "Konvolutt"
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "Hagaki"
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr "Stor kapasitet"
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Venstre"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "Hovedpapirmater"
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr "Hovedrulle"
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "Håndbok"
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr "Midten"
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "Bilde"
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "Bak"
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Høyre"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr "Siden"
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr "Toppen"
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr "Rulle %d"
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "Papirkilde:"
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "Vis fullførte jobber"
-
-#: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "Ingen jobber"
-
-#: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
-msgstr "Ingen jobber i køa"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "Skjul fullførte jobber"
-
-#: src/InkLevel.vala:98
-msgid "Black (PGBK)"
-msgstr "Svart (PGBK)"
-
-#: src/InkLevel.vala:101
-msgid "Black (BK)"
-msgstr "Svart (BK)"
-
-#: src/InkLevel.vala:104
-msgid "Black"
-msgstr "Svart"
-
-#: src/InkLevel.vala:107
-msgid "Yellow"
-msgstr "Gul"
-
-#: src/InkLevel.vala:110
-msgid "Cyan"
-msgstr "Cyanblå"
-
-#: src/InkLevel.vala:113
-msgid "Magenta"
-msgstr "Magentarød"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Rediger"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Internett-Printing-Protokoll (https)"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Internett-Printing-Protokoll (http)"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Internett-Printing-Protokoll (ipp)"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Internett-Printing-Protokoll (ipps)"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Internett Printing Protokoll (ipp14)"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR vert eller skriver"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Umulig å liste opp alle tilgjengelige skrivere"
-
-#: src/AddPopover.vala:176
-msgid "Refresh"
-msgstr "Oppdater"
-
-#: src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr "Oppdater skriverlista"
-
-#: src/AddPopover.vala:183
-msgid "Next"
-msgstr "Neste"
-
-#: src/AddPopover.vala:229
-msgid "Connection:"
-msgstr "Forbindelse:"
-
-#: src/AddPopover.vala:237
-msgid "Description:"
-msgstr "Beskrivelse:"
-
-#: src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr "MerkePrinter X3000"
-
-#: src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr "Laboratorie 1 eller Ole's skrivebord"
-
-#: src/AddPopover.vala:316
-msgid "Previous"
-msgstr "Forrige"
-
-#: src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr "Velg en annen skriver eller protokoll"
-
-#: src/AddPopover.vala:321
-msgid "Add"
-msgstr "Legg til"
-
-#: src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr "Legg til den oppsatte printeren"
-
-#: src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr "(anbefalt)"
-
-#: src/AddPopover.vala:608
-msgid "Serial"
-msgstr "Seriell"
-
-#: src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr "Lokale skrivere"
-
-#: src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr "Netverksskrivere"
-
-#: src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr "Tilgjengelige nettverksskrivere"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -566,7 +173,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Bildetrommelen fungerer ikke lenger"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Klar"
 
@@ -599,3 +206,424 @@ msgstr "Jobb avbrutt"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Jobb fullført"
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "Jobb kansellert"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "Vis fullførte jobber"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "Ingen jobber i køa"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "Skjul fullførte jobber"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "Sider per side:"
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "To-sidig:"
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "Orientering:"
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr "Papirstørrelse:"
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "Automatisk"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "En farge"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "Farge"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "En farge + sort"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "Gråtoner"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr "Behandlet farge"
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr "Behandlet gråtone"
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "Fargemodus:"
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:234
+#, fuzzy
+msgid "Middle Bin"
+msgstr "Midten"
+
+#: src/Views/SetupView.vala:237
+#, fuzzy
+msgid "Bottom Bin"
+msgstr "Nederst"
+
+#: src/Views/SetupView.vala:240
+#, fuzzy
+msgid "Side Bin"
+msgstr "Siden"
+
+#: src/Views/SetupView.vala:243
+#, fuzzy
+msgid "Left Bin"
+msgstr "Venstre"
+
+#: src/Views/SetupView.vala:246
+#, fuzzy
+msgid "Right Bin"
+msgstr "Høyre"
+
+#: src/Views/SetupView.vala:249
+#, fuzzy
+msgid "Center Bin"
+msgstr "Senter"
+
+#: src/Views/SetupView.vala:252
+#, fuzzy
+msgid "Rear Bin"
+msgstr "Bak"
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:261
+#, fuzzy
+msgid "Large Capacity Bin"
+msgstr "Stor kapasitet"
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr ""
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "Papirmater %d"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr "Papirskuff:"
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "Kladd"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr "Normal"
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr "Høy"
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "Kvalitet:"
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr "Papirtilgang"
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr "Alternativ papirmating"
+
+#: src/Views/SetupView.vala:334
+#, fuzzy
+msgid "Alternate Roll"
+msgstr "Alternativ papirmater"
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr "Nederst"
+
+#: src/Views/SetupView.vala:343
+#, fuzzy
+msgid "By-pass Tray"
+msgstr "Alternativ skuff"
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "Senter"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr "Kontinuerlig automatisk mating"
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr "Lagringsplass"
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr "Konvolutt"
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr "Stor kapasitet"
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "Venstre"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr "Hovedpapirmater"
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr "Hovedrulle"
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr "Håndbok"
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr "Midten"
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr "Bilde"
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr "Bak"
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "Høyre"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr "Siden"
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr "Toppen"
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr "Rulle %d"
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "Papirkilde:"
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Internett-Printing-Protokoll (https)"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Internett-Printing-Protokoll (http)"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Internett-Printing-Protokoll (ipp)"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Internett-Printing-Protokoll (ipps)"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Internett Printing Protokoll (ipp14)"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR vert eller skriver"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "Umulig å liste opp alle tilgjengelige skrivere"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr "Oppdater"
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "Oppdater skriverlista"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "Neste"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "Forbindelse:"
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "Beskrivelse:"
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr "MerkePrinter X3000"
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Laboratorie 1 eller Ole's skrivebord"
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "Forrige"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr "Velg en annen skriver eller protokoll"
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr "Legg til"
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr "Legg til den oppsatte printeren"
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "(anbefalt)"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr "Seriell"
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "Lokale skrivere"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "Netverksskrivere"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "Tilgjengelige nettverksskrivere"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Rediger"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "Svart (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "Svart (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "Svart"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "Gul"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "Cyanblå"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "Magentarød"
+
+#~ msgid "General"
+#~ msgstr "Generelt"
+
+#~ msgid "Options"
+#~ msgstr "Alternativer"
+
+#~ msgid "No jobs"
+#~ msgstr "Ingen jobber"

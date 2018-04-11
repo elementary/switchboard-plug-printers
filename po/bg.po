@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2017-04-14 16:48+0000\n"
 "Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -15,471 +15,85 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "Общи"
+#: src/PrinterPage.vala:32
+#, fuzzy
+msgid "Print Queue"
+msgstr "Печатащи машини"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Настройки"
+#: src/PrinterPage.vala:33
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "Местоположение:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr ""
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "Използване като печатаща машина по подразбиране"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "Печат на пробна страница"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:89
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr "Пробна страница"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "Добавяне на печатаща машина"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "Премахване на печатащата машина"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "Ако премахнете '%s'  ще изгубите цялата история на принтирането,\n"
 "както и конфигурацията направена за това устройство."
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "Премахване"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "Печатащи машини"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Настройка на принтерите, управление на опашките за печат и проверка на "
 "нивото на мастилото"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "Няма печатащи машини"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "Добавете принтер, за да започнете да печатате"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "Добавяне на печатаща машина"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr ""
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "Страници на страна:"
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr ""
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr ""
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "Двустранно:"
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "Ориентация:"
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr ""
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "Автоматично"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "Едноцветно"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "Цветно"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "Едноцветно + черно-бяло"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "Скала на сивото"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr ""
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr ""
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "Цветови режим:"
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:258
-msgid "Middle Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:261
-msgid "Bottom Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:264
-msgid "Side Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:267
-#, fuzzy
-msgid "Left Bin"
-msgstr "Ляво"
-
-#: src/OptionsPage.vala:270
-#, fuzzy
-msgid "Right Bin"
-msgstr "Дясно"
-
-#: src/OptionsPage.vala:273
-#, fuzzy
-msgid "Center Bin"
-msgstr "Център"
-
-#: src/OptionsPage.vala:276
-msgid "Rear Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:285
-msgid "Large Capacity Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr ""
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr ""
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr ""
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "Тава %d"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr ""
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Чернова"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr ""
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr ""
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Качество:"
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr ""
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr ""
-
-#: src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr ""
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr ""
-
-#: src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr ""
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "Център"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr ""
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr ""
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr ""
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr ""
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr ""
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Ляво"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr ""
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr ""
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr ""
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr ""
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr ""
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr ""
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Дясно"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr ""
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr ""
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr ""
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "Източник на хартията:"
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "Показване на завършените задачи"
-
-#: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "Няма задачи"
-
-#: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
-msgstr "В опашката няма задачи"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "Скриване на завършените задачи"
-
-#: src/InkLevel.vala:98
-msgid "Black (PGBK)"
-msgstr "Черно-бяло (PGBK)"
-
-#: src/InkLevel.vala:101
-msgid "Black (BK)"
-msgstr "Черно-бяло (BK)"
-
-#: src/InkLevel.vala:104
-msgid "Black"
-msgstr "Черно"
-
-#: src/InkLevel.vala:107
-msgid "Yellow"
-msgstr "Жълто"
-
-#: src/InkLevel.vala:110
-msgid "Cyan"
-msgstr "Синьозелено"
-
-#: src/InkLevel.vala:113
-msgid "Magenta"
-msgstr "Пурпурно"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Редактиране"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Мрежово принтиранеl (https)"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Мрежово принтиране (http)"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Мрежово принтиране (ipp)"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Мрежово принтиране  (ipps)"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Мрежово принтиране (ipp14)"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR хост или принтер"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr ""
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Невъзможно е да изредя всички намерени принтери"
-
-#: src/AddPopover.vala:176
-msgid "Refresh"
-msgstr "Опресняване"
-
-#: src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr "Опресняване на списъка с печатащи машини"
-
-#: src/AddPopover.vala:183
-msgid "Next"
-msgstr "Следващ"
-
-#: src/AddPopover.vala:229
-msgid "Connection:"
-msgstr "Връзка:"
-
-#: src/AddPopover.vala:237
-msgid "Description:"
-msgstr "Описание:"
-
-#: src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
-
-#: src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr "Лаборатория 1 или Бюрото на Иван"
-
-#: src/AddPopover.vala:316
-msgid "Previous"
-msgstr "Предишен"
-
-#: src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr ""
-
-#: src/AddPopover.vala:321
-msgid "Add"
-msgstr "Добави"
-
-#: src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr "Добавете настроения принтер"
-
-#: src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr "(препоръчително)"
-
-#: src/AddPopover.vala:608
-msgid "Serial"
-msgstr "Сериен"
-
-#: src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr "Местни печатащи машини"
-
-#: src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr "Мрежови печатащи машини"
-
-#: src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr "Налични мрежови принтери"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -561,7 +175,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Барабанът е износен"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "В готовност"
 
@@ -592,3 +206,417 @@ msgstr ""
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr ""
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "Задачата е отменена"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "Показване на завършените задачи"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "В опашката няма задачи"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "Скриване на завършените задачи"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "Страници на страна:"
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "Двустранно:"
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "Ориентация:"
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr ""
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "Автоматично"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "Едноцветно"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "Цветно"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "Едноцветно + черно-бяло"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "Скала на сивото"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr ""
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr ""
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "Цветови режим:"
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:234
+msgid "Middle Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:237
+msgid "Bottom Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:240
+msgid "Side Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:243
+#, fuzzy
+msgid "Left Bin"
+msgstr "Ляво"
+
+#: src/Views/SetupView.vala:246
+#, fuzzy
+msgid "Right Bin"
+msgstr "Дясно"
+
+#: src/Views/SetupView.vala:249
+#, fuzzy
+msgid "Center Bin"
+msgstr "Център"
+
+#: src/Views/SetupView.vala:252
+msgid "Rear Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:261
+msgid "Large Capacity Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr ""
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "Тава %d"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr ""
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "Чернова"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr ""
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr ""
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "Качество:"
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr ""
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr ""
+
+#: src/Views/SetupView.vala:334
+msgid "Alternate Roll"
+msgstr ""
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr ""
+
+#: src/Views/SetupView.vala:343
+msgid "By-pass Tray"
+msgstr ""
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "Център"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr ""
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr ""
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr ""
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr ""
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr ""
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "Ляво"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr ""
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr ""
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr ""
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr ""
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr ""
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr ""
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "Дясно"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr ""
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr ""
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "Източник на хартията:"
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Мрежово принтиранеl (https)"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Мрежово принтиране (http)"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Мрежово принтиране (ipp)"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Мрежово принтиране  (ipps)"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Мрежово принтиране (ipp14)"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR хост или принтер"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr ""
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "Невъзможно е да изредя всички намерени принтери"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr "Опресняване"
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "Опресняване на списъка с печатащи машини"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "Следващ"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "Връзка:"
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "Описание:"
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Лаборатория 1 или Бюрото на Иван"
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "Предишен"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr ""
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr "Добави"
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr "Добавете настроения принтер"
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "(препоръчително)"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr "Сериен"
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "Местни печатащи машини"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "Мрежови печатащи машини"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "Налични мрежови принтери"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Редактиране"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "Черно-бяло (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "Черно-бяло (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "Черно"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "Жълто"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "Синьозелено"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "Пурпурно"
+
+#~ msgid "General"
+#~ msgstr "Общи"
+
+#~ msgid "Options"
+#~ msgstr "Настройки"
+
+#~ msgid "No jobs"
+#~ msgstr "Няма задачи"

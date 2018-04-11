@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2017-07-04 09:01+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -15,474 +15,83 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "常规"
+#: src/PrinterPage.vala:32
+#, fuzzy
+msgid "Print Queue"
+msgstr "打印机"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "选项"
+#: src/PrinterPage.vala:33
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "位置："
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 或 John's Desk"
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "设为默认打印机"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "打印测试页"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:89
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr "测试页"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "添加打印机…"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "移除打印机"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "移除“%s“之后，您所有的打印记录\n"
 "和与此设备相关的配置都会消失。"
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "删除"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "打印机"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "配置打印机、管理打印队列、查看墨水余量"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "暂无打印机"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "请添加打印设备"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "添加打印机"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "搜索您的打印设备"
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "布局类型："
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr ""
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr ""
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "双面："
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "方向："
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr "纸张尺寸："
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "自动"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "单色"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "彩色"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "单色 + 黑色"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "黑白"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr "经处理的彩色"
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr "经处理的黑白"
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "颜色模式："
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:258
-#, fuzzy
-msgid "Middle Bin"
-msgstr "中部"
-
-#: src/OptionsPage.vala:261
-#, fuzzy
-msgid "Bottom Bin"
-msgstr "底部"
-
-#: src/OptionsPage.vala:264
-#, fuzzy
-msgid "Side Bin"
-msgstr "边缘"
-
-#: src/OptionsPage.vala:267
-#, fuzzy
-msgid "Left Bin"
-msgstr "左键"
-
-#: src/OptionsPage.vala:270
-#, fuzzy
-msgid "Right Bin"
-msgstr "右键"
-
-#: src/OptionsPage.vala:273
-#, fuzzy
-msgid "Center Bin"
-msgstr "中部"
-
-#: src/OptionsPage.vala:276
-#, fuzzy
-msgid "Rear Bin"
-msgstr "后侧"
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:285
-#, fuzzy
-msgid "Large Capacity Bin"
-msgstr "大容量"
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr ""
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr ""
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr ""
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "托盘 %d"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "输出托盘："
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "草稿"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "普通"
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr "高"
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "质量："
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "纸张分配"
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "备用托盘"
-
-#: src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr "备用卷"
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "底部"
-
-#: src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr "侧面托盘"
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "中部"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr "连续自动供纸"
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "磁盘"
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "信封"
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "日式明信片"
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr "大容量"
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "左键"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "主托盘"
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr "主卷"
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "手动"
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr "中部"
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "照片"
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "后侧"
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "右键"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr "边缘"
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr "顶部"
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr "卷 %d"
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "纸张来源："
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "显示完成的任务"
-
-#: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "无任务"
-
-#: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
-msgstr "队列中无任务"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "隐藏完成的任务"
-
-#: src/InkLevel.vala:98
-msgid "Black (PGBK)"
-msgstr "黑色 (PGBK)"
-
-#: src/InkLevel.vala:101
-msgid "Black (BK)"
-msgstr "黑色 (BK)"
-
-#: src/InkLevel.vala:104
-msgid "Black"
-msgstr "黑色"
-
-#: src/InkLevel.vala:107
-msgid "Yellow"
-msgstr "黄色"
-
-#: src/InkLevel.vala:110
-msgid "Cyan"
-msgstr "青色"
-
-#: src/InkLevel.vala:113
-msgid "Magenta"
-msgstr "品红"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "编辑"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "互联网打印协议（HTTPS）"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "互联网打印协议（HTTP）"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "互联网打印协议（IPP）"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "互联网打印协议（IPPS）"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "互联网打印协议（IPP14）"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR 主机或打印机"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "应用接口/HP JetDirect"
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "无法列出所有可用打印机"
-
-#: src/AddPopover.vala:176
-msgid "Refresh"
-msgstr "刷新"
-
-#: src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr "刷新打印机列表"
-
-#: src/AddPopover.vala:183
-msgid "Next"
-msgstr "下一步"
-
-#: src/AddPopover.vala:229
-msgid "Connection:"
-msgstr "连接："
-
-#: src/AddPopover.vala:237
-msgid "Description:"
-msgstr "描述："
-
-#: src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr "品牌打印机 X3000"
-
-#: src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr "如：“实验室1”或\"办公桌\""
-
-#: src/AddPopover.vala:316
-msgid "Previous"
-msgstr "上一步"
-
-#: src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr "选择其他打印机或打印协议"
-
-#: src/AddPopover.vala:321
-msgid "Add"
-msgstr "添加"
-
-#: src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr "添加已配置的打印机"
-
-#: src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr "（推荐）"
-
-#: src/AddPopover.vala:608
-msgid "Serial"
-msgstr "序列号"
-
-#: src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr "本地打印机"
-
-#: src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr "网络打印机"
-
-#: src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr "可用的网络打印机"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -564,7 +173,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "感光鼓无法工作"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "就绪"
 
@@ -597,3 +206,422 @@ msgstr "任务已放弃"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "任务已完成"
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "任务已取消"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "显示完成的任务"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "队列中无任务"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "隐藏完成的任务"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "布局类型："
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "双面："
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "方向："
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr "纸张尺寸："
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "自动"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "单色"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "彩色"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "单色 + 黑色"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "黑白"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr "经处理的彩色"
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr "经处理的黑白"
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "颜色模式："
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:234
+#, fuzzy
+msgid "Middle Bin"
+msgstr "中部"
+
+#: src/Views/SetupView.vala:237
+#, fuzzy
+msgid "Bottom Bin"
+msgstr "底部"
+
+#: src/Views/SetupView.vala:240
+#, fuzzy
+msgid "Side Bin"
+msgstr "边缘"
+
+#: src/Views/SetupView.vala:243
+#, fuzzy
+msgid "Left Bin"
+msgstr "左键"
+
+#: src/Views/SetupView.vala:246
+#, fuzzy
+msgid "Right Bin"
+msgstr "右键"
+
+#: src/Views/SetupView.vala:249
+#, fuzzy
+msgid "Center Bin"
+msgstr "中部"
+
+#: src/Views/SetupView.vala:252
+#, fuzzy
+msgid "Rear Bin"
+msgstr "后侧"
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:261
+#, fuzzy
+msgid "Large Capacity Bin"
+msgstr "大容量"
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr ""
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "托盘 %d"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr "输出托盘："
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "草稿"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr "普通"
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr "高"
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "质量："
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr "纸张分配"
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr "备用托盘"
+
+#: src/Views/SetupView.vala:334
+msgid "Alternate Roll"
+msgstr "备用卷"
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr "底部"
+
+#: src/Views/SetupView.vala:343
+msgid "By-pass Tray"
+msgstr "侧面托盘"
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "中部"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr "连续自动供纸"
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr "磁盘"
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr "信封"
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr "日式明信片"
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr "大容量"
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "左键"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr "主托盘"
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr "主卷"
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr "手动"
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr "中部"
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr "照片"
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr "后侧"
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "右键"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr "边缘"
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr "顶部"
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr "卷 %d"
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "纸张来源："
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "互联网打印协议（HTTPS）"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "互联网打印协议（HTTP）"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "互联网打印协议（IPP）"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "互联网打印协议（IPPS）"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "互联网打印协议（IPP14）"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR 主机或打印机"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "应用接口/HP JetDirect"
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "无法列出所有可用打印机"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr "刷新"
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "刷新打印机列表"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "下一步"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "连接："
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "描述："
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr "品牌打印机 X3000"
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "如：“实验室1”或\"办公桌\""
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "上一步"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr "选择其他打印机或打印协议"
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr "添加"
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr "添加已配置的打印机"
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "（推荐）"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr "序列号"
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "本地打印机"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "网络打印机"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "可用的网络打印机"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "编辑"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "黑色 (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "黑色 (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "黑色"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "黄色"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "青色"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "品红"
+
+#~ msgid "General"
+#~ msgstr "常规"
+
+#~ msgid "Options"
+#~ msgstr "选项"
+
+#~ msgid "No jobs"
+#~ msgstr "无任务"

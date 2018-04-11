@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2018-04-02 00:05+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
-"Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-printers/nl/>\n"
+"Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-printers/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,466 +15,83 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "Algemeen"
+#: src/PrinterPage.vala:32
+#, fuzzy
+msgid "Print Queue"
+msgstr "Printers"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "Opties"
+#: src/PrinterPage.vala:33
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "Locatie:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr "lab 1 of john's bureau"
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "gebruik als standaard printer"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "Test pagina afdrukken"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:89
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr "Test pagina"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "Printer toevoegen…"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "Printer verwijderen"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "als je '%s' verwijderd, verlies je alle print geschiedenis en instellingen "
 "die bij deze printer horen."
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "Verwijderen"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "Printers"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Configureer printers, beheer printers en bekijk inkt levels"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "Geen Printers"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "Voeg een printer toe om te printen"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "Printer toevoegen"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "Zoek voor de printer die u nodig hebt"
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "Pagina's per kant:"
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr "Lange zijde (standaard)"
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr "Korte zijde (omdraaien)"
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "Dubbelzijdig:"
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr "Portret"
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr "Landschap"
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr "Omgekeerd portret"
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr "Omgekeerd landschap"
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "Orientatie:"
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr "Mediagrootte:"
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "Automatisch"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "Een Kleur"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "Kleur"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "Een kleur + Zwart"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "Grijstinten"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr "Verwerkte kleur"
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr "Verwerkte grijstinten"
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "Kleurmodus:"
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr "Bovenste lade"
-
-#: src/OptionsPage.vala:258
-msgid "Middle Bin"
-msgstr "Middelste lade"
-
-#: src/OptionsPage.vala:261
-msgid "Bottom Bin"
-msgstr "Onderste lade"
-
-#: src/OptionsPage.vala:264
-msgid "Side Bin"
-msgstr "Zijlade"
-
-#: src/OptionsPage.vala:267
-msgid "Left Bin"
-msgstr "Linkse lade"
-
-#: src/OptionsPage.vala:270
-msgid "Right Bin"
-msgstr "Rechtse lade"
-
-#: src/OptionsPage.vala:273
-msgid "Center Bin"
-msgstr "Centrale lade"
-
-#: src/OptionsPage.vala:276
-msgid "Rear Bin"
-msgstr "Achterste lade"
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:285
-msgid "Large Capacity Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr ""
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr ""
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr ""
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "Uitvoerlade %d"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "Uitvoerlade:"
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Klad"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "Normaal"
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr "Hoog"
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Kwaliteit:"
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "papier benodigdheden"
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "alternatieve papier la"
-
-#: src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr ""
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr ""
-
-#: src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr ""
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "Centreren"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr ""
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "Harde schijf"
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "Envelop"
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "Hagaki-kaart"
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr ""
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Links"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr ""
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr ""
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "Handmatig"
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr "Midden"
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "Foto"
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "Achterzijde"
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Rechts"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr ""
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr ""
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr ""
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "Papier invoer:"
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "Voltooide afdruktaken tonen"
-
-#: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "Geen taken"
-
-#: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
-msgstr "Er zijn geen taken in de wachtrij"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "verberg voltooide taken"
-
-#: src/InkLevel.vala:98
-msgid "Black (PGBK)"
-msgstr "Zwart (PGBK)"
-
-#: src/InkLevel.vala:101
-msgid "Black (BK)"
-msgstr "Zwart (BK)"
-
-#: src/InkLevel.vala:104
-msgid "Black"
-msgstr "Zwart"
-
-#: src/InkLevel.vala:107
-msgid "Yellow"
-msgstr "Geel"
-
-#: src/InkLevel.vala:110
-msgid "Cyan"
-msgstr "Lichtblauw"
-
-#: src/InkLevel.vala:113
-msgid "Magenta"
-msgstr "roze"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Bewerken"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Internet print protocol (https)"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Internet print protocol (http)"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Internet print protocol (ipp)"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "internet print protocol (ipps)"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "internet print protocol (ipp14)"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR-host of -printer"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "het is niet mogelijk om alle printers te laten zien"
-
-#: src/AddPopover.vala:176
-msgid "Refresh"
-msgstr "Verversen"
-
-#: src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr "ververs de printer lijst"
-
-#: src/AddPopover.vala:183
-msgid "Next"
-msgstr "Volgende"
-
-#: src/AddPopover.vala:229
-msgid "Connection:"
-msgstr "Verbinding:"
-
-#: src/AddPopover.vala:237
-msgid "Description:"
-msgstr "Omschrijving:"
-
-#: src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr "MerkPrinter X3000"
-
-#: src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr "Lab 1 of John's bureau"
-
-#: src/AddPopover.vala:316
-msgid "Previous"
-msgstr "Vorige"
-
-#: src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr "selecteer een andere printer of een ander protocol"
-
-#: src/AddPopover.vala:321
-msgid "Add"
-msgstr "Voeg toe"
-
-#: src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr "voeg een ingestelde printer toe"
-
-#: src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr "(aanbevolen)"
-
-#: src/AddPopover.vala:608
-msgid "Serial"
-msgstr "Serieel"
-
-#: src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr "Lokale Printers"
-
-#: src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr "Netwerk Printers"
-
-#: src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr "Beschikbaar Netwerk Printers"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -560,7 +177,7 @@ msgstr ""
 "De optische lichtgevoelige geleider (optical photo conductor) functioneert "
 "niet meer"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Gereed"
 
@@ -591,3 +208,414 @@ msgstr "Taak afgebroken"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "taak voltooid"
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "taak geannuleerd"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "Voltooide afdruktaken tonen"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "Er zijn geen taken in de wachtrij"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "verberg voltooide taken"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "Pagina's per kant:"
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr "Lange zijde (standaard)"
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr "Korte zijde (omdraaien)"
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "Dubbelzijdig:"
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr "Portret"
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr "Landschap"
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr "Omgekeerd portret"
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr "Omgekeerd landschap"
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "Orientatie:"
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr "Mediagrootte:"
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "Een Kleur"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "Kleur"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "Een kleur + Zwart"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "Grijstinten"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr "Verwerkte kleur"
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr "Verwerkte grijstinten"
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "Kleurmodus:"
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr "Bovenste lade"
+
+#: src/Views/SetupView.vala:234
+msgid "Middle Bin"
+msgstr "Middelste lade"
+
+#: src/Views/SetupView.vala:237
+msgid "Bottom Bin"
+msgstr "Onderste lade"
+
+#: src/Views/SetupView.vala:240
+msgid "Side Bin"
+msgstr "Zijlade"
+
+#: src/Views/SetupView.vala:243
+msgid "Left Bin"
+msgstr "Linkse lade"
+
+#: src/Views/SetupView.vala:246
+msgid "Right Bin"
+msgstr "Rechtse lade"
+
+#: src/Views/SetupView.vala:249
+msgid "Center Bin"
+msgstr "Centrale lade"
+
+#: src/Views/SetupView.vala:252
+msgid "Rear Bin"
+msgstr "Achterste lade"
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:261
+msgid "Large Capacity Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr ""
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "Uitvoerlade %d"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr "Uitvoerlade:"
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "Klad"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr "Normaal"
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr "Hoog"
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "Kwaliteit:"
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr "papier benodigdheden"
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr "alternatieve papier la"
+
+#: src/Views/SetupView.vala:334
+msgid "Alternate Roll"
+msgstr ""
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr ""
+
+#: src/Views/SetupView.vala:343
+msgid "By-pass Tray"
+msgstr ""
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "Centreren"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr ""
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr "Harde schijf"
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr "Envelop"
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr "Hagaki-kaart"
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr ""
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "Links"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr ""
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr ""
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr "Handmatig"
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr "Midden"
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr "Foto"
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr "Achterzijde"
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "Rechts"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr ""
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr ""
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "Papier invoer:"
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Internet print protocol (https)"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Internet print protocol (http)"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Internet print protocol (ipp)"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "internet print protocol (ipps)"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "internet print protocol (ipp14)"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR-host of -printer"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "het is niet mogelijk om alle printers te laten zien"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr "Verversen"
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "ververs de printer lijst"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "Volgende"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "Verbinding:"
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "Omschrijving:"
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr "MerkPrinter X3000"
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Lab 1 of John's bureau"
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "Vorige"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr "selecteer een andere printer of een ander protocol"
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr "Voeg toe"
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr "voeg een ingestelde printer toe"
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "(aanbevolen)"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr "Serieel"
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "Lokale Printers"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "Netwerk Printers"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "Beschikbaar Netwerk Printers"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Bewerken"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "Zwart (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "Zwart (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "Zwart"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "Geel"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "Lichtblauw"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "roze"
+
+#~ msgid "General"
+#~ msgstr "Algemeen"
+
+#~ msgid "Options"
+#~ msgstr "Opties"
+
+#~ msgid "No jobs"
+#~ msgstr "Geen taken"

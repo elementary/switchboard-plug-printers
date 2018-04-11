@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 17:03-0800\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2017-01-02 07:57+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: \n"
@@ -13,474 +13,83 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 "X-Generator: Launchpad (build 18330)\n"
 
-#: src/PrinterPage.vala:36
-msgid "General"
-msgstr "ئادەتتىكى تەڭشەكلەر"
+#: src/PrinterPage.vala:32
+#, fuzzy
+msgid "Print Queue"
+msgstr "پرىنتېرلار"
 
-#: src/PrinterPage.vala:37
-msgid "Options"
-msgstr "پارامىتېرلار"
+#: src/PrinterPage.vala:33
+msgid "Page Setup"
+msgstr ""
 
-#: src/PrinterPage.vala:89 src/AddPopover.vala:246
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "ئورنى:"
 
-#: src/PrinterPage.vala:97
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 ياكى John's desk"
 
-#: src/PrinterPage.vala:104
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "سۈكۈتتىكى پرىنتېر قىلىپ ئىشلىتىش"
 
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "سىناق بەتنى بېسىش"
 
-#: src/PrinterPage.vala:176
+#: src/PrinterPage.vala:89
+msgid "Settings & Supplies"
+msgstr ""
+
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr "سىناق بەت"
 
-#: src/PrinterList.vala:49
+#: src/PrinterList.vala:51
 msgid "Add Printer…"
 msgstr "پرىنتېر قىتىش...."
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:53
 msgid "Remove Printer"
 msgstr "پرىنتېرنى چىقىرىۋېتىش"
 
-#: src/PrinterList.vala:85
-#, c-format
+#: src/PrinterList.vala:87
+#, fuzzy, c-format
 msgid ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 msgstr ""
 "'%s' نى چىقىرىۋەتكەندىن كىيىن سىزنىڭ بارلىق بىسىش خاتىرىڭىز\n"
 "ۋە بۇ ئۈسكۈنە بىلەن مۇناسىۋەتلىك بولغان بارلىق تەڭشەكلىرىڭىز يوقايدۇ."
 
-#: src/PrinterList.vala:90
+#: src/PrinterList.vala:93
 msgid "Remove"
 msgstr "چىقىرىۋىتىش"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:34
 msgid "Printers"
 msgstr "پرىنتېرلار"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:35
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "پرىنتېرلارنى تەڭشەش، بىسىش سىپىنى باشقۇرۇش، قالغان سىياھنى كۆرۈش"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "No Printers"
 msgstr "پرىنتېر يوق"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:49
 msgid "Add a printer to begin printing"
 msgstr "پرىنتېر قىتىپ بىسىشنى باشلاڭ"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Add Printer"
 msgstr "پرىنتېر قوشۇش"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "ئىھتىياجلىق پرىنتېرنى ئىزدەڭ"
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "ھەر بىر تەرەپتىكى بەت سانى:"
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr ""
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr ""
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "ئىككى تەرەپ:"
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "يۆنىلىشى:"
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr "مېدىئا چوڭلۇقى:"
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "ئاپتوماتىك"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "يەككە رەڭ"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "رەڭ"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "يەككە رەڭ + قارا"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "كۈلرەڭ"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr "بىرتەرەپ قىلىنغان رەڭ"
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr "بىرتەرەپ قىلىنغان كۈلرەڭ"
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "رەڭ ئەندىزىسى:"
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:258
-#, fuzzy
-msgid "Middle Bin"
-msgstr "ئوتتۇرا"
-
-#: src/OptionsPage.vala:261
-#, fuzzy
-msgid "Bottom Bin"
-msgstr "ئاستى"
-
-#: src/OptionsPage.vala:264
-#, fuzzy
-msgid "Side Bin"
-msgstr "يان"
-
-#: src/OptionsPage.vala:267
-#, fuzzy
-msgid "Left Bin"
-msgstr "سول"
-
-#: src/OptionsPage.vala:270
-#, fuzzy
-msgid "Right Bin"
-msgstr "ئوڭ"
-
-#: src/OptionsPage.vala:273
-#, fuzzy
-msgid "Center Bin"
-msgstr "ئوتتۇرىسى"
-
-#: src/OptionsPage.vala:276
-#, fuzzy
-msgid "Rear Bin"
-msgstr "ئارقا تەرەپ"
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:285
-#, fuzzy
-msgid "Large Capacity Bin"
-msgstr "چوڭ سىغىم"
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr ""
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr ""
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr ""
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "جازا %d"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "چىقىرىش جازىسى:"
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "ئورىگىنال"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "نورمال"
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr "يۇقىرى"
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "سۈپىتى:"
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "قەغەز تەقسىماتى"
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "زاپاس جازا"
-
-#: src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr "زاپاس ئورام"
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "ئاستى"
-
-#: src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr "تارماق جازا"
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "ئوتتۇرىسى"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr "داۋاملىق ئاپتوماتىك قەغەز تەمىنلەش"
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "دىسكا"
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "لېپاپ"
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "ياپونچە ئاتكرېتكا"
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr "چوڭ سىغىم"
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "سول"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "ئاساسىي جازا"
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr "ئاساسىي ئورام"
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "قولدا"
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr "ئوتتۇرا"
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "سۈرەت"
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "ئارقا تەرەپ"
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "ئوڭ"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr "يان"
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr "ئۈستى"
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr "ئورام %d"
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "قەغەز مەنبەسى:"
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "تاماملانغان ۋەزىپىلەرنى كۆرسىتىش"
-
-#: src/JobsView.vala:66
-msgid "No jobs"
-msgstr "ۋەزىپە يوق"
-
-#: src/JobsView.vala:66
-msgid "There are no jobs on the queue"
-msgstr "ۋەزىپە سىپىدە ۋەزىپە يوق"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "تاماملانغان ۋەزىپىلەرنى كۆرسەتمەسلىك"
-
-#: src/InkLevel.vala:98
-msgid "Black (PGBK)"
-msgstr "قارا (PGBK)"
-
-#: src/InkLevel.vala:101
-msgid "Black (BK)"
-msgstr "قارا (BK)"
-
-#: src/InkLevel.vala:104
-msgid "Black"
-msgstr "قارا"
-
-#: src/InkLevel.vala:107
-msgid "Yellow"
-msgstr "سېرىق"
-
-#: src/InkLevel.vala:110
-msgid "Cyan"
-msgstr "توق يېشىل"
-
-#: src/InkLevel.vala:113
-msgid "Magenta"
-msgstr "ھال رەڭ"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "تەھرىرلەش"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "ئىنتېرنېت بېسىش كېلىشىمى(https)"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "ئىنتېرنېت بېسىش كېلىشىمى(http)"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipp)"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipps)"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipp14)"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR كومپيۇتېر ياكى پرىنتېر"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "ئەپ ئۇلانما ئىغىزى/HP JetDirect"
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "ئىشلەتكىلى بولىدىغان پرىنتېرلارنىڭ ھەممىسىنى كۆرسەتكىلى بولمىدى"
-
-#: src/AddPopover.vala:176
-msgid "Refresh"
-msgstr "يېڭىلاش"
-
-#: src/AddPopover.vala:180
-msgid "Refresh the printer list"
-msgstr "پرىنتېر تىزىملىكىنى يىڭىلاش"
-
-#: src/AddPopover.vala:183
-msgid "Next"
-msgstr "كىيىنكىسى"
-
-#: src/AddPopover.vala:229
-msgid "Connection:"
-msgstr "ئۇلانما:"
-
-#: src/AddPopover.vala:237
-msgid "Description:"
-msgstr "چۈشەندۈرۈش:"
-
-#: src/AddPopover.vala:242
-msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
-
-#: src/AddPopover.vala:252
-msgid "Lab 1 or John's desk"
-msgstr "Lab 1 ياكى John's desk"
-
-#: src/AddPopover.vala:316
-msgid "Previous"
-msgstr "ئالدىنقىسى"
-
-#: src/AddPopover.vala:319
-msgid "Select an other printer or protocol"
-msgstr "باشقا پرىنتېر ياكى بىسىش كىلىشىمى تاللاڭ"
-
-#: src/AddPopover.vala:321
-msgid "Add"
-msgstr "قىتىش"
-
-#: src/AddPopover.vala:325
-msgid "Add the configured printer"
-msgstr "تەڭشەلگەن پرىنتېر قىتىش"
-
-#: src/AddPopover.vala:546
-msgid "(recommended)"
-msgstr "(تەۋسىيە قىلىنغان)"
-
-#: src/AddPopover.vala:608
-msgid "Serial"
-msgstr "تەرتىپ نومۇرى"
-
-#: src/AddPopover.vala:611
-msgid "Local Printers"
-msgstr "يەرلىك پرىنتېرلار"
-
-#: src/AddPopover.vala:614
-msgid "Network Printers"
-msgstr "تور پرىنتېرلىرى"
-
-#: src/AddPopover.vala:617
-msgid "Available Network Printers"
-msgstr "ئىشلەتكىلى بولىدىغان تور پرىنتېرلىرى"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -562,7 +171,7 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "ئوپتىكىلىق سۈرەت دىرىژورى خىزمەت قىلالمايدۇ"
 
-#: src/Objects/Printer.vala:271
+#: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "تەييار بولدى"
 
@@ -595,3 +204,422 @@ msgstr "ۋەزىپە توختىتىلدى"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "ۋەزىپە تاماملاندى"
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "تاماملانغان ۋەزىپىلەرنى كۆرسىتىش"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "ۋەزىپە سىپىدە ۋەزىپە يوق"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "تاماملانغان ۋەزىپىلەرنى كۆرسەتمەسلىك"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "ھەر بىر تەرەپتىكى بەت سانى:"
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "ئىككى تەرەپ:"
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "يۆنىلىشى:"
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr "مېدىئا چوڭلۇقى:"
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "ئاپتوماتىك"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "يەككە رەڭ"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "رەڭ"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "يەككە رەڭ + قارا"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "كۈلرەڭ"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr "بىرتەرەپ قىلىنغان رەڭ"
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr "بىرتەرەپ قىلىنغان كۈلرەڭ"
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "رەڭ ئەندىزىسى:"
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:234
+#, fuzzy
+msgid "Middle Bin"
+msgstr "ئوتتۇرا"
+
+#: src/Views/SetupView.vala:237
+#, fuzzy
+msgid "Bottom Bin"
+msgstr "ئاستى"
+
+#: src/Views/SetupView.vala:240
+#, fuzzy
+msgid "Side Bin"
+msgstr "يان"
+
+#: src/Views/SetupView.vala:243
+#, fuzzy
+msgid "Left Bin"
+msgstr "سول"
+
+#: src/Views/SetupView.vala:246
+#, fuzzy
+msgid "Right Bin"
+msgstr "ئوڭ"
+
+#: src/Views/SetupView.vala:249
+#, fuzzy
+msgid "Center Bin"
+msgstr "ئوتتۇرىسى"
+
+#: src/Views/SetupView.vala:252
+#, fuzzy
+msgid "Rear Bin"
+msgstr "ئارقا تەرەپ"
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:261
+#, fuzzy
+msgid "Large Capacity Bin"
+msgstr "چوڭ سىغىم"
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr ""
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "جازا %d"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr "چىقىرىش جازىسى:"
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "ئورىگىنال"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr "نورمال"
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr "يۇقىرى"
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "سۈپىتى:"
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr "قەغەز تەقسىماتى"
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr "زاپاس جازا"
+
+#: src/Views/SetupView.vala:334
+msgid "Alternate Roll"
+msgstr "زاپاس ئورام"
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr "ئاستى"
+
+#: src/Views/SetupView.vala:343
+msgid "By-pass Tray"
+msgstr "تارماق جازا"
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "ئوتتۇرىسى"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr "داۋاملىق ئاپتوماتىك قەغەز تەمىنلەش"
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr "دىسكا"
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr "لېپاپ"
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr "ياپونچە ئاتكرېتكا"
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr "چوڭ سىغىم"
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "سول"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr "ئاساسىي جازا"
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr "ئاساسىي ئورام"
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr "قولدا"
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr "ئوتتۇرا"
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr "سۈرەت"
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr "ئارقا تەرەپ"
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "ئوڭ"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr "يان"
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr "ئۈستى"
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr "ئورام %d"
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "قەغەز مەنبەسى:"
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى(https)"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى(http)"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipp)"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipps)"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipp14)"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR كومپيۇتېر ياكى پرىنتېر"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "ئەپ ئۇلانما ئىغىزى/HP JetDirect"
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "ئىشلەتكىلى بولىدىغان پرىنتېرلارنىڭ ھەممىسىنى كۆرسەتكىلى بولمىدى"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr "يېڭىلاش"
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "پرىنتېر تىزىملىكىنى يىڭىلاش"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "كىيىنكىسى"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "ئۇلانما:"
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "چۈشەندۈرۈش:"
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Lab 1 ياكى John's desk"
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "ئالدىنقىسى"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr "باشقا پرىنتېر ياكى بىسىش كىلىشىمى تاللاڭ"
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr "قىتىش"
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr "تەڭشەلگەن پرىنتېر قىتىش"
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "(تەۋسىيە قىلىنغان)"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr "تەرتىپ نومۇرى"
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "يەرلىك پرىنتېرلار"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "تور پرىنتېرلىرى"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "ئىشلەتكىلى بولىدىغان تور پرىنتېرلىرى"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "تەھرىرلەش"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "قارا (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "قارا (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "قارا"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "سېرىق"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "توق يېشىل"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "ھال رەڭ"
+
+#~ msgid "General"
+#~ msgstr "ئادەتتىكى تەڭشەكلەر"
+
+#~ msgid "Options"
+#~ msgstr "پارامىتېرلار"
+
+#~ msgid "No jobs"
+#~ msgstr "ۋەزىپە يوق"
