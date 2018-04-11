@@ -58,10 +58,6 @@ public class Printers.PrinterPage : Gtk.Grid {
         default_check.text = _("Use as Default Printer");
         default_check.role = Gtk.ButtonRole.CHECK;
 
-        var print_test = new Gtk.ModelButton ();
-        print_test.text = _("Print Test Page");
-        print_test.clicked.connect (() => print_test_page ());
-
         var info_grid = new Gtk.Grid ();
         info_grid.margin = 12;
         info_grid.column_spacing = 12;
@@ -77,7 +73,6 @@ public class Printers.PrinterPage : Gtk.Grid {
         menu_grid.add (info_grid);
         menu_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         menu_grid.add (default_check);
-        menu_grid.add (print_test);
         menu_grid.show_all ();
 
         var info_popover = new Gtk.Popover (null);
@@ -94,6 +89,13 @@ public class Printers.PrinterPage : Gtk.Grid {
         enable_switch.active = printer.state != "5" && printer.is_accepting_jobs;
         enable_switch.valign = Gtk.Align.CENTER;
 
+        var print_test = new Gtk.Button.with_label (_("Print Test Page"));
+        print_test.clicked.connect (() => print_test_page ());
+
+        var action_area = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
+        action_area.layout_style = Gtk.ButtonBoxStyle.END;
+        action_area.add (print_test);
+
         margin = 12;
         column_spacing = 12;
         row_spacing = 24;
@@ -103,6 +105,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         attach (enable_switch, 3, 0, 1, 1);
         attach (stack_switcher, 0, 1, 4, 1);
         attach (stack, 0, 2, 4, 1);
+        attach (action_area, 0, 3, 4, 1);
         show_all ();
 
         default_check.notify["active"].connect (() => {
