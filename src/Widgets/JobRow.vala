@@ -30,25 +30,15 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         this.printer = printer;
         this.job = job;
 
-        grid = new Gtk.Grid ();
-        grid.tooltip_text = job.translated_job_state ();
-        grid.column_spacing = 6;
-        grid.row_spacing = 6;
-        grid.margin = 6;
+        var icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.MENU);
 
-        Gtk.Image icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.MENU);
-        grid.attach (icon, 0, 0);
-
-        Gtk.Label title = new Gtk.Label (job.cjob.title);
+        var title = new Gtk.Label (job.cjob.title);
         title.hexpand = true;
         title.halign = Gtk.Align.START;
         title.ellipsize = Pango.EllipsizeMode.END;
-        grid.attach (title, 1, 0);
 
         var date_time = job.get_used_time ();
-        string date_string = date_time.format ("%F %T");
-        Gtk.Label date = new Gtk.Label (date_string);
-        grid.attach (date, 2, 0);
+        var date = new Gtk.Label (Granite.DateTime.get_relative_datetime (date_time));
 
         Gtk.Widget state;
         if (job.state_icon () != null) {
@@ -58,14 +48,23 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             ((Gtk.Spinner)state).active = true;
             ((Gtk.Spinner)state).start ();
         }
+
+        grid = new Gtk.Grid ();
+        grid.tooltip_text = job.translated_job_state ();
+        grid.column_spacing = 6;
+        grid.row_spacing = 6;
+        grid.margin = 6;
+        grid.attach (icon, 0, 0);
+        grid.attach (title, 1, 0);
+        grid.attach (date, 2, 0);
         grid.attach (state, 3, 0);
+
+        add (grid);
+        show_all ();
 
         job.state_changed.connect (update_state);
         job.completed.connect (update_state);
         job.stopped.connect (update_state);
-
-        add (grid);
-        show_all ();
     }
 
     public void update_state () {
