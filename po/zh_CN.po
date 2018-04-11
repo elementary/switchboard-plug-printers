@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 08:46-0700\n"
+"POT-Creation-Date: 2018-04-11 10:04-0700\n"
 "PO-Revision-Date: 2017-07-04 09:01+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -36,15 +36,15 @@ msgstr "Lab 1 或 John's Desk"
 msgid "Use as Default Printer"
 msgstr "设为默认打印机"
 
-#: src/PrinterPage.vala:62
-msgid "Print Test Page"
-msgstr "打印测试页"
-
-#: src/PrinterPage.vala:89
+#: src/PrinterPage.vala:84
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:175
+#: src/PrinterPage.vala:92
+msgid "Print Test Page"
+msgstr "打印测试页"
+
+#: src/PrinterPage.vala:178
 msgid "Test page"
 msgstr "测试页"
 
@@ -207,35 +207,40 @@ msgstr "任务已放弃"
 msgid "Job Completed"
 msgstr "任务已完成"
 
-#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:54
-#, fuzzy
-msgid "Cancel"
-msgstr "任务已取消"
-
-#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
-msgid "Show completed jobs"
-msgstr "显示完成的任务"
-
-#: src/Views/JobsView.vala:71
+#: src/Views/JobsView.vala:33
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:71
+#: src/Views/JobsView.vala:33
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "队列中无任务"
 
-#: src/Views/JobsView.vala:99
+#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:59
+#, fuzzy
+msgid "Cancel"
+msgstr "任务已取消"
+
+#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
+msgid "Show completed jobs"
+msgstr "显示完成的任务"
+
+#: src/Views/JobsView.vala:100
 msgid "Resume"
 msgstr ""
 
-#: src/Views/JobsView.vala:186
+#: src/Views/JobsView.vala:187
 msgid "Hide completed jobs"
 msgstr "隐藏完成的任务"
+
+#: src/Views/JobsView.vala:233
+#, fuzzy
+msgid "Completed Jobs"
+msgstr "显示完成的任务"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"

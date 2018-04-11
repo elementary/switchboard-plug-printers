@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 08:46-0700\n"
+"POT-Creation-Date: 2018-04-11 10:04-0700\n"
 "PO-Revision-Date: 2016-07-28 20:39+0000\n"
 "Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,15 +34,15 @@ msgstr "Labb 1 eller Johns skrivbord"
 msgid "Use as Default Printer"
 msgstr "Använd som standardskrivare"
 
-#: src/PrinterPage.vala:62
-msgid "Print Test Page"
-msgstr "Skriv ut testsida"
-
-#: src/PrinterPage.vala:89
+#: src/PrinterPage.vala:84
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:175
+#: src/PrinterPage.vala:92
+msgid "Print Test Page"
+msgstr "Skriv ut testsida"
+
+#: src/PrinterPage.vala:178
 msgid "Test page"
 msgstr "Testsida"
 
@@ -202,34 +202,39 @@ msgstr "Utskriften är klar"
 msgid "Job Completed"
 msgstr "Utskriften är klar"
 
-#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:54
-msgid "Cancel"
-msgstr ""
-
-#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
-msgid "Show completed jobs"
-msgstr "Visa slutförda jobb"
-
-#: src/Views/JobsView.vala:71
+#: src/Views/JobsView.vala:33
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:71
+#: src/Views/JobsView.vala:33
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "Det finns inga jobb i kön"
 
-#: src/Views/JobsView.vala:99
+#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:59
+msgid "Cancel"
+msgstr ""
+
+#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
+msgid "Show completed jobs"
+msgstr "Visa slutförda jobb"
+
+#: src/Views/JobsView.vala:100
 msgid "Resume"
 msgstr ""
 
-#: src/Views/JobsView.vala:186
+#: src/Views/JobsView.vala:187
 msgid "Hide completed jobs"
 msgstr "Dölj slutförda jobb"
+
+#: src/Views/JobsView.vala:233
+#, fuzzy
+msgid "Completed Jobs"
+msgstr "Visa slutförda jobb"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
