@@ -42,12 +42,17 @@ public class Printers.JobsView : Gtk.Frame {
         var toolbar = new Gtk.Toolbar ();
         toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
         toolbar.get_style_context ().add_class ("inline-toolbar");
+
         var start_pause_button = new Gtk.ToolButton (null, null);
         start_pause_button.icon_name = "media-playback-pause-symbolic";
         start_pause_button.sensitive = false;
+        start_pause_button.tooltip_text = _("Pause");
+
         var stop_button = new Gtk.ToolButton (null, null);
         stop_button.icon_name = "media-playback-stop-symbolic";
         stop_button.sensitive = false;
+        stop_button.tooltip_text = _("Cancel");
+
         var expander = new Gtk.ToolItem ();
         expander.set_expand (true);
         expander.visible_vertical = false;
@@ -88,8 +93,10 @@ public class Printers.JobsView : Gtk.Frame {
 
                 if (job.get_hold_until () == "no-hold") {
                     start_pause_button.icon_name = "media-playback-pause-symbolic";
+                    start_pause_button.tooltip_text = _("Pause");
                 } else {
                     start_pause_button.icon_name = "media-playback-start-symbolic";
+                    start_pause_button.tooltip_text = _("Resume");
                 }
 
                 switch (job.cjob.state) {
