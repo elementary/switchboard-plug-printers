@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-11 08:46-0700\n"
-"PO-Revision-Date: 2018-04-10 23:24+0000\n"
+"PO-Revision-Date: 2018-04-11 15:48+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
-"Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/fr/>\n"
+"Language-Team: French <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -208,12 +208,11 @@ msgstr "Tâche terminée"
 
 #: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
 msgid "Pause"
-msgstr ""
+msgstr "Mettre en pause"
 
 #: src/Views/JobsView.vala:54
-#, fuzzy
 msgid "Cancel"
-msgstr "Tâche annulée"
+msgstr "Annuler"
 
 #: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
 msgid "Show completed jobs"
@@ -229,7 +228,7 @@ msgstr "Il n'y a aucune tâche dans la file."
 
 #: src/Views/JobsView.vala:99
 msgid "Resume"
-msgstr ""
+msgstr "Reprendre"
 
 #: src/Views/JobsView.vala:186
 msgid "Hide completed jobs"
