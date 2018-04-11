@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-10 16:21-0700\n"
-"PO-Revision-Date: 2018-03-31 00:05+0000\n"
+"PO-Revision-Date: 2018-04-11 06:20+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/he/>\n"
+"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,13 +16,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:39
-#, fuzzy
 msgid "Print Queue"
-msgstr "מדפסות"
+msgstr "תור הדפסה"
 
 #: src/PrinterPage.vala:40
 msgid "Page Setup"
-msgstr ""
+msgstr "הגדרת עמוד"
 
 #: src/PrinterPage.vala:61 src/AddPopover.vala:240
 msgid "Location:"
@@ -42,7 +41,7 @@ msgstr "הדפסת עמוד ניסיון"
 
 #: src/PrinterPage.vala:117
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "הגדרות ואספקה"
 
 #: src/PrinterPage.vala:185
 msgid "Test page"
@@ -57,13 +56,11 @@ msgid "Remove Printer"
 msgstr "הסרת מדפסת"
 
 #: src/PrinterList.vala:87
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
-msgstr ""
-"הסרת ‚%s‘ תגרום לאבדן כל היסטוריית\n"
-"ההדפסות וההגדרות המשויכות לה."
+msgstr "הסרת ‚%s‘ תגרום לאבדן כל היסטוריית ההדפסות וההגדרות המשויכות לה."
 
 #: src/PrinterList.vala:93
 msgid "Remove"
@@ -99,11 +96,11 @@ msgstr "עמודים בכל צד:"
 
 #: src/OptionsPage.vala:94
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "שול ארוך (רגיל)"
 
 #: src/OptionsPage.vala:96
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "שול קצר (חוברת)"
 
 #: src/OptionsPage.vala:140
 msgid "Two-sided:"
@@ -347,12 +344,11 @@ msgstr "הצגת משימות שהושלמו"
 
 #: src/JobsView.vala:66
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "תור ההדפסה ריק"
 
 #: src/JobsView.vala:66
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "אין משימות בתור"
+msgstr "אין משימות ממתינות בתור."
 
 #: src/JobsView.vala:179
 msgid "Hide completed jobs"
