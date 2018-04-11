@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-10 16:21-0700\n"
-"PO-Revision-Date: 2018-02-22 14:08+0000\n"
+"PO-Revision-Date: 2018-04-11 14:55+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,13 +16,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:39
-#, fuzzy
 msgid "Print Queue"
-msgstr "Impressores"
+msgstr "Cua d'impressió"
 
 #: src/PrinterPage.vala:40
 msgid "Page Setup"
-msgstr ""
+msgstr "Configuració de la pàgina"
 
 #: src/PrinterPage.vala:61 src/AddPopover.vala:240
 msgid "Location:"
@@ -42,7 +41,7 @@ msgstr "Imprimeix una pàgina de prova"
 
 #: src/PrinterPage.vala:117
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Configuració i subministraments"
 
 #: src/PrinterPage.vala:185
 msgid "Test page"
@@ -57,13 +56,13 @@ msgid "Remove Printer"
 msgstr "Suprimeix la impressora"
 
 #: src/PrinterList.vala:87
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Si elimineu la impressora %s, en perdreu tot l'historial\n"
-"d'impressió i la configuració que hi està associada."
+"Si elimineu la impressora %s, en perdreu tot l'historial i la configuració "
+"que hi està associada."
 
 #: src/PrinterList.vala:93
 msgid "Remove"
@@ -349,12 +348,11 @@ msgstr "Mostra les tasques fetes"
 
 #: src/JobsView.vala:66
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "La cua d'impressió és buida."
 
 #: src/JobsView.vala:66
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "No hi ha tasques a la cua"
+msgstr "No hi ha tasques pendents a la cua."
 
 #: src/JobsView.vala:179
 msgid "Hide completed jobs"

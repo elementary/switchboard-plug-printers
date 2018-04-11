@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015-2016 elementary LLC.
+ * Copyright (c) 2015-2018 elementary LLC. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -21,70 +21,42 @@
  */
 
 public class Printers.PrinterPage : Gtk.Grid {
-    private unowned Printer printer;
+    public unowned Printer printer { get; construct; }
 
     public PrinterPage (Printer printer) {
-        this.printer = printer;
-        expand = true;
-        margin = 12;
-        column_spacing = 12;
-        row_spacing = 6;
+        Object (printer: printer);
+    }
 
+    construct {
         var stack = new Gtk.Stack ();
+        stack.add_titled (new JobsView (printer), "general", _("Print Queue"));
+        stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
 
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.halign = Gtk.Align.CENTER;
         stack_switcher.homogeneous = true;
         stack_switcher.stack = stack;
-        stack.add_titled (new JobsView (printer), "general", _("Print Queue"));
-        stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
 
-        create_header ();
-        attach (stack_switcher, 0, 1, 3, 1);
-        attach (stack, 0, 2, 3, 1);
-        show_all ();
-
-    }
-
-    private void create_header () {
         var image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DIALOG);
 
         var editable_title = new EditableTitle (printer.info);
-        editable_title.get_style_context ().add_class ("h2");
-        editable_title.title_edited.connect ((new_title) => {
-            printer.info = new_title;
-        });
-
-        var expander = new Gtk.Grid ();
-        expander.hexpand = true;
+        editable_title.hexpand = true;
+        editable_title.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
 
         var location_label = new Gtk.Label (_("Location:"));
-        ((Gtk.Misc) location_label).xalign = 1;
-        location_label.hexpand = true;
+        location_label.xalign = 1;
 
         var location_entry = new Gtk.Entry ();
         location_entry.text = printer.location ?? "";
         location_entry.hexpand = true;
-        location_entry.halign = Gtk.Align.START;
         location_entry.placeholder_text = _("Lab 1 or John's Desk");
-        location_entry.activate.connect (() => {
-            printer.location = location_entry.text;
-        });
 
         var ink_level = new InkLevel (printer);
 
         var default_check = new Gtk.ModelButton ();
+        default_check.active = printer.is_default;
         default_check.text = _("Use as Default Printer");
         default_check.role = Gtk.ButtonRole.CHECK;
-
-        default_check.active = printer.is_default;
-        default_check.notify["active"].connect (() => {
-            if (default_check.active) {
-                printer.is_default = true;
-            } else {
-                default_check.active = true;
-            }
-        });
 
         var print_test = new Gtk.ModelButton ();
         print_test.text = _("Print Test Page");
@@ -115,28 +87,46 @@ public class Printers.PrinterPage : Gtk.Grid {
         info_button.image = new Gtk.Image.from_icon_name ("view-more-symbolic", Gtk.IconSize.MENU);
         info_button.popover = info_popover;
         info_button.tooltip_text = _("Settings & Supplies");
+        info_button.valign = Gtk.Align.CENTER;
         info_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
         var enable_switch = new Gtk.Switch ();
         enable_switch.active = printer.state != "5" && printer.is_accepting_jobs;
+        enable_switch.valign = Gtk.Align.CENTER;
+
+        margin = 12;
+        column_spacing = 12;
+        row_spacing = 24;
+        attach (image, 0, 0, 1, 1);
+        attach (editable_title, 1, 0, 1, 1);
+        attach (info_button, 2, 0, 1, 1);
+        attach (enable_switch, 3, 0, 1, 1);
+        attach (stack_switcher, 0, 1, 4, 1);
+        attach (stack, 0, 2, 4, 1);
+        show_all ();
+
+        default_check.notify["active"].connect (() => {
+            if (default_check.active) {
+                printer.is_default = true;
+            } else {
+                default_check.active = true;
+            }
+        });
+
+        editable_title.title_edited.connect ((new_title) => {
+            printer.info = new_title;
+        });
+
         enable_switch.notify["active"].connect (() => {
             printer.enabled = enable_switch.active;
         });
 
-        var right_grid = new Gtk.Grid ();
-        right_grid.column_spacing = 12;
-        right_grid.orientation = Gtk.Orientation.HORIZONTAL;
-        right_grid.valign = Gtk.Align.CENTER;
-        right_grid.add (expander);
-        right_grid.add (info_button);
-        right_grid.add (enable_switch);
-
-        attach (image, 0, 0, 1, 1);
-        attach (editable_title, 1, 0, 1, 1);
-        attach (right_grid, 2, 0, 1, 1);
-
         info_popover.hide.connect (() => {
             location_entry.text = printer.location ?? "";
+        });
+
+        location_entry.activate.connect (() => {
+            printer.location = location_entry.text;
         });
     }
 
