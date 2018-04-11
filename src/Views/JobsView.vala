@@ -30,9 +30,14 @@ public class Printers.JobsView : Gtk.Frame {
         var job_grid = new Gtk.Grid ();
         job_grid.orientation = Gtk.Orientation.VERTICAL;
 
+        var alert = new Granite.Widgets.AlertView (_("Print Queue Is Empty"), _("There are no pending jobs in the queue."), "");
+        alert.show_all ();
+
         list_box = new Gtk.ListBox ();
-        list_box.set_selection_mode (Gtk.SelectionMode.SINGLE);
-        list_box.set_sort_func (compare);
+        list_box.selection_mode = Gtk.SelectionMode.SINGLE;
+        list_box.set_placeholder (alert);
+        list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) update_header);
+        list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare);
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
@@ -67,10 +72,6 @@ public class Printers.JobsView : Gtk.Frame {
         toolbar.add (stop_button);
         toolbar.add (expander);
         toolbar.add (show_all_button);
-
-        var alert = new Granite.Widgets.AlertView (_("Print Queue Is Empty"), _("There are no pending jobs in the queue."), "");
-        alert.show_all ();
-        list_box.set_placeholder ((Gtk.Widget) alert);
 
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
         foreach (var job in jobs) {
@@ -224,5 +225,18 @@ public class Printers.JobsView : Gtk.Frame {
         var timea = (((JobRow)a).job.get_used_time ());
         var timeb = (((JobRow)b).job.get_used_time ());
         return timeb.compare (timea);
+    }
+
+    [CCode (instance_pos = -1)]
+    private void update_header (JobRow row1, JobRow? row2) {
+        if (row1.job.cjob.state == CUPS.IPP.JobState.COMPLETED && (row2 == null || row1.job.cjob.state != row2.job.cjob.state)) {
+            var label = new Gtk.Label (_("Completed Jobs"));
+            label.xalign = 0;
+            label.margin = 3;
+            label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+            row1.set_header (label);
+        } else {
+            row1.set_header (null);
+        }
     }
 }
