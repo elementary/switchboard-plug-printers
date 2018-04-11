@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: printers-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 08:46-0700\n"
+"POT-Creation-Date: 2018-04-11 10:04-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,15 +37,15 @@ msgstr ""
 msgid "Use as Default Printer"
 msgstr ""
 
-#: src/PrinterPage.vala:62
-msgid "Print Test Page"
-msgstr ""
-
-#: src/PrinterPage.vala:89
+#: src/PrinterPage.vala:84
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:175
+#: src/PrinterPage.vala:92
+msgid "Print Test Page"
+msgstr ""
+
+#: src/PrinterPage.vala:178
 msgid "Test page"
 msgstr ""
 
@@ -204,32 +204,36 @@ msgstr ""
 msgid "Job Completed"
 msgstr ""
 
-#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:54
-msgid "Cancel"
-msgstr ""
-
-#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
-msgid "Show completed jobs"
-msgstr ""
-
-#: src/Views/JobsView.vala:71
+#: src/Views/JobsView.vala:33
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:71
+#: src/Views/JobsView.vala:33
 msgid "There are no pending jobs in the queue."
 msgstr ""
 
-#: src/Views/JobsView.vala:99
+#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:59
+msgid "Cancel"
+msgstr ""
+
+#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
+msgid "Show completed jobs"
+msgstr ""
+
+#: src/Views/JobsView.vala:100
 msgid "Resume"
 msgstr ""
 
-#: src/Views/JobsView.vala:186
+#: src/Views/JobsView.vala:187
 msgid "Hide completed jobs"
+msgstr ""
+
+#: src/Views/JobsView.vala:233
+msgid "Completed Jobs"
 msgstr ""
 
 #: src/Views/SetupView.vala:53

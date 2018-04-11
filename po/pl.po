@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 08:46-0700\n"
-"PO-Revision-Date: 2018-04-11 07:12+0000\n"
+"POT-Creation-Date: 2018-04-11 10:04-0700\n"
+"PO-Revision-Date: 2018-04-11 16:58+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/pl/>\n"
@@ -36,15 +36,15 @@ msgstr "Pokój 1 lub biurko Jana"
 msgid "Use as Default Printer"
 msgstr "Użyj jako drukarki domyślnej"
 
-#: src/PrinterPage.vala:62
-msgid "Print Test Page"
-msgstr "Wydrukuj stronę testową"
-
-#: src/PrinterPage.vala:89
+#: src/PrinterPage.vala:84
 msgid "Settings & Supplies"
 msgstr "Ustawienia i zasoby"
 
-#: src/PrinterPage.vala:175
+#: src/PrinterPage.vala:92
+msgid "Print Test Page"
+msgstr "Wydrukuj stronę testową"
+
+#: src/PrinterPage.vala:178
 msgid "Test page"
 msgstr "Strona testowa"
 
@@ -207,35 +207,39 @@ msgstr "Zadanie przerwane"
 msgid "Job Completed"
 msgstr "Zadanie zakończone"
 
-#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:54
-#, fuzzy
-msgid "Cancel"
-msgstr "Zadanie anulowane"
-
-#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
-msgid "Show completed jobs"
-msgstr "Wyświetl ukończone zadania"
-
-#: src/Views/JobsView.vala:71
+#: src/Views/JobsView.vala:33
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:71
+#: src/Views/JobsView.vala:33
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "Brak zadań w kolejce"
 
-#: src/Views/JobsView.vala:99
+#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
+msgid "Pause"
+msgstr "Wstrzymaj"
+
+#: src/Views/JobsView.vala:59
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
+msgid "Show completed jobs"
+msgstr "Wyświetl ukończone zadania"
+
+#: src/Views/JobsView.vala:100
 msgid "Resume"
 msgstr ""
 
-#: src/Views/JobsView.vala:186
+#: src/Views/JobsView.vala:187
 msgid "Hide completed jobs"
 msgstr "Ukryj ukończone zadania"
+
+#: src/Views/JobsView.vala:233
+#, fuzzy
+msgid "Completed Jobs"
+msgstr "Wyświetl ukończone zadania"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 08:46-0700\n"
+"POT-Creation-Date: 2018-04-11 10:04-0700\n"
 "PO-Revision-Date: 2018-02-25 00:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -36,15 +36,15 @@ msgstr "例如「實驗室一」或「小明的桌子」"
 msgid "Use as Default Printer"
 msgstr "作為預設印表機"
 
-#: src/PrinterPage.vala:62
-msgid "Print Test Page"
-msgstr "列印測試頁"
-
-#: src/PrinterPage.vala:89
+#: src/PrinterPage.vala:84
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:175
+#: src/PrinterPage.vala:92
+msgid "Print Test Page"
+msgstr "列印測試頁"
+
+#: src/PrinterPage.vala:178
 msgid "Test page"
 msgstr "測試頁"
 
@@ -205,35 +205,40 @@ msgstr "工作已中止"
 msgid "Job Completed"
 msgstr "工作已完成"
 
-#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:54
-#, fuzzy
-msgid "Cancel"
-msgstr "工作已取消"
-
-#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
-msgid "Show completed jobs"
-msgstr "顯示完成的工作"
-
-#: src/Views/JobsView.vala:71
+#: src/Views/JobsView.vala:33
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:71
+#: src/Views/JobsView.vala:33
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "佇列中已沒有工作"
 
-#: src/Views/JobsView.vala:99
+#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:59
+#, fuzzy
+msgid "Cancel"
+msgstr "工作已取消"
+
+#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
+msgid "Show completed jobs"
+msgstr "顯示完成的工作"
+
+#: src/Views/JobsView.vala:100
 msgid "Resume"
 msgstr ""
 
-#: src/Views/JobsView.vala:186
+#: src/Views/JobsView.vala:187
 msgid "Hide completed jobs"
 msgstr "隱藏完成的工作"
+
+#: src/Views/JobsView.vala:233
+#, fuzzy
+msgid "Completed Jobs"
+msgstr "顯示完成的工作"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"

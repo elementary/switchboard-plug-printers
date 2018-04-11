@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 08:46-0700\n"
+"POT-Creation-Date: 2018-04-11 10:04-0700\n"
 "PO-Revision-Date: 2018-04-11 06:20+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
@@ -35,15 +35,15 @@ msgstr "מעבדה 1 או העמדה של יוסי"
 msgid "Use as Default Printer"
 msgstr "שימוש כמדפסת בררת מחדל"
 
-#: src/PrinterPage.vala:62
-msgid "Print Test Page"
-msgstr "הדפסת עמוד ניסיון"
-
-#: src/PrinterPage.vala:89
+#: src/PrinterPage.vala:84
 msgid "Settings & Supplies"
 msgstr "הגדרות ואספקה"
 
-#: src/PrinterPage.vala:175
+#: src/PrinterPage.vala:92
+msgid "Print Test Page"
+msgstr "הדפסת עמוד ניסיון"
+
+#: src/PrinterPage.vala:178
 msgid "Test page"
 msgstr "עמוד ניסיון"
 
@@ -202,34 +202,39 @@ msgstr "המשימה הושמדה"
 msgid "Job Completed"
 msgstr "המשימה הושלמה"
 
-#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+#: src/Views/JobsView.vala:33
+msgid "Print Queue Is Empty"
+msgstr "תור ההדפסה ריק"
+
+#: src/Views/JobsView.vala:33
+msgid "There are no pending jobs in the queue."
+msgstr "אין משימות ממתינות בתור."
+
+#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
 msgid "Pause"
 msgstr ""
 
-#: src/Views/JobsView.vala:54
+#: src/Views/JobsView.vala:59
 #, fuzzy
 msgid "Cancel"
 msgstr "המשימה בוטלה"
 
-#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
 msgid "Show completed jobs"
 msgstr "הצגת משימות שהושלמו"
 
-#: src/Views/JobsView.vala:71
-msgid "Print Queue Is Empty"
-msgstr "תור ההדפסה ריק"
-
-#: src/Views/JobsView.vala:71
-msgid "There are no pending jobs in the queue."
-msgstr "אין משימות ממתינות בתור."
-
-#: src/Views/JobsView.vala:99
+#: src/Views/JobsView.vala:100
 msgid "Resume"
 msgstr ""
 
-#: src/Views/JobsView.vala:186
+#: src/Views/JobsView.vala:187
 msgid "Hide completed jobs"
 msgstr "הסתרת משימות שהושלמו"
+
+#: src/Views/JobsView.vala:233
+#, fuzzy
+msgid "Completed Jobs"
+msgstr "הצגת משימות שהושלמו"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"

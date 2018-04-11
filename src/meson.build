@@ -12,6 +12,7 @@ plug_files = files(
     'Widgets/AddPopover.vala',
     'Widgets/EditableTitle.vala',
     'Widgets/InkLevel.vala',
+    'Widgets/JobRow.vala',
     'Widgets/PrinterRow.vala'
 )
 
