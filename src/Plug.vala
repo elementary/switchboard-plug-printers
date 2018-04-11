@@ -41,7 +41,6 @@ namespace Printers {
         public override Gtk.Widget get_widget () {
             if (main_paned == null) {
                 var stack = new Gtk.Stack ();
-                stack.show_all ();
                 stack.visible = true;
 
                 list = new PrinterList (stack);
@@ -64,11 +63,11 @@ namespace Printers {
                 main_paned.pack2 (main_stack, true, false);
                 main_paned.show_all ();
 
+                update_alert_visible ();
+
                 list.notify["has-child"].connect (() => {
                     update_alert_visible ();
                 });
-
-
             }
 
             return main_paned;
