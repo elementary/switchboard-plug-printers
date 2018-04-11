@@ -63,7 +63,6 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         var action_grid = new Gtk.Grid ();
         action_grid.add (cancel_button);
         action_grid.add (start_pause_button);
-        action_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         action_stack = new Gtk.Stack ();
         action_stack.add_named (action_grid, "action-grid");
