@@ -1,18 +1,18 @@
 plug_files = files(
-    'PrinterRow.vala',
     'PrinterPage.vala',
     'PrinterList.vala',
     'Plug.vala',
-    'OptionsPage.vala',
-    'JobsView.vala',
-    'InkLevel.vala',
-    'EditableTitle.vala',
     'CUPSPkHelper.vala',
     'CUPSNotifier.vala',
-    'AddPopover.vala',
     'Objects/Printer.vala',
     'Objects/PrinterManager.vala',
-    'Objects/Job.vala'
+    'Objects/Job.vala',
+    'Views/JobsView.vala',
+    'Views/SetupView.vala',
+    'Widgets/AddPopover.vala',
+    'Widgets/EditableTitle.vala',
+    'Widgets/InkLevel.vala',
+    'Widgets/PrinterRow.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')
