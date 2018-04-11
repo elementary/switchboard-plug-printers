@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 16:21-0700\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2017-04-17 14:18+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,36 +16,36 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:32
 #, fuzzy
 msgid "Print Queue"
 msgstr "Pisači"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:33
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:61 src/AddPopover.vala:240
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "Lokacija:"
 
-#: src/PrinterPage.vala:69
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 ili Goranov radni stoll"
 
-#: src/PrinterPage.vala:77
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "Koristi kao zadani pisač"
 
-#: src/PrinterPage.vala:90
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "Ispiši testnu stranicu"
 
-#: src/PrinterPage.vala:117
+#: src/PrinterPage.vala:89
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:185
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr "Testna stranica"
 
@@ -95,403 +95,6 @@ msgstr "Dodaj pisač"
 #: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "Potražite potreban pisač"
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "Stranica po listu:"
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr ""
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr ""
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "Obostrano:"
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr ""
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr ""
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "Orijentacija:"
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr "Veličina medija:"
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "Automatsko"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "Jedna boja"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "Boja"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "Jedna boja  + Crna"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "Sivi tonovi"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr "Obrađena boja"
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr "Obrađeni sivi ton"
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "Način boja:"
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:258
-#, fuzzy
-msgid "Middle Bin"
-msgstr "Sredina"
-
-#: src/OptionsPage.vala:261
-#, fuzzy
-msgid "Bottom Bin"
-msgstr "Dno"
-
-#: src/OptionsPage.vala:264
-#, fuzzy
-msgid "Side Bin"
-msgstr "Bočno"
-
-#: src/OptionsPage.vala:267
-#, fuzzy
-msgid "Left Bin"
-msgstr "Lijeva"
-
-#: src/OptionsPage.vala:270
-#, fuzzy
-msgid "Right Bin"
-msgstr "Desna"
-
-#: src/OptionsPage.vala:273
-#, fuzzy
-msgid "Center Bin"
-msgstr "Sredina"
-
-#: src/OptionsPage.vala:276
-#, fuzzy
-msgid "Rear Bin"
-msgstr "Straga"
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr ""
-
-#: src/OptionsPage.vala:285
-#, fuzzy
-msgid "Large Capacity Bin"
-msgstr "Velik kapacitet"
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr ""
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr ""
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr ""
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "Ladica %d"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "Gornja ladica:"
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Skica"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "Normaln"
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr "Visoko"
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Kvaliteta:"
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "Dodavanje papira"
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "Zamjenska ladica"
-
-#: src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr "Zamjenska rola"
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "Dno"
-
-#: src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr "Pomoćna ladica"
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "Sredina"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr "Neprkidno automatsko uvlačenje"
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "Disk"
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "Omotnica"
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "Hagaki"
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr "Velik kapacitet"
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Lijeva"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "Glavna ladica"
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr "Glavna rola"
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "Ručno"
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr "Sredina"
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "Fotografija"
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "Straga"
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Desna"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr "Bočno"
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr "Vrh"
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr "Rola %d"
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "Izvor papira:"
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "Prikaži završene zadatke"
-
-#: src/JobsView.vala:66
-msgid "Print Queue Is Empty"
-msgstr ""
-
-#: src/JobsView.vala:66
-#, fuzzy
-msgid "There are no pending jobs in the queue."
-msgstr "Nema zadataka na čekanju"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "Sakrij završene zadatke"
-
-#: src/InkLevel.vala:102
-msgid "Black (PGBK)"
-msgstr "Crna (PGBK)"
-
-#: src/InkLevel.vala:105
-msgid "Black (BK)"
-msgstr "Crna (BK)"
-
-#: src/InkLevel.vala:108
-msgid "Black"
-msgstr "Crna"
-
-#: src/InkLevel.vala:111
-msgid "Yellow"
-msgstr "Žuta"
-
-#: src/InkLevel.vala:114
-msgid "Cyan"
-msgstr "Modra"
-
-#: src/InkLevel.vala:117
-msgid "Magenta"
-msgstr "Ljubičasta"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Uredi"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Protokol internet ispisa (https)"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Protokol internet ispisa (http)"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Protokol internet ispisa (ipp)"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Protokol internet ispisa (ipps)"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Protokol internet ispisa (ipp 14)"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR računalo ili pisač"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "Priključnica aplikacije/HP JetDirect"
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Nemoguće je prikazati sve dostupne pisače"
-
-#: src/AddPopover.vala:169
-msgid "Refresh"
-msgstr "Osvježi"
-
-#: src/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "Osvježi popis pisača"
-
-#: src/AddPopover.vala:176
-msgid "Next"
-msgstr "Sljedeća"
-
-#: src/AddPopover.vala:223
-msgid "Connection:"
-msgstr "Povezivanje:"
-
-#: src/AddPopover.vala:231
-msgid "Description:"
-msgstr "Opis:"
-
-#: src/AddPopover.vala:236
-msgid "BrandPrinter X3000"
-msgstr "BrandPisač X3000"
-
-#: src/AddPopover.vala:246
-msgid "Lab 1 or John's desk"
-msgstr "Lab 1 ili Goranov radni stol"
-
-#: src/AddPopover.vala:310
-msgid "Previous"
-msgstr "Prijašnje"
-
-#: src/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "Odaberi drugi protokol pisača"
-
-#: src/AddPopover.vala:315
-msgid "Add"
-msgstr "Dodaj"
-
-#: src/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "Dodaj podešeni pisač"
-
-#: src/AddPopover.vala:540
-msgid "(recommended)"
-msgstr "(preporučljivo)"
-
-#: src/AddPopover.vala:602
-msgid "Serial"
-msgstr "Serijski"
-
-#: src/AddPopover.vala:605
-msgid "Local Printers"
-msgstr "Lokalni pisači"
-
-#: src/AddPopover.vala:608
-msgid "Network Printers"
-msgstr "Mrežni pisači"
-
-#: src/AddPopover.vala:611
-msgid "Available Network Printers"
-msgstr "Dostupni mrežni pisači"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -606,6 +209,416 @@ msgstr "Zadatak prekinut"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Zadatak završen"
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "Zadatak poništen"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "Prikaži završene zadatke"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "Nema zadataka na čekanju"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "Sakrij završene zadatke"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "Stranica po listu:"
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr ""
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr ""
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "Obostrano:"
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr ""
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr ""
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "Orijentacija:"
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr "Veličina medija:"
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "Automatsko"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "Jedna boja"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "Boja"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "Jedna boja  + Crna"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "Sivi tonovi"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr "Obrađena boja"
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr "Obrađeni sivi ton"
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "Način boja:"
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:234
+#, fuzzy
+msgid "Middle Bin"
+msgstr "Sredina"
+
+#: src/Views/SetupView.vala:237
+#, fuzzy
+msgid "Bottom Bin"
+msgstr "Dno"
+
+#: src/Views/SetupView.vala:240
+#, fuzzy
+msgid "Side Bin"
+msgstr "Bočno"
+
+#: src/Views/SetupView.vala:243
+#, fuzzy
+msgid "Left Bin"
+msgstr "Lijeva"
+
+#: src/Views/SetupView.vala:246
+#, fuzzy
+msgid "Right Bin"
+msgstr "Desna"
+
+#: src/Views/SetupView.vala:249
+#, fuzzy
+msgid "Center Bin"
+msgstr "Sredina"
+
+#: src/Views/SetupView.vala:252
+#, fuzzy
+msgid "Rear Bin"
+msgstr "Straga"
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr ""
+
+#: src/Views/SetupView.vala:261
+#, fuzzy
+msgid "Large Capacity Bin"
+msgstr "Velik kapacitet"
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr ""
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr ""
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "Ladica %d"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr "Gornja ladica:"
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "Skica"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr "Normaln"
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr "Visoko"
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "Kvaliteta:"
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr "Dodavanje papira"
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr "Zamjenska ladica"
+
+#: src/Views/SetupView.vala:334
+msgid "Alternate Roll"
+msgstr "Zamjenska rola"
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr "Dno"
+
+#: src/Views/SetupView.vala:343
+msgid "By-pass Tray"
+msgstr "Pomoćna ladica"
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "Sredina"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr "Neprkidno automatsko uvlačenje"
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr "Disk"
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr "Omotnica"
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr "Velik kapacitet"
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "Lijeva"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr "Glavna ladica"
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr "Glavna rola"
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr "Ručno"
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr "Sredina"
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr "Fotografija"
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr "Straga"
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "Desna"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr "Bočno"
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr "Vrh"
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr "Rola %d"
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "Izvor papira:"
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Protokol internet ispisa (https)"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Protokol internet ispisa (http)"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Protokol internet ispisa (ipp)"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Protokol internet ispisa (ipps)"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Protokol internet ispisa (ipp 14)"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR računalo ili pisač"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "Priključnica aplikacije/HP JetDirect"
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "Nemoguće je prikazati sve dostupne pisače"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr "Osvježi"
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "Osvježi popis pisača"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "Sljedeća"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "Povezivanje:"
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "Opis:"
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr "BrandPisač X3000"
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Lab 1 ili Goranov radni stol"
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "Prijašnje"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr "Odaberi drugi protokol pisača"
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr "Dodaj"
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr "Dodaj podešeni pisač"
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "(preporučljivo)"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr "Serijski"
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "Lokalni pisači"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "Mrežni pisači"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "Dostupni mrežni pisači"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Uredi"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "Crna (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "Crna (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "Crna"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "Žuta"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "Modra"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "Ljubičasta"
 
 #~ msgid "General"
 #~ msgstr "Općenito"

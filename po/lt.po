@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 16:21-0700\n"
+"POT-Creation-Date: 2018-04-11 08:46-0700\n"
 "PO-Revision-Date: 2018-02-26 21:37+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
@@ -16,36 +16,36 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:32
 #, fuzzy
 msgid "Print Queue"
 msgstr "Spausdintuvai"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:33
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:61 src/AddPopover.vala:240
+#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
 msgstr "Vieta:"
 
-#: src/PrinterPage.vala:69
+#: src/PrinterPage.vala:52
 msgid "Lab 1 or John's Desk"
 msgstr "1 kabinetas arba Jono stalas"
 
-#: src/PrinterPage.vala:77
+#: src/PrinterPage.vala:58
 msgid "Use as Default Printer"
 msgstr "Naudoti kaip numatytąjį spausdintuvą"
 
-#: src/PrinterPage.vala:90
+#: src/PrinterPage.vala:62
 msgid "Print Test Page"
 msgstr "Spausdinti bandomąjį puslapį"
 
-#: src/PrinterPage.vala:117
+#: src/PrinterPage.vala:89
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:185
+#: src/PrinterPage.vala:175
 msgid "Test page"
 msgstr "Bandomasis puslapis"
 
@@ -94,395 +94,6 @@ msgstr "Pridėti spausdintuvą"
 #: src/Plug.vala:50
 msgid "Search for the printer you need"
 msgstr "Ieškokite reikiamo spausdintuvo"
-
-#: src/OptionsPage.vala:68
-msgid "Pages per side:"
-msgstr "Puslapių vienoje pusėje:"
-
-#: src/OptionsPage.vala:94
-msgid "Long Edge (Standard)"
-msgstr "Ilgasis kraštas (Standartinis)"
-
-#: src/OptionsPage.vala:96
-msgid "Short Edge (Flip)"
-msgstr "Trumpasis kraštas (Apverstas)"
-
-#: src/OptionsPage.vala:140
-msgid "Two-sided:"
-msgstr "Abipusis spausdinimas:"
-
-#: src/OptionsPage.vala:156
-msgid "Portrait"
-msgstr "Stačias"
-
-#: src/OptionsPage.vala:159
-msgid "Landscape"
-msgstr "Gulsčias"
-
-#: src/OptionsPage.vala:162
-msgid "Reverse portrait"
-msgstr "Atvirkštinis stačias"
-
-#: src/OptionsPage.vala:165
-msgid "Reverse landscape"
-msgstr "Atvirkštinis gulsčias"
-
-#: src/OptionsPage.vala:174
-msgid "Orientation:"
-msgstr "Padėtis:"
-
-#: src/OptionsPage.vala:196
-msgid "Media Size:"
-msgstr "Popieriaus dydis:"
-
-#: src/OptionsPage.vala:212 src/OptionsPage.vala:365
-msgid "Automatic"
-msgstr "Automatiškai"
-
-#: src/OptionsPage.vala:215
-msgid "One Color"
-msgstr "Viena spalva"
-
-#: src/OptionsPage.vala:218
-msgid "Color"
-msgstr "Spalvotai"
-
-#: src/OptionsPage.vala:221
-msgid "One Color + Black"
-msgstr "Viena spalva + juoda"
-
-#: src/OptionsPage.vala:224
-msgid "Greyscale"
-msgstr "Pilkumo tonais"
-
-#: src/OptionsPage.vala:227
-msgid "Processed Color"
-msgstr "Apdorota spalva"
-
-#: src/OptionsPage.vala:230
-msgid "Processed Greyscale"
-msgstr "Apdoroti pilkumo tonai"
-
-#: src/OptionsPage.vala:239
-msgid "Color mode:"
-msgstr "Spalvos veiksena:"
-
-#: src/OptionsPage.vala:255
-msgid "Top Bin"
-msgstr "Viršutinis dėklas"
-
-#: src/OptionsPage.vala:258
-msgid "Middle Bin"
-msgstr "Vidurinysis dėklas"
-
-#: src/OptionsPage.vala:261
-msgid "Bottom Bin"
-msgstr "Apatinis dėklas"
-
-#: src/OptionsPage.vala:264
-msgid "Side Bin"
-msgstr "Šoninis dėklas"
-
-#: src/OptionsPage.vala:267
-msgid "Left Bin"
-msgstr "Kairysis dėklas"
-
-#: src/OptionsPage.vala:270
-msgid "Right Bin"
-msgstr "Dešinysis dėklas"
-
-#: src/OptionsPage.vala:273
-msgid "Center Bin"
-msgstr "Centrinis dėklas"
-
-#: src/OptionsPage.vala:276
-msgid "Rear Bin"
-msgstr "Galinis dėklas"
-
-#: src/OptionsPage.vala:279
-msgid "Face Up Bin"
-msgstr "Priekinės pusės dėklas"
-
-#: src/OptionsPage.vala:282
-msgid "Face Down Bin"
-msgstr "Galinės pusės dėklas"
-
-#: src/OptionsPage.vala:285
-msgid "Large Capacity Bin"
-msgstr "Didelės talpos dėklas"
-
-#: src/OptionsPage.vala:288
-msgid "My Mailbox"
-msgstr "Mano pašto dėžutė"
-
-#: src/OptionsPage.vala:293
-#, c-format
-msgid "Stacker %d"
-msgstr "Dėtuvė %d"
-
-#: src/OptionsPage.vala:296
-#, c-format
-msgid "Mailbox %d"
-msgstr "Pašto dėžutė %d"
-
-#: src/OptionsPage.vala:299 src/OptionsPage.vala:429
-#, c-format
-msgid "Tray %d"
-msgstr "Dėklas %d"
-
-#: src/OptionsPage.vala:312
-msgid "Output Tray:"
-msgstr "Išvesties dėklas:"
-
-#: src/OptionsPage.vala:328
-msgid "Draft"
-msgstr "Juodraštis"
-
-#: src/OptionsPage.vala:331
-msgid "Normal"
-msgstr "Normali"
-
-#: src/OptionsPage.vala:334
-msgid "High"
-msgstr "Aukšta"
-
-#: src/OptionsPage.vala:340
-msgid "Quality:"
-msgstr "Kokybė:"
-
-#: src/OptionsPage.vala:356
-msgid "Paper Allocation"
-msgstr "Popieriaus paskirstymas"
-
-#: src/OptionsPage.vala:359
-msgid "Alternate Tray"
-msgstr "Alternatyvusis dėklas"
-
-#: src/OptionsPage.vala:362
-msgid "Alternate Roll"
-msgstr "Alternatyvusis rulonas"
-
-#: src/OptionsPage.vala:368
-msgid "Bottom"
-msgstr "Apačioje"
-
-#: src/OptionsPage.vala:371
-msgid "By-pass Tray"
-msgstr "Apeiti dėklą"
-
-#: src/OptionsPage.vala:374
-msgid "Center"
-msgstr "Centras"
-
-#: src/OptionsPage.vala:377
-msgid "Continuous Autofeed"
-msgstr "Nepertraukiamas automatinis padavimas"
-
-#: src/OptionsPage.vala:381
-msgid "Disk"
-msgstr "Diskas"
-
-#: src/OptionsPage.vala:384
-msgid "Envelope"
-msgstr "Vokas"
-
-#: src/OptionsPage.vala:387
-msgid "Hagaki"
-msgstr "Hagaki"
-
-#: src/OptionsPage.vala:390
-msgid "Large Capacity"
-msgstr "Didelės talpos"
-
-#: src/OptionsPage.vala:393
-msgid "Left"
-msgstr "Kairė"
-
-#: src/OptionsPage.vala:396
-msgid "Main Tray"
-msgstr "Pagrindinis dėklas"
-
-#: src/OptionsPage.vala:399
-msgid "Main Roll"
-msgstr "Pagrindinis rulonas"
-
-#: src/OptionsPage.vala:402
-msgid "Manual"
-msgstr "Rankinis"
-
-#: src/OptionsPage.vala:405
-msgid "Middle"
-msgstr "Viduryje"
-
-#: src/OptionsPage.vala:408
-msgid "Photo"
-msgstr "Nuotrauka"
-
-#: src/OptionsPage.vala:412
-msgid "Rear"
-msgstr "Galinis"
-
-#: src/OptionsPage.vala:415
-msgid "Right"
-msgstr "Dešinė"
-
-#: src/OptionsPage.vala:418
-msgid "Side"
-msgstr "Šoninis"
-
-#: src/OptionsPage.vala:421
-msgid "Top"
-msgstr "Viršuje"
-
-#: src/OptionsPage.vala:426
-#, c-format
-msgid "Roll %d"
-msgstr "Rulonas %d"
-
-#: src/OptionsPage.vala:442
-msgid "Paper Source:"
-msgstr "Popieriaus šaltinis:"
-
-#: src/JobsView.vala:56 src/JobsView.vala:194
-msgid "Show completed jobs"
-msgstr "Rodyti užbaigtus darbus"
-
-#: src/JobsView.vala:66
-msgid "Print Queue Is Empty"
-msgstr ""
-
-#: src/JobsView.vala:66
-#, fuzzy
-msgid "There are no pending jobs in the queue."
-msgstr "Eilėje nėra jokių darbų"
-
-#: src/JobsView.vala:179
-msgid "Hide completed jobs"
-msgstr "Slėpti užbaigtus darbus"
-
-#: src/InkLevel.vala:102
-msgid "Black (PGBK)"
-msgstr "Juoda (PGBK)"
-
-#: src/InkLevel.vala:105
-msgid "Black (BK)"
-msgstr "Juoda (BK)"
-
-#: src/InkLevel.vala:108
-msgid "Black"
-msgstr "Juoda"
-
-#: src/InkLevel.vala:111
-msgid "Yellow"
-msgstr "Geltona"
-
-#: src/InkLevel.vala:114
-msgid "Cyan"
-msgstr "Žydra"
-
-#: src/InkLevel.vala:117
-msgid "Magenta"
-msgstr "Purpurinė"
-
-#: src/EditableTitle.vala:41 src/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Taisyti"
-
-#: src/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Interneto spausdinimo protokolas (https)"
-
-#: src/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Interneto spausdinimo protokolas (http)"
-
-#: src/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Interneto spausdinimo protokolas (ipp)"
-
-#: src/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Interneto spausdinimo protokolas (ipps)"
-
-#: src/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Interneto spausdinimo protokolas (ipp14)"
-
-#: src/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR serveris ar spausdintuvas"
-
-#: src/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Neįmanoma išvardyti visų prieinamų spausdintuvų"
-
-#: src/AddPopover.vala:169
-msgid "Refresh"
-msgstr "Įkelti iš naujo"
-
-#: src/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "Iš naujo įkelti spausdintuvų sąrašą"
-
-#: src/AddPopover.vala:176
-msgid "Next"
-msgstr "Kitas"
-
-#: src/AddPopover.vala:223
-msgid "Connection:"
-msgstr "Ryšys:"
-
-#: src/AddPopover.vala:231
-msgid "Description:"
-msgstr "Aprašas:"
-
-#: src/AddPopover.vala:236
-msgid "BrandPrinter X3000"
-msgstr "SpausdintuvoPavadinimas X3000"
-
-#: src/AddPopover.vala:246
-msgid "Lab 1 or John's desk"
-msgstr "1 kabinetas ar Jono stalas"
-
-#: src/AddPopover.vala:310
-msgid "Previous"
-msgstr "Ankstesnis"
-
-#: src/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "Pasirinkti kitą spausdintuvą ar protokolą"
-
-#: src/AddPopover.vala:315
-msgid "Add"
-msgstr "Pridėti"
-
-#: src/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "Pridėti sukonfigūruotą spausdintuvą"
-
-#: src/AddPopover.vala:540
-msgid "(recommended)"
-msgstr "(rekomenduojama)"
-
-#: src/AddPopover.vala:602
-msgid "Serial"
-msgstr "Serijinis"
-
-#: src/AddPopover.vala:605
-msgid "Local Printers"
-msgstr "Vietiniai spausdintuvai"
-
-#: src/AddPopover.vala:608
-msgid "Network Printers"
-msgstr "Tinklo spausdintuvai"
-
-#: src/AddPopover.vala:611
-msgid "Available Network Printers"
-msgstr "Prieinami tinklo spausdintuvai"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -595,6 +206,408 @@ msgstr "Darbas nutrauktas"
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Darbas užbaigtas"
+
+#: src/Views/JobsView.vala:49 src/Views/JobsView.vala:96
+msgid "Pause"
+msgstr ""
+
+#: src/Views/JobsView.vala:54
+#, fuzzy
+msgid "Cancel"
+msgstr "Darbo atsisakyta"
+
+#: src/Views/JobsView.vala:61 src/Views/JobsView.vala:201
+msgid "Show completed jobs"
+msgstr "Rodyti užbaigtus darbus"
+
+#: src/Views/JobsView.vala:71
+msgid "Print Queue Is Empty"
+msgstr ""
+
+#: src/Views/JobsView.vala:71
+#, fuzzy
+msgid "There are no pending jobs in the queue."
+msgstr "Eilėje nėra jokių darbų"
+
+#: src/Views/JobsView.vala:99
+msgid "Resume"
+msgstr ""
+
+#: src/Views/JobsView.vala:186
+msgid "Hide completed jobs"
+msgstr "Slėpti užbaigtus darbus"
+
+#: src/Views/SetupView.vala:53
+msgid "Pages per side:"
+msgstr "Puslapių vienoje pusėje:"
+
+#: src/Views/SetupView.vala:78
+msgid "Long Edge (Standard)"
+msgstr "Ilgasis kraštas (Standartinis)"
+
+#: src/Views/SetupView.vala:80
+msgid "Short Edge (Flip)"
+msgstr "Trumpasis kraštas (Apverstas)"
+
+#: src/Views/SetupView.vala:124
+msgid "Two-sided:"
+msgstr "Abipusis spausdinimas:"
+
+#: src/Views/SetupView.vala:138
+msgid "Portrait"
+msgstr "Stačias"
+
+#: src/Views/SetupView.vala:141
+msgid "Landscape"
+msgstr "Gulsčias"
+
+#: src/Views/SetupView.vala:144
+msgid "Reverse portrait"
+msgstr "Atvirkštinis stačias"
+
+#: src/Views/SetupView.vala:147
+msgid "Reverse landscape"
+msgstr "Atvirkštinis gulsčias"
+
+#: src/Views/SetupView.vala:156
+msgid "Orientation:"
+msgstr "Padėtis:"
+
+#: src/Views/SetupView.vala:176
+msgid "Media Size:"
+msgstr "Popieriaus dydis:"
+
+#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+msgid "Automatic"
+msgstr "Automatiškai"
+
+#: src/Views/SetupView.vala:193
+msgid "One Color"
+msgstr "Viena spalva"
+
+#: src/Views/SetupView.vala:196
+msgid "Color"
+msgstr "Spalvotai"
+
+#: src/Views/SetupView.vala:199
+msgid "One Color + Black"
+msgstr "Viena spalva + juoda"
+
+#: src/Views/SetupView.vala:202
+msgid "Greyscale"
+msgstr "Pilkumo tonais"
+
+#: src/Views/SetupView.vala:205
+msgid "Processed Color"
+msgstr "Apdorota spalva"
+
+#: src/Views/SetupView.vala:208
+msgid "Processed Greyscale"
+msgstr "Apdoroti pilkumo tonai"
+
+#: src/Views/SetupView.vala:217
+msgid "Color mode:"
+msgstr "Spalvos veiksena:"
+
+#: src/Views/SetupView.vala:231
+msgid "Top Bin"
+msgstr "Viršutinis dėklas"
+
+#: src/Views/SetupView.vala:234
+msgid "Middle Bin"
+msgstr "Vidurinysis dėklas"
+
+#: src/Views/SetupView.vala:237
+msgid "Bottom Bin"
+msgstr "Apatinis dėklas"
+
+#: src/Views/SetupView.vala:240
+msgid "Side Bin"
+msgstr "Šoninis dėklas"
+
+#: src/Views/SetupView.vala:243
+msgid "Left Bin"
+msgstr "Kairysis dėklas"
+
+#: src/Views/SetupView.vala:246
+msgid "Right Bin"
+msgstr "Dešinysis dėklas"
+
+#: src/Views/SetupView.vala:249
+msgid "Center Bin"
+msgstr "Centrinis dėklas"
+
+#: src/Views/SetupView.vala:252
+msgid "Rear Bin"
+msgstr "Galinis dėklas"
+
+#: src/Views/SetupView.vala:255
+msgid "Face Up Bin"
+msgstr "Priekinės pusės dėklas"
+
+#: src/Views/SetupView.vala:258
+msgid "Face Down Bin"
+msgstr "Galinės pusės dėklas"
+
+#: src/Views/SetupView.vala:261
+msgid "Large Capacity Bin"
+msgstr "Didelės talpos dėklas"
+
+#: src/Views/SetupView.vala:264
+msgid "My Mailbox"
+msgstr "Mano pašto dėžutė"
+
+#: src/Views/SetupView.vala:269
+#, c-format
+msgid "Stacker %d"
+msgstr "Dėtuvė %d"
+
+#: src/Views/SetupView.vala:272
+#, c-format
+msgid "Mailbox %d"
+msgstr "Pašto dėžutė %d"
+
+#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#, c-format
+msgid "Tray %d"
+msgstr "Dėklas %d"
+
+#: src/Views/SetupView.vala:288
+msgid "Output Tray:"
+msgstr "Išvesties dėklas:"
+
+#: src/Views/SetupView.vala:302
+msgid "Draft"
+msgstr "Juodraštis"
+
+#: src/Views/SetupView.vala:305
+msgid "Normal"
+msgstr "Normali"
+
+#: src/Views/SetupView.vala:308
+msgid "High"
+msgstr "Aukšta"
+
+#: src/Views/SetupView.vala:314
+msgid "Quality:"
+msgstr "Kokybė:"
+
+#: src/Views/SetupView.vala:328
+msgid "Paper Allocation"
+msgstr "Popieriaus paskirstymas"
+
+#: src/Views/SetupView.vala:331
+msgid "Alternate Tray"
+msgstr "Alternatyvusis dėklas"
+
+#: src/Views/SetupView.vala:334
+msgid "Alternate Roll"
+msgstr "Alternatyvusis rulonas"
+
+#: src/Views/SetupView.vala:340
+msgid "Bottom"
+msgstr "Apačioje"
+
+#: src/Views/SetupView.vala:343
+msgid "By-pass Tray"
+msgstr "Apeiti dėklą"
+
+#: src/Views/SetupView.vala:346
+msgid "Center"
+msgstr "Centras"
+
+#: src/Views/SetupView.vala:349
+msgid "Continuous Autofeed"
+msgstr "Nepertraukiamas automatinis padavimas"
+
+#: src/Views/SetupView.vala:353
+msgid "Disk"
+msgstr "Diskas"
+
+#: src/Views/SetupView.vala:356
+msgid "Envelope"
+msgstr "Vokas"
+
+#: src/Views/SetupView.vala:359
+msgid "Hagaki"
+msgstr "Hagaki"
+
+#: src/Views/SetupView.vala:362
+msgid "Large Capacity"
+msgstr "Didelės talpos"
+
+#: src/Views/SetupView.vala:365
+msgid "Left"
+msgstr "Kairė"
+
+#: src/Views/SetupView.vala:368
+msgid "Main Tray"
+msgstr "Pagrindinis dėklas"
+
+#: src/Views/SetupView.vala:371
+msgid "Main Roll"
+msgstr "Pagrindinis rulonas"
+
+#: src/Views/SetupView.vala:374
+msgid "Manual"
+msgstr "Rankinis"
+
+#: src/Views/SetupView.vala:377
+msgid "Middle"
+msgstr "Viduryje"
+
+#: src/Views/SetupView.vala:380
+msgid "Photo"
+msgstr "Nuotrauka"
+
+#: src/Views/SetupView.vala:384
+msgid "Rear"
+msgstr "Galinis"
+
+#: src/Views/SetupView.vala:387
+msgid "Right"
+msgstr "Dešinė"
+
+#: src/Views/SetupView.vala:390
+msgid "Side"
+msgstr "Šoninis"
+
+#: src/Views/SetupView.vala:393
+msgid "Top"
+msgstr "Viršuje"
+
+#: src/Views/SetupView.vala:398
+#, c-format
+msgid "Roll %d"
+msgstr "Rulonas %d"
+
+#: src/Views/SetupView.vala:414
+msgid "Paper Source:"
+msgstr "Popieriaus šaltinis:"
+
+#: src/Widgets/AddPopover.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Interneto spausdinimo protokolas (https)"
+
+#: src/Widgets/AddPopover.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Interneto spausdinimo protokolas (http)"
+
+#: src/Widgets/AddPopover.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Interneto spausdinimo protokolas (ipp)"
+
+#: src/Widgets/AddPopover.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Interneto spausdinimo protokolas (ipps)"
+
+#: src/Widgets/AddPopover.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Interneto spausdinimo protokolas (ipp14)"
+
+#: src/Widgets/AddPopover.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR serveris ar spausdintuvas"
+
+#: src/Widgets/AddPopover.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddPopover.vala:81
+msgid "Impossible to list all available printers"
+msgstr "Neįmanoma išvardyti visų prieinamų spausdintuvų"
+
+#: src/Widgets/AddPopover.vala:169
+msgid "Refresh"
+msgstr "Įkelti iš naujo"
+
+#: src/Widgets/AddPopover.vala:173
+msgid "Refresh the printer list"
+msgstr "Iš naujo įkelti spausdintuvų sąrašą"
+
+#: src/Widgets/AddPopover.vala:176
+msgid "Next"
+msgstr "Kitas"
+
+#: src/Widgets/AddPopover.vala:223
+msgid "Connection:"
+msgstr "Ryšys:"
+
+#: src/Widgets/AddPopover.vala:231
+msgid "Description:"
+msgstr "Aprašas:"
+
+#: src/Widgets/AddPopover.vala:236
+msgid "BrandPrinter X3000"
+msgstr "SpausdintuvoPavadinimas X3000"
+
+#: src/Widgets/AddPopover.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "1 kabinetas ar Jono stalas"
+
+#: src/Widgets/AddPopover.vala:310
+msgid "Previous"
+msgstr "Ankstesnis"
+
+#: src/Widgets/AddPopover.vala:313
+msgid "Select an other printer or protocol"
+msgstr "Pasirinkti kitą spausdintuvą ar protokolą"
+
+#: src/Widgets/AddPopover.vala:315
+msgid "Add"
+msgstr "Pridėti"
+
+#: src/Widgets/AddPopover.vala:319
+msgid "Add the configured printer"
+msgstr "Pridėti sukonfigūruotą spausdintuvą"
+
+#: src/Widgets/AddPopover.vala:540
+msgid "(recommended)"
+msgstr "(rekomenduojama)"
+
+#: src/Widgets/AddPopover.vala:602
+msgid "Serial"
+msgstr "Serijinis"
+
+#: src/Widgets/AddPopover.vala:605
+msgid "Local Printers"
+msgstr "Vietiniai spausdintuvai"
+
+#: src/Widgets/AddPopover.vala:608
+msgid "Network Printers"
+msgstr "Tinklo spausdintuvai"
+
+#: src/Widgets/AddPopover.vala:611
+msgid "Available Network Printers"
+msgstr "Prieinami tinklo spausdintuvai"
+
+#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
+msgid "Edit"
+msgstr "Taisyti"
+
+#: src/Widgets/InkLevel.vala:102
+msgid "Black (PGBK)"
+msgstr "Juoda (PGBK)"
+
+#: src/Widgets/InkLevel.vala:105
+msgid "Black (BK)"
+msgstr "Juoda (BK)"
+
+#: src/Widgets/InkLevel.vala:108
+msgid "Black"
+msgstr "Juoda"
+
+#: src/Widgets/InkLevel.vala:111
+msgid "Yellow"
+msgstr "Geltona"
+
+#: src/Widgets/InkLevel.vala:114
+msgid "Cyan"
+msgstr "Žydra"
+
+#: src/Widgets/InkLevel.vala:117
+msgid "Magenta"
+msgstr "Purpurinė"
 
 #~ msgid "General"
 #~ msgstr "Bendra"
