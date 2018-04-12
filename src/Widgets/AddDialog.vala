@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015 Pantheon Developers (https://launchpad.net/switchboard-plug-printers)
+ * Copyright (c) 2015-2018 elementary LLC. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -40,53 +40,47 @@ namespace Printers.Translations {
     }
 }
 
-public class Printers.AddPopover : Gtk.Popover {
-    Gtk.Stack stack;
-    Granite.Widgets.AlertView alertview;
-    Gtk.Stack devices_list_stack;
-    Gtk.Stack drivers_stack;
-    Gee.LinkedList<Printers.DeviceDriver> drivers;
-    Gtk.ListStore driver_list_store;
-    Gtk.TreeView driver_view;
-    Gtk.ListStore make_list_store;
-    Gtk.TreeView make_view;
-    Printers.DeviceDriver selected_driver = null;
-    Cancellable driver_cancellable;
-    public AddPopover (Gtk.Widget relative_widget) {
-        Object (relative_to: relative_widget);
+public class Printers.AddDialog : Gtk.Dialog {
+    private Gtk.Stack stack;
+    private Granite.Widgets.AlertView alertview;
+    private Gtk.Stack devices_list_stack;
+    private Gtk.Stack drivers_stack;
+    private Gee.LinkedList<Printers.DeviceDriver> drivers;
+    private Gtk.ListStore driver_list_store;
+    private Gtk.TreeView driver_view;
+    private Gtk.ListStore make_list_store;
+    private Gtk.TreeView make_view;
+    private Printers.DeviceDriver selected_driver = null;
+    private Cancellable driver_cancellable;
+
+    public AddDialog () {
         search_device.begin ();
     }
 
     construct {
+        var spinner = new Gtk.Spinner ();
+        spinner.halign = Gtk.Align.CENTER;
+        spinner.valign = Gtk.Align.CENTER;
+        spinner.start ();
+
+        devices_list_stack = new Gtk.Stack ();
+        devices_list_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+        devices_list_stack.add_named (spinner, "loading");
+
+        alertview = new Granite.Widgets.AlertView (_("Impossible to list all available printers"), "", "dialog-error");
+        alertview.no_show_all = true;
+
         stack = new Gtk.Stack ();
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
         stack.width_request = 500;
         stack.height_request = 300;
-
-        devices_list_stack = new Gtk.Stack ();
-        devices_list_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
-
-        var spinner_grid = new Gtk.Grid ();
-        var spinner = new Gtk.Spinner ();
-        var spinner_grid_first_grid = new Gtk.Grid ();
-        spinner_grid_first_grid.expand = true;
-        var spinner_grid_second_grid = new Gtk.Grid ();
-        spinner_grid_second_grid.expand = true;
-        spinner_grid.attach (spinner_grid_first_grid, 0, 0, 1, 1);
-        spinner_grid.attach (spinner, 1, 1, 1, 1);
-        spinner_grid.attach (spinner_grid_second_grid, 2, 2, 1, 1);
-        devices_list_stack.add_named (spinner_grid, "loading");
         stack.add (devices_list_stack);
-
-        alertview = new Granite.Widgets.AlertView (_("Impossible to list all available printers"), "", "dialog-error");
-        alertview.no_show_all = true;
         stack.add (alertview);
+        stack.set_visible_child (devices_list_stack);
 
         drivers = new Gee.LinkedList<Printers.DeviceDriver> ();
 
-        add (stack);
-        stack.set_visible_child (devices_list_stack);
-        spinner.start ();
+        get_content_area ().add (stack);
     }
 
     private async void search_device () {
@@ -170,7 +164,6 @@ public class Printers.AddPopover : Gtk.Popover {
         refresh_button.hexpand = true;
         refresh_button.halign = Gtk.Align.START;
         refresh_button.margin_start = 6;
-        refresh_button.tooltip_text = _("Refresh the printer list");
         devices_grid.attach (refresh_button, 0, 1, 1, 1);
 
         var next_button = new Gtk.Button.with_label (_("Next"));
@@ -310,13 +303,11 @@ public class Printers.AddPopover : Gtk.Popover {
         var previous_button = new Gtk.Button.with_label (_("Previous"));
         previous_button.hexpand = true;
         previous_button.halign = Gtk.Align.START;
-        previous_button.tooltip_text = _("Select an other printer or protocol");
 
-        var next_button = new Gtk.Button.with_label (_("Add"));
+        var next_button = new Gtk.Button.with_label (_("Add Printer"));
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         next_button.hexpand = true;
         next_button.halign = Gtk.Align.END;
-        next_button.tooltip_text = _("Add the configured printer");
         next_button.sensitive = false;
 
         button_grid.add (previous_button);
@@ -599,32 +590,24 @@ public class Printers.AddPopover : Gtk.Popover {
         if (before == null || before.temp_device.device_class != row.temp_device.device_class) {
             switch (row.temp_device.device_class) {
                 case "serial":
-                    row.set_header (create_header_label (_("Serial")));
+                    row.set_header (new Granite.HeaderLabel (_("Serial")));
                     break;
                 case "direct":
-                    row.set_header (create_header_label (_("Local Printers")));
+                    row.set_header (new Granite.HeaderLabel (_("Local Printers")));
                     break;
                 case "network":
-                    row.set_header (create_header_label (_("Network Printers")));
+                    row.set_header (new Granite.HeaderLabel (_("Network Printers")));
                     break;
                 case "ok-network":
-                    row.set_header (create_header_label (_("Available Network Printers")));
+                    row.set_header (new Granite.HeaderLabel (_("Available Network Printers")));
                     break;
                 default:
-                    row.set_header (create_header_label (row.temp_device.device_class));
+                    row.set_header (new Granite.HeaderLabel (row.temp_device.device_class));
                     break;
             }
         } else {
             row.set_header (null);
         }
-    }
-
-    private static Gtk.Label create_header_label (string name) {
-        var header = new Gtk.Label (name);
-        header.get_style_context ().add_class ("h4");
-        header.margin_start = 3;
-        ((Gtk.Misc)header).xalign = 0;
-        return header;
     }
 
     public class TempDeviceRow : Gtk.ListBoxRow {
@@ -642,88 +625,5 @@ public class Printers.AddPopover : Gtk.Popover {
             add (grid);
             show_all ();
         }
-    }
-}
-
-public class Printers.TempDevice : GLib.Object {
-    public string device_make_and_model = null;
-    public string device_class = null;
-    public string device_uri = null;
-    public string device_info = null;
-    public string device_id = null;
-    public TempDevice () {
-
-    }
-
-    public string? get_make_from_id () {
-        if (device_id == null)
-            return null;
-
-        var attrs = device_id.split (";");
-        foreach (var attr in attrs) {
-            var keyval = attr.split (":", 2);
-            if (keyval.length < 2) {
-                continue;
-            }
-
-            if (keyval[0] == "MFG") {
-                return keyval[1];
-            }
-        }
-
-        return null;
-    }
-
-    public string? get_model_from_id () {
-        if (device_id == null)
-            return null;
-
-        var attrs = device_id.split (";");
-        foreach (var attr in attrs) {
-            var keyval = attr.split (":", 2);
-            if (keyval.length < 2) {
-                continue;
-            }
-
-            if (keyval[0] == "MDL") {
-                return keyval[1];
-            }
-        }
-
-        return null;
-    }
-}
-
-public class Printers.DeviceDriver : GLib.Object {
-    public string ppd_name = null;
-    public string ppd_natural_language = null;
-    public string ppd_make = null;
-    public string ppd_make_and_model = null;
-    public string ppd_device_id = null;
-    public string ppd_product = null;
-    public string ppd_psversion = null;
-    public string ppd_type = null;
-    public int ppd_model_number = 0;
-    public DeviceDriver () {
-
-    }
-
-    public string? get_model_from_id () {
-        if (ppd_device_id == null)
-            return null;
-
-        var attrs = ppd_device_id.split (";");
-        foreach (var attr in attrs) {
-            var keyval = attr.split (":", 2);
-            if (keyval.length < 2) {
-                continue;
-            }
-
-            if (keyval[0] == "MDL") {
-                return keyval[1];
-            }
-        }
-
-        return null;
     }
 }
