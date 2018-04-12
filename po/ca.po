@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-11 10:04-0700\n"
-"PO-Revision-Date: 2018-04-11 14:55+0000\n"
+"PO-Revision-Date: 2018-04-12 14:24+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -216,12 +216,11 @@ msgstr "No hi ha tasques pendents a la cua."
 
 #: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
 msgid "Pause"
-msgstr ""
+msgstr "Pausa"
 
 #: src/Views/JobsView.vala:59
-#, fuzzy
 msgid "Cancel"
-msgstr "Tasca cancel·lada"
+msgstr "Cancel·la"
 
 #: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
 msgid "Show completed jobs"
@@ -229,16 +228,15 @@ msgstr "Mostra les tasques fetes"
 
 #: src/Views/JobsView.vala:100
 msgid "Resume"
-msgstr ""
+msgstr "Reprèn"
 
 #: src/Views/JobsView.vala:187
 msgid "Hide completed jobs"
 msgstr "Amaga les tasques fetes"
 
 #: src/Views/JobsView.vala:233
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Mostra les tasques fetes"
+msgstr "Tasques acabades"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
