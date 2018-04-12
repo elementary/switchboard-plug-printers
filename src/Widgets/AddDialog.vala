@@ -590,32 +590,24 @@ public class Printers.AddDialog : Gtk.Dialog {
         if (before == null || before.temp_device.device_class != row.temp_device.device_class) {
             switch (row.temp_device.device_class) {
                 case "serial":
-                    row.set_header (create_header_label (_("Serial")));
+                    row.set_header (new Granite.HeaderLabel (_("Serial")));
                     break;
                 case "direct":
-                    row.set_header (create_header_label (_("Local Printers")));
+                    row.set_header (new Granite.HeaderLabel (_("Local Printers")));
                     break;
                 case "network":
-                    row.set_header (create_header_label (_("Network Printers")));
+                    row.set_header (new Granite.HeaderLabel (_("Network Printers")));
                     break;
                 case "ok-network":
-                    row.set_header (create_header_label (_("Available Network Printers")));
+                    row.set_header (new Granite.HeaderLabel (_("Available Network Printers")));
                     break;
                 default:
-                    row.set_header (create_header_label (row.temp_device.device_class));
+                    row.set_header (new Granite.HeaderLabel (row.temp_device.device_class));
                     break;
             }
         } else {
             row.set_header (null);
         }
-    }
-
-    private static Gtk.Label create_header_label (string name) {
-        var header = new Gtk.Label (name);
-        header.get_style_context ().add_class ("h4");
-        header.margin_start = 3;
-        ((Gtk.Misc)header).xalign = 0;
-        return header;
     }
 
     public class TempDeviceRow : Gtk.ListBoxRow {
