@@ -23,8 +23,9 @@
 namespace Printers {
 
     public class Plug : Switchboard.Plug {
-        Gtk.Stack main_stack;
-        private Printers.AddPopover add_popover;
+        private Gtk.Paned main_paned;
+        private Gtk.Stack main_stack;
+        private PrinterList list;
 
         public Plug () {
             var settings = new Gee.TreeMap<string, string?> (null, null);
@@ -38,51 +39,46 @@ namespace Printers {
         }
 
         public override Gtk.Widget get_widget () {
-            if (main_stack == null) {
-                main_stack = new Gtk.Stack ();
-                var main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
+            if (main_paned == null) {
                 var stack = new Gtk.Stack ();
-                var list = new PrinterList (stack);
-                main_paned.pack1 (list, false, false);
-                main_paned.pack2 (stack, true, false);
+                stack.visible = true;
 
-                var welcome = new Granite.Widgets.Welcome (_("No Printers"), _("Add a printer to begin printing"));
-                var add_index = welcome.append ("printer-new", _("Add Printer"), _("Search for the printer you need"));
-                welcome.activated.connect (() => {
-                    var widget = welcome.get_button_from_index (add_index);
-                    if (add_popover != null) {
-                        if (add_popover.visible) {
-                            return;
-                        } else {
-                            add_popover.destroy ();
-                        }
-                    }
+                list = new PrinterList (stack);
 
-                    add_popover = new Printers.AddPopover (widget);
-                    add_popover.show_all ();
-                });
+                var empty_alert = new Granite.Widgets.AlertView (
+                    _("No Printers Available"),
+                    _("Connect to a printer by clicking the icon in the toolbar below."),
+                    "printer-error"
+                );
+                empty_alert.visible = true;
+                empty_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
 
-                main_stack.add (welcome);
-                main_stack.add (main_paned);
-                main_stack.show_all ();
+                main_stack = new Gtk.Stack ();
                 main_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+                main_stack.add_named (empty_alert, "empty-alert");
+                main_stack.add_named (stack, "main-paned");
+
+                main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
+                main_paned.pack1 (list, false, false);
+                main_paned.pack2 (main_stack, true, false);
+                main_paned.show_all ();
+
+                update_alert_visible ();
 
                 list.notify["has-child"].connect (() => {
-                    if (list.has_child) {
-                        main_stack.set_visible_child (main_paned);
-                    } else {
-                        main_stack.set_visible_child (welcome);
-                    }
+                    update_alert_visible ();
                 });
-
-                if (list.has_child) {
-                    main_stack.set_visible_child (main_paned);
-                } else {
-                    main_stack.set_visible_child (welcome);
-                }
             }
 
-            return main_stack;
+            return main_paned;
+        }
+
+        private void update_alert_visible () {
+            if (list.has_child) {
+                main_stack.visible_child_name = "main-paned";
+            } else {
+                main_stack.visible_child_name = "empty-alert";
+            }
         }
 
         public override void shown () {
