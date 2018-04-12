@@ -11,7 +11,7 @@ plug_files = files(
     'Objects/Job.vala',
     'Views/JobsView.vala',
     'Views/SetupView.vala',
-    'Widgets/AddPopover.vala',
+    'Widgets/AddDialog.vala',
     'Widgets/EditableTitle.vala',
     'Widgets/InkLevel.vala',
     'Widgets/JobRow.vala',
