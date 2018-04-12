@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-11 10:04-0700\n"
-"PO-Revision-Date: 2018-04-11 06:20+0000\n"
+"PO-Revision-Date: 2018-04-12 09:04+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/he/>\n"
+"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -212,12 +212,11 @@ msgstr "אין משימות ממתינות בתור."
 
 #: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
 msgid "Pause"
-msgstr ""
+msgstr "השהיה"
 
 #: src/Views/JobsView.vala:59
-#, fuzzy
 msgid "Cancel"
-msgstr "המשימה בוטלה"
+msgstr "ביטול"
 
 #: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
 msgid "Show completed jobs"
@@ -225,16 +224,15 @@ msgstr "הצגת משימות שהושלמו"
 
 #: src/Views/JobsView.vala:100
 msgid "Resume"
-msgstr ""
+msgstr "המשך"
 
 #: src/Views/JobsView.vala:187
 msgid "Hide completed jobs"
 msgstr "הסתרת משימות שהושלמו"
 
 #: src/Views/JobsView.vala:233
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "הצגת משימות שהושלמו"
+msgstr "משימות שהושלמו"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
