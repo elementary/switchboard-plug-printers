@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-11 10:04-0700\n"
-"PO-Revision-Date: 2018-04-11 16:58+0000\n"
+"PO-Revision-Date: 2018-04-12 17:43+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/pl/>\n"
+"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -209,12 +209,11 @@ msgstr "Zadanie zakończone"
 
 #: src/Views/JobsView.vala:33
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Kolejka drukowania jest pusta"
 
 #: src/Views/JobsView.vala:33
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Brak zadań w kolejce"
+msgstr "Brak oczekujących zadań w kolejce."
 
 #: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
 msgid "Pause"
@@ -230,16 +229,15 @@ msgstr "Wyświetl ukończone zadania"
 
 #: src/Views/JobsView.vala:100
 msgid "Resume"
-msgstr ""
+msgstr "Wznów"
 
 #: src/Views/JobsView.vala:187
 msgid "Hide completed jobs"
 msgstr "Ukryj ukończone zadania"
 
 #: src/Views/JobsView.vala:233
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Wyświetl ukończone zadania"
+msgstr "Ukończone zadania"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
