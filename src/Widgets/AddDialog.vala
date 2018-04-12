@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015 Pantheon Developers (https://launchpad.net/switchboard-plug-printers)
+ * Copyright (c) 2015-2018 elementary LLC. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -40,53 +40,47 @@ namespace Printers.Translations {
     }
 }
 
-public class Printers.AddPopover : Gtk.Popover {
-    Gtk.Stack stack;
-    Granite.Widgets.AlertView alertview;
-    Gtk.Stack devices_list_stack;
-    Gtk.Stack drivers_stack;
-    Gee.LinkedList<Printers.DeviceDriver> drivers;
-    Gtk.ListStore driver_list_store;
-    Gtk.TreeView driver_view;
-    Gtk.ListStore make_list_store;
-    Gtk.TreeView make_view;
-    Printers.DeviceDriver selected_driver = null;
-    Cancellable driver_cancellable;
-    public AddPopover (Gtk.Widget relative_widget) {
-        Object (relative_to: relative_widget);
+public class Printers.AddDialog : Gtk.Dialog {
+    private Gtk.Stack stack;
+    private Granite.Widgets.AlertView alertview;
+    private Gtk.Stack devices_list_stack;
+    private Gtk.Stack drivers_stack;
+    private Gee.LinkedList<Printers.DeviceDriver> drivers;
+    private Gtk.ListStore driver_list_store;
+    private Gtk.TreeView driver_view;
+    private Gtk.ListStore make_list_store;
+    private Gtk.TreeView make_view;
+    private Printers.DeviceDriver selected_driver = null;
+    private Cancellable driver_cancellable;
+
+    public AddDialog () {
         search_device.begin ();
     }
 
     construct {
+        var spinner = new Gtk.Spinner ();
+        spinner.halign = Gtk.Align.CENTER;
+        spinner.valign = Gtk.Align.CENTER;
+        spinner.start ();
+
+        devices_list_stack = new Gtk.Stack ();
+        devices_list_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+        devices_list_stack.add_named (spinner, "loading");
+
+        alertview = new Granite.Widgets.AlertView (_("Impossible to list all available printers"), "", "dialog-error");
+        alertview.no_show_all = true;
+
         stack = new Gtk.Stack ();
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
         stack.width_request = 500;
         stack.height_request = 300;
-
-        devices_list_stack = new Gtk.Stack ();
-        devices_list_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
-
-        var spinner_grid = new Gtk.Grid ();
-        var spinner = new Gtk.Spinner ();
-        var spinner_grid_first_grid = new Gtk.Grid ();
-        spinner_grid_first_grid.expand = true;
-        var spinner_grid_second_grid = new Gtk.Grid ();
-        spinner_grid_second_grid.expand = true;
-        spinner_grid.attach (spinner_grid_first_grid, 0, 0, 1, 1);
-        spinner_grid.attach (spinner, 1, 1, 1, 1);
-        spinner_grid.attach (spinner_grid_second_grid, 2, 2, 1, 1);
-        devices_list_stack.add_named (spinner_grid, "loading");
         stack.add (devices_list_stack);
-
-        alertview = new Granite.Widgets.AlertView (_("Impossible to list all available printers"), "", "dialog-error");
-        alertview.no_show_all = true;
         stack.add (alertview);
+        stack.set_visible_child (devices_list_stack);
 
         drivers = new Gee.LinkedList<Printers.DeviceDriver> ();
 
-        add (stack);
-        stack.set_visible_child (devices_list_stack);
-        spinner.start ();
+        get_content_area ().add (stack);
     }
 
     private async void search_device () {
@@ -170,7 +164,6 @@ public class Printers.AddPopover : Gtk.Popover {
         refresh_button.hexpand = true;
         refresh_button.halign = Gtk.Align.START;
         refresh_button.margin_start = 6;
-        refresh_button.tooltip_text = _("Refresh the printer list");
         devices_grid.attach (refresh_button, 0, 1, 1, 1);
 
         var next_button = new Gtk.Button.with_label (_("Next"));
@@ -310,13 +303,11 @@ public class Printers.AddPopover : Gtk.Popover {
         var previous_button = new Gtk.Button.with_label (_("Previous"));
         previous_button.hexpand = true;
         previous_button.halign = Gtk.Align.START;
-        previous_button.tooltip_text = _("Select an other printer or protocol");
 
-        var next_button = new Gtk.Button.with_label (_("Add"));
+        var next_button = new Gtk.Button.with_label (_("Add Printer"));
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         next_button.hexpand = true;
         next_button.halign = Gtk.Align.END;
-        next_button.tooltip_text = _("Add the configured printer");
         next_button.sensitive = false;
 
         button_grid.add (previous_button);

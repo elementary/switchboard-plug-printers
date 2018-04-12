@@ -3,27 +3,26 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-11 10:04-0700\n"
-"PO-Revision-Date: 2018-02-26 21:37+0000\n"
+"PO-Revision-Date: 2018-04-12 20:47+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
-"switchboard/switchboard-plug-printers/lt/>\n"
+"Language-Team: Lithuanian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
+"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Spausdintuvai"
+msgstr "Spausdinimo eilė"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Puslapio sąranka"
 
 #: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
 msgid "Location:"
@@ -39,7 +38,7 @@ msgstr "Naudoti kaip numatytąjį spausdintuvą"
 
 #: src/PrinterPage.vala:84
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Nustatymai ir tiekėjai"
 
 #: src/PrinterPage.vala:92
 msgid "Print Test Page"
@@ -58,13 +57,13 @@ msgid "Remove Printer"
 msgstr "Šalinti spausdintuvą"
 
 #: src/PrinterList.vala:87
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Pašalinę \"%s\", jūs prarasite visą spausdinimo istoriją\n"
-"ir su šiuo spausdintuvu susietą konfigūraciją."
+"Pašalinę \"%s\", prarasite visą spausdinimo istoriją ir su šiuo spausdintuvu "
+"susietą konfigūraciją."
 
 #: src/PrinterList.vala:93
 msgid "Remove"
@@ -209,21 +208,19 @@ msgstr "Darbas užbaigtas"
 
 #: src/Views/JobsView.vala:33
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Spausdinimo eilė tuščia"
 
 #: src/Views/JobsView.vala:33
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Eilėje nėra jokių darbų"
+msgstr "Eilėje nėra jokių laukiančių darbų."
 
 #: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
 msgid "Pause"
-msgstr ""
+msgstr "Pristabdyti"
 
 #: src/Views/JobsView.vala:59
-#, fuzzy
 msgid "Cancel"
-msgstr "Darbo atsisakyta"
+msgstr "Atsisakyti"
 
 #: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
 msgid "Show completed jobs"
@@ -231,16 +228,15 @@ msgstr "Rodyti užbaigtus darbus"
 
 #: src/Views/JobsView.vala:100
 msgid "Resume"
-msgstr ""
+msgstr "Pratęsti"
 
 #: src/Views/JobsView.vala:187
 msgid "Hide completed jobs"
 msgstr "Slėpti užbaigtus darbus"
 
 #: src/Views/JobsView.vala:233
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Rodyti užbaigtus darbus"
+msgstr "Užbaigti darbai"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"

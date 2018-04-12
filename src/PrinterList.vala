@@ -27,7 +27,7 @@ public class Printers.PrinterList : Gtk.Grid {
     public bool has_child { get; private set; default=false; }
 
     Gtk.ListBox list_box;
-    Printers.AddPopover add_popover;
+    private Printers.AddDialog? add_dialog = null;
 
     public PrinterList (Gtk.Stack stack) {
         Object (stack: stack);
@@ -65,16 +65,17 @@ public class Printers.PrinterList : Gtk.Grid {
         });
 
         add_button.clicked.connect (() => {
-            if (add_popover != null) {
-                if (add_popover.visible) {
-                    return;
-                } else {
-                    add_popover.destroy ();
-                }
+            if (add_dialog == null) {
+                add_dialog = new Printers.AddDialog ();
+                add_dialog.transient_for = (Gtk.Window) get_toplevel ();
+                add_dialog.show_all ();
+
+                add_dialog.destroy.connect (() => {
+                    add_dialog = null;
+                });
             }
 
-            add_popover = new Printers.AddPopover (add_button);
-            add_popover.show_all ();
+            add_dialog.present ();
         });
 
         remove_button.clicked.connect (() => {
