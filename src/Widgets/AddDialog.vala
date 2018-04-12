@@ -58,35 +58,29 @@ public class Printers.AddDialog : Gtk.Dialog {
     }
 
     construct {
+        var spinner = new Gtk.Spinner ();
+        spinner.halign = Gtk.Align.CENTER;
+        spinner.valign = Gtk.Align.CENTER;
+        spinner.start ();
+
+        devices_list_stack = new Gtk.Stack ();
+        devices_list_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+        devices_list_stack.add_named (spinner, "loading");
+
+        alertview = new Granite.Widgets.AlertView (_("Impossible to list all available printers"), "", "dialog-error");
+        alertview.no_show_all = true;
+
         stack = new Gtk.Stack ();
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
         stack.width_request = 500;
         stack.height_request = 300;
-
-        devices_list_stack = new Gtk.Stack ();
-        devices_list_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
-
-        var spinner_grid = new Gtk.Grid ();
-        var spinner = new Gtk.Spinner ();
-        var spinner_grid_first_grid = new Gtk.Grid ();
-        spinner_grid_first_grid.expand = true;
-        var spinner_grid_second_grid = new Gtk.Grid ();
-        spinner_grid_second_grid.expand = true;
-        spinner_grid.attach (spinner_grid_first_grid, 0, 0, 1, 1);
-        spinner_grid.attach (spinner, 1, 1, 1, 1);
-        spinner_grid.attach (spinner_grid_second_grid, 2, 2, 1, 1);
-        devices_list_stack.add_named (spinner_grid, "loading");
         stack.add (devices_list_stack);
-
-        alertview = new Granite.Widgets.AlertView (_("Impossible to list all available printers"), "", "dialog-error");
-        alertview.no_show_all = true;
         stack.add (alertview);
+        stack.set_visible_child (devices_list_stack);
 
         drivers = new Gee.LinkedList<Printers.DeviceDriver> ();
 
         get_content_area ().add (stack);
-        stack.set_visible_child (devices_list_stack);
-        spinner.start ();
     }
 
     private async void search_device () {
