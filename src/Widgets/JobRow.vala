@@ -25,6 +25,8 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     private Printer printer;
 
     private Gtk.Grid grid;
+    private Gtk.Image job_state_icon;
+    private Gtk.Stack action_stack;
 
     public JobRow (Printer printer, Job job) {
         this.printer = printer;
@@ -40,31 +42,83 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         var date_time = job.get_used_time ();
         var date = new Gtk.Label (Granite.DateTime.get_relative_datetime (date_time));
 
-        Gtk.Widget state;
-        if (job.state_icon () != null) {
-            state = new Gtk.Image.from_gicon (job.state_icon (), Gtk.IconSize.MENU);
-        } else {
-            state = new Gtk.Spinner ();
-            ((Gtk.Spinner)state).active = true;
-            ((Gtk.Spinner)state).start ();
-        }
+        job_state_icon = new Gtk.Image ();
+        job_state_icon.gicon = job.state_icon ();
+        job_state_icon.halign = Gtk.Align.END;
+        job_state_icon.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
+
+        var cancel_button = new Gtk.Button.from_icon_name ("process-stop-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+        cancel_button.tooltip_text = _("Cancel");
+        cancel_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
+        var start_pause_image = new Gtk.Image ();
+        start_pause_image.icon_name = "media-playback-pause-symbolic";
+        start_pause_image.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
+
+        var start_pause_button = new Gtk.Button ();
+        start_pause_button.image = start_pause_image;
+        start_pause_button.tooltip_text = _("Pause");
+        start_pause_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
+        var action_grid = new Gtk.Grid ();
+        action_grid.add (cancel_button);
+        action_grid.add (start_pause_button);
+
+        action_stack = new Gtk.Stack ();
+        action_stack.hhomogeneous = false;
+        action_stack.add_named (action_grid, "action-grid");
+        action_stack.add_named (job_state_icon, "job-state-icon");
 
         grid = new Gtk.Grid ();
         grid.tooltip_text = job.translated_job_state ();
-        grid.column_spacing = 6;
-        grid.row_spacing = 6;
-        grid.margin = 6;
+        grid.column_spacing = 3;
+        grid.margin = 3;
+        grid.margin_start = grid.margin_end = 6;
         grid.attach (icon, 0, 0);
         grid.attach (title, 1, 0);
         grid.attach (date, 2, 0);
-        grid.attach (state, 3, 0);
+        grid.attach (action_stack, 3, 0);
 
         add (grid);
         show_all ();
 
+        update_state ();
+
         job.state_changed.connect (update_state);
         job.completed.connect (update_state);
         job.stopped.connect (update_state);
+
+        start_pause_button.clicked.connect (() => {
+            unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
+            if (job.get_hold_until () == "no-hold") {
+                try {
+                    pk_helper.job_set_hold_until (job.cjob.id, "indefinite");
+                    start_pause_image.icon_name = "media-playback-start-symbolic";
+                    start_pause_button.tooltip_text = _("Resume");
+                } catch (Error e) {
+                    critical (e.message);
+                }
+            } else {
+                try {
+                    pk_helper.job_set_hold_until (job.cjob.id, "no-hold");
+                    start_pause_image.icon_name = "media-playback-pause-symbolic";
+                    start_pause_button.tooltip_text = _("Pause");
+                } catch (Error e) {
+                    critical (e.message);
+                }
+            }
+        });
+
+        cancel_button.clicked.connect (() => {
+            unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
+            try {
+                pk_helper.job_cancel_purge (job.cjob.id, false);
+                start_pause_button.sensitive = false;
+                cancel_button.sensitive = false;
+            } catch (Error e) {
+                critical (e.message);
+            }
+        });
     }
 
     public void update_state () {
@@ -76,17 +130,12 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             }
         }
 
-        Gtk.Widget state;
         if (job.state_icon () != null) {
-            state = new Gtk.Image.from_gicon (job.state_icon (), Gtk.IconSize.MENU);
+            job_state_icon.gicon = job.state_icon ();
+            action_stack.visible_child_name = "job-state-icon";
         } else {
-            state = new Gtk.Spinner ();
-            ((Gtk.Spinner)state).active = true;
-            ((Gtk.Spinner)state).start ();
+            action_stack.visible_child_name = "action-grid";
         }
-        grid.remove_column (3);
-        grid.attach (state, 3, 0);
-        show_all ();
 
         grid.tooltip_text = job.translated_job_state ();
     }
