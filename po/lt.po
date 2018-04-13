@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 10:04-0700\n"
+"POT-Creation-Date: 2018-04-13 12:52-0700\n"
 "PO-Revision-Date: 2018-04-12 20:47+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-printers/lt/>\n"
+"Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-printers/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
-"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
@@ -24,27 +24,15 @@ msgstr "Spausdinimo eilė"
 msgid "Page Setup"
 msgstr "Puslapio sąranka"
 
-#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
-msgid "Location:"
-msgstr "Vieta:"
-
-#: src/PrinterPage.vala:52
-msgid "Lab 1 or John's Desk"
-msgstr "1 kabinetas arba Jono stalas"
-
-#: src/PrinterPage.vala:58
-msgid "Use as Default Printer"
-msgstr "Naudoti kaip numatytąjį spausdintuvą"
-
-#: src/PrinterPage.vala:84
+#: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
 msgstr "Nustatymai ir tiekėjai"
 
-#: src/PrinterPage.vala:92
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Spausdinti bandomąjį puslapį"
 
-#: src/PrinterPage.vala:178
+#: src/PrinterPage.vala:119
 msgid "Test page"
 msgstr "Bandomasis puslapis"
 
@@ -56,7 +44,7 @@ msgstr "Pridėti spausdintuvą…"
 msgid "Remove Printer"
 msgstr "Šalinti spausdintuvą"
 
-#: src/PrinterList.vala:87
+#: src/PrinterList.vala:88
 #, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
@@ -65,34 +53,27 @@ msgstr ""
 "Pašalinę \"%s\", prarasite visą spausdinimo istoriją ir su šiuo spausdintuvu "
 "susietą konfigūraciją."
 
-#: src/PrinterList.vala:93
+#: src/PrinterList.vala:94
 msgid "Remove"
 msgstr "Šalinti"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Printers"
 msgstr "Spausdintuvai"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Konfigūruoti spausdintuvus, tvarkyti spausdinimo eiles, žiūrėti rašalo lygius"
 
 #: src/Plug.vala:49
-msgid "No Printers"
+#, fuzzy
+msgid "No Printers Available"
 msgstr "Nėra spausdintuvų"
 
-#: src/Plug.vala:49
-msgid "Add a printer to begin printing"
-msgstr "Norėdami pradėti spausdinimą, pridėkite spausdintuvą"
-
 #: src/Plug.vala:50
-msgid "Add Printer"
-msgstr "Pridėti spausdintuvą"
-
-#: src/Plug.vala:50
-msgid "Search for the printer you need"
-msgstr "Ieškokite reikiamo spausdintuvo"
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -206,35 +187,15 @@ msgstr "Darbas nutrauktas"
 msgid "Job Completed"
 msgstr "Darbas užbaigtas"
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
 msgstr "Spausdinimo eilė tuščia"
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
 msgstr "Eilėje nėra jokių laukiančių darbų."
 
-#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
-msgid "Pause"
-msgstr "Pristabdyti"
-
-#: src/Views/JobsView.vala:59
-msgid "Cancel"
-msgstr "Atsisakyti"
-
-#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
-msgid "Show completed jobs"
-msgstr "Rodyti užbaigtus darbus"
-
-#: src/Views/JobsView.vala:100
-msgid "Resume"
-msgstr "Pratęsti"
-
-#: src/Views/JobsView.vala:187
-msgid "Hide completed jobs"
-msgstr "Slėpti užbaigtus darbus"
-
-#: src/Views/JobsView.vala:233
+#: src/Views/JobsView.vala:76
 msgid "Completed Jobs"
 msgstr "Užbaigti darbai"
 
@@ -486,105 +447,111 @@ msgstr "Rulonas %d"
 msgid "Paper Source:"
 msgstr "Popieriaus šaltinis:"
 
-#: src/Widgets/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Interneto spausdinimo protokolas (https)"
-
-#: src/Widgets/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Interneto spausdinimo protokolas (http)"
-
-#: src/Widgets/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Interneto spausdinimo protokolas (ipp)"
-
-#: src/Widgets/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Interneto spausdinimo protokolas (ipps)"
-
-#: src/Widgets/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Interneto spausdinimo protokolas (ipp14)"
-
-#: src/Widgets/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR serveris ar spausdintuvas"
-
-#: src/Widgets/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/Widgets/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Neįmanoma išvardyti visų prieinamų spausdintuvų"
-
-#: src/Widgets/AddPopover.vala:169
-msgid "Refresh"
-msgstr "Įkelti iš naujo"
-
-#: src/Widgets/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "Iš naujo įkelti spausdintuvų sąrašą"
-
-#: src/Widgets/AddPopover.vala:176
-msgid "Next"
-msgstr "Kitas"
-
-#: src/Widgets/AddPopover.vala:223
-msgid "Connection:"
-msgstr "Ryšys:"
-
-#: src/Widgets/AddPopover.vala:231
+#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
 msgid "Description:"
 msgstr "Aprašas:"
 
-#: src/Widgets/AddPopover.vala:236
+#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
 msgid "BrandPrinter X3000"
 msgstr "SpausdintuvoPavadinimas X3000"
 
-#: src/Widgets/AddPopover.vala:246
+#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
+msgid "Location:"
+msgstr "Vieta:"
+
+#: src/Views/SuppliesView.vala:44
+msgid "Lab 1 or John's Desk"
+msgstr "1 kabinetas arba Jono stalas"
+
+#: src/Views/SuppliesView.vala:47
+#, fuzzy
+msgid "Use as default printer:"
+msgstr "Naudoti kaip numatytąjį spausdintuvą"
+
+#: src/Widgets/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Interneto spausdinimo protokolas (https)"
+
+#: src/Widgets/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Interneto spausdinimo protokolas (http)"
+
+#: src/Widgets/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Interneto spausdinimo protokolas (ipp)"
+
+#: src/Widgets/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Interneto spausdinimo protokolas (ipps)"
+
+#: src/Widgets/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Interneto spausdinimo protokolas (ipp14)"
+
+#: src/Widgets/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR serveris ar spausdintuvas"
+
+#: src/Widgets/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Widgets/AddDialog.vala:86
+msgid "Refresh"
+msgstr "Įkelti iš naujo"
+
+#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:51
+msgid "Cancel"
+msgstr "Atsisakyti"
+
+#: src/Widgets/AddDialog.vala:91
+msgid "Next"
+msgstr "Kitas"
+
+#: src/Widgets/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "Neįmanoma išvardyti visų prieinamų spausdintuvų"
+
+#: src/Widgets/AddDialog.vala:225
+msgid "Connection:"
+msgstr "Ryšys:"
+
+#: src/Widgets/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "1 kabinetas ar Jono stalas"
 
-#: src/Widgets/AddPopover.vala:310
+#: src/Widgets/AddDialog.vala:304
 msgid "Previous"
 msgstr "Ankstesnis"
 
-#: src/Widgets/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "Pasirinkti kitą spausdintuvą ar protokolą"
+#: src/Widgets/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "Pridėti spausdintuvą"
 
-#: src/Widgets/AddPopover.vala:315
-msgid "Add"
-msgstr "Pridėti"
-
-#: src/Widgets/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "Pridėti sukonfigūruotą spausdintuvą"
-
-#: src/Widgets/AddPopover.vala:540
+#: src/Widgets/AddDialog.vala:543
 msgid "(recommended)"
 msgstr "(rekomenduojama)"
 
-#: src/Widgets/AddPopover.vala:602
+#: src/Widgets/AddDialog.vala:605
 msgid "Serial"
 msgstr "Serijinis"
 
-#: src/Widgets/AddPopover.vala:605
+#: src/Widgets/AddDialog.vala:608
 msgid "Local Printers"
 msgstr "Vietiniai spausdintuvai"
 
-#: src/Widgets/AddPopover.vala:608
+#: src/Widgets/AddDialog.vala:611
 msgid "Network Printers"
 msgstr "Tinklo spausdintuvai"
 
-#: src/Widgets/AddPopover.vala:611
+#: src/Widgets/AddDialog.vala:614
 msgid "Available Network Printers"
 msgstr "Prieinami tinklo spausdintuvai"
-
-#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Taisyti"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -609,6 +576,41 @@ msgstr "Žydra"
 #: src/Widgets/InkLevel.vala:117
 msgid "Magenta"
 msgstr "Purpurinė"
+
+#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+msgid "Pause"
+msgstr "Pristabdyti"
+
+#: src/Widgets/JobRow.vala:97
+msgid "Resume"
+msgstr "Pratęsti"
+
+#~ msgid "Add a printer to begin printing"
+#~ msgstr "Norėdami pradėti spausdinimą, pridėkite spausdintuvą"
+
+#~ msgid "Search for the printer you need"
+#~ msgstr "Ieškokite reikiamo spausdintuvo"
+
+#~ msgid "Show completed jobs"
+#~ msgstr "Rodyti užbaigtus darbus"
+
+#~ msgid "Hide completed jobs"
+#~ msgstr "Slėpti užbaigtus darbus"
+
+#~ msgid "Refresh the printer list"
+#~ msgstr "Iš naujo įkelti spausdintuvų sąrašą"
+
+#~ msgid "Select an other printer or protocol"
+#~ msgstr "Pasirinkti kitą spausdintuvą ar protokolą"
+
+#~ msgid "Add"
+#~ msgstr "Pridėti"
+
+#~ msgid "Add the configured printer"
+#~ msgstr "Pridėti sukonfigūruotą spausdintuvą"
+
+#~ msgid "Edit"
+#~ msgstr "Taisyti"
 
 #~ msgid "General"
 #~ msgstr "Bendra"

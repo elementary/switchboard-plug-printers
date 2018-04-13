@@ -2,12 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 10:04-0700\n"
+"POT-Creation-Date: 2018-04-13 12:52-0700\n"
 "PO-Revision-Date: 2018-04-13 14:03+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
-"printers/zh_TW/>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-printers/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,27 +23,15 @@ msgstr "印表機佇列"
 msgid "Page Setup"
 msgstr "頁面設置"
 
-#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
-msgid "Location:"
-msgstr "位置："
-
-#: src/PrinterPage.vala:52
-msgid "Lab 1 or John's Desk"
-msgstr "例如「實驗室一」或「小明的桌子」"
-
-#: src/PrinterPage.vala:58
-msgid "Use as Default Printer"
-msgstr "作為預設印表機"
-
-#: src/PrinterPage.vala:84
+#: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
 msgstr "設定與供應"
 
-#: src/PrinterPage.vala:92
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "列印測試頁"
 
-#: src/PrinterPage.vala:178
+#: src/PrinterPage.vala:119
 msgid "Test page"
 msgstr "測試頁"
 
@@ -56,40 +43,33 @@ msgstr "加入印表機…"
 msgid "Remove Printer"
 msgstr "移除印表機"
 
-#: src/PrinterList.vala:87
+#: src/PrinterList.vala:88
 #, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr "移除「%s」後您將失去所有列印記錄與其相關組態。"
 
-#: src/PrinterList.vala:93
+#: src/PrinterList.vala:94
 msgid "Remove"
 msgstr "移除"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Printers"
 msgstr "印表機"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "設定印表機、管理印表機佇列、和查看墨水量"
 
 #: src/Plug.vala:49
-msgid "No Printers"
+#, fuzzy
+msgid "No Printers Available"
 msgstr "無印表機"
 
-#: src/Plug.vala:49
-msgid "Add a printer to begin printing"
-msgstr "加入印表機以開始列印"
-
 #: src/Plug.vala:50
-msgid "Add Printer"
-msgstr "加入印表機"
-
-#: src/Plug.vala:50
-msgid "Search for the printer you need"
-msgstr "搜尋您所需要的印表機"
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -203,35 +183,15 @@ msgstr "工作已中止"
 msgid "Job Completed"
 msgstr "工作已完成"
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
 msgstr "空的列印佇列"
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
 msgstr "佇列中已沒有擱置的工作。"
 
-#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
-msgid "Pause"
-msgstr "暫停"
-
-#: src/Views/JobsView.vala:59
-msgid "Cancel"
-msgstr "取消"
-
-#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
-msgid "Show completed jobs"
-msgstr "顯示完成的工作"
-
-#: src/Views/JobsView.vala:100
-msgid "Resume"
-msgstr "繼續"
-
-#: src/Views/JobsView.vala:187
-msgid "Hide completed jobs"
-msgstr "隱藏完成的工作"
-
-#: src/Views/JobsView.vala:233
+#: src/Views/JobsView.vala:76
 msgid "Completed Jobs"
 msgstr "完成的工作"
 
@@ -483,105 +443,111 @@ msgstr "滾筒 %d"
 msgid "Paper Source:"
 msgstr "紙張來源："
 
-#: src/Widgets/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "網際網路列印協定 (https)"
-
-#: src/Widgets/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "網際網路列印協定 (http)"
-
-#: src/Widgets/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "網際網路列印協定 (ipp)"
-
-#: src/Widgets/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "網際網路列印協定 (ipps)"
-
-#: src/Widgets/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "網際網路列印協定 (ipp14)"
-
-#: src/Widgets/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR 主機或印表機"
-
-#: src/Widgets/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/Widgets/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "無法列出所有可用的印表機"
-
-#: src/Widgets/AddPopover.vala:169
-msgid "Refresh"
-msgstr "重整"
-
-#: src/Widgets/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "重新整理印表機清單"
-
-#: src/Widgets/AddPopover.vala:176
-msgid "Next"
-msgstr "下一個"
-
-#: src/Widgets/AddPopover.vala:223
-msgid "Connection:"
-msgstr "連線："
-
-#: src/Widgets/AddPopover.vala:231
+#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
 msgid "Description:"
 msgstr "描述："
 
-#: src/Widgets/AddPopover.vala:236
+#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Widgets/AddPopover.vala:246
+#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
+msgid "Location:"
+msgstr "位置："
+
+#: src/Views/SuppliesView.vala:44
+msgid "Lab 1 or John's Desk"
+msgstr "例如「實驗室一」或「小明的桌子」"
+
+#: src/Views/SuppliesView.vala:47
+#, fuzzy
+msgid "Use as default printer:"
+msgstr "作為預設印表機"
+
+#: src/Widgets/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "網際網路列印協定 (https)"
+
+#: src/Widgets/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "網際網路列印協定 (http)"
+
+#: src/Widgets/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "網際網路列印協定 (ipp)"
+
+#: src/Widgets/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "網際網路列印協定 (ipps)"
+
+#: src/Widgets/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "網際網路列印協定 (ipp14)"
+
+#: src/Widgets/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR 主機或印表機"
+
+#: src/Widgets/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Widgets/AddDialog.vala:86
+msgid "Refresh"
+msgstr "重整"
+
+#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:51
+msgid "Cancel"
+msgstr "取消"
+
+#: src/Widgets/AddDialog.vala:91
+msgid "Next"
+msgstr "下一個"
+
+#: src/Widgets/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "無法列出所有可用的印表機"
+
+#: src/Widgets/AddDialog.vala:225
+msgid "Connection:"
+msgstr "連線："
+
+#: src/Widgets/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "例如「實驗室一」或「小明的桌子」"
 
-#: src/Widgets/AddPopover.vala:310
+#: src/Widgets/AddDialog.vala:304
 msgid "Previous"
 msgstr "上一個"
 
-#: src/Widgets/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "選取其他印表機或通訊協定"
+#: src/Widgets/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "加入印表機"
 
-#: src/Widgets/AddPopover.vala:315
-msgid "Add"
-msgstr "加入"
-
-#: src/Widgets/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "加入已設定的印表機"
-
-#: src/Widgets/AddPopover.vala:540
+#: src/Widgets/AddDialog.vala:543
 msgid "(recommended)"
 msgstr "（建議）"
 
-#: src/Widgets/AddPopover.vala:602
+#: src/Widgets/AddDialog.vala:605
 msgid "Serial"
 msgstr "序列埠"
 
-#: src/Widgets/AddPopover.vala:605
+#: src/Widgets/AddDialog.vala:608
 msgid "Local Printers"
 msgstr "本地端印表機"
 
-#: src/Widgets/AddPopover.vala:608
+#: src/Widgets/AddDialog.vala:611
 msgid "Network Printers"
 msgstr "網路印表機"
 
-#: src/Widgets/AddPopover.vala:611
+#: src/Widgets/AddDialog.vala:614
 msgid "Available Network Printers"
 msgstr "可使用的網路印表機"
-
-#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
-msgid "Edit"
-msgstr "編輯"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -606,6 +572,41 @@ msgstr "青藍色"
 #: src/Widgets/InkLevel.vala:117
 msgid "Magenta"
 msgstr "洋紅色"
+
+#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+msgid "Pause"
+msgstr "暫停"
+
+#: src/Widgets/JobRow.vala:97
+msgid "Resume"
+msgstr "繼續"
+
+#~ msgid "Add a printer to begin printing"
+#~ msgstr "加入印表機以開始列印"
+
+#~ msgid "Search for the printer you need"
+#~ msgstr "搜尋您所需要的印表機"
+
+#~ msgid "Show completed jobs"
+#~ msgstr "顯示完成的工作"
+
+#~ msgid "Hide completed jobs"
+#~ msgstr "隱藏完成的工作"
+
+#~ msgid "Refresh the printer list"
+#~ msgstr "重新整理印表機清單"
+
+#~ msgid "Select an other printer or protocol"
+#~ msgstr "選取其他印表機或通訊協定"
+
+#~ msgid "Add"
+#~ msgstr "加入"
+
+#~ msgid "Add the configured printer"
+#~ msgstr "加入已設定的印表機"
+
+#~ msgid "Edit"
+#~ msgstr "編輯"
 
 #~ msgid "General"
 #~ msgstr "一般"
