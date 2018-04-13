@@ -65,6 +65,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         action_grid.add (start_pause_button);
 
         action_stack = new Gtk.Stack ();
+        action_stack.hhomogeneous = false;
         action_stack.add_named (action_grid, "action-grid");
         action_stack.add_named (job_state_icon, "job-state-icon");
 
