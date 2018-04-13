@@ -86,15 +86,19 @@ public class Printers.AddDialog : Gtk.Dialog {
         refresh_button = new Gtk.Button.with_label (_("Refresh"));
         refresh_button.sensitive = false;
 
+        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
+
         var next_button = new Gtk.Button.with_label (_("Next"));
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         next_button.sensitive = false;
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        button_box.layout_style = Gtk.ButtonBoxStyle.EDGE;
-        button_box.set_child_secondary (refresh_button, true);
+        button_box.layout_style = Gtk.ButtonBoxStyle.END;
+        button_box.spacing = 6;
         button_box.add (refresh_button);
+        button_box.add (cancel_button);
         button_box.add (next_button);
+        button_box.set_child_secondary (refresh_button, true);
 
         var devices_grid = new Gtk.Grid ();
         devices_grid.orientation = Gtk.Orientation.VERTICAL;
@@ -113,12 +117,17 @@ public class Printers.AddDialog : Gtk.Dialog {
         stack.add_named (devices_grid, "devices-grid");
         stack.add (alertview);
 
+        deletable = false;
         get_content_area ().add (stack);
 
         drivers = new Gee.LinkedList<Printers.DeviceDriver> ();
 
         devices_list.row_selected.connect ((row) => {
             next_button.sensitive = (row != null);
+        });
+
+        cancel_button.clicked.connect (() => {
+            destroy ();
         });
 
         next_button.clicked.connect (() => {
@@ -218,26 +227,21 @@ public class Printers.AddDialog : Gtk.Dialog {
         connection_label.xalign = 1;
 
         var connection_entry = new Gtk.Entry ();
-        connection_entry.margin_end = 6;
         connection_entry.hexpand = true;
         connection_entry.placeholder_text = "ipp://hostname/ipp/port1";
 
         var description_label = new Gtk.Label (_("Description:"));
-        description_label.margin_start = 12;
         description_label.xalign = 1;
 
         var description_entry = new Gtk.Entry ();
-        description_entry.margin_end = 6;
         description_entry.placeholder_text = _("BrandPrinter X3000");
         description_entry.hexpand = true;
         description_entry.text = temp_device.get_model_from_id () ?? "";
 
         var location_label = new Gtk.Label (_("Location:"));
-        location_label.margin_start = 12;
         location_label.xalign = 1;
 
         var location_entry = new Gtk.Entry ();
-        location_entry.margin_end = 6;
         location_entry.hexpand = true;
         location_entry.placeholder_text = _("Lab 1 or John's desk");
 
@@ -299,6 +303,8 @@ public class Printers.AddDialog : Gtk.Dialog {
 
         var previous_button = new Gtk.Button.with_label (_("Previous"));
 
+        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
+
         var next_button = new Gtk.Button.with_label (_("Add Printer"));
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         next_button.sensitive = false;
@@ -307,6 +313,7 @@ public class Printers.AddDialog : Gtk.Dialog {
         button_grid.layout_style = Gtk.ButtonBoxStyle.END;
         button_grid.spacing = 6;
         button_grid.add (previous_button);
+        button_grid.add (cancel_button);
         button_grid.add (next_button);
 
         var device_grid = new Gtk.Grid ();
@@ -338,6 +345,10 @@ public class Printers.AddDialog : Gtk.Dialog {
             driver_cancellable.cancel ();
             stack.visible_child_name = "devices-grid";
             device_grid.destroy ();
+        });
+
+        cancel_button.clicked.connect (() => {
+            destroy ();
         });
 
         next_button.clicked.connect (() => {
