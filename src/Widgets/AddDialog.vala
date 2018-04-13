@@ -313,7 +313,6 @@ public class Printers.AddDialog : Gtk.Dialog {
         device_grid.expand = true;
         device_grid.row_spacing = 12;
         device_grid.column_spacing = 12;
-        device_grid.margin_top = 12;
         device_grid.attach (description_label, 0, 1, 1, 1);
         device_grid.attach (description_entry, 1, 1, 1, 1);
 
