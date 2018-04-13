@@ -213,15 +213,10 @@ public class Printers.AddDialog : Gtk.Dialog {
 
     // Shows the next panel with further configuration
     private void continue_with_tempdevice (TempDevice temp_device) {
-        var device_grid = new Gtk.Grid ();
-        device_grid.expand = true;
-        device_grid.row_spacing = 6;
-        device_grid.column_spacing = 12;
-        device_grid.margin_top = 12;
-
         var connection_label = new Gtk.Label (_("Connection:"));
         connection_label.margin_start = 12;
-        ((Gtk.Misc)connection_label).xalign = 1;
+        connection_label.xalign = 1;
+
         var connection_entry = new Gtk.Entry ();
         connection_entry.margin_end = 6;
         connection_entry.hexpand = true;
@@ -229,7 +224,8 @@ public class Printers.AddDialog : Gtk.Dialog {
 
         var description_label = new Gtk.Label (_("Description:"));
         description_label.margin_start = 12;
-        ((Gtk.Misc)description_label).xalign = 1;
+        description_label.xalign = 1;
+
         var description_entry = new Gtk.Entry ();
         description_entry.margin_end = 6;
         description_entry.placeholder_text = _("BrandPrinter X3000");
@@ -238,39 +234,25 @@ public class Printers.AddDialog : Gtk.Dialog {
 
         var location_label = new Gtk.Label (_("Location:"));
         location_label.margin_start = 12;
-        ((Gtk.Misc)location_label).xalign = 1;
+        location_label.xalign = 1;
+
         var location_entry = new Gtk.Entry ();
         location_entry.margin_end = 6;
         location_entry.hexpand = true;
         location_entry.placeholder_text = _("Lab 1 or John's desk");
 
-        drivers_stack = new Gtk.Stack ();
-        drivers_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
-        drivers_stack.expand = true;
-
-        var spinner_grid = new Gtk.Grid ();
         var spinner = new Gtk.Spinner ();
-        var spinner_grid_first_grid = new Gtk.Grid ();
-        spinner_grid_first_grid.expand = true;
-        var spinner_grid_second_grid = new Gtk.Grid ();
-        spinner_grid_second_grid.expand = true;
-        spinner_grid.attach (spinner_grid_first_grid, 0, 0, 1, 1);
-        spinner_grid.attach (spinner, 1, 1, 1, 1);
-        spinner_grid.attach (spinner_grid_second_grid, 2, 2, 1, 1);
-        drivers_stack.add_named (spinner_grid, "loading");
+        spinner.halign = spinner.valign = Gtk.Align.CENTER;
         spinner.start ();
 
-        var drivers_grid = new Gtk.Grid ();
-        drivers_grid.expand = true;
-        drivers_grid.orientation = Gtk.Orientation.HORIZONTAL;
-
         make_list_store = new Gtk.ListStore (1, typeof (string));
-        make_view = new Gtk.TreeView.with_model (make_list_store);
-        make_view.get_style_context ().add_class ("sidebar");
-        make_view.headers_visible = false;
-        make_view.get_selection ().mode = Gtk.SelectionMode.BROWSE;
+
         var cellrenderer = new Gtk.CellRendererText ();
         cellrenderer.xpad = 12;
+
+        make_view = new Gtk.TreeView.with_model (make_list_store);
+        make_view.headers_visible = false;
+        make_view.get_selection ().mode = Gtk.SelectionMode.BROWSE;
         make_view.insert_column_with_attributes (-1, null, cellrenderer, "text", 0);
 
         var make_scrolled = new Gtk.ScrolledWindow (null, null);
@@ -278,11 +260,13 @@ public class Printers.AddDialog : Gtk.Dialog {
         make_scrolled.add (make_view);
 
         driver_list_store = new Gtk.ListStore (2, typeof (string), typeof (DeviceDriver));
+
         driver_view = new Gtk.TreeView.with_model (driver_list_store);
         driver_view.headers_visible = false;
         driver_view.get_selection ().mode = Gtk.SelectionMode.BROWSE;
         driver_view.set_tooltip_column (0);
         driver_view.set_search_column (0);
+
         var driver_cellrenderer = new Gtk.CellRendererText ();
         driver_cellrenderer.ellipsize_set = true;
         driver_cellrenderer.ellipsize = Pango.EllipsizeMode.END;
@@ -293,34 +277,45 @@ public class Printers.AddDialog : Gtk.Dialog {
         driver_scrolled.add (driver_view);
         driver_scrolled.expand = true;
 
+        var drivers_grid = new Gtk.Grid ();
+        drivers_grid.expand = true;
         drivers_grid.add (make_scrolled);
         drivers_grid.add (new Gtk.Separator (Gtk.Orientation.VERTICAL));
         drivers_grid.add (driver_scrolled);
+
+        drivers_stack = new Gtk.Stack ();
+        drivers_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+        drivers_stack.expand = true;
+        drivers_stack.add_named (spinner, "loading");
         drivers_stack.add_named (drivers_grid, "drivers");
         drivers_stack.show_all ();
+
+        var frame = new Gtk.Frame (null);
+        frame.margin_top = frame.margin_bottom = 12;
+        frame.add (drivers_stack);
 
         driver_cancellable = new Cancellable ();
         fetch_ppds (temp_device);
 
-        var button_grid = new Gtk.Grid ();
-        button_grid.orientation = Gtk.Orientation.HORIZONTAL;
-        button_grid.margin = 6;
-
         var previous_button = new Gtk.Button.with_label (_("Previous"));
-        previous_button.hexpand = true;
-        previous_button.halign = Gtk.Align.START;
 
         var next_button = new Gtk.Button.with_label (_("Add Printer"));
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-        next_button.hexpand = true;
-        next_button.halign = Gtk.Align.END;
         next_button.sensitive = false;
 
+        var button_grid = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
+        button_grid.layout_style = Gtk.ButtonBoxStyle.END;
+        button_grid.spacing = 6;
         button_grid.add (previous_button);
         button_grid.add (next_button);
 
+        var device_grid = new Gtk.Grid ();
+        device_grid.expand = true;
+        device_grid.row_spacing = 12;
+        device_grid.column_spacing = 12;
         device_grid.attach (description_label, 0, 1, 1, 1);
         device_grid.attach (description_entry, 1, 1, 1, 1);
+
         if (":" in temp_device.device_uri) {
             description_entry.grab_focus ();
         } else {
@@ -332,7 +327,7 @@ public class Printers.AddDialog : Gtk.Dialog {
 
         device_grid.attach (location_label, 0, 2, 1, 1);
         device_grid.attach (location_entry, 1, 2, 1, 1);
-        device_grid.attach (drivers_stack, 0, 3, 2, 1);
+        device_grid.attach (frame, 0, 3, 2, 1);
         device_grid.attach (button_grid, 0, 4, 2, 1);
         device_grid.show_all ();
 
