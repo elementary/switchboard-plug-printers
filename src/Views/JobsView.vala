@@ -27,9 +27,6 @@ public class Printers.JobsView : Gtk.Frame {
     public JobsView (Printer printer) {
         this.printer = printer;
 
-        var job_grid = new Gtk.Grid ();
-        job_grid.orientation = Gtk.Orientation.VERTICAL;
-
         var alert = new Granite.Widgets.AlertView (_("Print Queue Is Empty"), _("There are no pending jobs in the queue."), "");
         alert.show_all ();
 
@@ -44,127 +41,12 @@ public class Printers.JobsView : Gtk.Frame {
         scrolled.add (list_box);
         scrolled.show_all ();
 
-        var toolbar = new Gtk.Toolbar ();
-        toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
-        toolbar.get_style_context ().add_class ("inline-toolbar");
-
-        var start_pause_button = new Gtk.ToolButton (null, null);
-        start_pause_button.icon_name = "media-playback-pause-symbolic";
-        start_pause_button.sensitive = false;
-        start_pause_button.tooltip_text = _("Pause");
-
-        var stop_button = new Gtk.ToolButton (null, null);
-        stop_button.icon_name = "media-playback-stop-symbolic";
-        stop_button.sensitive = false;
-        stop_button.tooltip_text = _("Cancel");
-
-        var expander = new Gtk.ToolItem ();
-        expander.set_expand (true);
-        expander.visible_vertical = false;
-
-        var show_all_button = new Gtk.ToggleToolButton ();
-        show_all_button.label = _("Show completed jobs");
-        show_all_button.toggled.connect (() => {
-            toggle_finished (show_all_button);
-        });
-
-        toolbar.add (start_pause_button);
-        toolbar.add (stop_button);
-        toolbar.add (expander);
-        toolbar.add (show_all_button);
-
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
         foreach (var job in jobs) {
-            switch (job.cjob.state) {
-                case CUPS.IPP.JobState.CANCELED:
-                case CUPS.IPP.JobState.ABORTED:
-                case CUPS.IPP.JobState.COMPLETED:
-                    continue;
-                default:
-                    list_box.add (new JobRow (printer, job));
-                    continue;
-            }
+            list_box.add (new JobRow (printer, job));
         }
 
-        list_box.row_selected.connect (() => {
-            JobRow job_row = list_box.get_selected_row () as JobRow;
-
-            if (job_row != null) {
-                var job = job_row.job;
-
-                if (job.get_hold_until () == "no-hold") {
-                    start_pause_button.icon_name = "media-playback-pause-symbolic";
-                    start_pause_button.tooltip_text = _("Pause");
-                } else {
-                    start_pause_button.icon_name = "media-playback-start-symbolic";
-                    start_pause_button.tooltip_text = _("Resume");
-                }
-
-                switch (job.cjob.state) {
-                    case CUPS.IPP.JobState.PENDING:
-                    case CUPS.IPP.JobState.PROCESSING:
-                    case CUPS.IPP.JobState.HELD:
-                        start_pause_button.sensitive = true;
-                        stop_button.sensitive = true;
-                        break;
-                    default:
-                        start_pause_button.icon_name = "media-playback-pause-symbolic";
-                        start_pause_button.sensitive = false;
-                        stop_button.sensitive = false;
-                        break;
-                }
-            } else {
-                start_pause_button.icon_name = "media-playback-pause-symbolic";
-                start_pause_button.sensitive = false;
-                stop_button.sensitive = false;
-            }
-        });
-
-        start_pause_button.clicked.connect (() => {
-            JobRow job_row = list_box.get_selected_row () as JobRow;
-
-            if (job_row != null) {
-                var job = job_row.job;
-
-                unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
-                if (job.get_hold_until () == "no-hold") {
-                    try {
-                        pk_helper.job_set_hold_until (job.cjob.id, "indefinite");
-                        start_pause_button.icon_name = "media-playback-start-symbolic";
-                    } catch (Error e) {
-                        critical (e.message);
-                    }
-                } else {
-                    try {
-                        pk_helper.job_set_hold_until (job.cjob.id, "no-hold");
-                        start_pause_button.icon_name = "media-playback-pause-symbolic";
-                    } catch (Error e) {
-                        critical (e.message);
-                    }
-                }
-            }
-        });
-
-        stop_button.clicked.connect (() => {
-            JobRow job_row = list_box.get_selected_row () as JobRow;
-
-            if (job_row != null) {
-                var job = job_row.job;
-
-                unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
-                try {
-                    pk_helper.job_cancel_purge (job.cjob.id, false);
-                    start_pause_button.sensitive = false;
-                    stop_button.sensitive = false;
-                } catch (Error e) {
-                    critical (e.message);
-                }
-            }
-        });
-
-        job_grid.add (scrolled);
-        job_grid.add (toolbar);
-        add (job_grid);
+        add (scrolled);
 
         unowned Cups.Notifier notifier  = Cups.Notifier.get_default ();
         notifier.job_created.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
@@ -180,45 +62,6 @@ public class Printers.JobsView : Gtk.Frame {
                 }
             }
         });
-    }
-
-    private void toggle_finished (Gtk.ToggleToolButton button) {
-        if (button.active == true) {
-            button.label = _("Hide completed jobs");
-
-            var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
-            foreach (var job in jobs) {
-                switch (job.cjob.state) {
-                    case CUPS.IPP.JobState.CANCELED:
-                    case CUPS.IPP.JobState.ABORTED:
-                    case CUPS.IPP.JobState.COMPLETED:
-                        list_box.add (new JobRow (printer, job));
-                        continue;
-                    default:
-                        continue;
-                }
-            }
-        } else {
-            button.label = _("Show completed jobs");
-
-            foreach (Gtk.Widget widget in list_box.get_children ()) {
-                JobRow job_row = widget as JobRow;
-
-                if (job_row == null) {
-                    continue;
-                }
-
-                switch (job_row.job.cjob.state) {
-                    case CUPS.IPP.JobState.CANCELED:
-                    case CUPS.IPP.JobState.ABORTED:
-                    case CUPS.IPP.JobState.COMPLETED:
-                        list_box.remove (job_row);
-                        continue;
-                    default:
-                        continue;
-                }
-            }
-        }
     }
 
     static int compare (Gtk.ListBoxRow a, Gtk.ListBoxRow b) {
