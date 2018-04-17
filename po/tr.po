@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 10:04-0700\n"
+"POT-Creation-Date: 2018-04-13 12:52-0700\n"
 "PO-Revision-Date: 2018-02-03 00:06+0000\n"
 "Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
@@ -24,27 +24,15 @@ msgstr "Yazıcılar"
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
-msgid "Location:"
-msgstr "Konum:"
-
-#: src/PrinterPage.vala:52
-msgid "Lab 1 or John's Desk"
-msgstr "Lab 1 or John's Desk"
-
-#: src/PrinterPage.vala:58
-msgid "Use as Default Printer"
-msgstr "Varsayılan Yazıcı Olarak Kullan"
-
-#: src/PrinterPage.vala:84
+#: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:92
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Sınama Sayfası Yazdır"
 
-#: src/PrinterPage.vala:178
+#: src/PrinterPage.vala:119
 msgid "Test page"
 msgstr "Deneme sayfası"
 
@@ -56,7 +44,7 @@ msgstr "Yazıcı Ekle..."
 msgid "Remove Printer"
 msgstr "Yazıcı Kaldır"
 
-#: src/PrinterList.vala:87
+#: src/PrinterList.vala:88
 #, fuzzy, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
@@ -65,34 +53,27 @@ msgstr ""
 "'%s' silerek bununla ilgili tüm yazdırma geçmişini\n"
 "ve yapılandırma ayarlarını kaybedeceksiniz."
 
-#: src/PrinterList.vala:93
+#: src/PrinterList.vala:94
 msgid "Remove"
 msgstr "Sil"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Printers"
 msgstr "Yazıcılar"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Yazıcıları yapılandır, yazdırma sırasını yönet, mürekkep seviyelerini gör"
 
 #: src/Plug.vala:49
-msgid "No Printers"
+#, fuzzy
+msgid "No Printers Available"
 msgstr "Yazıcı yok"
 
-#: src/Plug.vala:49
-msgid "Add a printer to begin printing"
-msgstr "Yazdırmaya başlamak için bir yazıcı ekle"
-
 #: src/Plug.vala:50
-msgid "Add Printer"
-msgstr "Yazıcı Ekle"
-
-#: src/Plug.vala:50
-msgid "Search for the printer you need"
-msgstr "İhtiyacınız olan yazıcıyı arayın"
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -208,37 +189,16 @@ msgstr "İş durduruldu"
 msgid "Job Completed"
 msgstr "İş Tamamlandı"
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "Kuyrukta iş yok"
 
-#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:59
-#, fuzzy
-msgid "Cancel"
-msgstr "İş iptal edildi"
-
-#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
-msgid "Show completed jobs"
-msgstr "Tamamlanan işleri göster"
-
-#: src/Views/JobsView.vala:100
-msgid "Resume"
-msgstr ""
-
-#: src/Views/JobsView.vala:187
-msgid "Hide completed jobs"
-msgstr "Tamamlanan işleri gizle"
-
-#: src/Views/JobsView.vala:233
+#: src/Views/JobsView.vala:76
 #, fuzzy
 msgid "Completed Jobs"
 msgstr "Tamamlanan işleri göster"
@@ -499,105 +459,112 @@ msgstr "Rulo %d"
 msgid "Paper Source:"
 msgstr "Kağıt Kaynağı:"
 
-#: src/Widgets/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "İnternet Yazdırma Protokolü (https)"
-
-#: src/Widgets/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "İnternet Yazdırma Protokolü (http)"
-
-#: src/Widgets/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "İnternet Yazdırma Protokolü (ipp)"
-
-#: src/Widgets/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "İnternet Yazdırma Protokolü (ipps)"
-
-#: src/Widgets/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "İnternet Yazdırma Protokolü (ipp14)"
-
-#: src/Widgets/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR Sunucu veya Yazıcı"
-
-#: src/Widgets/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/Widgets/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Mevcut tüm yazıcıları listelemek imkansız"
-
-#: src/Widgets/AddPopover.vala:169
-msgid "Refresh"
-msgstr "Yenile"
-
-#: src/Widgets/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "Yazıcı listesini yenile"
-
-#: src/Widgets/AddPopover.vala:176
-msgid "Next"
-msgstr "İleri"
-
-#: src/Widgets/AddPopover.vala:223
-msgid "Connection:"
-msgstr "Bağlantı:"
-
-#: src/Widgets/AddPopover.vala:231
+#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
 msgid "Description:"
 msgstr "Açıklama:"
 
-#: src/Widgets/AddPopover.vala:236
+#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Widgets/AddPopover.vala:246
+#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
+msgid "Location:"
+msgstr "Konum:"
+
+#: src/Views/SuppliesView.vala:44
+msgid "Lab 1 or John's Desk"
+msgstr "Lab 1 or John's Desk"
+
+#: src/Views/SuppliesView.vala:47
+#, fuzzy
+msgid "Use as default printer:"
+msgstr "Varsayılan Yazıcı Olarak Kullan"
+
+#: src/Widgets/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "İnternet Yazdırma Protokolü (https)"
+
+#: src/Widgets/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "İnternet Yazdırma Protokolü (http)"
+
+#: src/Widgets/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "İnternet Yazdırma Protokolü (ipp)"
+
+#: src/Widgets/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "İnternet Yazdırma Protokolü (ipps)"
+
+#: src/Widgets/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "İnternet Yazdırma Protokolü (ipp14)"
+
+#: src/Widgets/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR Sunucu veya Yazıcı"
+
+#: src/Widgets/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Widgets/AddDialog.vala:86
+msgid "Refresh"
+msgstr "Yenile"
+
+#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:51
+#, fuzzy
+msgid "Cancel"
+msgstr "İş iptal edildi"
+
+#: src/Widgets/AddDialog.vala:91
+msgid "Next"
+msgstr "İleri"
+
+#: src/Widgets/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "Mevcut tüm yazıcıları listelemek imkansız"
+
+#: src/Widgets/AddDialog.vala:225
+msgid "Connection:"
+msgstr "Bağlantı:"
+
+#: src/Widgets/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "Laboratuvar 1 ya da Sadık'ın masası"
 
-#: src/Widgets/AddPopover.vala:310
+#: src/Widgets/AddDialog.vala:304
 msgid "Previous"
 msgstr "Önceki"
 
-#: src/Widgets/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "Başka bir yazıcı veya protokol seç"
+#: src/Widgets/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "Yazıcı Ekle"
 
-#: src/Widgets/AddPopover.vala:315
-msgid "Add"
-msgstr "Ekle"
-
-#: src/Widgets/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "Yapılandırılmış bir yazıcı ekle"
-
-#: src/Widgets/AddPopover.vala:540
+#: src/Widgets/AddDialog.vala:543
 msgid "(recommended)"
 msgstr "(tavsiye edilen)"
 
-#: src/Widgets/AddPopover.vala:602
+#: src/Widgets/AddDialog.vala:605
 msgid "Serial"
 msgstr "Seri numarası"
 
-#: src/Widgets/AddPopover.vala:605
+#: src/Widgets/AddDialog.vala:608
 msgid "Local Printers"
 msgstr "Yerel Yazıcılar"
 
-#: src/Widgets/AddPopover.vala:608
+#: src/Widgets/AddDialog.vala:611
 msgid "Network Printers"
 msgstr "Ağ Yazıcıları"
 
-#: src/Widgets/AddPopover.vala:611
+#: src/Widgets/AddDialog.vala:614
 msgid "Available Network Printers"
 msgstr "Mevcut Ağ Yazıcıları"
-
-#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Düzenle"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -622,6 +589,41 @@ msgstr "Turkuaz"
 #: src/Widgets/InkLevel.vala:117
 msgid "Magenta"
 msgstr "Eflatun"
+
+#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+msgid "Pause"
+msgstr ""
+
+#: src/Widgets/JobRow.vala:97
+msgid "Resume"
+msgstr ""
+
+#~ msgid "Add a printer to begin printing"
+#~ msgstr "Yazdırmaya başlamak için bir yazıcı ekle"
+
+#~ msgid "Search for the printer you need"
+#~ msgstr "İhtiyacınız olan yazıcıyı arayın"
+
+#~ msgid "Show completed jobs"
+#~ msgstr "Tamamlanan işleri göster"
+
+#~ msgid "Hide completed jobs"
+#~ msgstr "Tamamlanan işleri gizle"
+
+#~ msgid "Refresh the printer list"
+#~ msgstr "Yazıcı listesini yenile"
+
+#~ msgid "Select an other printer or protocol"
+#~ msgstr "Başka bir yazıcı veya protokol seç"
+
+#~ msgid "Add"
+#~ msgstr "Ekle"
+
+#~ msgid "Add the configured printer"
+#~ msgstr "Yapılandırılmış bir yazıcı ekle"
+
+#~ msgid "Edit"
+#~ msgstr "Düzenle"
 
 #~ msgid "General"
 #~ msgstr "Genel"

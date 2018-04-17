@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 10:04-0700\n"
+"POT-Creation-Date: 2018-04-13 12:52-0700\n"
 "PO-Revision-Date: 2018-03-22 00:05+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
@@ -25,27 +25,15 @@ msgstr "Tiskalniki"
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
-msgid "Location:"
-msgstr "Lokacija:"
-
-#: src/PrinterPage.vala:52
-msgid "Lab 1 or John's Desk"
-msgstr "Laboratorij 1 ali Janezova miza"
-
-#: src/PrinterPage.vala:58
-msgid "Use as Default Printer"
-msgstr "Privzeti tiskalnik"
-
-#: src/PrinterPage.vala:84
+#: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:92
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Natisni preizkusno stran"
 
-#: src/PrinterPage.vala:178
+#: src/PrinterPage.vala:119
 msgid "Test page"
 msgstr "Preizkusna stran"
 
@@ -57,7 +45,7 @@ msgstr "Dodaj tiskalnik…"
 msgid "Remove Printer"
 msgstr "Odstrani tiskalnik"
 
-#: src/PrinterList.vala:87
+#: src/PrinterList.vala:88
 #, fuzzy, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
@@ -66,33 +54,26 @@ msgstr ""
 "Z odstranitvijo '%s' boste izgubili celotno zgodovino\n"
 "tiskanja in vse nastavitve v povezavi s tiskalnikom."
 
-#: src/PrinterList.vala:93
+#: src/PrinterList.vala:94
 msgid "Remove"
 msgstr "Odstrani"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Printers"
 msgstr "Tiskalniki"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Nastavitve tiskalnikov in tiskalniških opravil"
 
 #: src/Plug.vala:49
-msgid "No Printers"
+#, fuzzy
+msgid "No Printers Available"
 msgstr "Ni tiskalnikov"
 
-#: src/Plug.vala:49
-msgid "Add a printer to begin printing"
-msgstr "Dodajte tiskalnik za začetek tiskanja"
-
 #: src/Plug.vala:50
-msgid "Add Printer"
-msgstr "Dodaj tiskalnik"
-
-#: src/Plug.vala:50
-msgid "Search for the printer you need"
-msgstr "Najdi tiskalnik"
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -208,37 +189,16 @@ msgstr "Opravilo preklicano"
 msgid "Job Completed"
 msgstr "Opravilo končano"
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "Trenutno ni tiskalniških opravil"
 
-#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:59
-#, fuzzy
-msgid "Cancel"
-msgstr "Opravilo preklicano"
-
-#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
-msgid "Show completed jobs"
-msgstr "Pokaži končana opravila"
-
-#: src/Views/JobsView.vala:100
-msgid "Resume"
-msgstr ""
-
-#: src/Views/JobsView.vala:187
-msgid "Hide completed jobs"
-msgstr "Skrij končana opravila"
-
-#: src/Views/JobsView.vala:233
+#: src/Views/JobsView.vala:76
 #, fuzzy
 msgid "Completed Jobs"
 msgstr "Pokaži končana opravila"
@@ -492,105 +452,112 @@ msgstr "Rola %d"
 msgid "Paper Source:"
 msgstr "Vir papirja:"
 
-#: src/Widgets/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Internet Printing Protocol (https)"
-
-#: src/Widgets/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Internet Printing Protocol (http)"
-
-#: src/Widgets/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Internet Printing Protocol (ipp)"
-
-#: src/Widgets/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "nternet Printing Protocol (ipps)"
-
-#: src/Widgets/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "nternet Printing Protocol (ipp14)"
-
-#: src/Widgets/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR gostitelj ali tiskalnik"
-
-#: src/Widgets/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/Widgets/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Ni bilo mogoče izpisati vseh tiskalnikov"
-
-#: src/Widgets/AddPopover.vala:169
-msgid "Refresh"
-msgstr "Osveži"
-
-#: src/Widgets/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "Osveži seznam tiskalnikov"
-
-#: src/Widgets/AddPopover.vala:176
-msgid "Next"
-msgstr "Naprej"
-
-#: src/Widgets/AddPopover.vala:223
-msgid "Connection:"
-msgstr "Povezava:"
-
-#: src/Widgets/AddPopover.vala:231
+#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
 msgid "Description:"
 msgstr "Opis:"
 
-#: src/Widgets/AddPopover.vala:236
+#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
 msgid "BrandPrinter X3000"
 msgstr "ZnamkaTiskalnika X3000"
 
-#: src/Widgets/AddPopover.vala:246
+#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
+msgid "Location:"
+msgstr "Lokacija:"
+
+#: src/Views/SuppliesView.vala:44
+msgid "Lab 1 or John's Desk"
+msgstr "Laboratorij 1 ali Janezova miza"
+
+#: src/Views/SuppliesView.vala:47
+#, fuzzy
+msgid "Use as default printer:"
+msgstr "Privzeti tiskalnik"
+
+#: src/Widgets/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Internet Printing Protocol (https)"
+
+#: src/Widgets/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Internet Printing Protocol (http)"
+
+#: src/Widgets/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Internet Printing Protocol (ipp)"
+
+#: src/Widgets/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "nternet Printing Protocol (ipps)"
+
+#: src/Widgets/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "nternet Printing Protocol (ipp14)"
+
+#: src/Widgets/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR gostitelj ali tiskalnik"
+
+#: src/Widgets/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Widgets/AddDialog.vala:86
+msgid "Refresh"
+msgstr "Osveži"
+
+#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:51
+#, fuzzy
+msgid "Cancel"
+msgstr "Opravilo preklicano"
+
+#: src/Widgets/AddDialog.vala:91
+msgid "Next"
+msgstr "Naprej"
+
+#: src/Widgets/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "Ni bilo mogoče izpisati vseh tiskalnikov"
+
+#: src/Widgets/AddDialog.vala:225
+msgid "Connection:"
+msgstr "Povezava:"
+
+#: src/Widgets/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "Laboratorij 1 ali Janezova miza"
 
-#: src/Widgets/AddPopover.vala:310
+#: src/Widgets/AddDialog.vala:304
 msgid "Previous"
 msgstr "Nazaj"
 
-#: src/Widgets/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "Izberite drug tiskalnik ali protokol"
+#: src/Widgets/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "Dodaj tiskalnik"
 
-#: src/Widgets/AddPopover.vala:315
-msgid "Add"
-msgstr "Dodaj"
-
-#: src/Widgets/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "Dodaj nastavljen tiskalnik"
-
-#: src/Widgets/AddPopover.vala:540
+#: src/Widgets/AddDialog.vala:543
 msgid "(recommended)"
 msgstr "(priporočeno)"
 
-#: src/Widgets/AddPopover.vala:602
+#: src/Widgets/AddDialog.vala:605
 msgid "Serial"
 msgstr "Serijski tiskalnik"
 
-#: src/Widgets/AddPopover.vala:605
+#: src/Widgets/AddDialog.vala:608
 msgid "Local Printers"
 msgstr "Lokalni tiskalniki"
 
-#: src/Widgets/AddPopover.vala:608
+#: src/Widgets/AddDialog.vala:611
 msgid "Network Printers"
 msgstr "Mrežni tiskalniki"
 
-#: src/Widgets/AddPopover.vala:611
+#: src/Widgets/AddDialog.vala:614
 msgid "Available Network Printers"
 msgstr "Najdeni mrežni tiskalniki"
-
-#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Uredi"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -615,6 +582,41 @@ msgstr "Modra"
 #: src/Widgets/InkLevel.vala:117
 msgid "Magenta"
 msgstr "Magenta"
+
+#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+msgid "Pause"
+msgstr ""
+
+#: src/Widgets/JobRow.vala:97
+msgid "Resume"
+msgstr ""
+
+#~ msgid "Add a printer to begin printing"
+#~ msgstr "Dodajte tiskalnik za začetek tiskanja"
+
+#~ msgid "Search for the printer you need"
+#~ msgstr "Najdi tiskalnik"
+
+#~ msgid "Show completed jobs"
+#~ msgstr "Pokaži končana opravila"
+
+#~ msgid "Hide completed jobs"
+#~ msgstr "Skrij končana opravila"
+
+#~ msgid "Refresh the printer list"
+#~ msgstr "Osveži seznam tiskalnikov"
+
+#~ msgid "Select an other printer or protocol"
+#~ msgstr "Izberite drug tiskalnik ali protokol"
+
+#~ msgid "Add"
+#~ msgstr "Dodaj"
+
+#~ msgid "Add the configured printer"
+#~ msgstr "Dodaj nastavljen tiskalnik"
+
+#~ msgid "Edit"
+#~ msgstr "Uredi"
 
 #~ msgid "General"
 #~ msgstr "Splošno"

@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 10:04-0700\n"
-"PO-Revision-Date: 2018-03-24 21:38+0000\n"
+"POT-Creation-Date: 2018-04-13 12:52-0700\n"
+"PO-Revision-Date: 2018-04-14 23:01+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
-"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/da/>\n"
+"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,35 +16,22 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Printere"
+msgstr "Udskriftskø"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Sideopsætning"
 
-#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
-msgid "Location:"
-msgstr "Placering:"
+#: src/PrinterPage.vala:34
+msgid "Settings & Supplies"
+msgstr "Indstillinger og Forsyninger"
 
 #: src/PrinterPage.vala:52
-msgid "Lab 1 or John's Desk"
-msgstr "Laboratorie 1 eller Ronnis skrivebord"
-
-#: src/PrinterPage.vala:58
-msgid "Use as Default Printer"
-msgstr "Brug som standardprinter"
-
-#: src/PrinterPage.vala:84
-msgid "Settings & Supplies"
-msgstr ""
-
-#: src/PrinterPage.vala:92
 msgid "Print Test Page"
 msgstr "Udskriv testside"
 
-#: src/PrinterPage.vala:178
+#: src/PrinterPage.vala:119
 msgid "Test page"
 msgstr "Testside"
 
@@ -56,42 +43,36 @@ msgstr "Tilføj printer…"
 msgid "Remove Printer"
 msgstr "Fjern printer"
 
-#: src/PrinterList.vala:87
-#, fuzzy, c-format
+#: src/PrinterList.vala:88
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Ved at fjerne '%s' mister du al udskrivningshistorik\n"
-"og konfiguration for denne enhed."
+"Ved at fjerne '%s' mister du al udskrivningshistorik og konfiguration der er "
+"forbundet med den."
 
-#: src/PrinterList.vala:93
+#: src/PrinterList.vala:94
 msgid "Remove"
 msgstr "Fjern"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Printers"
 msgstr "Printere"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Konfigurer printere, håndter udskriftskøer og vis blækniveauer"
 
 #: src/Plug.vala:49
-msgid "No Printers"
-msgstr "Ingen printere"
-
-#: src/Plug.vala:49
-msgid "Add a printer to begin printing"
-msgstr "Tilføj en printer for at begynde udskrivning"
+msgid "No Printers Available"
+msgstr "Ingen Ledige Printere"
 
 #: src/Plug.vala:50
-msgid "Add Printer"
-msgstr "Tilføj printer"
-
-#: src/Plug.vala:50
-msgid "Search for the printer you need"
-msgstr "Søg efter den printer du har brug for"
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+"Opret forbindelse til en printer ved at klikke på ikonet i værktøjslinjen "
+"nedenfor."
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -205,40 +186,17 @@ msgstr "Job Afbrudt"
 msgid "Job Completed"
 msgstr "Opgave fuldført"
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Udskriftskøen Er Tom"
 
-#: src/Views/JobsView.vala:33
-#, fuzzy
+#: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
-msgstr "Der er ingen opgaver i kø"
+msgstr "Der er ingen ventende job i køen."
 
-#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:59
-#, fuzzy
-msgid "Cancel"
-msgstr "Opgave annulleret"
-
-#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
-msgid "Show completed jobs"
-msgstr "Vis fuldførte opgaver"
-
-#: src/Views/JobsView.vala:100
-msgid "Resume"
-msgstr ""
-
-#: src/Views/JobsView.vala:187
-msgid "Hide completed jobs"
-msgstr "Skjul fuldførte opgaver"
-
-#: src/Views/JobsView.vala:233
-#, fuzzy
+#: src/Views/JobsView.vala:76
 msgid "Completed Jobs"
-msgstr "Vis fuldførte opgaver"
+msgstr "Udførte Job"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -488,105 +446,110 @@ msgstr "Rulle %d"
 msgid "Paper Source:"
 msgstr "Papirkilde:"
 
-#: src/Widgets/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Internetudskriftsprotokol (https)"
-
-#: src/Widgets/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Internetudskriftsprotokol (http)"
-
-#: src/Widgets/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Internetudskriftsprotokol (ipp)"
-
-#: src/Widgets/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Internetudskriftsprotokol (ipps)"
-
-#: src/Widgets/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Internetudskriftsprotokol (ipp14)"
-
-#: src/Widgets/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD-/LPR-vært eller -printer"
-
-#: src/Widgets/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/Widgets/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Umuligt at vise alle tilgængelige printere"
-
-#: src/Widgets/AddPopover.vala:169
-msgid "Refresh"
-msgstr "Opdater"
-
-#: src/Widgets/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "Opdater printerlisten"
-
-#: src/Widgets/AddPopover.vala:176
-msgid "Next"
-msgstr "Næste"
-
-#: src/Widgets/AddPopover.vala:223
-msgid "Connection:"
-msgstr "Forbindelse:"
-
-#: src/Widgets/AddPopover.vala:231
+#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
 msgid "Description:"
 msgstr "Beskrivelse:"
 
-#: src/Widgets/AddPopover.vala:236
+#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
 msgid "BrandPrinter X3000"
 msgstr "SuperRobo T1000"
 
-#: src/Widgets/AddPopover.vala:246
+#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
+msgid "Location:"
+msgstr "Placering:"
+
+#: src/Views/SuppliesView.vala:44
+msgid "Lab 1 or John's Desk"
+msgstr "Laboratorie 1 eller Ronnis skrivebord"
+
+#: src/Views/SuppliesView.vala:47
+msgid "Use as default printer:"
+msgstr "Brug som standardprinter:"
+
+#: src/Widgets/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Internetudskriftsprotokol (https)"
+
+#: src/Widgets/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Internetudskriftsprotokol (http)"
+
+#: src/Widgets/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Internetudskriftsprotokol (ipp)"
+
+#: src/Widgets/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Internetudskriftsprotokol (ipps)"
+
+#: src/Widgets/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Internetudskriftsprotokol (ipp14)"
+
+#: src/Widgets/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD-/LPR-vært eller -printer"
+
+#: src/Widgets/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr "Søger efter nære printere…"
+
+#: src/Widgets/AddDialog.vala:86
+msgid "Refresh"
+msgstr "Opdater"
+
+#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:51
+msgid "Cancel"
+msgstr "Annuller"
+
+#: src/Widgets/AddDialog.vala:91
+msgid "Next"
+msgstr "Næste"
+
+#: src/Widgets/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "Umuligt at vise alle tilgængelige printere"
+
+#: src/Widgets/AddDialog.vala:225
+msgid "Connection:"
+msgstr "Forbindelse:"
+
+#: src/Widgets/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "Laboratorie 1 eller Ronnis skrivebord"
 
-#: src/Widgets/AddPopover.vala:310
+#: src/Widgets/AddDialog.vala:304
 msgid "Previous"
 msgstr "Forrige"
 
-#: src/Widgets/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "Vælg en anden printer eller protokol"
+#: src/Widgets/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "Tilføj printer"
 
-#: src/Widgets/AddPopover.vala:315
-msgid "Add"
-msgstr "Tilføj"
-
-#: src/Widgets/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "Tilføj den konfigurerede printer"
-
-#: src/Widgets/AddPopover.vala:540
+#: src/Widgets/AddDialog.vala:543
 msgid "(recommended)"
 msgstr "(anbefalet)"
 
-#: src/Widgets/AddPopover.vala:602
+#: src/Widgets/AddDialog.vala:605
 msgid "Serial"
 msgstr "Serienummer"
 
-#: src/Widgets/AddPopover.vala:605
+#: src/Widgets/AddDialog.vala:608
 msgid "Local Printers"
 msgstr "Lokale printere"
 
-#: src/Widgets/AddPopover.vala:608
+#: src/Widgets/AddDialog.vala:611
 msgid "Network Printers"
 msgstr "Netværksprintere"
 
-#: src/Widgets/AddPopover.vala:611
+#: src/Widgets/AddDialog.vala:614
 msgid "Available Network Printers"
 msgstr "Tilgængelige netværksprintere"
-
-#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Rediger"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -611,6 +574,41 @@ msgstr "Cyan"
 #: src/Widgets/InkLevel.vala:117
 msgid "Magenta"
 msgstr "Magenta"
+
+#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+msgid "Pause"
+msgstr "Pause"
+
+#: src/Widgets/JobRow.vala:97
+msgid "Resume"
+msgstr "Genoptag"
+
+#~ msgid "Add a printer to begin printing"
+#~ msgstr "Tilføj en printer for at begynde udskrivning"
+
+#~ msgid "Search for the printer you need"
+#~ msgstr "Søg efter den printer du har brug for"
+
+#~ msgid "Show completed jobs"
+#~ msgstr "Vis fuldførte opgaver"
+
+#~ msgid "Hide completed jobs"
+#~ msgstr "Skjul fuldførte opgaver"
+
+#~ msgid "Refresh the printer list"
+#~ msgstr "Opdater printerlisten"
+
+#~ msgid "Select an other printer or protocol"
+#~ msgstr "Vælg en anden printer eller protokol"
+
+#~ msgid "Add"
+#~ msgstr "Tilføj"
+
+#~ msgid "Add the configured printer"
+#~ msgstr "Tilføj den konfigurerede printer"
+
+#~ msgid "Edit"
+#~ msgstr "Rediger"
 
 #~ msgid "General"
 #~ msgstr "Generelt"
