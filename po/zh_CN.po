@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 10:04-0700\n"
+"POT-Creation-Date: 2018-04-13 12:52-0700\n"
 "PO-Revision-Date: 2017-07-04 09:01+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -24,27 +24,15 @@ msgstr "打印机"
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
-msgid "Location:"
-msgstr "位置："
-
-#: src/PrinterPage.vala:52
-msgid "Lab 1 or John's Desk"
-msgstr "Lab 1 或 John's Desk"
-
-#: src/PrinterPage.vala:58
-msgid "Use as Default Printer"
-msgstr "设为默认打印机"
-
-#: src/PrinterPage.vala:84
+#: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:92
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "打印测试页"
 
-#: src/PrinterPage.vala:178
+#: src/PrinterPage.vala:119
 msgid "Test page"
 msgstr "测试页"
 
@@ -56,7 +44,7 @@ msgstr "添加打印机…"
 msgid "Remove Printer"
 msgstr "移除打印机"
 
-#: src/PrinterList.vala:87
+#: src/PrinterList.vala:88
 #, fuzzy, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
@@ -65,33 +53,26 @@ msgstr ""
 "移除“%s“之后，您所有的打印记录\n"
 "和与此设备相关的配置都会消失。"
 
-#: src/PrinterList.vala:93
+#: src/PrinterList.vala:94
 msgid "Remove"
 msgstr "删除"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Printers"
 msgstr "打印机"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "配置打印机、管理打印队列、查看墨水余量"
 
 #: src/Plug.vala:49
-msgid "No Printers"
+#, fuzzy
+msgid "No Printers Available"
 msgstr "暂无打印机"
 
-#: src/Plug.vala:49
-msgid "Add a printer to begin printing"
-msgstr "请添加打印设备"
-
 #: src/Plug.vala:50
-msgid "Add Printer"
-msgstr "添加打印机"
-
-#: src/Plug.vala:50
-msgid "Search for the printer you need"
-msgstr "搜索您的打印设备"
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -207,37 +188,16 @@ msgstr "任务已放弃"
 msgid "Job Completed"
 msgstr "任务已完成"
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "队列中无任务"
 
-#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:59
-#, fuzzy
-msgid "Cancel"
-msgstr "任务已取消"
-
-#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
-msgid "Show completed jobs"
-msgstr "显示完成的任务"
-
-#: src/Views/JobsView.vala:100
-msgid "Resume"
-msgstr ""
-
-#: src/Views/JobsView.vala:187
-msgid "Hide completed jobs"
-msgstr "隐藏完成的任务"
-
-#: src/Views/JobsView.vala:233
+#: src/Views/JobsView.vala:76
 #, fuzzy
 msgid "Completed Jobs"
 msgstr "显示完成的任务"
@@ -498,105 +458,112 @@ msgstr "卷 %d"
 msgid "Paper Source:"
 msgstr "纸张来源："
 
-#: src/Widgets/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "互联网打印协议（HTTPS）"
-
-#: src/Widgets/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "互联网打印协议（HTTP）"
-
-#: src/Widgets/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "互联网打印协议（IPP）"
-
-#: src/Widgets/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "互联网打印协议（IPPS）"
-
-#: src/Widgets/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "互联网打印协议（IPP14）"
-
-#: src/Widgets/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR 主机或打印机"
-
-#: src/Widgets/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "应用接口/HP JetDirect"
-
-#: src/Widgets/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "无法列出所有可用打印机"
-
-#: src/Widgets/AddPopover.vala:169
-msgid "Refresh"
-msgstr "刷新"
-
-#: src/Widgets/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "刷新打印机列表"
-
-#: src/Widgets/AddPopover.vala:176
-msgid "Next"
-msgstr "下一步"
-
-#: src/Widgets/AddPopover.vala:223
-msgid "Connection:"
-msgstr "连接："
-
-#: src/Widgets/AddPopover.vala:231
+#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
 msgid "Description:"
 msgstr "描述："
 
-#: src/Widgets/AddPopover.vala:236
+#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
 msgid "BrandPrinter X3000"
 msgstr "品牌打印机 X3000"
 
-#: src/Widgets/AddPopover.vala:246
+#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
+msgid "Location:"
+msgstr "位置："
+
+#: src/Views/SuppliesView.vala:44
+msgid "Lab 1 or John's Desk"
+msgstr "Lab 1 或 John's Desk"
+
+#: src/Views/SuppliesView.vala:47
+#, fuzzy
+msgid "Use as default printer:"
+msgstr "设为默认打印机"
+
+#: src/Widgets/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "互联网打印协议（HTTPS）"
+
+#: src/Widgets/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "互联网打印协议（HTTP）"
+
+#: src/Widgets/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "互联网打印协议（IPP）"
+
+#: src/Widgets/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "互联网打印协议（IPPS）"
+
+#: src/Widgets/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "互联网打印协议（IPP14）"
+
+#: src/Widgets/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR 主机或打印机"
+
+#: src/Widgets/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "应用接口/HP JetDirect"
+
+#: src/Widgets/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Widgets/AddDialog.vala:86
+msgid "Refresh"
+msgstr "刷新"
+
+#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:51
+#, fuzzy
+msgid "Cancel"
+msgstr "任务已取消"
+
+#: src/Widgets/AddDialog.vala:91
+msgid "Next"
+msgstr "下一步"
+
+#: src/Widgets/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "无法列出所有可用打印机"
+
+#: src/Widgets/AddDialog.vala:225
+msgid "Connection:"
+msgstr "连接："
+
+#: src/Widgets/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "如：“实验室1”或\"办公桌\""
 
-#: src/Widgets/AddPopover.vala:310
+#: src/Widgets/AddDialog.vala:304
 msgid "Previous"
 msgstr "上一步"
 
-#: src/Widgets/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "选择其他打印机或打印协议"
+#: src/Widgets/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "添加打印机"
 
-#: src/Widgets/AddPopover.vala:315
-msgid "Add"
-msgstr "添加"
-
-#: src/Widgets/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "添加已配置的打印机"
-
-#: src/Widgets/AddPopover.vala:540
+#: src/Widgets/AddDialog.vala:543
 msgid "(recommended)"
 msgstr "（推荐）"
 
-#: src/Widgets/AddPopover.vala:602
+#: src/Widgets/AddDialog.vala:605
 msgid "Serial"
 msgstr "序列号"
 
-#: src/Widgets/AddPopover.vala:605
+#: src/Widgets/AddDialog.vala:608
 msgid "Local Printers"
 msgstr "本地打印机"
 
-#: src/Widgets/AddPopover.vala:608
+#: src/Widgets/AddDialog.vala:611
 msgid "Network Printers"
 msgstr "网络打印机"
 
-#: src/Widgets/AddPopover.vala:611
+#: src/Widgets/AddDialog.vala:614
 msgid "Available Network Printers"
 msgstr "可用的网络打印机"
-
-#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
-msgid "Edit"
-msgstr "编辑"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -621,6 +588,41 @@ msgstr "青色"
 #: src/Widgets/InkLevel.vala:117
 msgid "Magenta"
 msgstr "品红"
+
+#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+msgid "Pause"
+msgstr ""
+
+#: src/Widgets/JobRow.vala:97
+msgid "Resume"
+msgstr ""
+
+#~ msgid "Add a printer to begin printing"
+#~ msgstr "请添加打印设备"
+
+#~ msgid "Search for the printer you need"
+#~ msgstr "搜索您的打印设备"
+
+#~ msgid "Show completed jobs"
+#~ msgstr "显示完成的任务"
+
+#~ msgid "Hide completed jobs"
+#~ msgstr "隐藏完成的任务"
+
+#~ msgid "Refresh the printer list"
+#~ msgstr "刷新打印机列表"
+
+#~ msgid "Select an other printer or protocol"
+#~ msgstr "选择其他打印机或打印协议"
+
+#~ msgid "Add"
+#~ msgstr "添加"
+
+#~ msgid "Add the configured printer"
+#~ msgstr "添加已配置的打印机"
+
+#~ msgid "Edit"
+#~ msgstr "编辑"
 
 #~ msgid "General"
 #~ msgstr "常规"

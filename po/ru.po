@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 10:04-0700\n"
+"POT-Creation-Date: 2018-04-13 12:52-0700\n"
 "PO-Revision-Date: 2017-07-15 08:13+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -25,27 +25,15 @@ msgstr "Принтеры"
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
-msgid "Location:"
-msgstr "Расположение:"
-
-#: src/PrinterPage.vala:52
-msgid "Lab 1 or John's Desk"
-msgstr "Лаборатория 1"
-
-#: src/PrinterPage.vala:58
-msgid "Use as Default Printer"
-msgstr "Использовать как принтер по умолчанию"
-
-#: src/PrinterPage.vala:84
+#: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:92
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Печать пробной страницы"
 
-#: src/PrinterPage.vala:178
+#: src/PrinterPage.vala:119
 msgid "Test page"
 msgstr "Пробная страница"
 
@@ -57,7 +45,7 @@ msgstr "Добавить принтер…"
 msgid "Remove Printer"
 msgstr "Удалить принтер"
 
-#: src/PrinterList.vala:87
+#: src/PrinterList.vala:88
 #, fuzzy, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
@@ -66,34 +54,27 @@ msgstr ""
 "При удалении '%s' вы потеряете всю его \n"
 "историю печати и конфигурацию."
 
-#: src/PrinterList.vala:93
+#: src/PrinterList.vala:94
 msgid "Remove"
 msgstr "Удалить"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Printers"
 msgstr "Принтеры"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Настройка принтеров, управление очередью печати, просмотр уровня чернил"
 
 #: src/Plug.vala:49
-msgid "No Printers"
+#, fuzzy
+msgid "No Printers Available"
 msgstr "Нет принтеров"
 
-#: src/Plug.vala:49
-msgid "Add a printer to begin printing"
-msgstr "Добавьте принтер для начала печати"
-
 #: src/Plug.vala:50
-msgid "Add Printer"
-msgstr "Добавить принтер"
-
-#: src/Plug.vala:50
-msgid "Search for the printer you need"
-msgstr "Найдите нужный вам принтер"
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -209,37 +190,16 @@ msgstr "Задание прервано"
 msgid "Job Completed"
 msgstr "Задание завершено"
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "Нет заданий в очереди"
 
-#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:59
-#, fuzzy
-msgid "Cancel"
-msgstr "Задание отменено"
-
-#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
-msgid "Show completed jobs"
-msgstr "Показать завершенные задания"
-
-#: src/Views/JobsView.vala:100
-msgid "Resume"
-msgstr ""
-
-#: src/Views/JobsView.vala:187
-msgid "Hide completed jobs"
-msgstr "Скрыть завершенные задания"
-
-#: src/Views/JobsView.vala:233
+#: src/Views/JobsView.vala:76
 #, fuzzy
 msgid "Completed Jobs"
 msgstr "Показать завершенные задания"
@@ -500,105 +460,112 @@ msgstr "Рулон %d"
 msgid "Paper Source:"
 msgstr "Источник бумаги:"
 
-#: src/Widgets/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Протокол печати через Интернет (https)"
-
-#: src/Widgets/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Протокол печати через Интернет (http)"
-
-#: src/Widgets/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Протокол печати через Интернет (ipp)"
-
-#: src/Widgets/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Протокол печати через Интернет (ipps)"
-
-#: src/Widgets/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Протокол печати через Интернет (ipp14)"
-
-#: src/Widgets/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR-сервер или принтер"
-
-#: src/Widgets/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/Widgets/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Невозможно перечислить все доступные принтеры"
-
-#: src/Widgets/AddPopover.vala:169
-msgid "Refresh"
-msgstr "Обновить"
-
-#: src/Widgets/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "Обновить список принтеров"
-
-#: src/Widgets/AddPopover.vala:176
-msgid "Next"
-msgstr "Далее"
-
-#: src/Widgets/AddPopover.vala:223
-msgid "Connection:"
-msgstr "Подключение:"
-
-#: src/Widgets/AddPopover.vala:231
+#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
 msgid "Description:"
 msgstr "Описание:"
 
-#: src/Widgets/AddPopover.vala:236
+#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Widgets/AddPopover.vala:246
+#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
+msgid "Location:"
+msgstr "Расположение:"
+
+#: src/Views/SuppliesView.vala:44
+msgid "Lab 1 or John's Desk"
+msgstr "Лаборатория 1"
+
+#: src/Views/SuppliesView.vala:47
+#, fuzzy
+msgid "Use as default printer:"
+msgstr "Использовать как принтер по умолчанию"
+
+#: src/Widgets/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Протокол печати через Интернет (https)"
+
+#: src/Widgets/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Протокол печати через Интернет (http)"
+
+#: src/Widgets/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Протокол печати через Интернет (ipp)"
+
+#: src/Widgets/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Протокол печати через Интернет (ipps)"
+
+#: src/Widgets/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Протокол печати через Интернет (ipp14)"
+
+#: src/Widgets/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR-сервер или принтер"
+
+#: src/Widgets/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Widgets/AddDialog.vala:86
+msgid "Refresh"
+msgstr "Обновить"
+
+#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:51
+#, fuzzy
+msgid "Cancel"
+msgstr "Задание отменено"
+
+#: src/Widgets/AddDialog.vala:91
+msgid "Next"
+msgstr "Далее"
+
+#: src/Widgets/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "Невозможно перечислить все доступные принтеры"
+
+#: src/Widgets/AddDialog.vala:225
+msgid "Connection:"
+msgstr "Подключение:"
+
+#: src/Widgets/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "Лаборатория 1"
 
-#: src/Widgets/AddPopover.vala:310
+#: src/Widgets/AddDialog.vala:304
 msgid "Previous"
 msgstr "Назад"
 
-#: src/Widgets/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "Выберите другой принтер или протокол"
+#: src/Widgets/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "Добавить принтер"
 
-#: src/Widgets/AddPopover.vala:315
-msgid "Add"
-msgstr "Добавить"
-
-#: src/Widgets/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "Добавить настроенный принтер"
-
-#: src/Widgets/AddPopover.vala:540
+#: src/Widgets/AddDialog.vala:543
 msgid "(recommended)"
 msgstr "(рекомендуемый)"
 
-#: src/Widgets/AddPopover.vala:602
+#: src/Widgets/AddDialog.vala:605
 msgid "Serial"
 msgstr "Серия"
 
-#: src/Widgets/AddPopover.vala:605
+#: src/Widgets/AddDialog.vala:608
 msgid "Local Printers"
 msgstr "Локальные принтеры"
 
-#: src/Widgets/AddPopover.vala:608
+#: src/Widgets/AddDialog.vala:611
 msgid "Network Printers"
 msgstr "Сетевые принтеры"
 
-#: src/Widgets/AddPopover.vala:611
+#: src/Widgets/AddDialog.vala:614
 msgid "Available Network Printers"
 msgstr "Доступные сетевые принтеры"
-
-#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Редактировать"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -623,6 +590,41 @@ msgstr "Бирюзовый"
 #: src/Widgets/InkLevel.vala:117
 msgid "Magenta"
 msgstr "Фиолетовый"
+
+#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+msgid "Pause"
+msgstr ""
+
+#: src/Widgets/JobRow.vala:97
+msgid "Resume"
+msgstr ""
+
+#~ msgid "Add a printer to begin printing"
+#~ msgstr "Добавьте принтер для начала печати"
+
+#~ msgid "Search for the printer you need"
+#~ msgstr "Найдите нужный вам принтер"
+
+#~ msgid "Show completed jobs"
+#~ msgstr "Показать завершенные задания"
+
+#~ msgid "Hide completed jobs"
+#~ msgstr "Скрыть завершенные задания"
+
+#~ msgid "Refresh the printer list"
+#~ msgstr "Обновить список принтеров"
+
+#~ msgid "Select an other printer or protocol"
+#~ msgstr "Выберите другой принтер или протокол"
+
+#~ msgid "Add"
+#~ msgstr "Добавить"
+
+#~ msgid "Add the configured printer"
+#~ msgstr "Добавить настроенный принтер"
+
+#~ msgid "Edit"
+#~ msgstr "Редактировать"
 
 #~ msgid "General"
 #~ msgstr "Общие"

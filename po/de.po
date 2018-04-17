@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 10:04-0700\n"
-"PO-Revision-Date: 2018-03-28 00:04+0000\n"
-"Last-Translator: Justin <justin.hucke@t-online.de>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/de/>\n"
+"POT-Creation-Date: 2018-04-13 12:52-0700\n"
+"PO-Revision-Date: 2018-04-14 12:08+0000\n"
+"Last-Translator: Jörg Arnold <j0ar@posteo.de>\n"
+"Language-Team: German <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,35 +16,22 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Drucker"
+msgstr "Druckwarteschlange"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Seite einrichten"
 
-#: src/PrinterPage.vala:46 src/Widgets/AddPopover.vala:240
-msgid "Location:"
-msgstr "Ort:"
+#: src/PrinterPage.vala:34
+msgid "Settings & Supplies"
+msgstr "Einstellungen & Zubehör"
 
 #: src/PrinterPage.vala:52
-msgid "Lab 1 or John's Desk"
-msgstr "Labor 1 oder Johns Schreibtisch"
-
-#: src/PrinterPage.vala:58
-msgid "Use as Default Printer"
-msgstr "Als Standarddrucker verwenden"
-
-#: src/PrinterPage.vala:84
-msgid "Settings & Supplies"
-msgstr ""
-
-#: src/PrinterPage.vala:92
 msgid "Print Test Page"
 msgstr "Testseite drucken"
 
-#: src/PrinterPage.vala:178
+#: src/PrinterPage.vala:119
 msgid "Test page"
 msgstr "Testseite"
 
@@ -56,44 +43,38 @@ msgstr "Drucker hinzufügen …"
 msgid "Remove Printer"
 msgstr "Drucker entfernen"
 
-#: src/PrinterList.vala:87
-#, fuzzy, c-format
+#: src/PrinterList.vala:88
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Wenn Sie »%s« entfernen, verlieren Sie den gesamten Druckverlauf\n"
-"und die Einrichtungsparameter."
+"Durch das Entfernen von %s verlieren Sie die gesamte Druckhistorie und die "
+"damit verbundene Konfiguration."
 
-#: src/PrinterList.vala:93
+#: src/PrinterList.vala:94
 msgid "Remove"
 msgstr "Entfernen"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Printers"
 msgstr "Drucker"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Drucker einrichten, Druckwarteschlangen verwalten und Tintenfüllstände "
 "anzeigen"
 
 #: src/Plug.vala:49
-msgid "No Printers"
+msgid "No Printers Available"
 msgstr "Keine Drucker eingerichtet"
 
-#: src/Plug.vala:49
-msgid "Add a printer to begin printing"
-msgstr "Zum Drucken einen Drucker hinzufügen"
-
 #: src/Plug.vala:50
-msgid "Add Printer"
-msgstr "Drucker hinzufügen"
-
-#: src/Plug.vala:50
-msgid "Search for the printer you need"
-msgstr "Nach dem gewünschten Drucker suchen"
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+"Verbinden Sie sich mit einem Drucker, indem Sie auf das Icon in der "
+"Symbolleiste unten klicken."
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -184,9 +165,8 @@ msgid "Job Pending"
 msgstr "Auftrag ausstehend"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
-msgstr "Angehalten"
+msgstr "In der Warteschleife"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
@@ -201,48 +181,24 @@ msgid "Job Canceled"
 msgstr "Auftrag abgebrochen"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "Auftrag gescheitert"
+msgstr "Auftrag abgebrochen"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
 msgstr "Auftrag abgeschlossen"
 
-#: src/Views/JobsView.vala:33
+#: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Druckwarteschlange ist leer"
 
-#: src/Views/JobsView.vala:33
-#, fuzzy
+#: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
-msgstr "Es befinden sich keine Aufträge in der Warteschlange"
+msgstr "Es befinden sich keine offenen Aufträge in der Warteschlange."
 
-#: src/Views/JobsView.vala:54 src/Views/JobsView.vala:97
-msgid "Pause"
-msgstr ""
-
-#: src/Views/JobsView.vala:59
-#, fuzzy
-msgid "Cancel"
-msgstr "Auftrag abgebrochen"
-
-#: src/Views/JobsView.vala:66 src/Views/JobsView.vala:202
-msgid "Show completed jobs"
-msgstr "Abgeschlossene Aufträge anzeigen"
-
-#: src/Views/JobsView.vala:100
-msgid "Resume"
-msgstr ""
-
-#: src/Views/JobsView.vala:187
-msgid "Hide completed jobs"
-msgstr "Abgeschlossene Aufträge ausblenden"
-
-#: src/Views/JobsView.vala:233
-#, fuzzy
+#: src/Views/JobsView.vala:76
 msgid "Completed Jobs"
-msgstr "Abgeschlossene Aufträge anzeigen"
+msgstr "Abgeschlossene Aufträge"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -253,9 +209,8 @@ msgid "Long Edge (Standard)"
 msgstr "Langer Rand (Standard)"
 
 #: src/Views/SetupView.vala:80
-#, fuzzy
 msgid "Short Edge (Flip)"
-msgstr "Kurzer Rand"
+msgstr "Kurzer Rand (gespiegelt)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
@@ -319,69 +274,61 @@ msgstr "Farbmodus:"
 
 #: src/Views/SetupView.vala:231
 msgid "Top Bin"
-msgstr ""
+msgstr "Oberer Behälter"
 
 #: src/Views/SetupView.vala:234
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Mitte"
+msgstr "Mittlerer Behälter"
 
 #: src/Views/SetupView.vala:237
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Unterseite"
+msgstr "Unterer Behälter"
 
 #: src/Views/SetupView.vala:240
-#, fuzzy
 msgid "Side Bin"
-msgstr "Seite"
+msgstr "Seitlicher Behälter"
 
 #: src/Views/SetupView.vala:243
-#, fuzzy
 msgid "Left Bin"
-msgstr "Links"
+msgstr "Linker Behälter"
 
 #: src/Views/SetupView.vala:246
-#, fuzzy
 msgid "Right Bin"
-msgstr "Rechts"
+msgstr "Rechter Behälter"
 
 #: src/Views/SetupView.vala:249
-#, fuzzy
 msgid "Center Bin"
-msgstr "Mitte"
+msgstr "Zentraler Behälter"
 
 #: src/Views/SetupView.vala:252
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Rückseite"
+msgstr "Hinterer  Behälter"
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Face-Up Behälter"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Face-Down Behälter"
 
 #: src/Views/SetupView.vala:261
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Hohe Kapazität"
+msgstr "Großraumbehälter"
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr ""
+msgstr "Mein Postfach"
 
 #: src/Views/SetupView.vala:269
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Stapler %d"
 
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Postfach %d"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
@@ -501,105 +448,110 @@ msgstr "Rolle %d"
 msgid "Paper Source:"
 msgstr "Papierquelle:"
 
-#: src/Widgets/AddPopover.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Internet Printing Protocol (https)"
-
-#: src/Widgets/AddPopover.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Internet Printing Protocol (http)"
-
-#: src/Widgets/AddPopover.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Internet Printing Protocol (ipp)"
-
-#: src/Widgets/AddPopover.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Internet Printing Protocol (ipps)"
-
-#: src/Widgets/AddPopover.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Internet Printing Protocol (ipp14)"
-
-#: src/Widgets/AddPopover.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR-Rechner oder -Drucker"
-
-#: src/Widgets/AddPopover.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/Widgets/AddPopover.vala:81
-msgid "Impossible to list all available printers"
-msgstr "Nicht möglich, alle verfügbaren Drucker aufzulisten"
-
-#: src/Widgets/AddPopover.vala:169
-msgid "Refresh"
-msgstr "Aktualisieren"
-
-#: src/Widgets/AddPopover.vala:173
-msgid "Refresh the printer list"
-msgstr "Druckerliste aktualisieren"
-
-#: src/Widgets/AddPopover.vala:176
-msgid "Next"
-msgstr "Weiter"
-
-#: src/Widgets/AddPopover.vala:223
-msgid "Connection:"
-msgstr "Verbindung:"
-
-#: src/Widgets/AddPopover.vala:231
+#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
 msgid "Description:"
 msgstr "Beschreibung:"
 
-#: src/Widgets/AddPopover.vala:236
+#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Widgets/AddPopover.vala:246
+#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
+msgid "Location:"
+msgstr "Ort:"
+
+#: src/Views/SuppliesView.vala:44
+msgid "Lab 1 or John's Desk"
+msgstr "Labor 1 oder Johns Schreibtisch"
+
+#: src/Views/SuppliesView.vala:47
+msgid "Use as default printer:"
+msgstr "Als Standarddrucker verwenden:"
+
+#: src/Widgets/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Internet Printing Protocol (https)"
+
+#: src/Widgets/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Internet Printing Protocol (http)"
+
+#: src/Widgets/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Internet Printing Protocol (ipp)"
+
+#: src/Widgets/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Internet Printing Protocol (ipps)"
+
+#: src/Widgets/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Internet Printing Protocol (ipp14)"
+
+#: src/Widgets/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR-Rechner oder -Drucker"
+
+#: src/Widgets/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Widgets/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr "Drucker in der Nähe finden.…"
+
+#: src/Widgets/AddDialog.vala:86
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:51
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: src/Widgets/AddDialog.vala:91
+msgid "Next"
+msgstr "Weiter"
+
+#: src/Widgets/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "Nicht möglich, alle verfügbaren Drucker aufzulisten"
+
+#: src/Widgets/AddDialog.vala:225
+msgid "Connection:"
+msgstr "Verbindung:"
+
+#: src/Widgets/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
 msgstr "Labor 1 oder Johns Schreibtisch"
 
-#: src/Widgets/AddPopover.vala:310
+#: src/Widgets/AddDialog.vala:304
 msgid "Previous"
 msgstr "Zurück"
 
-#: src/Widgets/AddPopover.vala:313
-msgid "Select an other printer or protocol"
-msgstr "Anderen Drucker oder anderes Protokoll wählen"
+#: src/Widgets/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "Drucker hinzufügen"
 
-#: src/Widgets/AddPopover.vala:315
-msgid "Add"
-msgstr "Hinzufügen"
-
-#: src/Widgets/AddPopover.vala:319
-msgid "Add the configured printer"
-msgstr "Eingerichteten Drucker hinzufügen"
-
-#: src/Widgets/AddPopover.vala:540
+#: src/Widgets/AddDialog.vala:543
 msgid "(recommended)"
 msgstr "(empfohlen)"
 
-#: src/Widgets/AddPopover.vala:602
+#: src/Widgets/AddDialog.vala:605
 msgid "Serial"
 msgstr "Serielle Schnittstelle"
 
-#: src/Widgets/AddPopover.vala:605
+#: src/Widgets/AddDialog.vala:608
 msgid "Local Printers"
 msgstr "Lokale Drucker"
 
-#: src/Widgets/AddPopover.vala:608
+#: src/Widgets/AddDialog.vala:611
 msgid "Network Printers"
 msgstr "Netzwerkdrucker"
 
-#: src/Widgets/AddPopover.vala:611
+#: src/Widgets/AddDialog.vala:614
 msgid "Available Network Printers"
 msgstr "Verfügbare Netzwerkdrucker"
-
-#: src/Widgets/EditableTitle.vala:41 src/Widgets/EditableTitle.vala:57
-msgid "Edit"
-msgstr "Bearbeiten"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -624,6 +576,41 @@ msgstr "Cyan"
 #: src/Widgets/InkLevel.vala:117
 msgid "Magenta"
 msgstr "Magenta"
+
+#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+msgid "Pause"
+msgstr "Pausieren"
+
+#: src/Widgets/JobRow.vala:97
+msgid "Resume"
+msgstr "Fortsetzen"
+
+#~ msgid "Add a printer to begin printing"
+#~ msgstr "Zum Drucken einen Drucker hinzufügen"
+
+#~ msgid "Search for the printer you need"
+#~ msgstr "Nach dem gewünschten Drucker suchen"
+
+#~ msgid "Show completed jobs"
+#~ msgstr "Abgeschlossene Aufträge anzeigen"
+
+#~ msgid "Hide completed jobs"
+#~ msgstr "Abgeschlossene Aufträge ausblenden"
+
+#~ msgid "Refresh the printer list"
+#~ msgstr "Druckerliste aktualisieren"
+
+#~ msgid "Select an other printer or protocol"
+#~ msgstr "Anderen Drucker oder anderes Protokoll wählen"
+
+#~ msgid "Add"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "Add the configured printer"
+#~ msgstr "Eingerichteten Drucker hinzufügen"
+
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
 
 #~ msgid "General"
 #~ msgstr "Allgemein"

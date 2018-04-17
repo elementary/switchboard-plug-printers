@@ -31,6 +31,7 @@ public class Printers.PrinterPage : Gtk.Grid {
         var stack = new Gtk.Stack ();
         stack.add_titled (new JobsView (printer), "general", _("Print Queue"));
         stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
+        stack.add_titled (new SuppliesView (printer), "supplies", _("Settings & Supplies"));
 
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.halign = Gtk.Align.CENTER;
@@ -39,51 +40,10 @@ public class Printers.PrinterPage : Gtk.Grid {
 
         var image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DIALOG);
 
-        var editable_title = new EditableTitle (printer.info);
-        editable_title.hexpand = true;
-        editable_title.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-
-        var location_label = new Gtk.Label (_("Location:"));
-        location_label.xalign = 1;
-
-        var location_entry = new Gtk.Entry ();
-        location_entry.text = printer.location ?? "";
-        location_entry.hexpand = true;
-        location_entry.placeholder_text = _("Lab 1 or John's Desk");
-
-        var ink_level = new InkLevel (printer);
-
-        var default_check = new Gtk.ModelButton ();
-        default_check.active = printer.is_default;
-        default_check.text = _("Use as Default Printer");
-        default_check.role = Gtk.ButtonRole.CHECK;
-
-        var info_grid = new Gtk.Grid ();
-        info_grid.margin = 12;
-        info_grid.column_spacing = 12;
-        info_grid.row_spacing = 12;
-        info_grid.attach (location_label, 0, 0, 1, 1);
-        info_grid.attach (location_entry, 1, 0, 1, 1);
-        info_grid.attach (ink_level, 0, 2, 2, 1);
-
-        var menu_grid = new Gtk.Grid ();
-        menu_grid.margin_bottom = 3;
-        menu_grid.orientation = Gtk.Orientation.VERTICAL;
-        menu_grid.row_spacing = 3;
-        menu_grid.add (info_grid);
-        menu_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
-        menu_grid.add (default_check);
-        menu_grid.show_all ();
-
-        var info_popover = new Gtk.Popover (null);
-        info_popover.add (menu_grid);
-
-        var info_button = new Gtk.MenuButton ();
-        info_button.image = new Gtk.Image.from_icon_name ("view-more-symbolic", Gtk.IconSize.MENU);
-        info_button.popover = info_popover;
-        info_button.tooltip_text = _("Settings & Supplies");
-        info_button.valign = Gtk.Align.CENTER;
-        info_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        var title = new Gtk.Label (printer.info);
+        title.hexpand = true;
+        title.xalign = 0;
+        title.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
 
         var enable_switch = new Gtk.Switch ();
         enable_switch.active = printer.state != "5" && printer.is_accepting_jobs;
@@ -100,36 +60,17 @@ public class Printers.PrinterPage : Gtk.Grid {
         column_spacing = 12;
         row_spacing = 24;
         attach (image, 0, 0, 1, 1);
-        attach (editable_title, 1, 0, 1, 1);
-        attach (info_button, 2, 0, 1, 1);
+        attach (title, 1, 0, 1, 1);
         attach (enable_switch, 3, 0, 1, 1);
         attach (stack_switcher, 0, 1, 4, 1);
         attach (stack, 0, 2, 4, 1);
         attach (action_area, 0, 3, 4, 1);
         show_all ();
 
-        default_check.notify["active"].connect (() => {
-            if (default_check.active) {
-                printer.is_default = true;
-            } else {
-                default_check.active = true;
-            }
-        });
-
-        editable_title.title_edited.connect ((new_title) => {
-            printer.info = new_title;
-        });
+        printer.bind_property ("info", title, "label");
 
         enable_switch.notify["active"].connect (() => {
             printer.enabled = enable_switch.active;
-        });
-
-        info_popover.hide.connect (() => {
-            location_entry.text = printer.location ?? "";
-        });
-
-        location_entry.activate.connect (() => {
-            printer.location = location_entry.text;
         });
     }
 
