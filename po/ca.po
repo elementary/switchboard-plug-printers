@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-13 12:52-0700\n"
-"PO-Revision-Date: 2018-04-12 14:24+0000\n"
+"PO-Revision-Date: 2018-04-16 13:25+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,13 +67,13 @@ msgstr ""
 "de tinta"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "Cap impressora"
+msgstr "Cap impressora disponible"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+"Connecteu amb una impressora clicant a la icona de la barra d'eines de sota."
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -464,9 +464,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "Laboratori 1 o Escriptori del Joan"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Usa com a impressora per defecte"
+msgstr "Usa com a impressora per defecte:"
 
 #: src/Widgets/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -498,7 +497,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Widgets/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Se cerquen impressores properes…"
 
 #: src/Widgets/AddDialog.vala:86
 msgid "Refresh"

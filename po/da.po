@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-13 12:52-0700\n"
-"PO-Revision-Date: 2018-03-24 21:38+0000\n"
+"PO-Revision-Date: 2018-04-14 23:01+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
-"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/da/>\n"
+"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,17 +16,16 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Printere"
+msgstr "Udskriftskø"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Sideopsætning"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Indstillinger og Forsyninger"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
@@ -45,13 +44,13 @@ msgid "Remove Printer"
 msgstr "Fjern printer"
 
 #: src/PrinterList.vala:88
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Ved at fjerne '%s' mister du al udskrivningshistorik\n"
-"og konfiguration for denne enhed."
+"Ved at fjerne '%s' mister du al udskrivningshistorik og konfiguration der er "
+"forbundet med den."
 
 #: src/PrinterList.vala:94
 msgid "Remove"
@@ -66,13 +65,14 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Konfigurer printere, håndter udskriftskøer og vis blækniveauer"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "Ingen printere"
+msgstr "Ingen Ledige Printere"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+"Opret forbindelse til en printer ved at klikke på ikonet i værktøjslinjen "
+"nedenfor."
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -188,17 +188,15 @@ msgstr "Opgave fuldført"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Udskriftskøen Er Tom"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Der er ingen opgaver i kø"
+msgstr "Der er ingen ventende job i køen."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Vis fuldførte opgaver"
+msgstr "Udførte Job"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -465,9 +463,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "Laboratorie 1 eller Ronnis skrivebord"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Brug som standardprinter"
+msgstr "Brug som standardprinter:"
 
 #: src/Widgets/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -499,7 +496,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Widgets/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Søger efter nære printere…"
 
 #: src/Widgets/AddDialog.vala:86
 msgid "Refresh"
@@ -507,9 +504,8 @@ msgstr "Opdater"
 
 #: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:51
-#, fuzzy
 msgid "Cancel"
-msgstr "Opgave annulleret"
+msgstr "Annuller"
 
 #: src/Widgets/AddDialog.vala:91
 msgid "Next"
@@ -581,11 +577,11 @@ msgstr "Magenta"
 
 #: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: src/Widgets/JobRow.vala:97
 msgid "Resume"
-msgstr ""
+msgstr "Genoptag"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Tilføj en printer for at begynde udskrivning"

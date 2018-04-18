@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-13 12:52-0700\n"
-"PO-Revision-Date: 2018-03-28 00:04+0000\n"
-"Last-Translator: Justin <justin.hucke@t-online.de>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/de/>\n"
+"PO-Revision-Date: 2018-04-14 12:08+0000\n"
+"Last-Translator: Jörg Arnold <j0ar@posteo.de>\n"
+"Language-Team: German <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,17 +16,16 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Drucker"
+msgstr "Druckwarteschlange"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Seite einrichten"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Einstellungen & Zubehör"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
@@ -45,13 +44,13 @@ msgid "Remove Printer"
 msgstr "Drucker entfernen"
 
 #: src/PrinterList.vala:88
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Wenn Sie »%s« entfernen, verlieren Sie den gesamten Druckverlauf\n"
-"und die Einrichtungsparameter."
+"Durch das Entfernen von %s verlieren Sie die gesamte Druckhistorie und die "
+"damit verbundene Konfiguration."
 
 #: src/PrinterList.vala:94
 msgid "Remove"
@@ -68,13 +67,14 @@ msgstr ""
 "anzeigen"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
 msgstr "Keine Drucker eingerichtet"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+"Verbinden Sie sich mit einem Drucker, indem Sie auf das Icon in der "
+"Symbolleiste unten klicken."
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -165,9 +165,8 @@ msgid "Job Pending"
 msgstr "Auftrag ausstehend"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
-msgstr "Angehalten"
+msgstr "In der Warteschleife"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
@@ -182,9 +181,8 @@ msgid "Job Canceled"
 msgstr "Auftrag abgebrochen"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "Auftrag gescheitert"
+msgstr "Auftrag abgebrochen"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
@@ -192,17 +190,15 @@ msgstr "Auftrag abgeschlossen"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Druckwarteschlange ist leer"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Es befinden sich keine Aufträge in der Warteschlange"
+msgstr "Es befinden sich keine offenen Aufträge in der Warteschlange."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Abgeschlossene Aufträge anzeigen"
+msgstr "Abgeschlossene Aufträge"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -213,9 +209,8 @@ msgid "Long Edge (Standard)"
 msgstr "Langer Rand (Standard)"
 
 #: src/Views/SetupView.vala:80
-#, fuzzy
 msgid "Short Edge (Flip)"
-msgstr "Kurzer Rand"
+msgstr "Kurzer Rand (gespiegelt)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
@@ -279,69 +274,61 @@ msgstr "Farbmodus:"
 
 #: src/Views/SetupView.vala:231
 msgid "Top Bin"
-msgstr ""
+msgstr "Oberer Behälter"
 
 #: src/Views/SetupView.vala:234
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Mitte"
+msgstr "Mittlerer Behälter"
 
 #: src/Views/SetupView.vala:237
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Unterseite"
+msgstr "Unterer Behälter"
 
 #: src/Views/SetupView.vala:240
-#, fuzzy
 msgid "Side Bin"
-msgstr "Seite"
+msgstr "Seitlicher Behälter"
 
 #: src/Views/SetupView.vala:243
-#, fuzzy
 msgid "Left Bin"
-msgstr "Links"
+msgstr "Linker Behälter"
 
 #: src/Views/SetupView.vala:246
-#, fuzzy
 msgid "Right Bin"
-msgstr "Rechts"
+msgstr "Rechter Behälter"
 
 #: src/Views/SetupView.vala:249
-#, fuzzy
 msgid "Center Bin"
-msgstr "Mitte"
+msgstr "Zentraler Behälter"
 
 #: src/Views/SetupView.vala:252
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Rückseite"
+msgstr "Hinterer  Behälter"
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Face-Up Behälter"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Face-Down Behälter"
 
 #: src/Views/SetupView.vala:261
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Hohe Kapazität"
+msgstr "Großraumbehälter"
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr ""
+msgstr "Mein Postfach"
 
 #: src/Views/SetupView.vala:269
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Stapler %d"
 
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Postfach %d"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
@@ -478,9 +465,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "Labor 1 oder Johns Schreibtisch"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Als Standarddrucker verwenden"
+msgstr "Als Standarddrucker verwenden:"
 
 #: src/Widgets/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -512,7 +498,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Widgets/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Drucker in der Nähe finden.…"
 
 #: src/Widgets/AddDialog.vala:86
 msgid "Refresh"
@@ -520,9 +506,8 @@ msgstr "Aktualisieren"
 
 #: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:51
-#, fuzzy
 msgid "Cancel"
-msgstr "Auftrag abgebrochen"
+msgstr "Abbrechen"
 
 #: src/Widgets/AddDialog.vala:91
 msgid "Next"
@@ -594,11 +579,11 @@ msgstr "Magenta"
 
 #: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
 msgid "Pause"
-msgstr ""
+msgstr "Pausieren"
 
 #: src/Widgets/JobRow.vala:97
 msgid "Resume"
-msgstr ""
+msgstr "Fortsetzen"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Zum Drucken einen Drucker hinzufügen"
