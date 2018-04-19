@@ -22,30 +22,39 @@
 
 public class Printers.PrinterRow : Gtk.ListBoxRow {
     public PrinterPage page;
-    public unowned Printer printer;
+    public unowned Printer printer { get; construct; }
+
     private Gtk.Image printer_image;
     private Gtk.Image status_image;
     private Gtk.Label name_label;
     private Gtk.Label status_label;
 
     public PrinterRow (Printer printer) {
-        this.printer = printer;
+        Object (printer: printer);
+    }
+
+    construct {
         name_label = new Gtk.Label (null);
         name_label.get_style_context ().add_class ("h3");
         name_label.ellipsize = Pango.EllipsizeMode.END;
-        ((Gtk.Misc) name_label).xalign = 0;
+        name_label.xalign = 0;
+
         status_label = new Gtk.Label (null);
         status_label.use_markup = true;
         status_label.ellipsize = Pango.EllipsizeMode.END;
-        ((Gtk.Misc) status_label).xalign = 0;
+        status_label.xalign = 0;
+
         printer_image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DND);
         printer_image.pixel_size = 32;
+
         status_image = new Gtk.Image.from_icon_name ("user-available", Gtk.IconSize.MENU);
         status_image.halign = status_image.valign = Gtk.Align.END;
+
         var overlay = new Gtk.Overlay ();
         overlay.width_request = 38;
         overlay.add (printer_image);
         overlay.add_overlay (status_image);
+
         var grid = new Gtk.Grid ();
         grid.margin = 6;
         grid.margin_start = 3;
