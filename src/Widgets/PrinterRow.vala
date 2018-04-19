@@ -79,13 +79,32 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     }
 
     private void update_status () {
-        status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
-        if (printer.is_offline ()) {
-            status_image.icon_name = "user-offline";
-        } else if (printer.enabled) {
-            status_image.icon_name = "user-available";
+        if (printer.enabled) {
+            status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
+
+            switch (printer.state_reasons_raw) {
+                case "offline":
+                    status_image.icon_name = "user-offline";
+                    break;
+                case "none":
+                case null:
+                    status_image.icon_name = "user-available";
+                    break;
+                case "developer-low":
+                case "marker-supply-low":
+                case "marker-waste-almost-full":
+                case "media-low":
+                case "opc-near-eol":
+                case "toner-low":
+                    status_image.icon_name = "user-away";
+                    break;
+                default:
+                    status_image.icon_name = "user-busy";
+                    break;
+            }
         } else {
-            status_image.icon_name = "user-busy";
+            status_image.icon_name = "user-offline";
+            status_label.label = "<span font_size=\"small\">%s</span>".printf (_("Disabled"));
         }
     }
 }
