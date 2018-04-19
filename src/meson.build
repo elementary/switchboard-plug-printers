@@ -4,6 +4,8 @@ plug_files = files(
     'Plug.vala',
     'CUPSPkHelper.vala',
     'CUPSNotifier.vala',
+    'Dialogs/AddDialog.vala',
+    'Dialogs/RemoveDialog.vala',
     'Objects/DeviceDriver.vala',
     'Objects/Printer.vala',
     'Objects/PrinterManager.vala',
@@ -12,7 +14,6 @@ plug_files = files(
     'Views/JobsView.vala',
     'Views/SetupView.vala',
     'Views/SuppliesView.vala',
-    'Widgets/AddDialog.vala',
     'Widgets/InkLevel.vala',
     'Widgets/JobRow.vala',
     'Widgets/PrinterRow.vala'
