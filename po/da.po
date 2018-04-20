@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-14 23:01+0000\n"
+"PO-Revision-Date: 2018-04-20 22:34+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
-"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/da/>\n"
+"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -161,7 +161,7 @@ msgstr "Tilgængelige netværksprintere"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Er Du Sikker På, At Du Vil Fjerne '%s'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -590,7 +590,7 @@ msgstr "Genoptag"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "Deaktiveret"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Tilføj en printer for at begynde udskrivning"
