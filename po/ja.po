@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-15 00:10+0000\n"
+"PO-Revision-Date: 2018-04-21 00:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/ja/>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -160,7 +160,7 @@ msgstr "利用可能なネットワークプリンター"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "'%s' を削除してもよろしいですか？"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -434,7 +434,7 @@ msgstr "スタッカー %d"
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "メールボックス %d"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
@@ -596,7 +596,7 @@ msgstr "再開"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "無効"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "印刷を開始するにはプリンターを追加してください"
