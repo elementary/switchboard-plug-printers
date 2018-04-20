@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 12:52-0700\n"
+"POT-Creation-Date: 2018-04-19 19:20-0700\n"
 "PO-Revision-Date: 2017-04-14 12:23+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -44,19 +44,6 @@ msgstr "프린터 추가…"
 msgid "Remove Printer"
 msgstr "프린터 제거"
 
-#: src/PrinterList.vala:88
-#, fuzzy, c-format
-msgid ""
-"By removing '%s' you'll lose all print history and configuration associated "
-"with it."
-msgstr ""
-"'%s'를 제거하면 프린터 사용 기록과 함께\n"
-"연관된 프린터 설정이 모두 사라집니다."
-
-#: src/PrinterList.vala:94
-msgid "Remove"
-msgstr "제거"
-
 #: src/Plug.vala:35
 msgid "Printers"
 msgstr "프린터"
@@ -73,6 +60,122 @@ msgstr "프린터 없음"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+
+#: src/Dialogs/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "인터넷 인쇄 프로토콜 (https)"
+
+#: src/Dialogs/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "인터넷 인쇄 프로토콜 (http)"
+
+#: src/Dialogs/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "인터넷 인쇄 프로토콜 (ipp)"
+
+#: src/Dialogs/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "인터넷 인쇄 프로토콜 (ipps)"
+
+#: src/Dialogs/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "인터넷 인쇄 프로토콜 (ipp14)"
+
+#: src/Dialogs/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR 호스트 또는 프린터"
+
+#: src/Dialogs/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "앱 소켓/HP JetDirect"
+
+#: src/Dialogs/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:86
+msgid "Refresh"
+msgstr "새로 고침"
+
+#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:55
+#, fuzzy
+msgid "Cancel"
+msgstr "작업이 취소 됨"
+
+#: src/Dialogs/AddDialog.vala:91
+msgid "Next"
+msgstr "다음"
+
+#: src/Dialogs/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "사용 가능한 프린터 목록을 볼 수 없습니다"
+
+#: src/Dialogs/AddDialog.vala:225
+msgid "Connection:"
+msgstr "연결:"
+
+#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+msgid "Description:"
+msgstr "설명:"
+
+#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+msgid "BrandPrinter X3000"
+msgstr "브랜드 프린터 X3000"
+
+#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+msgid "Location:"
+msgstr "위치:"
+
+#: src/Dialogs/AddDialog.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "연구실 1 또는 누군가의 책상"
+
+#: src/Dialogs/AddDialog.vala:304
+msgid "Previous"
+msgstr "이전"
+
+#: src/Dialogs/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "프린터 추가"
+
+#: src/Dialogs/AddDialog.vala:543
+msgid "(recommended)"
+msgstr "(추천)"
+
+#: src/Dialogs/AddDialog.vala:605
+msgid "Serial"
+msgstr "일련번호"
+
+#: src/Dialogs/AddDialog.vala:608
+msgid "Local Printers"
+msgstr "로컬 프린터"
+
+#: src/Dialogs/AddDialog.vala:611
+msgid "Network Printers"
+msgstr "네트워크 프린터"
+
+#: src/Dialogs/AddDialog.vala:614
+msgid "Available Network Printers"
+msgstr "사용 가능한 네트워크 프린터"
+
+#: src/Dialogs/RemoveDialog.vala:29
+#, c-format
+msgid "Are You Sure You Want To Remove '%s'?"
+msgstr ""
+
+#: src/Dialogs/RemoveDialog.vala:30
+#, fuzzy, c-format
+msgid ""
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
+msgstr ""
+"'%s'를 제거하면 프린터 사용 기록과 함께\n"
+"연관된 프린터 설정이 모두 사라집니다."
+
+#: src/Dialogs/RemoveDialog.vala:35
+msgid "Remove"
+msgstr "제거"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -458,18 +561,6 @@ msgstr "%d개 롤"
 msgid "Paper Source:"
 msgstr "용지 공급:"
 
-#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
-msgid "Description:"
-msgstr "설명:"
-
-#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
-msgid "BrandPrinter X3000"
-msgstr "브랜드 프린터 X3000"
-
-#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
-msgid "Location:"
-msgstr "위치:"
-
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
 msgstr "연구실 1 또는 누군가의 책상"
@@ -478,92 +569,6 @@ msgstr "연구실 1 또는 누군가의 책상"
 #, fuzzy
 msgid "Use as default printer:"
 msgstr "기본 프린터로 사용함"
-
-#: src/Widgets/AddDialog.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "인터넷 인쇄 프로토콜 (https)"
-
-#: src/Widgets/AddDialog.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "인터넷 인쇄 프로토콜 (http)"
-
-#: src/Widgets/AddDialog.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "인터넷 인쇄 프로토콜 (ipp)"
-
-#: src/Widgets/AddDialog.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "인터넷 인쇄 프로토콜 (ipps)"
-
-#: src/Widgets/AddDialog.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "인터넷 인쇄 프로토콜 (ipp14)"
-
-#: src/Widgets/AddDialog.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR 호스트 또는 프린터"
-
-#: src/Widgets/AddDialog.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "앱 소켓/HP JetDirect"
-
-#: src/Widgets/AddDialog.vala:67
-msgid "Finding nearby printers…"
-msgstr ""
-
-#: src/Widgets/AddDialog.vala:86
-msgid "Refresh"
-msgstr "새로 고침"
-
-#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
-#: src/Widgets/JobRow.vala:51
-#, fuzzy
-msgid "Cancel"
-msgstr "작업이 취소 됨"
-
-#: src/Widgets/AddDialog.vala:91
-msgid "Next"
-msgstr "다음"
-
-#: src/Widgets/AddDialog.vala:109
-msgid "Impossible to list all available printers"
-msgstr "사용 가능한 프린터 목록을 볼 수 없습니다"
-
-#: src/Widgets/AddDialog.vala:225
-msgid "Connection:"
-msgstr "연결:"
-
-#: src/Widgets/AddDialog.vala:246
-msgid "Lab 1 or John's desk"
-msgstr "연구실 1 또는 누군가의 책상"
-
-#: src/Widgets/AddDialog.vala:304
-msgid "Previous"
-msgstr "이전"
-
-#: src/Widgets/AddDialog.vala:308
-msgid "Add Printer"
-msgstr "프린터 추가"
-
-#: src/Widgets/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(추천)"
-
-#: src/Widgets/AddDialog.vala:605
-msgid "Serial"
-msgstr "일련번호"
-
-#: src/Widgets/AddDialog.vala:608
-msgid "Local Printers"
-msgstr "로컬 프린터"
-
-#: src/Widgets/AddDialog.vala:611
-msgid "Network Printers"
-msgstr "네트워크 프린터"
-
-#: src/Widgets/AddDialog.vala:614
-msgid "Available Network Printers"
-msgstr "사용 가능한 네트워크 프린터"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -589,12 +594,16 @@ msgstr "청록색"
 msgid "Magenta"
 msgstr "진홍색"
 
-#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:97
+#: src/Widgets/JobRow.vala:101
 msgid "Resume"
+msgstr ""
+
+#: src/Widgets/PrinterRow.vala:107
+msgid "Disabled"
 msgstr ""
 
 #~ msgid "Add a printer to begin printing"
