@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-20 04:12+0000\n"
+"PO-Revision-Date: 2018-04-21 00:11+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/he/>\n"
@@ -586,7 +586,7 @@ msgstr "המשך"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr "מושבת"
+msgstr "מושבתת"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "יש להוסיף מדפסת כדי להתחיל להדפיס"
