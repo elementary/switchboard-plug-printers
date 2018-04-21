@@ -22,30 +22,39 @@
 
 public class Printers.PrinterRow : Gtk.ListBoxRow {
     public PrinterPage page;
-    public unowned Printer printer;
+    public unowned Printer printer { get; construct; }
+
     private Gtk.Image printer_image;
     private Gtk.Image status_image;
     private Gtk.Label name_label;
     private Gtk.Label status_label;
 
     public PrinterRow (Printer printer) {
-        this.printer = printer;
+        Object (printer: printer);
+    }
+
+    construct {
         name_label = new Gtk.Label (null);
         name_label.get_style_context ().add_class ("h3");
         name_label.ellipsize = Pango.EllipsizeMode.END;
-        ((Gtk.Misc) name_label).xalign = 0;
+        name_label.xalign = 0;
+
         status_label = new Gtk.Label (null);
         status_label.use_markup = true;
         status_label.ellipsize = Pango.EllipsizeMode.END;
-        ((Gtk.Misc) status_label).xalign = 0;
+        status_label.xalign = 0;
+
         printer_image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DND);
         printer_image.pixel_size = 32;
+
         status_image = new Gtk.Image.from_icon_name ("user-available", Gtk.IconSize.MENU);
         status_image.halign = status_image.valign = Gtk.Align.END;
+
         var overlay = new Gtk.Overlay ();
         overlay.width_request = 38;
         overlay.add (printer_image);
         overlay.add_overlay (status_image);
+
         var grid = new Gtk.Grid ();
         grid.margin = 6;
         grid.margin_start = 3;
@@ -70,13 +79,32 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     }
 
     private void update_status () {
-        status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
-        if (printer.is_offline ()) {
-            status_image.icon_name = "user-offline";
-        } else if (printer.enabled) {
-            status_image.icon_name = "user-available";
+        if (printer.enabled) {
+            status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
+
+            switch (printer.state_reasons_raw) {
+                case "offline":
+                    status_image.icon_name = "user-offline";
+                    break;
+                case "none":
+                case null:
+                    status_image.icon_name = "user-available";
+                    break;
+                case "developer-low":
+                case "marker-supply-low":
+                case "marker-waste-almost-full":
+                case "media-low":
+                case "opc-near-eol":
+                case "toner-low":
+                    status_image.icon_name = "user-away";
+                    break;
+                default:
+                    status_image.icon_name = "user-busy";
+                    break;
+            }
         } else {
-            status_image.icon_name = "user-busy";
+            status_image.icon_name = "user-offline";
+            status_label.label = "<span font_size=\"small\">%s</span>".printf (_("Disabled"));
         }
     }
 }

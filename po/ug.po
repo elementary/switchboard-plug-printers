@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 12:52-0700\n"
+"POT-Creation-Date: 2018-04-19 19:20-0700\n"
 "PO-Revision-Date: 2017-01-02 07:57+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: \n"
@@ -42,19 +42,6 @@ msgstr "پرىنتېر قىتىش...."
 msgid "Remove Printer"
 msgstr "پرىنتېرنى چىقىرىۋېتىش"
 
-#: src/PrinterList.vala:88
-#, fuzzy, c-format
-msgid ""
-"By removing '%s' you'll lose all print history and configuration associated "
-"with it."
-msgstr ""
-"'%s' نى چىقىرىۋەتكەندىن كىيىن سىزنىڭ بارلىق بىسىش خاتىرىڭىز\n"
-"ۋە بۇ ئۈسكۈنە بىلەن مۇناسىۋەتلىك بولغان بارلىق تەڭشەكلىرىڭىز يوقايدۇ."
-
-#: src/PrinterList.vala:94
-msgid "Remove"
-msgstr "چىقىرىۋىتىش"
-
 #: src/Plug.vala:35
 msgid "Printers"
 msgstr "پرىنتېرلار"
@@ -71,6 +58,122 @@ msgstr "پرىنتېر يوق"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+
+#: src/Dialogs/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى(https)"
+
+#: src/Dialogs/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى(http)"
+
+#: src/Dialogs/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipp)"
+
+#: src/Dialogs/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipps)"
+
+#: src/Dialogs/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipp14)"
+
+#: src/Dialogs/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR كومپيۇتېر ياكى پرىنتېر"
+
+#: src/Dialogs/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "ئەپ ئۇلانما ئىغىزى/HP JetDirect"
+
+#: src/Dialogs/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:86
+msgid "Refresh"
+msgstr "يېڭىلاش"
+
+#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:55
+#, fuzzy
+msgid "Cancel"
+msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
+
+#: src/Dialogs/AddDialog.vala:91
+msgid "Next"
+msgstr "كىيىنكىسى"
+
+#: src/Dialogs/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "ئىشلەتكىلى بولىدىغان پرىنتېرلارنىڭ ھەممىسىنى كۆرسەتكىلى بولمىدى"
+
+#: src/Dialogs/AddDialog.vala:225
+msgid "Connection:"
+msgstr "ئۇلانما:"
+
+#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+msgid "Description:"
+msgstr "چۈشەندۈرۈش:"
+
+#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+msgid "Location:"
+msgstr "ئورنى:"
+
+#: src/Dialogs/AddDialog.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Lab 1 ياكى John's desk"
+
+#: src/Dialogs/AddDialog.vala:304
+msgid "Previous"
+msgstr "ئالدىنقىسى"
+
+#: src/Dialogs/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "پرىنتېر قوشۇش"
+
+#: src/Dialogs/AddDialog.vala:543
+msgid "(recommended)"
+msgstr "(تەۋسىيە قىلىنغان)"
+
+#: src/Dialogs/AddDialog.vala:605
+msgid "Serial"
+msgstr "تەرتىپ نومۇرى"
+
+#: src/Dialogs/AddDialog.vala:608
+msgid "Local Printers"
+msgstr "يەرلىك پرىنتېرلار"
+
+#: src/Dialogs/AddDialog.vala:611
+msgid "Network Printers"
+msgstr "تور پرىنتېرلىرى"
+
+#: src/Dialogs/AddDialog.vala:614
+msgid "Available Network Printers"
+msgstr "ئىشلەتكىلى بولىدىغان تور پرىنتېرلىرى"
+
+#: src/Dialogs/RemoveDialog.vala:29
+#, c-format
+msgid "Are You Sure You Want To Remove '%s'?"
+msgstr ""
+
+#: src/Dialogs/RemoveDialog.vala:30
+#, fuzzy, c-format
+msgid ""
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
+msgstr ""
+"'%s' نى چىقىرىۋەتكەندىن كىيىن سىزنىڭ بارلىق بىسىش خاتىرىڭىز\n"
+"ۋە بۇ ئۈسكۈنە بىلەن مۇناسىۋەتلىك بولغان بارلىق تەڭشەكلىرىڭىز يوقايدۇ."
+
+#: src/Dialogs/RemoveDialog.vala:35
+msgid "Remove"
+msgstr "چىقىرىۋىتىش"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -456,18 +559,6 @@ msgstr "ئورام %d"
 msgid "Paper Source:"
 msgstr "قەغەز مەنبەسى:"
 
-#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
-msgid "Description:"
-msgstr "چۈشەندۈرۈش:"
-
-#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
-msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
-
-#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
-msgid "Location:"
-msgstr "ئورنى:"
-
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 ياكى John's desk"
@@ -476,92 +567,6 @@ msgstr "Lab 1 ياكى John's desk"
 #, fuzzy
 msgid "Use as default printer:"
 msgstr "سۈكۈتتىكى پرىنتېر قىلىپ ئىشلىتىش"
-
-#: src/Widgets/AddDialog.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "ئىنتېرنېت بېسىش كېلىشىمى(https)"
-
-#: src/Widgets/AddDialog.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "ئىنتېرنېت بېسىش كېلىشىمى(http)"
-
-#: src/Widgets/AddDialog.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipp)"
-
-#: src/Widgets/AddDialog.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipps)"
-
-#: src/Widgets/AddDialog.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "ئىنتېرنېت بېسىش كېلىشىمى (ipp14)"
-
-#: src/Widgets/AddDialog.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR كومپيۇتېر ياكى پرىنتېر"
-
-#: src/Widgets/AddDialog.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "ئەپ ئۇلانما ئىغىزى/HP JetDirect"
-
-#: src/Widgets/AddDialog.vala:67
-msgid "Finding nearby printers…"
-msgstr ""
-
-#: src/Widgets/AddDialog.vala:86
-msgid "Refresh"
-msgstr "يېڭىلاش"
-
-#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
-#: src/Widgets/JobRow.vala:51
-#, fuzzy
-msgid "Cancel"
-msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
-
-#: src/Widgets/AddDialog.vala:91
-msgid "Next"
-msgstr "كىيىنكىسى"
-
-#: src/Widgets/AddDialog.vala:109
-msgid "Impossible to list all available printers"
-msgstr "ئىشلەتكىلى بولىدىغان پرىنتېرلارنىڭ ھەممىسىنى كۆرسەتكىلى بولمىدى"
-
-#: src/Widgets/AddDialog.vala:225
-msgid "Connection:"
-msgstr "ئۇلانما:"
-
-#: src/Widgets/AddDialog.vala:246
-msgid "Lab 1 or John's desk"
-msgstr "Lab 1 ياكى John's desk"
-
-#: src/Widgets/AddDialog.vala:304
-msgid "Previous"
-msgstr "ئالدىنقىسى"
-
-#: src/Widgets/AddDialog.vala:308
-msgid "Add Printer"
-msgstr "پرىنتېر قوشۇش"
-
-#: src/Widgets/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(تەۋسىيە قىلىنغان)"
-
-#: src/Widgets/AddDialog.vala:605
-msgid "Serial"
-msgstr "تەرتىپ نومۇرى"
-
-#: src/Widgets/AddDialog.vala:608
-msgid "Local Printers"
-msgstr "يەرلىك پرىنتېرلار"
-
-#: src/Widgets/AddDialog.vala:611
-msgid "Network Printers"
-msgstr "تور پرىنتېرلىرى"
-
-#: src/Widgets/AddDialog.vala:614
-msgid "Available Network Printers"
-msgstr "ئىشلەتكىلى بولىدىغان تور پرىنتېرلىرى"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -587,12 +592,16 @@ msgstr "توق يېشىل"
 msgid "Magenta"
 msgstr "ھال رەڭ"
 
-#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:97
+#: src/Widgets/JobRow.vala:101
 msgid "Resume"
+msgstr ""
+
+#: src/Widgets/PrinterRow.vala:107
+msgid "Disabled"
 msgstr ""
 
 #~ msgid "Add a printer to begin printing"

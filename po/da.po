@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 12:52-0700\n"
-"PO-Revision-Date: 2018-04-14 23:01+0000\n"
+"POT-Creation-Date: 2018-04-19 19:20-0700\n"
+"PO-Revision-Date: 2018-04-20 22:34+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/da/>\n"
@@ -43,19 +43,6 @@ msgstr "Tilføj printer…"
 msgid "Remove Printer"
 msgstr "Fjern printer"
 
-#: src/PrinterList.vala:88
-#, c-format
-msgid ""
-"By removing '%s' you'll lose all print history and configuration associated "
-"with it."
-msgstr ""
-"Ved at fjerne '%s' mister du al udskrivningshistorik og konfiguration der er "
-"forbundet med den."
-
-#: src/PrinterList.vala:94
-msgid "Remove"
-msgstr "Fjern"
-
 #: src/Plug.vala:35
 msgid "Printers"
 msgstr "Printere"
@@ -73,6 +60,121 @@ msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 "Opret forbindelse til en printer ved at klikke på ikonet i værktøjslinjen "
 "nedenfor."
+
+#: src/Dialogs/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Internetudskriftsprotokol (https)"
+
+#: src/Dialogs/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Internetudskriftsprotokol (http)"
+
+#: src/Dialogs/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Internetudskriftsprotokol (ipp)"
+
+#: src/Dialogs/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Internetudskriftsprotokol (ipps)"
+
+#: src/Dialogs/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Internetudskriftsprotokol (ipp14)"
+
+#: src/Dialogs/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD-/LPR-vært eller -printer"
+
+#: src/Dialogs/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Dialogs/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr "Søger efter nære printere…"
+
+#: src/Dialogs/AddDialog.vala:86
+msgid "Refresh"
+msgstr "Opdater"
+
+#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:55
+msgid "Cancel"
+msgstr "Annuller"
+
+#: src/Dialogs/AddDialog.vala:91
+msgid "Next"
+msgstr "Næste"
+
+#: src/Dialogs/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "Umuligt at vise alle tilgængelige printere"
+
+#: src/Dialogs/AddDialog.vala:225
+msgid "Connection:"
+msgstr "Forbindelse:"
+
+#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+msgid "Description:"
+msgstr "Beskrivelse:"
+
+#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+msgid "BrandPrinter X3000"
+msgstr "SuperRobo T1000"
+
+#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+msgid "Location:"
+msgstr "Placering:"
+
+#: src/Dialogs/AddDialog.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Laboratorie 1 eller Ronnis skrivebord"
+
+#: src/Dialogs/AddDialog.vala:304
+msgid "Previous"
+msgstr "Forrige"
+
+#: src/Dialogs/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "Tilføj printer"
+
+#: src/Dialogs/AddDialog.vala:543
+msgid "(recommended)"
+msgstr "(anbefalet)"
+
+#: src/Dialogs/AddDialog.vala:605
+msgid "Serial"
+msgstr "Serienummer"
+
+#: src/Dialogs/AddDialog.vala:608
+msgid "Local Printers"
+msgstr "Lokale printere"
+
+#: src/Dialogs/AddDialog.vala:611
+msgid "Network Printers"
+msgstr "Netværksprintere"
+
+#: src/Dialogs/AddDialog.vala:614
+msgid "Available Network Printers"
+msgstr "Tilgængelige netværksprintere"
+
+#: src/Dialogs/RemoveDialog.vala:29
+#, c-format
+msgid "Are You Sure You Want To Remove '%s'?"
+msgstr "Er Du Sikker På, At Du Vil Fjerne '%s'?"
+
+#: src/Dialogs/RemoveDialog.vala:30
+#, c-format
+msgid ""
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
+msgstr ""
+"Ved at fjerne '%s' mister du al udskrivningshistorik og konfiguration der er "
+"forbundet med den."
+
+#: src/Dialogs/RemoveDialog.vala:35
+msgid "Remove"
+msgstr "Fjern"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -446,18 +548,6 @@ msgstr "Rulle %d"
 msgid "Paper Source:"
 msgstr "Papirkilde:"
 
-#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
-msgid "Description:"
-msgstr "Beskrivelse:"
-
-#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
-msgid "BrandPrinter X3000"
-msgstr "SuperRobo T1000"
-
-#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
-msgid "Location:"
-msgstr "Placering:"
-
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
 msgstr "Laboratorie 1 eller Ronnis skrivebord"
@@ -465,91 +555,6 @@ msgstr "Laboratorie 1 eller Ronnis skrivebord"
 #: src/Views/SuppliesView.vala:47
 msgid "Use as default printer:"
 msgstr "Brug som standardprinter:"
-
-#: src/Widgets/AddDialog.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Internetudskriftsprotokol (https)"
-
-#: src/Widgets/AddDialog.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Internetudskriftsprotokol (http)"
-
-#: src/Widgets/AddDialog.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Internetudskriftsprotokol (ipp)"
-
-#: src/Widgets/AddDialog.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Internetudskriftsprotokol (ipps)"
-
-#: src/Widgets/AddDialog.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Internetudskriftsprotokol (ipp14)"
-
-#: src/Widgets/AddDialog.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD-/LPR-vært eller -printer"
-
-#: src/Widgets/AddDialog.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/Widgets/AddDialog.vala:67
-msgid "Finding nearby printers…"
-msgstr "Søger efter nære printere…"
-
-#: src/Widgets/AddDialog.vala:86
-msgid "Refresh"
-msgstr "Opdater"
-
-#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
-#: src/Widgets/JobRow.vala:51
-msgid "Cancel"
-msgstr "Annuller"
-
-#: src/Widgets/AddDialog.vala:91
-msgid "Next"
-msgstr "Næste"
-
-#: src/Widgets/AddDialog.vala:109
-msgid "Impossible to list all available printers"
-msgstr "Umuligt at vise alle tilgængelige printere"
-
-#: src/Widgets/AddDialog.vala:225
-msgid "Connection:"
-msgstr "Forbindelse:"
-
-#: src/Widgets/AddDialog.vala:246
-msgid "Lab 1 or John's desk"
-msgstr "Laboratorie 1 eller Ronnis skrivebord"
-
-#: src/Widgets/AddDialog.vala:304
-msgid "Previous"
-msgstr "Forrige"
-
-#: src/Widgets/AddDialog.vala:308
-msgid "Add Printer"
-msgstr "Tilføj printer"
-
-#: src/Widgets/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(anbefalet)"
-
-#: src/Widgets/AddDialog.vala:605
-msgid "Serial"
-msgstr "Serienummer"
-
-#: src/Widgets/AddDialog.vala:608
-msgid "Local Printers"
-msgstr "Lokale printere"
-
-#: src/Widgets/AddDialog.vala:611
-msgid "Network Printers"
-msgstr "Netværksprintere"
-
-#: src/Widgets/AddDialog.vala:614
-msgid "Available Network Printers"
-msgstr "Tilgængelige netværksprintere"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -575,13 +580,17 @@ msgstr "Cyan"
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
 msgstr "Pause"
 
-#: src/Widgets/JobRow.vala:97
+#: src/Widgets/JobRow.vala:101
 msgid "Resume"
 msgstr "Genoptag"
+
+#: src/Widgets/PrinterRow.vala:107
+msgid "Disabled"
+msgstr "Deaktiveret"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Tilføj en printer for at begynde udskrivning"
