@@ -79,33 +79,11 @@ public class Printers.PrinterList : Gtk.Grid {
         });
 
         remove_button.clicked.connect (() => {
-            var popover = new Gtk.Popover (remove_button);
-            var grid = new Gtk.Grid ();
-            grid.margin = 6;
-            grid.row_spacing = 6;
-            grid.column_spacing = 6;
             var printer = ((PrinterRow)list_box.get_selected_row ()).printer;
-            var label = new Gtk.Label (_("By removing '%s' you'll lose all print history and configuration associated with it.").printf (printer.info));
-            label.max_width_chars = 48;
-            label.wrap = true;
-            var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
-            image.halign = Gtk.Align.CENTER;
-            image.valign = Gtk.Align.CENTER;
-            var button = new Gtk.Button.with_label (_("Remove"));
-            button.halign = Gtk.Align.END;
-            button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
-            grid.attach (image, 0, 0, 1, 1);
-            grid.attach (label, 1, 0, 1, 1);
-            grid.attach (button, 1, 1, 1, 1);
-            popover.add (grid);
-            popover.show_all ();
-            button.clicked.connect (() => {
-                try {
-                    Cups.get_pk_helper ().printer_delete (printer.dest.name);
-                } catch (Error e) {
-                    critical (e.message);
-                }
-            });
+
+            var remove_dialog = new RemoveDialog (printer);
+            remove_dialog.transient_for = (Gtk.Window) get_toplevel ();
+            remove_dialog.present ();
         });
 
         unowned PrinterManager manager = PrinterManager.get_default ();

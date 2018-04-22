@@ -270,7 +270,7 @@ public class Printers.Printer : GLib.Object {
     /**
      * Additional comma-delimited state keywords for the destination such as "media-tray-empty-error" and "toner-low-warning".
      */
-    private string? state_reasons_raw {
+    public string? state_reasons_raw {
         get {
             return CUPS.get_option ("printer-state-reasons", dest.options);
         }
