@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-23 00:09+0000\n"
+"PO-Revision-Date: 2018-04-23 15:27+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/pl/>\n"
@@ -413,7 +413,7 @@ msgstr "Pojemnik czołowy"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Pojemnik odwrócony"
 
 #: src/Views/SetupView.vala:261
 msgid "Large Capacity Bin"
