@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-16 00:09+0000\n"
+"PO-Revision-Date: 2018-04-24 00:07+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/pl/>\n"
+"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -164,7 +164,7 @@ msgstr "Dostępne drukarki sieciowe"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Czy na pewno chcesz usunąć '%s'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -413,7 +413,7 @@ msgstr "Pojemnik czołowy"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Pojemnik odwrócony"
 
 #: src/Views/SetupView.vala:261
 msgid "Large Capacity Bin"
@@ -496,7 +496,7 @@ msgstr "Koperta"
 
 #: src/Views/SetupView.vala:359
 msgid "Hagaki"
-msgstr "Karta Hagaki"
+msgstr "Papier Hagaki"
 
 #: src/Views/SetupView.vala:362
 msgid "Large Capacity"
@@ -593,7 +593,7 @@ msgstr "Wznów"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "Wyłączone"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Dodaj drukarkę, aby rozpocząć drukowanie"
