@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 12:52-0700\n"
+"POT-Creation-Date: 2018-04-19 19:20-0700\n"
 "PO-Revision-Date: 2017-07-04 09:01+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -44,19 +44,6 @@ msgstr "添加打印机…"
 msgid "Remove Printer"
 msgstr "移除打印机"
 
-#: src/PrinterList.vala:88
-#, fuzzy, c-format
-msgid ""
-"By removing '%s' you'll lose all print history and configuration associated "
-"with it."
-msgstr ""
-"移除“%s“之后，您所有的打印记录\n"
-"和与此设备相关的配置都会消失。"
-
-#: src/PrinterList.vala:94
-msgid "Remove"
-msgstr "删除"
-
 #: src/Plug.vala:35
 msgid "Printers"
 msgstr "打印机"
@@ -73,6 +60,122 @@ msgstr "暂无打印机"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+
+#: src/Dialogs/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "互联网打印协议（HTTPS）"
+
+#: src/Dialogs/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "互联网打印协议（HTTP）"
+
+#: src/Dialogs/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "互联网打印协议（IPP）"
+
+#: src/Dialogs/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "互联网打印协议（IPPS）"
+
+#: src/Dialogs/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "互联网打印协议（IPP14）"
+
+#: src/Dialogs/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR 主机或打印机"
+
+#: src/Dialogs/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "应用接口/HP JetDirect"
+
+#: src/Dialogs/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:86
+msgid "Refresh"
+msgstr "刷新"
+
+#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:55
+#, fuzzy
+msgid "Cancel"
+msgstr "任务已取消"
+
+#: src/Dialogs/AddDialog.vala:91
+msgid "Next"
+msgstr "下一步"
+
+#: src/Dialogs/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "无法列出所有可用打印机"
+
+#: src/Dialogs/AddDialog.vala:225
+msgid "Connection:"
+msgstr "连接："
+
+#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+msgid "Description:"
+msgstr "描述："
+
+#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+msgid "BrandPrinter X3000"
+msgstr "品牌打印机 X3000"
+
+#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+msgid "Location:"
+msgstr "位置："
+
+#: src/Dialogs/AddDialog.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "如：“实验室1”或\"办公桌\""
+
+#: src/Dialogs/AddDialog.vala:304
+msgid "Previous"
+msgstr "上一步"
+
+#: src/Dialogs/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "添加打印机"
+
+#: src/Dialogs/AddDialog.vala:543
+msgid "(recommended)"
+msgstr "（推荐）"
+
+#: src/Dialogs/AddDialog.vala:605
+msgid "Serial"
+msgstr "序列号"
+
+#: src/Dialogs/AddDialog.vala:608
+msgid "Local Printers"
+msgstr "本地打印机"
+
+#: src/Dialogs/AddDialog.vala:611
+msgid "Network Printers"
+msgstr "网络打印机"
+
+#: src/Dialogs/AddDialog.vala:614
+msgid "Available Network Printers"
+msgstr "可用的网络打印机"
+
+#: src/Dialogs/RemoveDialog.vala:29
+#, c-format
+msgid "Are You Sure You Want To Remove '%s'?"
+msgstr ""
+
+#: src/Dialogs/RemoveDialog.vala:30
+#, fuzzy, c-format
+msgid ""
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
+msgstr ""
+"移除“%s“之后，您所有的打印记录\n"
+"和与此设备相关的配置都会消失。"
+
+#: src/Dialogs/RemoveDialog.vala:35
+msgid "Remove"
+msgstr "删除"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -458,18 +561,6 @@ msgstr "卷 %d"
 msgid "Paper Source:"
 msgstr "纸张来源："
 
-#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
-msgid "Description:"
-msgstr "描述："
-
-#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
-msgid "BrandPrinter X3000"
-msgstr "品牌打印机 X3000"
-
-#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
-msgid "Location:"
-msgstr "位置："
-
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 或 John's Desk"
@@ -478,92 +569,6 @@ msgstr "Lab 1 或 John's Desk"
 #, fuzzy
 msgid "Use as default printer:"
 msgstr "设为默认打印机"
-
-#: src/Widgets/AddDialog.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "互联网打印协议（HTTPS）"
-
-#: src/Widgets/AddDialog.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "互联网打印协议（HTTP）"
-
-#: src/Widgets/AddDialog.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "互联网打印协议（IPP）"
-
-#: src/Widgets/AddDialog.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "互联网打印协议（IPPS）"
-
-#: src/Widgets/AddDialog.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "互联网打印协议（IPP14）"
-
-#: src/Widgets/AddDialog.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR 主机或打印机"
-
-#: src/Widgets/AddDialog.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "应用接口/HP JetDirect"
-
-#: src/Widgets/AddDialog.vala:67
-msgid "Finding nearby printers…"
-msgstr ""
-
-#: src/Widgets/AddDialog.vala:86
-msgid "Refresh"
-msgstr "刷新"
-
-#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
-#: src/Widgets/JobRow.vala:51
-#, fuzzy
-msgid "Cancel"
-msgstr "任务已取消"
-
-#: src/Widgets/AddDialog.vala:91
-msgid "Next"
-msgstr "下一步"
-
-#: src/Widgets/AddDialog.vala:109
-msgid "Impossible to list all available printers"
-msgstr "无法列出所有可用打印机"
-
-#: src/Widgets/AddDialog.vala:225
-msgid "Connection:"
-msgstr "连接："
-
-#: src/Widgets/AddDialog.vala:246
-msgid "Lab 1 or John's desk"
-msgstr "如：“实验室1”或\"办公桌\""
-
-#: src/Widgets/AddDialog.vala:304
-msgid "Previous"
-msgstr "上一步"
-
-#: src/Widgets/AddDialog.vala:308
-msgid "Add Printer"
-msgstr "添加打印机"
-
-#: src/Widgets/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "（推荐）"
-
-#: src/Widgets/AddDialog.vala:605
-msgid "Serial"
-msgstr "序列号"
-
-#: src/Widgets/AddDialog.vala:608
-msgid "Local Printers"
-msgstr "本地打印机"
-
-#: src/Widgets/AddDialog.vala:611
-msgid "Network Printers"
-msgstr "网络打印机"
-
-#: src/Widgets/AddDialog.vala:614
-msgid "Available Network Printers"
-msgstr "可用的网络打印机"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -589,12 +594,16 @@ msgstr "青色"
 msgid "Magenta"
 msgstr "品红"
 
-#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:97
+#: src/Widgets/JobRow.vala:101
 msgid "Resume"
+msgstr ""
+
+#: src/Widgets/PrinterRow.vala:107
+msgid "Disabled"
 msgstr ""
 
 #~ msgid "Add a printer to begin printing"

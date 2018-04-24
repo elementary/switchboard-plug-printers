@@ -21,17 +21,21 @@
  */
 
 public class Printers.JobRow : Gtk.ListBoxRow {
-    public Job job { get; private set; }
-    private Printer printer;
+    public Job job { get; construct set; }
+    public Printer printer { get; private set; }
 
     private Gtk.Grid grid;
     private Gtk.Image job_state_icon;
     private Gtk.Stack action_stack;
 
     public JobRow (Printer printer, Job job) {
-        this.printer = printer;
-        this.job = job;
+        Object (
+            job: job,
+            printer: printer
+        );
+    }
 
+    construct {
         var icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.MENU);
 
         var title = new Gtk.Label (job.cjob.title);
@@ -121,7 +125,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         });
     }
 
-    public void update_state () {
+    private void update_state () {
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
         foreach (var _job in jobs) {
             if (_job.cjob.id == job.cjob.id) {

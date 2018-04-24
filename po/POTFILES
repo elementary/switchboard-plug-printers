@@ -3,6 +3,8 @@ src/PrinterList.vala
 src/Plug.vala
 src/CUPSPkHelper.vala
 src/CUPSNotifier.vala
+src/Dialogs/AddDialog.vala
+src/Dialogs/RemoveDialog.vala
 src/Objects/DeviceDriver.vala
 src/Objects/Printer.vala
 src/Objects/PrinterManager.vala
@@ -11,7 +13,6 @@ src/Objects/Job.vala
 src/Views/JobsView.vala
 src/Views/SetupView.vala
 src/Views/SuppliesView.vala
-src/Widgets/AddDialog.vala
 src/Widgets/InkLevel.vala
 src/Widgets/JobRow.vala
 src/Widgets/PrinterRow.vala

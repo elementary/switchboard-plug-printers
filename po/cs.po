@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 12:52-0700\n"
-"PO-Revision-Date: 2017-07-22 22:20+0000\n"
+"POT-Creation-Date: 2018-04-19 19:20-0700\n"
+"PO-Revision-Date: 2018-04-20 00:12+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/cs/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:32
@@ -44,19 +44,6 @@ msgstr "Přidat tiskárnu…"
 msgid "Remove Printer"
 msgstr "Odebrat tiskárnu"
 
-#: src/PrinterList.vala:88
-#, fuzzy, c-format
-msgid ""
-"By removing '%s' you'll lose all print history and configuration associated "
-"with it."
-msgstr ""
-"Odebráním '%s' ztratíte veškerou historii tisku\n"
-"a nastavení, která jsou s ní spojená."
-
-#: src/PrinterList.vala:94
-msgid "Remove"
-msgstr "Odebrat"
-
 #: src/Plug.vala:35
 msgid "Printers"
 msgstr "Tiskárny"
@@ -73,6 +60,121 @@ msgstr "Žádné tiskárny"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+
+#: src/Dialogs/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Internetový tiskový protokol (https)"
+
+#: src/Dialogs/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Internetový tiskový protokol (http)"
+
+#: src/Dialogs/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Internetový tiskový protokol (ipp)"
+
+#: src/Dialogs/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Internetový tiskový protokol (ipps)"
+
+#: src/Dialogs/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Internetový tiskový protokol (ipp14)"
+
+#: src/Dialogs/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "LPD/LPR host nebo tiskárna"
+
+#: src/Dialogs/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:86
+msgid "Refresh"
+msgstr "Obnovit"
+
+#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:55
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: src/Dialogs/AddDialog.vala:91
+msgid "Next"
+msgstr "Další"
+
+#: src/Dialogs/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "Nelze vypsat všechny dostupné tiskárny"
+
+#: src/Dialogs/AddDialog.vala:225
+msgid "Connection:"
+msgstr "Připojení:"
+
+#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+msgid "Description:"
+msgstr "Popis:"
+
+#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+msgid "BrandPrinter X3000"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+msgid "Location:"
+msgstr "Umístění:"
+
+#: src/Dialogs/AddDialog.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Laboratoř 1 nebo Honzův stůl"
+
+#: src/Dialogs/AddDialog.vala:304
+msgid "Previous"
+msgstr "Předchozí"
+
+#: src/Dialogs/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "Přidat tiskárnu"
+
+#: src/Dialogs/AddDialog.vala:543
+msgid "(recommended)"
+msgstr "(doporučené)"
+
+#: src/Dialogs/AddDialog.vala:605
+msgid "Serial"
+msgstr "Sériový"
+
+#: src/Dialogs/AddDialog.vala:608
+msgid "Local Printers"
+msgstr "Místní tiskárny"
+
+#: src/Dialogs/AddDialog.vala:611
+msgid "Network Printers"
+msgstr "Síťové tiskárny"
+
+#: src/Dialogs/AddDialog.vala:614
+msgid "Available Network Printers"
+msgstr "Dostupné síťové tiskárny"
+
+#: src/Dialogs/RemoveDialog.vala:29
+#, c-format
+msgid "Are You Sure You Want To Remove '%s'?"
+msgstr ""
+
+#: src/Dialogs/RemoveDialog.vala:30
+#, fuzzy, c-format
+msgid ""
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
+msgstr ""
+"Odebráním '%s' ztratíte veškerou historii tisku\n"
+"a nastavení, která jsou s ní spojená."
+
+#: src/Dialogs/RemoveDialog.vala:35
+msgid "Remove"
+msgstr "Odebrat"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -451,18 +553,6 @@ msgstr ""
 msgid "Paper Source:"
 msgstr ""
 
-#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
-msgid "Description:"
-msgstr "Popis:"
-
-#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
-msgid "BrandPrinter X3000"
-msgstr ""
-
-#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
-msgid "Location:"
-msgstr "Umístění:"
-
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
 msgstr "Laboratoř 1 nebo Honzův stůl"
@@ -471,92 +561,6 @@ msgstr "Laboratoř 1 nebo Honzův stůl"
 #, fuzzy
 msgid "Use as default printer:"
 msgstr "Požívat jako výchozí tiskárnu"
-
-#: src/Widgets/AddDialog.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Internetový tiskový protokol (https)"
-
-#: src/Widgets/AddDialog.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Internetový tiskový protokol (http)"
-
-#: src/Widgets/AddDialog.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Internetový tiskový protokol (ipp)"
-
-#: src/Widgets/AddDialog.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Internetový tiskový protokol (ipps)"
-
-#: src/Widgets/AddDialog.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Internetový tiskový protokol (ipp14)"
-
-#: src/Widgets/AddDialog.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR host nebo tiskárna"
-
-#: src/Widgets/AddDialog.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr ""
-
-#: src/Widgets/AddDialog.vala:67
-msgid "Finding nearby printers…"
-msgstr ""
-
-#: src/Widgets/AddDialog.vala:86
-msgid "Refresh"
-msgstr "Obnovit"
-
-#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
-#: src/Widgets/JobRow.vala:51
-#, fuzzy
-msgid "Cancel"
-msgstr "Výkon zrušen"
-
-#: src/Widgets/AddDialog.vala:91
-msgid "Next"
-msgstr "Další"
-
-#: src/Widgets/AddDialog.vala:109
-msgid "Impossible to list all available printers"
-msgstr "Nelze vypsat všechny dostupné tiskárny"
-
-#: src/Widgets/AddDialog.vala:225
-msgid "Connection:"
-msgstr "Připojení:"
-
-#: src/Widgets/AddDialog.vala:246
-msgid "Lab 1 or John's desk"
-msgstr "Laboratoř 1 nebo Honzův stůl"
-
-#: src/Widgets/AddDialog.vala:304
-msgid "Previous"
-msgstr "Předchozí"
-
-#: src/Widgets/AddDialog.vala:308
-msgid "Add Printer"
-msgstr "Přidat tiskárnu"
-
-#: src/Widgets/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(doporučené)"
-
-#: src/Widgets/AddDialog.vala:605
-msgid "Serial"
-msgstr "Sériový"
-
-#: src/Widgets/AddDialog.vala:608
-msgid "Local Printers"
-msgstr "Místní tiskárny"
-
-#: src/Widgets/AddDialog.vala:611
-msgid "Network Printers"
-msgstr "Síťové tiskárny"
-
-#: src/Widgets/AddDialog.vala:614
-msgid "Available Network Printers"
-msgstr "Dostupné síťové tiskárny"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -582,12 +586,16 @@ msgstr "Tyrkysová"
 msgid "Magenta"
 msgstr "Purpurová"
 
-#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:97
+#: src/Widgets/JobRow.vala:101
 msgid "Resume"
+msgstr ""
+
+#: src/Widgets/PrinterRow.vala:107
+msgid "Disabled"
 msgstr ""
 
 #~ msgid "Add a printer to begin printing"

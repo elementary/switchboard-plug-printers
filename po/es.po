@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 12:52-0700\n"
+"POT-Creation-Date: 2018-04-19 19:20-0700\n"
 "PO-Revision-Date: 2017-07-11 11:46+0000\n"
 "Last-Translator: Mattias Ezequiel Mignone <memignone@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -44,19 +44,6 @@ msgstr "Añadir impresora…"
 msgid "Remove Printer"
 msgstr "Eliminar impresora"
 
-#: src/PrinterList.vala:88
-#, fuzzy, c-format
-msgid ""
-"By removing '%s' you'll lose all print history and configuration associated "
-"with it."
-msgstr ""
-"Eliminando '%s' perderás todo el histórico de impresión\n"
-"y la configuración asociada a él."
-
-#: src/PrinterList.vala:94
-msgid "Remove"
-msgstr "Quitar"
-
 #: src/Plug.vala:35
 msgid "Printers"
 msgstr "Impresoras"
@@ -75,6 +62,122 @@ msgstr "Sin impresoras"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+
+#: src/Dialogs/AddDialog.vala:27
+msgid "Internet Printing Protocol (https)"
+msgstr "Protocolo de impresión en internet (https)"
+
+#: src/Dialogs/AddDialog.vala:29
+msgid "Internet Printing Protocol (http)"
+msgstr "Protocolo de Impresión por Internet (http)"
+
+#: src/Dialogs/AddDialog.vala:31
+msgid "Internet Printing Protocol (ipp)"
+msgstr "Protocolo de Impresión por Internet (ipp)"
+
+#: src/Dialogs/AddDialog.vala:33
+msgid "Internet Printing Protocol (ipps)"
+msgstr "Protocolo de Impresión por Internet (ipps)"
+
+#: src/Dialogs/AddDialog.vala:35
+msgid "Internet Printing Protocol (ipp14)"
+msgstr "Protocolo de Impresión por Internet (ipp14)"
+
+#: src/Dialogs/AddDialog.vala:37
+msgid "LPD/LPR Host or Printer"
+msgstr "Equipo o Impresora LPD/LPR"
+
+#: src/Dialogs/AddDialog.vala:39
+msgid "AppSocket/HP JetDirect"
+msgstr "AppSocket/HP JetDirect"
+
+#: src/Dialogs/AddDialog.vala:67
+msgid "Finding nearby printers…"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:86
+msgid "Refresh"
+msgstr "Actualizar"
+
+#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Widgets/JobRow.vala:55
+#, fuzzy
+msgid "Cancel"
+msgstr "Trabajo cancelado"
+
+#: src/Dialogs/AddDialog.vala:91
+msgid "Next"
+msgstr "Siguiente"
+
+#: src/Dialogs/AddDialog.vala:109
+msgid "Impossible to list all available printers"
+msgstr "Imposible listar todas las impresoras disponibles"
+
+#: src/Dialogs/AddDialog.vala:225
+msgid "Connection:"
+msgstr "Conexión:"
+
+#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+msgid "Description:"
+msgstr "Descripción:"
+
+#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+msgid "Location:"
+msgstr "Ubicación:"
+
+#: src/Dialogs/AddDialog.vala:246
+msgid "Lab 1 or John's desk"
+msgstr "Laboratorio 1 o escritorio de John"
+
+#: src/Dialogs/AddDialog.vala:304
+msgid "Previous"
+msgstr "Anterior"
+
+#: src/Dialogs/AddDialog.vala:308
+msgid "Add Printer"
+msgstr "Añadir impresora"
+
+#: src/Dialogs/AddDialog.vala:543
+msgid "(recommended)"
+msgstr "(recomendado)"
+
+#: src/Dialogs/AddDialog.vala:605
+msgid "Serial"
+msgstr "Número de serie"
+
+#: src/Dialogs/AddDialog.vala:608
+msgid "Local Printers"
+msgstr "Impresoras locales"
+
+#: src/Dialogs/AddDialog.vala:611
+msgid "Network Printers"
+msgstr "Impresoras de red"
+
+#: src/Dialogs/AddDialog.vala:614
+msgid "Available Network Printers"
+msgstr "Impresoras de red disponibles"
+
+#: src/Dialogs/RemoveDialog.vala:29
+#, c-format
+msgid "Are You Sure You Want To Remove '%s'?"
+msgstr ""
+
+#: src/Dialogs/RemoveDialog.vala:30
+#, fuzzy, c-format
+msgid ""
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
+msgstr ""
+"Eliminando '%s' perderás todo el histórico de impresión\n"
+"y la configuración asociada a él."
+
+#: src/Dialogs/RemoveDialog.vala:35
+msgid "Remove"
+msgstr "Quitar"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -460,18 +563,6 @@ msgstr "Carrete %d"
 msgid "Paper Source:"
 msgstr "Fuente de papel:"
 
-#: src/Views/SuppliesView.vala:30 src/Widgets/AddDialog.vala:233
-msgid "Description:"
-msgstr "Descripción:"
-
-#: src/Views/SuppliesView.vala:35 src/Widgets/AddDialog.vala:237
-msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
-
-#: src/Views/SuppliesView.vala:39 src/Widgets/AddDialog.vala:241
-msgid "Location:"
-msgstr "Ubicación:"
-
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
 msgstr "Laboratorio 1 o Escritorio de John"
@@ -480,92 +571,6 @@ msgstr "Laboratorio 1 o Escritorio de John"
 #, fuzzy
 msgid "Use as default printer:"
 msgstr "Usar como impresora por defecto"
-
-#: src/Widgets/AddDialog.vala:27
-msgid "Internet Printing Protocol (https)"
-msgstr "Protocolo de impresión en internet (https)"
-
-#: src/Widgets/AddDialog.vala:29
-msgid "Internet Printing Protocol (http)"
-msgstr "Protocolo de Impresión por Internet (http)"
-
-#: src/Widgets/AddDialog.vala:31
-msgid "Internet Printing Protocol (ipp)"
-msgstr "Protocolo de Impresión por Internet (ipp)"
-
-#: src/Widgets/AddDialog.vala:33
-msgid "Internet Printing Protocol (ipps)"
-msgstr "Protocolo de Impresión por Internet (ipps)"
-
-#: src/Widgets/AddDialog.vala:35
-msgid "Internet Printing Protocol (ipp14)"
-msgstr "Protocolo de Impresión por Internet (ipp14)"
-
-#: src/Widgets/AddDialog.vala:37
-msgid "LPD/LPR Host or Printer"
-msgstr "Equipo o Impresora LPD/LPR"
-
-#: src/Widgets/AddDialog.vala:39
-msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
-
-#: src/Widgets/AddDialog.vala:67
-msgid "Finding nearby printers…"
-msgstr ""
-
-#: src/Widgets/AddDialog.vala:86
-msgid "Refresh"
-msgstr "Actualizar"
-
-#: src/Widgets/AddDialog.vala:89 src/Widgets/AddDialog.vala:306
-#: src/Widgets/JobRow.vala:51
-#, fuzzy
-msgid "Cancel"
-msgstr "Trabajo cancelado"
-
-#: src/Widgets/AddDialog.vala:91
-msgid "Next"
-msgstr "Siguiente"
-
-#: src/Widgets/AddDialog.vala:109
-msgid "Impossible to list all available printers"
-msgstr "Imposible listar todas las impresoras disponibles"
-
-#: src/Widgets/AddDialog.vala:225
-msgid "Connection:"
-msgstr "Conexión:"
-
-#: src/Widgets/AddDialog.vala:246
-msgid "Lab 1 or John's desk"
-msgstr "Laboratorio 1 o escritorio de John"
-
-#: src/Widgets/AddDialog.vala:304
-msgid "Previous"
-msgstr "Anterior"
-
-#: src/Widgets/AddDialog.vala:308
-msgid "Add Printer"
-msgstr "Añadir impresora"
-
-#: src/Widgets/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(recomendado)"
-
-#: src/Widgets/AddDialog.vala:605
-msgid "Serial"
-msgstr "Número de serie"
-
-#: src/Widgets/AddDialog.vala:608
-msgid "Local Printers"
-msgstr "Impresoras locales"
-
-#: src/Widgets/AddDialog.vala:611
-msgid "Network Printers"
-msgstr "Impresoras de red"
-
-#: src/Widgets/AddDialog.vala:614
-msgid "Available Network Printers"
-msgstr "Impresoras de red disponibles"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -591,12 +596,16 @@ msgstr "Cian"
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/JobRow.vala:60 src/Widgets/JobRow.vala:105
+#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:97
+#: src/Widgets/JobRow.vala:101
 msgid "Resume"
+msgstr ""
+
+#: src/Widgets/PrinterRow.vala:107
+msgid "Disabled"
 msgstr ""
 
 #~ msgid "Add a printer to begin printing"
