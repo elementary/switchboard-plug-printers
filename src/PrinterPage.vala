@@ -20,11 +20,17 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.PrinterPage : Gtk.Grid {
+public class Printers.PrinterPage : Granite.SimpleSettingsPage {
     public unowned Printer printer { get; construct; }
 
     public PrinterPage (Printer printer) {
-        Object (printer: printer);
+        Object (
+            activatable: true,
+            icon_name: "printer",
+            title: printer.info,
+            description: printer.location,
+            printer: printer
+        );
     }
 
     construct {
@@ -38,40 +44,21 @@ public class Printers.PrinterPage : Gtk.Grid {
         stack_switcher.homogeneous = true;
         stack_switcher.stack = stack;
 
-        var image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DIALOG);
-
-        var title = new Gtk.Label (printer.info);
-        title.hexpand = true;
-        title.xalign = 0;
-        title.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-
-        var enable_switch = new Gtk.Switch ();
-        enable_switch.active = printer.state != "5" && printer.is_accepting_jobs;
-        enable_switch.valign = Gtk.Align.CENTER;
+        content_area.row_spacing = 24;
+        content_area.attach (stack_switcher, 0, 1);
+        content_area.attach (stack, 0, 2);
 
         var print_test = new Gtk.Button.with_label (_("Print Test Page"));
         print_test.clicked.connect (() => print_test_page ());
 
-        var action_area = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        action_area.layout_style = Gtk.ButtonBoxStyle.END;
         action_area.add (print_test);
 
-        margin = 12;
-        column_spacing = 12;
-        row_spacing = 24;
-        attach (image, 0, 0, 1, 1);
-        attach (title, 1, 0, 1, 1);
-        attach (enable_switch, 3, 0, 1, 1);
-        attach (stack_switcher, 0, 1, 4, 1);
-        attach (stack, 0, 2, 4, 1);
-        attach (action_area, 0, 3, 4, 1);
+        printer.bind_property ("info", this, "title");
+        printer.bind_property ("location", this, "description");
+
+        status_switch.bind_property ("active", printer, "enabled", BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
+
         show_all ();
-
-        printer.bind_property ("info", title, "label");
-
-        enable_switch.notify["active"].connect (() => {
-            printer.enabled = enable_switch.active;
-        });
     }
 
     private string? get_testprint_filename (string datadir) {
