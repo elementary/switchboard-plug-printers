@@ -3,10 +3,11 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-16 15:30+0000\n"
+"PO-Revision-Date: 2018-04-25 00:36+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
-"Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
-"switchboard/switchboard-plug-printers/en_CA/>\n"
+"Language-Team: English (Canada) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"printers/en_CA/>\n"
 "Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -159,7 +160,7 @@ msgstr "Available Network Printers"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Are You Sure You Want To Remove '%s'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -588,7 +589,7 @@ msgstr "Resume"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "Disabled"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Add a printer to begin printing"
