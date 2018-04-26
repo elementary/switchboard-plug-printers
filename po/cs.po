@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-26 00:03+0000\n"
+"PO-Revision-Date: 2018-04-27 00:03+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/cs/>\n"
@@ -549,7 +549,7 @@ msgstr ""
 
 #: src/Views/SetupView.vala:414
 msgid "Paper Source:"
-msgstr ""
+msgstr "Zdroj papíru:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
