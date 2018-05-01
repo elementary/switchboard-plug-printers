@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-01 11:02+0000\n"
+"PO-Revision-Date: 2018-05-04 00:06+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/de/>\n"
@@ -163,7 +163,7 @@ msgstr "Verfügbare Netzwerkdrucker"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr "Sind Sie sicher, dass Sie'%s 1' entfernen wollen?"
+msgstr "Sind Sie sicher, dass Sie '%s 1' entfernen wollen?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
