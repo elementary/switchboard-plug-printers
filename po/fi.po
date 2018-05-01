@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-02-25 00:09+0000\n"
+"PO-Revision-Date: 2018-05-04 00:06+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/fi/>\n"
+"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,17 +16,16 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Tulostimet"
+msgstr "Tulostusjono"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Sivun määritykset"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Asetukset ja tarvikkeet"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
@@ -53,13 +52,13 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Hallitse tulostimia, tulostusjonoja ja tarkasta väriaineiden määrä"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "Ei tulostimia"
+msgstr "Ei tulostimia käytettävissä"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+"Yhdistä tulostimeen napsauttamalla kuvaketta alla olevasta työkalupalkista."
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -91,7 +90,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Etsitään lähettyvillä olevia tulostimia…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -99,9 +98,8 @@ msgstr "Päivitä"
 
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
-#, fuzzy
 msgid "Cancel"
-msgstr "Työ peruttu"
+msgstr "Peru"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -162,16 +160,16 @@ msgstr "Saatavilla olevat verkkotulostimet"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Poistetaanko '%s'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Jos '%s' poistetaan, kaikki sen tulostushistoria\n"
-"ja siihen liitetyt määritykset poistetaan."
+"Jos '%s' poistetaan, kaikki sen tulostushistoria ja siihen liitetyt "
+"määritykset poistetaan."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -291,17 +289,15 @@ msgstr "Työ valmistui"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Tulostusjono on tyhjä"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Jonossa ei ole töitä"
+msgstr "Tulostusjonossa ei ole töitä."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Näytä valmistuneet työt"
+msgstr "Valmistuneet työt"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -562,9 +558,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "Labra 1 tai Juhan pöytä"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Käytä oletustulostimena"
+msgstr "Käytä oletustulostimena:"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -592,15 +587,15 @@ msgstr "Magenta"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Keskeytä"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Jatka"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "Pois käytöstä"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Lisää tulostin aloittaaksesi tulostuksen"
