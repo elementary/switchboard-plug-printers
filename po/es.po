@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-25 00:03+0000\n"
-"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
+"PO-Revision-Date: 2018-05-07 00:03+0000\n"
+"Last-Translator: Iuninefrendor <iuninefrendor@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/es/>\n"
 "Language: es\n"
@@ -16,9 +16,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Impresoras"
+msgstr "Cola de impresión"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
@@ -282,7 +281,7 @@ msgstr "Trabajo detenido"
 
 #: src/Objects/Job.vala:109
 msgid "Job Canceled"
-msgstr "Trabajo cancelado"
+msgstr "Impresión cancelada"
 
 #: src/Objects/Job.vala:111
 msgid "Job Aborted"
@@ -290,21 +289,19 @@ msgstr "Trabajo abortado"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
-msgstr "Trabajo completado"
+msgstr "Impresión completa"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
 msgstr "La cola de impresión está vacía"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "No hay trabajos en la cola"
+msgstr "No hay trabajos pendientes en la cola de impresión."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Mostrar trabajos completados"
+msgstr "Impresiones completadas"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -337,7 +334,7 @@ msgstr "Retrato reverso"
 
 #: src/Views/SetupView.vala:147
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Paisaje invertido"
 
 #: src/Views/SetupView.vala:156
 msgid "Orientation:"
@@ -433,7 +430,7 @@ msgstr "Gran capacidad"
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr ""
+msgstr "Mi buzón"
 
 #: src/Views/SetupView.vala:269
 #, c-format
@@ -443,7 +440,7 @@ msgstr ""
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Mailbox %d"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
