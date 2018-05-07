@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-07 00:03+0000\n"
+"PO-Revision-Date: 2018-05-07 22:02+0000\n"
 "Last-Translator: Iuninefrendor <iuninefrendor@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/es/>\n"
@@ -267,7 +267,6 @@ msgid "Job Pending"
 msgstr "Trabajo pendiente"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "En pausa"
 
@@ -312,7 +311,6 @@ msgid "Long Edge (Standard)"
 msgstr "Borde largo (Estándar)"
 
 #: src/Views/SetupView.vala:80
-#, fuzzy
 msgid "Short Edge (Flip)"
 msgstr "Borde corto (Voltear)"
 
@@ -378,53 +376,45 @@ msgstr "Modo de color:"
 
 #: src/Views/SetupView.vala:231
 msgid "Top Bin"
-msgstr ""
+msgstr "Superior"
 
 #: src/Views/SetupView.vala:234
-#, fuzzy
 msgid "Middle Bin"
 msgstr "Medio"
 
 #: src/Views/SetupView.vala:237
-#, fuzzy
 msgid "Bottom Bin"
 msgstr "Inferior"
 
 #: src/Views/SetupView.vala:240
-#, fuzzy
 msgid "Side Bin"
 msgstr "Lateral"
 
 #: src/Views/SetupView.vala:243
-#, fuzzy
 msgid "Left Bin"
 msgstr "Izquierda"
 
 #: src/Views/SetupView.vala:246
-#, fuzzy
 msgid "Right Bin"
 msgstr "Derecha"
 
 #: src/Views/SetupView.vala:249
-#, fuzzy
 msgid "Center Bin"
 msgstr "Centro"
 
 #: src/Views/SetupView.vala:252
-#, fuzzy
 msgid "Rear Bin"
 msgstr "Trasero"
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Boca arriba"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Boca abajo"
 
 #: src/Views/SetupView.vala:261
-#, fuzzy
 msgid "Large Capacity Bin"
 msgstr "Gran capacidad"
 
@@ -435,7 +425,7 @@ msgstr "Mi buzón"
 #: src/Views/SetupView.vala:269
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Apilado %d"
 
 #: src/Views/SetupView.vala:272
 #, c-format
