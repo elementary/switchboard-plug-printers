@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-07 22:02+0000\n"
+"PO-Revision-Date: 2018-05-08 00:11+0000\n"
 "Last-Translator: Iuninefrendor <iuninefrendor@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/es/>\n"
@@ -284,7 +284,7 @@ msgstr "Impresión cancelada"
 
 #: src/Objects/Job.vala:111
 msgid "Job Aborted"
-msgstr "Trabajo abortado"
+msgstr "Impresión abortada"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
