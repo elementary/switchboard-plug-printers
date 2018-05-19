@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-11 00:06+0000\n"
+"PO-Revision-Date: 2018-05-20 00:05+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/cs/>\n"
@@ -142,7 +142,7 @@ msgstr "(doporučené)"
 
 #: src/Dialogs/AddDialog.vala:605
 msgid "Serial"
-msgstr "Sériový"
+msgstr "Sériový port"
 
 #: src/Dialogs/AddDialog.vala:608
 msgid "Local Printers"
@@ -197,12 +197,12 @@ msgstr "Došla vývojka"
 #: src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr ""
+msgstr "Málo náplně"
 
 #: src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr ""
+msgstr "Došla náplň"
 
 #: src/Objects/Printer.vala:57
 msgctxt "printer state"
@@ -227,12 +227,12 @@ msgstr "Došel papír"
 #: src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
-msgstr ""
+msgstr "Odpojená"
 
 #: src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
-msgstr "Zastavený"
+msgstr "Zastavená"
 
 #: src/Objects/Printer.vala:69
 msgctxt "printer state"
@@ -247,12 +247,12 @@ msgstr "Nádoba na odpad je plná"
 #: src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr ""
+msgstr "Optický fotoválec je blízko konce své životnosti"
 
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
+msgstr "Optický fotoválec již nefunguje"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -260,57 +260,55 @@ msgstr "Připraveno"
 
 #: src/Objects/Job.vala:101
 msgid "Job Pending"
-msgstr ""
+msgstr "Úloha čeká"
 
 #: src/Objects/Job.vala:103
 msgid "On Hold"
-msgstr ""
+msgstr "Pozastaveno"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
-msgstr "Zpracovává…"
+msgstr "Zpracovává se…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
-msgstr "Výkon zastaven"
+msgstr "Úloha zastavena"
 
 #: src/Objects/Job.vala:109
 msgid "Job Canceled"
-msgstr "Výkon zrušen"
+msgstr "Úloha zrušena"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "Výkon zamítnut"
+msgstr "Úloha zamítnuta"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
-msgstr "Výkon dokončen"
+msgstr "Úloha dokončena"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Tisková fronta je prázdná"
 
 #: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
-msgstr ""
+msgstr "V této frontě nejsou žádné čekající úlohy."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Výkon dokončen"
+msgstr "Dokončené úlohy"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
-msgstr ""
+msgstr "Stránek na stranu:"
 
 #: src/Views/SetupView.vala:78
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Dlouhá hrana (standardní)"
 
 #: src/Views/SetupView.vala:80
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Krátká hrana (flip)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
@@ -318,19 +316,19 @@ msgstr "Oboustranně:"
 
 #: src/Views/SetupView.vala:138
 msgid "Portrait"
-msgstr ""
+msgstr "Portrét"
 
 #: src/Views/SetupView.vala:141
 msgid "Landscape"
-msgstr ""
+msgstr "Krajina"
 
 #: src/Views/SetupView.vala:144
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Obrácený portrét"
 
 #: src/Views/SetupView.vala:147
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Obrácená krajina"
 
 #: src/Views/SetupView.vala:156
 msgid "Orientation:"
@@ -338,11 +336,11 @@ msgstr "Orientace:"
 
 #: src/Views/SetupView.vala:176
 msgid "Media Size:"
-msgstr ""
+msgstr "Velikost média:"
 
 #: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
 msgid "Automatic"
-msgstr "Automatiky"
+msgstr "Automaticky"
 
 #: src/Views/SetupView.vala:193
 msgid "One Color"
@@ -374,77 +372,74 @@ msgstr "Barevný mód:"
 
 #: src/Views/SetupView.vala:231
 msgid "Top Bin"
-msgstr ""
+msgstr "Horní zásobník"
 
 #: src/Views/SetupView.vala:234
 msgid "Middle Bin"
-msgstr ""
+msgstr "Střední zásobník"
 
 #: src/Views/SetupView.vala:237
 msgid "Bottom Bin"
-msgstr ""
+msgstr "Dolní zásobník"
 
 #: src/Views/SetupView.vala:240
 msgid "Side Bin"
-msgstr ""
+msgstr "Boční zásobník"
 
 #: src/Views/SetupView.vala:243
-#, fuzzy
 msgid "Left Bin"
-msgstr "Levé"
+msgstr "Levý zásobník"
 
 #: src/Views/SetupView.vala:246
-#, fuzzy
 msgid "Right Bin"
-msgstr "Pravé"
+msgstr "Pravý zásobník"
 
 #: src/Views/SetupView.vala:249
-#, fuzzy
 msgid "Center Bin"
-msgstr "Střed"
+msgstr "Prostřední zásobník"
 
 #: src/Views/SetupView.vala:252
 msgid "Rear Bin"
-msgstr ""
+msgstr "Zadní zásobník"
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Zásobník s tiskem na vrchní stranu"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Zásobník s tiskem na spodní stranu"
 
 #: src/Views/SetupView.vala:261
 msgid "Large Capacity Bin"
-msgstr ""
+msgstr "Velkokapacitní zásobník"
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr ""
+msgstr "Moje emailová schránka"
 
 #: src/Views/SetupView.vala:269
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Stohovač %d"
 
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Emailová schránka %d"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
 msgid "Tray %d"
-msgstr ""
+msgstr "Zásobník %d"
 
 #: src/Views/SetupView.vala:288
 msgid "Output Tray:"
-msgstr ""
+msgstr "Výstupní zásobník:"
 
 #: src/Views/SetupView.vala:302
 msgid "Draft"
-msgstr "Koncept"
+msgstr "Náčrt"
 
 #: src/Views/SetupView.vala:305
 msgid "Normal"
@@ -464,31 +459,31 @@ msgstr "Umístění papíru"
 
 #: src/Views/SetupView.vala:331
 msgid "Alternate Tray"
-msgstr ""
+msgstr "Alternativní zásobník"
 
 #: src/Views/SetupView.vala:334
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Alternativní role"
 
 #: src/Views/SetupView.vala:340
 msgid "Bottom"
-msgstr ""
+msgstr "Spodní"
 
 #: src/Views/SetupView.vala:343
 msgid "By-pass Tray"
-msgstr ""
+msgstr "Náhradní zásobník"
 
 #: src/Views/SetupView.vala:346
 msgid "Center"
-msgstr "Střed"
+msgstr "Střední"
 
 #: src/Views/SetupView.vala:349
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "Plynulé automatické plnění"
 
 #: src/Views/SetupView.vala:353
 msgid "Disk"
-msgstr ""
+msgstr "Disk"
 
 #: src/Views/SetupView.vala:356
 msgid "Envelope"
@@ -496,31 +491,31 @@ msgstr "Obálka"
 
 #: src/Views/SetupView.vala:359
 msgid "Hagaki"
-msgstr ""
+msgstr "Hagaki"
 
 #: src/Views/SetupView.vala:362
 msgid "Large Capacity"
-msgstr ""
+msgstr "Velkokapacitní"
 
 #: src/Views/SetupView.vala:365
 msgid "Left"
-msgstr "Levé"
+msgstr "Levý"
 
 #: src/Views/SetupView.vala:368
 msgid "Main Tray"
-msgstr ""
+msgstr "Hlavní zásobík"
 
 #: src/Views/SetupView.vala:371
 msgid "Main Roll"
-msgstr ""
+msgstr "Hlavní role"
 
 #: src/Views/SetupView.vala:374
 msgid "Manual"
-msgstr ""
+msgstr "Ruční"
 
 #: src/Views/SetupView.vala:377
 msgid "Middle"
-msgstr ""
+msgstr "Střední"
 
 #: src/Views/SetupView.vala:380
 msgid "Photo"
@@ -528,24 +523,24 @@ msgstr "Fotka"
 
 #: src/Views/SetupView.vala:384
 msgid "Rear"
-msgstr ""
+msgstr "Zadní"
 
 #: src/Views/SetupView.vala:387
 msgid "Right"
-msgstr "Pravé"
+msgstr "Pravý"
 
 #: src/Views/SetupView.vala:390
 msgid "Side"
-msgstr ""
+msgstr "Boční"
 
 #: src/Views/SetupView.vala:393
 msgid "Top"
-msgstr ""
+msgstr "Horní"
 
 #: src/Views/SetupView.vala:398
 #, c-format
 msgid "Roll %d"
-msgstr ""
+msgstr "Role %d"
 
 #: src/Views/SetupView.vala:414
 msgid "Paper Source:"
@@ -569,19 +564,19 @@ msgstr "Černá (BK)"
 
 #: src/Widgets/InkLevel.vala:108
 msgid "Black"
-msgstr "Černá"
+msgstr "Černá (Black)"
 
 #: src/Widgets/InkLevel.vala:111
 msgid "Yellow"
-msgstr "Žlutá"
+msgstr "Žlutá (Yellow)"
 
 #: src/Widgets/InkLevel.vala:114
 msgid "Cyan"
-msgstr "Tyrkysová"
+msgstr "Tyrkysová (Cyan)"
 
 #: src/Widgets/InkLevel.vala:117
 msgid "Magenta"
-msgstr "Purpurová"
+msgstr "Purpurová (Magenta)"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
