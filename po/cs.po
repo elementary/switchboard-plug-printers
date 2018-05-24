@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-20 00:05+0000\n"
+"PO-Revision-Date: 2018-05-25 00:08+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/cs/>\n"
@@ -159,7 +159,7 @@ msgstr "Dostupné síťové tiskárny"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr "Jste si jisti, že chcete odebrat '%s'?"
+msgstr "Opravdu chcete odebrat '%s'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
