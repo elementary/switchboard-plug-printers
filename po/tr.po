@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-27 00:06+0000\n"
+"PO-Revision-Date: 2018-05-28 00:03+0000\n"
 "Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/tr/>\n"
@@ -309,7 +309,7 @@ msgstr "Uzun Kenar (Standart)"
 
 #: src/Views/SetupView.vala:80
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Kısa Kenar (Çevir)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
@@ -317,7 +317,7 @@ msgstr "Çift taraflı"
 
 #: src/Views/SetupView.vala:138
 msgid "Portrait"
-msgstr ""
+msgstr "Dikey"
 
 #: src/Views/SetupView.vala:141
 msgid "Landscape"
