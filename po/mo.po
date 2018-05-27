@@ -2,154 +2,166 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
+"PO-Revision-Date: 2018-05-27 20:31+0000\n"
+"Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
+"Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/mo/>\n"
+"Language: mo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 
 #: src/PrinterPage.vala:32
 msgid "Print Queue"
-msgstr ""
+msgstr "Coadă de imprimare"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Configurare pagină"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Setări și consumabile"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
-msgstr ""
+msgstr "Imprimă pagină de probă"
 
 #: src/PrinterPage.vala:119
 msgid "Test page"
-msgstr ""
+msgstr "Pagina de probă"
 
 #: src/PrinterList.vala:51
 msgid "Add Printer…"
-msgstr ""
+msgstr "Adăugați imprimantă …"
 
 #: src/PrinterList.vala:53
 msgid "Remove Printer"
-msgstr ""
+msgstr "Eliminați impresora"
 
 #: src/Plug.vala:35
 msgid "Printers"
-msgstr ""
+msgstr "Imprimante"
 
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
+"Configurați imprimantele, gestionați cozile de imprimare și vizualizați "
+"nivelurile de cerneală"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
-msgstr ""
+msgstr "Nu sunt disponibile imprimante"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+"Conectați-vă la o imprimantă făcând clic pe pictograma din bara de "
+"instrumente de mai jos."
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "Protocolul de imprimare pe Internet (https)"
 
 #: src/Dialogs/AddDialog.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "Protocolul de imprimare pe Internet (http)"
 
 #: src/Dialogs/AddDialog.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "Protocolul de imprimare pe Internet (ipp)"
 
 #: src/Dialogs/AddDialog.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "Protocol de imprimare pe Internet (ipps)"
 
 #: src/Dialogs/AddDialog.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "Protocol de imprimare pe Internet (ipp14)"
 
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "LPD / LPR gazdă sau imprimantă"
 
 #: src/Dialogs/AddDialog.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "AppSocket/HP-JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Găsirea imprimantelor din apropiere …"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
-msgstr ""
+msgstr "Reîmprospătă"
 
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
-msgstr ""
+msgstr "Anulare"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
-msgstr ""
+msgstr "Înainte"
 
 #: src/Dialogs/AddDialog.vala:109
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "Este imposibil să listați toate imprimantele disponibile"
 
 #: src/Dialogs/AddDialog.vala:225
 msgid "Connection:"
-msgstr ""
+msgstr "Conexiune:"
 
 #: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
 msgid "Description:"
-msgstr ""
+msgstr "Descriere:"
 
 #: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter x3000"
 
 #: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
 msgid "Location:"
-msgstr ""
+msgstr "Locație:"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "Lab 1 sau destrop de John"
 
 #: src/Dialogs/AddDialog.vala:304
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: src/Dialogs/AddDialog.vala:308
 msgid "Add Printer"
-msgstr ""
+msgstr "Adăugați imprimanta"
 
 #: src/Dialogs/AddDialog.vala:543
 msgid "(recommended)"
-msgstr ""
+msgstr "(recomandat)"
 
 #: src/Dialogs/AddDialog.vala:605
 msgid "Serial"
-msgstr ""
+msgstr "Serialul"
 
 #: src/Dialogs/AddDialog.vala:608
 msgid "Local Printers"
-msgstr ""
+msgstr "Imprimante locale"
 
 #: src/Dialogs/AddDialog.vala:611
 msgid "Network Printers"
-msgstr ""
+msgstr "Imprimante în rețea"
 
 #: src/Dialogs/AddDialog.vala:614
 msgid "Available Network Printers"
-msgstr ""
+msgstr "Disponibile imprimante de rețea"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Ești sigur că vrei să ștergi '%s 1'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -157,423 +169,425 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
+"Prin eliminarea '%s 1' veți pierde tot istoricul de imprimare și "
+"configurația asociată cu acesta."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
-msgstr ""
+msgstr "Șterge"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
-msgstr ""
+msgstr "Toner redus"
 
 #: src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
-msgstr ""
+msgstr "Fără toner"
 
 #: src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
-msgstr ""
+msgstr "Scăzut pe dezvoltator"
 
 #: src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
-msgstr ""
+msgstr "În afara dezvoltatorului"
 
 #: src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr ""
+msgstr "Scăzut pe o alimentare cu marker"
 
 #: src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr ""
+msgstr "Din aprovizionarea unui marker"
 
 #: src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
-msgstr ""
+msgstr "Deschideți capacul"
 
 #: src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
-msgstr ""
+msgstr "Deschide ușa"
 
 #: src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
-msgstr ""
+msgstr "Puțină hârtie"
 
 #: src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr ""
+msgstr "Fără hârtie"
 
 #: src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
-msgstr ""
+msgstr "Deconectat"
 
 #: src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
-msgstr ""
+msgstr "Oprit"
 
 #: src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
-msgstr ""
+msgstr "Recipiente de deșeuri aproape pline"
 
 #: src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
-msgstr ""
+msgstr "Recipientul de deșeuri este plin"
 
 #: src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr ""
+msgstr "Conductorul fotografic optic este aproape de sfârșitul duratei de viață"
 
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
+msgstr "Conductorul fotografic optic nu mai funcționează"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
-msgstr ""
+msgstr "Gata"
 
 #: src/Objects/Job.vala:101
 msgid "Job Pending"
-msgstr ""
+msgstr "Lucru în așteptare"
 
 #: src/Objects/Job.vala:103
 msgid "On Hold"
-msgstr ""
+msgstr "În așteptare"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
-msgstr ""
+msgstr "Prelucrare…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
-msgstr ""
+msgstr "Lucru oprit"
 
 #: src/Objects/Job.vala:109
 msgid "Job Canceled"
-msgstr ""
+msgstr "Lucru Anulat"
 
 #: src/Objects/Job.vala:111
 msgid "Job Aborted"
-msgstr ""
+msgstr "Lucrul a fost omis"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
-msgstr ""
+msgstr "Lucru comletat"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Coada de imprimire este goală"
 
 #: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
-msgstr ""
+msgstr "Nu există nicio lucrare în coada de așteptare."
 
 #: src/Views/JobsView.vala:76
 msgid "Completed Jobs"
-msgstr ""
+msgstr "Lucrări finalizate"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
-msgstr ""
+msgstr "Pagini pe fiecare parte:"
 
 #: src/Views/SetupView.vala:78
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "LongEdge (Standard)"
 
 #: src/Views/SetupView.vala:80
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Margine scurtă (Flip)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
-msgstr ""
+msgstr "Două fețe:"
 
 #: src/Views/SetupView.vala:138
 msgid "Portrait"
-msgstr ""
+msgstr "Portret"
 
 #: src/Views/SetupView.vala:141
 msgid "Landscape"
-msgstr ""
+msgstr "Peisaj"
 
 #: src/Views/SetupView.vala:144
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Portret invers"
 
 #: src/Views/SetupView.vala:147
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Peisaj invers"
 
 #: src/Views/SetupView.vala:156
 msgid "Orientation:"
-msgstr ""
+msgstr "Orientare:"
 
 #: src/Views/SetupView.vala:176
 msgid "Media Size:"
-msgstr ""
+msgstr "Dimensiune Media:"
 
 #: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
 msgid "Automatic"
-msgstr ""
+msgstr "Automat"
 
 #: src/Views/SetupView.vala:193
 msgid "One Color"
-msgstr ""
+msgstr "O singură culoare"
 
 #: src/Views/SetupView.vala:196
 msgid "Color"
-msgstr ""
+msgstr "Culoare"
 
 #: src/Views/SetupView.vala:199
 msgid "One Color + Black"
-msgstr ""
+msgstr "O culoare + Negru"
 
 #: src/Views/SetupView.vala:202
 msgid "Greyscale"
-msgstr ""
+msgstr "Tonuri de gri"
 
 #: src/Views/SetupView.vala:205
 msgid "Processed Color"
-msgstr ""
+msgstr "Culoare procesată"
 
 #: src/Views/SetupView.vala:208
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "Tonuri de gri procesată"
 
 #: src/Views/SetupView.vala:217
 msgid "Color mode:"
-msgstr ""
+msgstr "Modul color:"
 
 #: src/Views/SetupView.vala:231
 msgid "Top Bin"
-msgstr ""
+msgstr "Bin superior"
 
 #: src/Views/SetupView.vala:234
 msgid "Middle Bin"
-msgstr ""
+msgstr "Compartimentul mediu"
 
 #: src/Views/SetupView.vala:237
 msgid "Bottom Bin"
-msgstr ""
+msgstr "Compartimentul inferior"
 
 #: src/Views/SetupView.vala:240
 msgid "Side Bin"
-msgstr ""
+msgstr "Compartimentul lateral"
 
 #: src/Views/SetupView.vala:243
 msgid "Left Bin"
-msgstr ""
+msgstr "Bințul stâng"
 
 #: src/Views/SetupView.vala:246
 msgid "Right Bin"
-msgstr ""
+msgstr "Bințul drept"
 
 #: src/Views/SetupView.vala:249
 msgid "Center Bin"
-msgstr ""
+msgstr "Bliț central"
 
 #: src/Views/SetupView.vala:252
 msgid "Rear Bin"
-msgstr ""
+msgstr "Recipientul din spate"
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Cu fața în sus"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Cu fața în jos"
 
 #: src/Views/SetupView.vala:261
 msgid "Large Capacity Bin"
-msgstr ""
+msgstr "Capac de mare capacitate"
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr ""
+msgstr "Cutia mea poștală"
 
 #: src/Views/SetupView.vala:269
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Încărcător %d 1"
 
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Cutia poștală %d 1"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
 msgid "Tray %d"
-msgstr ""
+msgstr "Tavă %d 1"
 
 #: src/Views/SetupView.vala:288
 msgid "Output Tray:"
-msgstr ""
+msgstr "Tavă de ieșire:"
 
 #: src/Views/SetupView.vala:302
 msgid "Draft"
-msgstr ""
+msgstr "Proiect"
 
 #: src/Views/SetupView.vala:305
 msgid "Normal"
-msgstr ""
+msgstr "Normală"
 
 #: src/Views/SetupView.vala:308
 msgid "High"
-msgstr ""
+msgstr "Ridicat"
 
 #: src/Views/SetupView.vala:314
 msgid "Quality:"
-msgstr ""
+msgstr "Calitate:"
 
 #: src/Views/SetupView.vala:328
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Alocarea hârtiei"
 
 #: src/Views/SetupView.vala:331
 msgid "Alternate Tray"
-msgstr ""
+msgstr "Tavă alternativă"
 
 #: src/Views/SetupView.vala:334
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Rolă alternativă"
 
 #: src/Views/SetupView.vala:340
 msgid "Bottom"
-msgstr ""
+msgstr "Fund"
 
 #: src/Views/SetupView.vala:343
 msgid "By-pass Tray"
-msgstr ""
+msgstr "Tava de trecere"
 
 #: src/Views/SetupView.vala:346
 msgid "Center"
-msgstr ""
+msgstr "Centru"
 
 #: src/Views/SetupView.vala:349
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "Continuă alimentarea automată"
 
 #: src/Views/SetupView.vala:353
 msgid "Disk"
-msgstr ""
+msgstr "Disc"
 
 #: src/Views/SetupView.vala:356
 msgid "Envelope"
-msgstr ""
+msgstr "Plic"
 
 #: src/Views/SetupView.vala:359
 msgid "Hagaki"
-msgstr ""
+msgstr "Hagakii"
 
 #: src/Views/SetupView.vala:362
 msgid "Large Capacity"
-msgstr ""
+msgstr "Capacitate mare"
 
 #: src/Views/SetupView.vala:365
 msgid "Left"
-msgstr ""
+msgstr "Stânga"
 
 #: src/Views/SetupView.vala:368
 msgid "Main Tray"
-msgstr ""
+msgstr "Tava principală"
 
 #: src/Views/SetupView.vala:371
 msgid "Main Roll"
-msgstr ""
+msgstr "Rolă principală"
 
 #: src/Views/SetupView.vala:374
 msgid "Manual"
-msgstr ""
+msgstr "Manualul"
 
 #: src/Views/SetupView.vala:377
 msgid "Middle"
-msgstr ""
+msgstr "Mijloc"
 
 #: src/Views/SetupView.vala:380
 msgid "Photo"
-msgstr ""
+msgstr "Foto"
 
 #: src/Views/SetupView.vala:384
 msgid "Rear"
-msgstr ""
+msgstr "Spate"
 
 #: src/Views/SetupView.vala:387
 msgid "Right"
-msgstr ""
+msgstr "Dreapta"
 
 #: src/Views/SetupView.vala:390
 msgid "Side"
-msgstr ""
+msgstr "Latură"
 
 #: src/Views/SetupView.vala:393
 msgid "Top"
-msgstr ""
+msgstr "Sus"
 
 #: src/Views/SetupView.vala:398
 #, c-format
 msgid "Roll %d"
-msgstr ""
+msgstr "Roll %d 1"
 
 #: src/Views/SetupView.vala:414
 msgid "Paper Source:"
-msgstr ""
+msgstr "Sursa de hârtie:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
-msgstr ""
+msgstr "Lab1 or John's Desk"
 
 #: src/Views/SuppliesView.vala:47
 msgid "Use as default printer:"
-msgstr ""
+msgstr "Utilizați ca imprimantă implicită:"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "Negru (PGBK)"
 
 #: src/Widgets/InkLevel.vala:105
 msgid "Black (BK)"
-msgstr ""
+msgstr "Negru (BK)"
 
 #: src/Widgets/InkLevel.vala:108
 msgid "Black"
-msgstr ""
+msgstr "Negru"
 
 #: src/Widgets/InkLevel.vala:111
 msgid "Yellow"
-msgstr ""
+msgstr "Galben"
 
 #: src/Widgets/InkLevel.vala:114
 msgid "Cyan"
-msgstr ""
+msgstr "Cian"
 
 #: src/Widgets/InkLevel.vala:117
 msgid "Magenta"
-msgstr ""
+msgstr "Purpuriu"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Pauză"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Relua"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "Dezactivat"
