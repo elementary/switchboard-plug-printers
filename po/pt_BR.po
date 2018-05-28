@@ -3,8 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-28 23:59+0000\n"
-"Last-Translator: Andrey Azevedo <andreyaze@gmail.com>\n"
+"PO-Revision-Date: 2018-05-29 00:00+0000\n"
+"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
+"\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
 "printers/pt_BR/>\n"
@@ -98,9 +99,8 @@ msgstr "Atualizar"
 
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
-#, fuzzy
 msgid "Cancel"
-msgstr "Tarefa cancelada"
+msgstr "Cancelar"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
