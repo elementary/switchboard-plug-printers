@@ -3,30 +3,31 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2017-05-17 17:02+0000\n"
-"Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
-"switchboard/switchboard-plug-printers/pt_BR/>\n"
+"PO-Revision-Date: 2018-05-28 23:57+0000\n"
+"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
+"\n"
+"Language-Team: Portuguese (Brazil) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"printers/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Impressoras"
+msgstr "Fila de impressão"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Configurações da Página"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Configurações e Suprimentos"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
@@ -53,9 +54,8 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Configurar impressoras, ver filas de impressão e níveis de tinta"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "Sem impressoras"
+msgstr "Sem Impressoras Disponíveis"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
