@@ -4,8 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
 "PO-Revision-Date: 2018-05-29 00:07+0000\n"
-"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
-"\n"
+"Last-Translator: Deleted User <noreply@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
 "printers/pt_BR/>\n"
@@ -447,7 +446,7 @@ msgstr "Bandeja %d"
 
 #: src/Views/SetupView.vala:288
 msgid "Output Tray:"
-msgstr "Bandeja de saída"
+msgstr "Bandeja de saída:"
 
 #: src/Views/SetupView.vala:302
 msgid "Draft"
