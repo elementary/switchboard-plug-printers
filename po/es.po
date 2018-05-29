@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-30 00:04+0000\n"
+"PO-Revision-Date: 2018-06-06 06:00+0000\n"
 "Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/es/>\n"
@@ -515,7 +515,7 @@ msgstr "Carrete principal"
 
 #: src/Views/SetupView.vala:374
 msgid "Manual"
-msgstr ""
+msgstr "Manual"
 
 #: src/Views/SetupView.vala:377
 msgid "Middle"
