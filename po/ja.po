@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-27 00:06+0000\n"
+"PO-Revision-Date: 2018-05-30 00:04+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/ja/>\n"
@@ -515,7 +515,7 @@ msgstr "メインロール"
 
 #: src/Views/SetupView.vala:374
 msgid "Manual"
-msgstr "手差し"
+msgstr "手動"
 
 #: src/Views/SetupView.vala:377
 msgid "Middle"
