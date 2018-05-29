@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-27 20:31+0000\n"
+"PO-Revision-Date: 2018-05-30 00:04+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/mo/>\n"
@@ -342,7 +342,7 @@ msgstr "Dimensiune Media:"
 
 #: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
 msgid "Automatic"
-msgstr "Automat"
+msgstr "Automatico"
 
 #: src/Views/SetupView.vala:193
 msgid "One Color"
@@ -513,7 +513,7 @@ msgstr "Rolă principală"
 
 #: src/Views/SetupView.vala:374
 msgid "Manual"
-msgstr "Manualul"
+msgstr "Manuală"
 
 #: src/Views/SetupView.vala:377
 msgid "Middle"
