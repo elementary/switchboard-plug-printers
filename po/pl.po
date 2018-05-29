@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-24 00:07+0000\n"
+"PO-Revision-Date: 2018-05-30 00:04+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/pl/>\n"
@@ -345,7 +345,7 @@ msgstr "Rozmiar medium:"
 
 #: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
 msgid "Automatic"
-msgstr "Automatyczne"
+msgstr "Automatyczny"
 
 #: src/Views/SetupView.vala:193
 msgid "One Color"
