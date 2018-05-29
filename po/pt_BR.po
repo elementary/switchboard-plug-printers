@@ -3,8 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-29 00:04+0000\n"
-"Last-Translator: Andrey Azevedo <andreyaze@gmail.com>\n"
+"PO-Revision-Date: 2018-05-29 00:05+0000\n"
+"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
+"\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
 "printers/pt_BR/>\n"
@@ -294,14 +295,12 @@ msgid "Print Queue Is Empty"
 msgstr "A fila de impressão está vazia"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Não há tarefas na fila"
+msgstr "Não há tarefas pendentes na fila."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Mostrar tarefas concluídas"
+msgstr "Tarefas concluídas"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -309,11 +308,11 @@ msgstr "Páginas por lado:"
 
 #: src/Views/SetupView.vala:78
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Margem Larga (Padrão)"
 
 #: src/Views/SetupView.vala:80
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Margem Estreita (Flip)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
