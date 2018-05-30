@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-25 00:08+0000\n"
+"PO-Revision-Date: 2018-05-31 00:03+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/cs/>\n"
@@ -340,7 +340,7 @@ msgstr "Velikost média:"
 
 #: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
 msgid "Automatic"
-msgstr "Automaticky"
+msgstr "Automatický"
 
 #: src/Views/SetupView.vala:193
 msgid "One Color"
@@ -511,7 +511,7 @@ msgstr "Hlavní role"
 
 #: src/Views/SetupView.vala:374
 msgid "Manual"
-msgstr "Ruční"
+msgstr "Ručně"
 
 #: src/Views/SetupView.vala:377
 msgid "Middle"
