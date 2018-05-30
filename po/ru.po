@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-21 00:09+0000\n"
+"PO-Revision-Date: 2018-05-31 00:03+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/ru/>\n"
@@ -17,13 +17,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Принтеры"
+msgstr "Очередь печати"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Параметры страницы"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
