@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-20 19:55+0000\n"
+"PO-Revision-Date: 2018-05-31 00:03+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/lt/>\n"
@@ -344,7 +344,7 @@ msgstr "Popieriaus dydis:"
 
 #: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
 msgid "Automatic"
-msgstr "Automatiškai"
+msgstr "Automatinis"
 
 #: src/Views/SetupView.vala:193
 msgid "One Color"
