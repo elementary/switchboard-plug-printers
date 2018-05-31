@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-31 00:03+0000\n"
+"PO-Revision-Date: 2018-06-01 00:08+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/hu/>\n"
@@ -49,7 +49,9 @@ msgstr "Nyomtatók"
 
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "Nyomtatók beállítása, nyomtatási sorok"
+msgstr ""
+"Állítsa be a nyomtatókat, kezelje a nyomtatási sort és ellenőrizze a "
+"festékszintet"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
@@ -57,39 +59,39 @@ msgstr "Nincsenek elérhető nyomtatók"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr "Csatlakozzon egy nyomtatóhoz az alábbi ikonra kattintva az eszköztáron."
+msgstr ""
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr "Internetes nyomtatási protokoll (https)"
+msgstr ""
 
 #: src/Dialogs/AddDialog.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr "Internetes nyomtatási protokoll (http)"
+msgstr ""
 
 #: src/Dialogs/AddDialog.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr "Internetes nyomtatási protokoll (ipp)"
+msgstr ""
 
 #: src/Dialogs/AddDialog.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr "Internetes nyomtatási protokoll (ipps)"
+msgstr ""
 
 #: src/Dialogs/AddDialog.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr "Internetes nyomtatási protokoll (ipp14)"
+msgstr ""
 
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr "LPD / LPR hoszt vagy nyomtató"
+msgstr ""
 
 #: src/Dialogs/AddDialog.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr "AppSocket/HP JetDirect"
+msgstr ""
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr "Közeli nyomtatók keresése …"
+msgstr "Közeli nyomtatók keresése…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -106,7 +108,7 @@ msgstr "Következő"
 
 #: src/Dialogs/AddDialog.vala:109
 msgid "Impossible to list all available printers"
-msgstr "Lehetetlen felsorolni az összes elérhető nyomtatót"
+msgstr ""
 
 #: src/Dialogs/AddDialog.vala:225
 msgid "Connection:"
@@ -126,7 +128,7 @@ msgstr "Hely:"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
-msgstr "1-es labor vagy"
+msgstr "1-es labor vagy John asztala"
 
 #: src/Dialogs/AddDialog.vala:304
 msgid "Previous"
@@ -142,7 +144,7 @@ msgstr "(ajánlott)"
 
 #: src/Dialogs/AddDialog.vala:605
 msgid "Serial"
-msgstr "Soros"
+msgstr ""
 
 #: src/Dialogs/AddDialog.vala:608
 msgid "Local Printers"
@@ -166,7 +168,9 @@ msgstr "Biztosan el akarja távolítani: '%s'?"
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
-msgstr "'%s' eltávolításával"
+msgstr ""
+"'%s' eltávolításával minden nyomtatási előzmény és konfiguráció el fog "
+"veszni."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -185,12 +189,12 @@ msgstr "Elfogyott a festék"
 #: src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
-msgstr "Kevés az előhívószer"
+msgstr ""
 
 #: src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
-msgstr "Elfogyott az előhívószer"
+msgstr ""
 
 #: src/Objects/Printer.vala:53
 msgctxt "printer state"
@@ -205,12 +209,12 @@ msgstr ""
 #: src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
-msgstr "Nyissa ki a fedelet"
+msgstr ""
 
 #: src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
-msgstr "Nyitott ajtó"
+msgstr ""
 
 #: src/Objects/Printer.vala:61
 msgctxt "printer state"
@@ -230,27 +234,27 @@ msgstr "Offline"
 #: src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
-msgstr "Megállt"
+msgstr ""
 
 #: src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
-msgstr "A hulladéktartály mindjárt tele van"
+msgstr ""
 
 #: src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
-msgstr "A hulladéktartály tele van"
+msgstr ""
 
 #: src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr "Az optikai fényvezető nemsokára tönkremegy"
+msgstr ""
 
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr "Az optikai fényvezető tönkrement"
+msgstr ""
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -258,7 +262,7 @@ msgstr "Kész"
 
 #: src/Objects/Job.vala:101
 msgid "Job Pending"
-msgstr "Munka függőben"
+msgstr "Feladat függőben"
 
 #: src/Objects/Job.vala:103
 msgid "On Hold"
@@ -298,19 +302,19 @@ msgstr "Befejezett feladatok"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
-msgstr "Oldalak laponként:"
+msgstr ""
 
 #: src/Views/SetupView.vala:78
 msgid "Long Edge (Standard)"
-msgstr "Hosszú él (szabvány)"
+msgstr ""
 
 #: src/Views/SetupView.vala:80
 msgid "Short Edge (Flip)"
-msgstr "Rövid él (fordított)"
+msgstr ""
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
-msgstr "Kétoldalas:"
+msgstr ""
 
 #: src/Views/SetupView.vala:138
 msgid "Portrait"
@@ -322,11 +326,11 @@ msgstr "Fekvő"
 
 #: src/Views/SetupView.vala:144
 msgid "Reverse portrait"
-msgstr "Fordított álló"
+msgstr ""
 
 #: src/Views/SetupView.vala:147
 msgid "Reverse landscape"
-msgstr "Fordított fekvő"
+msgstr ""
 
 #: src/Views/SetupView.vala:156
 msgid "Orientation:"
@@ -334,166 +338,166 @@ msgstr "Irány:"
 
 #: src/Views/SetupView.vala:176
 msgid "Media Size:"
-msgstr "Médiaméret:"
+msgstr ""
 
 #: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
 msgid "Automatic"
-msgstr "Automatikus"
+msgstr ""
 
 #: src/Views/SetupView.vala:193
 msgid "One Color"
-msgstr "Egy szín"
+msgstr ""
 
 #: src/Views/SetupView.vala:196
 msgid "Color"
-msgstr "Színes"
+msgstr "Szín"
 
 #: src/Views/SetupView.vala:199
 msgid "One Color + Black"
-msgstr "Egy szín + fekete"
+msgstr ""
 
 #: src/Views/SetupView.vala:202
 msgid "Greyscale"
-msgstr "Fekete-fehér"
+msgstr ""
 
 #: src/Views/SetupView.vala:205
 msgid "Processed Color"
-msgstr "Feldolgozott szín"
+msgstr ""
 
 #: src/Views/SetupView.vala:208
 msgid "Processed Greyscale"
-msgstr "Feldolgozott fekete-fehér"
+msgstr ""
 
 #: src/Views/SetupView.vala:217
 msgid "Color mode:"
-msgstr "Színmód:"
+msgstr ""
 
 #: src/Views/SetupView.vala:231
 msgid "Top Bin"
-msgstr "Felső tartály"
+msgstr ""
 
 #: src/Views/SetupView.vala:234
 msgid "Middle Bin"
-msgstr "Közepes tartály"
+msgstr ""
 
 #: src/Views/SetupView.vala:237
 msgid "Bottom Bin"
-msgstr "Alsó tartály"
+msgstr ""
 
 #: src/Views/SetupView.vala:240
 msgid "Side Bin"
-msgstr "Oldalsó tartály"
+msgstr ""
 
 #: src/Views/SetupView.vala:243
 msgid "Left Bin"
-msgstr "Bal tartály"
+msgstr ""
 
 #: src/Views/SetupView.vala:246
 msgid "Right Bin"
-msgstr "Jobb tartály"
+msgstr ""
 
 #: src/Views/SetupView.vala:249
 msgid "Center Bin"
-msgstr "Középső tartály"
+msgstr ""
 
 #: src/Views/SetupView.vala:252
 msgid "Rear Bin"
-msgstr "Hátsó tartály"
+msgstr ""
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr "Tartály oldalával felfelé"
+msgstr ""
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr "Tartály oldalával lefelé"
+msgstr ""
 
 #: src/Views/SetupView.vala:261
 msgid "Large Capacity Bin"
-msgstr "Nagy kapacitású tartály"
+msgstr ""
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr "Postafiókom"
+msgstr ""
 
 #: src/Views/SetupView.vala:269
 #, c-format
 msgid "Stacker %d"
-msgstr "Tároló %d"
+msgstr ""
 
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr "Postafiók %d"
+msgstr ""
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
 msgid "Tray %d"
-msgstr "Tálca %d"
+msgstr ""
 
 #: src/Views/SetupView.vala:288
 msgid "Output Tray:"
-msgstr "Kimeneti tálca:"
+msgstr ""
 
 #: src/Views/SetupView.vala:302
 msgid "Draft"
-msgstr "Vázlat"
+msgstr ""
 
 #: src/Views/SetupView.vala:305
 msgid "Normal"
-msgstr "Normál"
+msgstr "Rendes"
 
 #: src/Views/SetupView.vala:308
 msgid "High"
-msgstr "Magas"
+msgstr ""
 
 #: src/Views/SetupView.vala:314
 msgid "Quality:"
-msgstr "Minőség:"
+msgstr ""
 
 #: src/Views/SetupView.vala:328
 msgid "Paper Allocation"
-msgstr "Papír elhelyezkedés"
+msgstr ""
 
 #: src/Views/SetupView.vala:331
 msgid "Alternate Tray"
-msgstr "Alternatív tálca"
+msgstr ""
 
 #: src/Views/SetupView.vala:334
 msgid "Alternate Roll"
-msgstr "Alternatív tekercs"
+msgstr ""
 
 #: src/Views/SetupView.vala:340
 msgid "Bottom"
-msgstr "Alul"
+msgstr "Alu"
 
 #: src/Views/SetupView.vala:343
 msgid "By-pass Tray"
-msgstr "Mellék tálca"
+msgstr ""
 
 #: src/Views/SetupView.vala:346
 msgid "Center"
-msgstr "Középen"
+msgstr "Közép"
 
 #: src/Views/SetupView.vala:349
 msgid "Continuous Autofeed"
-msgstr "Folyamatos automatikus betöltés"
+msgstr ""
 
 #: src/Views/SetupView.vala:353
 msgid "Disk"
-msgstr "Lemez"
+msgstr ""
 
 #: src/Views/SetupView.vala:356
 msgid "Envelope"
-msgstr "Boríték"
+msgstr ""
 
 #: src/Views/SetupView.vala:359
 msgid "Hagaki"
-msgstr "Hagaki"
+msgstr ""
 
 #: src/Views/SetupView.vala:362
 msgid "Large Capacity"
-msgstr "Nagy kapacitás"
+msgstr ""
 
 #: src/Views/SetupView.vala:365
 msgid "Left"
@@ -501,27 +505,27 @@ msgstr "Bal"
 
 #: src/Views/SetupView.vala:368
 msgid "Main Tray"
-msgstr "Fő tálca"
+msgstr ""
 
 #: src/Views/SetupView.vala:371
 msgid "Main Roll"
-msgstr "Fő tekercs"
+msgstr ""
 
 #: src/Views/SetupView.vala:374
 msgid "Manual"
-msgstr "Kézi beállítás"
+msgstr ""
 
 #: src/Views/SetupView.vala:377
 msgid "Middle"
-msgstr "Középen"
+msgstr ""
 
 #: src/Views/SetupView.vala:380
 msgid "Photo"
-msgstr "Fotó"
+msgstr ""
 
 #: src/Views/SetupView.vala:384
 msgid "Rear"
-msgstr "Hátsó"
+msgstr "Háts"
 
 #: src/Views/SetupView.vala:387
 msgid "Right"
@@ -529,20 +533,20 @@ msgstr "Jobb"
 
 #: src/Views/SetupView.vala:390
 msgid "Side"
-msgstr "Oldal"
+msgstr ""
 
 #: src/Views/SetupView.vala:393
 msgid "Top"
-msgstr "Felső"
+msgstr ""
 
 #: src/Views/SetupView.vala:398
 #, c-format
 msgid "Roll %d"
-msgstr "Tekercs %d"
+msgstr ""
 
 #: src/Views/SetupView.vala:414
 msgid "Paper Source:"
-msgstr "Papírforrás:"
+msgstr ""
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
