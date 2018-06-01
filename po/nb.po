@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-31 00:03+0000\n"
+"PO-Revision-Date: 2018-06-02 00:06+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -23,11 +23,11 @@ msgstr "Skrivere"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Sideoppsett"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Innstillinger og rekvisita"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
@@ -61,6 +61,7 @@ msgstr "Ingen skrivere"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+"Koble til en skriver ved å klikke på dens ikon i verktøylinjen nedenfor."
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -92,7 +93,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Finner skrivere i nærheten…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -162,7 +163,7 @@ msgstr "Tilgjengelige nettverksskrivere"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Er du sikker på at du vil fjerne \"%s\"?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, fuzzy, c-format
@@ -293,7 +294,7 @@ msgstr "Jobb fullført"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Utskriftkøen er tom"
 
 #: src/Views/JobsView.vala:30
 #, fuzzy
@@ -311,11 +312,11 @@ msgstr "Sider per side:"
 
 #: src/Views/SetupView.vala:78
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Lang kant (forvalg)"
 
 #: src/Views/SetupView.vala:80
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Kortside (vend)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
@@ -323,19 +324,19 @@ msgstr "To-sidig:"
 
 #: src/Views/SetupView.vala:138
 msgid "Portrait"
-msgstr ""
+msgstr "Portrett"
 
 #: src/Views/SetupView.vala:141
 msgid "Landscape"
-msgstr ""
+msgstr "Landskap"
 
 #: src/Views/SetupView.vala:144
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Omvendt portrett"
 
 #: src/Views/SetupView.vala:147
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Omvendt landskap"
 
 #: src/Views/SetupView.vala:156
 msgid "Orientation:"
@@ -598,11 +599,11 @@ msgstr "Magentarød"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Fortsett"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
