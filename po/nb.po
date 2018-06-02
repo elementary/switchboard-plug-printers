@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-06-02 00:06+0000\n"
+"PO-Revision-Date: 2018-06-04 00:09+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -379,8 +379,9 @@ msgid "Color mode:"
 msgstr "Fargemodus:"
 
 #: src/Views/SetupView.vala:231
+#, fuzzy
 msgid "Top Bin"
-msgstr ""
+msgstr "Toppskuff"
 
 #: src/Views/SetupView.vala:234
 #, fuzzy
@@ -419,11 +420,11 @@ msgstr "Bak"
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Skuff pekende oppover"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Skuff pekende nedover"
 
 #: src/Views/SetupView.vala:261
 #, fuzzy
@@ -432,7 +433,7 @@ msgstr "Stor kapasitet"
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr ""
+msgstr "Min e-postboks"
 
 #: src/Views/SetupView.vala:269
 #, c-format
@@ -442,7 +443,7 @@ msgstr ""
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "E-postboks %d"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
