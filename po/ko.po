@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-06-04 00:09+0000\n"
+"PO-Revision-Date: 2018-06-04 02:58+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/ko/>\n"
@@ -16,17 +16,16 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "프린터"
+msgstr "프린트 대기열"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "페이지 설정"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "설정 및 공급"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
@@ -53,13 +52,12 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "프린터 설정하기, 인쇄 대기 관리하기, 잉크 잔량 확인하기"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
 msgstr "프린터 없음"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
+msgstr "아래 툴바의 아이콘을 클릭해서 프린터에 연결하세요."
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -91,7 +89,7 @@ msgstr "앱 소켓/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "주변의 프린터 검색 중…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -99,9 +97,8 @@ msgstr "새로 고침"
 
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
-#, fuzzy
 msgid "Cancel"
-msgstr "작업이 취소 됨"
+msgstr "취소"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -162,16 +159,14 @@ msgstr "사용 가능한 네트워크 프린터"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "정말 '%s'를 제거하시겠습니까?"
 
 #: src/Dialogs/RemoveDialog.vala:30
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
-msgstr ""
-"'%s'를 제거하면 프린터 사용 기록과 함께\n"
-"연관된 프린터 설정이 모두 사라집니다."
+msgstr "'%s'를 제거하면 프린터 사용 기록과 함께 연관된 프린터 설정이 모두 사라집니다."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -266,9 +261,8 @@ msgid "Job Pending"
 msgstr "작업 보류 중"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
-msgstr "보류 중"
+msgstr "대기 중"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
@@ -283,7 +277,6 @@ msgid "Job Canceled"
 msgstr "작업이 취소 됨"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
 msgstr "작업이 중단 됨"
 
@@ -293,17 +286,15 @@ msgstr "작업이 완료 됨"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "프린트 대기열이 비었습니다"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "대기 열에 작업이 없습니다"
+msgstr "대기중인 작업이 없습니다."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "완료된 인쇄 작업 보기"
+msgstr "끝난 작업"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -311,11 +302,11 @@ msgstr "한 면에 인쇄할 페이지 수:"
 
 #: src/Views/SetupView.vala:78
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "긴 가장자리 (표준)"
 
 #: src/Views/SetupView.vala:80
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "짧은 가장자리 (뒤집기)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
@@ -323,19 +314,19 @@ msgstr "양면 인쇄:"
 
 #: src/Views/SetupView.vala:138
 msgid "Portrait"
-msgstr ""
+msgstr "포트레이트"
 
 #: src/Views/SetupView.vala:141
 msgid "Landscape"
-msgstr ""
+msgstr "랜드스케이프"
 
 #: src/Views/SetupView.vala:144
 msgid "Reverse portrait"
-msgstr ""
+msgstr "리버스 포트레이트"
 
 #: src/Views/SetupView.vala:147
 msgid "Reverse landscape"
-msgstr ""
+msgstr "리버스 랜드스케이프"
 
 #: src/Views/SetupView.vala:156
 msgid "Orientation:"
@@ -347,7 +338,7 @@ msgstr "용지 크기:"
 
 #: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
 msgid "Automatic"
-msgstr "자동 설정"
+msgstr "자동"
 
 #: src/Views/SetupView.vala:193
 msgid "One Color"
@@ -379,69 +370,61 @@ msgstr "색상 모드:"
 
 #: src/Views/SetupView.vala:231
 msgid "Top Bin"
-msgstr ""
+msgstr "상단 Bin"
 
 #: src/Views/SetupView.vala:234
-#, fuzzy
 msgid "Middle Bin"
-msgstr "가운데"
+msgstr "가운데 Bin"
 
 #: src/Views/SetupView.vala:237
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "하단"
+msgstr "하단 Bin"
 
 #: src/Views/SetupView.vala:240
-#, fuzzy
 msgid "Side Bin"
-msgstr "옆면"
+msgstr "옆면 Bin"
 
 #: src/Views/SetupView.vala:243
-#, fuzzy
 msgid "Left Bin"
-msgstr "왼쪽"
+msgstr "왼쪽 Bin"
 
 #: src/Views/SetupView.vala:246
-#, fuzzy
 msgid "Right Bin"
-msgstr "오른쪽"
+msgstr "오른쪽 Bin"
 
 #: src/Views/SetupView.vala:249
-#, fuzzy
 msgid "Center Bin"
-msgstr "가운데"
+msgstr "가운데 Bin"
 
 #: src/Views/SetupView.vala:252
-#, fuzzy
 msgid "Rear Bin"
-msgstr "뒷면"
+msgstr "뒷면 Bin"
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr ""
+msgstr "정면 Bin"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "거꾸로 보기 Bin"
 
 #: src/Views/SetupView.vala:261
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "대용량"
+msgstr "대용량 Bin"
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr ""
+msgstr "내 우편함"
 
 #: src/Views/SetupView.vala:269
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "스태커 %d"
 
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "우편함 %d"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
@@ -526,7 +509,7 @@ msgstr "메인 롤"
 
 #: src/Views/SetupView.vala:374
 msgid "Manual"
-msgstr "수동 설정"
+msgstr "수동"
 
 #: src/Views/SetupView.vala:377
 msgid "Middle"
@@ -566,9 +549,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "연구실 1 또는 누군가의 책상"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "기본 프린터로 사용함"
+msgstr "기본 프린터로 사용함:"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -596,11 +578,11 @@ msgstr "진홍색"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "일시 중지"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "다시 작동"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
