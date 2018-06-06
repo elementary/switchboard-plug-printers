@@ -3,28 +3,30 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2016-04-22 14:36+0000\n"
-"Last-Translator: Andi Chandler <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-04-29 14:24+0000\n"
+"Last-Translator: Ciaran Ainsworth <cda@whistlingkappa.com>\n"
+"Language-Team: English (United Kingdom) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"printers/en_GB/>\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Printers"
+msgstr "Print Queue"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Page Setup"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Settings & Supplies"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
@@ -51,13 +53,12 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Configure printers, manage print queues, and view ink levels"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "No Printers"
+msgstr "No Printers Available"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
+msgstr "Connect to a printer by clicking the icon in the toolbar below."
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -89,7 +90,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Finding nearby printers…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -97,9 +98,8 @@ msgstr "Refresh"
 
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
-#, fuzzy
 msgid "Cancel"
-msgstr "Job Cancelled"
+msgstr "Cancel"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -160,16 +160,16 @@ msgstr "Available Network Printers"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Are You Sure You Want To Remove '%s'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"By removing '%s' you'll lose all print history\n"
-"and configuration associated with it."
+"By removing '%s' you'll lose all print history and configuration associated "
+"with it."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -264,9 +264,8 @@ msgid "Job Pending"
 msgstr "Job Pending"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
-msgstr "On Held"
+msgstr "On Hold"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
@@ -281,7 +280,6 @@ msgid "Job Canceled"
 msgstr "Job Cancelled"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
 msgstr "Job Aborted"
 
@@ -291,17 +289,15 @@ msgstr "Job Completed"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Print Queue Is Empty"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "There are no jobs on the queue"
+msgstr "There are no pending jobs in the queue."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Show completed jobs"
+msgstr "Completed Jobs"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -309,11 +305,11 @@ msgstr "Pages per side:"
 
 #: src/Views/SetupView.vala:78
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Long Edge (Standard)"
 
 #: src/Views/SetupView.vala:80
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Short Edge (Flip)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
@@ -321,19 +317,19 @@ msgstr "Two-sided:"
 
 #: src/Views/SetupView.vala:138
 msgid "Portrait"
-msgstr ""
+msgstr "Portrait"
 
 #: src/Views/SetupView.vala:141
 msgid "Landscape"
-msgstr ""
+msgstr "Landscape"
 
 #: src/Views/SetupView.vala:144
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Reverse portrait"
 
 #: src/Views/SetupView.vala:147
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Reverse landscape"
 
 #: src/Views/SetupView.vala:156
 msgid "Orientation:"
@@ -377,69 +373,61 @@ msgstr "Colour mode:"
 
 #: src/Views/SetupView.vala:231
 msgid "Top Bin"
-msgstr ""
+msgstr "Top Bin"
 
 #: src/Views/SetupView.vala:234
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Middle"
+msgstr "Middle Bin"
 
 #: src/Views/SetupView.vala:237
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Bottom"
+msgstr "Bottom Bin"
 
 #: src/Views/SetupView.vala:240
-#, fuzzy
 msgid "Side Bin"
-msgstr "Side"
+msgstr "Side Bin"
 
 #: src/Views/SetupView.vala:243
-#, fuzzy
 msgid "Left Bin"
-msgstr "Left"
+msgstr "Left Bin"
 
 #: src/Views/SetupView.vala:246
-#, fuzzy
 msgid "Right Bin"
-msgstr "Right"
+msgstr "Right Bin"
 
 #: src/Views/SetupView.vala:249
-#, fuzzy
 msgid "Center Bin"
-msgstr "Centre"
+msgstr "Centre Bin"
 
 #: src/Views/SetupView.vala:252
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Rear"
+msgstr "Rear Bin"
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Face Up Bin"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Face Down Bin"
 
 #: src/Views/SetupView.vala:261
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Large Capacity"
+msgstr "Large Capacity Bin"
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr ""
+msgstr "My Mailbox"
 
 #: src/Views/SetupView.vala:269
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Stacker %d"
 
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Mailbox %d"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
@@ -564,9 +552,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 or Fred's Desk"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Use as Default Printer"
+msgstr "Use as default printer:"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -594,15 +581,15 @@ msgstr "Magenta"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Resume"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "Disabled"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Add a printer to begin printing"

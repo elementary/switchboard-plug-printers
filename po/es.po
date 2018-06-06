@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-25 00:03+0000\n"
+"PO-Revision-Date: 2018-06-06 06:00+0000\n"
 "Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/es/>\n"
@@ -16,9 +16,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Impresoras"
+msgstr "Cola de impresión"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
@@ -268,7 +267,6 @@ msgid "Job Pending"
 msgstr "Trabajo pendiente"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "En pausa"
 
@@ -282,29 +280,27 @@ msgstr "Trabajo detenido"
 
 #: src/Objects/Job.vala:109
 msgid "Job Canceled"
-msgstr "Trabajo cancelado"
+msgstr "Impresión cancelada"
 
 #: src/Objects/Job.vala:111
 msgid "Job Aborted"
-msgstr "Trabajo abortado"
+msgstr "Impresión abortada"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
-msgstr "Trabajo completado"
+msgstr "Impresión completa"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
 msgstr "La cola de impresión está vacía"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "No hay trabajos en la cola"
+msgstr "No hay trabajos pendientes en la cola de impresión."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Mostrar trabajos completados"
+msgstr "Impresiones completadas"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -315,7 +311,6 @@ msgid "Long Edge (Standard)"
 msgstr "Borde largo (Estándar)"
 
 #: src/Views/SetupView.vala:80
-#, fuzzy
 msgid "Short Edge (Flip)"
 msgstr "Borde corto (Voltear)"
 
@@ -337,7 +332,7 @@ msgstr "Retrato reverso"
 
 #: src/Views/SetupView.vala:147
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Paisaje invertido"
 
 #: src/Views/SetupView.vala:156
 msgid "Orientation:"
@@ -381,69 +376,61 @@ msgstr "Modo de color:"
 
 #: src/Views/SetupView.vala:231
 msgid "Top Bin"
-msgstr ""
+msgstr "Superior"
 
 #: src/Views/SetupView.vala:234
-#, fuzzy
 msgid "Middle Bin"
 msgstr "Medio"
 
 #: src/Views/SetupView.vala:237
-#, fuzzy
 msgid "Bottom Bin"
 msgstr "Inferior"
 
 #: src/Views/SetupView.vala:240
-#, fuzzy
 msgid "Side Bin"
 msgstr "Lateral"
 
 #: src/Views/SetupView.vala:243
-#, fuzzy
 msgid "Left Bin"
 msgstr "Izquierda"
 
 #: src/Views/SetupView.vala:246
-#, fuzzy
 msgid "Right Bin"
 msgstr "Derecha"
 
 #: src/Views/SetupView.vala:249
-#, fuzzy
 msgid "Center Bin"
 msgstr "Centro"
 
 #: src/Views/SetupView.vala:252
-#, fuzzy
 msgid "Rear Bin"
 msgstr "Trasero"
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Boca arriba"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Boca abajo"
 
 #: src/Views/SetupView.vala:261
-#, fuzzy
 msgid "Large Capacity Bin"
 msgstr "Gran capacidad"
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr ""
+msgstr "Mi buzón"
 
 #: src/Views/SetupView.vala:269
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Apilado %d"
 
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Mailbox %d"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format

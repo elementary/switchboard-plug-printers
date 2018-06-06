@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-02-03 00:06+0000\n"
-"Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/tr/>\n"
+"PO-Revision-Date: 2018-05-28 00:03+0000\n"
+"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
+"Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,17 +16,16 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Yazıcılar"
+msgstr "Yazdırma Kuyruğu"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Sayfa Ayarı"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Ayarlar & Gereçler"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
@@ -54,13 +53,12 @@ msgstr ""
 "Yazıcıları yapılandır, yazdırma sırasını yönet, mürekkep seviyelerini gör"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "Yazıcı yok"
+msgstr "Kullanılabilir Yazıcı Yok"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
+msgstr "Alt araç çubuğundaki simgesine tıklayarak bir yazıcıya bağlanın."
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -92,7 +90,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Yakındaki yazıcılar bulunuyor…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -100,9 +98,8 @@ msgstr "Yenile"
 
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
-#, fuzzy
 msgid "Cancel"
-msgstr "İş iptal edildi"
+msgstr "İptal"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -163,20 +160,20 @@ msgstr "Mevcut Ağ Yazıcıları"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "'%s' Ögesini kaldırmak istediğinizden emin misiniz?"
 
 #: src/Dialogs/RemoveDialog.vala:30
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"'%s' silerek bununla ilgili tüm yazdırma geçmişini\n"
-"ve yapılandırma ayarlarını kaybedeceksiniz."
+"'%s' öğesini kaldırarak, onunla ilişkili tüm yazdırma geçmişini ve "
+"yapılandırmayı kaybedersiniz."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
-msgstr "Sil"
+msgstr "Kaldır"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
@@ -267,7 +264,6 @@ msgid "Job Pending"
 msgstr "İş bekliyor"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "Beklemede"
 
@@ -284,9 +280,8 @@ msgid "Job Canceled"
 msgstr "İş iptal edildi"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "İş durduruldu"
+msgstr "İş İptal Edildi"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
@@ -294,17 +289,15 @@ msgstr "İş Tamamlandı"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Yazdırma Sırası Boş"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Kuyrukta iş yok"
+msgstr "Kuyrukta bekleyen iş yok."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Tamamlanan işleri göster"
+msgstr "Tamamlanmış İşler"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -312,11 +305,11 @@ msgstr "Yüz başına sayfa"
 
 #: src/Views/SetupView.vala:78
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Uzun Kenar (Standart)"
 
 #: src/Views/SetupView.vala:80
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Kısa Kenar (Çevir)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
@@ -324,11 +317,11 @@ msgstr "Çift taraflı"
 
 #: src/Views/SetupView.vala:138
 msgid "Portrait"
-msgstr ""
+msgstr "Dikey"
 
 #: src/Views/SetupView.vala:141
 msgid "Landscape"
-msgstr ""
+msgstr "Yatay"
 
 #: src/Views/SetupView.vala:144
 msgid "Reverse portrait"
@@ -567,9 +560,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 or John's Desk"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Varsayılan Yazıcı Olarak Kullan"
+msgstr "Varsayılan yazıcı olarak kullan:"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -597,15 +589,15 @@ msgstr "Eflatun"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Duraklat"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Devam Et"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "Devre Dışı"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Yazdırmaya başlamak için bir yazıcı ekle"

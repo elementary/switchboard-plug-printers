@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-04-02 00:05+0000\n"
+"PO-Revision-Date: 2018-05-06 00:10+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
-"Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-printers/nl/>\n"
+"Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-printers/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,9 +16,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Printers"
+msgstr "Printwachtrij"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
@@ -53,9 +52,8 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Configureer printers, beheer printers en bekijk inkt levels"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "Geen Printers"
+msgstr "Geen printers beschikbaar"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
@@ -99,9 +97,8 @@ msgstr "Verversen"
 
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
-#, fuzzy
 msgid "Cancel"
-msgstr "taak geannuleerd"
+msgstr "Annuleren"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -165,13 +162,13 @@ msgid "Are You Sure You Want To Remove '%s'?"
 msgstr ""
 
 #: src/Dialogs/RemoveDialog.vala:30
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"als je '%s' verwijderd, verlies je alle print geschiedenis en instellingen "
-"die bij deze printer horen."
+"Door '%s' te verwijderen, verliest u alle geschiedenis en instellingen "
+"horende bij deze printer."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -298,14 +295,12 @@ msgid "Print Queue Is Empty"
 msgstr ""
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Er zijn geen taken in de wachtrij"
+msgstr "Er zijn geen afwachtende taken in de wachtrij."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Voltooide afdruktaken tonen"
+msgstr "Voltooide afdruktaken"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -560,9 +555,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "lab 1 of john's bureau"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "gebruik als standaard printer"
+msgstr "Gebruik als standaardprinter:"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"

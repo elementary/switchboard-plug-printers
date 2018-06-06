@@ -3,30 +3,30 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2017-05-17 17:02+0000\n"
+"PO-Revision-Date: 2018-05-29 00:12+0000\n"
 "Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
-"switchboard/switchboard-plug-printers/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"printers/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:32
-#, fuzzy
 msgid "Print Queue"
-msgstr "Impressoras"
+msgstr "Fila de impressão"
 
 #: src/PrinterPage.vala:33
 msgid "Page Setup"
-msgstr ""
+msgstr "Configurações da Página"
 
 #: src/PrinterPage.vala:34
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Configurações e Suprimentos"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
@@ -53,13 +53,12 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Configurar impressoras, ver filas de impressão e níveis de tinta"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "Sem impressoras"
+msgstr "Sem Impressoras Disponíveis"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
+msgstr "Conecte-se à impressora clicando no ícone localizado no menu abaixo."
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -91,7 +90,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Procurando impressoras próximas…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -99,9 +98,8 @@ msgstr "Atualizar"
 
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
-#, fuzzy
 msgid "Cancel"
-msgstr "Tarefa cancelada"
+msgstr "Cancelar"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -162,16 +160,16 @@ msgstr "Impressoras disponíveis na rede"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Você tem certeza que deseja remover '%s'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Removendo '%s' você perderá todo o histórico \n"
-"de impressão e as configurações associadas à ele."
+"Removendo '%s' você perderá todo o histórico de impressão e as configurações "
+"associadas à ele."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -266,13 +264,12 @@ msgid "Job Pending"
 msgstr "Tarefa pendente"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "Em espera"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
-msgstr "Processando..."
+msgstr "Processando…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
@@ -293,17 +290,15 @@ msgstr "Trabalho concluído"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "A fila de impressão está vazia"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Não há tarefas na fila"
+msgstr "Não há tarefas pendentes na fila."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Mostrar tarefas concluídas"
+msgstr "Tarefas concluídas"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -311,31 +306,31 @@ msgstr "Páginas por lado:"
 
 #: src/Views/SetupView.vala:78
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Margem Larga (Padrão)"
 
 #: src/Views/SetupView.vala:80
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Margem Estreita (Flip)"
 
 #: src/Views/SetupView.vala:124
 msgid "Two-sided:"
-msgstr "Frente e verso"
+msgstr "Frente e verso:"
 
 #: src/Views/SetupView.vala:138
 msgid "Portrait"
-msgstr ""
+msgstr "Retrato"
 
 #: src/Views/SetupView.vala:141
 msgid "Landscape"
-msgstr ""
+msgstr "Paisagem"
 
 #: src/Views/SetupView.vala:144
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Retrato inverso"
 
 #: src/Views/SetupView.vala:147
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Paisagem inversa"
 
 #: src/Views/SetupView.vala:156
 msgid "Orientation:"
@@ -431,17 +426,17 @@ msgstr "Grande capacidade"
 
 #: src/Views/SetupView.vala:264
 msgid "My Mailbox"
-msgstr ""
+msgstr "Minha Caixa de Email"
 
 #: src/Views/SetupView.vala:269
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Empilhador %d"
 
 #: src/Views/SetupView.vala:272
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Caixa de E-mail %d"
 
 #: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
 #, c-format
@@ -450,7 +445,7 @@ msgstr "Bandeja %d"
 
 #: src/Views/SetupView.vala:288
 msgid "Output Tray:"
-msgstr "Bandeja de saída"
+msgstr "Bandeja de saída:"
 
 #: src/Views/SetupView.vala:302
 msgid "Draft"
@@ -596,15 +591,15 @@ msgstr "Magenta"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Pausa"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Resumo"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "Desabilitado"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Adicionar uma impressora para começar a imprimir"
