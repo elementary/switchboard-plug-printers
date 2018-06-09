@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-05-30 00:04+0000\n"
+"PO-Revision-Date: 2018-06-09 13:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/ja/>\n"
@@ -375,18 +375,16 @@ msgid "Top Bin"
 msgstr "上部ビン"
 
 #: src/Views/SetupView.vala:234
-#, fuzzy
 msgid "Middle Bin"
-msgstr "中央"
+msgstr "中部ビン"
 
 #: src/Views/SetupView.vala:237
 msgid "Bottom Bin"
 msgstr "下部ビン"
 
 #: src/Views/SetupView.vala:240
-#, fuzzy
 msgid "Side Bin"
-msgstr "側面"
+msgstr "側面ビン"
 
 #: src/Views/SetupView.vala:243
 msgid "Left Bin"
@@ -397,22 +395,20 @@ msgid "Right Bin"
 msgstr "右ビン"
 
 #: src/Views/SetupView.vala:249
-#, fuzzy
 msgid "Center Bin"
-msgstr "中央"
+msgstr "中央ビン"
 
 #: src/Views/SetupView.vala:252
-#, fuzzy
 msgid "Rear Bin"
-msgstr "リア"
+msgstr "後部ビン"
 
 #: src/Views/SetupView.vala:255
 msgid "Face Up Bin"
-msgstr ""
+msgstr "表向きビン"
 
 #: src/Views/SetupView.vala:258
 msgid "Face Down Bin"
-msgstr ""
+msgstr "裏向きビン"
 
 #: src/Views/SetupView.vala:261
 msgid "Large Capacity Bin"
