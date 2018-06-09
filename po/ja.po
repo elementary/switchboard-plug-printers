@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-06-09 13:08+0000\n"
+"PO-Revision-Date: 2018-06-10 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/ja/>\n"
@@ -119,7 +119,7 @@ msgstr "説明:"
 
 #: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
+msgstr "プリンター名を入力"
 
 #: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
 msgid "Location:"
