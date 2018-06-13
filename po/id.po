@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-06-13 00:07+0000\n"
+"PO-Revision-Date: 2018-06-14 00:09+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/id/>\n"
@@ -110,7 +110,7 @@ msgstr ""
 
 #: src/Dialogs/AddDialog.vala:225
 msgid "Connection:"
-msgstr ""
+msgstr "Koneksi:"
 
 #: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
 msgid "Description:"
@@ -338,7 +338,7 @@ msgstr ""
 
 #: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
 msgid "Automatic"
-msgstr ""
+msgstr "Otomatis"
 
 #: src/Views/SetupView.vala:193
 msgid "One Color"
@@ -385,19 +385,16 @@ msgid "Side Bin"
 msgstr ""
 
 #: src/Views/SetupView.vala:243
-#, fuzzy
 msgid "Left Bin"
-msgstr "Kiri"
+msgstr "Bin Kiri"
 
 #: src/Views/SetupView.vala:246
-#, fuzzy
 msgid "Right Bin"
-msgstr "Kanan"
+msgstr "Bin Kanan"
 
 #: src/Views/SetupView.vala:249
-#, fuzzy
 msgid "Center Bin"
-msgstr "Tengah"
+msgstr "Bin Tengah"
 
 #: src/Views/SetupView.vala:252
 msgid "Rear Bin"
@@ -512,7 +509,7 @@ msgstr ""
 
 #: src/Views/SetupView.vala:374
 msgid "Manual"
-msgstr ""
+msgstr "Manual"
 
 #: src/Views/SetupView.vala:377
 msgid "Middle"
