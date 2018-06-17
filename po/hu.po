@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-06-15 00:11+0000\n"
+"PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/hu/>\n"
@@ -49,9 +49,7 @@ msgstr "Nyomtatók"
 
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-"Állítsa be a nyomtatókat, kezelje a nyomtatási sort és ellenőrizze a "
-"festékszintet"
+msgstr "Nyomtatók és a nyomtatási sor beállítása, és a festékszint ellenőrzése"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
