@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-19 19:20-0700\n"
-"PO-Revision-Date: 2018-06-06 00:09+0000\n"
+"PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-printers/hu/>\n"
@@ -49,9 +49,7 @@ msgstr "Nyomtatók"
 
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-"Állítsa be a nyomtatókat, kezelje a nyomtatási sort és ellenőrizze a "
-"festékszintet"
+msgstr "Nyomtatók és a nyomtatási sor beállítása, és a festékszint ellenőrzése"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
@@ -60,6 +58,8 @@ msgstr "Nincsenek elérhető nyomtatók"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+"Csatlakozzon egy nyomtatóhoz az alábbi eszköztáron található ikonra "
+"kattintva."
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -357,15 +357,15 @@ msgstr "Egyszínű + fekete"
 
 #: src/Views/SetupView.vala:202
 msgid "Greyscale"
-msgstr ""
+msgstr "Szürkeárnyalatos"
 
 #: src/Views/SetupView.vala:205
 msgid "Processed Color"
-msgstr ""
+msgstr "Feldolgozott színes"
 
 #: src/Views/SetupView.vala:208
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "Feldolgozott szürke árnyalatos"
 
 #: src/Views/SetupView.vala:217
 msgid "Color mode:"
@@ -389,11 +389,11 @@ msgstr "Oldalsó tároló"
 
 #: src/Views/SetupView.vala:243
 msgid "Left Bin"
-msgstr "Baloldali tároló"
+msgstr "Bal oldali tároló"
 
 #: src/Views/SetupView.vala:246
 msgid "Right Bin"
-msgstr "Jobboldali tároló"
+msgstr "Jobb oldali tároló"
 
 #: src/Views/SetupView.vala:249
 msgid "Center Bin"
@@ -456,7 +456,7 @@ msgstr "Minőség:"
 
 #: src/Views/SetupView.vala:328
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Papírelosztás"
 
 #: src/Views/SetupView.vala:331
 msgid "Alternate Tray"
@@ -472,7 +472,7 @@ msgstr "Alu"
 
 #: src/Views/SetupView.vala:343
 msgid "By-pass Tray"
-msgstr ""
+msgstr "Kitérő tálca"
 
 #: src/Views/SetupView.vala:346
 msgid "Center"
@@ -484,7 +484,7 @@ msgstr "Folyamatos adagolás"
 
 #: src/Views/SetupView.vala:353
 msgid "Disk"
-msgstr ""
+msgstr "Lemez"
 
 #: src/Views/SetupView.vala:356
 msgid "Envelope"
@@ -492,7 +492,7 @@ msgstr "Boríték"
 
 #: src/Views/SetupView.vala:359
 msgid "Hagaki"
-msgstr ""
+msgstr "Hagaki"
 
 #: src/Views/SetupView.vala:362
 msgid "Large Capacity"
@@ -589,4 +589,4 @@ msgstr "Folytatás"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr "Letiltva"
+msgstr "Kikapcsolva"
