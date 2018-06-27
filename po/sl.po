@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 19:20-0700\n"
+"POT-Creation-Date: 2018-06-27 09:30-0700\n"
 "PO-Revision-Date: 2018-03-22 00:05+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
@@ -16,24 +16,24 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
-#: src/PrinterPage.vala:32
+#: src/PrinterPage.vala:38
 #, fuzzy
 msgid "Print Queue"
 msgstr "Tiskalniki"
 
-#: src/PrinterPage.vala:33
+#: src/PrinterPage.vala:39
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:34
+#: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:51
 msgid "Print Test Page"
 msgstr "Natisni preizkusno stran"
 
-#: src/PrinterPage.vala:119
+#: src/PrinterPage.vala:106
 msgid "Test page"
 msgstr "Preizkusna stran"
 
@@ -310,248 +310,248 @@ msgstr "Pokaži končana opravila"
 msgid "Pages per side:"
 msgstr "Strani na ploskev:"
 
-#: src/Views/SetupView.vala:78
+#: src/Views/SetupView.vala:74
 msgid "Long Edge (Standard)"
 msgstr "Daljši rob (Standardno)"
 
-#: src/Views/SetupView.vala:80
+#: src/Views/SetupView.vala:75
 msgid "Short Edge (Flip)"
 msgstr "Kratki rob (obrnjeno)"
 
-#: src/Views/SetupView.vala:124
+#: src/Views/SetupView.vala:126
 msgid "Two-sided:"
 msgstr "Dvostransko:"
 
-#: src/Views/SetupView.vala:138
+#: src/Views/SetupView.vala:143
 msgid "Portrait"
 msgstr "Pokončno"
 
-#: src/Views/SetupView.vala:141
+#: src/Views/SetupView.vala:146
 msgid "Landscape"
 msgstr "Ležeče"
 
-#: src/Views/SetupView.vala:144
+#: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
 msgstr "Obrnjeno pokončno"
 
-#: src/Views/SetupView.vala:147
+#: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
 msgstr "Obrnjeno ležeče"
 
-#: src/Views/SetupView.vala:156
+#: src/Views/SetupView.vala:161
 msgid "Orientation:"
 msgstr "Usmerjenost:"
 
-#: src/Views/SetupView.vala:176
+#: src/Views/SetupView.vala:181
 msgid "Media Size:"
 msgstr "Velikost papirja:"
 
-#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+#: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
 msgid "Automatic"
 msgstr "Samodejno"
 
-#: src/Views/SetupView.vala:193
+#: src/Views/SetupView.vala:198
 msgid "One Color"
 msgstr "Enobarvno"
 
-#: src/Views/SetupView.vala:196
+#: src/Views/SetupView.vala:201
 msgid "Color"
 msgstr "Barvno"
 
-#: src/Views/SetupView.vala:199
+#: src/Views/SetupView.vala:204
 msgid "One Color + Black"
 msgstr "Enobarvno + Črna"
 
-#: src/Views/SetupView.vala:202
+#: src/Views/SetupView.vala:207
 msgid "Greyscale"
 msgstr "Sivinsko"
 
-#: src/Views/SetupView.vala:205
+#: src/Views/SetupView.vala:210
 msgid "Processed Color"
 msgstr "Obdelano barvno"
 
-#: src/Views/SetupView.vala:208
+#: src/Views/SetupView.vala:213
 msgid "Processed Greyscale"
 msgstr "Obdelano sivinsko"
 
-#: src/Views/SetupView.vala:217
+#: src/Views/SetupView.vala:222
 msgid "Color mode:"
 msgstr "Barvni način:"
 
-#: src/Views/SetupView.vala:231
+#: src/Views/SetupView.vala:236
 msgid "Top Bin"
 msgstr "Zgornji predal"
 
-#: src/Views/SetupView.vala:234
+#: src/Views/SetupView.vala:239
 msgid "Middle Bin"
 msgstr "Srednji predal"
 
-#: src/Views/SetupView.vala:237
+#: src/Views/SetupView.vala:242
 msgid "Bottom Bin"
 msgstr "Spodnji predal"
 
-#: src/Views/SetupView.vala:240
+#: src/Views/SetupView.vala:245
 msgid "Side Bin"
 msgstr "Stranski predal"
 
-#: src/Views/SetupView.vala:243
+#: src/Views/SetupView.vala:248
 msgid "Left Bin"
 msgstr "Levi predal"
 
-#: src/Views/SetupView.vala:246
+#: src/Views/SetupView.vala:251
 msgid "Right Bin"
 msgstr "Desni predal"
 
-#: src/Views/SetupView.vala:249
+#: src/Views/SetupView.vala:254
 msgid "Center Bin"
 msgstr "Sredinski predal"
 
-#: src/Views/SetupView.vala:252
+#: src/Views/SetupView.vala:257
 msgid "Rear Bin"
 msgstr "Zadnji predal"
 
-#: src/Views/SetupView.vala:255
+#: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
 msgstr ""
 
-#: src/Views/SetupView.vala:258
+#: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
 msgstr ""
 
-#: src/Views/SetupView.vala:261
+#: src/Views/SetupView.vala:266
 #, fuzzy
 msgid "Large Capacity Bin"
 msgstr "Velika kapaciteta"
 
-#: src/Views/SetupView.vala:264
+#: src/Views/SetupView.vala:269
 msgid "My Mailbox"
 msgstr ""
 
-#: src/Views/SetupView.vala:269
+#: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
 msgstr ""
 
-#: src/Views/SetupView.vala:272
+#: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
 msgstr ""
 
-#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
 msgid "Tray %d"
 msgstr "Predal %d"
 
-#: src/Views/SetupView.vala:288
+#: src/Views/SetupView.vala:293
 msgid "Output Tray:"
 msgstr "Predal za natisnjen papir:"
 
-#: src/Views/SetupView.vala:302
+#: src/Views/SetupView.vala:307
 msgid "Draft"
 msgstr "Osnutek"
 
-#: src/Views/SetupView.vala:305
+#: src/Views/SetupView.vala:310
 msgid "Normal"
 msgstr "Običajna"
 
-#: src/Views/SetupView.vala:308
+#: src/Views/SetupView.vala:313
 msgid "High"
 msgstr "Visoka"
 
-#: src/Views/SetupView.vala:314
+#: src/Views/SetupView.vala:319
 msgid "Quality:"
 msgstr "Kakovost:"
 
-#: src/Views/SetupView.vala:328
+#: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
 msgstr "Alokacija papirja"
 
-#: src/Views/SetupView.vala:331
+#: src/Views/SetupView.vala:336
 msgid "Alternate Tray"
 msgstr "Pomožni predal"
 
-#: src/Views/SetupView.vala:334
+#: src/Views/SetupView.vala:339
 msgid "Alternate Roll"
 msgstr "Pomožna rola"
 
-#: src/Views/SetupView.vala:340
+#: src/Views/SetupView.vala:345
 msgid "Bottom"
 msgstr "Spodaj"
 
-#: src/Views/SetupView.vala:343
+#: src/Views/SetupView.vala:348
 msgid "By-pass Tray"
 msgstr "Pomožni predal"
 
-#: src/Views/SetupView.vala:346
+#: src/Views/SetupView.vala:351
 msgid "Center"
 msgstr "Sredina"
 
-#: src/Views/SetupView.vala:349
+#: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
 msgstr "Neprekinjeno podajanje"
 
-#: src/Views/SetupView.vala:353
+#: src/Views/SetupView.vala:358
 msgid "Disk"
 msgstr "Disk"
 
-#: src/Views/SetupView.vala:356
+#: src/Views/SetupView.vala:361
 msgid "Envelope"
 msgstr "Ovojnica"
 
-#: src/Views/SetupView.vala:359
+#: src/Views/SetupView.vala:364
 msgid "Hagaki"
 msgstr "Hagaki"
 
-#: src/Views/SetupView.vala:362
+#: src/Views/SetupView.vala:367
 msgid "Large Capacity"
 msgstr "Velika kapaciteta"
 
-#: src/Views/SetupView.vala:365
+#: src/Views/SetupView.vala:370
 msgid "Left"
 msgstr "Levo"
 
-#: src/Views/SetupView.vala:368
+#: src/Views/SetupView.vala:373
 msgid "Main Tray"
 msgstr "Glavni predal"
 
-#: src/Views/SetupView.vala:371
+#: src/Views/SetupView.vala:376
 msgid "Main Roll"
 msgstr "Glavna rola"
 
-#: src/Views/SetupView.vala:374
+#: src/Views/SetupView.vala:379
 msgid "Manual"
 msgstr "Ročno"
 
-#: src/Views/SetupView.vala:377
+#: src/Views/SetupView.vala:382
 msgid "Middle"
 msgstr "Srednji"
 
-#: src/Views/SetupView.vala:380
+#: src/Views/SetupView.vala:385
 msgid "Photo"
 msgstr "Fotografije"
 
-#: src/Views/SetupView.vala:384
+#: src/Views/SetupView.vala:389
 msgid "Rear"
 msgstr "Zadaj"
 
-#: src/Views/SetupView.vala:387
+#: src/Views/SetupView.vala:392
 msgid "Right"
 msgstr "Desno"
 
-#: src/Views/SetupView.vala:390
+#: src/Views/SetupView.vala:395
 msgid "Side"
 msgstr "Stranski"
 
-#: src/Views/SetupView.vala:393
+#: src/Views/SetupView.vala:398
 msgid "Top"
 msgstr "Na vrhu"
 
-#: src/Views/SetupView.vala:398
+#: src/Views/SetupView.vala:403
 #, c-format
 msgid "Roll %d"
 msgstr "Rola %d"
 
-#: src/Views/SetupView.vala:414
+#: src/Views/SetupView.vala:419
 msgid "Paper Source:"
 msgstr "Vir papirja:"
 
