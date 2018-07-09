@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-07-04 00:09+0000\n"
+"PO-Revision-Date: 2018-07-09 20:20+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/sl/>\n"
@@ -17,17 +17,16 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:38
-#, fuzzy
 msgid "Print Queue"
-msgstr "Tiskalniki"
+msgstr "Čakalna vrsta za tiskanje"
 
 #: src/PrinterPage.vala:39
 msgid "Page Setup"
-msgstr ""
+msgstr "Priprava strani"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Nastavitve in zaloge barv"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
@@ -54,13 +53,12 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Nastavitve tiskalnikov in tiskalniških opravil"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
 msgstr "Ni tiskalnikov"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
+msgstr "Dodajte tiskalnik s klikom na ikono spodaj."
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -92,7 +90,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Iskanje tiskalnikov…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -162,16 +160,16 @@ msgstr "Najdeni mrežni tiskalniki"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Ste prepričani, da želite odstraniti '%s'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Z odstranitvijo '%s' boste izgubili celotno zgodovino\n"
-"tiskanja in vse nastavitve v povezavi s tiskalnikom."
+"Z odstranitvijo '%s' boste izgubili celotno zgodovino tiskanja in vse "
+"nastavitve v povezavi s tiskalnikom."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -266,7 +264,6 @@ msgid "Job Pending"
 msgstr "Opravilo čaka"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "Na čakanju"
 
@@ -283,7 +280,6 @@ msgid "Job Canceled"
 msgstr "Opravilo preklicano"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
 msgstr "Opravilo preklicano"
 
@@ -293,15 +289,13 @@ msgstr "Opravilo končano"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Čakalna vrsta je prazna"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Trenutno ni tiskalniških opravil"
+msgstr "Trenutno ni tiskalniških opravil."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
 msgstr "Pokaži končana opravila"
 
@@ -411,30 +405,29 @@ msgstr "Zadnji predal"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Zgornji predal"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Spodnji predal"
 
 #: src/Views/SetupView.vala:266
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Velika kapaciteta"
+msgstr "Predal z veliko kapaciteto"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "Moj poštni predal"
 
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Pladenj %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Poštni predal %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
@@ -559,9 +552,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "Laboratorij 1 ali Janezova miza"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Privzeti tiskalnik"
+msgstr "Privzeti tiskalnik:"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
@@ -589,15 +581,15 @@ msgstr "Magenta"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Premor"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Nadaljuj"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "Onemogočeno"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Dodajte tiskalnik za začetek tiskanja"
