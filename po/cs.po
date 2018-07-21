@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-05-31 00:03+0000\n"
+"PO-Revision-Date: 2018-07-22 00:03+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/cs/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -41,7 +41,7 @@ msgstr "Přidat tiskárnu…"
 
 #: src/PrinterList.vala:53
 msgid "Remove Printer"
-msgstr "Odebrat tiskárnu"
+msgstr "Odstranit tiskárnu"
 
 #: src/Plug.vala:35
 msgid "Printers"
@@ -499,7 +499,7 @@ msgstr "Velkokapacitní"
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
-msgstr "Levý"
+msgstr "Levé"
 
 #: src/Views/SetupView.vala:373
 msgid "Main Tray"
@@ -527,7 +527,7 @@ msgstr "Zadní"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
-msgstr "Pravý"
+msgstr "Pravé"
 
 #: src/Views/SetupView.vala:395
 msgid "Side"
