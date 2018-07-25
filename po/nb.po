@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-07-25 00:00+0000\n"
-"Last-Translator: Nils K <slx@nilsk.net>\n"
+"PO-Revision-Date: 2018-07-26 00:00+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/nb/>\n"
 "Language: nb\n"
@@ -168,7 +168,7 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Ved å fjerne '%s' mister du all utskriftshistorikk og oppsett assosiert med "
+"Ved å fjerne \"%s\" mister du all utskriftshistorikk og oppsett tilknyttet "
 "den."
 
 #: src/Dialogs/RemoveDialog.vala:35
@@ -373,11 +373,11 @@ msgstr "Fargemodus:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr "Øverste skuff"
+msgstr "Toppskuff"
 
 #: src/Views/SetupView.vala:239
 msgid "Middle Bin"
-msgstr "Midterste skuff"
+msgstr "Midtskuff"
 
 #: src/Views/SetupView.vala:242
 msgid "Bottom Bin"
@@ -397,11 +397,11 @@ msgstr "Høyre skuff"
 
 #: src/Views/SetupView.vala:254
 msgid "Center Bin"
-msgstr "Senter skuff"
+msgstr "Midtre skuff"
 
 #: src/Views/SetupView.vala:257
 msgid "Rear Bin"
-msgstr "Bakerste skuff"
+msgstr "Bakre skuff"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
@@ -420,9 +420,9 @@ msgid "My Mailbox"
 msgstr "Min e-postboks"
 
 #: src/Views/SetupView.vala:274
-#, c-format
+#, c-format, fuzzy
 msgid "Stacker %d"
-msgstr "Bunte %d"
+msgstr "Bunter %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
@@ -554,7 +554,7 @@ msgstr "Laboratorie 1 eller Ole's skrivebord"
 
 #: src/Views/SuppliesView.vala:47
 msgid "Use as default printer:"
-msgstr "Bruk som standard skriver:"
+msgstr "Bruk som forvalgt skriver:"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
