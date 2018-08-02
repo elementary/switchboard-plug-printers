@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 19:20-0700\n"
+"POT-Creation-Date: 2018-06-27 09:30-0700\n"
 "PO-Revision-Date: 2017-01-02 07:57+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: \n"
@@ -13,24 +13,24 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 "X-Generator: Launchpad (build 18330)\n"
 
-#: src/PrinterPage.vala:32
+#: src/PrinterPage.vala:38
 #, fuzzy
 msgid "Print Queue"
 msgstr "پرىنتېرلار"
 
-#: src/PrinterPage.vala:33
+#: src/PrinterPage.vala:39
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:34
+#: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:51
 msgid "Print Test Page"
 msgstr "سىناق بەتنى بېسىش"
 
-#: src/PrinterPage.vala:119
+#: src/PrinterPage.vala:106
 msgid "Test page"
 msgstr "سىناق بەت"
 
@@ -307,255 +307,255 @@ msgstr "تاماملانغان ۋەزىپىلەرنى كۆرسىتىش"
 msgid "Pages per side:"
 msgstr "ھەر بىر تەرەپتىكى بەت سانى:"
 
-#: src/Views/SetupView.vala:78
+#: src/Views/SetupView.vala:74
 msgid "Long Edge (Standard)"
 msgstr ""
 
-#: src/Views/SetupView.vala:80
+#: src/Views/SetupView.vala:75
 msgid "Short Edge (Flip)"
 msgstr ""
 
-#: src/Views/SetupView.vala:124
+#: src/Views/SetupView.vala:126
 msgid "Two-sided:"
 msgstr "ئىككى تەرەپ:"
 
-#: src/Views/SetupView.vala:138
+#: src/Views/SetupView.vala:143
 msgid "Portrait"
 msgstr ""
 
-#: src/Views/SetupView.vala:141
+#: src/Views/SetupView.vala:146
 msgid "Landscape"
 msgstr ""
 
-#: src/Views/SetupView.vala:144
+#: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
 msgstr ""
 
-#: src/Views/SetupView.vala:147
+#: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
 msgstr ""
 
-#: src/Views/SetupView.vala:156
+#: src/Views/SetupView.vala:161
 msgid "Orientation:"
 msgstr "يۆنىلىشى:"
 
-#: src/Views/SetupView.vala:176
+#: src/Views/SetupView.vala:181
 msgid "Media Size:"
 msgstr "مېدىئا چوڭلۇقى:"
 
-#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+#: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
 msgid "Automatic"
 msgstr "ئاپتوماتىك"
 
-#: src/Views/SetupView.vala:193
+#: src/Views/SetupView.vala:198
 msgid "One Color"
 msgstr "يەككە رەڭ"
 
-#: src/Views/SetupView.vala:196
+#: src/Views/SetupView.vala:201
 msgid "Color"
 msgstr "رەڭ"
 
-#: src/Views/SetupView.vala:199
+#: src/Views/SetupView.vala:204
 msgid "One Color + Black"
 msgstr "يەككە رەڭ + قارا"
 
-#: src/Views/SetupView.vala:202
+#: src/Views/SetupView.vala:207
 msgid "Greyscale"
 msgstr "كۈلرەڭ"
 
-#: src/Views/SetupView.vala:205
+#: src/Views/SetupView.vala:210
 msgid "Processed Color"
 msgstr "بىرتەرەپ قىلىنغان رەڭ"
 
-#: src/Views/SetupView.vala:208
+#: src/Views/SetupView.vala:213
 msgid "Processed Greyscale"
 msgstr "بىرتەرەپ قىلىنغان كۈلرەڭ"
 
-#: src/Views/SetupView.vala:217
+#: src/Views/SetupView.vala:222
 msgid "Color mode:"
 msgstr "رەڭ ئەندىزىسى:"
 
-#: src/Views/SetupView.vala:231
+#: src/Views/SetupView.vala:236
 msgid "Top Bin"
 msgstr ""
 
-#: src/Views/SetupView.vala:234
+#: src/Views/SetupView.vala:239
 #, fuzzy
 msgid "Middle Bin"
 msgstr "ئوتتۇرا"
 
-#: src/Views/SetupView.vala:237
+#: src/Views/SetupView.vala:242
 #, fuzzy
 msgid "Bottom Bin"
 msgstr "ئاستى"
 
-#: src/Views/SetupView.vala:240
+#: src/Views/SetupView.vala:245
 #, fuzzy
 msgid "Side Bin"
 msgstr "يان"
 
-#: src/Views/SetupView.vala:243
+#: src/Views/SetupView.vala:248
 #, fuzzy
 msgid "Left Bin"
 msgstr "سول"
 
-#: src/Views/SetupView.vala:246
+#: src/Views/SetupView.vala:251
 #, fuzzy
 msgid "Right Bin"
 msgstr "ئوڭ"
 
-#: src/Views/SetupView.vala:249
+#: src/Views/SetupView.vala:254
 #, fuzzy
 msgid "Center Bin"
 msgstr "ئوتتۇرىسى"
 
-#: src/Views/SetupView.vala:252
+#: src/Views/SetupView.vala:257
 #, fuzzy
 msgid "Rear Bin"
 msgstr "ئارقا تەرەپ"
 
-#: src/Views/SetupView.vala:255
+#: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
 msgstr ""
 
-#: src/Views/SetupView.vala:258
+#: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
 msgstr ""
 
-#: src/Views/SetupView.vala:261
+#: src/Views/SetupView.vala:266
 #, fuzzy
 msgid "Large Capacity Bin"
 msgstr "چوڭ سىغىم"
 
-#: src/Views/SetupView.vala:264
+#: src/Views/SetupView.vala:269
 msgid "My Mailbox"
 msgstr ""
 
-#: src/Views/SetupView.vala:269
+#: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
 msgstr ""
 
-#: src/Views/SetupView.vala:272
+#: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
 msgstr ""
 
-#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
 msgid "Tray %d"
 msgstr "جازا %d"
 
-#: src/Views/SetupView.vala:288
+#: src/Views/SetupView.vala:293
 msgid "Output Tray:"
 msgstr "چىقىرىش جازىسى:"
 
-#: src/Views/SetupView.vala:302
+#: src/Views/SetupView.vala:307
 msgid "Draft"
 msgstr "ئورىگىنال"
 
-#: src/Views/SetupView.vala:305
+#: src/Views/SetupView.vala:310
 msgid "Normal"
 msgstr "نورمال"
 
-#: src/Views/SetupView.vala:308
+#: src/Views/SetupView.vala:313
 msgid "High"
 msgstr "يۇقىرى"
 
-#: src/Views/SetupView.vala:314
+#: src/Views/SetupView.vala:319
 msgid "Quality:"
 msgstr "سۈپىتى:"
 
-#: src/Views/SetupView.vala:328
+#: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
 msgstr "قەغەز تەقسىماتى"
 
-#: src/Views/SetupView.vala:331
+#: src/Views/SetupView.vala:336
 msgid "Alternate Tray"
 msgstr "زاپاس جازا"
 
-#: src/Views/SetupView.vala:334
+#: src/Views/SetupView.vala:339
 msgid "Alternate Roll"
 msgstr "زاپاس ئورام"
 
-#: src/Views/SetupView.vala:340
+#: src/Views/SetupView.vala:345
 msgid "Bottom"
 msgstr "ئاستى"
 
-#: src/Views/SetupView.vala:343
+#: src/Views/SetupView.vala:348
 msgid "By-pass Tray"
 msgstr "تارماق جازا"
 
-#: src/Views/SetupView.vala:346
+#: src/Views/SetupView.vala:351
 msgid "Center"
 msgstr "ئوتتۇرىسى"
 
-#: src/Views/SetupView.vala:349
+#: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
 msgstr "داۋاملىق ئاپتوماتىك قەغەز تەمىنلەش"
 
-#: src/Views/SetupView.vala:353
+#: src/Views/SetupView.vala:358
 msgid "Disk"
 msgstr "دىسكا"
 
-#: src/Views/SetupView.vala:356
+#: src/Views/SetupView.vala:361
 msgid "Envelope"
 msgstr "لېپاپ"
 
-#: src/Views/SetupView.vala:359
+#: src/Views/SetupView.vala:364
 msgid "Hagaki"
 msgstr "ياپونچە ئاتكرېتكا"
 
-#: src/Views/SetupView.vala:362
+#: src/Views/SetupView.vala:367
 msgid "Large Capacity"
 msgstr "چوڭ سىغىم"
 
-#: src/Views/SetupView.vala:365
+#: src/Views/SetupView.vala:370
 msgid "Left"
 msgstr "سول"
 
-#: src/Views/SetupView.vala:368
+#: src/Views/SetupView.vala:373
 msgid "Main Tray"
 msgstr "ئاساسىي جازا"
 
-#: src/Views/SetupView.vala:371
+#: src/Views/SetupView.vala:376
 msgid "Main Roll"
 msgstr "ئاساسىي ئورام"
 
-#: src/Views/SetupView.vala:374
+#: src/Views/SetupView.vala:379
 msgid "Manual"
 msgstr "قولدا"
 
-#: src/Views/SetupView.vala:377
+#: src/Views/SetupView.vala:382
 msgid "Middle"
 msgstr "ئوتتۇرا"
 
-#: src/Views/SetupView.vala:380
+#: src/Views/SetupView.vala:385
 msgid "Photo"
 msgstr "سۈرەت"
 
-#: src/Views/SetupView.vala:384
+#: src/Views/SetupView.vala:389
 msgid "Rear"
 msgstr "ئارقا تەرەپ"
 
-#: src/Views/SetupView.vala:387
+#: src/Views/SetupView.vala:392
 msgid "Right"
 msgstr "ئوڭ"
 
-#: src/Views/SetupView.vala:390
+#: src/Views/SetupView.vala:395
 msgid "Side"
 msgstr "يان"
 
-#: src/Views/SetupView.vala:393
+#: src/Views/SetupView.vala:398
 msgid "Top"
 msgstr "ئۈستى"
 
-#: src/Views/SetupView.vala:398
+#: src/Views/SetupView.vala:403
 #, c-format
 msgid "Roll %d"
 msgstr "ئورام %d"
 
-#: src/Views/SetupView.vala:414
+#: src/Views/SetupView.vala:419
 msgid "Paper Source:"
 msgstr "قەغەز مەنبەسى:"
 

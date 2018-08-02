@@ -2,37 +2,37 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 19:20-0700\n"
+"POT-Creation-Date: 2018-06-27 09:30-0700\n"
 "PO-Revision-Date: 2018-05-31 00:03+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-printers/lt/>\n"
+"Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-printers/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
-"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:32
+#: src/PrinterPage.vala:38
 msgid "Print Queue"
 msgstr "Spausdinimo eilė"
 
-#: src/PrinterPage.vala:33
+#: src/PrinterPage.vala:39
 msgid "Page Setup"
 msgstr "Puslapio sąranka"
 
-#: src/PrinterPage.vala:34
+#: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
 msgstr "Nustatymai ir tiekėjai"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:51
 msgid "Print Test Page"
 msgstr "Spausdinti bandomąjį puslapį"
 
-#: src/PrinterPage.vala:119
+#: src/PrinterPage.vala:106
 msgid "Test page"
 msgstr "Bandomasis puslapis"
 
@@ -306,247 +306,247 @@ msgstr "Užbaigti darbai"
 msgid "Pages per side:"
 msgstr "Puslapių vienoje pusėje:"
 
-#: src/Views/SetupView.vala:78
+#: src/Views/SetupView.vala:74
 msgid "Long Edge (Standard)"
 msgstr "Ilgasis kraštas (Standartinis)"
 
-#: src/Views/SetupView.vala:80
+#: src/Views/SetupView.vala:75
 msgid "Short Edge (Flip)"
 msgstr "Trumpasis kraštas (Apverstas)"
 
-#: src/Views/SetupView.vala:124
+#: src/Views/SetupView.vala:126
 msgid "Two-sided:"
 msgstr "Abipusis spausdinimas:"
 
-#: src/Views/SetupView.vala:138
+#: src/Views/SetupView.vala:143
 msgid "Portrait"
 msgstr "Stačias"
 
-#: src/Views/SetupView.vala:141
+#: src/Views/SetupView.vala:146
 msgid "Landscape"
 msgstr "Gulsčias"
 
-#: src/Views/SetupView.vala:144
+#: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
 msgstr "Atvirkštinis stačias"
 
-#: src/Views/SetupView.vala:147
+#: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
 msgstr "Atvirkštinis gulsčias"
 
-#: src/Views/SetupView.vala:156
+#: src/Views/SetupView.vala:161
 msgid "Orientation:"
 msgstr "Padėtis:"
 
-#: src/Views/SetupView.vala:176
+#: src/Views/SetupView.vala:181
 msgid "Media Size:"
 msgstr "Popieriaus dydis:"
 
-#: src/Views/SetupView.vala:190 src/Views/SetupView.vala:337
+#: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
 msgid "Automatic"
 msgstr "Automatinis"
 
-#: src/Views/SetupView.vala:193
+#: src/Views/SetupView.vala:198
 msgid "One Color"
 msgstr "Viena spalva"
 
-#: src/Views/SetupView.vala:196
+#: src/Views/SetupView.vala:201
 msgid "Color"
 msgstr "Spalvotai"
 
-#: src/Views/SetupView.vala:199
+#: src/Views/SetupView.vala:204
 msgid "One Color + Black"
 msgstr "Viena spalva + juoda"
 
-#: src/Views/SetupView.vala:202
+#: src/Views/SetupView.vala:207
 msgid "Greyscale"
 msgstr "Pilkumo tonais"
 
-#: src/Views/SetupView.vala:205
+#: src/Views/SetupView.vala:210
 msgid "Processed Color"
 msgstr "Apdorota spalva"
 
-#: src/Views/SetupView.vala:208
+#: src/Views/SetupView.vala:213
 msgid "Processed Greyscale"
 msgstr "Apdoroti pilkumo tonai"
 
-#: src/Views/SetupView.vala:217
+#: src/Views/SetupView.vala:222
 msgid "Color mode:"
 msgstr "Spalvos veiksena:"
 
-#: src/Views/SetupView.vala:231
+#: src/Views/SetupView.vala:236
 msgid "Top Bin"
 msgstr "Viršutinis dėklas"
 
-#: src/Views/SetupView.vala:234
+#: src/Views/SetupView.vala:239
 msgid "Middle Bin"
 msgstr "Vidurinysis dėklas"
 
-#: src/Views/SetupView.vala:237
+#: src/Views/SetupView.vala:242
 msgid "Bottom Bin"
 msgstr "Apatinis dėklas"
 
-#: src/Views/SetupView.vala:240
+#: src/Views/SetupView.vala:245
 msgid "Side Bin"
 msgstr "Šoninis dėklas"
 
-#: src/Views/SetupView.vala:243
+#: src/Views/SetupView.vala:248
 msgid "Left Bin"
 msgstr "Kairysis dėklas"
 
-#: src/Views/SetupView.vala:246
+#: src/Views/SetupView.vala:251
 msgid "Right Bin"
 msgstr "Dešinysis dėklas"
 
-#: src/Views/SetupView.vala:249
+#: src/Views/SetupView.vala:254
 msgid "Center Bin"
 msgstr "Centrinis dėklas"
 
-#: src/Views/SetupView.vala:252
+#: src/Views/SetupView.vala:257
 msgid "Rear Bin"
 msgstr "Galinis dėklas"
 
-#: src/Views/SetupView.vala:255
+#: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
 msgstr "Priekinės pusės dėklas"
 
-#: src/Views/SetupView.vala:258
+#: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
 msgstr "Galinės pusės dėklas"
 
-#: src/Views/SetupView.vala:261
+#: src/Views/SetupView.vala:266
 msgid "Large Capacity Bin"
 msgstr "Didelės talpos dėklas"
 
-#: src/Views/SetupView.vala:264
+#: src/Views/SetupView.vala:269
 msgid "My Mailbox"
 msgstr "Mano pašto dėžutė"
 
-#: src/Views/SetupView.vala:269
+#: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
 msgstr "Dėtuvė %d"
 
-#: src/Views/SetupView.vala:272
+#: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
 msgstr "Pašto dėžutė %d"
 
-#: src/Views/SetupView.vala:275 src/Views/SetupView.vala:401
+#: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
 msgid "Tray %d"
 msgstr "Dėklas %d"
 
-#: src/Views/SetupView.vala:288
+#: src/Views/SetupView.vala:293
 msgid "Output Tray:"
 msgstr "Išvesties dėklas:"
 
-#: src/Views/SetupView.vala:302
+#: src/Views/SetupView.vala:307
 msgid "Draft"
 msgstr "Juodraštis"
 
-#: src/Views/SetupView.vala:305
+#: src/Views/SetupView.vala:310
 msgid "Normal"
 msgstr "Normali"
 
-#: src/Views/SetupView.vala:308
+#: src/Views/SetupView.vala:313
 msgid "High"
 msgstr "Aukšta"
 
-#: src/Views/SetupView.vala:314
+#: src/Views/SetupView.vala:319
 msgid "Quality:"
 msgstr "Kokybė:"
 
-#: src/Views/SetupView.vala:328
+#: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
 msgstr "Popieriaus paskirstymas"
 
-#: src/Views/SetupView.vala:331
+#: src/Views/SetupView.vala:336
 msgid "Alternate Tray"
 msgstr "Alternatyvusis dėklas"
 
-#: src/Views/SetupView.vala:334
+#: src/Views/SetupView.vala:339
 msgid "Alternate Roll"
 msgstr "Alternatyvusis rulonas"
 
-#: src/Views/SetupView.vala:340
+#: src/Views/SetupView.vala:345
 msgid "Bottom"
 msgstr "Apačioje"
 
-#: src/Views/SetupView.vala:343
+#: src/Views/SetupView.vala:348
 msgid "By-pass Tray"
 msgstr "Apeiti dėklą"
 
-#: src/Views/SetupView.vala:346
+#: src/Views/SetupView.vala:351
 msgid "Center"
 msgstr "Centras"
 
-#: src/Views/SetupView.vala:349
+#: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
 msgstr "Nepertraukiamas automatinis padavimas"
 
-#: src/Views/SetupView.vala:353
+#: src/Views/SetupView.vala:358
 msgid "Disk"
 msgstr "Diskas"
 
-#: src/Views/SetupView.vala:356
+#: src/Views/SetupView.vala:361
 msgid "Envelope"
 msgstr "Vokas"
 
-#: src/Views/SetupView.vala:359
+#: src/Views/SetupView.vala:364
 msgid "Hagaki"
 msgstr "Hagaki"
 
-#: src/Views/SetupView.vala:362
+#: src/Views/SetupView.vala:367
 msgid "Large Capacity"
 msgstr "Didelės talpos"
 
-#: src/Views/SetupView.vala:365
+#: src/Views/SetupView.vala:370
 msgid "Left"
 msgstr "Kairė"
 
-#: src/Views/SetupView.vala:368
+#: src/Views/SetupView.vala:373
 msgid "Main Tray"
 msgstr "Pagrindinis dėklas"
 
-#: src/Views/SetupView.vala:371
+#: src/Views/SetupView.vala:376
 msgid "Main Roll"
 msgstr "Pagrindinis rulonas"
 
-#: src/Views/SetupView.vala:374
+#: src/Views/SetupView.vala:379
 msgid "Manual"
 msgstr "Rankinis"
 
-#: src/Views/SetupView.vala:377
+#: src/Views/SetupView.vala:382
 msgid "Middle"
 msgstr "Viduryje"
 
-#: src/Views/SetupView.vala:380
+#: src/Views/SetupView.vala:385
 msgid "Photo"
 msgstr "Nuotrauka"
 
-#: src/Views/SetupView.vala:384
+#: src/Views/SetupView.vala:389
 msgid "Rear"
 msgstr "Galinis"
 
-#: src/Views/SetupView.vala:387
+#: src/Views/SetupView.vala:392
 msgid "Right"
 msgstr "Dešinė"
 
-#: src/Views/SetupView.vala:390
+#: src/Views/SetupView.vala:395
 msgid "Side"
 msgstr "Šoninis"
 
-#: src/Views/SetupView.vala:393
+#: src/Views/SetupView.vala:398
 msgid "Top"
 msgstr "Viršuje"
 
-#: src/Views/SetupView.vala:398
+#: src/Views/SetupView.vala:403
 #, c-format
 msgid "Roll %d"
 msgstr "Rulonas %d"
 
-#: src/Views/SetupView.vala:414
+#: src/Views/SetupView.vala:419
 msgid "Paper Source:"
 msgstr "Popieriaus šaltinis:"
 
