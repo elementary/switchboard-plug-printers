@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
 "PO-Revision-Date: 2018-08-13 00:03+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"Last-Translator: James Qian <sotux82@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -162,7 +162,7 @@ msgstr "可用的网络打印机"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "您确定需要移除 '%s' 吗？"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, fuzzy, c-format
@@ -293,7 +293,7 @@ msgstr "任务已完成"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "打印队列为空"
 
 #: src/Views/JobsView.vala:30
 #, fuzzy
@@ -311,11 +311,11 @@ msgstr "布局类型："
 
 #: src/Views/SetupView.vala:74
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "长边（标准）"
 
 #: src/Views/SetupView.vala:75
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "短边（翻转）"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
@@ -323,19 +323,19 @@ msgstr "双面："
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
-msgstr ""
+msgstr "纵向"
 
 #: src/Views/SetupView.vala:146
 msgid "Landscape"
-msgstr ""
+msgstr "横向"
 
 #: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
-msgstr ""
+msgstr "反转纵向"
 
 #: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
-msgstr ""
+msgstr "反转横向"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
@@ -431,7 +431,7 @@ msgstr "大容量"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "我的邮箱"
 
 #: src/Views/SetupView.vala:274
 #, c-format
@@ -441,7 +441,7 @@ msgstr "堆叠器 %d"
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "邮箱 %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
