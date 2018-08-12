@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
 "PO-Revision-Date: 2018-08-12 13:45+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"Last-Translator: James Qian <sotux82@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -22,7 +22,7 @@ msgstr "打印机"
 
 #: src/PrinterPage.vala:39
 msgid "Page Setup"
-msgstr ""
+msgstr "页面设置"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
@@ -59,7 +59,7 @@ msgstr "暂无打印机"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
+msgstr "单击下方工具栏中的图标连接到打印机。"
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
@@ -91,7 +91,7 @@ msgstr "应用接口/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "正在查找附近的打印机...."
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -600,7 +600,7 @@ msgstr "暂停"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "继续"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
