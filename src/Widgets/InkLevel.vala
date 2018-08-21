@@ -24,32 +24,18 @@ public class Printers.InkLevel : Gtk.Grid {
     public unowned Printer printer { get; construct; }
     private const string STYLE_CLASS =
     """@define-color levelbar_color %s;
-    .coloredlevelbar.fill-block {
-        background-color: @levelbar_color;
-
-        border: 1px solid shade (@levelbar_color, 0.90);
-        border-radius: 2.5px;
-        box-shadow: inset 0 0 0 1px alpha (#fff, 0.05),
-                    inset 0 1px 0 0 alpha (#fff, 0.35),
-                    inset 0 -1px 0 0 alpha (#fff, 0.15),
-                    0 1px 0 0 alpha (@bg_highlight_color, 0.15);
-        transition: all 100ms ease-in;
-        background-image: linear-gradient(to bottom,
-                                      shade (@levelbar_color, 1.30),
-                                      @levelbar_color);
-    }
-    .coloredlevelbar.fill-block.empty-fill-block {
-        background-color: shade (@bg_color, 0.95);
-        background-image: linear-gradient(to bottom,
-                                      shade (@bg_color, 0.95),
-                                      shade (@bg_color, 0.85)
-                                      );
-
-        border-color: alpha (#000, 0.25);
-        box-shadow: inset 0 0 0 1px alpha (@bg_highlight_color, 0.05),
-                    inset 0 1px 0 0 alpha (@bg_highlight_color, 0.45),
-                    inset 0 -1px 0 0 alpha (@bg_highlight_color, 0.15),
-                    0 1px 0 0 alpha (@bg_highlight_color, 0.15);
+    .coloredlevelbar block.filled {
+        background-image:
+            linear-gradient(
+                to bottom,
+                shade (@levelbar_color, 1.3),
+                shade (@levelbar_color, 1)
+            );
+            border: 1px solid shade (@levelbar_color, 0.85);
+        box-shadow:
+            inset 0 0 0 1px alpha (#fff, 0.05),
+            inset 0 1px 0 0 alpha (#fff, 0.45),
+            inset 0 -1px 0 0 alpha (#fff, 0.15);
     }
     """;
 
@@ -72,8 +58,10 @@ public class Printers.InkLevel : Gtk.Grid {
             level.inverted = true;
             level.tooltip_text = get_translated_name (color.name);
             level.expand = true;
+
             var context = level.get_style_context ();
             context.add_class ("coloredlevelbar");
+
             var split = color.color.split ("#");
 
             var css_color = STYLE_CLASS.printf (color.color);
