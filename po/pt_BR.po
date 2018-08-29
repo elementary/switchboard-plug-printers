@@ -3,8 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-05-29 00:12+0000\n"
-"Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
+"PO-Revision-Date: 2018-08-29 16:36+0000\n"
+"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
+"\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -12,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -279,9 +280,8 @@ msgid "Job Canceled"
 msgstr "Tarefa cancelada"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "Tarefa abortada"
+msgstr "Trabalho abortado"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
@@ -560,9 +560,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "Laboratório 1 ou Mesa do João"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Usar como impressora padrão"
+msgstr "Usar como impressora padrão:"
 
 #: src/Widgets/InkLevel.vala:102
 msgid "Black (PGBK)"
