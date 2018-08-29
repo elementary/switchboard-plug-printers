@@ -4,8 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
 "PO-Revision-Date: 2018-08-29 16:36+0000\n"
-"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
-"\n"
+"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -373,55 +372,47 @@ msgstr "Modo de cores:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr ""
+msgstr "Superior"
 
 #: src/Views/SetupView.vala:239
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Meio"
+msgstr "Centro"
 
 #: src/Views/SetupView.vala:242
-#, fuzzy
 msgid "Bottom Bin"
 msgstr "Parte inferior"
 
 #: src/Views/SetupView.vala:245
-#, fuzzy
 msgid "Side Bin"
 msgstr "Lado"
 
 #: src/Views/SetupView.vala:248
-#, fuzzy
 msgid "Left Bin"
 msgstr "Esquerda"
 
 #: src/Views/SetupView.vala:251
-#, fuzzy
 msgid "Right Bin"
 msgstr "Direita"
 
 #: src/Views/SetupView.vala:254
-#, fuzzy
 msgid "Center Bin"
 msgstr "Centro"
 
 #: src/Views/SetupView.vala:257
-#, fuzzy
 msgid "Rear Bin"
 msgstr "Traseira"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Frente"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Verso"
 
 #: src/Views/SetupView.vala:266
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Grande capacidade"
+msgstr "Grande Capacidade"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
