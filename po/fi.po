@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
 "PO-Revision-Date: 2018-08-31 13:20+0000\n"
-"Last-Translator: Veli-Pekka Samuli Finnilä <vpf@tuta.io>\n"
+"Last-Translator: Robin Lahtinen <robin.lahtinen@gmail.com>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/fi/>\n"
 "Language: fi\n"
@@ -143,7 +143,7 @@ msgstr "(suositeltu)"
 
 #: src/Dialogs/AddDialog.vala:605
 msgid "Serial"
-msgstr ""
+msgstr "Sarja"
 
 #: src/Dialogs/AddDialog.vala:608
 msgid "Local Printers"
@@ -305,11 +305,11 @@ msgstr "Sivua per puoli:"
 
 #: src/Views/SetupView.vala:74
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Pitkä reuna (vakio)"
 
 #: src/Views/SetupView.vala:75
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Lyhyt reuna (kääntää)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
@@ -380,59 +380,54 @@ msgid "Middle Bin"
 msgstr "Keskiosa"
 
 #: src/Views/SetupView.vala:242
-#, fuzzy
 msgid "Bottom Bin"
 msgstr "Alaosa"
 
 #: src/Views/SetupView.vala:245
-#, fuzzy
 msgid "Side Bin"
-msgstr "Puoli"
+msgstr "Sivuosa"
 
 #: src/Views/SetupView.vala:248
-#, fuzzy
 msgid "Left Bin"
-msgstr "Vasen"
+msgstr "Vasenosa"
 
 #: src/Views/SetupView.vala:251
-#, fuzzy
 msgid "Right Bin"
-msgstr "Oikea"
+msgstr "Oikeaosa"
 
 #: src/Views/SetupView.vala:254
-#, fuzzy
 msgid "Center Bin"
-msgstr "Keskitä"
+msgstr "Keskiosa"
 
 #: src/Views/SetupView.vala:257
 msgid "Rear Bin"
-msgstr ""
+msgstr "Takasäiliö"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Etuylös-säiliö"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Etualas-säiliö"
 
 #: src/Views/SetupView.vala:266
 msgid "Large Capacity Bin"
-msgstr ""
+msgstr "Suuren kapasiteetin säiliö"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "Oma postilaatikko"
 
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Keräin %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Postilaatikko %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
@@ -441,7 +436,7 @@ msgstr "Taso %d"
 
 #: src/Views/SetupView.vala:293
 msgid "Output Tray:"
-msgstr ""
+msgstr "Tulostelokero:"
 
 #: src/Views/SetupView.vala:307
 msgid "Draft"
@@ -465,11 +460,11 @@ msgstr "Paperin varaaminen"
 
 #: src/Views/SetupView.vala:336
 msgid "Alternate Tray"
-msgstr ""
+msgstr "Vaihtoehtoinen lokero"
 
 #: src/Views/SetupView.vala:339
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Vaihtoehtoinen rulla"
 
 #: src/Views/SetupView.vala:345
 msgid "Bottom"
@@ -481,7 +476,7 @@ msgstr "Ohitustaso"
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
-msgstr "Keskitä"
+msgstr "Keski"
 
 #: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
@@ -489,7 +484,7 @@ msgstr "Jatkuva automaattisyöttö"
 
 #: src/Views/SetupView.vala:358
 msgid "Disk"
-msgstr ""
+msgstr "Levy"
 
 #: src/Views/SetupView.vala:361
 msgid "Envelope"
@@ -501,7 +496,7 @@ msgstr "Hagaki"
 
 #: src/Views/SetupView.vala:367
 msgid "Large Capacity"
-msgstr ""
+msgstr "Suuri kapasiteetti"
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
@@ -513,7 +508,7 @@ msgstr "Päätaso"
 
 #: src/Views/SetupView.vala:376
 msgid "Main Roll"
-msgstr ""
+msgstr "Päärulla"
 
 #: src/Views/SetupView.vala:379
 msgid "Manual"
@@ -529,7 +524,7 @@ msgstr "Valokuva"
 
 #: src/Views/SetupView.vala:389
 msgid "Rear"
-msgstr ""
+msgstr "Taka"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
@@ -541,12 +536,12 @@ msgstr "Puoli"
 
 #: src/Views/SetupView.vala:398
 msgid "Top"
-msgstr ""
+msgstr "Korkein"
 
 #: src/Views/SetupView.vala:403
 #, c-format
 msgid "Roll %d"
-msgstr ""
+msgstr "Rullaa %d"
 
 #: src/Views/SetupView.vala:419
 msgid "Paper Source:"
