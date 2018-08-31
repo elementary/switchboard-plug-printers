@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-08-31 13:20+0000\n"
+"PO-Revision-Date: 2018-09-01 00:09+0000\n"
 "Last-Translator: Robin Lahtinen <robin.lahtinen@gmail.com>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/fi/>\n"
@@ -62,23 +62,23 @@ msgstr ""
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr "Internet Printing Protocol (https)"
+msgstr "Internetin tulostus protokolla (https)"
 
 #: src/Dialogs/AddDialog.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr "Internet Printing Protocol (http)"
+msgstr "Internetin tulostus protokolla (http)"
 
 #: src/Dialogs/AddDialog.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr "Internet Printing Protocol (ipp)"
+msgstr "Internetin tulostus protokolla (ipp)"
 
 #: src/Dialogs/AddDialog.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr "Internet Printing Protocol (ipps)"
+msgstr "Internetin tulostus protokolla (ipps)"
 
 #: src/Dialogs/AddDialog.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr "Internet Printing Protocol (ipp14)"
+msgstr "Internetin tulostus protokolla (ipp14)"
 
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
