@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-06-02 00:06+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"PO-Revision-Date: 2018-08-31 13:20+0000\n"
+"Last-Translator: Veli-Pekka Samuli Finnilä <vpf@tuta.io>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/fi/>\n"
 "Language: fi\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -119,7 +119,7 @@ msgstr "Kuvaus:"
 
 #: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
 msgid "Location:"
@@ -265,7 +265,7 @@ msgstr "Työ odottaa"
 
 #: src/Objects/Job.vala:103
 msgid "On Hold"
-msgstr ""
+msgstr "Pidossa"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
@@ -317,19 +317,19 @@ msgstr "Kaksipuoleinen:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
-msgstr ""
+msgstr "Pysty"
 
 #: src/Views/SetupView.vala:146
 msgid "Landscape"
-msgstr ""
+msgstr "Vaaka"
 
 #: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Päinvastainen pysty"
 
 #: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Päinvastainen vaaka"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
@@ -373,12 +373,11 @@ msgstr "Väritila:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr ""
+msgstr "Yläosa"
 
 #: src/Views/SetupView.vala:239
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Keski"
+msgstr "Keskiosa"
 
 #: src/Views/SetupView.vala:242
 #, fuzzy
