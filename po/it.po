@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-09-06 04:01+0000\n"
+"PO-Revision-Date: 2018-09-07 00:06+0000\n"
 "Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/it/>\n"
@@ -176,7 +176,7 @@ msgstr ""
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
-msgstr "Rimuovi"
+msgstr "Eliminare"
 
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
