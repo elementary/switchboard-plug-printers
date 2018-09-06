@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-05-14 00:02+0000\n"
-"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
+"PO-Revision-Date: 2018-09-06 04:01+0000\n"
+"Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/it/>\n"
 "Language: it\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -65,23 +65,23 @@ msgstr ""
 
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr "Internet Printing Protocol (https)"
+msgstr "Protocollo di stampa via Internet (https)"
 
 #: src/Dialogs/AddDialog.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr "Internet Printing Protocol (http)"
+msgstr "Protocollo di stampa via Internet (http)"
 
 #: src/Dialogs/AddDialog.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr "Internet Printing Protocol (ipp)"
+msgstr "Protocollo di stampa via Internet (ipp)"
 
 #: src/Dialogs/AddDialog.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr "Internet Printing Protocol (ipps)"
+msgstr "Protocollo di stampa via Internet (ipps)"
 
 #: src/Dialogs/AddDialog.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr "Internet Printing Protocol (ipp14)"
+msgstr "Protocollo di stampa via Internet (ipp14)"
 
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
@@ -377,69 +377,61 @@ msgstr "Modalità colore:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr ""
+msgstr "Compartimento superiore"
 
 #: src/Views/SetupView.vala:239
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Centro"
+msgstr "Compartimento centrale"
 
 #: src/Views/SetupView.vala:242
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Sotto"
+msgstr "Compartimento inferiore"
 
 #: src/Views/SetupView.vala:245
-#, fuzzy
 msgid "Side Bin"
-msgstr "Lato"
+msgstr "Compartimento laterale"
 
 #: src/Views/SetupView.vala:248
-#, fuzzy
 msgid "Left Bin"
-msgstr "Sinistra"
+msgstr "Compartimento di sinistra"
 
 #: src/Views/SetupView.vala:251
-#, fuzzy
 msgid "Right Bin"
-msgstr "Destra"
+msgstr "Compartimento di destra"
 
 #: src/Views/SetupView.vala:254
-#, fuzzy
 msgid "Center Bin"
-msgstr "Centro"
+msgstr "Compartimento centrale"
 
 #: src/Views/SetupView.vala:257
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Retro"
+msgstr "Compartimento posteriore"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Compartimento rivolto in su"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Compartimento rivolto in giù"
 
 #: src/Views/SetupView.vala:266
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Grande capacità"
+msgstr "Compartimento di grande capacità"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "La mia casella postale"
 
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Organizzatore %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Casella postale %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
