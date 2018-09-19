@@ -23,6 +23,7 @@
 public class Printers.PrinterRow : Gtk.ListBoxRow {
     public PrinterPage page;
     public unowned Printer printer { get; construct; }
+    private bool enabled;
 
     private Gtk.Image printer_image;
     private Gtk.Image status_image;
@@ -76,19 +77,34 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
             page.destroy ();
             destroy ();
         });
+        
+        printer.enabled_changed.connect(() => {
+        if (printer.enabled) {
+            enabled = true;
+        } else {
+            enabled = false;
+        }
+            update_state ();
+        });
     }
 
     private void update_status () {
-        if (printer.enabled) {
-            status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
+    if (printer.enabled && !enabled) {
+    status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
+    } else {
+    status_image.icon_name = "user-offline";
+    status_label.label = "<span font_size=\"small\">%s</span>".printf (_("Disabled"));
+    }
+    }
 
-            switch (printer.state_reasons_raw) {
+    private void update_state () {
+        switch (printer.state_reasons_raw) {
                 case "offline":
-                    status_image.icon_name = "user-offline";
+                status_image.icon_name = "user-offline";
                     break;
                 case "none":
                 case null:
-                    status_image.icon_name = "user-available";
+                status_image.icon_name = "user-available";
                     break;
                 case "developer-low":
                 case "marker-supply-low":
@@ -96,15 +112,11 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
                 case "media-low":
                 case "opc-near-eol":
                 case "toner-low":
-                    status_image.icon_name = "user-away";
+                status_image.icon_name = "user-away";
                     break;
                 default:
-                    status_image.icon_name = "user-busy";
+                status_image.icon_name = "user-busy";
                     break;
-            }
-        } else {
-            status_image.icon_name = "user-offline";
-            status_label.label = "<span font_size=\"small\">%s</span>".printf (_("Disabled"));
-        }
+                }
     }
 }

@@ -56,7 +56,11 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
         printer.bind_property ("info", this, "title");
         printer.bind_property ("location", this, "description");
 
-        status_switch.bind_property ("active", printer, "enabled", BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
+        if (printer.enabled) {
+        status_switch.bind_property ("active", printer, "enabled", BindingFlags.INVERT_BOOLEAN | BindingFlags.BIDIRECTIONAL );
+        } else {
+        status_switch.bind_property ("active", printer, "enabled", BindingFlags.SYNC_CREATE );
+        }
 
         show_all ();
     }
