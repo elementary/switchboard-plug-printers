@@ -23,6 +23,7 @@
 public class Printers.PrinterRow : Gtk.ListBoxRow {
     public PrinterPage page;
     public unowned Printer printer { get; construct; }
+    private bool enabled;
 
     private Gtk.Image printer_image;
     private Gtk.Image status_image;
@@ -76,10 +77,18 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
             page.destroy ();
             destroy ();
         });
+
+        if (printer.enabled) {
+            printer.enabled = true;
+            enabled = true;
+        } else {
+            printer.enabled = false;
+            enabled = false;
+        }
     }
 
     private void update_status () {
-        if (printer.enabled) {
+        if (printer.enabled && !enabled) {
             status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
 
             switch (printer.state_reasons_raw) {
