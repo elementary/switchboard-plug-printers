@@ -23,7 +23,7 @@
 public class Printers.PrinterRow : Gtk.ListBoxRow {
     public PrinterPage page;
     public unowned Printer printer { get; construct; }
-    private bool enabled;
+    private bool enabled = false;
 
     private Gtk.Image printer_image;
     private Gtk.Image status_image;
@@ -83,7 +83,7 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
             enabled = true;
         } else {
             printer.enabled = false;
-            enabled = false;
+            enabled = true;
         }
     }
 
@@ -112,8 +112,13 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
                     break;
             }
         } else {
-            status_image.icon_name = "user-offline";
-            status_label.label = "<span font_size=\"small\">%s</span>".printf (_("Disabled"));
+            if (!printer.enabled && enabled) {
+                status_image.icon_name = "user-available";
+                status_label.label = "<span font_size=\"small\">%s</span>".printf (_("Ready"));
+            } else {
+                status_image.icon_name = "user-offline";
+                status_label.label = "<span font_size=\"small\">%s</span>".printf (_("Disabled"));
+        }
         }
     }
 }
