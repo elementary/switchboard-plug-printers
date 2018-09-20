@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-07-27 00:09+0000\n"
-"Last-Translator: Christophe Silva <Christophesilva80@gmail.com>\n"
+"PO-Revision-Date: 2018-09-19 00:09+0000\n"
+"Last-Translator: Nuno Alexandre MS ribeiro <nuno.anarresti@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/pt/>\n"
 "Language: pt\n"
@@ -270,7 +270,7 @@ msgstr "Em Espera"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
-msgstr "A processar..."
+msgstr "A processar…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
