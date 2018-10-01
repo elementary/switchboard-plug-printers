@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-06-10 00:12+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"PO-Revision-Date: 2018-10-02 00:04+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ja/>\n"
 "Language: ja\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -29,7 +29,7 @@ msgstr "設定と供給"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
-msgstr "テストページの印刷"
+msgstr "テストページを印刷"
 
 #: src/PrinterPage.vala:106
 msgid "Test page"
@@ -37,11 +37,11 @@ msgstr "テストページ"
 
 #: src/PrinterList.vala:51
 msgid "Add Printer…"
-msgstr "プリンターの追加…"
+msgstr "プリンターを追加…"
 
 #: src/PrinterList.vala:53
 msgid "Remove Printer"
-msgstr "プリンターの削除"
+msgstr "プリンターを削除"
 
 #: src/Plug.vala:35
 msgid "Printers"
@@ -49,7 +49,7 @@ msgstr "プリンター"
 
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "プリンターの設定、プリントキューの管理、インク残量の表示をします"
+msgstr "プリンターを設定し、プリントキューを管理し、インク残量を表示します"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
@@ -135,7 +135,7 @@ msgstr "前へ"
 
 #: src/Dialogs/AddDialog.vala:308
 msgid "Add Printer"
-msgstr "プリンターの追加"
+msgstr "プリンターを追加"
 
 #: src/Dialogs/AddDialog.vala:543
 msgid "(recommended)"
@@ -167,8 +167,7 @@ msgstr "'%s' を削除してもよろしいですか？"
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
-msgstr ""
-"'%s' を削除すると、それに関連するすべてのプリント履歴と設定が削除されます。"
+msgstr "'%s' を削除すると、関連するすべての印刷履歴と設定が削除されます。"
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
