@@ -52,38 +52,42 @@ public class Printers.InkLevel : Gtk.Grid {
         }
 
         foreach (Printer.ColorLevel color in colors) {
-            var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max);
-            level.orientation = Gtk.Orientation.VERTICAL;
-            level.value = color.level;
-            level.inverted = true;
-            level.tooltip_text = get_translated_name (color.name);
-            level.expand = true;
-
-            var context = level.get_style_context ();
-            context.add_class ("coloredlevelbar");
-
-            var split = color.color.split ("#");
-
-            var css_color = STYLE_CLASS.printf (color.color);
-            if (split.length > 2) {
-                css_color = STYLE_CLASS.printf ("#" + split[1]);
-            } else if (color.color == "none") {
-                css_color = STYLE_CLASS.printf ("#3689e6");
+            string[] colors_codes = { null, "3689E6" };
+            if ("#" in color.color) {
+                colors_codes = color.color.split ("#");
             }
 
-            var provider = new Gtk.CssProvider ();
-            try {
-                provider.load_from_data (css_color, css_color.length);
-                context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-            } catch (Error e) {
-                warning ("Could not create CSS Provider: %s\nStylesheet:\n%s", e.message, css_color);
+            var ink_grid = new Gtk.Grid ();
+            ink_grid.tooltip_text = get_translated_name (color.name ?? "black");
+            ink_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_LINKED);
+            for (int i = 1; i < colors_codes.length; i++) {
+                var css_color = STYLE_CLASS.printf ("#" + colors_codes[i]);
+
+                var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max);
+                level.orientation = Gtk.Orientation.VERTICAL;
+                level.value = color.level;
+                level.inverted = true;
+                level.expand = true;
+
+                var context = level.get_style_context ();
+                context.add_class ("coloredlevelbar");
+
+                var provider = new Gtk.CssProvider ();
+                try {
+                    provider.load_from_data (css_color, css_color.length);
+                    context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                } catch (Error e) {
+                    warning ("Could not create CSS Provider: %s\nStylesheet:\n%s", e.message, css_color);
+                }
+
+                ink_grid.add (level);
             }
 
-            add (level);
+            add (ink_grid);
         }
     }
 
-    private string get_translated_name (string name) {
+    private unowned string get_translated_name (string name) {
         switch (name) {
             case "black(PGBK)":
             case "Black(PGBK)":
@@ -92,17 +96,23 @@ public class Printers.InkLevel : Gtk.Grid {
             case "Black(BK)":
                 return _("Black (BK)");
             case "black":
+            case "black ink":
             case "Black":
                 return _("Black");
             case "yellow":
+            case "yellow ink":
             case "Yellow":
                 return _("Yellow");
             case "cyan":
+            case "cyan ink":
             case "Cyan":
                 return _("Cyan");
             case "magenta":
+            case "magenta ink":
             case "Magenta":
                 return _("Magenta");
+            case "tri-color ink":
+                return _("Tri-color");
         }
 
         return name;

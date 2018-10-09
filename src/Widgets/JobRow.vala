@@ -22,7 +22,7 @@
 
 public class Printers.JobRow : Gtk.ListBoxRow {
     public Job job { get; construct set; }
-    public Printer printer { get; private set; }
+    public Printer printer { get; construct set; }
 
     private Gtk.Grid grid;
     private Gtk.Image job_state_icon;
