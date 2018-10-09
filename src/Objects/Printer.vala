@@ -75,12 +75,12 @@ public class Printers.Printer : GLib.Object {
         NC_("printer state", "The optical photo conductor is no longer functioning")
     };
 
-    public struct ColorLevel {
-        int level;
-        int level_max;
-        int level_min;
-        string color;
-        string name;
+    public class ColorLevel {
+        public int level;
+        public int level_max;
+        public int level_min;
+        public string color;
+        public string name;
     }
 
     /***********
@@ -626,7 +626,7 @@ public class Printers.Printer : GLib.Object {
         if (status_code <= CUPS.IPP.Status.OK_CONFLICT) {
             unowned CUPS.IPP.Attribute attr = request.find_attribute ("marker-colors", CUPS.IPP.Tag.ZERO);
             for (int i = 0; i < attr.get_count (); i++) {
-                var color = ColorLevel ();
+                var color = new ColorLevel ();
                 color.color = attr.get_string (i);
                 found_colors.add (color);
             }
@@ -654,7 +654,7 @@ public class Printers.Printer : GLib.Object {
             attr = request.find_attribute ("marker-names", CUPS.IPP.Tag.ZERO);
             bound = int.min (attr.get_count (), color_size);
             for (int i = 0; i < bound; i++) {
-                found_colors[i].name = attr.get_string (i);
+                found_colors[i].name = attr.get_string (i).dup ();
             }
         } else {
             critical ("Error: %s", status_code.to_string ());

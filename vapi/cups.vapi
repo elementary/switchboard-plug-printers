@@ -538,9 +538,6 @@ namespace CUPS {
 			public Tag group_tag;
 			public Tag value_tag;
 			public string name;
-			public int num_values;
-			[CCode (array_length_cname = "num_values")]
-			public unowned CUPS.IPP.Value[] values;
 			[CCode(cname = "ippGetCount")]
 			public int get_count ();
 			[CCode(cname = "ippGetDate")]
@@ -553,13 +550,11 @@ namespace CUPS {
 			[CCode(cname = "ippGetCollection")]
 			public unowned CUPS.IPP.IPP get_collection (int element = 0);
 			[CCode(cname = "ippGetGroupTag")]
-			public CUPS.IPP.Tag get_group_tag (int element = 0);
+			public CUPS.IPP.Tag get_group_tag ();
 			[CCode(cname = "ippGetInteger")]
 			public int get_integer (int element = 0);
 			[CCode(cname = "ippGetName")]
 			public unowned string get_name ();
-			[CCode(cname = "ippGetOctetString")]
-			public void* get_octet_string (int element, out int datalen);
 			[CCode(cname = "ippGetOperation")]
 			public CUPS.IPP.Operation get_operation ();
 			[CCode(cname = "ippGetRange")]
@@ -570,36 +565,8 @@ namespace CUPS {
 			public unowned string get_string (int element = 0, string? language = null);
 			[CCode(cname = "ippGetValueTag")]
 			public CUPS.IPP.Tag get_value_tag ();
-		}
-
-		[CCode (cname = "ipp_value_t", cheader_filename = "cups/ipp.h")]
-		public struct Value {
-			public int integer;
-			public char boolean;
-			public uchar date[11];
-			[CCode(cname = "resolution.xres")]
-			public int resolution_x;
-			[CCode(cname = "resolution.yres")]
-			public int resolution_y;
-			[CCode(cname = "resolution.units")]
-			public CUPS.IPP.Resolution resolution_units;
-
-			[CCode(cname = "range.lower")]
-			public int range_lower;
-			[CCode(cname = "range.upper")]
-			public int range_upper;
-
-			[CCode(cname = "string.language")]
-			public string string_language;
-			[CCode(cname = "string.text")]
-			public string string_text;
-
-			[CCode(cname = "unknown.length")]
-			public int unknown_length;
-			[CCode(cname = "unknown.data")]
-			public void* unknown_data;
-
-			public CUPS.IPP.IPP collection;
+			[CCode(cname = "ippGetOctetString")]
+			public uint8[] get_octet_string (int element = 0);
 		}
 
 		[CCode (cname = "ippPort")]
