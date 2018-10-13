@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 09:30-0700\n"
+"POT-Creation-Date: 2018-10-13 15:14-0700\n"
 "PO-Revision-Date: 2017-04-17 14:18+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -33,6 +33,7 @@ msgstr ""
 msgid "Print Test Page"
 msgstr "Ispiši testnu stranicu"
 
+#. / TRANSLATORS: Name of the test page job
 #: src/PrinterPage.vala:106
 msgid "Test page"
 msgstr "Testna stranica"
@@ -64,30 +65,37 @@ msgstr "Nema pisača"
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 
+#. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
 msgstr "Protokol internet ispisa (https)"
 
+#. / Tranlators: This is a protocol name, please keep the (http).
 #: src/Dialogs/AddDialog.vala:29
 msgid "Internet Printing Protocol (http)"
 msgstr "Protokol internet ispisa (http)"
 
+#. / Tranlators: This is a protocol name, please keep the (ipp).
 #: src/Dialogs/AddDialog.vala:31
 msgid "Internet Printing Protocol (ipp)"
 msgstr "Protokol internet ispisa (ipp)"
 
+#. / Tranlators: This is a protocol name, please keep the (ipps).
 #: src/Dialogs/AddDialog.vala:33
 msgid "Internet Printing Protocol (ipps)"
 msgstr "Protokol internet ispisa (ipps)"
 
+#. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: src/Dialogs/AddDialog.vala:35
 msgid "Internet Printing Protocol (ipp14)"
 msgstr "Protokol internet ispisa (ipp 14)"
 
+#. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
 msgstr "LPD/LPR računalo ili pisač"
 
+#. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:39
 msgid "AppSocket/HP JetDirect"
 msgstr "Priključnica aplikacije/HP JetDirect"
@@ -114,6 +122,7 @@ msgstr "Sljedeća"
 msgid "Impossible to list all available printers"
 msgstr "Nemoguće je prikazati sve dostupne pisače"
 
+#. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:225
 msgid "Connection:"
 msgstr "Povezivanje:"
@@ -180,81 +189,97 @@ msgstr ""
 msgid "Remove"
 msgstr "Ukloni"
 
+#. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
 msgstr "Ponestaje tinte u toneru"
 
+#. / Translators: The printer has no toner left
 #: src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
 msgstr "Ponestalo tinte u toneru"
 
+#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
 msgstr "Razvijatelj nizak"
 
+#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
 msgstr "Ponestalo razvijatelja"
 
+#. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
 msgstr "Ponestaje tinte"
 
+#. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
 msgstr "Ponestalo tinte"
 
+#. / Translators: One or more covers on the printer are open
 #: src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
 msgstr "Otvoren je poklopac"
 
+#. / Translators: One or more doors on the printer are open
 #: src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
 msgstr "Otvorena su vratašca"
 
+#. / Translators: At least one input tray is low on media
 #: src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
 msgstr "Ponestaje papira"
 
+#. / Translators: At least one input tray is empty
 #: src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
 msgstr "Ponestalo papira"
 
+#. / Translators: The printer is offline
 #: src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
 msgstr "Nije povezan"
 
+#. / Translators: Someone has stopped the Printer
 #: src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
 msgstr "Zaustavljeno"
 
+#. / Translators: The printer marker supply waste receptacle is almost full
 #: src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
 msgstr "Pisačeva kantica za otpad je skoro puna"
 
+#. / Translators: The printer marker supply waste receptacle is full
 #: src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
 msgstr "Pisačeva kantica za otpad je puna"
 
+#. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
 msgstr "Optički fotografski vodič je pri kraju vijeka trajanja"
 
+#. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
@@ -573,29 +598,33 @@ msgstr "Lab 1 ili Goranov radni stoll"
 msgid "Use as default printer:"
 msgstr "Koristi kao zadani pisač"
 
-#: src/Widgets/InkLevel.vala:102
+#: src/Widgets/InkLevel.vala:94
 msgid "Black (PGBK)"
 msgstr "Crna (PGBK)"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Black (BK)"
 msgstr "Crna (BK)"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Widgets/InkLevel.vala:101
 msgid "Black"
 msgstr "Crna"
 
-#: src/Widgets/InkLevel.vala:111
+#: src/Widgets/InkLevel.vala:105
 msgid "Yellow"
 msgstr "Žuta"
 
-#: src/Widgets/InkLevel.vala:114
+#: src/Widgets/InkLevel.vala:109
 msgid "Cyan"
 msgstr "Modra"
 
-#: src/Widgets/InkLevel.vala:117
+#: src/Widgets/InkLevel.vala:113
 msgid "Magenta"
 msgstr "Ljubičasta"
+
+#: src/Widgets/InkLevel.vala:115
+msgid "Tri-color"
+msgstr ""
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"

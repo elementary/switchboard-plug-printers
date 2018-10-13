@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 09:30-0700\n"
+"POT-Creation-Date: 2018-10-13 15:14-0700\n"
 "PO-Revision-Date: 2018-04-30 03:52+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -31,6 +31,7 @@ msgstr "設定與供應"
 msgid "Print Test Page"
 msgstr "列印測試頁"
 
+#. / TRANSLATORS: Name of the test page job
 #: src/PrinterPage.vala:106
 msgid "Test page"
 msgstr "測試頁"
@@ -59,30 +60,37 @@ msgstr "無可用的印表機"
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr "請點按下方工具列中的圖示連接至印表機。"
 
+#. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
 msgstr "網際網路列印協定 (https)"
 
+#. / Tranlators: This is a protocol name, please keep the (http).
 #: src/Dialogs/AddDialog.vala:29
 msgid "Internet Printing Protocol (http)"
 msgstr "網際網路列印協定 (http)"
 
+#. / Tranlators: This is a protocol name, please keep the (ipp).
 #: src/Dialogs/AddDialog.vala:31
 msgid "Internet Printing Protocol (ipp)"
 msgstr "網際網路列印協定 (ipp)"
 
+#. / Tranlators: This is a protocol name, please keep the (ipps).
 #: src/Dialogs/AddDialog.vala:33
 msgid "Internet Printing Protocol (ipps)"
 msgstr "網際網路列印協定 (ipps)"
 
+#. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: src/Dialogs/AddDialog.vala:35
 msgid "Internet Printing Protocol (ipp14)"
 msgstr "網際網路列印協定 (ipp14)"
 
+#. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
 msgstr "LPD/LPR 主機或印表機"
 
+#. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:39
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
@@ -108,6 +116,7 @@ msgstr "下一個"
 msgid "Impossible to list all available printers"
 msgstr "無法列出所有可用的印表機"
 
+#. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:225
 msgid "Connection:"
 msgstr "連線："
@@ -172,81 +181,97 @@ msgstr "移除「%s」後您將失去所有列印記錄與其相關組態。"
 msgid "Remove"
 msgstr "移除"
 
+#. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
 msgstr "碳粉不足"
 
+#. / Translators: The printer has no toner left
 #: src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
 msgstr "碳粉用完"
 
+#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
 msgstr "顯像劑不足"
 
+#. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
 msgstr "顯像劑用完"
 
+#. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
 msgstr "墨水匣不足"
 
+#. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
 msgstr "墨水匣用完"
 
+#. / Translators: One or more covers on the printer are open
 #: src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
 msgstr "外殼開啟"
 
+#. / Translators: One or more doors on the printer are open
 #: src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
 msgstr "紙匣門開啟"
 
+#. / Translators: At least one input tray is low on media
 #: src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
 msgstr "紙張不足"
 
+#. / Translators: At least one input tray is empty
 #: src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
 msgstr "紙張用盡"
 
+#. / Translators: The printer is offline
 #: src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
 msgstr "離線"
 
+#. / Translators: Someone has stopped the Printer
 #: src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
 msgstr "已停止"
 
+#. / Translators: The printer marker supply waste receptacle is almost full
 #: src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
 msgstr "廢墨收集器將滿"
 
+#. / Translators: The printer marker supply waste receptacle is full
 #: src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
 msgstr "廢墨收集器已滿"
 
+#. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
 msgstr "感光鼓接近使用壽命"
 
+#. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
@@ -552,29 +577,33 @@ msgstr "例如「實驗室一」或「小明的桌子」"
 msgid "Use as default printer:"
 msgstr "作為預設印表機："
 
-#: src/Widgets/InkLevel.vala:102
+#: src/Widgets/InkLevel.vala:94
 msgid "Black (PGBK)"
 msgstr "黑色（PGBK）"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Black (BK)"
 msgstr "黑色（BK）"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Widgets/InkLevel.vala:101
 msgid "Black"
 msgstr "黑色"
 
-#: src/Widgets/InkLevel.vala:111
+#: src/Widgets/InkLevel.vala:105
 msgid "Yellow"
 msgstr "黃色"
 
-#: src/Widgets/InkLevel.vala:114
+#: src/Widgets/InkLevel.vala:109
 msgid "Cyan"
 msgstr "青藍色"
 
-#: src/Widgets/InkLevel.vala:117
+#: src/Widgets/InkLevel.vala:113
 msgid "Magenta"
 msgstr "洋紅色"
+
+#: src/Widgets/InkLevel.vala:115
+msgid "Tri-color"
+msgstr ""
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
