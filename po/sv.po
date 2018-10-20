@@ -3,28 +3,29 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:14-0700\n"
-"PO-Revision-Date: 2016-07-28 20:39+0000\n"
-"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-10-22 19:26+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
+"Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-printers/sv/>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
 
 #: src/PrinterPage.vala:38
-#, fuzzy
 msgid "Print Queue"
-msgstr "Skrivare"
+msgstr "Utskriftskö"
 
 #: src/PrinterPage.vala:39
 msgid "Page Setup"
-msgstr ""
+msgstr "Siduppsättning"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Inställningar och utrustning"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
@@ -52,52 +53,52 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Ställ in skrivare, hantera utskriftsköer och kontrollera bläcknivåer"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "Inga skrivare"
+msgstr "Inga skrivare tillgängliga"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+"Anslut till en skrivare genom att klicka på ikonen i verktygsfältet nedan."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "Internetutskriftsprotokoll (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: src/Dialogs/AddDialog.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "Internetutskriftsprotokoll (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: src/Dialogs/AddDialog.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "Internetutskriftsprotokoll (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: src/Dialogs/AddDialog.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "Internetutskriftsprotokoll (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: src/Dialogs/AddDialog.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "Internetutskriftsprotokoll (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "LPD/LPR-värd eller skrivare"
 
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Letar efter närliggande skrivare…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -106,7 +107,7 @@ msgstr "Uppdatera"
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -114,7 +115,7 @@ msgstr "Nästa"
 
 #: src/Dialogs/AddDialog.vala:109
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "Omöjligt att lista alla tillgängliga skrivare"
 
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:225
@@ -127,7 +128,7 @@ msgstr "Beskrivning:"
 
 #: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "BrandPrinter X3000"
 
 #: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
 msgid "Location:"
@@ -135,7 +136,7 @@ msgstr "Plats:"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
-msgstr "Labb 1 eller Johns skrivbord"
+msgstr "Labb 1 eller Svens skrivbord"
 
 #: src/Dialogs/AddDialog.vala:304
 msgid "Previous"
@@ -147,11 +148,11 @@ msgstr "Lägg till skrivare"
 
 #: src/Dialogs/AddDialog.vala:543
 msgid "(recommended)"
-msgstr ""
+msgstr "(rekommenderad)"
 
 #: src/Dialogs/AddDialog.vala:605
 msgid "Serial"
-msgstr ""
+msgstr "Serie"
 
 #: src/Dialogs/AddDialog.vala:608
 msgid "Local Printers"
@@ -168,7 +169,7 @@ msgstr "Tillgängliga nätverksskrivare"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Är du säker på att du vill ta bort '%s'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -176,6 +177,8 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
+"Vid borttagning av '%s' förlorar du all utskriftshistorik och konfiguration "
+"associerad med den."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -185,67 +188,67 @@ msgstr "Ta bort"
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
-msgstr ""
+msgstr "Låg tonernivå"
 
 #. / Translators: The printer has no toner left
 #: src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
-msgstr ""
+msgstr "Toner slut"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
-msgstr ""
+msgstr "Låg nivå av framkallningsvätska"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
-msgstr ""
+msgstr "Framkallningsvätska slut"
 
 #. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr ""
+msgstr "Låg nivå av färg"
 
 #. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr ""
+msgstr "Färg slut"
 
 #. / Translators: One or more covers on the printer are open
 #: src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
-msgstr ""
+msgstr "Lock öppet"
 
 #. / Translators: One or more doors on the printer are open
 #: src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
-msgstr ""
+msgstr "Lucka öppen"
 
 #. / Translators: At least one input tray is low on media
 #: src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
-msgstr ""
+msgstr "Få papper kvar"
 
 #. / Translators: At least one input tray is empty
 #: src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr ""
+msgstr "Papper slut"
 
 #. / Translators: The printer is offline
 #: src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
-msgstr ""
+msgstr "Frånkopplad"
 
 #. / Translators: Someone has stopped the Printer
 #: src/Objects/Printer.vala:67
@@ -257,72 +260,69 @@ msgstr "Stoppad"
 #: src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
-msgstr ""
+msgstr "Avfallsbehållaren är nästan full"
 
 #. / Translators: The printer marker supply waste receptacle is full
 #: src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
-msgstr ""
+msgstr "Avfallsbehållaren är full"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr ""
+msgstr "Den optiska fotoledaren närmar sig slutet på sin livslängd"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
+msgstr "Den optiska fotoledaren fungerar inte längre"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
-msgstr "Redo"
+msgstr "Klar"
 
 #: src/Objects/Job.vala:101
 msgid "Job Pending"
-msgstr ""
+msgstr "Utskrift väntar"
 
 #: src/Objects/Job.vala:103
 msgid "On Hold"
-msgstr ""
+msgstr "I kö"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
-msgstr ""
+msgstr "Processar…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
-msgstr "Utskriften har stoppats"
+msgstr "Utskrift stoppad"
 
 #: src/Objects/Job.vala:109
 msgid "Job Canceled"
-msgstr ""
+msgstr "Utskrift återkallad"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "Utskriften är klar"
+msgstr "Utskrift avbruten"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
-msgstr "Utskriften är klar"
+msgstr "Utskrift fullföljd"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Utskriftskön är tom"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Det finns inga jobb i kön"
+msgstr "Det finns inga väntande utskrifter i kön."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Visa slutförda jobb"
+msgstr "Utförda jobb"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -330,11 +330,11 @@ msgstr "Sida per blad:"
 
 #: src/Views/SetupView.vala:74
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Långsida (standard)"
 
 #: src/Views/SetupView.vala:75
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Kortsida (vänd)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
@@ -342,19 +342,19 @@ msgstr "Dubbelsidig:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
-msgstr ""
+msgstr "Porträtt"
 
 #: src/Views/SetupView.vala:146
 msgid "Landscape"
-msgstr ""
+msgstr "Landskap"
 
 #: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Omvänt porträtt"
 
 #: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Omvänt landskap"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
@@ -370,7 +370,7 @@ msgstr "Automatisk"
 
 #: src/Views/SetupView.vala:198
 msgid "One Color"
-msgstr ""
+msgstr "Enfärgad"
 
 #: src/Views/SetupView.vala:201
 msgid "Color"
@@ -378,7 +378,7 @@ msgstr "Färg"
 
 #: src/Views/SetupView.vala:204
 msgid "One Color + Black"
-msgstr ""
+msgstr "Enfärgad + Svart"
 
 #: src/Views/SetupView.vala:207
 msgid "Greyscale"
@@ -386,11 +386,11 @@ msgstr "Gråskala"
 
 #: src/Views/SetupView.vala:210
 msgid "Processed Color"
-msgstr ""
+msgstr "Processad färg"
 
 #: src/Views/SetupView.vala:213
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "Processad gråskala"
 
 #: src/Views/SetupView.vala:222
 msgid "Color mode:"
@@ -398,175 +398,175 @@ msgstr "Färgläge:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr ""
+msgstr "Toppfack"
 
 #: src/Views/SetupView.vala:239
 msgid "Middle Bin"
-msgstr ""
+msgstr "Mellanfack"
 
 #: src/Views/SetupView.vala:242
 msgid "Bottom Bin"
-msgstr ""
+msgstr "Bottenfack"
 
 #: src/Views/SetupView.vala:245
 msgid "Side Bin"
-msgstr ""
+msgstr "Sidfack"
 
 #: src/Views/SetupView.vala:248
 msgid "Left Bin"
-msgstr ""
+msgstr "Vänsterfack"
 
 #: src/Views/SetupView.vala:251
 msgid "Right Bin"
-msgstr ""
+msgstr "Högerfack"
 
 #: src/Views/SetupView.vala:254
 msgid "Center Bin"
-msgstr ""
+msgstr "Mittenfack"
 
 #: src/Views/SetupView.vala:257
 msgid "Rear Bin"
-msgstr ""
+msgstr "Bakre fack"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Uppåtpekande fack"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Nedåtpekande fack"
 
 #: src/Views/SetupView.vala:266
 msgid "Large Capacity Bin"
-msgstr ""
+msgstr "Storkapacitetsfack"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "Min e-postlåda"
 
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Staplare %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "E-postlåda %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
 msgid "Tray %d"
-msgstr ""
+msgstr "Bricka %d"
 
 #: src/Views/SetupView.vala:293
 msgid "Output Tray:"
-msgstr ""
+msgstr "Utgångsfack:"
 
 #: src/Views/SetupView.vala:307
 msgid "Draft"
-msgstr ""
+msgstr "Utkast"
 
 #: src/Views/SetupView.vala:310
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: src/Views/SetupView.vala:313
 msgid "High"
-msgstr ""
+msgstr "Hög"
 
 #: src/Views/SetupView.vala:319
 msgid "Quality:"
-msgstr ""
+msgstr "Kvalitet:"
 
 #: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Pappersallokering"
 
 #: src/Views/SetupView.vala:336
 msgid "Alternate Tray"
-msgstr ""
+msgstr "Alternativt fack"
 
 #: src/Views/SetupView.vala:339
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Alternativ rulle"
 
 #: src/Views/SetupView.vala:345
 msgid "Bottom"
-msgstr ""
+msgstr "Botten"
 
 #: src/Views/SetupView.vala:348
 msgid "By-pass Tray"
-msgstr ""
+msgstr "By-passfack"
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
-msgstr ""
+msgstr "Center"
 
 #: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "Kontinuerlig automatning"
 
 #: src/Views/SetupView.vala:358
 msgid "Disk"
-msgstr ""
+msgstr "Lagringsenhet"
 
 #: src/Views/SetupView.vala:361
 msgid "Envelope"
-msgstr ""
+msgstr "Kuvert"
 
 #: src/Views/SetupView.vala:364
 msgid "Hagaki"
-msgstr ""
+msgstr "Hagaki"
 
 #: src/Views/SetupView.vala:367
 msgid "Large Capacity"
-msgstr ""
+msgstr "Stor kapacitet"
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
-msgstr ""
+msgstr "Vänster"
 
 #: src/Views/SetupView.vala:373
 msgid "Main Tray"
-msgstr ""
+msgstr "Huvudfack"
 
 #: src/Views/SetupView.vala:376
 msgid "Main Roll"
-msgstr ""
+msgstr "Huvudrulle"
 
 #: src/Views/SetupView.vala:379
 msgid "Manual"
-msgstr ""
+msgstr "Manuellt"
 
 #: src/Views/SetupView.vala:382
 msgid "Middle"
-msgstr ""
+msgstr "Mitten"
 
 #: src/Views/SetupView.vala:385
 msgid "Photo"
-msgstr ""
+msgstr "Foto"
 
 #: src/Views/SetupView.vala:389
 msgid "Rear"
-msgstr ""
+msgstr "Bakre"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
-msgstr ""
+msgstr "Höger"
 
 #: src/Views/SetupView.vala:395
 msgid "Side"
-msgstr ""
+msgstr "Sidan"
 
 #: src/Views/SetupView.vala:398
 msgid "Top"
-msgstr ""
+msgstr "Toppen"
 
 #: src/Views/SetupView.vala:403
 #, c-format
 msgid "Roll %d"
-msgstr ""
+msgstr "Rulle %d"
 
 #: src/Views/SetupView.vala:419
 msgid "Paper Source:"
@@ -574,52 +574,51 @@ msgstr "Papperskälla:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
-msgstr "Labb 1 eller Johns skrivbord"
+msgstr "Labb 1 eller Svens skrivbord"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Använd som standardskrivare"
+msgstr "Använd som standardskrivare:"
 
 #: src/Widgets/InkLevel.vala:94
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "Svart (PGBK)"
 
 #: src/Widgets/InkLevel.vala:97
 msgid "Black (BK)"
-msgstr ""
+msgstr "Svart (BK)"
 
 #: src/Widgets/InkLevel.vala:101
 msgid "Black"
-msgstr ""
+msgstr "Svart"
 
 #: src/Widgets/InkLevel.vala:105
 msgid "Yellow"
-msgstr ""
+msgstr "Gul"
 
 #: src/Widgets/InkLevel.vala:109
 msgid "Cyan"
-msgstr ""
+msgstr "Cyan"
 
 #: src/Widgets/InkLevel.vala:113
 msgid "Magenta"
-msgstr ""
+msgstr "Magenta"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "Trefärgad"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Pausa"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Återuppta"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr ""
+msgstr "Inaktiverad"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Lägg till en skrivare för att börja skriva ut"
