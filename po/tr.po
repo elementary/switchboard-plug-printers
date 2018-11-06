@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:14-0700\n"
-"PO-Revision-Date: 2018-05-28 00:03+0000\n"
-"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
+"PO-Revision-Date: 2018-11-06 22:15+0000\n"
+"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/tr/>\n"
 "Language: tr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -350,11 +350,11 @@ msgstr "Yatay"
 
 #: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Portreyi ters çevir"
 
 #: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Manzarayı ters çevir"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
@@ -398,69 +398,61 @@ msgstr "Renk modu:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr ""
+msgstr "Üst Kutu"
 
 #: src/Views/SetupView.vala:239
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Orta"
+msgstr "Orta Kutu"
 
 #: src/Views/SetupView.vala:242
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Alt"
+msgstr "Alt Kutu"
 
 #: src/Views/SetupView.vala:245
-#, fuzzy
 msgid "Side Bin"
-msgstr "Yan"
+msgstr "Yan Kutu"
 
 #: src/Views/SetupView.vala:248
-#, fuzzy
 msgid "Left Bin"
-msgstr "Sol"
+msgstr "Sol Kutu"
 
 #: src/Views/SetupView.vala:251
-#, fuzzy
 msgid "Right Bin"
-msgstr "Sağ"
+msgstr "Sağ Kutu"
 
 #: src/Views/SetupView.vala:254
-#, fuzzy
 msgid "Center Bin"
-msgstr "Orta"
+msgstr "Merkez Kutu"
 
 #: src/Views/SetupView.vala:257
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Arka"
+msgstr "Arka Kutu"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Yüzü Yukarı Kutu"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Yüzü Aşağı Kutu"
 
 #: src/Views/SetupView.vala:266
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Yüksek Kapasite"
+msgstr "Yüksek Kapasiteli Kutu"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "Posta Kutum"
 
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Stacker %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Posta Kutusu %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
@@ -614,7 +606,7 @@ msgstr "Eflatun"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "Üç-Renkli"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
