@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:14-0700\n"
-"PO-Revision-Date: 2018-11-06 22:15+0000\n"
+"PO-Revision-Date: 2018-11-07 01:48+0000\n"
 "Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/tr/>\n"
@@ -38,7 +38,7 @@ msgstr "Deneme sayfası"
 
 #: src/PrinterList.vala:51
 msgid "Add Printer…"
-msgstr "Yazıcı Ekle..."
+msgstr "Yazıcı Ekle…"
 
 #: src/PrinterList.vala:53
 msgid "Remove Printer"
@@ -294,7 +294,7 @@ msgstr "Beklemede"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
-msgstr "İşleniyor..."
+msgstr "İşleniyor…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
@@ -326,7 +326,7 @@ msgstr "Tamamlanmış İşler"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
-msgstr "Yüz başına sayfa"
+msgstr "Yüz başına sayfa:"
 
 #: src/Views/SetupView.vala:74
 msgid "Long Edge (Standard)"
@@ -338,7 +338,7 @@ msgstr "Kısa Kenar (Çevir)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
-msgstr "Çift taraflı"
+msgstr "Çift taraflı:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
@@ -358,7 +358,7 @@ msgstr "Manzarayı ters çevir"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
-msgstr "Yönlendirme"
+msgstr "Yönlendirme:"
 
 #: src/Views/SetupView.vala:181
 msgid "Media Size:"
@@ -461,7 +461,7 @@ msgstr "Tepsi %d"
 
 #: src/Views/SetupView.vala:293
 msgid "Output Tray:"
-msgstr "Çıkış Tepsisi"
+msgstr "Çıkış Tepsisi:"
 
 #: src/Views/SetupView.vala:307
 msgid "Draft"
@@ -574,7 +574,7 @@ msgstr "Kağıt Kaynağı:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
-msgstr "Lab 1 or John's Desk"
+msgstr "Lab 1 veya John'un Masası"
 
 #: src/Views/SuppliesView.vala:47
 msgid "Use as default printer:"
