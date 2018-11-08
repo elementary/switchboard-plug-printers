@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:14-0700\n"
-"PO-Revision-Date: 2018-11-07 01:48+0000\n"
+"PO-Revision-Date: 2018-11-09 18:11+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/bs/>\n"
@@ -274,96 +274,97 @@ msgstr "Posuda za otpad puna"
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
 msgstr ""
+"Optički provodnici za fotografije su skoro potrošeni u laserskim štampačima"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
+msgstr "Optički provodnik za fotografije više ne radi"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
-msgstr ""
+msgstr "Spremno"
 
 #: src/Objects/Job.vala:101
 msgid "Job Pending"
-msgstr ""
+msgstr "Preostali zadatak"
 
 #: src/Objects/Job.vala:103
 msgid "On Hold"
-msgstr ""
+msgstr "Na čekanju"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
-msgstr ""
+msgstr "Obrađivanje…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
-msgstr ""
+msgstr "Zaustavljen zadatak"
 
 #: src/Objects/Job.vala:109
 msgid "Job Canceled"
-msgstr ""
+msgstr "Zadatak otkazan"
 
 #: src/Objects/Job.vala:111
 msgid "Job Aborted"
-msgstr ""
+msgstr "Zadatak prekinut"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
-msgstr ""
+msgstr "Zadatak završen"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Lista za štampanje je prazna"
 
 #: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
-msgstr ""
+msgstr "Nema preostalih zadataka u listi čekanja."
 
 #: src/Views/JobsView.vala:76
 msgid "Completed Jobs"
-msgstr ""
+msgstr "Završeni zadaci"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
-msgstr ""
+msgstr "Broj stranica po listu:"
 
 #: src/Views/SetupView.vala:74
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Dugi rub (standardno)"
 
 #: src/Views/SetupView.vala:75
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Kratak rub (okrenuto)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
-msgstr ""
+msgstr "Dvostrano:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
-msgstr ""
+msgstr "Portretno"
 
 #: src/Views/SetupView.vala:146
 msgid "Landscape"
-msgstr ""
+msgstr "Vodoravno"
 
 #: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Obrnuto portretno"
 
 #: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Obrnuto vodoravno"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
-msgstr ""
+msgstr "Orijentacija:"
 
 #: src/Views/SetupView.vala:181
 msgid "Media Size:"
-msgstr ""
+msgstr "Veličina medija:"
 
 #: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
 msgid "Automatic"
@@ -371,7 +372,7 @@ msgstr "Automatsko"
 
 #: src/Views/SetupView.vala:198
 msgid "One Color"
-msgstr ""
+msgstr "Jednobojno"
 
 #: src/Views/SetupView.vala:201
 msgid "Color"
@@ -379,94 +380,94 @@ msgstr "Boja"
 
 #: src/Views/SetupView.vala:204
 msgid "One Color + Black"
-msgstr ""
+msgstr "Jednobojno + crna"
 
 #: src/Views/SetupView.vala:207
 msgid "Greyscale"
-msgstr ""
+msgstr "Sivi tonovi"
 
 #: src/Views/SetupView.vala:210
 msgid "Processed Color"
-msgstr ""
+msgstr "Obrađena boja"
 
 #: src/Views/SetupView.vala:213
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "Obrađeni sivi tonovi"
 
 #: src/Views/SetupView.vala:222
 msgid "Color mode:"
-msgstr ""
+msgstr "Način boje:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr ""
+msgstr "Gornja ladica"
 
 #: src/Views/SetupView.vala:239
 msgid "Middle Bin"
-msgstr ""
+msgstr "Srednja ladica"
 
 #: src/Views/SetupView.vala:242
 msgid "Bottom Bin"
-msgstr ""
+msgstr "Donja ladica"
 
 #: src/Views/SetupView.vala:245
 msgid "Side Bin"
-msgstr ""
+msgstr "Ladica sa strane"
 
 #: src/Views/SetupView.vala:248
 msgid "Left Bin"
-msgstr ""
+msgstr "Lijeva ladica"
 
 #: src/Views/SetupView.vala:251
 msgid "Right Bin"
-msgstr ""
+msgstr "Desna ladica"
 
 #: src/Views/SetupView.vala:254
 msgid "Center Bin"
-msgstr ""
+msgstr "Ladica u sredini"
 
 #: src/Views/SetupView.vala:257
 msgid "Rear Bin"
-msgstr ""
+msgstr "Stražnja ladica"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Face-up ladica"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Face-down ladica"
 
 #: src/Views/SetupView.vala:266
 msgid "Large Capacity Bin"
-msgstr ""
+msgstr "Ladica velikog kapaciteta"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "Moj poštanski sandučić"
 
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Stacker %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Poštanski sandučić %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
 msgid "Tray %d"
-msgstr ""
+msgstr "Ladica %d"
 
 #: src/Views/SetupView.vala:293
 msgid "Output Tray:"
-msgstr ""
+msgstr "Izlazna ladica:"
 
 #: src/Views/SetupView.vala:307
 msgid "Draft"
-msgstr ""
+msgstr "Nacrt"
 
 #: src/Views/SetupView.vala:310
 msgid "Normal"
@@ -474,31 +475,31 @@ msgstr "Normalna"
 
 #: src/Views/SetupView.vala:313
 msgid "High"
-msgstr ""
+msgstr "Visoko"
 
 #: src/Views/SetupView.vala:319
 msgid "Quality:"
-msgstr ""
+msgstr "Kvaliteta:"
 
 #: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Pretinac papira"
 
 #: src/Views/SetupView.vala:336
 msgid "Alternate Tray"
-msgstr ""
+msgstr "Zamjenska ladica"
 
 #: src/Views/SetupView.vala:339
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Zamjenska rola"
 
 #: src/Views/SetupView.vala:345
 msgid "Bottom"
-msgstr ""
+msgstr "Dolje"
 
 #: src/Views/SetupView.vala:348
 msgid "By-pass Tray"
-msgstr ""
+msgstr "Pomoćna ladica"
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
@@ -506,23 +507,23 @@ msgstr "Centar"
 
 #: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "Neprekidno dodavanje papira"
 
 #: src/Views/SetupView.vala:358
 msgid "Disk"
-msgstr ""
+msgstr "Disk"
 
 #: src/Views/SetupView.vala:361
 msgid "Envelope"
-msgstr ""
+msgstr "Koverta"
 
 #: src/Views/SetupView.vala:364
 msgid "Hagaki"
-msgstr ""
+msgstr "Hagaki"
 
 #: src/Views/SetupView.vala:367
 msgid "Large Capacity"
-msgstr ""
+msgstr "Veliki kapacitet"
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
@@ -530,11 +531,11 @@ msgstr "Lijevo"
 
 #: src/Views/SetupView.vala:373
 msgid "Main Tray"
-msgstr ""
+msgstr "Glavna ladica"
 
 #: src/Views/SetupView.vala:376
 msgid "Main Roll"
-msgstr ""
+msgstr "Glavna rola"
 
 #: src/Views/SetupView.vala:379
 msgid "Manual"
@@ -542,15 +543,15 @@ msgstr "Ručno"
 
 #: src/Views/SetupView.vala:382
 msgid "Middle"
-msgstr ""
+msgstr "Srednje"
 
 #: src/Views/SetupView.vala:385
 msgid "Photo"
-msgstr ""
+msgstr "Fotografija"
 
 #: src/Views/SetupView.vala:389
 msgid "Rear"
-msgstr ""
+msgstr "Pozadi"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
@@ -558,56 +559,56 @@ msgstr "Desno"
 
 #: src/Views/SetupView.vala:395
 msgid "Side"
-msgstr ""
+msgstr "Sa strane"
 
 #: src/Views/SetupView.vala:398
 msgid "Top"
-msgstr ""
+msgstr "Gore"
 
 #: src/Views/SetupView.vala:403
 #, c-format
 msgid "Roll %d"
-msgstr ""
+msgstr "Rola %d"
 
 #: src/Views/SetupView.vala:419
 msgid "Paper Source:"
-msgstr ""
+msgstr "Izvor papira:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
-msgstr ""
+msgstr "Laboratorij 1 ili Damirov radni sto"
 
 #: src/Views/SuppliesView.vala:47
 msgid "Use as default printer:"
-msgstr ""
+msgstr "Koristi kao zadani štampač:"
 
 #: src/Widgets/InkLevel.vala:94
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "Crna (PGBK)"
 
 #: src/Widgets/InkLevel.vala:97
 msgid "Black (BK)"
-msgstr ""
+msgstr "Crna (BK)"
 
 #: src/Widgets/InkLevel.vala:101
 msgid "Black"
-msgstr ""
+msgstr "Crna"
 
 #: src/Widgets/InkLevel.vala:105
 msgid "Yellow"
-msgstr ""
+msgstr "Žuta"
 
 #: src/Widgets/InkLevel.vala:109
 msgid "Cyan"
-msgstr ""
+msgstr "Cijan"
 
 #: src/Widgets/InkLevel.vala:113
 msgid "Magenta"
-msgstr ""
+msgstr "Magenta"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "Trobojno"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
@@ -615,7 +616,7 @@ msgstr "Pauza"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Nastavi"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
