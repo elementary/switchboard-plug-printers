@@ -1,3 +1,9 @@
+switchboard-plug-printers (2.1.6) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Wed, 28 Nov 2018 05:34:33 -0600
+
 switchboard-plug-printers (2.1.5) bionic; urgency=medium
 
   * New upstream release.
