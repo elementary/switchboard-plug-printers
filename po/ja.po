@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:14-0700\n"
-"PO-Revision-Date: 2018-11-27 13:09+0000\n"
+"PO-Revision-Date: 2018-12-02 06:48+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ja/>\n"
@@ -120,11 +120,11 @@ msgstr "利用可能なすべてのプリンターの一覧を作成できませ
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:225
 msgid "Connection:"
-msgstr "接続："
+msgstr "接続:"
 
 #: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
 msgid "Description:"
-msgstr "説明："
+msgstr "説明:"
 
 #: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
@@ -132,7 +132,7 @@ msgstr "プリンター名を入力"
 
 #: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
 msgid "Location:"
-msgstr "場所："
+msgstr "場所:"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
@@ -324,7 +324,7 @@ msgstr "完了したジョブ"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
-msgstr "1 枚あたりのページ数："
+msgstr "1 枚あたりのページ数:"
 
 #: src/Views/SetupView.vala:74
 msgid "Long Edge (Standard)"
@@ -336,7 +336,7 @@ msgstr "短辺とじ (フリップ)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
-msgstr "両面印刷："
+msgstr "両面印刷:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
@@ -356,11 +356,11 @@ msgstr "横方向 (逆向き)"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
-msgstr "印刷の向き："
+msgstr "印刷の向き:"
 
 #: src/Views/SetupView.vala:181
 msgid "Media Size:"
-msgstr "メディアサイズ："
+msgstr "メディアサイズ:"
 
 #: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
 msgid "Automatic"
@@ -392,7 +392,7 @@ msgstr "グレースケール"
 
 #: src/Views/SetupView.vala:222
 msgid "Color mode:"
-msgstr "カラーモード："
+msgstr "カラーモード:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
@@ -459,7 +459,7 @@ msgstr "トレイ %d"
 
 #: src/Views/SetupView.vala:293
 msgid "Output Tray:"
-msgstr "排紙トレイ："
+msgstr "排紙トレイ:"
 
 #: src/Views/SetupView.vala:307
 msgid "Draft"
@@ -475,7 +475,7 @@ msgstr "高品質"
 
 #: src/Views/SetupView.vala:319
 msgid "Quality:"
-msgstr "品質："
+msgstr "品質:"
 
 #: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
@@ -568,7 +568,7 @@ msgstr "ロール %d"
 
 #: src/Views/SetupView.vala:419
 msgid "Paper Source:"
-msgstr "用紙のソース："
+msgstr "用紙のソース:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
@@ -576,7 +576,7 @@ msgstr "場所を入力"
 
 #: src/Views/SuppliesView.vala:47
 msgid "Use as default printer:"
-msgstr "デフォルトのプリンターとして使う："
+msgstr "デフォルトのプリンターとして使う:"
 
 #: src/Widgets/InkLevel.vala:94
 msgid "Black (PGBK)"
