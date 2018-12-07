@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:14-0700\n"
-"PO-Revision-Date: 2018-10-13 23:33+0000\n"
-"Last-Translator: Marco De Paolini <marco.depaolini@gmail.com>\n"
+"PO-Revision-Date: 2018-12-11 16:05+0000\n"
+"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/it/>\n"
 "Language: it\n"
@@ -185,7 +185,7 @@ msgstr ""
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
-msgstr "Eliminare"
+msgstr "Elimina"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -529,7 +529,7 @@ msgstr "Grande capacità"
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
-msgstr "Sinistra"
+msgstr "Sinistro"
 
 #: src/Views/SetupView.vala:373
 msgid "Main Tray"
@@ -557,7 +557,7 @@ msgstr "Retro"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
-msgstr "Destra"
+msgstr "Destro"
 
 #: src/Views/SetupView.vala:395
 msgid "Side"
