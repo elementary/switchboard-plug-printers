@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:14-0700\n"
-"PO-Revision-Date: 2018-10-15 06:13+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
+"PO-Revision-Date: 2019-01-14 00:10+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/fr/>\n"
 "Language: fr\n"
@@ -29,7 +29,7 @@ msgstr "Paramètres et cartouches"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
-msgstr "Imprimer la page de test"
+msgstr "Imprimer une page de test"
 
 #. / TRANSLATORS: Name of the test page job
 #: src/PrinterPage.vala:106
@@ -139,7 +139,7 @@ msgstr "Emplacement :"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
-msgstr "Labo 1 ou Bureau de Pierre"
+msgstr "Labo 1 ou Bureau de Jean"
 
 #: src/Dialogs/AddDialog.vala:304
 msgid "Previous"
@@ -281,7 +281,7 @@ msgstr "Le photo-conducteur optique est pratiquement en fin de vie"
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr "Le photo-conducteur optique n'est plus en état"
+msgstr "Le photo-conducteur optique n'est plus en état de fonctionnement"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -373,7 +373,7 @@ msgstr "Automatique"
 
 #: src/Views/SetupView.vala:198
 msgid "One Color"
-msgstr "Une couleur"
+msgstr "Monochrome"
 
 #: src/Views/SetupView.vala:201
 msgid "Color"
@@ -381,7 +381,7 @@ msgstr "Couleur"
 
 #: src/Views/SetupView.vala:204
 msgid "One Color + Black"
-msgstr "Une couleur + Noir"
+msgstr "Monochrome + Noir"
 
 #: src/Views/SetupView.vala:207
 msgid "Greyscale"
@@ -500,7 +500,7 @@ msgstr "Bas"
 
 #: src/Views/SetupView.vala:348
 msgid "By-pass Tray"
-msgstr "Bypass"
+msgstr "Bac de dérivation"
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
