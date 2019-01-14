@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:14-0700\n"
-"PO-Revision-Date: 2018-08-13 00:03+0000\n"
-"Last-Translator: James Qian <sotux82@gmail.com>\n"
+"PO-Revision-Date: 2019-01-14 13:35+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -16,9 +16,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
 #: src/PrinterPage.vala:38
-#, fuzzy
 msgid "Print Queue"
-msgstr "打印机"
+msgstr "打印队列"
 
 #: src/PrinterPage.vala:39
 msgid "Page Setup"
@@ -54,9 +53,8 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "配置打印机、管理打印队列、查看墨水余量"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "暂无打印机"
+msgstr "无可用打印机"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
@@ -107,9 +105,8 @@ msgstr "刷新"
 
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
-#, fuzzy
 msgid "Cancel"
-msgstr "任务已取消"
+msgstr "取消"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -174,13 +171,11 @@ msgid "Are You Sure You Want To Remove '%s'?"
 msgstr "您确定需要移除 '%s' 吗？"
 
 #: src/Dialogs/RemoveDialog.vala:30
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
-msgstr ""
-"移除“%s“之后，您所有的打印记录\n"
-"和与此设备相关的配置都会消失。"
+msgstr "移除“%s“之后，与此设备相关的打印记录和配置都会消失。"
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -291,7 +286,6 @@ msgid "Job Pending"
 msgstr "任务挂起"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
 msgstr "等待中"
 
@@ -308,7 +302,6 @@ msgid "Job Canceled"
 msgstr "任务已取消"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
 msgstr "任务已放弃"
 
@@ -321,14 +314,12 @@ msgid "Print Queue Is Empty"
 msgstr "打印队列为空"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "队列中无任务"
+msgstr "队列中无任务。"
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "显示完成的任务"
+msgstr "已完成的任务"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -407,39 +398,32 @@ msgid "Top Bin"
 msgstr "顶部仓"
 
 #: src/Views/SetupView.vala:239
-#, fuzzy
 msgid "Middle Bin"
-msgstr "中部"
+msgstr "中间纸盒"
 
 #: src/Views/SetupView.vala:242
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "底部"
+msgstr "底部纸盒"
 
 #: src/Views/SetupView.vala:245
-#, fuzzy
 msgid "Side Bin"
-msgstr "边缘"
+msgstr "侧边纸盒"
 
 #: src/Views/SetupView.vala:248
-#, fuzzy
 msgid "Left Bin"
-msgstr "左键"
+msgstr "左侧纸盒"
 
 #: src/Views/SetupView.vala:251
-#, fuzzy
 msgid "Right Bin"
-msgstr "右键"
+msgstr "右侧纸盒"
 
 #: src/Views/SetupView.vala:254
-#, fuzzy
 msgid "Center Bin"
-msgstr "中部"
+msgstr "中部纸盒"
 
 #: src/Views/SetupView.vala:257
-#, fuzzy
 msgid "Rear Bin"
-msgstr "后侧"
+msgstr "后侧纸盒"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
@@ -450,9 +434,8 @@ msgid "Face Down Bin"
 msgstr "底部仓"
 
 #: src/Views/SetupView.vala:266
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "大容量"
+msgstr "大容量纸盒"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
@@ -591,9 +574,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 或 John's Desk"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "设为默认打印机"
+msgstr "设为默认打印机："
 
 #: src/Widgets/InkLevel.vala:94
 msgid "Black (PGBK)"
@@ -621,7 +603,7 @@ msgstr "品红"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "三色"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
