@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2018-12-14 22:10+0000\n"
+"PO-Revision-Date: 2019-01-23 19:01+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/mr/>\n"
@@ -17,91 +17,91 @@ msgstr ""
 
 #: src/PrinterPage.vala:38
 msgid "Print Queue"
-msgstr ""
+msgstr "मुद्रण रांग"
 
 #: src/PrinterPage.vala:39
 msgid "Page Setup"
-msgstr ""
+msgstr "पृष्ठ व्यवस्था"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "सेटिंग्ज आणि पुरवठा"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
-msgstr ""
+msgstr "चाचणी पृष्ठ मुद्रित करा"
 
 #. / TRANSLATORS: Name of the test page job
 #: src/PrinterPage.vala:106
 msgid "Test page"
-msgstr ""
+msgstr "चाचणी पृष्ठ"
 
 #: src/PrinterList.vala:51
 msgid "Add Printer…"
-msgstr ""
+msgstr "प्रिंटर जोडा ..."
 
 #: src/PrinterList.vala:53
 msgid "Remove Printer"
-msgstr ""
+msgstr "प्रिंटर काढा"
 
 #: src/Plug.vala:35
 msgid "Printers"
-msgstr ""
+msgstr "प्रिंटर"
 
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
+msgstr "प्रिंटर कॉन्फिगर करा, मुद्रण रांग व्यवस्थापित करा आणि शाईचे स्तर पहा"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
-msgstr ""
+msgstr "कोणतेही प्रिंटर उपलब्ध नाहीत"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
+msgstr "खालील टूलबारमधील चिन्हावर क्लिक करुन प्रिंटरशी कनेक्ट करा."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "इंटरनेट प्रिंटिंग प्रोटोकॉल (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: src/Dialogs/AddDialog.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "इंटरनेट प्रिंटिंग प्रोटोकॉल (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: src/Dialogs/AddDialog.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "इंटरनेट प्रिंटिंग प्रोटोकॉल (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: src/Dialogs/AddDialog.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "इंटरनेट प्रिंटिंग प्रोटोकॉल (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: src/Dialogs/AddDialog.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "इंटरनेट प्रिंटिंग प्रोटोकॉल (ipps14)"
 
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "एलपीडी / एलपीआर होस्ट किंवा प्रिंटर"
 
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "अॅपसॉकेट / एचपी जेट डायरेक्ट"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "जवळील प्रिंटर शोधत आहे ..."
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
-msgstr ""
+msgstr "रीफ्रेश करा"
 
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
@@ -110,60 +110,60 @@ msgstr "रद्द करा"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
-msgstr ""
+msgstr "पुढे"
 
 #: src/Dialogs/AddDialog.vala:109
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "सर्व उपलब्ध प्रिंटर सूचीबद्ध करणे अशक्य"
 
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:225
 msgid "Connection:"
-msgstr ""
+msgstr "जोडणी"
 
 #: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
 msgid "Description:"
-msgstr ""
+msgstr "वर्णनः"
 
 #: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "ब्रँडप्रिंटर एक्स 3000"
 
 #: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
 msgid "Location:"
-msgstr ""
+msgstr "स्थान"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "लॅब 1 किंवा जॉनचे डेस्क"
 
 #: src/Dialogs/AddDialog.vala:304
 msgid "Previous"
-msgstr ""
+msgstr "मागील"
 
 #: src/Dialogs/AddDialog.vala:308
 msgid "Add Printer"
-msgstr ""
+msgstr "प्रिंटर जोडा"
 
 #: src/Dialogs/AddDialog.vala:543
 msgid "(recommended)"
-msgstr ""
+msgstr "(शिफारस केलेले)"
 
 #: src/Dialogs/AddDialog.vala:605
 msgid "Serial"
-msgstr ""
+msgstr "सीरियल"
 
 #: src/Dialogs/AddDialog.vala:608
 msgid "Local Printers"
-msgstr ""
+msgstr "स्थानिक प्रिंटर"
 
 #: src/Dialogs/AddDialog.vala:611
 msgid "Network Printers"
-msgstr ""
+msgstr "नेटवर्क प्रिंटर"
 
 #: src/Dialogs/AddDialog.vala:614
 msgid "Available Network Printers"
-msgstr ""
+msgstr "उपलब्ध नेटवर्क प्रिंटर"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
@@ -185,7 +185,7 @@ msgstr "काढा"
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
-msgstr ""
+msgstr "टोनर कमी आहे"
 
 #. / Translators: The printer has no toner left
 #: src/Objects/Printer.vala:47
