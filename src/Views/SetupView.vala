@@ -71,8 +71,8 @@ public class Printers.OptionsPage : Gtk.Grid {
         if (sides.size > 2) {
             var two_mode = new Granite.Widgets.ModeButton ();
             two_mode.hexpand = true;
-            two_mode.append_text (dgettext ("gtk30", "Long Edge (Standard)"));
-            two_mode.append_text (dgettext ("gtk30", "Short Edge (Flip)"));
+            two_mode.append_text (dpgettext2 ("gtk30", "printing option value", "Long Edge (Standard)"));
+            two_mode.append_text (dpgettext2 ("gtk30", "printing option value", "Short Edge (Flip)"));
             two_mode.selected = 0;
 
             two_switch.bind_property ("active", two_mode, "sensitive");
