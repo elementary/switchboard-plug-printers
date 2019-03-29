@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:30-0700\n"
-"PO-Revision-Date: 2019-03-09 18:27+0000\n"
+"PO-Revision-Date: 2019-03-29 02:49+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/mr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -38,7 +38,7 @@ msgstr "चाचणी पृष्ठ"
 
 #: src/PrinterList.vala:51
 msgid "Add Printer…"
-msgstr "प्रिंटर जोडा ..."
+msgstr "प्रिंटर जोडा…"
 
 #: src/PrinterList.vala:53
 msgid "Remove Printer"
@@ -97,7 +97,7 @@ msgstr "अॅपसॉकेट / एचपी जेट डायरेक्�
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr "जवळील प्रिंटर शोधत आहे ..."
+msgstr "जवळील प्रिंटर शोधत आहे…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -119,11 +119,11 @@ msgstr "सर्व उपलब्ध प्रिंटर सूचीबद
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:225
 msgid "Connection:"
-msgstr "जोडणी"
+msgstr "जोडणी:"
 
 #: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
 msgid "Description:"
-msgstr "वर्णनः"
+msgstr "वर्णन:"
 
 #: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
@@ -131,7 +131,7 @@ msgstr "ब्रँडप्रिंटर एक्स 3000"
 
 #: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
 msgid "Location:"
-msgstr "स्थान"
+msgstr "स्थान:"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
