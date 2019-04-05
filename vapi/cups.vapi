@@ -181,6 +181,7 @@ namespace CUPS {
 	public int print_file (string printer, string filename, string title, [CCode (array_length_pos = 3.9)] Option[]? options);
 	[CCode (cname = "cupsGetDests")]
 	private int _get_destinations ([CCode (array_length = false)] out unowned CUPS.Destination[] destinations);
+	[Version (deprecated="true", replacement="CUPS.HTTP.HTTP.get_destinations")]
 	public unowned CUPS.Destination[] get_destinations () {
 		unowned CUPS.Destination[] temp;
 		var len = _get_destinations (out temp);
@@ -693,6 +694,22 @@ namespace CUPS {
 		public class HTTP {
 			[CCode (cname = "httpConnect")]
 			public HTTP (string host, int port);
+			[CCode (cname = "CUPS_HTTP_DEFAULT")]
+			private static unowned HTTP DEFAULT;
+			[CCode (cname = "_vala_http_new_default")]
+			public static unowned HTTP get_default () {
+				return DEFAULT;
+			}
+
+			[CCode (cname = "cupsGetDests2")]
+			private int _get_destinations ([CCode (array_length = false)] out unowned CUPS.Destination[] destinations);
+			[CCode (cname = "_vala_cups_http_get_destinations")]
+			public unowned CUPS.Destination[] get_destinations () {
+				unowned CUPS.Destination[] dests;
+				int size = _get_destinations (out dests);
+				dests.length = size;
+				return dests;
+			}
 
 			public IPP.IPP do_request (IPP.IPP request, string resource);
 			public IPP.IPP do_file_request (IPP.IPP request, string resource, string filename);

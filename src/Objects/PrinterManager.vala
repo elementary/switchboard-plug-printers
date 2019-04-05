@@ -39,7 +39,7 @@ public class Printers.PrinterManager : GLib.Object {
 
     private PrinterManager () {
         printers = new Gee.LinkedList<Printer> ();
-        unowned CUPS.Destination[] dests = CUPS.get_destinations ();
+        unowned CUPS.Destination[] dests = get_local_destinations ();
         foreach (unowned CUPS.Destination dest in dests) {
             add_printer (dest);
         }
@@ -57,12 +57,17 @@ public class Printers.PrinterManager : GLib.Object {
         });
     }
 
+    private static unowned CUPS.Destination[] get_local_destinations () {
+        unowned CUPS.HTTP.HTTP server = CUPS.HTTP.HTTP.get_default ();
+        return server.get_destinations ();
+    }
+
     public unowned Gee.LinkedList<Printer> get_printers () {
         return printers;
     }
 
     private void printer_is_added (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs) {
-        unowned CUPS.Destination[] destinations = CUPS.get_destinations ();
+        unowned CUPS.Destination[] destinations = get_local_destinations ();
         foreach (unowned CUPS.Destination dest in destinations) {
             if (dest.name == name) {
                 add_printer (dest);
