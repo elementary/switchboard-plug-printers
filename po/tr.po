@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:14-0700\n"
-"PO-Revision-Date: 2019-04-12 18:25+0000\n"
+"PO-Revision-Date: 2019-04-14 21:26+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/tr/>\n"
@@ -17,15 +17,15 @@ msgstr ""
 
 #: src/PrinterPage.vala:38
 msgid "Print Queue"
-msgstr "Yazdırma Kuyruğu"
+msgstr "Yazdırma Sırası"
 
 #: src/PrinterPage.vala:39
 msgid "Page Setup"
-msgstr "Sayfa Ayarı"
+msgstr "Sayfa Yapısı"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
-msgstr "Ayarlar & Gereçler"
+msgstr "Ayarlar ve Gereçler"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
@@ -34,7 +34,7 @@ msgstr "Sınama Sayfası Yazdır"
 #. / TRANSLATORS: Name of the test page job
 #: src/PrinterPage.vala:106
 msgid "Test page"
-msgstr "Deneme sayfası"
+msgstr "Sınama sayfası"
 
 #: src/PrinterList.vala:51
 msgid "Add Printer…"
@@ -42,7 +42,7 @@ msgstr "Yazıcı Ekle…"
 
 #: src/PrinterList.vala:53
 msgid "Remove Printer"
-msgstr "Yazıcı Kaldır"
+msgstr "Yazıcıyı Kaldır"
 
 #: src/Plug.vala:35
 msgid "Printers"
@@ -115,7 +115,7 @@ msgstr "İleri"
 
 #: src/Dialogs/AddDialog.vala:109
 msgid "Impossible to list all available printers"
-msgstr "Mevcut tüm yazıcıları listelemek imkansız"
+msgstr "Kullanılabilir tüm yazıcıları listelemek imkansız"
 
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:225
@@ -140,7 +140,7 @@ msgstr "Laboratuvar 1 ya da Sadık'ın masası"
 
 #: src/Dialogs/AddDialog.vala:304
 msgid "Previous"
-msgstr "Önceki"
+msgstr "Geri"
 
 #: src/Dialogs/AddDialog.vala:308
 msgid "Add Printer"
@@ -148,11 +148,11 @@ msgstr "Yazıcı Ekle"
 
 #: src/Dialogs/AddDialog.vala:543
 msgid "(recommended)"
-msgstr "(tavsiye edilen)"
+msgstr "(önerilen)"
 
 #: src/Dialogs/AddDialog.vala:605
 msgid "Serial"
-msgstr "Seri numarası"
+msgstr "Seri Bağlantı Noktası"
 
 #: src/Dialogs/AddDialog.vala:608
 msgid "Local Printers"
@@ -164,12 +164,12 @@ msgstr "Ağ Yazıcıları"
 
 #: src/Dialogs/AddDialog.vala:614
 msgid "Available Network Printers"
-msgstr "Mevcut Ağ Yazıcıları"
+msgstr "Kullanılabilir Ağ Yazıcıları"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr "'%s' Ögesini kaldırmak istediğinizden emin misiniz?"
+msgstr "'%s' yazıcısını kaldırmak istediğinizden emin misiniz?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -177,7 +177,7 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"'%s' öğesini kaldırarak, onunla ilişkili tüm yazdırma geçmişini ve "
+"'%s' yazıcısını kaldırarak, onunla ilişkili tüm yazdırma geçmişini ve "
 "yapılandırmayı kaybedersiniz."
 
 #: src/Dialogs/RemoveDialog.vala:35
@@ -188,37 +188,37 @@ msgstr "Kaldır"
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
-msgstr "Toner düşük seviyede"
+msgstr "Yazıcınızın toneri azaldı"
 
 #. / Translators: The printer has no toner left
 #: src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
-msgstr "Toner tükendi"
+msgstr "Yazıcınızın toneri bitti"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
-msgstr "Film banyo kimyasalı az"
+msgstr "Film banyo kimyasalı azaldı"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
-msgstr "Film banyo kimyasalı tükendi"
+msgstr "Film banyo kimyasalı bitti"
 
 #. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr "Renkli kartuş az"
+msgstr "Renkli kartuşlardan biri azaldı"
 
 #. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr "Renkli kartuş tükendi"
+msgstr "Renkli kartuşlardan biri bitti"
 
 #. / Translators: One or more covers on the printer are open
 #: src/Objects/Printer.vala:57
@@ -230,19 +230,19 @@ msgstr "Kapak açık"
 #: src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
-msgstr "Kapı açık"
+msgstr "Kapak açık"
 
 #. / Translators: At least one input tray is low on media
 #: src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
-msgstr "Kağıt az"
+msgstr "Kağıt azaldı"
 
 #. / Translators: At least one input tray is empty
 #: src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr "Kağıt tükendi"
+msgstr "Kağıt bitti"
 
 #. / Translators: The printer is offline
 #: src/Objects/Printer.vala:65
@@ -286,7 +286,7 @@ msgstr "Hazır"
 
 #: src/Objects/Job.vala:101
 msgid "Job Pending"
-msgstr "İş bekliyor"
+msgstr "İş Bekliyor"
 
 #: src/Objects/Job.vala:103
 msgid "On Hold"
@@ -298,11 +298,11 @@ msgstr "İşleniyor…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
-msgstr "İş Durdu"
+msgstr "İş Durduruldu"
 
 #: src/Objects/Job.vala:109
 msgid "Job Canceled"
-msgstr "İş iptal edildi"
+msgstr "İş İptal Edildi"
 
 #: src/Objects/Job.vala:111
 msgid "Job Aborted"
@@ -318,15 +318,15 @@ msgstr "Yazdırma Sırası Boş"
 
 #: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
-msgstr "Kuyrukta bekleyen iş yok."
+msgstr "Sırada bekleyen bir iş yok."
 
 #: src/Views/JobsView.vala:76
 msgid "Completed Jobs"
-msgstr "Tamamlanmış İşler"
+msgstr "Tamamlanan İşler"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
-msgstr "Yüz başına sayfa:"
+msgstr "Kağıt başına sayfa:"
 
 #: src/Views/SetupView.vala:74
 msgid "Long Edge (Standard)"
@@ -358,11 +358,11 @@ msgstr "Yatay (ters çevrilmiş)"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
-msgstr "Baskı Yönü:"
+msgstr "Yönlendirme:"
 
 #: src/Views/SetupView.vala:181
 msgid "Media Size:"
-msgstr "Medya Boyutu:"
+msgstr "Sayfa Boyutu:"
 
 #: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
 msgid "Automatic"
@@ -374,7 +374,7 @@ msgstr "Tek Renk"
 
 #: src/Views/SetupView.vala:201
 msgid "Color"
-msgstr "Renk"
+msgstr "Renkli"
 
 #: src/Views/SetupView.vala:204
 msgid "One Color + Black"
@@ -447,7 +447,7 @@ msgstr "Posta Kutum"
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr "Stacker %d"
+msgstr "Desteleyici %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
@@ -505,7 +505,7 @@ msgstr "Orta"
 
 #: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
-msgstr "Sürekli Oto besleme"
+msgstr "Sürekli Otomatik Besleme"
 
 #: src/Views/SetupView.vala:358
 msgid "Disk"
@@ -574,7 +574,7 @@ msgstr "Kağıt Kaynağı:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
-msgstr "Lab 1 veya John'un Masası"
+msgstr "Laboratuvar 1 veya Ali'nin Masası"
 
 #: src/Views/SuppliesView.vala:47
 msgid "Use as default printer:"
