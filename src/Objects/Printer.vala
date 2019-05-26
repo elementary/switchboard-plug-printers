@@ -167,7 +167,8 @@ public class Printers.Printer : GLib.Object {
      */
     public string info {
         get {
-            return CUPS.get_option ("printer-info", dest.options) ?? "";
+            unowned string? info = CUPS.get_option ("printer-info", dest.options);
+            return info != null && info != "" ? info : "Unnamed printer";
         }
         set {
             try {
