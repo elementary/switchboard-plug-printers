@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:14-0700\n"
+"POT-Creation-Date: 2019-06-26 22:46+0200\n"
 "PO-Revision-Date: 2018-12-24 00:07+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/switchboard/"
@@ -277,6 +277,10 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr ""
 
+#: src/Objects/Printer.vala:170
+msgid "Unnamed Printer"
+msgstr ""
+
 #: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr ""
@@ -326,10 +330,12 @@ msgid "Pages per side:"
 msgstr ""
 
 #: src/Views/SetupView.vala:74
+msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr ""
 
 #: src/Views/SetupView.vala:75
+msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr ""
 

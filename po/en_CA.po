@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:14-0700\n"
+"POT-Creation-Date: 2019-06-26 22:46+0200\n"
 "PO-Revision-Date: 2018-04-25 00:36+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
@@ -279,6 +279,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "The optical photo conductor is no longer functioning"
 
+#: src/Objects/Printer.vala:170
+#, fuzzy
+msgid "Unnamed Printer"
+msgstr "Add Printer"
+
 #: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Ready"
@@ -328,10 +333,14 @@ msgid "Pages per side:"
 msgstr "Pages per side:"
 
 #: src/Views/SetupView.vala:74
+#, fuzzy
+msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Long Edge (Standard)"
 
 #: src/Views/SetupView.vala:75
+#, fuzzy
+msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Short Edge (Flip)"
 

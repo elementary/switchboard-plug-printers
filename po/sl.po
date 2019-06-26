@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:14-0700\n"
+"POT-Creation-Date: 2019-06-26 22:46+0200\n"
 "PO-Revision-Date: 2018-07-09 20:20+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
@@ -280,6 +280,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Optični foto prevodnik ne deluje več"
 
+#: src/Objects/Printer.vala:170
+#, fuzzy
+msgid "Unnamed Printer"
+msgstr "Dodaj tiskalnik"
+
 #: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Pripravljen"
@@ -329,10 +334,14 @@ msgid "Pages per side:"
 msgstr "Strani na ploskev:"
 
 #: src/Views/SetupView.vala:74
+#, fuzzy
+msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Daljši rob (Standardno)"
 
 #: src/Views/SetupView.vala:75
+#, fuzzy
+msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Kratki rob (obrnjeno)"
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:14-0700\n"
+"POT-Creation-Date: 2019-06-26 22:46+0200\n"
 "PO-Revision-Date: 2018-05-30 00:04+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -282,6 +282,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Conductorul fotografic optic nu mai funcționează"
 
+#: src/Objects/Printer.vala:170
+#, fuzzy
+msgid "Unnamed Printer"
+msgstr "Adăugați imprimanta"
+
 #: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Gata"
@@ -331,10 +336,14 @@ msgid "Pages per side:"
 msgstr "Pagini pe fiecare parte:"
 
 #: src/Views/SetupView.vala:74
+#, fuzzy
+msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "LongEdge (Standard)"
 
 #: src/Views/SetupView.vala:75
+#, fuzzy
+msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Margine scurtă (Flip)"
 

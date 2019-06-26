@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:14-0700\n"
+"POT-Creation-Date: 2019-06-26 22:46+0200\n"
 "PO-Revision-Date: 2017-08-31 23:37+0000\n"
 "Last-Translator: Grammatopoulos Athanasios-Vasi <darkthanos.gr@gmail.com>\n"
 "Language-Team: Greek <https://weblate.elementary.io/projects/switchboard/"
@@ -281,6 +281,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr ""
 
+#: src/Objects/Printer.vala:170
+#, fuzzy
+msgid "Unnamed Printer"
+msgstr "Προσθήκη εκτυπωτή"
+
 #: src/Objects/Printer.vala:283
 msgid "Ready"
 msgstr "Έτοιμος"
@@ -330,10 +335,12 @@ msgid "Pages per side:"
 msgstr "Σελίδες ανά πλευρά:"
 
 #: src/Views/SetupView.vala:74
+msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr ""
 
 #: src/Views/SetupView.vala:75
+msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr ""
 
