@@ -7,12 +7,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
-"PO-Revision-Date: 2019-05-09 18:15-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-=======
 "POT-Creation-Date: 2019-05-09 18:15-0700\n"
 "PO-Revision-Date: 2019-06-27 14:12+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
