@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:46+0200\n"
-"PO-Revision-Date: 2018-12-02 06:48+0000\n"
+"PO-Revision-Date: 2019-07-21 03:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -279,9 +279,8 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "感光体が寿命に達しました"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "プリンターを追加"
+msgstr "名称未設定プリンター"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -332,13 +331,11 @@ msgid "Pages per side:"
 msgstr "1 枚あたりのページ数:"
 
 #: src/Views/SetupView.vala:74
-#, fuzzy
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "長辺とじ (標準)"
 
 #: src/Views/SetupView.vala:75
-#, fuzzy
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "短辺とじ (フリップ)"
