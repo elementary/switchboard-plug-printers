@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:46+0200\n"
-"PO-Revision-Date: 2019-07-22 02:24+0000\n"
+"PO-Revision-Date: 2019-08-23 22:22+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ca/>\n"
@@ -300,7 +300,7 @@ msgstr "En espera"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
-msgstr "S'està processant…"
+msgstr "Es processa…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
