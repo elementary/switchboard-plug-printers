@@ -20,6 +20,7 @@ plug_files = files(
 )
 
 switchboard_dep = dependency('switchboard-2.0')
+switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
 cups_lib = meson.get_compiler('c').find_library('cups')
 cups_vapi = meson.get_compiler('vala').find_library('cups', dirs: join_paths(meson.source_root(), 'vapi'))
@@ -48,5 +49,5 @@ shared_module(
         switchboard_dep
     ],
     install: true,
-    install_dir : join_paths(switchboard_dep.get_pkgconfig_variable('plugsdir'), 'hardware')
+    install_dir : join_paths(switchboard_plugsdir, 'hardware')
 )
