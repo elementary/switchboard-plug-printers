@@ -605,7 +605,7 @@ namespace CUPS {
 			[CCode (cname = "ippAddBooleans")]
 			private unowned Attribute _add_booleans (Tag group, string name, [CCode (array_length_pos = 0.9)] char[] values);
 			public unowned Attribute add_booleans (Tag group, string name, bool[] values) {
-				char[] char_values;
+				char[] char_values = {};
 				foreach (var val in values) {
 					char_values += val ? 1 : 0;
 				}
