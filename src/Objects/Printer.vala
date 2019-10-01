@@ -612,13 +612,13 @@ public class Printers.Printer : GLib.Object {
         var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_PRINTER_ATTRIBUTES);
         request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, (string)printer_uri);
 
-        const string[] attributes = { "marker-colors",
+        const string[] ATTRIBUTES = { "marker-colors",
                                       "marker-levels",
                                       "marker-names",
                                       "marker-high-levels",
                                       "marker-low-levels" };
 
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
+        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, ATTRIBUTES);
         request.do_request (CUPS.HTTP.DEFAULT);
 
         var found_colors = new Gee.ArrayList<ColorLevel?> ();
