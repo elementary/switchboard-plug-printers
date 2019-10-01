@@ -117,7 +117,7 @@ public class Printers.PrinterManager : GLib.Object {
         printer_added (printer);
     }
 
-    private const string[] subscription_events = {
+    private const string[] SUBSCRIPTION_EVENTS = {
         "printer-added",
         "printer-deleted",
         "printer-stopped",
@@ -131,7 +131,7 @@ public class Printers.PrinterManager : GLib.Object {
         CUPS.IPP.IPP request = null;
         if (subscription_id <= 0) {
             request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.CREATE_PRINTER_SUBSCRIPTION);
-            request.add_strings (CUPS.IPP.Tag.SUBSCRIPTION, CUPS.IPP.Tag.KEYWORD, "notify-events", null, subscription_events);
+            request.add_strings (CUPS.IPP.Tag.SUBSCRIPTION, CUPS.IPP.Tag.KEYWORD, "notify-events", null, SUBSCRIPTION_EVENTS);
             request.add_string (CUPS.IPP.Tag.SUBSCRIPTION, CUPS.IPP.Tag.KEYWORD, "notify-pull-method", null, "ippget");
             request.add_string (CUPS.IPP.Tag.SUBSCRIPTION, CUPS.IPP.Tag.URI, "notify-recipient-uri", null, "dbus://");
         } else {
