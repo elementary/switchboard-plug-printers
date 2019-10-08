@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:46+0200\n"
-"PO-Revision-Date: 2019-10-07 15:23+0000\n"
+"PO-Revision-Date: 2019-10-09 17:23+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/es/>\n"
@@ -284,9 +284,8 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "El conductor óptico ya no funciona"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "Añadir impresora"
+msgstr "Impresora sin nombre"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -337,13 +336,11 @@ msgid "Pages per side:"
 msgstr "Páginas por hoja:"
 
 #: src/Views/SetupView.vala:74
-#, fuzzy
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Borde largo (Estándar)"
 
 #: src/Views/SetupView.vala:75
-#, fuzzy
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Borde corto (Voltear)"
@@ -618,7 +615,7 @@ msgstr "Magenta"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "Tri-color"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
