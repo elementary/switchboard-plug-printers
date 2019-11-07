@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
+"POT-Creation-Date: 2019-11-07 16:24+0000\n"
 "PO-Revision-Date: 2019-05-14 20:42+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -28,3 +28,11 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Configureu impressores, gestioneu les cues d'impressió i visualitzeu els "
 "nivells de tinta."
+
+#: data/printers.appdata.xml.in:10
+msgid "Show a default name if a printer is unnamed"
+msgstr ""
+
+#: data/printers.appdata.xml.in:11
+msgid "Updated translations"
+msgstr ""
