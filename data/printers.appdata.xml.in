@@ -4,6 +4,14 @@
   <extends>io.elementary.switchboard</extends>
   <name>Printers</name>
   <summary>Configure printers, manage print queues, and view ink levels</summary>
+  <releases>
+    <release version="2.1.7" date="2019-11-05" urgency="medium">
+      <description>
+        <p>Show a default name if a printer is unnamed</p>
+        <p>Updated translations</p>
+      </description>
+    </release>
+  </releases>
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/master/data/screenshot.png</image>
