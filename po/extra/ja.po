@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:24+0000\n"
-"PO-Revision-Date: 2019-05-19 09:15+0000\n"
+"PO-Revision-Date: 2019-11-09 15:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/printers.appdata.xml.in:5
 msgid "Printers"
@@ -29,8 +29,8 @@ msgstr "プリンターを設定し、プリントキューを管理し、イン
 
 #: data/printers.appdata.xml.in:10
 msgid "Show a default name if a printer is unnamed"
-msgstr ""
+msgstr "プリンター名が指定されていない場合にデフォルトの名前を表示するように修正"
 
 #: data/printers.appdata.xml.in:11
 msgid "Updated translations"
-msgstr ""
+msgstr "翻訳の更新"
