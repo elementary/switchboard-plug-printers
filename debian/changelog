@@ -1,3 +1,29 @@
+switchboard-plug-printers (2.1.7) bionic; urgency=medium
+
+  * Release 2.1.7 (#125)
+  * Update translation template
+  * AppData: Add 2.1.7 release info
+  * Add Release to Actions
+  * Add Gettext Updates to Actions
+  * Split deb packaging into its own branch
+  * run installation in CI (#122)
+  * Add Lint to CI (#120)
+  * lint src files with vala-lint (#121)
+  * Test with GitHub CI (#119)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * Update cups.vapi (#118)
+  * build: fix install path for switchboard plug  (#115)
+  * Plug: Change code name to RDNN
+  * Fix nb.po in extra
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+  * Default label for unnamed printer (#112)
+  * Add appdata and translations (#111)
+  * Add context for GTK translation
+
+ -- elementary OS Team <builds@elementary.io>  Fri, 15 Nov 2019 22:48:29 +0000
+
 switchboard-plug-printers (2.1.6) bionic; urgency=medium
 
   * New upstream release.
