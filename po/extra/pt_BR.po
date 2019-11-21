@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:24+0000\n"
-"PO-Revision-Date: 2019-05-28 19:29+0000\n"
+"PO-Revision-Date: 2019-11-22 03:25+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/printers-plug-extra/pt_BR/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/printers.appdata.xml.in:5
 msgid "Printers"
@@ -30,8 +30,8 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:10
 msgid "Show a default name if a printer is unnamed"
-msgstr ""
+msgstr "Mostrar um nome padrão se uma impressora não possuir nome"
 
 #: data/printers.appdata.xml.in:11
 msgid "Updated translations"
-msgstr ""
+msgstr "Traduções atualizadas"
