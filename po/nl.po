@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:24+0000\n"
-"PO-Revision-Date: 2019-10-17 17:24+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2020-01-01 20:07+0000\n"
+"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/nl/>\n"
 "Language: nl\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -21,11 +21,11 @@ msgstr "Printwachtrij"
 
 #: src/PrinterPage.vala:39
 msgid "Page Setup"
-msgstr ""
+msgstr "Pagina instellingen"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Instellingen & voorraden"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
@@ -59,6 +59,8 @@ msgstr "Geen printers beschikbaar"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+"Maak verbinding met een printer door op het icoon op de taakbalk beneden te "
+"klikken."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -97,7 +99,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Zoeken naar printers…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -168,7 +170,7 @@ msgstr "Beschikbaar Netwerk Printers"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Weet u zeker dat u '%s' wilt verwijderen?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -284,9 +286,8 @@ msgstr ""
 "niet meer"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "Printer toevoegen"
+msgstr "Printer zonder naam"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -322,7 +323,7 @@ msgstr "taak voltooid"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "De afdruk wachtrij is leeg"
 
 #: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
@@ -337,13 +338,11 @@ msgid "Pages per side:"
 msgstr "Pagina's per kant:"
 
 #: src/Views/SetupView.vala:74
-#, fuzzy
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Lange zijde (standaard)"
 
 #: src/Views/SetupView.vala:75
-#, fuzzy
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Korte zijde (omdraaien)"
@@ -442,29 +441,29 @@ msgstr "Achterste lade"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Papier naar boven lade"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Papier naar beneden lade"
 
 #: src/Views/SetupView.vala:266
 msgid "Large Capacity Bin"
-msgstr ""
+msgstr "Grote capaciteit lade"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "Mijn mailbox"
 
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Stapelaar %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Mailbox %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
@@ -493,23 +492,23 @@ msgstr "Kwaliteit:"
 
 #: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
-msgstr "papier benodigdheden"
+msgstr "Papier benodigdheden"
 
 #: src/Views/SetupView.vala:336
 msgid "Alternate Tray"
-msgstr "alternatieve papier la"
+msgstr "Alternatieve papierlade"
 
 #: src/Views/SetupView.vala:339
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Alternatieve rol"
 
 #: src/Views/SetupView.vala:345
 msgid "Bottom"
-msgstr ""
+msgstr "Onderkant"
 
 #: src/Views/SetupView.vala:348
 msgid "By-pass Tray"
-msgstr ""
+msgstr "By-pass papierlade"
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
@@ -517,7 +516,7 @@ msgstr "Centreren"
 
 #: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "Continue automatisch voeden"
 
 #: src/Views/SetupView.vala:358
 msgid "Disk"
@@ -533,7 +532,7 @@ msgstr "Hagaki-kaart"
 
 #: src/Views/SetupView.vala:367
 msgid "Large Capacity"
-msgstr ""
+msgstr "Grote capaciteit"
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
@@ -541,11 +540,11 @@ msgstr "Links"
 
 #: src/Views/SetupView.vala:373
 msgid "Main Tray"
-msgstr ""
+msgstr "Hoofd papierlade"
 
 #: src/Views/SetupView.vala:376
 msgid "Main Roll"
-msgstr ""
+msgstr "Hoofd rol"
 
 #: src/Views/SetupView.vala:379
 msgid "Manual"
@@ -569,16 +568,16 @@ msgstr "Rechts"
 
 #: src/Views/SetupView.vala:395
 msgid "Side"
-msgstr ""
+msgstr "Zijkant"
 
 #: src/Views/SetupView.vala:398
 msgid "Top"
-msgstr ""
+msgstr "Bovenkant"
 
 #: src/Views/SetupView.vala:403
 #, c-format
 msgid "Roll %d"
-msgstr ""
+msgstr "Rol %d"
 
 #: src/Views/SetupView.vala:419
 msgid "Paper Source:"
@@ -614,19 +613,19 @@ msgstr "Lichtblauw"
 
 #: src/Widgets/InkLevel.vala:113
 msgid "Magenta"
-msgstr "roze"
+msgstr "Roze"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "Drie kleuren"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Pauzeer"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Doorgaan"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
