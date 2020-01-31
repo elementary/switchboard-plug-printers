@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:24+0000\n"
-"PO-Revision-Date: 2019-10-17 17:24+0000\n"
+"PO-Revision-Date: 2020-02-01 02:08+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Albanian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/sq/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -106,7 +106,7 @@ msgstr ""
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
-msgstr ""
+msgstr "Anulo"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
