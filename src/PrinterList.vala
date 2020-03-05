@@ -44,18 +44,17 @@ public class Printers.PrinterList : Gtk.Grid {
         scrolled.width_request = 250;
         scrolled.expand = true;
 
-        var toolbar = new Gtk.Toolbar ();
-        toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
-        var add_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        var actionbar = new Gtk.ActionBar ();
+        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        var add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON);
         add_button.tooltip_text = _("Add Printer…");
-        var remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
         remove_button.tooltip_text = _("Remove Printer");
         remove_button.sensitive = false;
-        toolbar.add (add_button);
-        toolbar.add (remove_button);
+        actionbar.add (add_button);
+        actionbar.add (remove_button);
         add (scrolled);
-        add (toolbar);
+        add (actionbar);
 
         list_box.row_selected.connect ((row) => {
             remove_button.sensitive = (row != null);
