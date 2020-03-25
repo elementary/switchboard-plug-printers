@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:24+0000\n"
-"PO-Revision-Date: 2020-03-01 14:09+0000\n"
+"PO-Revision-Date: 2020-03-26 23:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/he/>\n"
@@ -29,7 +29,7 @@ msgstr "הגדרת מדפסות, ניהול תורי הדפסה והצגת רמ�
 
 #: data/printers.appdata.xml.in:10
 msgid "Show a default name if a printer is unnamed"
-msgstr ""
+msgstr "הצגת שם בררת מחדל אם למדפסת אין שם"
 
 #: data/printers.appdata.xml.in:11
 msgid "Updated translations"
