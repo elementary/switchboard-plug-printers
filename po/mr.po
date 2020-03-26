@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:24+0000\n"
-"PO-Revision-Date: 2019-04-19 10:08+0000\n"
+"PO-Revision-Date: 2020-03-26 23:09+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/mr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -366,7 +366,7 @@ msgstr ""
 
 #: src/Views/SetupView.vala:181
 msgid "Media Size:"
-msgstr ""
+msgstr "माध्यम आकार:"
 
 #: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
 msgid "Automatic"
@@ -481,7 +481,7 @@ msgstr ""
 
 #: src/Views/SetupView.vala:319
 msgid "Quality:"
-msgstr ""
+msgstr "गुणवत्ता:"
 
 #: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
