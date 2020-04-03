@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2019-12-20 16:09+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -28,9 +28,13 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "配置打印机、管理打印队列、查看墨水余量"
 
 #: data/printers.appdata.xml.in:10
-msgid "Show a default name if a printer is unnamed"
+msgid "Minor updates:"
 msgstr ""
 
-#: data/printers.appdata.xml.in:11
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "翻译更新"
+
+#: data/printers.appdata.xml.in:18
+msgid "Show a default name if a printer is unnamed"
+msgstr ""

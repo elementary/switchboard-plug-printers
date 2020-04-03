@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2019-11-25 10:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -28,9 +28,13 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "प्रिंटर कॉन्फिगर करा, मुद्रण रांग व्यवस्थापित करा आणि शाईचे स्तर पहा"
 
 #: data/printers.appdata.xml.in:10
-msgid "Show a default name if a printer is unnamed"
-msgstr "प्रिंटर अज्ञात असल्यास डीफॉल्ट नाव दर्शवा"
+msgid "Minor updates:"
+msgstr ""
 
-#: data/printers.appdata.xml.in:11
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
+
+#: data/printers.appdata.xml.in:18
+msgid "Show a default name if a printer is unnamed"
+msgstr "प्रिंटर अज्ञात असल्यास डीफॉल्ट नाव दर्शवा"

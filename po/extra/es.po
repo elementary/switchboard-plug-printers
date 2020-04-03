@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2019-11-16 17:24+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -30,9 +30,13 @@ msgstr ""
 "tinta"
 
 #: data/printers.appdata.xml.in:10
-msgid "Show a default name if a printer is unnamed"
-msgstr "Mostrar un nombre predeterminado si una impresora no tiene nombre"
+msgid "Minor updates:"
+msgstr ""
 
-#: data/printers.appdata.xml.in:11
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "Traducciones actualizadas"
+
+#: data/printers.appdata.xml.in:18
+msgid "Show a default name if a printer is unnamed"
+msgstr "Mostrar un nombre predeterminado si una impresora no tiene nombre"

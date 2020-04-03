@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2019-11-22 03:25+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -29,9 +29,13 @@ msgstr ""
 "Configurar impressoras, gerenciar filas de impressão e ver nível de tinta"
 
 #: data/printers.appdata.xml.in:10
-msgid "Show a default name if a printer is unnamed"
-msgstr "Mostrar um nome padrão se uma impressora não possuir nome"
+msgid "Minor updates:"
+msgstr ""
 
-#: data/printers.appdata.xml.in:11
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
+
+#: data/printers.appdata.xml.in:18
+msgid "Show a default name if a printer is unnamed"
+msgstr "Mostrar um nome padrão se uma impressora não possuir nome"

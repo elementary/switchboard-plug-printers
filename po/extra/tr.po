@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2020-01-12 20:07+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -29,9 +29,13 @@ msgstr ""
 "Yazıcıları yapılandır, yazdırma sırasını yönet, mürekkep seviyelerini gör"
 
 #: data/printers.appdata.xml.in:10
-msgid "Show a default name if a printer is unnamed"
-msgstr "Bir yazıcıya ad verilmemişse varsayılan bir ad göster"
+msgid "Minor updates:"
+msgstr ""
 
-#: data/printers.appdata.xml.in:11
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "Çeviriler güncellendi"
+
+#: data/printers.appdata.xml.in:18
+msgid "Show a default name if a printer is unnamed"
+msgstr "Bir yazıcıya ad verilmemişse varsayılan bir ad göster"

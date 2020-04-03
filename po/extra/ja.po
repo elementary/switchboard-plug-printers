@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2019-11-09 15:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -28,9 +28,14 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "プリンターを設定し、プリントキューを管理し、インク残量を表示します"
 
 #: data/printers.appdata.xml.in:10
-msgid "Show a default name if a printer is unnamed"
-msgstr "プリンター名が指定されていない場合にデフォルトの名前を表示するように修正"
+msgid "Minor updates:"
+msgstr ""
 
-#: data/printers.appdata.xml.in:11
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "翻訳の更新"
+
+#: data/printers.appdata.xml.in:18
+msgid "Show a default name if a printer is unnamed"
+msgstr ""
+"プリンター名が指定されていない場合にデフォルトの名前を表示するように修正"
