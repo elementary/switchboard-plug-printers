@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2020-01-04 11:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -36,11 +36,11 @@ msgstr "Test pagina afdrukken"
 msgid "Test page"
 msgstr "Test pagina"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "Printer toevoegen…"
 
-#: src/PrinterList.vala:53
+#: src/PrinterList.vala:52
 msgid "Remove Printer"
 msgstr "Printer verwijderen"
 

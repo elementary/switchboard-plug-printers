@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -43,11 +43,11 @@ msgstr "Одштампај пробну страницу"
 msgid "Test page"
 msgstr "Пробна страница"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "Додај штампач…"
 
-#: src/PrinterList.vala:53
+#: src/PrinterList.vala:52
 msgid "Remove Printer"
 msgstr "Уклони штампач"
 

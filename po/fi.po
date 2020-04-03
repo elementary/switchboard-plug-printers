@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2019-09-02 20:22+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -36,11 +36,11 @@ msgstr "Tulosta testisivu"
 msgid "Test page"
 msgstr "Testisivu"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "Lisää tulostin…"
 
-#: src/PrinterList.vala:53
+#: src/PrinterList.vala:52
 msgid "Remove Printer"
 msgstr "Poista tulostin"
 

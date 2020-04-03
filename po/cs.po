@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2018-10-28 16:11+0000\n"
 "Last-Translator: Daniel Zvir <zvir.daniel@seznam.cz>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
@@ -36,11 +36,11 @@ msgstr "Vytisknout zkušební stránku"
 msgid "Test page"
 msgstr "Zkušební stránka"
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "Přidat tiskárnu…"
 
-#: src/PrinterList.vala:53
+#: src/PrinterList.vala:52
 msgid "Remove Printer"
 msgstr "Odstranit tiskárnu"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:24+0000\n"
+"POT-Creation-Date: 2020-04-03 20:28+0000\n"
 "PO-Revision-Date: 2015-10-14 17:32+0000\n"
 "Last-Translator: ABCDEFGH <aefgh7233@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,11 +35,11 @@ msgstr "พิมพ์หน้าทดสอบ"
 msgid "Test page"
 msgstr ""
 
-#: src/PrinterList.vala:51
+#: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr ""
 
-#: src/PrinterList.vala:53
+#: src/PrinterList.vala:52
 msgid "Remove Printer"
 msgstr ""
 
