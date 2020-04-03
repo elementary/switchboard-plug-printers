@@ -5,6 +5,14 @@
   <name>Printers</name>
   <summary>Configure printers, manage print queues, and view ink levels</summary>
   <releases>
+    <release version="2.1.8" date="2020-04-03" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.7" date="2019-11-15" urgency="medium">
       <description>
         <p>Show a default name if a printer is unnamed</p>
