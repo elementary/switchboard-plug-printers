@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2020-01-12 20:07+0000\n"
+"PO-Revision-Date: 2020-04-12 11:10+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/tr/>\n"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:10
 msgid "Minor updates:"
-msgstr ""
+msgstr "Küçük düzeltmeler:"
 
 #: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:19
 msgid "Updated translations"
