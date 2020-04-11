@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2018-12-13 14:04+0000\n"
-"Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
-"Language-Team: Russian <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-04-12 11:10+0000\n"
+"Last-Translator: Stas <SedovSG@yandex.ru>\n"
+"Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -26,7 +26,7 @@ msgstr "Параметры страницы"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Настройки и расходные материалы"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
@@ -55,13 +55,12 @@ msgstr ""
 "Настройка принтеров, управление очередью печати, просмотр уровня чернил"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "Нет принтеров"
+msgstr "Нет доступных принтеров"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
+msgstr "Подключитесь к принтеру, щелкнув значок на панели инструментов ниже."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -100,7 +99,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Поиск ближайших принтеров…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -109,7 +108,7 @@ msgstr "Обновить"
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
-msgstr "Отменить"
+msgstr "Отмена"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -171,16 +170,14 @@ msgstr "Доступные сетевые принтеры"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Вы уверены, что хотите удалить  «%s»?"
 
 #: src/Dialogs/RemoveDialog.vala:30
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
-msgstr ""
-"При удалении '%s' вы потеряете всю его \n"
-"историю печати и конфигурацию."
+msgstr "При удалении  «%s» вы потеряете всю его историю печати и конфигурацию."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -283,9 +280,8 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "Фотобарабан не работает"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "Добавить принтер"
+msgstr "Безымянный принтер"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -296,9 +292,8 @@ msgid "Job Pending"
 msgstr "Задание ожидает"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
-msgstr "В режиме ожидания"
+msgstr "На удерживании"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
@@ -323,12 +318,11 @@ msgstr "Задание завершено"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Очередь печати пуста"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Нет заданий в очереди"
+msgstr "В очереди нет отложенных заданий."
 
 #: src/Views/JobsView.vala:76
 #, fuzzy
@@ -342,12 +336,12 @@ msgstr "Страниц на листе:"
 #: src/Views/SetupView.vala:74
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Длинный край (стандарт)"
 
 #: src/Views/SetupView.vala:75
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Короткий край (флип)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
@@ -355,19 +349,19 @@ msgstr "Двусторонние:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
-msgstr ""
+msgstr "Портрет"
 
 #: src/Views/SetupView.vala:146
 msgid "Landscape"
-msgstr ""
+msgstr "Ландшафт"
 
 #: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Обратный портрет"
 
 #: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Обратный ландшафт"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
@@ -411,50 +405,43 @@ msgstr "Цветовой режим:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr ""
+msgstr "Верхний край листа"
 
 #: src/Views/SetupView.vala:239
-#, fuzzy
 msgid "Middle Bin"
-msgstr "В центре"
+msgstr "Средний край листа"
 
 #: src/Views/SetupView.vala:242
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Нижний край"
+msgstr "Нижний край листа"
 
 #: src/Views/SetupView.vala:245
-#, fuzzy
 msgid "Side Bin"
-msgstr "Сторона"
+msgstr "Сторона листа"
 
 #: src/Views/SetupView.vala:248
-#, fuzzy
 msgid "Left Bin"
-msgstr "Левый"
+msgstr "Левый край листа"
 
 #: src/Views/SetupView.vala:251
-#, fuzzy
 msgid "Right Bin"
-msgstr "Правый"
+msgstr "Правый край листа"
 
 #: src/Views/SetupView.vala:254
-#, fuzzy
 msgid "Center Bin"
-msgstr "Центр"
+msgstr "Центральный край листа"
 
 #: src/Views/SetupView.vala:257
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Задний"
+msgstr "Задний край листа"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Лист лицом вверх"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Лист лицом вниз"
 
 #: src/Views/SetupView.vala:266
 #, fuzzy
@@ -463,17 +450,17 @@ msgstr "Большая емкость"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "Мой почтовый ящик"
 
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Штабелер %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Почтовый ящик %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
@@ -595,7 +582,7 @@ msgstr "Источник бумаги:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
-msgstr "Лаборатория 1"
+msgstr "Лаборатория 1 или рабочий стол Джона"
 
 #: src/Views/SuppliesView.vala:47
 #, fuzzy
@@ -628,15 +615,15 @@ msgstr "Фиолетовый"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "Трехцветный"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Пауза"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Возобновить"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
