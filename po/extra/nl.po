@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2020-01-01 20:07+0000\n"
+"PO-Revision-Date: 2020-04-13 21:10+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/nl/>\n"
@@ -29,7 +29,7 @@ msgstr "Configureer printers, beheer printers en bekijk inkt levels"
 
 #: data/printers.appdata.xml.in:10
 msgid "Minor updates:"
-msgstr ""
+msgstr "Kleine updates:"
 
 #: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:19
 msgid "Updated translations"
