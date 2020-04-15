@@ -4,6 +4,8 @@
   <extends>io.elementary.switchboard</extends>
   <name>Printers</name>
   <summary>Configure printers, manage print queues, and view ink levels</summary>
+  <icon type="stock">printer</icon>
+  <translation type="gettext">printers-plug</translation>
   <releases>
     <release version="2.1.8" date="2020-04-03" urgency="medium">
       <description>
