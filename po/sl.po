@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2018-07-09 20:20+0000\n"
+"PO-Revision-Date: 2020-04-27 12:10+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
-"Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 3.0.1\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -59,7 +59,7 @@ msgstr "Ni tiskalnikov"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr "Dodajte tiskalnik s klikom na ikono spodaj."
+msgstr "Dodajte tiskalnik s klikom na \"+\" ikono levo spodaj."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -281,9 +281,8 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "Optični foto prevodnik ne deluje več"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "Dodaj tiskalnik"
+msgstr "Neimenovan tiskalnik"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -334,16 +333,14 @@ msgid "Pages per side:"
 msgstr "Strani na ploskev:"
 
 #: src/Views/SetupView.vala:74
-#, fuzzy
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Daljši rob (Standardno)"
 
 #: src/Views/SetupView.vala:75
-#, fuzzy
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
-msgstr "Kratki rob (obrnjeno)"
+msgstr "Kratki rob (zrcaljeno)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
@@ -615,7 +612,7 @@ msgstr "Magenta"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "Tribarvna"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
