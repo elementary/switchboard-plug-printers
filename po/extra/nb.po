@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
+"POT-Creation-Date: 2020-04-28 22:26+0000\n"
 "PO-Revision-Date: 2019-06-27 14:12+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -20,21 +20,23 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 
 #: data/printers.appdata.xml.in:5
-msgid "Printers"
+#, fuzzy
+#| msgid "Printers"
+msgid "Printer Settings"
 msgstr "Skrivere"
 
 #: data/printers.appdata.xml.in:6
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Sett opp skrivere, håndter utskriftskøer, og sjekk blekknivåer"
 
-#: data/printers.appdata.xml.in:10
+#: data/printers.appdata.xml.in:12
 msgid "Minor updates:"
 msgstr ""
 
-#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:19
+#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
 msgid "Updated translations"
 msgstr ""
 
-#: data/printers.appdata.xml.in:18
+#: data/printers.appdata.xml.in:20
 msgid "Show a default name if a printer is unnamed"
 msgstr ""

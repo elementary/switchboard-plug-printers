@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
+"POT-Creation-Date: 2020-04-28 22:26+0000\n"
 "PO-Revision-Date: 2019-09-30 14:23+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,9 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 
 #: data/printers.appdata.xml.in:5
-msgid "Printers"
+#, fuzzy
+#| msgid "Printers"
+msgid "Printer Settings"
 msgstr "Impresoras"
 
 #: data/printers.appdata.xml.in:6
@@ -29,14 +31,14 @@ msgstr ""
 "Configurar impresoras, xestionar colas de impresión e visualizar os niveis "
 "de tinta"
 
-#: data/printers.appdata.xml.in:10
+#: data/printers.appdata.xml.in:12
 msgid "Minor updates:"
 msgstr ""
 
-#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:19
+#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
 msgid "Updated translations"
 msgstr ""
 
-#: data/printers.appdata.xml.in:18
+#: data/printers.appdata.xml.in:20
 msgid "Show a default name if a printer is unnamed"
 msgstr ""
