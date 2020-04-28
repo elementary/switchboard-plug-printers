@@ -2,7 +2,7 @@
 <component type="addon">
   <id>io.elementary.switchboard.printers</id>
   <extends>io.elementary.switchboard</extends>
-  <name>Printers</name>
+  <name>Printer Settings</name>
   <summary>Configure printers, manage print queues, and view ink levels</summary>
   <icon type="stock">printer</icon>
   <translation type="gettext">printers-plug</translation>
