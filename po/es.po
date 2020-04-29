@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2019-10-09 17:23+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2020-04-30 17:10+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/es/>\n"
 "Language: es\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -338,12 +338,12 @@ msgstr "Páginas por hoja:"
 #: src/Views/SetupView.vala:74
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
-msgstr "Borde largo (Estándar)"
+msgstr "Borde largo (estándar)"
 
 #: src/Views/SetupView.vala:75
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
-msgstr "Borde corto (Voltear)"
+msgstr "Borde corto (voltear)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
@@ -351,19 +351,19 @@ msgstr "A dos caras:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
-msgstr "Retrato"
+msgstr "Vertical"
 
 #: src/Views/SetupView.vala:146
 msgid "Landscape"
-msgstr "Paisaje"
+msgstr "Horizontal"
 
 #: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
-msgstr "Retrato reverso"
+msgstr "Vertical invertido"
 
 #: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
-msgstr "Paisaje invertido"
+msgstr "Horizontal invertido"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
@@ -615,7 +615,7 @@ msgstr "Magenta"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr "Tri-color"
+msgstr "Tricolor"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
@@ -623,7 +623,7 @@ msgstr "Pausar"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr "Currículum"
+msgstr "Reanudar"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
