@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2020-04-30 17:10+0000\n"
+"PO-Revision-Date: 2020-05-11 16:10+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/es/>\n"
@@ -25,7 +25,7 @@ msgstr "Configuración de página"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
-msgstr "Configuraciones y suministros"
+msgstr "Configuración y suministros"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
@@ -42,7 +42,7 @@ msgstr "Añadir impresora…"
 
 #: src/PrinterList.vala:52
 msgid "Remove Printer"
-msgstr "Eliminar impresora"
+msgstr "Quitar impresora"
 
 #: src/Plug.vala:35
 msgid "Printers"
@@ -67,7 +67,7 @@ msgstr ""
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr "Protocolo de impresión en internet (https)"
+msgstr "Protocolo de impresión por internet (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: src/Dialogs/AddDialog.vala:29
@@ -92,7 +92,7 @@ msgstr "Protocolo de Impresión por Internet (ipp14)"
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr "Equipo o Impresora LPD/LPR"
+msgstr "Anfitrión o impresora LPD/LPR"
 
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:39
@@ -101,7 +101,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr "Encontrar impresoras cercanas …"
+msgstr "Encontrar impresoras cercanas…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -139,7 +139,7 @@ msgstr "Ubicación:"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
-msgstr "Laboratorio 1 o escritorio de John"
+msgstr "Laboratorio 1 o Escritorio de Rosa"
 
 #: src/Dialogs/AddDialog.vala:304
 msgid "Previous"
@@ -163,16 +163,16 @@ msgstr "Impresoras locales"
 
 #: src/Dialogs/AddDialog.vala:611
 msgid "Network Printers"
-msgstr "Impresoras de red"
+msgstr "Impresoras en red"
 
 #: src/Dialogs/AddDialog.vala:614
 msgid "Available Network Printers"
-msgstr "Impresoras de red disponibles"
+msgstr "Impresoras en red disponibles"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr "¿Estás seguro de que quieres eliminar '%s'?"
+msgstr "¿Confirma que quiere quitar «%s»?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -180,7 +180,7 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Eliminando '%s' perderás todo el histórico de impresión y la configuración "
+"Al quitar «%s» se perderá el histórico de impresión y la configuración "
 "asociada."
 
 #: src/Dialogs/RemoveDialog.vala:35
