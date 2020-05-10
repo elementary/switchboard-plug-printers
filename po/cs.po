@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2018-10-28 16:11+0000\n"
-"Last-Translator: Daniel Zvir <zvir.daniel@seznam.cz>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-05-11 16:10+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -50,7 +50,8 @@ msgstr "Tiskárny"
 
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "Nastavuj tiskárny, spravuj tiskové fronty a kontroluj hladiny inkoustu"
+msgstr ""
+"Nastavuje tiskárny, spravuje tiskové fronty a kontroluje hladiny inkoustu"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
@@ -106,7 +107,7 @@ msgstr "Obnovit"
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
-msgstr "Zrušit"
+msgstr "Storno"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -280,9 +281,8 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "Optický fotoválec již nefunguje"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "Přidat tiskárnu"
+msgstr "Nepojmenovaná tiskárna"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -333,13 +333,11 @@ msgid "Pages per side:"
 msgstr "Stránek na stranu:"
 
 #: src/Views/SetupView.vala:74
-#, fuzzy
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Dlouhá hrana (standardní)"
 
 #: src/Views/SetupView.vala:75
-#, fuzzy
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Krátká hrana (flip)"
