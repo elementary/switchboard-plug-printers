@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2018-10-16 09:46+0000\n"
-"Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
-"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-05-27 12:11+0000\n"
+"Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
+"Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -282,9 +282,8 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "Den optiske fotoleder virker ikke mere"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "Tilføj printer"
+msgstr "Unavngivet Printer"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -335,13 +334,11 @@ msgid "Pages per side:"
 msgstr "Sider pr. ark:"
 
 #: src/Views/SetupView.vala:74
-#, fuzzy
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Lang Kant (Standard)"
 
 #: src/Views/SetupView.vala:75
-#, fuzzy
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Kort Kant (Omvendt)"
@@ -511,7 +508,7 @@ msgstr "Bypass-bakke"
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
-msgstr "Center"
+msgstr "Centrer"
 
 #: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
