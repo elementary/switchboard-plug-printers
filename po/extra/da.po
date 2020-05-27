@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2020-05-27 12:11+0000\n"
+"PO-Revision-Date: 2020-05-28 13:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/da/>\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
 msgid "Updated translations"
-msgstr ""
+msgstr "Opdaterede oversættelser"
 
 #: data/printers.appdata.xml.in:20
 msgid "Show a default name if a printer is unnamed"
