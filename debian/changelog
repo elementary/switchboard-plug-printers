@@ -1,3 +1,16 @@
+switchboard-plug-printers (2.1.9) bionic; urgency=medium
+
+  * Release 2.1.9 (#135)
+  * Update translation files
+  * Update translation template
+  * AppData: Add "Settings" to name (#134)
+  * AppData: Add Icon & Gettext domain (#133)
+  * Update translation files
+  * Update translation files
+  * Update translation template
+
+ -- elementary OS Team <builds@elementary.io>  Thu, 28 May 2020 18:53:01 +0000
+
 switchboard-plug-printers (2.1.8) bionic; urgency=medium
 
   * release 2.1.8 (#132)
