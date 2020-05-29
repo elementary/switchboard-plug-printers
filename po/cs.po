@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2020-05-11 16:10+0000\n"
+"PO-Revision-Date: 2020-05-30 20:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/cs/>\n"
@@ -25,7 +25,7 @@ msgstr "Nastavení stránky"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
-msgstr "Nastavení a zásoby"
+msgstr "Nastavení a spotřební materiál"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
@@ -98,7 +98,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr "Hledám tiskárny v okolí…"
+msgstr "Hledání tiskáren v okolí…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -169,7 +169,7 @@ msgstr "Dostupné síťové tiskárny"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr "Opravdu chcete odebrat '%s'?"
+msgstr "Opravdu chcete odebrat „%s“?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -177,7 +177,7 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Odebráním '%s' ztratíte veškerou historii tisku a nastavení, která jsou s ní "
+"Odebráním „%s“ ztratíte veškerou historii tisku a nastavení, která jsou s ní "
 "spojená."
 
 #: src/Dialogs/RemoveDialog.vala:35
@@ -278,7 +278,7 @@ msgstr "Optický fotoválec je blízko konce své životnosti"
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr "Optický fotoválec již nefunguje"
+msgstr "Optický fotoválec už nefunguje"
 
 #: src/Objects/Printer.vala:170
 msgid "Unnamed Printer"
@@ -400,7 +400,7 @@ msgstr "Zpracované odstíny šedi"
 
 #: src/Views/SetupView.vala:222
 msgid "Color mode:"
-msgstr "Barevný mód:"
+msgstr "Režim barev:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
@@ -408,11 +408,11 @@ msgstr "Horní zásobník"
 
 #: src/Views/SetupView.vala:239
 msgid "Middle Bin"
-msgstr "Střední zásobník"
+msgstr "Prostřední zásobník"
 
 #: src/Views/SetupView.vala:242
 msgid "Bottom Bin"
-msgstr "Dolní zásobník"
+msgstr "Spodní zásobník"
 
 #: src/Views/SetupView.vala:245
 msgid "Side Bin"
@@ -448,7 +448,7 @@ msgstr "Velkokapacitní zásobník"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr "Moje emailová schránka"
+msgstr "Moje e-mailová schránka"
 
 #: src/Views/SetupView.vala:274
 #, c-format
@@ -458,7 +458,7 @@ msgstr "Stohovač %d"
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr "Emailová schránka %d"
+msgstr "E-mailová schránka %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
@@ -467,11 +467,11 @@ msgstr "Zásobník %d"
 
 #: src/Views/SetupView.vala:293
 msgid "Output Tray:"
-msgstr "Výstupní zásobník:"
+msgstr "Výstupní přihrádka:"
 
 #: src/Views/SetupView.vala:307
 msgid "Draft"
-msgstr "Náčrt"
+msgstr "Koncept"
 
 #: src/Views/SetupView.vala:310
 msgid "Normal"
