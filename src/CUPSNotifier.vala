@@ -70,7 +70,7 @@ public class Cups.Notifier : Object {
         });
     }
 
-    private void subscription_callback (DBusConnection connection, string sender_name, string object_path, string interface_name, string signal_name, Variant parameters) {
+    private void subscription_callback (DBusConnection connection, string? sender_name, string object_path, string interface_name, string signal_name, Variant parameters) {
         switch (parameters.n_children ()) {
             case 1:
                 send_server_event (signal_name, parameters);
