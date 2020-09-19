@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2020-09-19 00:14+0000\n"
+"PO-Revision-Date: 2020-09-20 14:33+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/uk/>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:38
-#, fuzzy
 msgid "Print Queue"
-msgstr "Друкарки"
+msgstr "Черга друку"
 
 #: src/PrinterPage.vala:39
 msgid "Page Setup"
@@ -40,28 +39,31 @@ msgstr "Тестова сторінка"
 
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
-msgstr "Додати принтер..."
+msgstr "Додати пристрій друку…"
 
 #: src/PrinterList.vala:52
 msgid "Remove Printer"
-msgstr "Вилучити принтер"
+msgstr "Вилучити пристрій друку"
 
 #: src/Plug.vala:35
 msgid "Printers"
-msgstr "Друкарки"
+msgstr "Пристрої друку"
 
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "Налаштування принтерів,  чергами друку і подивитися рівень чорнила"
+msgstr ""
+"Налаштування пристроїв друку, керування чергами друку і перегляд рівня "
+"чорнила"
 
 #: src/Plug.vala:49
-#, fuzzy
 msgid "No Printers Available"
-msgstr "Немає принтерів"
+msgstr "Пристрої друку недоступні"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
+"Під'єднати пристрій друку, натиснувши піктограму на панелі інструментів "
+"внизу."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -91,7 +93,7 @@ msgstr "Протокол друку через Інтернет (ipp14)"
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR Вузол або Принтер"
+msgstr "LPD/LPR Вузол або Пристрій друку"
 
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:39
@@ -100,7 +102,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "Пошук пристроїв друку поблизу…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -113,11 +115,11 @@ msgstr "Скасувати"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
-msgstr "Наступне"
+msgstr "Далі"
 
 #: src/Dialogs/AddDialog.vala:109
 msgid "Impossible to list all available printers"
-msgstr "Неможливо показати скисов всі доступних принтерів"
+msgstr "Неможливо показати перелік всіх доступних пристроїв друку"
 
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:225
@@ -142,15 +144,15 @@ msgstr "Лабараторія 1 обо стіл John'а"
 
 #: src/Dialogs/AddDialog.vala:304
 msgid "Previous"
-msgstr "Попереднє"
+msgstr "Повернутися"
 
 #: src/Dialogs/AddDialog.vala:308
 msgid "Add Printer"
-msgstr "Додати принтер"
+msgstr "Додати пристрій друку"
 
 #: src/Dialogs/AddDialog.vala:543
 msgid "(recommended)"
-msgstr "(рекомендовані)"
+msgstr "(рекомендовано)"
 
 #: src/Dialogs/AddDialog.vala:605
 msgid "Serial"
@@ -158,29 +160,28 @@ msgstr "Серійний номер"
 
 #: src/Dialogs/AddDialog.vala:608
 msgid "Local Printers"
-msgstr "Локальні принтери"
+msgstr "Локальні пристрої друку"
 
 #: src/Dialogs/AddDialog.vala:611
 msgid "Network Printers"
-msgstr "Принтери в Мережі"
+msgstr "Мережні пристрої друку"
 
 #: src/Dialogs/AddDialog.vala:614
 msgid "Available Network Printers"
-msgstr "Достіпні Принтери в Мережі"
+msgstr "Доступні мережні пристрої друку"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "Ви впевнені, що хочете вилучити '%s'?"
 
 #: src/Dialogs/RemoveDialog.vala:30
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Видаливши '%s' ви втратите всю історію друкування і налаштування пов'язані з "
-"цим."
+"Видаливши '%s' ви втратите всі пов'язані з ним параметри та історію друку."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -283,9 +284,8 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "Оптичний фотопровідник вийшов з ладу"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "Додати принтер"
+msgstr "Пристрій друку без назви"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -302,7 +302,7 @@ msgstr "На черзі"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
-msgstr "Обробка"
+msgstr "Обробка…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
@@ -566,7 +566,7 @@ msgstr "По центру"
 
 #: src/Views/SetupView.vala:385
 msgid "Photo"
-msgstr "Фотографія"
+msgstr "Світлина"
 
 #: src/Views/SetupView.vala:389
 msgid "Rear"
@@ -591,16 +591,15 @@ msgstr "Крутити %d"
 
 #: src/Views/SetupView.vala:419
 msgid "Paper Source:"
-msgstr "Подача Паперу"
+msgstr "Джерело паперу:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
-msgstr "Лаболаторія 1 або бюро Джона"
+msgstr "Лабораторія 1 або Іванів стіл"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Використовувати як типовий принтер"
+msgstr "Використовувати типовим пристроєм друку:"
 
 #: src/Widgets/InkLevel.vala:94
 msgid "Black (PGBK)"
