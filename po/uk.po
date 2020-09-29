@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2020-09-20 14:33+0000\n"
+"PO-Revision-Date: 2020-09-30 11:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/uk/>\n"
@@ -522,7 +522,7 @@ msgstr ""
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
-msgstr "По центру"
+msgstr "Центр"
 
 #: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
@@ -546,7 +546,7 @@ msgstr "Велике Навантаження"
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
-msgstr "Ліворуч"
+msgstr "Ліва"
 
 #: src/Views/SetupView.vala:373
 msgid "Main Tray"
@@ -574,7 +574,7 @@ msgstr "Задній"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
-msgstr "Праворуч"
+msgstr "Права"
 
 #: src/Views/SetupView.vala:395
 msgid "Side"
