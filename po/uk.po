@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2020-09-30 11:14+0000\n"
+"PO-Revision-Date: 2020-10-02 22:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/uk/>\n"
@@ -22,11 +22,11 @@ msgstr "Черга друку"
 
 #: src/PrinterPage.vala:39
 msgid "Page Setup"
-msgstr ""
+msgstr "Налаштування сторінки"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "Параметри та витратні матеріали"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
@@ -68,17 +68,17 @@ msgstr ""
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr "Інтернет-протокол друку (https)"
+msgstr "Протокол друку через Інтернет (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: src/Dialogs/AddDialog.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr "Інтернет-протокол друку (http)"
+msgstr "Протокол друку через Інтернет (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: src/Dialogs/AddDialog.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr "Інтернет-протокол друку (ipp)"
+msgstr "Протокол друку через Інтернет (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: src/Dialogs/AddDialog.vala:33
@@ -140,7 +140,7 @@ msgstr "Розташування:"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
-msgstr "Лабараторія 1 обо стіл John'а"
+msgstr "Лабораторія 1 або стіл Омелька"
 
 #: src/Dialogs/AddDialog.vala:304
 msgid "Previous"
@@ -181,7 +181,7 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Видаливши '%s' ви втратите всі пов'язані з ним параметри та історію друку."
+"Вилучивши '%s' ви втратите всі пов'язані з ним параметри та дієпис друку."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -251,25 +251,25 @@ msgstr "Немає паперу"
 #: src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
-msgstr "Не в мережі"
+msgstr "Автономно"
 
 #. / Translators: Someone has stopped the Printer
 #: src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
-msgstr "Зупинений"
+msgstr "Зупинено"
 
 #. / Translators: The printer marker supply waste receptacle is almost full
 #: src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
-msgstr "Майже повністю витрачено запас"
+msgstr "Місткість для відходів майже повна"
 
 #. / Translators: The printer marker supply waste receptacle is full
 #: src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
-msgstr "Повністю витрачено запас"
+msgstr "Місткість для відходів повна"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:73
@@ -296,9 +296,8 @@ msgid "Job Pending"
 msgstr "Завдання в очікуванні"
 
 #: src/Objects/Job.vala:103
-#, fuzzy
 msgid "On Hold"
-msgstr "На черзі"
+msgstr "Утримується"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
@@ -313,7 +312,6 @@ msgid "Job Canceled"
 msgstr "Завдання скасовано"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
 msgstr "Завдання перервано"
 
@@ -323,17 +321,15 @@ msgstr "Завдання завершено"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Черга друку порожня"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Немає ніяких завдань в черзі"
+msgstr "Немає завдань в черзі."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Показати завершені завдання"
+msgstr "Завершені завдання"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -342,12 +338,12 @@ msgstr "Сторінок на аркуші:"
 #: src/Views/SetupView.vala:74
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Довша сторона (стандартний)"
 
 #: src/Views/SetupView.vala:75
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Коротша сторона (зворотна)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
@@ -355,23 +351,23 @@ msgstr "Двосторонній:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
-msgstr ""
+msgstr "Вертикально"
 
 #: src/Views/SetupView.vala:146
 msgid "Landscape"
-msgstr ""
+msgstr "Горизонтально"
 
 #: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Зворотно вертикально"
 
 #: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Зворотно горизонтально"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
-msgstr "Орієнтація:"
+msgstr "Положення:"
 
 #: src/Views/SetupView.vala:181
 msgid "Media Size:"
@@ -395,7 +391,7 @@ msgstr "Один колір + Чорний"
 
 #: src/Views/SetupView.vala:207
 msgid "Greyscale"
-msgstr "Градації сірого"
+msgstr "Відтінки сірого"
 
 #: src/Views/SetupView.vala:210
 msgid "Processed Color"
@@ -403,7 +399,7 @@ msgstr "Обролений Колір"
 
 #: src/Views/SetupView.vala:213
 msgid "Processed Greyscale"
-msgstr "Оброблені Градації Сірого"
+msgstr "Оброблені відтінки сірого"
 
 #: src/Views/SetupView.vala:222
 msgid "Color mode:"
@@ -411,69 +407,61 @@ msgstr "Режим кольору:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr ""
+msgstr "Верхній лоток"
 
 #: src/Views/SetupView.vala:239
-#, fuzzy
 msgid "Middle Bin"
-msgstr "По центру"
+msgstr "Середній лоток"
 
 #: src/Views/SetupView.vala:242
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Знизу"
+msgstr "Нижній лоток"
 
 #: src/Views/SetupView.vala:245
-#, fuzzy
 msgid "Side Bin"
-msgstr "Сторона"
+msgstr "Бічний лоток"
 
 #: src/Views/SetupView.vala:248
-#, fuzzy
 msgid "Left Bin"
-msgstr "Ліворуч"
+msgstr "Лівий лоток"
 
 #: src/Views/SetupView.vala:251
-#, fuzzy
 msgid "Right Bin"
-msgstr "Праворуч"
+msgstr "Правий лоток"
 
 #: src/Views/SetupView.vala:254
-#, fuzzy
 msgid "Center Bin"
-msgstr "По центру"
+msgstr "Центральний лоток"
 
 #: src/Views/SetupView.vala:257
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Задній"
+msgstr "Задній лоток"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Передній верхній лоток"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Передній нижній лоток"
 
 #: src/Views/SetupView.vala:266
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Велике Навантаження"
+msgstr "Високонавантажений лоток"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "Моя електронна скринька"
 
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Укладальник %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Електронна скринька %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
@@ -502,7 +490,7 @@ msgstr "Якість:"
 
 #: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
-msgstr "Розподіл Паперу"
+msgstr "Розподіл паперу"
 
 #: src/Views/SetupView.vala:336
 msgid "Alternate Tray"
@@ -510,7 +498,7 @@ msgstr "Альтернативний лоток"
 
 #: src/Views/SetupView.vala:339
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Альтернативний рулон"
 
 #: src/Views/SetupView.vala:345
 msgid "Bottom"
@@ -518,7 +506,7 @@ msgstr "Знизу"
 
 #: src/Views/SetupView.vala:348
 msgid "By-pass Tray"
-msgstr ""
+msgstr "Обвідний лоток"
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
@@ -526,7 +514,7 @@ msgstr "Центр"
 
 #: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
-msgstr "Безперервна Автоподача"
+msgstr "Безперервна авто-подача"
 
 #: src/Views/SetupView.vala:358
 msgid "Disk"
@@ -554,15 +542,15 @@ msgstr "Основний лоток"
 
 #: src/Views/SetupView.vala:376
 msgid "Main Roll"
-msgstr ""
+msgstr "Основний рулон"
 
 #: src/Views/SetupView.vala:379
 msgid "Manual"
-msgstr "Посібник"
+msgstr "Власноруч"
 
 #: src/Views/SetupView.vala:382
 msgid "Middle"
-msgstr "По центру"
+msgstr "По середині"
 
 #: src/Views/SetupView.vala:385
 msgid "Photo"
@@ -587,7 +575,7 @@ msgstr "Верх"
 #: src/Views/SetupView.vala:403
 #, c-format
 msgid "Roll %d"
-msgstr "Крутити %d"
+msgstr "Рулон %d"
 
 #: src/Views/SetupView.vala:419
 msgid "Paper Source:"
@@ -627,15 +615,15 @@ msgstr "Пурпуровий"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "Триколірний"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Зупинити"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Продовжити"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
