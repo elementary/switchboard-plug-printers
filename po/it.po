@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2018-12-11 16:05+0000\n"
+"PO-Revision-Date: 2020-10-24 13:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -34,7 +34,7 @@ msgstr "Stampa pagina di prova"
 #. / TRANSLATORS: Name of the test page job
 #: src/PrinterPage.vala:106
 msgid "Test page"
-msgstr "Pagina di test"
+msgstr "Pagina di prova"
 
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
@@ -61,7 +61,7 @@ msgstr "Nessuna stampante disponibile"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
-"Connettiti a una stampante facendo click sull'icona nella barra degli "
+"Connettiti a una stampante facendo clic sull'icona nella barra degli "
 "strumenti sottostante."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
@@ -180,12 +180,12 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Rimuovendo '%s' perderai tutta la cronologia di stampa e la configurazione "
-"ad essa associata."
+"Rimuovendo '%s' perderai tutta la cronologia di stampa e la configurazione a "
+"essa associata."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
-msgstr "Elimina"
+msgstr "Rimuovi"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -285,9 +285,8 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "Il fotoconduttore ottico non è più funzionante"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "Aggiungi una stampante"
+msgstr "Stampante senza nome"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -338,20 +337,18 @@ msgid "Pages per side:"
 msgstr "Pagine per facciata:"
 
 #: src/Views/SetupView.vala:74
-#, fuzzy
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
-msgstr "Lato lungo (standard)"
+msgstr "Lato lungo (predefinito)"
 
 #: src/Views/SetupView.vala:75
-#, fuzzy
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Lato corto (capovolto)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
-msgstr "Fronte-retro:"
+msgstr "Fronte e retro:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
@@ -482,11 +479,11 @@ msgstr "Bozza"
 
 #: src/Views/SetupView.vala:310
 msgid "Normal"
-msgstr "Normali"
+msgstr "Normale"
 
 #: src/Views/SetupView.vala:313
 msgid "High"
-msgstr "Alto"
+msgstr "Alta"
 
 #: src/Views/SetupView.vala:319
 msgid "Quality:"
