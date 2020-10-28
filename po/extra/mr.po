@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2020-10-21 18:15+0000\n"
+"PO-Revision-Date: 2020-10-29 18:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/mr/>\n"
@@ -29,7 +29,7 @@ msgstr "प्रिंटर कॉन्फिगर करा, मुद्�
 
 #: data/printers.appdata.xml.in:12
 msgid "Minor updates:"
-msgstr ""
+msgstr "किरकोळ अद्यतने:"
 
 #: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
 msgid "Updated translations"
