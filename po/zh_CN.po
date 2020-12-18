@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2019-11-30 08:25+0000\n"
+"PO-Revision-Date: 2020-12-19 11:16+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/zh_Hans/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -528,7 +528,7 @@ msgstr "大容量"
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
-msgstr "左声道"
+msgstr "左键"
 
 #: src/Views/SetupView.vala:373
 msgid "Main Tray"
@@ -556,7 +556,7 @@ msgstr "后侧"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
-msgstr "右声道"
+msgstr "右键"
 
 #: src/Views/SetupView.vala:395
 msgid "Side"
