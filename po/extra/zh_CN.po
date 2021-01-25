@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2019-12-20 16:09+0000\n"
+"PO-Revision-Date: 2021-01-25 07:22+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/printers-plug-extra/zh_Hans/>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/printers.appdata.xml.in:5
-#, fuzzy
-#| msgid "Printers"
 msgid "Printer Settings"
-msgstr "打印机"
+msgstr "打印机设置"
 
 #: data/printers.appdata.xml.in:6
 msgid "Configure printers, manage print queues, and view ink levels"
