@@ -63,7 +63,7 @@ public class Cups.Notifier : Object {
         Bus.get_proxy.begin<NotifierDBus> (BusType.SYSTEM, "org.cups.cupsd.Notifier", "/org/cups/cupsd/Notifier", GLib.DBusProxyFlags.NONE, null, (obj, res) => {
             try {
                 dbus_notifier = Bus.get_proxy.end (res);
-                ((GLib.DBusProxy) dbus_notifier).g_connection.signal_subscribe (null, "org.cups.cupsd.Notifier", null, "/org/cups/cupsd/Notifier", null, GLib.DBusSignalFlags.NONE, subscription_callback);
+                ((GLib.DBusProxy) dbus_notifier).g_connection.signal_subscribe (null, "org.cups.cupsd.Notifier", null, "/org/cups/cupsd/Notifier", null, GLib.DBusSignalFlags.NONE, (GLib.DBusSignalCallback)subscription_callback);
             } catch (IOError e) {
                 critical (e.message);
             }
