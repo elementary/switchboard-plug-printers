@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2020-10-27 23:15+0000\n"
+"PO-Revision-Date: 2021-02-15 21:09+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -284,7 +284,6 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "Der optische Bildübertrager funktioniert nicht mehr"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
 msgstr "Drucker ohne Namen"
 
@@ -436,7 +435,7 @@ msgstr "Zentraler Behälter"
 
 #: src/Views/SetupView.vala:257
 msgid "Rear Bin"
-msgstr "Hinterer  Behälter"
+msgstr "Hinterer Behälter"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"

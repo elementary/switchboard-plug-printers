@@ -40,7 +40,7 @@ namespace Printers.Translations {
     }
 }
 
-public class Printers.AddDialog : Gtk.Dialog {
+public class Printers.AddDialog : Granite.Dialog {
     private Gtk.Button refresh_button;
     private Gtk.Stack stack;
     private Granite.Widgets.AlertView alertview;
@@ -629,7 +629,7 @@ public class Printers.AddDialog : Gtk.Dialog {
             var grid = new Gtk.Grid ();
             var label = new Gtk.Label (temp_device.device_info);
             get_style_context ().add_class (Gtk.STYLE_CLASS_MENUITEM);
-            label.margin_left = 12;
+            label.margin_start = 12;
             label.margin_top = 3;
             label.margin_bottom = 3;
             ((Gtk.Misc)label).xalign = 0;
