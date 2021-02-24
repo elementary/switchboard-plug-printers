@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-02-15 21:09+0000\n"
+"PO-Revision-Date: 2021-02-24 23:37+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -61,8 +61,8 @@ msgstr "Keine Drucker eingerichtet"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
-"Verbinden Sie sich mit einem Drucker, indem Sie auf das Icon in der "
-"Symbolleiste unten klicken."
+"Verbinden Sie sich mit einem Drucker, indem Sie auf das Symbol in der "
+"Werkzeugleiste unten klicken."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -101,7 +101,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr "Drucker in der Nähe finden.…"
+msgstr "Drucker in der Nähe finden …"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -172,7 +172,7 @@ msgstr "Verfügbare Netzwerkdrucker"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr "Sind Sie sicher, dass Sie '%s 1' entfernen wollen?"
+msgstr "Sind Sie sicher, dass Sie »%s« entfernen wollen?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -351,19 +351,21 @@ msgstr "Doppelseitig:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
-msgstr "Porträt"
+msgstr "Hochformat"
 
 #: src/Views/SetupView.vala:146
 msgid "Landscape"
-msgstr "Landschaft"
+msgstr "Querformat"
 
 #: src/Views/SetupView.vala:149
+#, fuzzy
 msgid "Reverse portrait"
-msgstr "Umgekehrtes Porträt"
+msgstr "Umgekehrtes Hochformat"
 
 #: src/Views/SetupView.vala:152
+#, fuzzy
 msgid "Reverse landscape"
-msgstr "Umgekehrte Landschaft"
+msgstr "Umgekehrtes Querformat"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
@@ -371,7 +373,7 @@ msgstr "Ausrichtung:"
 
 #: src/Views/SetupView.vala:181
 msgid "Media Size:"
-msgstr "Mediengröße:"
+msgstr "Medienformat:"
 
 #: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
 msgid "Automatic"
@@ -379,7 +381,7 @@ msgstr "Automatisch"
 
 #: src/Views/SetupView.vala:198
 msgid "One Color"
-msgstr "Einfarbig"
+msgstr "Eine Farbe"
 
 #: src/Views/SetupView.vala:201
 msgid "Color"
@@ -387,7 +389,7 @@ msgstr "Farbe"
 
 #: src/Views/SetupView.vala:204
 msgid "One Color + Black"
-msgstr "Einfarbig und Schwarzweiß"
+msgstr "Eine Farbe + Schwarz"
 
 #: src/Views/SetupView.vala:207
 msgid "Greyscale"
@@ -407,47 +409,47 @@ msgstr "Farbmodus:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr "Oberer Behälter"
+msgstr "Obere Kassette"
 
 #: src/Views/SetupView.vala:239
 msgid "Middle Bin"
-msgstr "Mittlerer Behälter"
+msgstr "Mittlere Kassette"
 
 #: src/Views/SetupView.vala:242
 msgid "Bottom Bin"
-msgstr "Unterer Behälter"
+msgstr "Untere Kassette"
 
 #: src/Views/SetupView.vala:245
 msgid "Side Bin"
-msgstr "Seitlicher Behälter"
+msgstr "Seitliche Kassette"
 
 #: src/Views/SetupView.vala:248
 msgid "Left Bin"
-msgstr "Linker Behälter"
+msgstr "Linke Kassette"
 
 #: src/Views/SetupView.vala:251
 msgid "Right Bin"
-msgstr "Rechter Behälter"
+msgstr "Rechte Kassette"
 
 #: src/Views/SetupView.vala:254
 msgid "Center Bin"
-msgstr "Zentraler Behälter"
+msgstr "Zentrale Kassette"
 
 #: src/Views/SetupView.vala:257
 msgid "Rear Bin"
-msgstr "Hinterer Behälter"
+msgstr "Hintere Kassette"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr "Face-Up Behälter"
+msgstr "Face-Up-Kassette"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr "Face-Down Behälter"
+msgstr "Face-Down-Kassette"
 
 #: src/Views/SetupView.vala:266
 msgid "Large Capacity Bin"
-msgstr "Großraumbehälter"
+msgstr "Großraumkassette"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
@@ -490,11 +492,11 @@ msgstr "Qualität:"
 
 #: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
-msgstr "Papierfach"
+msgstr "Papierzufuhr"
 
 #: src/Views/SetupView.vala:336
 msgid "Alternate Tray"
-msgstr "Alternatives Fach"
+msgstr "Alternative Ablage"
 
 #: src/Views/SetupView.vala:339
 msgid "Alternate Roll"
@@ -538,7 +540,7 @@ msgstr "Links"
 
 #: src/Views/SetupView.vala:373
 msgid "Main Tray"
-msgstr "Hauptfach"
+msgstr "Hauptablage"
 
 #: src/Views/SetupView.vala:376
 msgid "Main Roll"
@@ -546,7 +548,7 @@ msgstr "Hauptrolle"
 
 #: src/Views/SetupView.vala:379
 msgid "Manual"
-msgstr "Benutzerdefiniert"
+msgstr "Manuell"
 
 #: src/Views/SetupView.vala:382
 msgid "Middle"
