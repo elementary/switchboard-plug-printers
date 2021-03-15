@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2020-10-02 22:14+0000\n"
-"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"PO-Revision-Date: 2021-03-15 22:59+0000\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -173,7 +173,7 @@ msgstr "Доступні мережні пристрої друку"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr "Ви впевнені, що хочете вилучити '%s'?"
+msgstr "Ви впевнені, що хочете вилучити «%s»?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -181,7 +181,7 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Вилучивши '%s' ви втратите всі пов'язані з ним параметри та дієпис друку."
+"Вилучивши «%s» ви втратите всі пов'язані з ним параметри та дієпис друку."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -325,7 +325,7 @@ msgstr "Черга друку порожня"
 
 #: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
-msgstr "Немає завдань в черзі."
+msgstr "У черзі немає незакінчених завдань."
 
 #: src/Views/JobsView.vala:76
 msgid "Completed Jobs"
