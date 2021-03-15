@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-03-08 04:48+0000\n"
+"PO-Revision-Date: 2021-03-15 22:59+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ru/>\n"
@@ -170,14 +170,14 @@ msgstr "Доступные сетевые принтеры"
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr "Вы уверены, что хотите удалить  «%s»?"
+msgstr "Вы уверены, что хотите удалить «%s»?"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
-msgstr "При удалении  «%s» вы потеряете всю его историю печати и конфигурацию."
+msgstr "При удалении «%s» вы потеряете всю его историю печати и конфигурацию."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -289,7 +289,7 @@ msgstr "Готов к работе"
 
 #: src/Objects/Job.vala:101
 msgid "Job Pending"
-msgstr "Задание ожидает"
+msgstr "Задание в ожидании"
 
 #: src/Objects/Job.vala:103
 msgid "On Hold"
@@ -308,7 +308,6 @@ msgid "Job Canceled"
 msgstr "Задание отменено"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
 msgstr "Задание прервано"
 
@@ -322,12 +321,11 @@ msgstr "Очередь печати пуста"
 
 #: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
-msgstr "В очереди нет отложенных заданий."
+msgstr "В очереди нет незаконченных заданий."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Показать завершенные задания"
+msgstr "Выполненные задания"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -585,9 +583,8 @@ msgid "Lab 1 or John's Desk"
 msgstr "Лаборатория 1 или рабочий стол Джона"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Использовать как принтер по умолчанию"
+msgstr "Использовать как принтер по умолчанию:"
 
 #: src/Widgets/InkLevel.vala:94
 msgid "Black (PGBK)"
