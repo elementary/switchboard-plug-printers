@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-03-15 22:59+0000\n"
+"PO-Revision-Date: 2021-03-18 02:32+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ru/>\n"
@@ -52,7 +52,7 @@ msgstr "Принтеры"
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
-"Настройка принтеров, управление очередью печати, просмотр уровня чернил"
+"Настройка принтеров, управление очередью печати и просмотр уровня чернил"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
