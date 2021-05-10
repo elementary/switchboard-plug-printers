@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-02-24 23:37+0000\n"
+"PO-Revision-Date: 2021-05-10 20:45+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -358,12 +358,10 @@ msgid "Landscape"
 msgstr "Querformat"
 
 #: src/Views/SetupView.vala:149
-#, fuzzy
 msgid "Reverse portrait"
 msgstr "Umgekehrtes Hochformat"
 
 #: src/Views/SetupView.vala:152
-#, fuzzy
 msgid "Reverse landscape"
 msgstr "Umgekehrtes Querformat"
 
