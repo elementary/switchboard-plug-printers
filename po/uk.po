@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-03-18 19:57+0000\n"
+"PO-Revision-Date: 2021-07-05 13:54+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/uk/>\n"
@@ -26,7 +26,7 @@ msgstr "Налаштування сторінки"
 
 #: src/PrinterPage.vala:40
 msgid "Settings & Supplies"
-msgstr "Параметри та витратні матеріали"
+msgstr "Налаштування та витратні матеріали"
 
 #: src/PrinterPage.vala:51
 msgid "Print Test Page"
@@ -39,31 +39,28 @@ msgstr "Тестова сторінка"
 
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
-msgstr "Додати пристрій друку…"
+msgstr "Додати принтер…"
 
 #: src/PrinterList.vala:52
 msgid "Remove Printer"
-msgstr "Вилучити пристрій друку"
+msgstr "Вилучити принтер"
 
 #: src/Plug.vala:35
 msgid "Printers"
-msgstr "Пристрої друку"
+msgstr "Принтери"
 
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
-"Налаштування пристроїв друку, керування чергами друку і перегляд рівня "
-"чорнила"
+"Налаштування принтерів, керування чергами друку і перегляд рівня чорнила"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
-msgstr "Пристрої друку недоступні"
+msgstr "Принтери недоступні"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
-"Під'єднати пристрій друку, натиснувши піктограму на панелі інструментів "
-"внизу."
+msgstr "Під'єднати принтер, натиснувши піктограму на панелі інструментів внизу."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -93,7 +90,7 @@ msgstr "Протокол друку через Інтернет (ipp14)"
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr "LPD/LPR Вузол або Пристрій друку"
+msgstr "LPD/LPR Вузол або Принтер"
 
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:39
@@ -102,7 +99,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr "Пошук пристроїв друку поблизу…"
+msgstr "Пошук принтерів поблизу…"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -119,7 +116,7 @@ msgstr "Далі"
 
 #: src/Dialogs/AddDialog.vala:109
 msgid "Impossible to list all available printers"
-msgstr "Неможливо показати перелік всіх доступних пристроїв друку"
+msgstr "Неможливо показати перелік всіх доступних принтерів"
 
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:225
@@ -148,7 +145,7 @@ msgstr "Повернутися"
 
 #: src/Dialogs/AddDialog.vala:308
 msgid "Add Printer"
-msgstr "Додати пристрій друку"
+msgstr "Додати принтер"
 
 #: src/Dialogs/AddDialog.vala:543
 msgid "(recommended)"
@@ -160,15 +157,15 @@ msgstr "Серійний номер"
 
 #: src/Dialogs/AddDialog.vala:608
 msgid "Local Printers"
-msgstr "Локальні пристрої друку"
+msgstr "Локальні принтери"
 
 #: src/Dialogs/AddDialog.vala:611
 msgid "Network Printers"
-msgstr "Мережні пристрої друку"
+msgstr "Мережні принтери"
 
 #: src/Dialogs/AddDialog.vala:614
 msgid "Available Network Printers"
-msgstr "Доступні мережні пристрої друку"
+msgstr "Доступні мережні принтери"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
@@ -181,7 +178,7 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Вилучивши «%s» ви втратите всі пов'язані з ним параметри та дієпис друку."
+"Вилучивши «%s» ви втратите всі пов'язані з ним налаштування та дієпис друку."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -285,7 +282,7 @@ msgstr "Оптичний фотопровідник вийшов з ладу"
 
 #: src/Objects/Printer.vala:170
 msgid "Unnamed Printer"
-msgstr "Пристрій друку без назви"
+msgstr "Принтер без назви"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
@@ -587,7 +584,7 @@ msgstr "Лабораторія 1 або Іванів стіл"
 
 #: src/Views/SuppliesView.vala:47
 msgid "Use as default printer:"
-msgstr "Використовувати типовим пристроєм друку:"
+msgstr "Використовувати типовим принтером:"
 
 #: src/Widgets/InkLevel.vala:94
 msgid "Black (PGBK)"
