@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-07-05 13:54+0000\n"
+"PO-Revision-Date: 2021-07-08 17:34+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/uk/>\n"
@@ -60,7 +60,7 @@ msgstr "Принтери недоступні"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr "Під'єднати принтер, натиснувши піктограму на панелі інструментів внизу."
+msgstr "Під'єднати принтер, натиснувши піктограму на панелі інструментів унизу."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
