@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-05-10 20:45+0000\n"
+"PO-Revision-Date: 2021-07-11 02:42+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -61,8 +61,7 @@ msgstr "Keine Drucker eingerichtet"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
-"Verbinden Sie sich mit einem Drucker, indem Sie auf das Symbol in der "
-"Werkzeugleiste unten klicken."
+"Drucker einbinden mit Klick auf das Symbol »+« in der Werkzeugleiste unten."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -101,7 +100,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
-msgstr "Drucker in der Nähe finden …"
+msgstr "Drucker in der Nähe suchen …"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Refresh"
@@ -180,8 +179,8 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Durch das Entfernen von %s verlieren Sie die gesamte Druckhistorie und die "
-"damit verbundene Konfiguration."
+"Durch das Entfernen von »%s« gehen die gesamte Druckhistorie und die "
+"Einrichtung verloren."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
