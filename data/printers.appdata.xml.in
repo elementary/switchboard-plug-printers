@@ -7,6 +7,14 @@
   <icon type="stock">printer</icon>
   <translation type="gettext">printers-plug</translation>
   <releases>
+    <release version="2.1.10" date="2021-07-14" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.9" date="2020-05-28" urgency="medium">
       <description>
         <p>Minor updates:</p>
