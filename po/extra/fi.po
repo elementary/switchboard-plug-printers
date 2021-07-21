@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2020-02-22 14:09+0000\n"
+"PO-Revision-Date: 2021-07-22 01:39+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/printers.appdata.xml.in:5
 #, fuzzy
@@ -35,7 +35,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
 msgid "Updated translations"
-msgstr "Päivitetyt käännökset"
+msgstr "Päivityksiä kielikäännöksiin"
 
 #: data/printers.appdata.xml.in:20
 msgid "Show a default name if a printer is unnamed"
