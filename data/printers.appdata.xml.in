@@ -7,7 +7,7 @@
   <icon type="stock">printer</icon>
   <translation type="gettext">printers-plug</translation>
   <releases>
-    <release version="2.1.10" date="2021-07-14" urgency="medium">
+    <release version="2.1.10" date="2021-07-21" urgency="medium">
       <description>
         <p>Minor updates:</p>
         <ul>
@@ -41,6 +41,12 @@
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/master/data/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/master/data/screenshot-page-setup.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/master/data/screenshot-settings.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>
