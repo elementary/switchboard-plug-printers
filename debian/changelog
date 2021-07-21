@@ -1,3 +1,14 @@
+switchboard-plug-printers (2.1.10) bionic; urgency=medium
+
+  * Release 2.1.10 (#149)
+  * CUPSNotifier.vala: explicit cast for callback (#141)
+  * Replace Gtk.Dialog with Granite.Dialog (#142)
+  * LINGUAS: sort, remove en_US
+  * Update translation files
+  * Allow the sender parameter of DBusSignalCallback to be null (#136)
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 21 Jul 2021 20:21:07 +0000
+
 switchboard-plug-printers (2.1.9) bionic; urgency=medium
 
   * Release 2.1.9 (#135)
