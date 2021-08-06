@@ -22,10 +22,6 @@
 
 public class Printers.Job : GLib.Object {
     public unowned CUPS.Job cjob;
-    public signal void stopped ();
-    public signal void completed ();
-    public signal void state_changed ();
-
     private unowned Printer printer;
     private int uid;
 
@@ -33,32 +29,6 @@ public class Printers.Job : GLib.Object {
         this.cjob = cjob;
         this.printer = printer;
         uid = cjob.id;
-        unowned Cups.Notifier notifier = Cups.Notifier.get_default ();
-        if (cjob.state != CUPS.IPP.JobState.CANCELED && cjob.state != CUPS.IPP.JobState.ABORTED && cjob.state != CUPS.IPP.JobState.COMPLETED) {
-            notifier.job_completed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
-                if (job_id == uid) {
-                    completed ();
-                }
-            });
-
-            notifier.job_stopped.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
-                if (job_id == uid) {
-                    stopped ();
-                }
-            });
-
-            notifier.job_state.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
-                if (job_id == uid) {
-                    state_changed ();
-                }
-            });
-
-            notifier.job_state_changed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
-                if (job_id == uid) {
-                    state_changed ();
-                }
-            });
-        }
     }
 
     public void pause () {

@@ -25,8 +25,10 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     public Printer printer { get; construct set; }
 
     private Gtk.Grid grid;
+    private Gtk.Image icon;
     private Gtk.Image job_state_icon;
     private Gtk.Stack action_stack;
+    private int uid;
 
     public JobRow (Printer printer, Job job) {
         Object (
@@ -36,7 +38,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.MENU);
+        icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.MENU);
 
         var title = new Gtk.Label (job.cjob.title);
         title.hexpand = true;
@@ -88,10 +90,6 @@ public class Printers.JobRow : Gtk.ListBoxRow {
 
         update_state ();
 
-        job.state_changed.connect (update_state);
-        job.completed.connect (update_state);
-        job.stopped.connect (update_state);
-
         start_pause_button.clicked.connect (() => {
             unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
             if (job.get_hold_until () == "no-hold") {
@@ -123,6 +121,34 @@ public class Printers.JobRow : Gtk.ListBoxRow {
                 critical (e.message);
             }
         });
+
+        uid = job.cjob.id;
+        unowned Cups.Notifier notifier = Cups.Notifier.get_default ();
+        if (job.cjob.state != CUPS.IPP.JobState.CANCELED && job.cjob.state != CUPS.IPP.JobState.ABORTED && job.cjob.state != CUPS.IPP.JobState.COMPLETED) {
+            notifier.job_completed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+                if (job_id == uid) {
+                    update_state ();
+                }
+            });
+
+            notifier.job_stopped.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+                if (job_id == uid) {
+                    update_state ();
+                }
+            });
+
+            notifier.job_state.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+                if (job_id == uid) {
+                    update_state ();
+                }
+            });
+
+            notifier.job_state_changed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+                if (job_id == uid) {
+                    update_state ();
+                }
+            });
+        }
     }
 
     private void update_state () {
@@ -140,7 +166,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         } else {
             action_stack.visible_child_name = "action-grid";
         }
-
+        icon.gicon = job.get_file_icon ();
         grid.tooltip_text = job.translated_job_state ();
     }
 }
