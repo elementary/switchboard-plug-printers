@@ -11,6 +11,7 @@ plug_files = files(
     'Objects/PrinterManager.vala',
     'Objects/TempDevice.vala',
     'Objects/Job.vala',
+    'Objects/NotifierDBus.vala',
     'Views/JobsView.vala',
     'Views/SetupView.vala',
     'Views/SuppliesView.vala',

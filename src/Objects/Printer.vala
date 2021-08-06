@@ -309,8 +309,41 @@ public class Printers.Printer : GLib.Object {
      ***********/
     public Printer (CUPS.Destination dest) {
         this.dest = dest;
+        unowned Cups.Notifier notifier = Cups.Notifier.get_default ();
+        notifier.printer_state_changed.connect (update_printer);
+        notifier.printer_modified.connect (update_printer);
+        notifier.printer_finishings_changed.connect (update_printer);
+        notifier.printer_shutdown.connect (update_printer);
+        notifier.printer_restarted.connect (update_printer);
     }
 
+    private void update_printer (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs) {
+        if (dest.name != name) {
+            return;
+        }
+
+        unowned CUPS.Destination[] destinations = CUPS.get_destinations ();
+        foreach (unowned CUPS.Destination destiny in destinations) {
+            if (destiny.name == this.dest.name) {
+                //Load new property with update destination
+                this.dest = destiny;
+                notify_property ("state");
+                notify_property ("state-reasons");
+                notify_property ("state-change-time");
+                notify_property ("is-accepting-jobs");
+                notify_property ("printer-type");
+                notify_property ("state-reasons-raw");
+                notify_property ("state-change-time");
+                notify_property ("make-and-model");
+                notify_property ("location");
+                notify_property ("is-shared");
+                notify_property ("info");
+                notify_property ("auth-info-required");
+                notify_property ("is-default");
+                notify_property ("enabled");
+            }
+        }
+    }
     public bool is_offline () {
         var reason = state_reasons_raw;
         if (reason == null) {

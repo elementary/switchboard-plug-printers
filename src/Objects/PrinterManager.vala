@@ -47,7 +47,6 @@ public class Printers.PrinterManager : GLib.Object {
         unowned Cups.Notifier notifier = Cups.Notifier.get_default ();
         notifier.printer_added.connect (printer_is_added);
         notifier.printer_deleted.connect (printer_is_deleted);
-        notifier.printer_state_changed.connect (printer_state_has_changed);
         notifier.printer_modified.connect (printer_is_modified);
 
         new_subscription.begin ();
@@ -97,17 +96,6 @@ public class Printers.PrinterManager : GLib.Object {
         if (found_printer != null) {
             printers.remove (found_printer);
             found_printer.deleted ();
-        }
-    }
-
-    private void printer_state_has_changed (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs) {
-        foreach (var printer in printers) {
-            if (printer.dest.name == name) {
-                printer.notify_property ("state");
-                printer.notify_property ("state-reasons");
-                printer.notify_property ("state-change-time");
-                break;
-            }
         }
     }
 
