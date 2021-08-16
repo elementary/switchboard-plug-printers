@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2019-09-02 20:22+0000\n"
+"PO-Revision-Date: 2021-08-16 08:39+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/fi/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -333,16 +333,14 @@ msgid "Pages per side:"
 msgstr "Sivua per puoli:"
 
 #: src/Views/SetupView.vala:74
-#, fuzzy
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Pitkä reuna (vakio)"
 
 #: src/Views/SetupView.vala:75
-#, fuzzy
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
-msgstr "Lyhyt reuna (kääntää)"
+msgstr "Lyhyt reuna (kääntö)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
