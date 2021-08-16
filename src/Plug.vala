@@ -28,6 +28,9 @@ namespace Printers {
         private PrinterList list;
 
         public Plug () {
+            GLib.Intl.bindtextdomain (Build.GETTEXT_PACKAGE, Build.LOCALEDIR);
+            GLib.Intl.bind_textdomain_codeset (Build.GETTEXT_PACKAGE, "UTF-8");
+
             var settings = new Gee.TreeMap<string, string?> (null, null);
             settings.set ("printer", null);
             Object (category: Category.HARDWARE,
