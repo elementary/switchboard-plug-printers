@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2021-08-23 13:53+0000\n"
+"PO-Revision-Date: 2021-08-24 18:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/sk/>\n"
@@ -29,11 +29,11 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:12
 msgid "Minor updates:"
-msgstr ""
+msgstr "Menšie aktualizácie:"
 
 #: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualizované preklady"
 
 #: data/printers.appdata.xml.in:20
 msgid "Show a default name if a printer is unnamed"
