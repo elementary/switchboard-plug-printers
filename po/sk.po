@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-08-23 14:23+0000\n"
+"PO-Revision-Date: 2021-08-24 18:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/sk/>\n"
@@ -545,7 +545,7 @@ msgstr "Veľkokapacitné"
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
-msgstr "Ľavý"
+msgstr "Ľavé"
 
 #: src/Views/SetupView.vala:373
 msgid "Main Tray"
@@ -573,7 +573,7 @@ msgstr "Vzadu"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
-msgstr "Pravý"
+msgstr "Pravé"
 
 #: src/Views/SetupView.vala:395
 msgid "Side"
@@ -631,7 +631,7 @@ msgstr ""
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
-msgstr ""
+msgstr "Pozastaviť"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
@@ -639,7 +639,7 @@ msgstr ""
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr "Vypnutý"
+msgstr "Vypnuté"
 
 #~ msgid "Show completed jobs"
 #~ msgstr "Zobraziť dokončené úlohy"
