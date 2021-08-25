@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2021-08-24 18:20+0000\n"
+"PO-Revision-Date: 2021-08-25 17:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/sk/>\n"
@@ -26,6 +26,8 @@ msgstr "Nastavenia tlačiarne"
 #: data/printers.appdata.xml.in:6
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
+"Nastavujte tlačiarne, spravujte tlačové fronty a kontrolujte stav zásobníkov "
+"atramentu"
 
 #: data/printers.appdata.xml.in:12
 msgid "Minor updates:"
@@ -37,4 +39,4 @@ msgstr "Aktualizované preklady"
 
 #: data/printers.appdata.xml.in:20
 msgid "Show a default name if a printer is unnamed"
-msgstr ""
+msgstr "Pokiaľ nie je tlačiareň pomenovaná, zobraziť predvolený názov"
