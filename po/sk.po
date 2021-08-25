@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-08-24 18:20+0000\n"
+"PO-Revision-Date: 2021-08-25 17:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/sk/>\n"
@@ -52,7 +52,8 @@ msgstr "Tlačiarne"
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
-"Konfigurovať tlačiarne, spravovať tlačovú frontu a zobraziť úroveň atramentu"
+"Nastavujte tlačiarne, spravujte tlačové fronty a kontrolujte stav zásobníkov "
+"atramentu"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
