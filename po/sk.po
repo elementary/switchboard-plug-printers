@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-08-28 16:31+0000\n"
+"PO-Revision-Date: 2021-08-28 17:06+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/sk/>\n"
@@ -299,7 +299,7 @@ msgstr "Pozastavené"
 
 #: src/Objects/Job.vala:105
 msgid "Processing…"
-msgstr "Spracovanie…"
+msgstr "Spracováva sa…"
 
 #: src/Objects/Job.vala:107
 msgid "Job Stopped"
@@ -310,27 +310,24 @@ msgid "Job Canceled"
 msgstr "Úloha zrušená"
 
 #: src/Objects/Job.vala:111
-#, fuzzy
 msgid "Job Aborted"
-msgstr "Úloha prerušená"
+msgstr "Úloha zamietnutá"
 
 #: src/Objects/Job.vala:114
 msgid "Job Completed"
-msgstr "Úloha ukočená"
+msgstr "Úloha dokončená"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "Tlačová fronta je prázdna"
 
 #: src/Views/JobsView.vala:30
-#, fuzzy
 msgid "There are no pending jobs in the queue."
-msgstr "Niesu žiadne úlohy v rade"
+msgstr "V tejto fronte nie sú žiadne čakajúce úlohy."
 
 #: src/Views/JobsView.vala:76
-#, fuzzy
 msgid "Completed Jobs"
-msgstr "Zobraziť dokončené úlohy"
+msgstr "Dokončené úlohy"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
@@ -339,12 +336,12 @@ msgstr "Stránok na stranu:"
 #: src/Views/SetupView.vala:74
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "Obrátiť okolo dlhého okraja (štandardné)"
 
 #: src/Views/SetupView.vala:75
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "Obrátiť okolo krátkeho okraja (prevrátiť)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
@@ -352,19 +349,19 @@ msgstr "Obojstranný:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
-msgstr ""
+msgstr "Na výšku"
 
 #: src/Views/SetupView.vala:146
 msgid "Landscape"
-msgstr ""
+msgstr "Na šírku"
 
 #: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
-msgstr ""
+msgstr "Obrátene na výšku"
 
 #: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
-msgstr ""
+msgstr "Obrátene na šírku"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
@@ -376,19 +373,19 @@ msgstr "Velikosť média:"
 
 #: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
 msgid "Automatic"
-msgstr "Automaticky"
+msgstr "Automatický"
 
 #: src/Views/SetupView.vala:198
 msgid "One Color"
-msgstr "Jedna farba"
+msgstr "Jednofarebný"
 
 #: src/Views/SetupView.vala:201
 msgid "Color"
-msgstr "Farba"
+msgstr "Farebný"
 
 #: src/Views/SetupView.vala:204
 msgid "One Color + Black"
-msgstr "Jedna farba + čierna"
+msgstr "Jednofarebný + čierna"
 
 #: src/Views/SetupView.vala:207
 msgid "Greyscale"
@@ -408,69 +405,61 @@ msgstr "Farebný režim:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr ""
+msgstr "Vrchný zásobník"
 
 #: src/Views/SetupView.vala:239
-#, fuzzy
 msgid "Middle Bin"
-msgstr "Stred"
+msgstr "Stredný zásobník"
 
 #: src/Views/SetupView.vala:242
-#, fuzzy
 msgid "Bottom Bin"
-msgstr "Dole"
+msgstr "Spodný zásobník"
 
 #: src/Views/SetupView.vala:245
-#, fuzzy
 msgid "Side Bin"
-msgstr "Strana"
+msgstr "Bočný zásobník"
 
 #: src/Views/SetupView.vala:248
-#, fuzzy
 msgid "Left Bin"
-msgstr "Vľavo"
+msgstr "Ľavý zásobník"
 
 #: src/Views/SetupView.vala:251
-#, fuzzy
 msgid "Right Bin"
-msgstr "Vpravo"
+msgstr "Pravý zásobník"
 
 #: src/Views/SetupView.vala:254
-#, fuzzy
 msgid "Center Bin"
-msgstr "Na stred"
+msgstr "Stredný zásobník"
 
 #: src/Views/SetupView.vala:257
-#, fuzzy
 msgid "Rear Bin"
-msgstr "Vzadu"
+msgstr "Zadný zásobník"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "Zásobník s tlačou na vrchnú stranu"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Zásobník s tlačou na spodnú stranu"
 
 #: src/Views/SetupView.vala:266
-#, fuzzy
 msgid "Large Capacity Bin"
-msgstr "Veľkokapacitné"
+msgstr "Veľkokapacitný zásobník"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
-msgstr ""
+msgstr "Moja e-mailová schránka"
 
 #: src/Views/SetupView.vala:274
 #, c-format
 msgid "Stacker %d"
-msgstr ""
+msgstr "Zakladač %d"
 
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr ""
+msgstr "E-mailová schránka %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
@@ -483,11 +472,11 @@ msgstr "Výstupný zásobník:"
 
 #: src/Views/SetupView.vala:307
 msgid "Draft"
-msgstr "Návrh"
+msgstr "Koncept"
 
 #: src/Views/SetupView.vala:310
 msgid "Normal"
-msgstr "Normálny"
+msgstr "Normálna"
 
 #: src/Views/SetupView.vala:313
 msgid "High"
@@ -499,7 +488,7 @@ msgstr "Kvalita:"
 
 #: src/Views/SetupView.vala:333
 msgid "Paper Allocation"
-msgstr "Pridelenie papieru"
+msgstr "Umiestnenie papiera"
 
 #: src/Views/SetupView.vala:336
 msgid "Alternate Tray"
@@ -507,15 +496,15 @@ msgstr "Alternatívny zásobník"
 
 #: src/Views/SetupView.vala:339
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Alternatívna rolka"
 
 #: src/Views/SetupView.vala:345
 msgid "Bottom"
-msgstr "Dole"
+msgstr "Spodné"
 
 #: src/Views/SetupView.vala:348
 msgid "By-pass Tray"
-msgstr ""
+msgstr "Náhradný zásobník"
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
@@ -523,7 +512,7 @@ msgstr "Stredné"
 
 #: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "Automatické plnenie"
 
 #: src/Views/SetupView.vala:358
 msgid "Disk"
@@ -551,7 +540,7 @@ msgstr "Hlavný zásobník"
 
 #: src/Views/SetupView.vala:376
 msgid "Main Roll"
-msgstr ""
+msgstr "Hlavná rolka"
 
 #: src/Views/SetupView.vala:379
 msgid "Manual"
@@ -567,7 +556,7 @@ msgstr "Fotografia"
 
 #: src/Views/SetupView.vala:389
 msgid "Rear"
-msgstr "Vzadu"
+msgstr "Zadné"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
@@ -579,12 +568,12 @@ msgstr "Strana"
 
 #: src/Views/SetupView.vala:398
 msgid "Top"
-msgstr "Hore"
+msgstr "Vrchné"
 
 #: src/Views/SetupView.vala:403
 #, c-format
 msgid "Roll %d"
-msgstr ""
+msgstr "Rolka %d"
 
 #: src/Views/SetupView.vala:419
 msgid "Paper Source:"
@@ -592,12 +581,11 @@ msgstr "Zdroj papiera:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
-msgstr ""
+msgstr "Laboratórium 1 alebo Janov stôl"
 
 #: src/Views/SuppliesView.vala:47
-#, fuzzy
 msgid "Use as default printer:"
-msgstr "Použiť ako východziu tlačiareň"
+msgstr "Použiť ako predvolenú tlačiareň:"
 
 #: src/Widgets/InkLevel.vala:94
 msgid "Black (PGBK)"
@@ -625,7 +613,7 @@ msgstr "Purpurová"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "Trojfarebná"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
@@ -633,7 +621,7 @@ msgstr "Pozastaviť"
 
 #: src/Widgets/JobRow.vala:101
 msgid "Resume"
-msgstr ""
+msgstr "Zrušiť pozastavenie"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
