@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-08-26 08:31+0000\n"
-"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
+"PO-Revision-Date: 2021-08-28 16:18+0000\n"
+"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/sk/>\n"
 "Language: sk\n"
@@ -16,9 +16,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/PrinterPage.vala:38
-#, fuzzy
 msgid "Print Queue"
-msgstr "Tlačiarne"
+msgstr "Tlačová fronta"
 
 #: src/PrinterPage.vala:39
 msgid "Page Setup"
@@ -39,7 +38,7 @@ msgstr ""
 
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
-msgstr "Pridať tlačiareň..."
+msgstr "Pridať tlačiareň…"
 
 #: src/PrinterList.vala:52
 msgid "Remove Printer"
@@ -57,7 +56,7 @@ msgstr ""
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
-msgstr ""
+msgstr "Žiadna tlačiareň k dispozícii"
 
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
