@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2021-08-27 08:04+0000\n"
+"PO-Revision-Date: 2021-09-02 23:10+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/hu/>\n"
@@ -29,7 +29,7 @@ msgstr "Nyomtatók és a nyomtatási sor beállítása, a festékszint ellenőrz
 
 #: data/printers.appdata.xml.in:12
 msgid "Minor updates:"
-msgstr ""
+msgstr "Kisebb frissítések:"
 
 #: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
 msgid "Updated translations"
@@ -37,4 +37,4 @@ msgstr "Frissített fordítások"
 
 #: data/printers.appdata.xml.in:20
 msgid "Show a default name if a printer is unnamed"
-msgstr ""
+msgstr "Alapértelmezett név megjelenítése névtelen nyomtatónál"
