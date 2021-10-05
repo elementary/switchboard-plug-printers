@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2018-06-18 00:05+0000\n"
-"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2021-08-27 17:04+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -50,7 +50,7 @@ msgstr "Nyomtatók"
 
 #: src/Plug.vala:36
 msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "Nyomtatók és a nyomtatási sor beállítása, és a festékszint ellenőrzése"
+msgstr "Nyomtatók és a nyomtatási sor beállítása, a festékszint ellenőrzése"
 
 #: src/Plug.vala:49
 msgid "No Printers Available"
@@ -59,8 +59,7 @@ msgstr "Nincsenek elérhető nyomtatók"
 #: src/Plug.vala:50
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
-"Csatlakozzon egy nyomtatóhoz az alábbi eszköztáron található ikonra "
-"kattintva."
+"Csatlakozzon egy nyomtatóhoz az alsó eszköztáron található ikonra kattintva."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -108,7 +107,7 @@ msgstr "Frissítés"
 #: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
-msgstr "Mégsem"
+msgstr "Mégse"
 
 #: src/Dialogs/AddDialog.vala:91
 msgid "Next"
@@ -116,7 +115,7 @@ msgstr "Következő"
 
 #: src/Dialogs/AddDialog.vala:109
 msgid "Impossible to list all available printers"
-msgstr "Nem lehet kilistázni a rendelkezésre álló nyomtatókat"
+msgstr "Nem lehet kilistázni az összes rendelkezésre álló nyomtatót"
 
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:225
@@ -137,7 +136,7 @@ msgstr "Hely:"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Lab 1 or John's desk"
-msgstr "1-es labor vagy John asztala"
+msgstr "1-es labor vagy Tamás asztala"
 
 #: src/Dialogs/AddDialog.vala:304
 msgid "Previous"
@@ -281,13 +280,12 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "Az optikai fotovezető meghibásodott"
 
 #: src/Objects/Printer.vala:170
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "Nyomtató hozzáadása"
+msgstr "Névtelen nyomtató"
 
 #: src/Objects/Printer.vala:283
 msgid "Ready"
-msgstr "Kész"
+msgstr "Készenlétben"
 
 #: src/Objects/Job.vala:101
 msgid "Job Pending"
@@ -334,16 +332,14 @@ msgid "Pages per side:"
 msgstr "Lapok száma oldalanként:"
 
 #: src/Views/SetupView.vala:74
-#, fuzzy
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Hosszú él (szabványos)"
 
 #: src/Views/SetupView.vala:75
-#, fuzzy
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
-msgstr "Rövid szegély (hajtható)"
+msgstr "Rövid él (hajtható)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
@@ -383,7 +379,7 @@ msgstr "Egyszínű"
 
 #: src/Views/SetupView.vala:201
 msgid "Color"
-msgstr "Szín"
+msgstr "Színes"
 
 #: src/Views/SetupView.vala:204
 msgid "One Color + Black"
@@ -399,11 +395,11 @@ msgstr "Feldolgozott színes"
 
 #: src/Views/SetupView.vala:213
 msgid "Processed Greyscale"
-msgstr "Feldolgozott szürke árnyalatos"
+msgstr "Feldolgozott szürkeárnyalatos"
 
 #: src/Views/SetupView.vala:222
 msgid "Color mode:"
-msgstr "Szines mód:"
+msgstr "Színmód:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
@@ -461,12 +457,12 @@ msgstr "%d. halmozó"
 #: src/Views/SetupView.vala:277
 #, c-format
 msgid "Mailbox %d"
-msgstr "Postafiók %d"
+msgstr "%d. postafiók"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
 #, c-format
 msgid "Tray %d"
-msgstr "Tálca %d"
+msgstr "%d. tálca"
 
 #: src/Views/SetupView.vala:293
 msgid "Output Tray:"
@@ -502,7 +498,7 @@ msgstr "Alternatív tekercs"
 
 #: src/Views/SetupView.vala:345
 msgid "Bottom"
-msgstr "Alu"
+msgstr "Alsó"
 
 #: src/Views/SetupView.vala:348
 msgid "By-pass Tray"
@@ -558,7 +554,7 @@ msgstr "Fotó"
 
 #: src/Views/SetupView.vala:389
 msgid "Rear"
-msgstr "Háts"
+msgstr "Hátsó"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
@@ -575,7 +571,7 @@ msgstr "Felső"
 #: src/Views/SetupView.vala:403
 #, c-format
 msgid "Roll %d"
-msgstr "Tekercs %d"
+msgstr "%d. tekercs"
 
 #: src/Views/SetupView.vala:419
 msgid "Paper Source:"
@@ -583,7 +579,7 @@ msgstr "Papírforrás:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
-msgstr "1-es labor vagy John asztala"
+msgstr "1-es labor vagy Tamás asztala"
 
 #: src/Views/SuppliesView.vala:47
 msgid "Use as default printer:"
@@ -615,7 +611,7 @@ msgstr "Bíborvörös"
 
 #: src/Widgets/InkLevel.vala:115
 msgid "Tri-color"
-msgstr ""
+msgstr "Háromszínű"
 
 #: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
 msgid "Pause"
@@ -627,4 +623,4 @@ msgstr "Folytatás"
 
 #: src/Widgets/PrinterRow.vala:107
 msgid "Disabled"
-msgstr "Kikapcsolva"
+msgstr "Letiltva"
