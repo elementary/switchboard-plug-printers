@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2021-11-02 10:16+0000\n"
+"PO-Revision-Date: 2021-11-06 12:00+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/pl/>\n"
@@ -27,10 +27,12 @@ msgstr "Ustawienia drukarki"
 #: data/printers.appdata.xml.in:6
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
+"Konfiguruj drukarki, zarządzaj kolejkami wydruku oraz sprawdź poziom "
+"atramentu"
 
 #: data/printers.appdata.xml.in:12
 msgid "Minor updates:"
-msgstr ""
+msgstr "Mniejsze aktualizacje:"
 
 #: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
 msgid "Updated translations"
