@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2020-04-30 17:10+0000\n"
+"PO-Revision-Date: 2021-11-23 23:34+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/printers.appdata.xml.in:5
 msgid "Printer Settings"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:12
 msgid "Minor updates:"
-msgstr "Pequenas atualizações:"
+msgstr "Pequena atualizações:"
 
 #: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
 msgid "Updated translations"
