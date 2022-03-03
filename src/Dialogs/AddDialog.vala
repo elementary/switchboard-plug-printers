@@ -541,6 +541,11 @@ public class Printers.AddDialog : Granite.Dialog {
             driver_list_store.append (out iter);
             var model = driver.ppd_make_and_model;
             model = model.replace ("(recommended)", _("(recommended)"));
+            if (driver.ppd_natural_language != null) {
+                ///Translators: The first argument is the driver name, the second is the language
+                model = _("%s (%s)").printf (model, driver.ppd_natural_language);
+            }
+
             driver_list_store.set (iter, 0, model, 1, driver);
             if (selection != null && (selection in driver.ppd_make_and_model || selection == driver.get_model_from_id ())) {
                 driver_view.get_selection ().select_iter (iter);
