@@ -94,6 +94,7 @@ public class Printers.PrinterList : Gtk.Grid {
     }
 
     public void add_printer (Printer printer) {
+    warning ("Printer list add printer");
         var row = new PrinterRow (printer);
         list_box.add (row);
         stack.add (row.page);
