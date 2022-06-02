@@ -650,21 +650,31 @@ public class Printers.AddDialog : Granite.Dialog {
         construct {
             var model = driver.ppd_make_and_model;
             model = model.replace ("(recommended)", _("(recommended)"));
-            var model_markup = GLib.Markup.printf_escaped ("<span size='large' weight='bold'>%s</span>", model);
 
-            var detail_markup = GLib.Markup.printf_escaped ("<span size='medium' weight='normal'>%s — %s</span>",
-                driver.ppd_natural_language, driver.ppd_name
-            );
-
-            var label = new Gtk.Label ("") {
+            var model_label = new Gtk.Label (model) {
                 halign = Gtk.Align.START,
-                margin = 6,
-                use_markup = true
+                ellipsize = Pango.EllipsizeMode.MIDDLE
             };
 
-            label.set_markup ("%s\n%s".printf (model_markup, detail_markup));
+            var detail_label = new Gtk.Label ("%s — %s".printf (driver.ppd_natural_language, driver.ppd_name)) {
+                halign = Gtk.Align.START,
+                ellipsize = Pango.EllipsizeMode.MIDDLE
+            };
 
-            add (label);
+            unowned var style_context = detail_label.get_style_context ();
+            style_context.add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+            style_context.add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+            var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
+                margin_top = 6,
+                margin_start = 6,
+                margin_bottom = 6,
+                margin_end = 6
+            };
+            box.add (model_label);
+            box.add (detail_label);
+
+            add (box);
             show_all ();
         }
     }
