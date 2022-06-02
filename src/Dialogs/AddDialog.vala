@@ -342,7 +342,6 @@ public class Printers.AddDialog : Granite.Dialog {
         });
 
         next_button.clicked.connect (() => {
-            warning ("NEXT CLICKED");
             try {
                 var name = temp_device.device_info.replace (" ", "_");
                 name = name.replace ("/", "_");
@@ -353,7 +352,6 @@ public class Printers.AddDialog : Granite.Dialog {
                 }
 
                 var pk_helper = Cups.get_pk_helper ();
-                warning ("adding printer %s, driver %s", name, selected_driver.ppd_name);
                 pk_helper.printer_add (name, uri, selected_driver.ppd_name, description_entry.text, location_entry.text);
                 pk_helper.printer_set_enabled (name, true);
                 pk_helper.printer_set_accept_jobs (name, true);
@@ -532,8 +530,6 @@ public class Printers.AddDialog : Granite.Dialog {
             if (!driver_cancellable.is_cancelled ()) {
                 var row_to_select = find_drivers.end (res);
                 driver_view.select_row (row_to_select);
-            } else {
-                warning ("cancelled");
             }
 
             driver_cancellable = null;
