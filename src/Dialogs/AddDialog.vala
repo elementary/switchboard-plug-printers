@@ -650,9 +650,9 @@ public class Printers.AddDialog : Granite.Dialog {
         construct {
             var model = driver.ppd_make_and_model;
             model = model.replace ("(recommended)", _("(recommended)"));
-            var model_markup = ("<span size='large' weight='bold'>%s</span>").printf (model);
+            var model_markup = GLib.Markup.printf_escaped ("<span size='large' weight='bold'>%s</span>", model);
 
-            var detail_markup = ("<span size='medium' weight='normal'>%s — %s</span>").printf (
+            var detail_markup = GLib.Markup.printf_escaped ("<span size='medium' weight='normal'>%s — %s</span>",
                 driver.ppd_natural_language, driver.ppd_name
             );
 
@@ -662,7 +662,7 @@ public class Printers.AddDialog : Granite.Dialog {
                 use_markup = true
             };
 
-            label.set_markup (("%s\n%s").printf (model_markup, detail_markup));
+            label.set_markup ("%s\n%s".printf (model_markup, detail_markup));
 
             add (label);
             show_all ();
