@@ -21,18 +21,35 @@
  */
 
 public class Printers.JobsView : Gtk.Frame {
-    private Printer printer;
+    private const string PRIVACY_KEY = "remember-recent-files";
     private Gtk.ListBox list_box;
+    private Granite.Widgets.AlertView empty_alert;
+    private Granite.Widgets.AlertView privacy_alert;
+
+    public Settings gnome_privacy_settings { get; construct; }
+    public Printer printer { get; construct; }
 
     public JobsView (Printer printer) {
-        this.printer = printer;
+        Object (printer: printer);
+    }
 
-        var alert = new Granite.Widgets.AlertView (_("Print Queue Is Empty"), _("There are no pending jobs in the queue."), "");
-        alert.show_all ();
+    construct {
+        empty_alert = new Granite.Widgets.AlertView (
+            _("Print Queue Is Empty"),
+            _("There are no pending jobs in the queue."),
+            ""
+        );
+        empty_alert.show_all ();
+
+        privacy_alert = new Granite.Widgets.AlertView (
+            _("Print History Is Inaccessible"),
+            _("The Privacy settings do not permit the job queue to be shown"),
+            ""
+        );
+        privacy_alert.show_all ();
 
         list_box = new Gtk.ListBox ();
         list_box.selection_mode = Gtk.SelectionMode.SINGLE;
-        list_box.set_placeholder (alert);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) update_header);
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare);
 
@@ -41,15 +58,26 @@ public class Printers.JobsView : Gtk.Frame {
         scrolled.add (list_box);
         scrolled.show_all ();
 
-        var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
-        foreach (var job in jobs) {
-            list_box.add (new JobRow (printer, job));
-        }
-
         add (scrolled);
 
+        gnome_privacy_settings = new Settings ("org.gnome.desktop.privacy");
+        gnome_privacy_settings.changed.connect ((key) => {
+            if (key == PRIVACY_KEY) {
+                update_privacy ();
+            }
+        });
+
+        update_privacy ();
+
         unowned Cups.Notifier notifier = Cups.Notifier.get_default ();
-        notifier.job_created.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+        notifier.job_created.connect (
+            (text, printer_uri, name, state, state_reasons, is_accepting_jobs,
+            job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
+
+            if (!gnome_privacy_settings.get_boolean (PRIVACY_KEY)) {
+                return;
+            }
+
             if (printer.dest.name != name) {
                 return;
             }
@@ -68,6 +96,21 @@ public class Printers.JobsView : Gtk.Frame {
         var timea = (((JobRow)a).job.get_used_time ());
         var timeb = (((JobRow)b).job.get_used_time ());
         return timeb.compare (timea);
+    }
+
+    private void update_privacy () {
+        if ( gnome_privacy_settings.get_boolean (PRIVACY_KEY)) {
+            list_box.set_placeholder (empty_alert);
+            var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
+            foreach (var job in jobs) {
+                list_box.add (new JobRow (printer, job));
+            }
+        } else {
+            list_box.foreach ((row) => {
+                list_box.remove (row);
+            });
+            list_box.set_placeholder (privacy_alert);
+        }
     }
 
     [CCode (instance_pos = -1)]
