@@ -535,7 +535,7 @@ public class Printers.AddDialog : Granite.Dialog {
             } else {
                 warning ("cancelled");
             }
-            
+
             driver_cancellable = null;
         });
 
@@ -554,7 +554,7 @@ public class Printers.AddDialog : Granite.Dialog {
                 if (driver.ppd_make_and_model == selected_make_and_model) {
                    row_to_select = row;
                 }
-            } 
+            }
 
             // This greatly speeds up constructing the list and also allows the function
             // to be cancelled.
