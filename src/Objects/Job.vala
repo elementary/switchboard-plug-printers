@@ -22,17 +22,21 @@
 
 public class Printers.Job : GLib.Object {
     public unowned CUPS.Job cjob;
+    public int uid {
+        get {
+            return cjob.id;
+        }
+    }
     public signal void stopped ();
     public signal void completed ();
     public signal void state_changed ();
 
     private unowned Printer printer;
-    private int uid;
 
     public Job (CUPS.Job cjob, Printer printer) {
+        // Object (cjob: cjob, printer: printer);
         this.cjob = cjob;
         this.printer = printer;
-        uid = cjob.id;
         unowned Cups.Notifier notifier = Cups.Notifier.get_default ();
         if (cjob.state != CUPS.IPP.JobState.CANCELED && cjob.state != CUPS.IPP.JobState.ABORTED && cjob.state != CUPS.IPP.JobState.COMPLETED) {
             notifier.job_completed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
@@ -72,6 +76,14 @@ public class Printers.Job : GLib.Object {
     public void stop () {
         try {
             Cups.get_pk_helper ().job_cancel_purge (uid, false);
+        } catch (Error e) {
+            critical (e.message);
+        }
+    }
+
+    public void purge () {
+        try {
+            Cups.get_pk_helper ().job_cancel_purge (uid, true);
         } catch (Error e) {
             critical (e.message);
         }

@@ -35,7 +35,8 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
 
     construct {
         var stack = new Gtk.Stack ();
-        stack.add_titled (new JobsView (printer), "general", _("Print Queue"));
+        var jobs_view = new JobsView (printer);
+        stack.add_titled (jobs_view, "general", _("Print Queue"));
         stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
         stack.add_titled (new SuppliesView (printer), "supplies", _("Settings & Supplies"));
 
@@ -51,6 +52,15 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
         var print_test = new Gtk.Button.with_label (_("Print Test Page"));
         print_test.clicked.connect (() => print_test_page ());
 
+        var clear_queue_button = new Gtk.Button.with_label (_("Clear Queue"));
+        clear_queue_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        clear_queue_button.sensitive = jobs_view.n_jobs > 0;
+        jobs_view.notify["n-jobs"].connect (() => {
+            clear_queue_button.sensitive = jobs_view.n_jobs > 0;
+        });
+        clear_queue_button.clicked.connect (() => jobs_view.clear_queue ());
+
+        action_area.add (clear_queue_button);
         action_area.add (print_test);
 
         printer.bind_property ("info", this, "title");
