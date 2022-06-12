@@ -32,7 +32,7 @@ public class Printers.OptionsPage : Gtk.Grid {
         var pages_per_sheet = new Gee.TreeSet<int> ();
         var default_page = printer.get_pages_per_sheet (pages_per_sheet);
 
-        var pages_modebutton = new Granite.Widgets.ModeButton ();
+        var pages_modebutton = new Printers.ModeButton ();
 
         if (pages_per_sheet.size == 1) {
             pages_modebutton.sensitive = false;
@@ -63,13 +63,11 @@ public class Printers.OptionsPage : Gtk.Grid {
             two_switch.sensitive = false;
         }
 
-        var switch_grid = new Gtk.Grid ();
-        switch_grid.column_spacing = 12;
-        switch_grid.orientation = Gtk.Orientation.HORIZONTAL;
-        switch_grid.add (two_switch);
+        var switch_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
+        switch_box.append (two_switch);
 
         if (sides.size > 2) {
-            var two_mode = new Granite.Widgets.ModeButton ();
+            var two_mode = new Printers.ModeButton ();
             two_mode.hexpand = true;
             two_mode.append_text (dpgettext2 ("gtk30", "printing option value", "Long Edge (Standard)"));
             two_mode.append_text (dpgettext2 ("gtk30", "printing option value", "Short Edge (Flip)"));
@@ -77,7 +75,7 @@ public class Printers.OptionsPage : Gtk.Grid {
 
             two_switch.bind_property ("active", two_mode, "sensitive");
 
-            switch_grid.add (two_mode);
+            switch_box.append (two_mode);
 
             switch (default_side) {
                 case CUPS.Attributes.Sided.TWO_LONG_EDGE:
@@ -131,7 +129,7 @@ public class Printers.OptionsPage : Gtk.Grid {
         attach (pages_label, 1, 0);
         attach (pages_modebutton, 2, 0);
         attach (two_side_label, 1, 1);
-        attach (switch_grid, 2, 1);
+        attach (switch_box, 2, 1);
 
         var orientations = new Gee.TreeSet<int> ();
         var default_orientation = printer.get_orientations (orientations);
@@ -158,8 +156,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             combobox.changed.connect (() => {
                 printer.set_default_orientation (combobox.get_active_id ());
             });
-            var label = new Gtk.Label (_("Orientation:"));
-            ((Gtk.Misc) label).xalign = 1;
+            var label = new Gtk.Label (_("Orientation:")) {
+                xalign = 1
+            };
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
@@ -178,8 +177,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             combobox.changed.connect (() => {
 
             });
-            var label = new Gtk.Label (_("Media Size:"));
-            ((Gtk.Misc) label).xalign = 1;
+            var label = new Gtk.Label (_("Media Size:")) {
+                xalign = 1
+            };
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
@@ -219,8 +219,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             combobox.changed.connect (() => {
                 printer.set_default_print_color_mode (combobox.get_active_id ());
             });
-            var label = new Gtk.Label (_("Color mode:"));
-            ((Gtk.Misc) label).xalign = 1;
+            var label = new Gtk.Label (_("Color mode:")) {
+                xalign = 1
+            };
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
@@ -290,8 +291,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             combobox.changed.connect (() => {
                 printer.set_default_output_bin (combobox.get_active_id ());
             });
-            var label = new Gtk.Label (_("Output Tray:"));
-            ((Gtk.Misc) label).xalign = 1;
+            var label = new Gtk.Label (_("Output Tray:")) {
+                xalign = 1
+            };
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
@@ -416,8 +418,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             combobox.changed.connect (() => {
                 printer.set_default_media_source (combobox.get_active_id ());
             });
-            var label = new Gtk.Label (_("Paper Source:"));
-            ((Gtk.Misc) label).xalign = 1;
+            var label = new Gtk.Label (_("Paper Source:")) {
+                xalign = 1
+            };
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;

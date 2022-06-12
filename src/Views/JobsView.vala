@@ -27,8 +27,9 @@ public class Printers.JobsView : Gtk.Frame {
     public JobsView (Printer printer) {
         this.printer = printer;
 
-        var alert = new Granite.Widgets.AlertView (_("Print Queue Is Empty"), _("There are no pending jobs in the queue."), "");
-        alert.show_all ();
+        var alert = new Granite.Placeholder (_("Print Queue Is Empty")) {
+            description = _("There are no pending jobs in the queue.")
+        };
 
         list_box = new Gtk.ListBox ();
         list_box.selection_mode = Gtk.SelectionMode.SINGLE;
@@ -36,17 +37,17 @@ public class Printers.JobsView : Gtk.Frame {
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) update_header);
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.expand = true;
-        scrolled.add (list_box);
-        scrolled.show_all ();
+        var scrolled = new Gtk.ScrolledWindow ();
+        scrolled.hexpand = true;
+        scrolled.vexpand = true;
+        scrolled.child = list_box;
 
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
         foreach (var job in jobs) {
-            list_box.add (new JobRow (printer, job));
+            list_box.append (new JobRow (printer, job));
         }
 
-        add (scrolled);
+        child = scrolled;
 
         unowned Cups.Notifier notifier = Cups.Notifier.get_default ();
         notifier.job_created.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
@@ -57,7 +58,7 @@ public class Printers.JobsView : Gtk.Frame {
             var jobs_ = printer.get_jobs (true, CUPS.WhichJobs.ALL);
             foreach (var job in jobs_) {
                 if (job.cjob.id == job_id) {
-                    list_box.add (new JobRow (printer, job));
+                    list_box.append (new JobRow (printer, job));
                     break;
                 }
             }
@@ -75,7 +76,10 @@ public class Printers.JobsView : Gtk.Frame {
         if (row1.job.cjob.state == CUPS.IPP.JobState.COMPLETED && (row2 == null || row1.job.cjob.state != row2.job.cjob.state)) {
             var label = new Gtk.Label (_("Completed Jobs"));
             label.xalign = 0;
-            label.margin = 3;
+            label.margin_start = 3;
+            label.margin_end = 3;
+            label.margin_top = 3;
+            label.margin_bottom = 3;
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
             row1.set_header (label);
         } else {

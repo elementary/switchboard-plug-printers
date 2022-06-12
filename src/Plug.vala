@@ -48,23 +48,26 @@ namespace Printers {
 
                 list = new PrinterList (stack);
 
-                var empty_alert = new Granite.Widgets.AlertView (
-                    _("No Printers Available"),
-                    _("Connect to a printer by clicking the icon in the toolbar below."),
-                    "printer-error"
-                );
+                var empty_alert = new Granite.Placeholder (_("No Printers Available")) {
+                    description = _("Connect to a printer by clicking the icon in the toolbar below."),
+                    icon = new ThemedIcon ("printer-error")
+                };
                 empty_alert.visible = true;
-                empty_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
+                empty_alert.get_style_context ().remove_class (Granite.STYLE_CLASS_VIEW);
 
                 main_stack = new Gtk.Stack ();
                 main_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
                 main_stack.add_named (empty_alert, "empty-alert");
                 main_stack.add_named (stack, "main-paned");
 
-                main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
-                main_paned.pack1 (list, false, false);
-                main_paned.pack2 (main_stack, true, false);
-                main_paned.show_all ();
+                main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
+                    start_child = list,
+                    resize_start_child = false,
+                    shrink_start_child = false,
+                    end_child = main_stack,
+                    resize_end_child = true,
+                    shrink_end_child = false
+                };
 
                 update_alert_visible ();
 

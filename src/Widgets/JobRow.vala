@@ -36,7 +36,9 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.MENU);
+        var icon = new Gtk.Image.from_gicon (job.get_file_icon ()) {
+            pixel_size = 16
+        };
 
         var title = new Gtk.Label (job.cjob.title);
         title.hexpand = true;
@@ -49,42 +51,47 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         job_state_icon = new Gtk.Image ();
         job_state_icon.gicon = job.state_icon ();
         job_state_icon.halign = Gtk.Align.END;
-        job_state_icon.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
+        job_state_icon.pixel_size = 16;
 
-        var cancel_button = new Gtk.Button.from_icon_name ("process-stop-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
-        cancel_button.tooltip_text = _("Cancel");
-        cancel_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        var cancel_button = new Gtk.Button () {
+            child = new Gtk.Image.from_icon_name ("process-stop-symbolic") {
+                pixel_size = 16,
+            },
+            tooltip_text = _("Cancel")
+        };
+        cancel_button.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
 
         var start_pause_image = new Gtk.Image ();
         start_pause_image.icon_name = "media-playback-pause-symbolic";
-        start_pause_image.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
+        start_pause_image.pixel_size = 16;
 
         var start_pause_button = new Gtk.Button ();
-        start_pause_button.image = start_pause_image;
+        start_pause_button.child = start_pause_image;
         start_pause_button.tooltip_text = _("Pause");
-        start_pause_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        start_pause_button.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
 
-        var action_grid = new Gtk.Grid ();
-        action_grid.add (cancel_button);
-        action_grid.add (start_pause_button);
+        var action_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        action_box.append (cancel_button);
+        action_box.append (start_pause_button);
 
         action_stack = new Gtk.Stack ();
         action_stack.hhomogeneous = false;
-        action_stack.add_named (action_grid, "action-grid");
+        action_stack.add_named (action_box, "action-grid");
         action_stack.add_named (job_state_icon, "job-state-icon");
 
         grid = new Gtk.Grid ();
         grid.tooltip_text = job.translated_job_state ();
         grid.column_spacing = 3;
-        grid.margin = 3;
-        grid.margin_start = grid.margin_end = 6;
+        grid.margin_top = 3;
+        grid.margin_bottom = 3;
+        grid.margin_start = 6;
+        grid.margin_end = 6;
         grid.attach (icon, 0, 0);
         grid.attach (title, 1, 0);
         grid.attach (date, 2, 0);
         grid.attach (action_stack, 3, 0);
 
-        add (grid);
-        show_all ();
+        child = grid;
 
         update_state ();
 

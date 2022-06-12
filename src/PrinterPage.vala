@@ -41,8 +41,13 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
 
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.halign = Gtk.Align.CENTER;
-        stack_switcher.homogeneous = true;
         stack_switcher.stack = stack;
+
+        var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+        var stack_switcher_children = stack_switcher.observe_children ();
+        for (var index = 0; index < stack_switcher_children.get_n_items (); index++) {
+            sizegroup.add_widget ((Gtk.ToggleButton) stack_switcher_children.get_item (index));
+        }
 
         content_area.row_spacing = 24;
         content_area.attach (stack_switcher, 0, 1);
@@ -51,14 +56,12 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
         var print_test = new Gtk.Button.with_label (_("Print Test Page"));
         print_test.clicked.connect (() => print_test_page ());
 
-        action_area.add (print_test);
+        action_area.append (print_test);
 
         printer.bind_property ("info", this, "title");
         printer.bind_property ("location", this, "description");
 
         printer.bind_property ("enabled", status_switch, "active", BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
-
-        show_all ();
     }
 
     private string? get_testprint_filename (string datadir) {

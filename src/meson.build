@@ -16,7 +16,8 @@ plug_files = files(
     'Views/SuppliesView.vala',
     'Widgets/InkLevel.vala',
     'Widgets/JobRow.vala',
-    'Widgets/PrinterRow.vala'
+    'Widgets/PrinterRow.vala',
+    'Widgets/ModeButton.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')
@@ -43,8 +44,8 @@ shared_module(
         dependency('glib-2.0'),
         dependency('gio-2.0'),
         dependency('gobject-2.0'),
-        dependency('granite', version: '>=6.0.0'),
-        dependency('gtk+-3.0'),
+        dependency('granite-7'),
+        dependency('gtk4'),
         meson.get_compiler('vala').find_library('posix'),
         cups_dep,
         switchboard_dep

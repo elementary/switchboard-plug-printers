@@ -59,7 +59,7 @@ public class Printers.InkLevel : Gtk.Grid {
 
             var ink_grid = new Gtk.Grid ();
             ink_grid.tooltip_text = get_translated_name (color.name ?? "black");
-            ink_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_LINKED);
+            ink_grid.get_style_context ().add_class (Granite.STYLE_CLASS_LINKED);
             for (int i = 1; i < colors_codes.length; i++) {
                 var css_color = STYLE_CLASS.printf ("#" + colors_codes[i]);
 
@@ -67,23 +67,24 @@ public class Printers.InkLevel : Gtk.Grid {
                 level.orientation = Gtk.Orientation.VERTICAL;
                 level.value = color.level;
                 level.inverted = true;
-                level.expand = true;
+                level.hexpand = true;
+                level.vexpand = true;
 
                 var context = level.get_style_context ();
                 context.add_class ("coloredlevelbar");
 
                 var provider = new Gtk.CssProvider ();
                 try {
-                    provider.load_from_data (css_color, css_color.length);
+                    provider.load_from_data ((uint8[]) css_color);
                     context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
                 } catch (Error e) {
                     warning ("Could not create CSS Provider: %s\nStylesheet:\n%s", e.message, css_color);
                 }
 
-                ink_grid.add (level);
+                ink_grid.attach (level, 0, 0);
             }
 
-            add (ink_grid);
+            attach (ink_grid, 0, 0);
         }
     }
 

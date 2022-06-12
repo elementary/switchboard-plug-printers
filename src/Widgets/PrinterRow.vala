@@ -44,25 +44,30 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         status_label.ellipsize = Pango.EllipsizeMode.END;
         status_label.xalign = 0;
 
-        printer_image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DND);
+        printer_image = new Gtk.Image.from_icon_name ("printer");
         printer_image.pixel_size = 32;
 
-        status_image = new Gtk.Image.from_icon_name ("user-available", Gtk.IconSize.MENU);
+        status_image = new Gtk.Image.from_icon_name ("user-available") {
+            pixel_size = 16
+        };
         status_image.halign = status_image.valign = Gtk.Align.END;
 
-        var overlay = new Gtk.Overlay ();
+        var overlay = new Gtk.Overlay () {
+            child = printer_image
+        };
         overlay.width_request = 38;
-        overlay.add (printer_image);
         overlay.add_overlay (status_image);
 
         var grid = new Gtk.Grid ();
-        grid.margin = 6;
+        grid.margin_end = 6;
+        grid.margin_top = 6;
+        grid.margin_bottom = 6;
         grid.margin_start = 3;
         grid.column_spacing = 3;
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0, 1, 1);
         grid.attach (status_label, 1, 1, 1, 1);
-        add (grid);
+        child = grid;
         page = new PrinterPage (printer);
 
         update_status ();
@@ -71,7 +76,7 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         printer.bind_property ("info", name_label, "label", GLib.BindingFlags.SYNC_CREATE);
 
         printer.enabled_changed.connect (update_status);
-        show_all ();
+
         printer.deleted.connect (() => {
             page.destroy ();
             destroy ();
