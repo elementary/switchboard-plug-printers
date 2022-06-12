@@ -88,7 +88,8 @@ public class Printers.AddDialog : Granite.Dialog {
         // scrolled.shadow_type = Gtk.ShadowType.IN;
 
         refresh_button = new Gtk.Button.with_label (_("Refresh")) {
-            sensitive = false
+            sensitive = false,
+            halign = Gtk.Align.END
         };
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
@@ -101,9 +102,9 @@ public class Printers.AddDialog : Granite.Dialog {
         var button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
         // button_box.layout_style = Gtk.ButtonBoxStyle.END;
         // button_box.spacing = 6;
-        button_box.append (refresh_button);
         button_box.append (cancel_button);
         button_box.append (next_button);
+        button_box.append (refresh_button);
         // button_box.set_child_secondary (refresh_button, true);
 
         var devices_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 24);
@@ -326,20 +327,24 @@ public class Printers.AddDialog : Granite.Dialog {
         driver_cancellable = new Cancellable ();
         fetch_ppds (temp_device);
 
-        var previous_button = new Gtk.Button.with_label (_("Previous"));
+        var previous_button = new Gtk.Button.with_label (_("Previous")) {
+            halign = Gtk.Align.END
+        };
 
-        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
+        var cancel_button = new Gtk.Button.with_label (_("Cancel")) {
+            halign = Gtk.Align.END
+        };
 
         var next_button = new Gtk.Button.with_label (_("Add Printer")) {
-            sensitive = false
+            sensitive = false,
+            halign = Gtk.Align.END
         };
         next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var button_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        // button_grid.layout_style = Gtk.ButtonBoxStyle.END;
-        button_grid.append (previous_button);
-        button_grid.append (cancel_button);
-        button_grid.append (next_button);
+        var button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+        button_box.append (previous_button);
+        button_box.append (cancel_button);
+        button_box.append (next_button);
 
         var device_grid = new Gtk.Grid () {
             hexpand = true,
@@ -362,7 +367,7 @@ public class Printers.AddDialog : Granite.Dialog {
         device_grid.attach (location_label, 0, 2, 1, 1);
         device_grid.attach (location_entry, 1, 2, 1, 1);
         device_grid.attach (frame, 0, 3, 2, 1);
-        device_grid.attach (button_grid, 0, 4, 2, 1);
+        device_grid.attach (button_box, 0, 4, 2, 1);
 
         stack.add_child (device_grid);
         stack.set_visible_child (device_grid);
