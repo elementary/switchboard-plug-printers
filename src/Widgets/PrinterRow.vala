@@ -34,40 +34,47 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     }
 
     construct {
-        name_label = new Gtk.Label (null);
-        name_label.get_style_context ().add_class ("h3");
-        name_label.ellipsize = Pango.EllipsizeMode.END;
-        name_label.xalign = 0;
+        name_label = new Gtk.Label (null) {
+            ellipsize = Pango.EllipsizeMode.END,
+            xalign = 0
+        };
+        name_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        status_label = new Gtk.Label (null);
-        status_label.use_markup = true;
-        status_label.ellipsize = Pango.EllipsizeMode.END;
-        status_label.xalign = 0;
+        status_label = new Gtk.Label (null) {
+            use_markup = true,
+            ellipsize = Pango.EllipsizeMode.END,
+            xalign = 0
+        };
 
-        printer_image = new Gtk.Image.from_icon_name ("printer");
-        printer_image.pixel_size = 32;
+        printer_image = new Gtk.Image.from_icon_name ("printer") {
+            pixel_size = 32
+        };
 
         status_image = new Gtk.Image.from_icon_name ("user-available") {
-            pixel_size = 16
+            pixel_size = 16,
+            halign = Gtk.Align.END,
+            valign = Gtk.Align.END
         };
-        status_image.halign = status_image.valign = Gtk.Align.END;
 
         var overlay = new Gtk.Overlay () {
-            child = printer_image
+            child = printer_image,
+            width_request = 38
         };
-        overlay.width_request = 38;
         overlay.add_overlay (status_image);
 
-        var grid = new Gtk.Grid ();
-        grid.margin_end = 6;
-        grid.margin_top = 6;
-        grid.margin_bottom = 6;
-        grid.margin_start = 3;
-        grid.column_spacing = 3;
+        var grid = new Gtk.Grid () {
+            margin_end = 6,
+            margin_top = 6,
+            margin_bottom = 6,
+            margin_start = 3,
+            column_spacing = 3
+        };
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0, 1, 1);
         grid.attach (status_label, 1, 1, 1, 1);
+
         child = grid;
+
         page = new PrinterPage (printer);
 
         update_status ();

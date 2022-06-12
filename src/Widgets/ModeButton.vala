@@ -20,7 +20,6 @@ namespace Printers {
             public int index { get; construct; }
             public Item (int index) {
                 Object (index: index);
-                // add_events (Gdk.EventMask.SCROLL_MASK);
             }
         }
 
@@ -59,9 +58,8 @@ namespace Printers {
 
             item_map = new Gee.HashMap<int, Item> ();
 
-            var style = get_style_context ();
-            style.add_class (Granite.STYLE_CLASS_LINKED);
-            style.add_class ("raised"); // needed for toolbars
+            add_css_class (Granite.STYLE_CLASS_LINKED);
+            add_css_class ("raised"); // needed for toolbars
         }
 
         /**
@@ -85,11 +83,14 @@ namespace Printers {
             for (index = item_map.size; item_map.has_key (index); index++);
             assert (item_map[index] == null);
 
-            var item = new Item (index);
             var scroll_controller = new Gtk.EventControllerScroll (Gtk.EventControllerScrollFlags.HORIZONTAL);
+
+            var item = new Item (index) {
+                child = w
+            };
+
             scroll_controller.scroll.connect (on_scroll_event);
             item.add_controller (scroll_controller);
-            item.child = w;
 
             item.toggled.connect (() => {
                 if (item.active) {

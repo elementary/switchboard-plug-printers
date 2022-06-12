@@ -50,14 +50,16 @@ public class Printers.OptionsPage : Gtk.Grid {
             printer.set_default_pages (label.label);
         });
 
-        var pages_label = new Gtk.Label (_("Pages per side:"));
-        pages_label.xalign = 1;
+        var pages_label = new Gtk.Label (_("Pages per side:")) {
+            xalign = 1
+        };
 
         var sides = new Gee.TreeSet<string> ();
         var default_side = printer.get_sides (sides);
 
-        var two_switch = new Gtk.Switch ();
-        two_switch.valign = Gtk.Align.CENTER;
+        var two_switch = new Gtk.Switch () {
+            valign = Gtk.Align.CENTER
+        };
 
         if (sides.size == 1) {
             two_switch.sensitive = false;
@@ -67,8 +69,9 @@ public class Printers.OptionsPage : Gtk.Grid {
         switch_box.append (two_switch);
 
         if (sides.size > 2) {
-            var two_mode = new Printers.ModeButton ();
-            two_mode.hexpand = true;
+            var two_mode = new Printers.ModeButton () {
+                hexpand = true
+            };
             two_mode.append_text (dpgettext2 ("gtk30", "printing option value", "Long Edge (Standard)"));
             two_mode.append_text (dpgettext2 ("gtk30", "printing option value", "Short Edge (Flip)"));
             two_mode.selected = 0;
@@ -121,8 +124,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             });
         }
 
-        var two_side_label = new Gtk.Label (_("Two-sided:"));
-        two_side_label.xalign = 1;
+        var two_side_label = new Gtk.Label (_("Two-sided:")) {
+            xalign = 1
+        };
 
         column_spacing = 12;
         row_spacing = 12;
@@ -318,8 +322,9 @@ public class Printers.OptionsPage : Gtk.Grid {
             }
 
             combobox.set_active_id ("%d".printf (default_print_quality));
-            var label = new Gtk.Label (_("Quality:"));
-            label.xalign = 1;
+            var label = new Gtk.Label (_("Quality:")) {
+                xalign = 1
+            };
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;

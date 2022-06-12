@@ -27,33 +27,39 @@ public class Printers.SuppliesView: Gtk.Grid {
     }
 
     construct {
-        var name_label = new Gtk.Label (_("Description:"));
-        name_label.xalign = 1;
+        var name_label = new Gtk.Label (_("Description:")) {
+            xalign = 1
+        };
 
-        var name_entry = new Gtk.Entry ();
-        name_entry.hexpand = true;
-        name_entry.placeholder_text = _("BrandPrinter X3000");
-        name_entry.text = printer.info;
+        var name_entry = new Gtk.Entry () {
+            hexpand = true,
+            placeholder_text = _("BrandPrinter X3000"),
+            text = printer.info
+        };
         name_entry.bind_property ("text", printer, "info", GLib.BindingFlags.BIDIRECTIONAL);
 
-        var location_label = new Gtk.Label (_("Location:"));
-        location_label.xalign = 1;
+        var location_label = new Gtk.Label (_("Location:")) {
+            xalign = 1
+        };
 
-        var location_entry = new Gtk.Entry ();
-        location_entry.text = printer.location;
-        location_entry.placeholder_text = _("Lab 1 or John's Desk");
+        var location_entry = new Gtk.Entry () {
+            text = printer.location,
+            placeholder_text = _("Lab 1 or John's Desk")
+        };
         location_entry.bind_property ("text", printer, "location", GLib.BindingFlags.BIDIRECTIONAL);
 
         var default_label = new Gtk.Label (_("Use as default printer:"));
 
-        var default_switch = new Gtk.Switch ();
-        default_switch.active = printer.is_default;
-        default_switch.halign = Gtk.Align.START;
-        default_switch.valign = Gtk.Align.CENTER;
+        var default_switch = new Gtk.Switch () {
+            active = printer.is_default,
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.CENTER
+        };
         default_switch.bind_property ("active", printer, "is-default", GLib.BindingFlags.BIDIRECTIONAL);
 
-        var ink_level = new InkLevel (printer);
-        ink_level.margin_top = 12;
+        var ink_level = new InkLevel (printer) {
+            margin_top = 12
+        };
 
         column_spacing = 12;
         row_spacing = 12;

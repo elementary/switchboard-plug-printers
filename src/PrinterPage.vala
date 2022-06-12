@@ -39,9 +39,10 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
         stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
         stack.add_titled (new SuppliesView (printer), "supplies", _("Settings & Supplies"));
 
-        var stack_switcher = new Gtk.StackSwitcher ();
-        stack_switcher.halign = Gtk.Align.CENTER;
-        stack_switcher.stack = stack;
+        var stack_switcher = new Gtk.StackSwitcher () {
+            halign = Gtk.Align.CENTER,
+            stack = stack
+        };
 
         var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
         var stack_switcher_children = stack_switcher.observe_children ();

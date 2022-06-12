@@ -43,20 +43,22 @@ namespace Printers {
 
         public override Gtk.Widget get_widget () {
             if (main_paned == null) {
-                var stack = new Gtk.Stack ();
-                stack.visible = true;
+                var stack = new Gtk.Stack () {
+                    visible = true
+                };
 
                 list = new PrinterList (stack);
 
                 var empty_alert = new Granite.Placeholder (_("No Printers Available")) {
                     description = _("Connect to a printer by clicking the icon in the toolbar below."),
-                    icon = new ThemedIcon ("printer-error")
+                    icon = new ThemedIcon ("printer-error"),
+                    visible = true
                 };
-                empty_alert.visible = true;
-                empty_alert.get_style_context ().remove_class (Granite.STYLE_CLASS_VIEW);
+                empty_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
 
-                main_stack = new Gtk.Stack ();
-                main_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+                main_stack = new Gtk.Stack () {
+                    transition_type = Gtk.StackTransitionType.CROSSFADE
+                };
                 main_stack.add_named (empty_alert, "empty-alert");
                 main_stack.add_named (stack, "main-paned");
 

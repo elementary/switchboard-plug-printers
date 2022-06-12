@@ -57,18 +57,20 @@ public class Printers.InkLevel : Gtk.Grid {
                 colors_codes = color.color.split ("#");
             }
 
-            var ink_grid = new Gtk.Grid ();
-            ink_grid.tooltip_text = get_translated_name (color.name ?? "black");
-            ink_grid.get_style_context ().add_class (Granite.STYLE_CLASS_LINKED);
+            var ink_grid = new Gtk.Grid () {
+                tooltip_text = get_translated_name (color.name ?? "black")
+            };
+            ink_grid.add_css_class (Granite.STYLE_CLASS_LINKED);
             for (int i = 1; i < colors_codes.length; i++) {
                 var css_color = STYLE_CLASS.printf ("#" + colors_codes[i]);
 
-                var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max);
-                level.orientation = Gtk.Orientation.VERTICAL;
-                level.value = color.level;
-                level.inverted = true;
-                level.hexpand = true;
-                level.vexpand = true;
+                var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max) {
+                    orientation = Gtk.Orientation.VERTICAL,
+                    value = color.level,
+                    inverted = true,
+                    hexpand = true,
+                    vexpand = true
+                };
 
                 var context = level.get_style_context ();
                 context.add_class ("coloredlevelbar");

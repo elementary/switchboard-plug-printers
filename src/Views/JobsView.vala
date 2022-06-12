@@ -21,26 +21,30 @@
  */
 
 public class Printers.JobsView : Gtk.Frame {
-    private Printer printer;
+    public Printer printer { get; construct; }
     private Gtk.ListBox list_box;
 
     public JobsView (Printer printer) {
-        this.printer = printer;
+        Object (printer: printer);
+    }
 
+    construct {
         var alert = new Granite.Placeholder (_("Print Queue Is Empty")) {
             description = _("There are no pending jobs in the queue.")
         };
 
-        list_box = new Gtk.ListBox ();
-        list_box.selection_mode = Gtk.SelectionMode.SINGLE;
+        list_box = new Gtk.ListBox () {
+            selection_mode = Gtk.SelectionMode.SINGLE
+        };
         list_box.set_placeholder (alert);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) update_header);
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare);
 
-        var scrolled = new Gtk.ScrolledWindow ();
-        scrolled.hexpand = true;
-        scrolled.vexpand = true;
-        scrolled.child = list_box;
+        var scrolled = new Gtk.ScrolledWindow () {
+            hexpand = true,
+            vexpand = true,
+            child = list_box
+        };
 
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
         foreach (var job in jobs) {
@@ -74,13 +78,14 @@ public class Printers.JobsView : Gtk.Frame {
     [CCode (instance_pos = -1)]
     private void update_header (JobRow row1, JobRow? row2) {
         if (row1.job.cjob.state == CUPS.IPP.JobState.COMPLETED && (row2 == null || row1.job.cjob.state != row2.job.cjob.state)) {
-            var label = new Gtk.Label (_("Completed Jobs"));
-            label.xalign = 0;
-            label.margin_start = 3;
-            label.margin_end = 3;
-            label.margin_top = 3;
-            label.margin_bottom = 3;
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+            var label = new Gtk.Label (_("Completed Jobs")) {
+                xalign = 0,
+                margin_start = 3,
+                margin_end = 3,
+                margin_top = 3,
+                margin_bottom = 3
+            };
+            label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
             row1.set_header (label);
         } else {
             row1.set_header (null);

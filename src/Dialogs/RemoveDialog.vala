@@ -33,7 +33,7 @@ public class Printers.RemoveDialog : Granite.MessageDialog {
 
     construct {
         var button = add_button (_("Remove"), 0);
-        button.get_style_context ().add_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
         response.connect (on_response);
     }

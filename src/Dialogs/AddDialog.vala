@@ -649,7 +649,7 @@ public class Printers.AddDialog : Granite.Dialog {
     }
 
     public class TempDeviceRow : Gtk.ListBoxRow {
-        public TempDevice temp_device { public get; private set construct; }
+        public TempDevice temp_device { public get; set construct; }
         public TempDeviceRow (TempDevice temp_device) {
             Object (temp_device: temp_device);
         }

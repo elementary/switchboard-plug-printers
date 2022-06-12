@@ -38,21 +38,24 @@ public class Printers.PrinterList : Gtk.Grid {
         vexpand = true;
         list_box = new Gtk.ListBox ();
 
-        var scrolled = new Gtk.ScrolledWindow ();
-        scrolled.child = list_box;
-        scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
-        scrolled.width_request = 250;
-        scrolled.hexpand = true;
-        scrolled.vexpand = true;
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = list_box,
+            hscrollbar_policy = Gtk.PolicyType.NEVER,
+            width_request = 250,
+            hexpand = true,
+            vexpand = true
+        };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class ("inline-toolbar");
+        actionbar.add_css_class ("inline-toolbar");
+
         var add_button = new Gtk.Button () {
             child = new Gtk.Image.from_icon_name ("list-add-symbolic") {
                 pixel_size = 16
             },
             tooltip_text = _("Add Printer…")
         };
+
         var remove_button = new Gtk.Button () {
              child = new Gtk.Image.from_icon_name ("list-remove-symbolic") {
                 pixel_size = 16
@@ -89,8 +92,9 @@ public class Printers.PrinterList : Gtk.Grid {
         remove_button.clicked.connect (() => {
             var printer = ((PrinterRow)list_box.get_selected_row ()).printer;
 
-            var remove_dialog = new RemoveDialog (printer);
-            remove_dialog.transient_for = (Gtk.Window) get_root ();
+            var remove_dialog = new RemoveDialog (printer) {
+                transient_for = (Gtk.Window) get_root ()
+            };
             remove_dialog.present ();
         });
 
