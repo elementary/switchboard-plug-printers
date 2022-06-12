@@ -83,7 +83,7 @@ namespace Printers {
             for (index = item_map.size; item_map.has_key (index); index++);
             assert (item_map[index] == null);
 
-            var scroll_controller = new Gtk.EventControllerScroll (Gtk.EventControllerScrollFlags.HORIZONTAL);
+            var scroll_controller = new Gtk.EventControllerScroll (Gtk.EventControllerScrollFlags.BOTH_AXES);
 
             var item = new Item (index) {
                 child = w

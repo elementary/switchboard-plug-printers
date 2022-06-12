@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.InkLevel : Gtk.Grid {
+public class Printers.InkLevel : Gtk.Box {
     public unowned Printer printer { get; construct; }
     private const string STYLE_CLASS =
     """@define-color levelbar_color %s;
@@ -40,12 +40,14 @@ public class Printers.InkLevel : Gtk.Grid {
     """;
 
     public InkLevel (Printer printer) {
-        Object (printer: printer);
+        Object (
+            printer: printer,
+            orientation: Gtk.Orientation.HORIZONTAL,
+            spacing: 6
+        );
     }
 
     construct {
-        orientation = Gtk.Orientation.HORIZONTAL;
-        column_spacing = 6;
         var colors = printer.get_color_levels ();
         if (!colors.is_empty) {
             height_request = 100;
@@ -57,10 +59,10 @@ public class Printers.InkLevel : Gtk.Grid {
                 colors_codes = color.color.split ("#");
             }
 
-            var ink_grid = new Gtk.Grid () {
+            var ink_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
                 tooltip_text = get_translated_name (color.name ?? "black")
             };
-            ink_grid.add_css_class (Granite.STYLE_CLASS_LINKED);
+            ink_box.add_css_class (Granite.STYLE_CLASS_LINKED);
             for (int i = 1; i < colors_codes.length; i++) {
                 var css_color = STYLE_CLASS.printf ("#" + colors_codes[i]);
 
@@ -83,10 +85,10 @@ public class Printers.InkLevel : Gtk.Grid {
                     warning ("Could not create CSS Provider: %s\nStylesheet:\n%s", e.message, css_color);
                 }
 
-                ink_grid.attach (level, 0, 0);
+                ink_box.append (level);
             }
 
-            attach (ink_grid, 0, 0);
+            append (ink_box);
         }
     }
 
