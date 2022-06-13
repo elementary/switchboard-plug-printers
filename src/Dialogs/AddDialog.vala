@@ -54,13 +54,6 @@ public class Printers.AddDialog : Granite.Dialog {
     private Printers.DeviceDriver selected_driver = null;
     private Cancellable driver_cancellable;
 
-    private string btn_box_css = """
-        .buttonbox-button {
-            min-width: 86px;
-            min-height: 25px;
-        }
-    """;
-
     public AddDialog () {
         search_device.begin ();
     }
@@ -94,25 +87,23 @@ public class Printers.AddDialog : Granite.Dialog {
         };
         // scrolled.shadow_type = Gtk.ShadowType.IN;
 
-        var css_provider = new Gtk.CssProvider ();
-        css_provider.load_from_data (btn_box_css.data);
-
         refresh_button = new Gtk.Button.with_label (_("Refresh")) {
-            sensitive = false
+            sensitive = false,
+            width_request = 85,
+            height_request = 27
         };
-        refresh_button.add_css_class ("buttonbox-button");
-        refresh_button.get_style_context ().add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
-        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
-        cancel_button.add_css_class ("buttonbox-button");
-        cancel_button.get_style_context ().add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        var cancel_button = new Gtk.Button.with_label (_("Cancel")) {
+            width_request = 85,
+            height_request = 27
+        };
 
         var next_button = new Gtk.Button.with_label (_("Next")) {
-            sensitive = false
+            sensitive = false,
+            width_request = 85,
+            height_request = 27
         };
-        next_button.add_css_class ("buttonbox-button");
         next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
-        next_button.get_style_context ().add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
         button_box.append (refresh_button);
