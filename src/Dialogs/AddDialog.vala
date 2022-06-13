@@ -54,6 +54,13 @@ public class Printers.AddDialog : Granite.Dialog {
     private Printers.DeviceDriver selected_driver = null;
     private Cancellable driver_cancellable;
 
+    private string btn_box_css = """
+        .buttonbox-button {
+            min-width: 86px;
+            min-height: 25px;
+        }
+    """;
+
     public AddDialog () {
         search_device.begin ();
     }
@@ -87,27 +94,36 @@ public class Printers.AddDialog : Granite.Dialog {
         };
         // scrolled.shadow_type = Gtk.ShadowType.IN;
 
+        var css_provider = new Gtk.CssProvider ();
+        css_provider.load_from_data (btn_box_css.data);
+
         refresh_button = new Gtk.Button.with_label (_("Refresh")) {
-            sensitive = false,
-            halign = Gtk.Align.END
+            sensitive = false
         };
+        refresh_button.add_css_class ("buttonbox-button");
+        refresh_button.get_style_context ().add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
+        cancel_button.add_css_class ("buttonbox-button");
+        cancel_button.get_style_context ().add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var next_button = new Gtk.Button.with_label (_("Next")) {
             sensitive = false
         };
+        next_button.add_css_class ("buttonbox-button");
         next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.get_style_context ().add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        // button_box.layout_style = Gtk.ButtonBoxStyle.END;
-        // button_box.spacing = 6;
+        button_box.append (refresh_button);
+        button_box.append (new Gtk.Grid () { hexpand = true});
         button_box.append (cancel_button);
         button_box.append (next_button);
-        button_box.append (refresh_button);
-        // button_box.set_child_secondary (refresh_button, true);
 
-        var devices_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 24);
+        var devices_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 24) {
+            hexpand = true,
+            halign = Gtk.Align.FILL
+        };
         devices_box.append (scrolled);
         devices_box.append (button_box);
 
