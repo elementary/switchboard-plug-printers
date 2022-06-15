@@ -1,6 +1,6 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
+
 /*-
- * Copyright (c) 2015 Pantheon Developers (https://launchpad.net/switchboard-plug-printers)
+ * Copyright 2015-2022 elementary, Inc.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -20,22 +20,12 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.InkLevel : Gtk.Grid {
+public class Printers.InkLevel : Gtk.Box {
     public unowned Printer printer { get; construct; }
     private const string STYLE_CLASS =
-    """@define-color levelbar_color %s;
-    .coloredlevelbar block.filled {
-        background-image:
-            linear-gradient(
-                to bottom,
-                shade (@levelbar_color, 1.3),
-                shade (@levelbar_color, 1)
-            );
-            border: 1px solid shade (@levelbar_color, 0.85);
-        box-shadow:
-            inset 0 0 0 1px alpha (#fff, 0.05),
-            inset 0 1px 0 0 alpha (#fff, 0.45),
-            inset 0 -1px 0 0 alpha (#fff, 0.15);
+    """
+    block.filled {
+        background-color: #%s;
     }
     """;
 
@@ -44,46 +34,49 @@ public class Printers.InkLevel : Gtk.Grid {
     }
 
     construct {
+        homogeneous = true;
         orientation = Gtk.Orientation.HORIZONTAL;
-        column_spacing = 6;
+        spacing = 12;
+
         var colors = printer.get_color_levels ();
-        if (!colors.is_empty) {
-            height_request = 100;
-        }
 
         foreach (Printer.ColorLevel color in colors) {
-            string[] colors_codes = { null, "3689E6" };
+            string[] colors_codes = { null, "333333" };
             if ("#" in color.color) {
                 colors_codes = color.color.split ("#");
             }
 
-            var ink_grid = new Gtk.Grid ();
-            ink_grid.tooltip_text = get_translated_name (color.name ?? "black");
-            ink_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_LINKED);
+            var ink_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 3);
+
             for (int i = 1; i < colors_codes.length; i++) {
-                var css_color = STYLE_CLASS.printf ("#" + colors_codes[i]);
+                var css_color = STYLE_CLASS.printf (colors_codes[i]);
 
-                var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max);
-                level.orientation = Gtk.Orientation.VERTICAL;
-                level.value = color.level;
-                level.inverted = true;
-                level.expand = true;
-
-                var context = level.get_style_context ();
-                context.add_class ("coloredlevelbar");
+                var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max) {
+                    hexpand = true,
+                    vexpand = true,
+                    inverted = true,
+                    orientation = Gtk.Orientation.VERTICAL,
+                    value = color.level
+                };
 
                 var provider = new Gtk.CssProvider ();
                 try {
                     provider.load_from_data (css_color, css_color.length);
-                    context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                    level.get_style_context ().add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
                 } catch (Error e) {
                     warning ("Could not create CSS Provider: %s\nStylesheet:\n%s", e.message, css_color);
                 }
 
-                ink_grid.add (level);
+                ink_box.add (level);
             }
 
-            add (ink_grid);
+            var label = new Gtk.Label (get_translated_name (color.name ?? "black"));
+
+            var color_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
+            color_box.add (ink_box);
+            color_box.add (label);
+
+            add (color_box);
         }
     }
 
