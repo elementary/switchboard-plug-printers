@@ -58,7 +58,6 @@ public class Printers.PrinterList : Gtk.Grid {
         add (actionbar);
 
         list_box.row_selected.connect ((row) => {
-            // remove_button.sensitive = (row != null);
             if (row != null) {
                 stack.set_visible_child (((PrinterRow) row).page);
             }
