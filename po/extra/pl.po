@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:26+0000\n"
+"POT-Creation-Date: 2022-06-15 15:51+0000\n"
 "PO-Revision-Date: 2021-11-07 12:18+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -30,14 +30,16 @@ msgstr ""
 "Konfiguruj drukarki, zarządzaj kolejkami wydruku oraz sprawdź poziom "
 "atramentu"
 
-#: data/printers.appdata.xml.in:12
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:20
+#: data/printers.appdata.xml.in:28
 msgid "Minor updates:"
 msgstr "Mniejsze aktualizacje:"
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
+#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:22
+#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:37
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/printers.appdata.xml.in:20
+#: data/printers.appdata.xml.in:36
 msgid "Show a default name if a printer is unnamed"
 msgstr "Wyświetlaj nazwę domyślną, jeżeli drukarka nie ma nazwy"
