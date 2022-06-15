@@ -40,7 +40,7 @@ public class Printers.InkLevel : Gtk.Box {
         var colors = printer.get_color_levels ();
 
         foreach (Printer.ColorLevel color in colors) {
-            string[] colors_codes = { null, "333333" };
+            string[] colors_codes = { null, "3689E6" };
             if ("#" in color.color) {
                 colors_codes = color.color.split ("#");
             }
