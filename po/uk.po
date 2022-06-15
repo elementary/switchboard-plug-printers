@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-15 20:13+0000\n"
-"PO-Revision-Date: 2022-06-15 19:23+0000\n"
+"PO-Revision-Date: 2022-06-16 01:34+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/uk/>\n"
@@ -624,10 +624,8 @@ msgid "Resume"
 msgstr "Продовжити"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
-msgstr "Вилучити принтер"
+msgstr "Вилучити цей принтер"
 
 #: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
