@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-15 15:51+0000\n"
-"PO-Revision-Date: 2021-07-08 17:34+0000\n"
+"PO-Revision-Date: 2022-06-15 19:23+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/uk/>\n"
@@ -141,10 +141,8 @@ msgid "Lab 1 or John's desk"
 msgstr "Лабораторія 1 або стіл Омелька"
 
 #: src/Dialogs/AddDialog.vala:266
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "Обробка…"
+msgstr "Завантаження…"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
