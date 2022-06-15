@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-15 19:23+0000\n"
 "PO-Revision-Date: 2020-03-01 14:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -39,10 +39,6 @@ msgstr "測試頁"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "加入印表機…"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "移除印表機"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -625,7 +621,13 @@ msgstr "暫停"
 msgid "Resume"
 msgstr "繼續"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "移除印表機"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "已停用"
 

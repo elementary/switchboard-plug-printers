@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-15 19:23+0000\n"
 "PO-Revision-Date: 2021-02-18 20:23+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -39,10 +39,6 @@ msgstr "Page de test"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "Ajouter une imprimante…"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Supprimer l'imprimante"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -630,7 +626,13 @@ msgstr "Mettre en pause"
 msgid "Resume"
 msgstr "Reprendre"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "Supprimer l'imprimante"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Désactivé"
 

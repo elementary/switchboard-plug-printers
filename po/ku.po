@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-15 19:23+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Kurdish <https://l10n.elementary.io/projects/switchboard/"
@@ -40,10 +40,6 @@ msgstr "Pel Becerribîne"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "çapker zêde bike …"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "çapker rakirin"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -638,7 +634,13 @@ msgstr ""
 msgid "Resume"
 msgstr ""
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "çapker rakirin"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Na çalak"
 
