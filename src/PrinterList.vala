@@ -55,6 +55,7 @@ public class Printers.PrinterList : Gtk.Grid {
             },
             tooltip_text = _("Add Printer…")
         };
+        add_button.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         var remove_button = new Gtk.Button () {
              child = new Gtk.Image.from_icon_name ("list-remove-symbolic") {
@@ -63,6 +64,8 @@ public class Printers.PrinterList : Gtk.Grid {
             tooltip_text = _("Remove Printer"),
             sensitive = false
         };
+        remove_button.add_css_class (Granite.STYLE_CLASS_FLAT);
+
         actionbar.pack_start (add_button);
         actionbar.pack_start (remove_button);
         attach (scrolled, 0, 0);

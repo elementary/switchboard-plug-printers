@@ -20,7 +20,7 @@ plug_files = files(
     'Widgets/ModeButton.vala'
 )
 
-switchboard_dep = dependency('switchboard-2.0')
+switchboard_dep = dependency('switchboard-3')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
 cups_lib = meson.get_compiler('c').find_library('cups')
