@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
-"PO-Revision-Date: 2021-02-07 19:50+0000\n"
-"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"POT-Creation-Date: 2022-06-15 19:23+0000\n"
+"PO-Revision-Date: 2022-06-15 19:23+0000\n"
+"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/tr/>\n"
 "Language: tr\n"
@@ -39,10 +39,6 @@ msgstr "Sınama sayfası"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "Yazıcı Ekle…"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Yazıcıyı Kaldır"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -139,10 +135,8 @@ msgid "Lab 1 or John's desk"
 msgstr "Laboratuvar 1 ya da Sadık'ın masası"
 
 #: src/Dialogs/AddDialog.vala:266
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "İşleniyor…"
+msgstr "Yükleniyor…"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
@@ -628,7 +622,13 @@ msgstr "Duraklat"
 msgid "Resume"
 msgstr "Devam Et"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "Yazıcıyı Kaldır"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Devre dışı bırakıldı"
 

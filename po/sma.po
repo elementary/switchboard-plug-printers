@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-15 19:23+0000\n"
 "PO-Revision-Date: 2015-09-03 23:38+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,10 +36,6 @@ msgstr ""
 
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
-msgstr ""
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
 msgstr ""
 
 #: src/Plug.vala:38
@@ -621,6 +617,10 @@ msgstr ""
 msgid "Resume"
 msgstr ""
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+msgid "Remove this printer"
+msgstr ""
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr ""

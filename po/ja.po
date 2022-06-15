@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-15 19:23+0000\n"
 "PO-Revision-Date: 2019-07-21 03:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -39,10 +39,6 @@ msgstr "テストページ"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "プリンターを追加…"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "プリンターを削除"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -626,7 +622,13 @@ msgstr "一時停止"
 msgid "Resume"
 msgstr "再開"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "プリンターを削除"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "無効"
 
