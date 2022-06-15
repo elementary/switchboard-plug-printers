@@ -262,7 +262,6 @@ public class Printers.AddDialog : Granite.Dialog {
         make_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
         make_scrolled.add (make_view);
 
-        // driver_list_store = new ListStore (typeof (DeviceDriver));
         driver_view = new Gtk.ListBox ();
         driver_view.set_placeholder (new Gtk.Label (_("Loading…")));
 
