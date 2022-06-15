@@ -34,6 +34,14 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     }
 
     construct {
+        var remove_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU) {
+            valign = Gtk.Align.CENTER,
+            halign = Gtk.Align.END,
+            hexpand = true,
+            tooltip_text = _("Remove this printer")
+        };
+        remove_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
         name_label = new Gtk.Label (null);
         name_label.get_style_context ().add_class ("h3");
         name_label.ellipsize = Pango.EllipsizeMode.END;
@@ -62,6 +70,7 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0, 1, 1);
         grid.attach (status_label, 1, 1, 1, 1);
+        grid.attach (remove_button, 2, 0, 2, 2);
         add (grid);
         page = new PrinterPage (printer);
 
@@ -72,6 +81,15 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
 
         printer.enabled_changed.connect (update_status);
         show_all ();
+
+        remove_button.clicked.connect (() => {
+            var remove_dialog = new RemoveDialog (printer);
+            remove_dialog.transient_for = (Gtk.Window) get_toplevel ();
+
+
+            remove_dialog.present ();
+        });
+
         printer.deleted.connect (() => {
             page.destroy ();
             destroy ();
