@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
+"POT-Creation-Date: 2022-06-15 15:51+0000\n"
 "PO-Revision-Date: 2020-02-01 02:08+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -45,22 +45,22 @@ msgstr "Добавяне на печатаща машина"
 msgid "Remove Printer"
 msgstr "Премахване на печатащата машина"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Printers"
 msgstr "Печатащи машини"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Настройка на принтерите, управление на опашките за печат и проверка на "
 "нивото на мастилото"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:52
 #, fuzzy
 msgid "No Printers Available"
 msgstr "Няма печатащи машини"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:53
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 
@@ -99,75 +99,81 @@ msgstr "LPD/LPR хост или принтер"
 msgid "AppSocket/HP JetDirect"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:66
 msgid "Finding nearby printers…"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:86
+#: src/Dialogs/AddDialog.vala:85
 msgid "Refresh"
 msgstr "Опресняване"
 
-#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
 msgstr "Отказ"
 
-#: src/Dialogs/AddDialog.vala:91
+#: src/Dialogs/AddDialog.vala:90
 msgid "Next"
 msgstr "Следващ"
 
-#: src/Dialogs/AddDialog.vala:109
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "Невъзможно е да изредя всички намерени принтери"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:225
+#: src/Dialogs/AddDialog.vala:224
 msgid "Connection:"
 msgstr "Връзка:"
 
-#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
 msgstr "Описание:"
 
-#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
 msgid "Location:"
 msgstr "Местоположение:"
 
-#: src/Dialogs/AddDialog.vala:246
+#: src/Dialogs/AddDialog.vala:245
 msgid "Lab 1 or John's desk"
 msgstr "Лаборатория 1 или Бюрото на Иван"
 
-#: src/Dialogs/AddDialog.vala:304
+#: src/Dialogs/AddDialog.vala:266
+#, fuzzy
+#| msgid "Processing…"
+msgid "Loading…"
+msgstr "Обработване..."
+
+#: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
 msgstr "Предишен"
 
-#: src/Dialogs/AddDialog.vala:308
+#: src/Dialogs/AddDialog.vala:297
 msgid "Add Printer"
 msgstr "Добавяне на печатаща машина"
 
-#: src/Dialogs/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(препоръчително)"
-
-#: src/Dialogs/AddDialog.vala:605
+#: src/Dialogs/AddDialog.vala:606
 msgid "Serial"
 msgstr "Сериен"
 
-#: src/Dialogs/AddDialog.vala:608
+#: src/Dialogs/AddDialog.vala:609
 msgid "Local Printers"
 msgstr "Местни печатащи машини"
 
-#: src/Dialogs/AddDialog.vala:611
+#: src/Dialogs/AddDialog.vala:612
 msgid "Network Printers"
 msgstr "Мрежови печатащи машини"
 
-#: src/Dialogs/AddDialog.vala:614
+#: src/Dialogs/AddDialog.vala:615
 msgid "Available Network Printers"
 msgstr "Налични мрежови принтери"
+
+#: src/Dialogs/AddDialog.vala:651
+msgid "(recommended)"
+msgstr "(препоръчително)"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format

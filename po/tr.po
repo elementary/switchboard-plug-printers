@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
+"POT-Creation-Date: 2022-06-15 15:51+0000\n"
 "PO-Revision-Date: 2021-02-07 19:50+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -44,20 +44,20 @@ msgstr "Yazıcı Ekle…"
 msgid "Remove Printer"
 msgstr "Yazıcıyı Kaldır"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Printers"
 msgstr "Yazıcılar"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Yazıcıları yapılandır, yazdırma sırasını yönet, mürekkep seviyelerini gör"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:52
 msgid "No Printers Available"
 msgstr "Kullanılabilir Yazıcı Yok"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:53
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr "Alt araç çubuğundaki simgesine tıklayarak bir yazıcıya bağlanın."
 
@@ -96,75 +96,81 @@ msgstr "LPD/LPR Sunucu veya Yazıcı"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:66
 msgid "Finding nearby printers…"
 msgstr "Yakındaki yazıcılar bulunuyor…"
 
-#: src/Dialogs/AddDialog.vala:86
+#: src/Dialogs/AddDialog.vala:85
 msgid "Refresh"
 msgstr "Yenile"
 
-#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
 msgstr "İptal"
 
-#: src/Dialogs/AddDialog.vala:91
+#: src/Dialogs/AddDialog.vala:90
 msgid "Next"
 msgstr "İleri"
 
-#: src/Dialogs/AddDialog.vala:109
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "Kullanılabilir tüm yazıcıları listelemek imkansız"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:225
+#: src/Dialogs/AddDialog.vala:224
 msgid "Connection:"
 msgstr "Bağlantı:"
 
-#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
 msgstr "Açıklama:"
 
-#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
 msgid "Location:"
 msgstr "Konum:"
 
-#: src/Dialogs/AddDialog.vala:246
+#: src/Dialogs/AddDialog.vala:245
 msgid "Lab 1 or John's desk"
 msgstr "Laboratuvar 1 ya da Sadık'ın masası"
 
-#: src/Dialogs/AddDialog.vala:304
+#: src/Dialogs/AddDialog.vala:266
+#, fuzzy
+#| msgid "Processing…"
+msgid "Loading…"
+msgstr "İşleniyor…"
+
+#: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
 msgstr "Geri"
 
-#: src/Dialogs/AddDialog.vala:308
+#: src/Dialogs/AddDialog.vala:297
 msgid "Add Printer"
 msgstr "Yazıcı Ekle"
 
-#: src/Dialogs/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(önerilen)"
-
-#: src/Dialogs/AddDialog.vala:605
+#: src/Dialogs/AddDialog.vala:606
 msgid "Serial"
 msgstr "Seri Bağlantı Noktası"
 
-#: src/Dialogs/AddDialog.vala:608
+#: src/Dialogs/AddDialog.vala:609
 msgid "Local Printers"
 msgstr "Yerel Yazıcılar"
 
-#: src/Dialogs/AddDialog.vala:611
+#: src/Dialogs/AddDialog.vala:612
 msgid "Network Printers"
 msgstr "Ağ Yazıcıları"
 
-#: src/Dialogs/AddDialog.vala:614
+#: src/Dialogs/AddDialog.vala:615
 msgid "Available Network Printers"
 msgstr "Kullanılabilir Ağ Yazıcıları"
+
+#: src/Dialogs/AddDialog.vala:651
+msgid "(recommended)"
+msgstr "(önerilen)"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
