@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:26+0000\n"
+"POT-Creation-Date: 2022-06-15 15:51+0000\n"
 "PO-Revision-Date: 2020-07-15 23:12+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@posteo.net>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -27,14 +27,16 @@ msgstr "Printer Settings"
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Configure printers, manage print queues, and view ink levels"
 
-#: data/printers.appdata.xml.in:12
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:20
+#: data/printers.appdata.xml.in:28
 msgid "Minor updates:"
 msgstr "Minor updates:"
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
+#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:22
+#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:37
 msgid "Updated translations"
 msgstr "Updated translations"
 
-#: data/printers.appdata.xml.in:20
+#: data/printers.appdata.xml.in:36
 msgid "Show a default name if a printer is unnamed"
 msgstr "Show a default name if a printer is unnamed"
