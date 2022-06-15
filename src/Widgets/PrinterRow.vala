@@ -85,8 +85,6 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         remove_button.clicked.connect (() => {
             var remove_dialog = new RemoveDialog (printer);
             remove_dialog.transient_for = (Gtk.Window) get_toplevel ();
-
-
             remove_dialog.present ();
         });
 
