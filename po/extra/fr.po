@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-15 20:13+0000\n"
-"PO-Revision-Date: 2022-05-30 10:51+0000\n"
+"PO-Revision-Date: 2022-06-16 09:04+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/fr/>\n"
@@ -37,14 +37,16 @@ msgstr "Mises à jour mineures :"
 #: data/printers.appdata.xml.in:14
 msgid "Update sidebar after adding or removing printer"
 msgstr ""
+"Mise à jour de la barre latérale après l'ajout et la suppression d'une "
+"imprimante"
 
 #: data/printers.appdata.xml.in:15
 msgid "Show the supported language for each driver"
-msgstr ""
+msgstr "Affichage de la langue prise en charge pour chaque pilote"
 
 #: data/printers.appdata.xml.in:16
 msgid "Use newer add/remove list pattern"
-msgstr ""
+msgstr "Utilisation du nouveau modèle de liste d'ajout/suppression"
 
 #: data/printers.appdata.xml.in:17 data/printers.appdata.xml.in:25
 #: data/printers.appdata.xml.in:33 data/printers.appdata.xml.in:41
