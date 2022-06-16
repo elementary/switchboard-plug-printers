@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 19:23+0000\n"
-"PO-Revision-Date: 2022-05-29 23:10+0000\n"
+"POT-Creation-Date: 2022-06-15 20:13+0000\n"
+"PO-Revision-Date: 2022-06-16 01:34+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/uk/>\n"
@@ -29,16 +29,29 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Налаштування принтерів, керування чергами друку і перегляд рівня чорнила"
 
-#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:20
-#: data/printers.appdata.xml.in:28
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:23
+#: data/printers.appdata.xml.in:31 data/printers.appdata.xml.in:39
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:22
-#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:37
+#: data/printers.appdata.xml.in:14
+msgid "Update sidebar after adding or removing printer"
+msgstr "Оновлення бічної панелі після додавання або вилучення принтера"
+
+#: data/printers.appdata.xml.in:15
+msgid "Show the supported language for each driver"
+msgstr "Показ підтримуваних мов для кожного драйвера"
+
+#: data/printers.appdata.xml.in:16
+msgid "Use newer add/remove list pattern"
+msgstr "Використано новіші шаблони додавання/видалення списку"
+
+#: data/printers.appdata.xml.in:17 data/printers.appdata.xml.in:25
+#: data/printers.appdata.xml.in:33 data/printers.appdata.xml.in:41
+#: data/printers.appdata.xml.in:48
 msgid "Updated translations"
 msgstr "Оновлені переклади"
 
-#: data/printers.appdata.xml.in:36
+#: data/printers.appdata.xml.in:47
 msgid "Show a default name if a printer is unnamed"
 msgstr "Показувати типову назву, якщо принтер не має назви"
