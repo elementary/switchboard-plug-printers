@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-16 11:12+0000\n"
-"PO-Revision-Date: 2022-06-16 09:04+0000\n"
+"PO-Revision-Date: 2022-06-16 13:37+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/fr/>\n"
@@ -46,7 +46,7 @@ msgstr "Affichage de la langue prise en charge pour chaque pilote"
 
 #: data/printers.appdata.xml.in:16
 msgid "Show color names below ink levels"
-msgstr ""
+msgstr "Affichage du nom des couleurs sous les niveau d'encre"
 
 #: data/printers.appdata.xml.in:17
 msgid "Use newer add/remove list pattern"
