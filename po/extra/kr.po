@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:26+0000\n"
+"POT-Creation-Date: 2022-06-15 20:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -24,14 +24,29 @@ msgstr ""
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 
-#: data/printers.appdata.xml.in:12
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:23
+#: data/printers.appdata.xml.in:31 data/printers.appdata.xml.in:39
 msgid "Minor updates:"
 msgstr ""
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
+#: data/printers.appdata.xml.in:14
+msgid "Update sidebar after adding or removing printer"
+msgstr ""
+
+#: data/printers.appdata.xml.in:15
+msgid "Show the supported language for each driver"
+msgstr ""
+
+#: data/printers.appdata.xml.in:16
+msgid "Use newer add/remove list pattern"
+msgstr ""
+
+#: data/printers.appdata.xml.in:17 data/printers.appdata.xml.in:25
+#: data/printers.appdata.xml.in:33 data/printers.appdata.xml.in:41
+#: data/printers.appdata.xml.in:48
 msgid "Updated translations"
 msgstr ""
 
-#: data/printers.appdata.xml.in:20
+#: data/printers.appdata.xml.in:47
 msgid "Show a default name if a printer is unnamed"
 msgstr ""

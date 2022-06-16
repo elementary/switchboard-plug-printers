@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2020-01-04 11:07+0000\n"
-"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"POT-Creation-Date: 2022-06-15 20:13+0000\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/nl/>\n"
 "Language: nl\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -40,23 +40,19 @@ msgstr "Test pagina"
 msgid "Add Printer…"
 msgstr "Printer toevoegen…"
 
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Printer verwijderen"
-
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Printers"
 msgstr "Printers"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Configureer printers, beheer printers en bekijk inkt levels"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:52
 msgid "No Printers Available"
 msgstr "Geen printers beschikbaar"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:53
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 "Maak verbinding met een printer door op het icoon op de taakbalk beneden te "
@@ -97,75 +93,81 @@ msgstr "LPD/LPR-host of -printer"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:66
 msgid "Finding nearby printers…"
 msgstr "Zoeken naar printers…"
 
-#: src/Dialogs/AddDialog.vala:86
+#: src/Dialogs/AddDialog.vala:85
 msgid "Refresh"
 msgstr "Verversen"
 
-#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: src/Dialogs/AddDialog.vala:91
+#: src/Dialogs/AddDialog.vala:90
 msgid "Next"
 msgstr "Volgende"
 
-#: src/Dialogs/AddDialog.vala:109
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "het is niet mogelijk om alle printers te laten zien"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:225
+#: src/Dialogs/AddDialog.vala:224
 msgid "Connection:"
 msgstr "Verbinding:"
 
-#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
 msgstr "Omschrijving:"
 
-#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "MerkPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
 msgid "Location:"
 msgstr "Locatie:"
 
-#: src/Dialogs/AddDialog.vala:246
+#: src/Dialogs/AddDialog.vala:245
 msgid "Lab 1 or John's desk"
 msgstr "Lab 1 of John's bureau"
 
-#: src/Dialogs/AddDialog.vala:304
+#: src/Dialogs/AddDialog.vala:266
+#, fuzzy
+#| msgid "Processing…"
+msgid "Loading…"
+msgstr "In behandeling…"
+
+#: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
 msgstr "Vorige"
 
-#: src/Dialogs/AddDialog.vala:308
+#: src/Dialogs/AddDialog.vala:297
 msgid "Add Printer"
 msgstr "Printer toevoegen"
 
-#: src/Dialogs/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(aanbevolen)"
-
-#: src/Dialogs/AddDialog.vala:605
+#: src/Dialogs/AddDialog.vala:606
 msgid "Serial"
 msgstr "Serieel"
 
-#: src/Dialogs/AddDialog.vala:608
+#: src/Dialogs/AddDialog.vala:609
 msgid "Local Printers"
 msgstr "Lokale Printers"
 
-#: src/Dialogs/AddDialog.vala:611
+#: src/Dialogs/AddDialog.vala:612
 msgid "Network Printers"
 msgstr "Netwerk Printers"
 
-#: src/Dialogs/AddDialog.vala:614
+#: src/Dialogs/AddDialog.vala:615
 msgid "Available Network Printers"
 msgstr "Beschikbaar Netwerk Printers"
+
+#: src/Dialogs/AddDialog.vala:651
+msgid "(recommended)"
+msgstr "(aanbevolen)"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
@@ -512,7 +514,7 @@ msgstr "By-pass papierlade"
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
-msgstr "Centreren"
+msgstr "Midden"
 
 #: src/Views/SetupView.vala:354
 msgid "Continuous Autofeed"
@@ -627,7 +629,13 @@ msgstr "Pauzeer"
 msgid "Resume"
 msgstr "Doorgaan"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "Printer verwijderen"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Uitgeschakeld"
 

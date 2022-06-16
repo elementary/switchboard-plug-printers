@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
+"POT-Creation-Date: 2022-06-15 20:13+0000\n"
 "PO-Revision-Date: 2019-07-22 07:24+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -41,25 +41,21 @@ msgstr "Bandomasis puslapis"
 msgid "Add Printer…"
 msgstr "Pridėti spausdintuvą…"
 
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Šalinti spausdintuvą"
-
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Printers"
 msgstr "Spausdintuvai"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Konfigūruoti spausdintuvus, tvarkyti spausdinimo eiles bei rodyti rašalo "
 "lygius"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:52
 msgid "No Printers Available"
 msgstr "Nėra prieinamų spausdintuvų"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:53
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 "Prisijunkite prie spausdintuvo, spusteldami žemiau, įrankių juostoje esančią "
@@ -100,75 +96,81 @@ msgstr "LPD/LPR serveris ar spausdintuvas"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:66
 msgid "Finding nearby printers…"
 msgstr "Ieškoma šalia esančių spausdintuvų…"
 
-#: src/Dialogs/AddDialog.vala:86
+#: src/Dialogs/AddDialog.vala:85
 msgid "Refresh"
 msgstr "Įkelti iš naujo"
 
-#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
 msgstr "Atsisakyti"
 
-#: src/Dialogs/AddDialog.vala:91
+#: src/Dialogs/AddDialog.vala:90
 msgid "Next"
 msgstr "Kitas"
 
-#: src/Dialogs/AddDialog.vala:109
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "Neįmanoma išvardyti visų prieinamų spausdintuvų"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:225
+#: src/Dialogs/AddDialog.vala:224
 msgid "Connection:"
 msgstr "Ryšys:"
 
-#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
 msgstr "Aprašas:"
 
-#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "SpausdintuvoPavadinimas X3000"
 
-#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
 msgid "Location:"
 msgstr "Vieta:"
 
-#: src/Dialogs/AddDialog.vala:246
+#: src/Dialogs/AddDialog.vala:245
 msgid "Lab 1 or John's desk"
 msgstr "1 kabinetas ar Jono stalas"
 
-#: src/Dialogs/AddDialog.vala:304
+#: src/Dialogs/AddDialog.vala:266
+#, fuzzy
+#| msgid "Processing…"
+msgid "Loading…"
+msgstr "Vykdoma…"
+
+#: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
 msgstr "Ankstesnis"
 
-#: src/Dialogs/AddDialog.vala:308
+#: src/Dialogs/AddDialog.vala:297
 msgid "Add Printer"
 msgstr "Pridėti spausdintuvą"
 
-#: src/Dialogs/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(rekomenduojama)"
-
-#: src/Dialogs/AddDialog.vala:605
+#: src/Dialogs/AddDialog.vala:606
 msgid "Serial"
 msgstr "Serijinis"
 
-#: src/Dialogs/AddDialog.vala:608
+#: src/Dialogs/AddDialog.vala:609
 msgid "Local Printers"
 msgstr "Vietiniai spausdintuvai"
 
-#: src/Dialogs/AddDialog.vala:611
+#: src/Dialogs/AddDialog.vala:612
 msgid "Network Printers"
 msgstr "Tinklo spausdintuvai"
 
-#: src/Dialogs/AddDialog.vala:614
+#: src/Dialogs/AddDialog.vala:615
 msgid "Available Network Printers"
 msgstr "Prieinami tinklo spausdintuvai"
+
+#: src/Dialogs/AddDialog.vala:651
+msgid "(recommended)"
+msgstr "(rekomenduojama)"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
@@ -626,7 +628,13 @@ msgstr "Pristabdyti"
 msgid "Resume"
 msgstr "Pratęsti"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "Šalinti spausdintuvą"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Išjungta"
 

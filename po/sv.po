@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
+"POT-Creation-Date: 2022-06-15 20:13+0000\n"
 "PO-Revision-Date: 2018-10-22 19:26+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -40,23 +40,19 @@ msgstr "Testsida"
 msgid "Add Printer…"
 msgstr "Lägg till skrivare…"
 
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Ta bort skrivare"
-
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Printers"
 msgstr "Skrivare"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Ställ in skrivare, hantera utskriftsköer och kontrollera bläcknivåer"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:52
 msgid "No Printers Available"
 msgstr "Inga skrivare tillgängliga"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:53
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 "Anslut till en skrivare genom att klicka på ikonen i verktygsfältet nedan."
@@ -96,75 +92,81 @@ msgstr "LPD/LPR-värd eller skrivare"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:66
 msgid "Finding nearby printers…"
 msgstr "Letar efter närliggande skrivare…"
 
-#: src/Dialogs/AddDialog.vala:86
+#: src/Dialogs/AddDialog.vala:85
 msgid "Refresh"
 msgstr "Uppdatera"
 
-#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/Dialogs/AddDialog.vala:91
+#: src/Dialogs/AddDialog.vala:90
 msgid "Next"
 msgstr "Nästa"
 
-#: src/Dialogs/AddDialog.vala:109
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "Omöjligt att lista alla tillgängliga skrivare"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:225
+#: src/Dialogs/AddDialog.vala:224
 msgid "Connection:"
 msgstr "Anslutning:"
 
-#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
 msgstr "Beskrivning:"
 
-#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
 msgid "Location:"
 msgstr "Plats:"
 
-#: src/Dialogs/AddDialog.vala:246
+#: src/Dialogs/AddDialog.vala:245
 msgid "Lab 1 or John's desk"
 msgstr "Labb 1 eller Svens skrivbord"
 
-#: src/Dialogs/AddDialog.vala:304
+#: src/Dialogs/AddDialog.vala:266
+#, fuzzy
+#| msgid "Processing…"
+msgid "Loading…"
+msgstr "Processar…"
+
+#: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
 msgstr "Tillbaka"
 
-#: src/Dialogs/AddDialog.vala:308
+#: src/Dialogs/AddDialog.vala:297
 msgid "Add Printer"
 msgstr "Lägg till skrivare"
 
-#: src/Dialogs/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(rekommenderad)"
-
-#: src/Dialogs/AddDialog.vala:605
+#: src/Dialogs/AddDialog.vala:606
 msgid "Serial"
 msgstr "Serie"
 
-#: src/Dialogs/AddDialog.vala:608
+#: src/Dialogs/AddDialog.vala:609
 msgid "Local Printers"
 msgstr "Lokala skrivare"
 
-#: src/Dialogs/AddDialog.vala:611
+#: src/Dialogs/AddDialog.vala:612
 msgid "Network Printers"
 msgstr "Nätverksskrivare"
 
-#: src/Dialogs/AddDialog.vala:614
+#: src/Dialogs/AddDialog.vala:615
 msgid "Available Network Printers"
 msgstr "Tillgängliga nätverksskrivare"
+
+#: src/Dialogs/AddDialog.vala:651
+msgid "(recommended)"
+msgstr "(rekommenderad)"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
@@ -625,7 +627,13 @@ msgstr "Pausa"
 msgid "Resume"
 msgstr "Återuppta"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "Ta bort skrivare"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Inaktiverad"
 

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2020-04-30 17:10+0000\n"
+"POT-Creation-Date: 2022-06-15 20:13+0000\n"
+"PO-Revision-Date: 2022-06-16 09:04+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/printers.appdata.xml.in:5
 msgid "Printer Settings"
@@ -29,14 +29,31 @@ msgstr ""
 "Configurer les imprimantes, gérer la file d'impression et voir le niveau "
 "d'encre"
 
-#: data/printers.appdata.xml.in:12
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:23
+#: data/printers.appdata.xml.in:31 data/printers.appdata.xml.in:39
 msgid "Minor updates:"
-msgstr "Mises à jour mineures :"
+msgstr "Mises à jour mineures :"
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
+#: data/printers.appdata.xml.in:14
+msgid "Update sidebar after adding or removing printer"
+msgstr ""
+"Mise à jour de la barre latérale après l'ajout et la suppression d'une "
+"imprimante"
+
+#: data/printers.appdata.xml.in:15
+msgid "Show the supported language for each driver"
+msgstr "Affichage de la langue prise en charge pour chaque pilote"
+
+#: data/printers.appdata.xml.in:16
+msgid "Use newer add/remove list pattern"
+msgstr "Utilisation du nouveau modèle de liste d'ajout/suppression"
+
+#: data/printers.appdata.xml.in:17 data/printers.appdata.xml.in:25
+#: data/printers.appdata.xml.in:33 data/printers.appdata.xml.in:41
+#: data/printers.appdata.xml.in:48
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/printers.appdata.xml.in:20
+#: data/printers.appdata.xml.in:47
 msgid "Show a default name if a printer is unnamed"
 msgstr "Afficher un nom par défaut si l'imprimante n'a pas été nommée"

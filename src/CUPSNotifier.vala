@@ -63,7 +63,10 @@ public class Cups.Notifier : Object {
         Bus.get_proxy.begin<NotifierDBus> (BusType.SYSTEM, "org.cups.cupsd.Notifier", "/org/cups/cupsd/Notifier", GLib.DBusProxyFlags.NONE, null, (obj, res) => {
             try {
                 dbus_notifier = Bus.get_proxy.end (res);
-                ((GLib.DBusProxy) dbus_notifier).g_connection.signal_subscribe (null, "org.cups.cupsd.Notifier", null, "/org/cups/cupsd/Notifier", null, GLib.DBusSignalFlags.NONE, (GLib.DBusSignalCallback)subscription_callback);
+                ((GLib.DBusProxy) dbus_notifier).g_connection.signal_subscribe (
+                    null, "org.cups.cupsd.Notifier", null, "/org/cups/cupsd/Notifier",
+                    null, GLib.DBusSignalFlags.NONE, subscription_callback
+                );
             } catch (IOError e) {
                 critical (e.message);
             }
@@ -71,19 +74,14 @@ public class Cups.Notifier : Object {
     }
 
     private void subscription_callback (DBusConnection connection, string? sender_name, string object_path, string interface_name, string signal_name, Variant parameters) {
-        switch (parameters.n_children ()) {
-            case 1:
-                send_server_event (signal_name, parameters);
-                break;
-            case 6:
-                send_printer_event (signal_name, parameters);
-                break;
-            case 11:
-                send_job_event (signal_name, parameters);
-                break;
-            default:
-                debug ("Signal `%s` isn't handled by the plug", signal_name);
-                break;
+        if (signal_name.has_prefix ("Server")) {
+            send_server_event (signal_name, parameters);
+        } else if (signal_name.has_prefix ("Printer")) {
+            send_printer_event (signal_name, parameters);
+        } else if (signal_name.has_prefix ("Job")) {
+            send_job_event (signal_name, parameters);
+        } else {
+            warning ("Unhandled CUPSNotifier signal %s", signal_name);
         }
     }
 

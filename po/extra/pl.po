@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2019-11-17 20:25+0000\n"
-"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
+"POT-Creation-Date: 2022-06-15 20:13+0000\n"
+"PO-Revision-Date: 2021-11-07 12:18+0000\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/pl/>\n"
 "Language: pl\n"
@@ -18,24 +18,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/printers.appdata.xml.in:5
 msgid "Printer Settings"
-msgstr ""
+msgstr "Ustawienia drukarki"
 
 #: data/printers.appdata.xml.in:6
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
+"Konfiguruj drukarki, zarządzaj kolejkami wydruku oraz sprawdź poziom "
+"atramentu"
 
-#: data/printers.appdata.xml.in:12
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:23
+#: data/printers.appdata.xml.in:31 data/printers.appdata.xml.in:39
 msgid "Minor updates:"
+msgstr "Mniejsze aktualizacje:"
+
+#: data/printers.appdata.xml.in:14
+msgid "Update sidebar after adding or removing printer"
 msgstr ""
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
+#: data/printers.appdata.xml.in:15
+msgid "Show the supported language for each driver"
+msgstr ""
+
+#: data/printers.appdata.xml.in:16
+msgid "Use newer add/remove list pattern"
+msgstr ""
+
+#: data/printers.appdata.xml.in:17 data/printers.appdata.xml.in:25
+#: data/printers.appdata.xml.in:33 data/printers.appdata.xml.in:41
+#: data/printers.appdata.xml.in:48
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/printers.appdata.xml.in:20
+#: data/printers.appdata.xml.in:47
 msgid "Show a default name if a printer is unnamed"
-msgstr ""
+msgstr "Wyświetlaj nazwę domyślną, jeżeli drukarka nie ma nazwy"

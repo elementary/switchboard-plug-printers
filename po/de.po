@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-07-11 02:42+0000\n"
+"POT-Creation-Date: 2022-06-15 20:13+0000\n"
+"PO-Revision-Date: 2022-06-16 01:34+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -40,25 +40,21 @@ msgstr "Testseite"
 msgid "Add Printer…"
 msgstr "Drucker hinzufügen …"
 
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Drucker entfernen"
-
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Printers"
 msgstr "Drucker"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Drucker einrichten, Druckwarteschlangen verwalten und Tintenfüllstände "
 "anzeigen"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:52
 msgid "No Printers Available"
 msgstr "Keine Drucker eingerichtet"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:53
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 "Drucker einbinden mit Klick auf das Symbol »+« in der Werkzeugleiste unten."
@@ -98,75 +94,79 @@ msgstr "LPD/LPR-Rechner oder -Drucker"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:66
 msgid "Finding nearby printers…"
 msgstr "Drucker in der Nähe suchen …"
 
-#: src/Dialogs/AddDialog.vala:86
+#: src/Dialogs/AddDialog.vala:85
 msgid "Refresh"
 msgstr "Aktualisieren"
 
-#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
+#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
 #: src/Widgets/JobRow.vala:55
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: src/Dialogs/AddDialog.vala:91
+#: src/Dialogs/AddDialog.vala:90
 msgid "Next"
 msgstr "Weiter"
 
-#: src/Dialogs/AddDialog.vala:109
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "Nicht möglich, alle verfügbaren Drucker aufzulisten"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:225
+#: src/Dialogs/AddDialog.vala:224
 msgid "Connection:"
 msgstr "Verbindung:"
 
-#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
 msgstr "Beschreibung:"
 
-#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
 msgid "Location:"
 msgstr "Ort:"
 
-#: src/Dialogs/AddDialog.vala:246
+#: src/Dialogs/AddDialog.vala:245
 msgid "Lab 1 or John's desk"
 msgstr "Labor 1 oder Johns Schreibtisch"
 
-#: src/Dialogs/AddDialog.vala:304
+#: src/Dialogs/AddDialog.vala:266
+msgid "Loading…"
+msgstr "Laden …"
+
+#: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
 msgstr "Zurück"
 
-#: src/Dialogs/AddDialog.vala:308
+#: src/Dialogs/AddDialog.vala:297
 msgid "Add Printer"
 msgstr "Drucker hinzufügen"
 
-#: src/Dialogs/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(empfohlen)"
-
-#: src/Dialogs/AddDialog.vala:605
+#: src/Dialogs/AddDialog.vala:606
 msgid "Serial"
 msgstr "Serielle Schnittstelle"
 
-#: src/Dialogs/AddDialog.vala:608
+#: src/Dialogs/AddDialog.vala:609
 msgid "Local Printers"
 msgstr "Lokale Drucker"
 
-#: src/Dialogs/AddDialog.vala:611
+#: src/Dialogs/AddDialog.vala:612
 msgid "Network Printers"
 msgstr "Netzwerkdrucker"
 
-#: src/Dialogs/AddDialog.vala:614
+#: src/Dialogs/AddDialog.vala:615
 msgid "Available Network Printers"
 msgstr "Verfügbare Netzwerkdrucker"
+
+#: src/Dialogs/AddDialog.vala:651
+msgid "(recommended)"
+msgstr "(empfohlen)"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
@@ -262,25 +262,25 @@ msgstr "Angehalten"
 #: src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
-msgstr "Farbrestbehälter fast voll"
+msgstr "Resttonerbehälter fast voll"
 
 #. / Translators: The printer marker supply waste receptacle is full
 #: src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
-msgstr "Farbrestbehälter voll"
+msgstr "Resttonerbehälter voll"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:73
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr "Der optische Bildübertrager ist beinahe verbraucht"
+msgstr "Die Bildtrommel muss bald ausgetauscht werden"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:75
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr "Der optische Bildübertrager funktioniert nicht mehr"
+msgstr "Die Bildtrommel funktioniert nicht mehr"
 
 #: src/Objects/Printer.vala:170
 msgid "Unnamed Printer"
@@ -406,47 +406,47 @@ msgstr "Farbmodus:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr "Obere Kassette"
+msgstr "Oberes Fach"
 
 #: src/Views/SetupView.vala:239
 msgid "Middle Bin"
-msgstr "Mittlere Kassette"
+msgstr "Mittleres Fach"
 
 #: src/Views/SetupView.vala:242
 msgid "Bottom Bin"
-msgstr "Untere Kassette"
+msgstr "Unteres Fach"
 
 #: src/Views/SetupView.vala:245
 msgid "Side Bin"
-msgstr "Seitliche Kassette"
+msgstr "Seitliches Fach"
 
 #: src/Views/SetupView.vala:248
 msgid "Left Bin"
-msgstr "Linke Kassette"
+msgstr "Linkes Fach"
 
 #: src/Views/SetupView.vala:251
 msgid "Right Bin"
-msgstr "Rechte Kassette"
+msgstr "Rechtes Fach"
 
 #: src/Views/SetupView.vala:254
 msgid "Center Bin"
-msgstr "Zentrale Kassette"
+msgstr "Zentrales Fach"
 
 #: src/Views/SetupView.vala:257
 msgid "Rear Bin"
-msgstr "Hintere Kassette"
+msgstr "Hinteres Fach"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr "Face-Up-Kassette"
+msgstr "Face-Up-Fach"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Down Bin"
-msgstr "Face-Down-Kassette"
+msgstr "Face-Down-Fach"
 
 #: src/Views/SetupView.vala:266
 msgid "Large Capacity Bin"
-msgstr "Großraumkassette"
+msgstr "Fach mit großer Kapazität"
 
 #: src/Views/SetupView.vala:269
 msgid "My Mailbox"
@@ -624,7 +624,11 @@ msgstr "Pausieren"
 msgid "Resume"
 msgstr "Fortsetzen"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+msgid "Remove this printer"
+msgstr "Diesen Drucker entfernen"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Deaktiviert"
 

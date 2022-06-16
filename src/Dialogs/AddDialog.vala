@@ -46,8 +46,7 @@ public class Printers.AddDialog : Granite.Dialog {
     private Granite.Widgets.AlertView alertview;
     private Gtk.Stack drivers_stack;
     private Gee.LinkedList<Printers.DeviceDriver> drivers;
-    private Gtk.ListStore driver_list_store;
-    private Gtk.TreeView driver_view;
+    private Gtk.ListBox driver_view;
     private Gtk.ListStore make_list_store;
     private Gtk.TreeView make_view;
     private Gtk.ListBox devices_list;
@@ -263,18 +262,8 @@ public class Printers.AddDialog : Granite.Dialog {
         make_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
         make_scrolled.add (make_view);
 
-        driver_list_store = new Gtk.ListStore (2, typeof (string), typeof (DeviceDriver));
-
-        driver_view = new Gtk.TreeView.with_model (driver_list_store);
-        driver_view.headers_visible = false;
-        driver_view.get_selection ().mode = Gtk.SelectionMode.BROWSE;
-        driver_view.set_tooltip_column (0);
-        driver_view.set_search_column (0);
-
-        var driver_cellrenderer = new Gtk.CellRendererText ();
-        driver_cellrenderer.ellipsize_set = true;
-        driver_cellrenderer.ellipsize = Pango.EllipsizeMode.END;
-        driver_view.insert_column_with_attributes (-1, null, driver_cellrenderer, "text", 0);
+        driver_view = new Gtk.ListBox ();
+        driver_view.set_placeholder (new Gtk.Label (_("Loading…")));
 
         var driver_scrolled = new Gtk.ScrolledWindow (null, null);
         driver_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
@@ -372,19 +361,17 @@ public class Printers.AddDialog : Granite.Dialog {
             destroy ();
         });
 
-        var driver_selection = driver_view.get_selection ();
-        driver_selection.changed.connect (() => {
-            Gtk.TreeModel model;
-            Gtk.TreeIter iter;
-            if (driver_selection.get_selected (out model, out iter)) {
-                var val = Value (typeof (Printers.DeviceDriver));
-                model.get_value (iter, 1, out val);
-                selected_driver = (Printers.DeviceDriver) val.get_object ();
+        driver_view.row_selected.connect ((row) => {
+            if (row != null) {
+                selected_driver = ((DriverRow)row).driver;
                 bool can_go_next = true;
                 can_go_next &= !connection_entry.visible || connection_entry.text.contains ("://");
                 can_go_next &= selected_driver != null;
                 can_go_next &= description_entry.text != "";
                 next_button.sensitive = can_go_next;
+            } else {
+                next_button.sensitive = false;
+                selected_driver = null;
             }
         });
 
@@ -512,9 +499,8 @@ public class Printers.AddDialog : Granite.Dialog {
             make_list_store.get_value (iter, 0, out val);
             populate_driver_list_from_make (val.get_string ());
         }
-        drivers_stack.set_visible_child_name ("drivers");
 
-        make_selection.changed.connect (() => {
+        make_selection.changed.connect_after (() => {
             Gtk.TreeModel model;
             Gtk.TreeIter iter;
             if (make_selection.get_selected (out model, out iter)) {
@@ -528,35 +514,50 @@ public class Printers.AddDialog : Granite.Dialog {
                 populate_driver_list_from_make (val.get_string (), make_and_model);
             }
         });
+
+        drivers_stack.visible_child_name = "drivers";
     }
 
-    private void populate_driver_list_from_make (string make, string? selection = null) {
-        driver_list_store.clear ();
+    private void populate_driver_list_from_make (string make, string? selected_make_and_model = null) {
+        driver_cancellable.cancel ();
+        driver_cancellable = new Cancellable ();
+        driver_view.@foreach ((row) => {
+            driver_view.remove (row);
+        });
+
+        find_drivers.begin (make, selected_make_and_model, (obj, res) => {
+            if (!driver_cancellable.is_cancelled ()) {
+                var row_to_select = find_drivers.end (res);
+                driver_view.select_row (row_to_select);
+            }
+
+            driver_cancellable = null;
+        });
+
+    }
+
+    private async Gtk.ListBoxRow? find_drivers (string make, string? selected_make_and_model) {
+        Gtk.ListBoxRow? row_to_select = null;
         foreach (var driver in drivers) {
-            if (driver.ppd_make != make) {
-                continue;
-            }
-
-            Gtk.TreeIter iter;
-            driver_list_store.append (out iter);
-            var model = driver.ppd_make_and_model;
-            model = model.replace ("(recommended)", _("(recommended)"));
-            driver_list_store.set (iter, 0, model, 1, driver);
-            if (selection != null && (selection in driver.ppd_make_and_model || selection == driver.get_model_from_id ())) {
-                driver_view.get_selection ().select_iter (iter);
-                driver_view.scroll_to_cell (driver_list_store.get_path (iter), null, true, 0.0f, 0.0f);
-            }
-
             if (driver_cancellable.is_cancelled ()) {
-                return;
+                return null;
             }
+
+            if (driver.ppd_make == make) {
+                var row = new DriverRow (driver);
+                driver_view.add (row);
+                if (driver.ppd_make_and_model == selected_make_and_model) {
+                   row_to_select = row;
+                }
+            }
+
+            // This greatly speeds up constructing the list and also allows the function
+            // to be cancelled.
+            Idle.add (find_drivers.callback);
+            yield;
         }
 
-        if (selected_driver == null && driver_view.get_selection ().count_selected_rows () < 1) {
-            Gtk.TreeIter iter;
-            driver_list_store.get_iter_first (out iter);
-            driver_view.get_selection ().select_iter (iter);
-        }
+        return row_to_select;
     }
 
     private static int temp_device_list_sort (TempDeviceRow row1, TempDeviceRow row2) {
@@ -635,6 +636,44 @@ public class Printers.AddDialog : Granite.Dialog {
             ((Gtk.Misc)label).xalign = 0;
             grid.add (label);
             add (grid);
+            show_all ();
+        }
+    }
+
+    public class DriverRow : Gtk.ListBoxRow {
+        public DeviceDriver driver { get; construct; }
+        public DriverRow (DeviceDriver driver) {
+            Object (driver: driver);
+        }
+
+        construct {
+            var model = driver.ppd_make_and_model;
+            model = model.replace ("(recommended)", _("(recommended)"));
+
+            var model_label = new Gtk.Label (model) {
+                halign = Gtk.Align.START,
+                ellipsize = Pango.EllipsizeMode.MIDDLE
+            };
+
+            var detail_label = new Gtk.Label ("%s — %s".printf (driver.ppd_natural_language, driver.ppd_name)) {
+                halign = Gtk.Align.START,
+                ellipsize = Pango.EllipsizeMode.MIDDLE
+            };
+
+            unowned var style_context = detail_label.get_style_context ();
+            style_context.add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+            style_context.add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+            var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
+                margin_top = 6,
+                margin_start = 6,
+                margin_bottom = 6,
+                margin_end = 6
+            };
+            box.add (model_label);
+            box.add (detail_label);
+
+            add (box);
             show_all ();
         }
     }

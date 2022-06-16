@@ -7,6 +7,17 @@
   <icon type="stock">printer</icon>
   <translation type="gettext">printers-plug</translation>
   <releases>
+    <release version="2.1.11" date="2022-06-15" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Update sidebar after adding or removing printer</li>
+          <li>Show the supported language for each driver</li>
+          <li>Use newer add/remove list pattern</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1.10" date="2021-07-21" urgency="medium">
       <description>
         <p>Minor updates:</p>

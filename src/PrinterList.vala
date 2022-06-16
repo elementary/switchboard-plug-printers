@@ -46,18 +46,20 @@ public class Printers.PrinterList : Gtk.Grid {
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        var add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON);
-        add_button.tooltip_text = _("Add Printer…");
-        var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
-        remove_button.tooltip_text = _("Remove Printer");
-        remove_button.sensitive = false;
+
+        var add_button = new Gtk.Button.with_label (_("Add Printer…")) {
+            always_show_image = true,
+            image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            margin_top = 3,
+            margin_bottom = 3
+        };
+        add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
         actionbar.add (add_button);
-        actionbar.add (remove_button);
         add (scrolled);
         add (actionbar);
 
         list_box.row_selected.connect ((row) => {
-            remove_button.sensitive = (row != null);
             if (row != null) {
                 stack.set_visible_child (((PrinterRow) row).page);
             }
@@ -75,14 +77,6 @@ public class Printers.PrinterList : Gtk.Grid {
             }
 
             add_dialog.present ();
-        });
-
-        remove_button.clicked.connect (() => {
-            var printer = ((PrinterRow)list_box.get_selected_row ()).printer;
-
-            var remove_dialog = new RemoveDialog (printer);
-            remove_dialog.transient_for = (Gtk.Window) get_toplevel ();
-            remove_dialog.present ();
         });
 
         unowned PrinterManager manager = PrinterManager.get_default ();
