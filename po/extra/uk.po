@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-16 11:12+0000\n"
-"PO-Revision-Date: 2022-06-16 01:34+0000\n"
+"PO-Revision-Date: 2022-06-16 15:12+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/uk/>\n"
@@ -44,7 +44,7 @@ msgstr "Показ підтримуваних мов для кожного др�
 
 #: data/printers.appdata.xml.in:16
 msgid "Show color names below ink levels"
-msgstr ""
+msgstr "Показ назв кольорів під рівнем чорнил"
 
 #: data/printers.appdata.xml.in:17
 msgid "Use newer add/remove list pattern"
