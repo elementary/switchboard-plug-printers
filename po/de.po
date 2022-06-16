@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-15 20:13+0000\n"
-"PO-Revision-Date: 2021-08-23 11:33+0000\n"
-"Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
+"PO-Revision-Date: 2022-06-16 01:34+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
 "Language: de\n"
@@ -137,10 +137,8 @@ msgid "Lab 1 or John's desk"
 msgstr "Labor 1 oder Johns Schreibtisch"
 
 #: src/Dialogs/AddDialog.vala:266
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "Bearbeiten …"
+msgstr "Laden …"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
@@ -627,10 +625,8 @@ msgid "Resume"
 msgstr "Fortsetzen"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
-msgstr "Drucker entfernen"
+msgstr "Diesen Drucker entfernen"
 
 #: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
