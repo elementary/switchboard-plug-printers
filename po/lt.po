@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 20:13+0000\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
 "PO-Revision-Date: 2019-07-22 07:24+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -592,31 +592,31 @@ msgstr "1 kabinetas arba Jono stalas"
 msgid "Use as default printer:"
 msgstr "Naudoti kaip numatytąjį spausdintuvą:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "Juoda (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "Juoda (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "Juoda"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "Geltona"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "Žydra"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "Purpurinė"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr "Trispalvė"
 

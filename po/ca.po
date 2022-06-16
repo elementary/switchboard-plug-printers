@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 20:13+0000\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
 "PO-Revision-Date: 2019-09-19 00:23+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -590,31 +590,31 @@ msgstr "Laboratori 1 o Escriptori del Joan"
 msgid "Use as default printer:"
 msgstr "Usa com a impressora per defecte:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "Negre (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "Negre (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "Negre"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "Groc"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "Cian"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr "Tricolor"
 

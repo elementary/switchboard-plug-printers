@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 20:13+0000\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
 "PO-Revision-Date: 2020-10-24 13:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -592,31 +592,31 @@ msgstr "Laboratorio 1 o Scrivania di John"
 msgid "Use as default printer:"
 msgstr "Utilizza come stampante predefinita:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "Nero (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "Nero (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "Nero"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "Giallo"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "Ciano"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr "Tricromia"
 
