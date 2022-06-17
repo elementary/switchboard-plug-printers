@@ -83,13 +83,21 @@ public class Printers.JobsView : Gtk.Frame {
     }
 
     public void clear_queue () {
-        // Do we need to confirmation this action?
-        list_box.@foreach ((row) => {
-            var job = ((JobRow)row).job;
-            job.purge ();
+        var dialog = new ClearQueueDialog (printer);
+        dialog.response.connect ((response_id) => {
+            dialog.destroy ();
+
+            if (response_id == Gtk.ResponseType.OK) {
+                list_box.@foreach ((row) => {
+                    var job = ((JobRow)row).job;
+                    job.purge ();
+                });
+
+                refresh_job_list ();
+            }
         });
 
-        refresh_job_list ();
+        dialog.present ();
     }
 
     private void refresh_job_list () {
@@ -99,7 +107,9 @@ public class Printers.JobsView : Gtk.Frame {
 
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
         foreach (var job in jobs) {
-            list_box.add (new JobRow (printer, job));
+            if (!job.canceled_or_aborted) {
+                list_box.add (new JobRow (printer, job));
+            }
         }
 
         n_jobs = list_box.get_children ().length ();

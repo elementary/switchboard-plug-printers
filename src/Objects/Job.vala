@@ -27,6 +27,14 @@ public class Printers.Job : GLib.Object {
             return cjob.id;
         }
     }
+
+    public bool canceled_or_aborted {
+        get {
+            return (cjob.state in CUPS.IPP.JobState.CANCELED) ||
+                   (cjob.state in CUPS.IPP.JobState.ABORTED);
+        }
+    }
+
     public signal void stopped ();
     public signal void completed ();
     public signal void state_changed ();
