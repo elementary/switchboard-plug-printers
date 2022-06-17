@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
 "PO-Revision-Date: 2019-08-23 22:22+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -39,10 +39,6 @@ msgstr "Página de teste"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "Adicionar impressora…"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Remover impressora"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -592,31 +588,31 @@ msgstr "Laboratório 1 ou Mesa do João"
 msgid "Use as default printer:"
 msgstr "Usar como impressora padrão:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "Preto (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "Preto (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "Preto"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "Amarelo"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "Ciano"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr "Tricolor"
 
@@ -628,7 +624,13 @@ msgstr "Pausa"
 msgid "Resume"
 msgstr "Resumo"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "Remover impressora"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Desabilitado"
 

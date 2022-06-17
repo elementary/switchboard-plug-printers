@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
 "PO-Revision-Date: 2021-05-13 11:04+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -39,10 +39,6 @@ msgstr "测试页"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "添加打印机…"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "移除打印机"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -589,31 +585,31 @@ msgstr "Lab 1 或 John's Desk"
 msgid "Use as default printer:"
 msgstr "设为默认打印机："
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "黑色 (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "黑色 (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "黑色"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "黄色"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "青色"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "品红"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr "三色"
 
@@ -625,7 +621,13 @@ msgstr "暂停"
 msgid "Resume"
 msgstr "继续"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "移除打印机"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "已禁用"
 

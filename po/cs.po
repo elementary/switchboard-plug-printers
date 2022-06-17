@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
 "PO-Revision-Date: 2020-05-30 20:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -39,10 +39,6 @@ msgstr "Zkušební stránka"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "Přidat tiskárnu…"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Odstranit tiskárnu"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -592,31 +588,31 @@ msgstr "Laboratoř 1 nebo Honzův stůl"
 msgid "Use as default printer:"
 msgstr "Požívat jako výchozí tiskárnu:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "Černá (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "Černá (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "Černá (Black)"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "Žlutá (Yellow)"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "Tyrkysová (Cyan)"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "Purpurová (Magenta)"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr "Tříbarevná"
 
@@ -628,7 +624,13 @@ msgstr "Pozastavit"
 msgid "Resume"
 msgstr "Pokračovat"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "Odstranit tiskárnu"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Vypnuto"
 

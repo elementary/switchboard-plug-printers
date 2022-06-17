@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
 "PO-Revision-Date: 2019-07-21 03:24+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -39,10 +39,6 @@ msgstr "시험 페이지"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "프린터 추가…"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "프린터 제거"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -590,31 +586,31 @@ msgstr "연구실 1 또는 누군가의 책상"
 msgid "Use as default printer:"
 msgstr "기본 프린터로 사용함:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "검은색 (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "검은색 (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "검은색"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "노란색"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "청록색"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "진홍색"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr "삼원색"
 
@@ -626,7 +622,13 @@ msgstr "일시 중지"
 msgid "Resume"
 msgstr "다시 작동"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "프린터 제거"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "사용 안 함"
 

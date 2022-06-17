@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
-"PO-Revision-Date: 2019-09-19 00:23+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"PO-Revision-Date: 2022-06-16 15:12+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ca/>\n"
 "Language: ca\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:38
@@ -39,10 +39,6 @@ msgstr "Pàgina de prova"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "Afegeix una impressora…"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Suprimeix la impressora"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -141,10 +137,8 @@ msgid "Lab 1 or John's desk"
 msgstr "Laboratori 1 o Escriptori del Joan"
 
 #: src/Dialogs/AddDialog.vala:266
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "Es processa…"
+msgstr "Es carrega…"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
@@ -594,31 +588,31 @@ msgstr "Laboratori 1 o Escriptori del Joan"
 msgid "Use as default printer:"
 msgstr "Usa com a impressora per defecte:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "Negre (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "Negre (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "Negre"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "Groc"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "Cian"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr "Tricolor"
 
@@ -630,7 +624,11 @@ msgstr "Pausa"
 msgid "Resume"
 msgstr "Reprèn"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+msgid "Remove this printer"
+msgstr "Suprimeix aquesta impressora"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Inhabilitat"
 

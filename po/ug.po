@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
 "PO-Revision-Date: 2017-01-02 07:57+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: \n"
@@ -38,10 +38,6 @@ msgstr "سىناق بەت"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "پرىنتېر قىتىش...."
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "پرىنتېرنى چىقىرىۋېتىش"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -606,31 +602,31 @@ msgstr "Lab 1 ياكى John's desk"
 msgid "Use as default printer:"
 msgstr "سۈكۈتتىكى پرىنتېر قىلىپ ئىشلىتىش"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "قارا (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "قارا (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "قارا"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "سېرىق"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "توق يېشىل"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "ھال رەڭ"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr ""
 
@@ -642,7 +638,13 @@ msgstr ""
 msgid "Resume"
 msgstr ""
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "پرىنتېرنى چىقىرىۋېتىش"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr ""
 

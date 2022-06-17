@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 15:51+0000\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
 "PO-Revision-Date: 2019-07-21 03:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -39,10 +39,6 @@ msgstr "テストページ"
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
 msgstr "プリンターを追加…"
-
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "プリンターを削除"
 
 #: src/Plug.vala:38
 msgid "Printers"
@@ -590,31 +586,31 @@ msgstr "場所を入力"
 msgid "Use as default printer:"
 msgstr "デフォルトのプリンターとして使う:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "黒 (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "黒 (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "ブラック"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "イエロー"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "シアン"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "マゼンタ"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr "3色"
 
@@ -626,7 +622,13 @@ msgstr "一時停止"
 msgid "Resume"
 msgstr "再開"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "プリンターを削除"
+
+#: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "無効"
 
