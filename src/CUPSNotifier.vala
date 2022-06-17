@@ -40,9 +40,6 @@ public class Cups.Notifier : Object {
     public signal void server_stopped (string text);
     public signal void server_audit (string text);
 
-    public signal void printer_restarted (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs);
-    public signal void printer_shutdown (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs);
-    public signal void printer_stopped (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs);
     public signal void printer_state_changed (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs);
     public signal void printer_finishings_changed (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs);
     public signal void printer_media_changed (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs);
@@ -113,16 +110,11 @@ public class Cups.Notifier : Object {
         var state = parameters.get_child_value (3).get_uint32 ();
         var state_reasons = parameters.get_child_value (4).get_string ();
         var is_accepting_jobs = parameters.get_child_value (5).get_boolean ();
+
         switch (signal_name) {
             case "PrinterRestarted":
-                printer_restarted (text, printer_uri, name, state, state_reasons, is_accepting_jobs);
-                break;
             case "PrinterShutdown":
-                printer_shutdown (text, printer_uri, name, state, state_reasons, is_accepting_jobs);
-                break;
             case "PrinterStopped":
-                printer_stopped (text, printer_uri, name, state, state_reasons, is_accepting_jobs);
-                break;
             case "PrinterStateChanged":
                 printer_state_changed (text, printer_uri, name, state, state_reasons, is_accepting_jobs);
                 break;
