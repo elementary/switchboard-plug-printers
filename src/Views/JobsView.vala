@@ -56,7 +56,7 @@ public class Printers.JobsView : Gtk.Frame {
 
             var jobs_ = printer.get_jobs (true, CUPS.WhichJobs.ALL);
             foreach (var job in jobs_) {
-                if (job.cjob.id == job_id) {
+                if (job.uid == job_id) {
                     list_box.add (new JobRow (printer, job));
                     break;
                 }
@@ -65,14 +65,14 @@ public class Printers.JobsView : Gtk.Frame {
     }
 
     static int compare (Gtk.ListBoxRow a, Gtk.ListBoxRow b) {
-        var timea = (((JobRow)a).job.get_used_time ());
-        var timeb = (((JobRow)b).job.get_used_time ());
-        return timeb.compare (timea);
+        var timea = (((JobRow)a).job.get_display_time ());
+        var timeb = (((JobRow)b).job.get_display_time ());
+        return timea.compare (timeb);
     }
 
     [CCode (instance_pos = -1)]
     private void update_header (JobRow row1, JobRow? row2) {
-        if (row1.job.cjob.state == CUPS.IPP.JobState.COMPLETED && (row2 == null || row1.job.cjob.state != row2.job.cjob.state)) {
+        if (row1.job.state == CUPS.IPP.JobState.COMPLETED && (row2 == null || row1.job.state != row2.job.state)) {
             var label = new Gtk.Label (_("Completed Jobs"));
             label.xalign = 0;
             label.margin = 3;

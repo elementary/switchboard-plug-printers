@@ -21,43 +21,50 @@
  */
 
 public class Printers.Job : GLib.Object {
-    public unowned CUPS.Job cjob;
-    public signal void stopped ();
-    public signal void completed ();
+    // public unowned CUPS.Job cjob;
     public signal void state_changed ();
 
-    private unowned Printer printer;
-    private int uid;
+    public unowned Printer printer { get; construct; }
+    public int uid { get; construct; }
+    public CUPS.IPP.JobState state { get; set construct; }
+    public string title { get; construct; }
+    public string format { get; construct; }
+    public DateTime creation_time { get; construct; }
+    public DateTime? completed_time { get; set; default = null; }
+    public DateTime? start_time { get; set; default = null; }
 
     public Job (CUPS.Job cjob, Printer printer) {
-        this.cjob = cjob;
-        this.printer = printer;
-        uid = cjob.id;
+        Object (
+            creation_time: new DateTime.from_unix_local (cjob.creation_time),
+            start_time: new DateTime.from_unix_local (cjob.processing_time),
+            completed_time: new DateTime.from_unix_local (cjob.completed_time),
+            state: cjob.state,
+            title: cjob.title,
+            printer: printer,
+            format: cjob.format,
+            uid: cjob.id
+        );
+
         unowned Cups.Notifier notifier = Cups.Notifier.get_default ();
-        if (cjob.state != CUPS.IPP.JobState.CANCELED && cjob.state != CUPS.IPP.JobState.ABORTED && cjob.state != CUPS.IPP.JobState.COMPLETED) {
-            notifier.job_completed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
-                if (job_id == uid) {
-                    completed ();
-                }
-            });
+        if (state != CUPS.IPP.JobState.CANCELED &&
+            state != CUPS.IPP.JobState.ABORTED &&
+            state != CUPS.IPP.JobState.COMPLETED) {
 
-            notifier.job_stopped.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
-                if (job_id == uid) {
-                    stopped ();
-                }
-            });
+            notifier.job_progress.connect (on_job_state_changed);
+            notifier.job_completed.connect (on_job_state_changed);
+            notifier.job_state_changed.connect (on_job_state_changed);
+        }
+    }
 
-            notifier.job_state.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
-                if (job_id == uid) {
-                    state_changed ();
-                }
-            });
+    private void on_job_state_changed (
+        string text, string printer_uri, string name, uint32 printer_state, string state_reasons, bool is_accepting_jobs,
+        uint32 job_id, uint32 job_state, string job_state_reason, string job_name, uint32 job_impressions_completed) {
 
-            notifier.job_state_changed.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
-                if (job_id == uid) {
-                    state_changed ();
-                }
-            });
+
+        if (job_id == uid) {
+            state = (CUPS.IPP.JobState)job_state;
+warning ("job state changed %s", state.to_string ());
+            state_changed ();
         }
     }
 
@@ -85,18 +92,18 @@ public class Printers.Job : GLib.Object {
         }
     }
 
-    public DateTime get_used_time () {
-        if (cjob.completed_time != 0) {
-            return new DateTime.from_unix_local (cjob.completed_time);
-        } else if (cjob.processing_time != 0) {
-            return new DateTime.from_unix_local (cjob.processing_time);
+    public DateTime get_display_time () {
+        if (completed_time != null) {
+            return completed_time;
+        } else if (start_time != null) {
+            return start_time;
         } else {
-            return new DateTime.from_unix_local (cjob.creation_time);
+            return creation_time;
         }
     }
 
     public string translated_job_state () {
-        switch (cjob.state) {
+        switch (state) {
             case CUPS.IPP.JobState.PENDING:
                 return _("Job Pending");
             case CUPS.IPP.JobState.HELD:
@@ -116,7 +123,7 @@ public class Printers.Job : GLib.Object {
     }
 
     public GLib.Icon? state_icon () {
-        switch (cjob.state) {
+        switch (state) {
             case CUPS.IPP.JobState.PENDING:
             case CUPS.IPP.JobState.PROCESSING:
                 return null;
@@ -133,7 +140,6 @@ public class Printers.Job : GLib.Object {
     }
 
     public GLib.Icon get_file_icon () {
-        var title = cjob.title.down ();
         if (".png" in title || ".jpg" in title || ".jpeg" in title || ".bmp" in title) {
             return new ThemedIcon ("image-x-generic");
         } else if (".xcf" in title) {
@@ -144,7 +150,7 @@ public class Printers.Job : GLib.Object {
             return new ThemedIcon ("application-pdf");
         }
 
-        return new ThemedIcon (cjob.format.replace ("/", "-"));
+        return new ThemedIcon (format.replace ("/", "-"));
     }
 
     public string get_hold_until () {
