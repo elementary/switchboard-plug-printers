@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-16 11:12+0000\n"
-"PO-Revision-Date: 2022-04-09 01:40+0000\n"
+"PO-Revision-Date: 2022-06-18 06:41+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ja/>\n"
@@ -34,7 +34,7 @@ msgstr "そのほかのアップデート:"
 
 #: data/printers.appdata.xml.in:14
 msgid "Update sidebar after adding or removing printer"
-msgstr ""
+msgstr "プリンターの追加・削除後はサイドバーを更新するように修正"
 
 #: data/printers.appdata.xml.in:15
 msgid "Show the supported language for each driver"
@@ -42,11 +42,11 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:16
 msgid "Show color names below ink levels"
-msgstr ""
+msgstr "インク残量の下に色名表示を追加"
 
 #: data/printers.appdata.xml.in:17
 msgid "Use newer add/remove list pattern"
-msgstr ""
+msgstr "一覧への追加／削除に新しいデザインパターンを使うように修正"
 
 #: data/printers.appdata.xml.in:18 data/printers.appdata.xml.in:26
 #: data/printers.appdata.xml.in:34 data/printers.appdata.xml.in:42
