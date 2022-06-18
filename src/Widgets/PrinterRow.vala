@@ -92,12 +92,13 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
             page.destroy ();
             destroy ();
         });
+
+        update_status ();
     }
 
     private void update_status () {
         if (printer.is_enabled) {
             status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
-
             switch (printer.state_reasons_raw) {
                 case "offline":
                     status_image.icon_name = "user-offline";
