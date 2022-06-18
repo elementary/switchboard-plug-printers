@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 20:13+0000\n"
-"PO-Revision-Date: 2021-11-06 12:00+0000\n"
-"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"PO-Revision-Date: 2022-06-17 18:50+0000\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/pl/>\n"
 "Language: pl\n"
@@ -139,10 +139,8 @@ msgid "Lab 1 or John's desk"
 msgstr "Laboratorium 1 lub pulpit Janka"
 
 #: src/Dialogs/AddDialog.vala:266
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "Przetwarzanie…"
+msgstr "Ładowanie…"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
@@ -592,31 +590,31 @@ msgstr "Pokój 1 lub biurko Jana"
 msgid "Use as default printer:"
 msgstr "Użyj jako drukarki domyślnej:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:86
 msgid "Black (PGBK)"
 msgstr "Czarny (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:89
 msgid "Black (BK)"
 msgstr "Czarny (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:93
 msgid "Black"
 msgstr "Czarny"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:97
 msgid "Yellow"
 msgstr "Żółty"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:101
 msgid "Cyan"
 msgstr "Cyjan"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:105
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:107
 msgid "Tri-color"
 msgstr "Trójkolor"
 
@@ -629,10 +627,8 @@ msgid "Resume"
 msgstr "Wznów"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
-msgstr "Usuń drukarkę"
+msgstr "Usuń tę drukarkę"
 
 #: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 20:13+0000\n"
+"POT-Creation-Date: 2022-06-16 11:12+0000\n"
 "PO-Revision-Date: 2020-10-29 18:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -27,8 +27,8 @@ msgstr "प्रिंटर सेटिंग्ज"
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "प्रिंटर कॉन्फिगर करा, मुद्रण रांग व्यवस्थापित करा आणि शाईचे स्तर पहा"
 
-#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:23
-#: data/printers.appdata.xml.in:31 data/printers.appdata.xml.in:39
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:24
+#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
 msgid "Minor updates:"
 msgstr "किरकोळ अद्यतने:"
 
@@ -41,15 +41,19 @@ msgid "Show the supported language for each driver"
 msgstr ""
 
 #: data/printers.appdata.xml.in:16
+msgid "Show color names below ink levels"
+msgstr ""
+
+#: data/printers.appdata.xml.in:17
 msgid "Use newer add/remove list pattern"
 msgstr ""
 
-#: data/printers.appdata.xml.in:17 data/printers.appdata.xml.in:25
-#: data/printers.appdata.xml.in:33 data/printers.appdata.xml.in:41
-#: data/printers.appdata.xml.in:48
+#: data/printers.appdata.xml.in:18 data/printers.appdata.xml.in:26
+#: data/printers.appdata.xml.in:34 data/printers.appdata.xml.in:42
+#: data/printers.appdata.xml.in:49
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/printers.appdata.xml.in:47
+#: data/printers.appdata.xml.in:48
 msgid "Show a default name if a printer is unnamed"
 msgstr "प्रिंटर अज्ञात असल्यास डीफॉल्ट नाव दर्शवा"
