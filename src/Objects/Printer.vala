@@ -251,7 +251,7 @@ public class Printers.Printer : GLib.Object {
     public Printer (CUPS.Destination? dest) {
         this.dest = dest;
 
-        // Dest.options does not seem to get updated automatically so we copy key values and use CUPS.Notifier to 
+        // Dest.options does not seem to get updated automatically so we copy key values and use CUPS.Notifier to
         // update them when they change.
         var is_accepting_opt = CUPS.get_option ("is-accepting-jobs", dest.options);
         is_accepting_jobs = is_accepting_opt != null ? bool.parse (is_accepting_opt) : false;
@@ -259,7 +259,7 @@ public class Printers.Printer : GLib.Object {
         state_reasons_raw = CUPS.get_option ("printer-state-reasons", dest.options);
     }
 
-    public bool is_offline { 
+    public bool is_offline {
         get {
             return state_reasons_raw != null ? "offline" in state_reasons_raw : false;
         }
