@@ -131,7 +131,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             action_stack.visible_child_name = "action-grid";
         }
 
-        grid.tooltip_text =  job.translated_job_state ();
+        grid.tooltip_text = job.translated_job_state ();
         var time = job.get_display_time ();
         date_label.label = time.format ("%s %s".printf (Granite.DateTime.get_default_date_format (), Granite.DateTime.get_default_time_format ()));
 
