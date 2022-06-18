@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015 Pantheon Developers (https://launchpad.net/switchboard-plug-printers)
+ * Copyright 2015 - 2022 elementary, Inc. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
