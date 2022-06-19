@@ -116,7 +116,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
                     critical (e.message);
                 }
             } else {
-                start_pause_button.sensitive = false;
+                critical ("Unexpected job state when trying to pause or resume");
             }
         });
 
