@@ -34,8 +34,8 @@ public class Printers.Job : GLib.Object {
 
     public Job (CUPS.Job cjob, Printer printer) {
         Object (
-            creation_time: cjob.creation_time > 0 ? new DateTime.from_unix_local (cjob.creation_time) :  new DateTime.now (),
-            completed_time: cjob.completed_time > 0 ? new DateTime.from_unix_local (cjob.completed_time) :  null,
+            creation_time: cjob.creation_time > 0 ? new DateTime.from_unix_local (cjob.creation_time) : new DateTime.now (),
+            completed_time: cjob.completed_time > 0 ? new DateTime.from_unix_local (cjob.completed_time) : null,
             state: cjob.state,
             title: cjob.title,
             printer: printer,
@@ -56,8 +56,7 @@ public class Printers.Job : GLib.Object {
 
     private void on_job_state_changed (
         string text, string printer_uri, string name, uint32 printer_state, string state_reasons, bool is_accepting_jobs,
-        uint32 job_id, uint32 job_state, string job_state_reason, string job_name, uint32 job_impressions_completed)
-    {
+        uint32 job_id, uint32 job_state, string job_state_reason, string job_name, uint32 job_impressions_completed) {
         if (job_id == uid) {
             state = (CUPS.IPP.JobState)job_state;
             if (state == CUPS.IPP.JobState.COMPLETED &&
