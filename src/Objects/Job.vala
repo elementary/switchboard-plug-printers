@@ -21,7 +21,6 @@
  */
 
 public class Printers.Job : GLib.Object {
-    // public unowned CUPS.Job cjob;
     public signal void state_changed ();
 
     public unowned Printer printer { get; construct; }
@@ -29,15 +28,14 @@ public class Printers.Job : GLib.Object {
     public CUPS.IPP.JobState state { get; set construct; }
     public string title { get; construct; }
     public string format { get; construct; }
+    public string reasons { get; set; default = "None"; }
     public DateTime creation_time { get; construct; }
     public DateTime? completed_time { get; set; default = null; }
-    public DateTime? start_time { get; set; default = null; }
 
     public Job (CUPS.Job cjob, Printer printer) {
         Object (
-            creation_time: new DateTime.from_unix_local (cjob.creation_time),
-            start_time: new DateTime.from_unix_local (cjob.processing_time),
-            completed_time: new DateTime.from_unix_local (cjob.completed_time),
+            creation_time: cjob.creation_time > 0 ? new DateTime.from_unix_local (cjob.creation_time) :  new DateTime.now (),
+            completed_time: cjob.completed_time > 0 ? new DateTime.from_unix_local (cjob.completed_time) :  null,
             state: cjob.state,
             title: cjob.title,
             printer: printer,
@@ -58,12 +56,16 @@ public class Printers.Job : GLib.Object {
 
     private void on_job_state_changed (
         string text, string printer_uri, string name, uint32 printer_state, string state_reasons, bool is_accepting_jobs,
-        uint32 job_id, uint32 job_state, string job_state_reason, string job_name, uint32 job_impressions_completed) {
-
-
+        uint32 job_id, uint32 job_state, string job_state_reason, string job_name, uint32 job_impressions_completed)
+    {
         if (job_id == uid) {
             state = (CUPS.IPP.JobState)job_state;
-warning ("job state changed %s", state.to_string ());
+            if (state == CUPS.IPP.JobState.COMPLETED &&
+                completed_time == null) {
+
+                completed_time = new DateTime.now ();
+            }
+
             state_changed ();
         }
     }
@@ -92,33 +94,58 @@ warning ("job state changed %s", state.to_string ());
         }
     }
 
-    public DateTime get_display_time () {
-        if (completed_time != null) {
-            return completed_time;
-        } else if (start_time != null) {
-            return start_time;
-        } else {
-            return creation_time;
+    public DateTime? get_display_time () {
+        switch (state) {
+            case CUPS.IPP.JobState.CANCELED:
+            case CUPS.IPP.JobState.ABORTED:
+                return null;
+            case CUPS.IPP.JobState.COMPLETED:
+                return completed_time;
+            case CUPS.IPP.JobState.STOPPED:
+            case CUPS.IPP.JobState.PENDING:
+            case CUPS.IPP.JobState.PROCESSING:
+            case CUPS.IPP.JobState.HELD:
+                break;
+        }
+
+        return creation_time;
+    }
+
+    public bool is_ongoing {
+        get {
+            switch (state) {
+                case CUPS.IPP.JobState.PENDING:
+                case CUPS.IPP.JobState.HELD:
+                case CUPS.IPP.JobState.PROCESSING:
+                case CUPS.IPP.JobState.STOPPED:
+                    return true;
+                case CUPS.IPP.JobState.CANCELED:
+                case CUPS.IPP.JobState.ABORTED:
+                case CUPS.IPP.JobState.COMPLETED:
+                    return false;
+            }
+
+            assert_not_reached ();
         }
     }
 
     public string translated_job_state () {
         switch (state) {
             case CUPS.IPP.JobState.PENDING:
-                return _("Job Pending");
+                return C_("Print Job", "Pending");
             case CUPS.IPP.JobState.HELD:
-                return _("On Hold");
+                return C_("Print Job", "On Hold");
             case CUPS.IPP.JobState.PROCESSING:
-                return _("Processing…");
+                return C_("Print Job", "In Progress");
             case CUPS.IPP.JobState.STOPPED:
-                return _("Job Stopped");
+                return C_("Print Job", "Stopped");
             case CUPS.IPP.JobState.CANCELED:
-                return _("Job Canceled");
+                return C_("Print Job", "Canceled");
             case CUPS.IPP.JobState.ABORTED:
-                return _("Job Aborted");
+                return C_("Print Job", "Aborted");
             case CUPS.IPP.JobState.COMPLETED:
             default:
-                return _("Job Completed");
+                return C_("Print Job", "Completed");
         }
     }
 
@@ -126,8 +153,8 @@ warning ("job state changed %s", state.to_string ());
         switch (state) {
             case CUPS.IPP.JobState.PENDING:
             case CUPS.IPP.JobState.PROCESSING:
-                return null;
             case CUPS.IPP.JobState.HELD:
+                return null;
             case CUPS.IPP.JobState.STOPPED:
                 return new ThemedIcon ("media-playback-pause");
             case CUPS.IPP.JobState.CANCELED:
@@ -151,25 +178,5 @@ warning ("job state changed %s", state.to_string ());
         }
 
         return new ThemedIcon (format.replace ("/", "-"));
-    }
-
-    public string get_hold_until () {
-        char[] job_uri = new char[CUPS.HTTP.MAX_URI];
-        CUPS.HTTP.assemble_uri_f (CUPS.HTTP.URICoding.QUERY, job_uri, "ipp", null, "localhost", 0, "/jobs/%d", uid);
-        var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.GET_JOB_ATTRIBUTES);
-        request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "job-uri", null, (string)job_uri);
-
-        string[] attributes = { "job-hold-until" };
-
-        request.add_strings (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.KEYWORD, "requested-attributes", null, attributes);
-        request.do_request (CUPS.HTTP.DEFAULT);
-
-        if (request.get_status_code () <= CUPS.IPP.Status.OK_CONFLICT) {
-            unowned CUPS.IPP.Attribute attr = request.find_attribute ("job-hold-until", CUPS.IPP.Tag.ZERO);
-            return attr.get_string ();
-        } else {
-            critical ("Error: %s", request.get_status_code ().to_string ());
-            return "no-hold";
-        }
     }
 }

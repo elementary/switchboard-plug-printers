@@ -28,6 +28,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     private Gtk.Image job_state_icon;
     private Gtk.Stack action_stack;
     private Gtk.Label date_label;
+    private Gtk.Label state_label;
 
     public JobRow (Printer printer, Printers.Job job) {
         Object (
@@ -43,6 +44,12 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         title.hexpand = true;
         title.halign = Gtk.Align.START;
         title.ellipsize = Pango.EllipsizeMode.END;
+
+        state_label = new Gtk.Label ("") {
+            hexpand = false,
+            halign = Gtk.Align.START,
+            ellipsize = Pango.EllipsizeMode.END
+        };
 
         date_label = new Gtk.Label (Granite.DateTime.get_relative_datetime (job.creation_time));
 
@@ -74,14 +81,14 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         action_stack.add_named (job_state_icon, "job-state-icon");
 
         grid = new Gtk.Grid ();
-        grid.tooltip_text = job.translated_job_state ();
         grid.column_spacing = 3;
         grid.margin = 3;
         grid.margin_start = grid.margin_end = 6;
         grid.attach (icon, 0, 0);
         grid.attach (title, 1, 0);
-        grid.attach (date_label, 2, 0);
-        grid.attach (action_stack, 3, 0);
+        grid.attach (state_label, 2, 0);
+        grid.attach (date_label, 3, 0);
+        grid.attach (action_stack, 4, 0);
 
         add (grid);
         show_all ();
@@ -92,7 +99,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
 
         start_pause_button.clicked.connect (() => {
             unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
-            if (job.get_hold_until () == "no-hold") {
+            if (job.state == CUPS.IPP.JobState.PROCESSING) {
                 try {
                     pk_helper.job_set_hold_until (job.uid, "indefinite");
                     start_pause_image.icon_name = "media-playback-start-symbolic";
@@ -100,7 +107,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
                 } catch (Error e) {
                     critical (e.message);
                 }
-            } else {
+            } else if (job.state == CUPS.IPP.JobState.HELD) {
                 try {
                     pk_helper.job_set_hold_until (job.uid, "no-hold");
                     start_pause_image.icon_name = "media-playback-pause-symbolic";
@@ -108,6 +115,8 @@ public class Printers.JobRow : Gtk.ListBoxRow {
                 } catch (Error e) {
                     critical (e.message);
                 }
+            } else {
+                start_pause_button.sensitive = false;
             }
         });
 
@@ -131,9 +140,16 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             action_stack.visible_child_name = "action-grid";
         }
 
-        grid.tooltip_text = job.translated_job_state ();
+        state_label.label = job.state == CUPS.IPP.JobState.COMPLETED ? "" : job.translated_job_state ();
         var time = job.get_display_time ();
-        date_label.label = time.format ("%s %s".printf (Granite.DateTime.get_default_date_format (), Granite.DateTime.get_default_time_format ()));
+        if (time != null) {
+            date_label.label = time.format ("%s %s".printf (
+                                    Granite.DateTime.get_default_date_format (),
+                                    Granite.DateTime.get_default_time_format ())
+                                );
+        } else {
+            date_label.label = null;
+        }
 
         changed ();
     }

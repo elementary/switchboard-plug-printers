@@ -64,15 +64,32 @@ public class Printers.JobsView : Gtk.Frame {
         });
     }
 
-    static int compare (Gtk.ListBoxRow a, Gtk.ListBoxRow b) {
-        var timea = (((JobRow)a).job.get_display_time ());
-        var timeb = (((JobRow)b).job.get_display_time ());
-        return timea.compare (timeb);
+    // Sort all ongoing jobs first, otherwise sort in descending order of displayed time (null last)
+    static int compare (JobRow a, JobRow b) {
+        if (a.job.is_ongoing && !b.job.is_ongoing) {
+            return -1;
+        } else if (!a.job.is_ongoing && b.job.is_ongoing) {
+            return 1;
+        } else {
+            var timea = (((JobRow)a).job.get_display_time ());
+            var timeb = (((JobRow)b).job.get_display_time ());
+            if (timea == null) {
+                if (timeb == null) {
+                    return 0;
+                } else {
+                    return 1;
+                }
+            } else if (timeb == null) {
+                return -1;
+            } else {
+                return timeb.compare (timea);
+            }
+        }
     }
 
     [CCode (instance_pos = -1)]
     private void update_header (JobRow row1, JobRow? row2) {
-        if (row1.job.state == CUPS.IPP.JobState.COMPLETED && (row2 == null || row1.job.state != row2.job.state)) {
+        if (!row1.job.is_ongoing && (row2 == null || row2.job.is_ongoing)) {
             var label = new Gtk.Label (_("Completed Jobs"));
             label.xalign = 0;
             label.margin = 3;
