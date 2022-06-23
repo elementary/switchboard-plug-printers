@@ -144,19 +144,18 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     }
 
     private void update_state () {
-        if (job.state_icon () != null) {
-            job_state_icon.gicon = job.state_icon ();
-            action_revealer.reveal_child = false;
-        } else {
-            if (job.state == CUPS.IPP.JobState.HELD) {
-                start_pause_image.icon_name = "media-playback-start-symbolic";
-                start_pause_button.tooltip_text = _("Resume");
-            } else if (job.state == CUPS.IPP.JobState.PROCESSING) {
-                start_pause_image.icon_name = "media-playback-pause-symbolic";
-                start_pause_button.tooltip_text = _("Pause");
-            }
+        job_state_icon.gicon = job.state_icon ();
 
+        if (job.state == CUPS.IPP.JobState.HELD) {
+            start_pause_image.icon_name = "media-playback-start-symbolic";
+            start_pause_button.tooltip_text = _("Resume");
             action_revealer.reveal_child = true;
+        } else if (job.state == CUPS.IPP.JobState.PROCESSING) {
+            start_pause_image.icon_name = "media-playback-pause-symbolic";
+            start_pause_button.tooltip_text = _("Pause");
+            action_revealer.reveal_child = true;
+        } else {
+            action_revealer.reveal_child = false;
         }
 
         state_label.label = job.translated_job_state ();
