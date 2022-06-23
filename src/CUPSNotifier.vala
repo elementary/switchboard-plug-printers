@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015 Pantheon Developers (https://launchpad.net/switchboard-plug-printers)
+ * Copyright 2015 - 2022 elementary, Inc. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -151,7 +151,7 @@ public class Cups.Notifier : Object {
         var text = parameters.get_child_value (0).get_string ();
         var printer_uri = parameters.get_child_value (1).get_string ();
         var name = parameters.get_child_value (2).get_string ();
-        var state = parameters.get_child_value (3).get_uint32 ();
+        var printer_state = parameters.get_child_value (3).get_uint32 ();
         var state_reasons = parameters.get_child_value (4).get_string ();
         var is_accepting_jobs = parameters.get_child_value (5).get_boolean ();
         var job_id = parameters.get_child_value (6).get_uint32 ();
@@ -161,25 +161,19 @@ public class Cups.Notifier : Object {
         var job_impressions_completed = parameters.get_child_value (10).get_uint32 ();
         switch (signal_name) {
             case "JobCreated":
-                job_created (text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
-                break;
-            case "JobCompleted":
-                job_completed (text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
-                break;
-            case "JobStopped":
-                job_stopped (text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
+                job_created (text, printer_uri, name, printer_state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
                 break;
             case "JobConfigChanged":
-                job_config_changed (text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
-                break;
             case "JobProgress":
-                job_progress (text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
+                job_progress (text, printer_uri, name, printer_state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
                 break;
+            case "JobCompleted":
+                job_completed (text, printer_uri, name, printer_state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
+                break;
+            case "JobStopped":
             case "JobState":
-                this.job_state (text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
-                break;
             case "JobStateChanged":
-                job_state_changed (text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
+                job_state_changed (text, printer_uri, name, printer_state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed);
                 break;
             default:
                 debug ("Signal `%s` isn't handled by the plug", signal_name);
