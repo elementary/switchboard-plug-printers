@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-23 19:03+0000\n"
 "PO-Revision-Date: 2021-08-16 08:39+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -101,7 +101,7 @@ msgid "Refresh"
 msgstr "Päivitä"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:62
 msgid "Cancel"
 msgstr "Peru"
 
@@ -290,32 +290,52 @@ msgstr "Nimetön tulostin"
 msgid "Ready"
 msgstr "Valmis"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "Työ odottaa"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "Pidossa"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "Prosessoidaan…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Työ pysäytetty"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Pysäytetty"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Työ peruttu"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Peru"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "Työ lopetettu"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "Työ valmistui"
 
 #: src/Views/JobsView.vala:30
@@ -326,7 +346,7 @@ msgstr "Tulostusjono on tyhjä"
 msgid "There are no pending jobs in the queue."
 msgstr "Tulostusjonossa ei ole töitä."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "Valmistuneet työt"
 
@@ -616,11 +636,11 @@ msgstr "Magenta"
 msgid "Tri-color"
 msgstr "Kolmiväri"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
+#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
 msgid "Pause"
 msgstr "Keskeytä"
 
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:106
 msgid "Resume"
 msgstr "Jatka"
 
@@ -633,6 +653,15 @@ msgstr "Poista tulostin"
 #: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Pois käytöstä"
+
+#~ msgid "Processing…"
+#~ msgstr "Prosessoidaan…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Työ pysäytetty"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Työ peruttu"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Lisää tulostin aloittaaksesi tulostuksen"

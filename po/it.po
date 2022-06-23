@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-23 19:03+0000\n"
 "PO-Revision-Date: 2020-10-24 13:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -104,7 +104,7 @@ msgid "Refresh"
 msgstr "Aggiorna"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:62
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -294,32 +294,52 @@ msgstr "Stampante senza nome"
 msgid "Ready"
 msgstr "Pronto"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "Lavoro sospeso"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "In attesa"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "Elaborazione in corso…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Il lavoro è stato interrotto"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Arrestata"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Lavoro annullato"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Annulla"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "Lavoro abortito"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "Lavoro completato"
 
 #: src/Views/JobsView.vala:30
@@ -330,7 +350,7 @@ msgstr "La coda di stampa è vuota"
 msgid "There are no pending jobs in the queue."
 msgstr "Non ci sono lavori in coda."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "Lavori completati"
 
@@ -620,11 +640,11 @@ msgstr "Magenta"
 msgid "Tri-color"
 msgstr "Tricromia"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
+#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
 msgid "Pause"
 msgstr "Metti in pausa"
 
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:106
 msgid "Resume"
 msgstr "Curriculum Vitae"
 
@@ -637,6 +657,15 @@ msgstr "Rimuovi stampante"
 #: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Disabilitato"
+
+#~ msgid "Processing…"
+#~ msgstr "Elaborazione in corso…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Il lavoro è stato interrotto"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Lavoro annullato"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Aggiungi una stampante per iniziare a stampare"

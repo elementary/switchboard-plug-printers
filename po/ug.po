@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-23 19:03+0000\n"
 "PO-Revision-Date: 2017-01-02 07:57+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: \n"
@@ -100,7 +100,7 @@ msgid "Refresh"
 msgstr "يېڭىلاش"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:62
 #, fuzzy
 msgid "Cancel"
 msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
@@ -291,34 +291,49 @@ msgstr "پرىنتېر قوشۇش"
 msgid "Ready"
 msgstr "تەييار بولدى"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "ۋەزىپە توختىتىپ قويۇلدى"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
 #, fuzzy
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "ساقلاۋاتىدۇ"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "بىرتەرەپ قىلىۋاتىدۇ...."
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "ۋەزىپە توختىدى"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "توختىدى"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
+#: src/Objects/Job.vala:142
+#, fuzzy
+msgctxt "Print Job"
+msgid "Canceled"
 msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
 
-#: src/Objects/Job.vala:111
+#: src/Objects/Job.vala:144
 #, fuzzy
-msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "ۋەزىپە توختىتىلدى"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "ۋەزىپە تاماملاندى"
 
 #: src/Views/JobsView.vala:30
@@ -330,7 +345,7 @@ msgstr ""
 msgid "There are no pending jobs in the queue."
 msgstr "ۋەزىپە سىپىدە ۋەزىپە يوق"
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 #, fuzzy
 msgid "Completed Jobs"
 msgstr "تاماملانغان ۋەزىپىلەرنى كۆرسىتىش"
@@ -630,11 +645,11 @@ msgstr "ھال رەڭ"
 msgid "Tri-color"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
+#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
 msgid "Pause"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:106
 msgid "Resume"
 msgstr ""
 
@@ -647,6 +662,15 @@ msgstr "پرىنتېرنى چىقىرىۋېتىش"
 #: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr ""
+
+#~ msgid "Processing…"
+#~ msgstr "بىرتەرەپ قىلىۋاتىدۇ...."
+
+#~ msgid "Job Stopped"
+#~ msgstr "ۋەزىپە توختىدى"
+
+#~ msgid "Job Canceled"
+#~ msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "پرىنتېر قىتىپ بىسىشنى باشلاڭ"
