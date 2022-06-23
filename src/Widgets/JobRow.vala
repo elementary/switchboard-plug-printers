@@ -25,16 +25,21 @@ public class Printers.JobRow : Gtk.ListBoxRow {
 
     private Gtk.Button start_pause_button;
     private Gtk.Image job_state_icon;
-    private Gtk.Image start_pause_image;
     private Gtk.Revealer action_revealer;
     private Gtk.Label date_label;
     private Gtk.Label state_label;
+
+    private static Gtk.SizeGroup size_group;
 
     public JobRow (Printer printer, Printers.Job job) {
         Object (
             job: job,
             printer: printer
         );
+    }
+
+    static construct {
+        size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
     }
 
     construct {
@@ -72,23 +77,24 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             tooltip_text = _("Cancel")
         };
         cancel_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-
-        start_pause_image = new Gtk.Image.from_icon_name (
-            "media-playback-pause-symbolic",
-            Gtk.IconSize.SMALL_TOOLBAR
-        );
+        cancel_button.get_style_context ().add_class (Granite.STYLE_CLASS_ACCENT);
+        cancel_button.get_style_context ().add_class ("red");
 
         start_pause_button = new Gtk.Button () {
-            image = start_pause_image,
-            tooltip_text = _("Pause")
+            valign = Gtk.Align.CENTER
         };
-        start_pause_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
-        var action_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        size_group.add_widget (start_pause_button);
+
+        var action_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 3) {
+            margin_start = 6
+        };
         action_box.add (cancel_button);
         action_box.add (start_pause_button);
 
-        action_revealer = new Gtk.Revealer ();
+        action_revealer = new Gtk.Revealer () {
+            transition_type = Gtk.RevealerTransitionType.SLIDE_LEFT
+        };
         action_revealer.add (action_box);
 
         var grid = new Gtk.Grid () {
@@ -102,8 +108,8 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         grid.attach (icon_overlay, 0, 0, 1, 2);
         grid.attach (title, 1, 0);
         grid.attach (state_label, 1, 1);
-        grid.attach (date_label, 2, 0);
-        grid.attach (action_revealer, 2, 1);
+        grid.attach (date_label, 2, 0, 1, 2);
+        grid.attach (action_revealer, 3, 0, 1, 2);
 
         add (grid);
         show_all ();
@@ -147,12 +153,10 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         job_state_icon.gicon = job.state_icon ();
 
         if (job.state == CUPS.IPP.JobState.HELD) {
-            start_pause_image.icon_name = "media-playback-start-symbolic";
-            start_pause_button.tooltip_text = _("Resume");
+            start_pause_button.label = _("Resume");
             action_revealer.reveal_child = true;
         } else if (job.state == CUPS.IPP.JobState.PROCESSING) {
-            start_pause_image.icon_name = "media-playback-pause-symbolic";
-            start_pause_button.tooltip_text = _("Pause");
+            start_pause_button.label = _("Pause");
             action_revealer.reveal_child = true;
         } else {
             action_revealer.reveal_child = false;

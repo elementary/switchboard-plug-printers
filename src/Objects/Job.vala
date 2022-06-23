@@ -154,7 +154,7 @@ public class Printers.Job : GLib.Object {
             case CUPS.IPP.JobState.PROCESSING:
                 return null;
             case CUPS.IPP.JobState.HELD:
-                return new ThemedIcon ("media-playback-pause");
+                return new ThemedIcon ("process-paused");
             case CUPS.IPP.JobState.STOPPED:
             case CUPS.IPP.JobState.CANCELED:
                 return new ThemedIcon ("process-stop");
