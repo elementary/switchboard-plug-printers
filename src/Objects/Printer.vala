@@ -93,44 +93,25 @@ public class Printers.Printer : GLib.Object {
     /**************
      * Properties *
      **************/
-    public bool enabled {
+    public bool is_enabled {
         get {
-            return state != "5" && is_accepting_jobs;
+            return state != "5";
         }
 
         set {
-            if (!value) {
+            if (value == (state == "5")) {
                 try {
-                    Cups.get_pk_helper ().printer_set_enabled (dest.name, false);
+                    Cups.get_pk_helper ().printer_set_enabled (dest.name, value);
+                    // Cups.get_pk_helper ().printer_set_enabled (dest.name, false);
                 } catch (Error e) {
                     critical (e.message);
                 }
 
                 try {
-                    Cups.get_pk_helper ().printer_set_accept_jobs (dest.name, false);
+                    Cups.get_pk_helper ().printer_set_accept_jobs (dest.name, value);
                 } catch (Error e) {
                     critical (e.message);
                 }
-
-                enabled_changed ();
-            } else {
-                if (state == "5") {
-                    try {
-                        Cups.get_pk_helper ().printer_set_enabled (dest.name, true);
-                    } catch (Error e) {
-                        critical (e.message);
-                    }
-                }
-
-                if (is_accepting_jobs == false) {
-                    try {
-                        Cups.get_pk_helper ().printer_set_accept_jobs (dest.name, true);
-                    } catch (Error e) {
-                        critical (e.message);
-                    }
-                }
-
-                enabled_changed ();
             }
         }
     }
@@ -179,31 +160,12 @@ public class Printers.Printer : GLib.Object {
         }
     }
 
-    /**
-     * "true" if the destination is accepting new jobs, "false" if not.
-     */
-    public bool is_accepting_jobs {
-        get {
-            unowned string? cups_result = CUPS.get_option ("printer-is-accepting-jobs", dest.options);
-            if (cups_result == null) {
-                return false;
-            }
 
-            return bool.parse (cups_result);
-        }
-        set {
-            try {
-                Cups.get_pk_helper ().printer_set_accept_jobs (dest.name, value);
-                dest.num_options = CUPS.add_option ("printer-is-accepting-jobs", value.to_string (), dest.options.length, ref dest.options);
-            } catch (Error e) {
-                critical (e.message);
-            }
-        }
-    }
+     public bool is_accepting_jobs { get; set construct; }
 
-    /**
-     * "true" if the destination is being shared with other computers, "false" if not.
-     */
+     // "3" if the destination is idle, "4" if the destination is printing a job, and "5" if the destination is stopped.
+    public string state { get; set construct; }
+
     public bool is_shared {
         get {
             unowned string? cups_result = CUPS.get_option ("printer-is-shared", dest.options);
@@ -250,36 +212,15 @@ public class Printers.Printer : GLib.Object {
     }
 
     /**
-     * "3" if the destination is idle, "4" if the destination is printing a job, and "5" if the destination is stopped.
-     */
-    public string? state {
-        get {
-            return CUPS.get_option ("printer-state", dest.options);
-        }
-    }
-
-    /**
-     * The UNIX time when the destination entered the current state.
-     */
-    public string? state_change_time {
-        get {
-            return CUPS.get_option ("printer-state-change-time", dest.options);
-        }
-    }
-
-    /**
      * Additional comma-delimited state keywords for the destination such as "media-tray-empty-error" and "toner-low-warning".
      */
-    public string? state_reasons_raw {
-        get {
-            return CUPS.get_option ("printer-state-reasons", dest.options);
-        }
-    }
+    public string? state_reasons_raw { get; set construct; }
 
+    // Translated reasons
     public string state_reasons {
         get {
             unowned string? reason = state_reasons_raw;
-            if (reason == null || reason == "none") {
+            if (reason == null || reason.up ().contains ("NONE")) {
                 return _("Ready");
             }
 
@@ -307,17 +248,21 @@ public class Printers.Printer : GLib.Object {
     /***********
      * Methods *
      ***********/
-    public Printer (CUPS.Destination dest) {
+    public Printer (CUPS.Destination? dest) {
         this.dest = dest;
+
+        // Dest.options does not seem to get updated automatically so we copy key values and use CUPS.Notifier to
+        // update them when they change.
+        var is_accepting_opt = CUPS.get_option ("is-accepting-jobs", dest.options);
+        is_accepting_jobs = is_accepting_opt != null ? bool.parse (is_accepting_opt) : false;
+        state = CUPS.get_option ("printer-state", dest.options);
+        state_reasons_raw = CUPS.get_option ("printer-state-reasons", dest.options);
     }
 
-    public bool is_offline () {
-        var reason = state_reasons_raw;
-        if (reason == null) {
-            return false;
+    public bool is_offline {
+        get {
+            return state_reasons_raw != null ? "offline" in state_reasons_raw : false;
         }
-
-        return "offline" in reason;
     }
 
     public Gee.TreeSet<Job> get_jobs (bool my_jobs, CUPS.WhichJobs whichjobs) {

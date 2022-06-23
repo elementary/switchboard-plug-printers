@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2018 elementary LLC.
+ * Copyright 2015 - 2022 elementary, Inc. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -103,9 +103,11 @@ public class Printers.PrinterManager : GLib.Object {
     private void printer_state_has_changed (string text, string printer_uri, string name, uint32 state, string state_reasons, bool is_accepting_jobs) {
         foreach (var printer in printers) {
             if (printer.dest.name == name) {
+                printer.state_reasons_raw = state_reasons;
+                printer.is_accepting_jobs = is_accepting_jobs;
+                printer.state = state.to_string ();
                 printer.notify_property ("state");
                 printer.notify_property ("state-reasons");
-                printer.notify_property ("state-change-time");
                 break;
             }
         }
@@ -121,6 +123,8 @@ public class Printers.PrinterManager : GLib.Object {
         "printer-added",
         "printer-deleted",
         "printer-stopped",
+        "printer-shutdown",
+        "printer-restarted",
         "printer-state-changed",
         "job-created",
         "job-completed",
