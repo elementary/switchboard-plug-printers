@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-23 19:03+0000\n"
 "PO-Revision-Date: 2018-04-25 00:36+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
@@ -100,7 +100,7 @@ msgid "Refresh"
 msgstr "Refresh"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:62
 msgid "Cancel"
 msgstr "Cancel"
 
@@ -290,32 +290,52 @@ msgstr "Add Printer"
 msgid "Ready"
 msgstr "Ready"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "Job Pending"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "On Hold"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "Processing…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Job Stopped"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Stopped"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Job Canceled"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Cancel"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "Job Aborted"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "Job Completed"
 
 #: src/Views/JobsView.vala:30
@@ -326,7 +346,7 @@ msgstr "Print Queue Is Empty"
 msgid "There are no pending jobs in the queue."
 msgstr "There are no pending jobs in the queue."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "Completed Jobs"
 
@@ -618,11 +638,11 @@ msgstr "Magenta"
 msgid "Tri-color"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
+#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
 msgid "Pause"
 msgstr "Pause"
 
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:106
 msgid "Resume"
 msgstr "Resume"
 
@@ -635,6 +655,15 @@ msgstr "Remove Printer"
 #: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Disabled"
+
+#~ msgid "Processing…"
+#~ msgstr "Processing…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Job Stopped"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Job Canceled"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Add a printer to begin printing"

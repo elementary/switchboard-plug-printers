@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-23 19:03+0000\n"
 "PO-Revision-Date: 2020-03-01 14:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -100,7 +100,7 @@ msgid "Refresh"
 msgstr "重整"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:62
 msgid "Cancel"
 msgstr "取消"
 
@@ -287,32 +287,52 @@ msgstr "未命名的印表機"
 msgid "Ready"
 msgstr "準備就緒"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "工作擱置中"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "暫停"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "處理中…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "工作已停止"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "已停止"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "工作已取消"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "取消"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "工作已中止"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "工作已完成"
 
 #: src/Views/JobsView.vala:30
@@ -323,7 +343,7 @@ msgstr "空的列印佇列"
 msgid "There are no pending jobs in the queue."
 msgstr "佇列中已沒有擱置的工作。"
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "完成的工作"
 
@@ -613,11 +633,11 @@ msgstr "洋紅色"
 msgid "Tri-color"
 msgstr "三色"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
+#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
 msgid "Pause"
 msgstr "暫停"
 
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:106
 msgid "Resume"
 msgstr "繼續"
 
@@ -630,6 +650,15 @@ msgstr "移除印表機"
 #: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "已停用"
+
+#~ msgid "Processing…"
+#~ msgstr "處理中…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "工作已停止"
+
+#~ msgid "Job Canceled"
+#~ msgstr "工作已取消"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "加入印表機以開始列印"
