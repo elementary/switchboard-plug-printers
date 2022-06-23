@@ -267,7 +267,7 @@ public class Printers.Printer : GLib.Object {
 
     public Gee.TreeSet<Job> get_jobs (bool my_jobs, CUPS.WhichJobs whichjobs) {
         var jobs = new Gee.TreeSet<Job> ();
-        unowned CUPS.Job[] cjobs = dest.get_jobs (my_jobs, whichjobs);
+        unowned var cjobs = dest.get_jobs (my_jobs, whichjobs);
         foreach (unowned CUPS.Job cjob in cjobs) {
             var job = new Job (cjob, this);
             jobs.add (job);

@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015 Pantheon Developers (https://launchpad.net/switchboard-plug-printers)
+ * Copyright 2015 - 2022 elementary, Inc. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -56,7 +56,7 @@ public class Printers.JobsView : Gtk.Frame {
 
             var jobs_ = printer.get_jobs (true, CUPS.WhichJobs.ALL);
             foreach (var job in jobs_) {
-                if (job.cjob.id == job_id) {
+                if (job.uid == job_id) {
                     list_box.add (new JobRow (printer, job));
                     break;
                 }
@@ -64,15 +64,32 @@ public class Printers.JobsView : Gtk.Frame {
         });
     }
 
-    static int compare (Gtk.ListBoxRow a, Gtk.ListBoxRow b) {
-        var timea = (((JobRow)a).job.get_used_time ());
-        var timeb = (((JobRow)b).job.get_used_time ());
-        return timeb.compare (timea);
+    // Sort all ongoing jobs first, otherwise sort in descending order of displayed time (null last)
+    static int compare (JobRow a, JobRow b) {
+        if (a.job.is_ongoing && !b.job.is_ongoing) {
+            return -1;
+        } else if (!a.job.is_ongoing && b.job.is_ongoing) {
+            return 1;
+        } else {
+            var timea = (((JobRow)a).job.get_display_time ());
+            var timeb = (((JobRow)b).job.get_display_time ());
+            if (timea == null) {
+                if (timeb == null) {
+                    return 0;
+                } else {
+                    return 1;
+                }
+            } else if (timeb == null) {
+                return -1;
+            } else {
+                return timeb.compare (timea);
+            }
+        }
     }
 
     [CCode (instance_pos = -1)]
     private void update_header (JobRow row1, JobRow? row2) {
-        if (row1.job.cjob.state == CUPS.IPP.JobState.COMPLETED && (row2 == null || row1.job.cjob.state != row2.job.cjob.state)) {
+        if (!row1.job.is_ongoing && (row2 == null || row2.job.is_ongoing)) {
             var label = new Gtk.Label (_("Completed Jobs"));
             label.xalign = 0;
             label.margin = 3;
