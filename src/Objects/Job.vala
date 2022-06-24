@@ -161,7 +161,6 @@ public class Printers.Job : GLib.Object {
             case CUPS.IPP.JobState.ABORTED:
                 return new ThemedIcon ("process-error");
             case CUPS.IPP.JobState.COMPLETED:
-            default:
                 return new ThemedIcon ("process-completed");
         }
     }
