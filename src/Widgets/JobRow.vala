@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015-2018 elementary LLC. (https://elementary.io)
+ * Copyright 2015 - 2022 elementary, Inc. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -21,14 +21,16 @@
  */
 
 public class Printers.JobRow : Gtk.ListBoxRow {
-    public Job job { get; construct set; }
+    public Printers.Job job { get; construct set; }
     public Printer printer { get; construct set; }
 
     private Gtk.Grid grid;
     private Gtk.Image job_state_icon;
     private Gtk.Stack action_stack;
+    private Gtk.Label date_label;
+    private Gtk.Label state_label;
 
-    public JobRow (Printer printer, Job job) {
+    public JobRow (Printer printer, Printers.Job job) {
         Object (
             job: job,
             printer: printer
@@ -38,13 +40,18 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     construct {
         var icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.MENU);
 
-        var title = new Gtk.Label (job.cjob.title);
+        var title = new Gtk.Label (job.title);
         title.hexpand = true;
         title.halign = Gtk.Align.START;
         title.ellipsize = Pango.EllipsizeMode.END;
 
-        var date_time = job.get_used_time ();
-        var date = new Gtk.Label (Granite.DateTime.get_relative_datetime (date_time));
+        state_label = new Gtk.Label ("") {
+            hexpand = false,
+            halign = Gtk.Align.START,
+            ellipsize = Pango.EllipsizeMode.END
+        };
+
+        date_label = new Gtk.Label (Granite.DateTime.get_relative_datetime (job.creation_time));
 
         job_state_icon = new Gtk.Image ();
         job_state_icon.gicon = job.state_icon ();
@@ -74,14 +81,14 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         action_stack.add_named (job_state_icon, "job-state-icon");
 
         grid = new Gtk.Grid ();
-        grid.tooltip_text = job.translated_job_state ();
         grid.column_spacing = 3;
         grid.margin = 3;
         grid.margin_start = grid.margin_end = 6;
         grid.attach (icon, 0, 0);
         grid.attach (title, 1, 0);
-        grid.attach (date, 2, 0);
-        grid.attach (action_stack, 3, 0);
+        grid.attach (state_label, 2, 0);
+        grid.attach (date_label, 3, 0);
+        grid.attach (action_stack, 4, 0);
 
         add (grid);
         show_all ();
@@ -89,34 +96,34 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         update_state ();
 
         job.state_changed.connect (update_state);
-        job.completed.connect (update_state);
-        job.stopped.connect (update_state);
 
         start_pause_button.clicked.connect (() => {
             unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
-            if (job.get_hold_until () == "no-hold") {
+            if (job.state == CUPS.IPP.JobState.PROCESSING) {
                 try {
-                    pk_helper.job_set_hold_until (job.cjob.id, "indefinite");
+                    pk_helper.job_set_hold_until (job.uid, "indefinite");
                     start_pause_image.icon_name = "media-playback-start-symbolic";
                     start_pause_button.tooltip_text = _("Resume");
                 } catch (Error e) {
                     critical (e.message);
                 }
-            } else {
+            } else if (job.state == CUPS.IPP.JobState.HELD) {
                 try {
-                    pk_helper.job_set_hold_until (job.cjob.id, "no-hold");
+                    pk_helper.job_set_hold_until (job.uid, "no-hold");
                     start_pause_image.icon_name = "media-playback-pause-symbolic";
                     start_pause_button.tooltip_text = _("Pause");
                 } catch (Error e) {
                     critical (e.message);
                 }
+            } else {
+                critical ("Unexpected job state when trying to pause or resume");
             }
         });
 
         cancel_button.clicked.connect (() => {
             unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
             try {
-                pk_helper.job_cancel_purge (job.cjob.id, false);
+                pk_helper.job_cancel_purge (job.uid, false);
                 start_pause_button.sensitive = false;
                 cancel_button.sensitive = false;
             } catch (Error e) {
@@ -126,14 +133,6 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     }
 
     private void update_state () {
-        var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
-        foreach (var _job in jobs) {
-            if (_job.cjob.id == job.cjob.id) {
-                job = _job;
-                break;
-            }
-        }
-
         if (job.state_icon () != null) {
             job_state_icon.gicon = job.state_icon ();
             action_stack.visible_child_name = "job-state-icon";
@@ -141,6 +140,17 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             action_stack.visible_child_name = "action-grid";
         }
 
-        grid.tooltip_text = job.translated_job_state ();
+        state_label.label = job.state == CUPS.IPP.JobState.COMPLETED ? "" : job.translated_job_state ();
+        var time = job.get_display_time ();
+        if (time != null) {
+            date_label.label = time.format ("%s %s".printf (
+                                    Granite.DateTime.get_default_date_format (),
+                                    Granite.DateTime.get_default_time_format ())
+                                );
+        } else {
+            date_label.label = null;
+        }
+
+        changed ();
     }
 }

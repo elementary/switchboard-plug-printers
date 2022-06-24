@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015-2016 elementary LLC.
+ * Copyright 2015 - 2022 elementary, Inc. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -74,12 +74,12 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         add (grid);
         page = new PrinterPage (printer);
 
-        update_status ();
-        printer.notify["state-reasons"].connect (() => update_status ());
         printer.bind_property ("info", this, "tooltip-text", GLib.BindingFlags.SYNC_CREATE);
         printer.bind_property ("info", name_label, "label", GLib.BindingFlags.SYNC_CREATE);
+        printer.notify["state"].connect (() => {
+            update_status ();
+        });
 
-        printer.enabled_changed.connect (update_status);
         show_all ();
 
         remove_button.clicked.connect (() => {
@@ -92,12 +92,13 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
             page.destroy ();
             destroy ();
         });
+
+        update_status ();
     }
 
     private void update_status () {
-        if (printer.enabled) {
+        if (printer.is_enabled) {
             status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
-
             switch (printer.state_reasons_raw) {
                 case "offline":
                     status_image.icon_name = "user-offline";

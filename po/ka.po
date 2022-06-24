@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-23 19:03+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -101,7 +101,7 @@ msgid "Refresh"
 msgstr ""
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:62
 #, fuzzy
 msgid "Cancel"
 msgstr "საქმე გაუქმებულია"
@@ -290,34 +290,49 @@ msgstr "პრინტერები"
 msgid "Ready"
 msgstr "მზადაა"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "საქმე იცდის"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
 #, fuzzy
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "გაჩერებულია"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "დამუშავება..."
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "საქმე გაჩერებულია"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "გაჩერებულია"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
+#: src/Objects/Job.vala:142
+#, fuzzy
+msgctxt "Print Job"
+msgid "Canceled"
 msgstr "საქმე გაუქმებულია"
 
-#: src/Objects/Job.vala:111
+#: src/Objects/Job.vala:144
 #, fuzzy
-msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "საქმე გაწყვეტილია"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "საქმე დასრულებულია"
 
 #: src/Views/JobsView.vala:30
@@ -329,7 +344,7 @@ msgstr ""
 msgid "There are no pending jobs in the queue."
 msgstr "რიგში საქმეები არ არის"
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 #, fuzzy
 msgid "Completed Jobs"
 msgstr "დასრულებული საქმეების ჩვენება"
@@ -629,11 +644,11 @@ msgstr ""
 msgid "Tri-color"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
+#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
 msgid "Pause"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:106
 msgid "Resume"
 msgstr ""
 
@@ -644,6 +659,15 @@ msgstr ""
 #: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "გამორთულია"
+
+#~ msgid "Processing…"
+#~ msgstr "დამუშავება..."
+
+#~ msgid "Job Stopped"
+#~ msgstr "საქმე გაჩერებულია"
+
+#~ msgid "Job Canceled"
+#~ msgstr "საქმე გაუქმებულია"
 
 #~ msgid "Show completed jobs"
 #~ msgstr "დასრულებული საქმეების ჩვენება"

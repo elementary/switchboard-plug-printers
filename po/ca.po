@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-23 19:03+0000\n"
 "PO-Revision-Date: 2022-06-16 15:12+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -103,7 +103,7 @@ msgid "Refresh"
 msgstr "Actualitza"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:62
 msgid "Cancel"
 msgstr "Cancel·la"
 
@@ -290,32 +290,52 @@ msgstr "Impressora sense nom"
 msgid "Ready"
 msgstr "A punt"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "Tasca pendent"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "En espera"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "Es processa…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Tasca aturada"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Aturada"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Tasca cancel·lada"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Cancel·la"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "Tasca avortada"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "Tasca feta"
 
 #: src/Views/JobsView.vala:30
@@ -326,7 +346,7 @@ msgstr "La cua d'impressió és buida."
 msgid "There are no pending jobs in the queue."
 msgstr "No hi ha tasques pendents a la cua."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "Tasques acabades"
 
@@ -616,11 +636,11 @@ msgstr "Magenta"
 msgid "Tri-color"
 msgstr "Tricolor"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
+#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
 msgid "Pause"
 msgstr "Pausa"
 
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:106
 msgid "Resume"
 msgstr "Reprèn"
 
@@ -631,6 +651,15 @@ msgstr "Suprimeix aquesta impressora"
 #: src/Widgets/PrinterRow.vala:123
 msgid "Disabled"
 msgstr "Inhabilitat"
+
+#~ msgid "Processing…"
+#~ msgstr "Es processa…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Tasca aturada"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Tasca cancel·lada"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Afegiu una impressora per començar a imprimir"
