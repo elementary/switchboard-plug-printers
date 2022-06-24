@@ -163,6 +163,8 @@ public class Printers.Job : GLib.Object {
             case CUPS.IPP.JobState.COMPLETED:
                 return new ThemedIcon ("process-completed");
         }
+
+        return null;
     }
 
     public GLib.Icon get_file_icon () {
