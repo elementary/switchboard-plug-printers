@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-23 19:03+0000\n"
-"PO-Revision-Date: 2022-06-16 01:34+0000\n"
+"PO-Revision-Date: 2022-06-25 05:26+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -113,7 +113,7 @@ msgstr "Weiter"
 
 #: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
-msgstr "Nicht möglich, alle verfügbaren Drucker aufzulisten"
+msgstr "Alle verfügbaren Drucker aufzulisten nicht möglich"
 
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:224
@@ -291,15 +291,11 @@ msgid "Ready"
 msgstr "Startbereit"
 
 #: src/Objects/Job.vala:134
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "Auftrag ausstehend"
+msgstr "Ausstehend"
 
 #: src/Objects/Job.vala:136
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "In der Warteschleife"
@@ -307,36 +303,27 @@ msgstr "In der Warteschleife"
 #: src/Objects/Job.vala:138
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "In Verarbeitung"
 
 #: src/Objects/Job.vala:140
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
 msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Angehalten"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "Abbrechen"
+msgstr "Abgebrochen"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "Auftrag abgebrochen"
+msgstr "Abgebrochen"
 
 #: src/Objects/Job.vala:147
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "Auftrag abgeschlossen"
+msgstr "Abgeschlossen"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
@@ -344,7 +331,7 @@ msgstr "Druckwarteschlange ist leer"
 
 #: src/Views/JobsView.vala:30
 msgid "There are no pending jobs in the queue."
-msgstr "Es befinden sich keine offenen Aufträge in der Warteschlange."
+msgstr "Es befinden sich keine ausstehenden Aufträge in der Warteschlange."
 
 #: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
