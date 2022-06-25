@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-23 19:03+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2019-06-27 14:12+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -32,7 +32,7 @@ msgid "Print Test Page"
 msgstr "Skriv ut testside"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "Testside"
 
@@ -101,7 +101,7 @@ msgid "Refresh"
 msgstr "Oppdater"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:62
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -282,12 +282,12 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Bildetrommelen fungerer ikke lenger"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 #, fuzzy
 msgid "Unnamed Printer"
 msgstr "Legg til skriver"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Klar"
 
@@ -641,13 +641,13 @@ msgstr "Magentarød"
 msgid "Tri-color"
 msgstr "Trefarget"
 
-#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
-msgid "Pause"
-msgstr "Pause"
-
-#: src/Widgets/JobRow.vala:106
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "Fortsett"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "Pause"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -655,7 +655,7 @@ msgstr "Fortsett"
 msgid "Remove this printer"
 msgstr "Fjern skriver"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Slått av"
 
