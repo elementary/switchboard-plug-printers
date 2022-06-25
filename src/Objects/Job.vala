@@ -152,17 +152,19 @@ public class Printers.Job : GLib.Object {
         switch (state) {
             case CUPS.IPP.JobState.PENDING:
             case CUPS.IPP.JobState.PROCESSING:
-            case CUPS.IPP.JobState.HELD:
                 return null;
+            case CUPS.IPP.JobState.HELD:
+                return new ThemedIcon ("process-paused");
             case CUPS.IPP.JobState.STOPPED:
-                return new ThemedIcon ("media-playback-pause");
             case CUPS.IPP.JobState.CANCELED:
+                return new ThemedIcon ("process-stop");
             case CUPS.IPP.JobState.ABORTED:
-                return new ThemedIcon ("process-error-symbolic");
+                return new ThemedIcon ("process-error");
             case CUPS.IPP.JobState.COMPLETED:
-            default:
-                return new ThemedIcon ("process-completed-symbolic");
+                return new ThemedIcon ("process-completed");
         }
+
+        return null;
     }
 
     public GLib.Icon get_file_icon () {
