@@ -7,14 +7,23 @@
   <icon type="stock">printer</icon>
   <translation type="gettext">printers-plug</translation>
   <releases>
-    <release version="2.2.0" date="2022-06-15" urgency="medium">
+    <release version="2.2.0" date="2026-06-15" urgency="medium">
       <description>
-        <p>Minor updates:</p>
+        <p>Improvements:</p>
         <ul>
-          <li>Update sidebar after adding or removing printer</li>
+          <li>Improved job row layout</li>
           <li>Show the supported language for each driver</li>
           <li>Show color names below ink levels</li>
           <li>Use newer add/remove list pattern</li>
+        </ul>
+        <p>Fixes:</p>
+        <ul>
+          <li>Update sidebar after adding or removing printer</li>
+          <li>Update sidebar after enabling or disabling printer</li>
+          <li>Update job list after job state change</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
           <li>Updated translations</li>
         </ul>
       </description>
