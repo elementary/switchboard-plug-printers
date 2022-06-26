@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-23 19:03+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2019-08-23 22:22+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -32,7 +32,7 @@ msgid "Print Test Page"
 msgstr "Imprimir página de teste"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "Página de teste"
 
@@ -101,7 +101,7 @@ msgid "Refresh"
 msgstr "Atualizar"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:62
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -282,11 +282,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "O condutor de foto ótica não está funcionando"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "Impressora sem nome"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Pronto"
 
@@ -636,13 +636,13 @@ msgstr "Magenta"
 msgid "Tri-color"
 msgstr "Tricolor"
 
-#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
-msgid "Pause"
-msgstr "Pausa"
-
-#: src/Widgets/JobRow.vala:106
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "Resumo"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "Pausa"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -650,7 +650,7 @@ msgstr "Resumo"
 msgid "Remove this printer"
 msgstr "Remover impressora"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Desabilitado"
 

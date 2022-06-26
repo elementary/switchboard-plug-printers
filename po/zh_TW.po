@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-23 19:03+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2020-03-01 14:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -32,7 +32,7 @@ msgid "Print Test Page"
 msgstr "列印測試頁"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "測試頁"
 
@@ -100,7 +100,7 @@ msgid "Refresh"
 msgstr "重整"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:62
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "取消"
 
@@ -279,11 +279,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "感光鼓已無法使用"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "未命名的印表機"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "準備就緒"
 
@@ -633,13 +633,13 @@ msgstr "洋紅色"
 msgid "Tri-color"
 msgstr "三色"
 
-#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
-msgid "Pause"
-msgstr "暫停"
-
-#: src/Widgets/JobRow.vala:106
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "繼續"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "暫停"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -647,7 +647,7 @@ msgstr "繼續"
 msgid "Remove this printer"
 msgstr "移除印表機"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "已停用"
 

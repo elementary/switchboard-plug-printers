@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-23 19:03+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2020-04-27 12:10+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -33,7 +33,7 @@ msgid "Print Test Page"
 msgstr "Natisni preizkusno stran"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "Preizkusna stran"
 
@@ -101,7 +101,7 @@ msgid "Refresh"
 msgstr "Osveži"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:62
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "Prekliči"
 
@@ -282,11 +282,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Optični foto prevodnik ne deluje več"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "Neimenovan tiskalnik"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Pripravljen"
 
@@ -636,13 +636,13 @@ msgstr "Magenta"
 msgid "Tri-color"
 msgstr "Tribarvna"
 
-#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
-msgid "Pause"
-msgstr "Premor"
-
-#: src/Widgets/JobRow.vala:106
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "Nadaljuj"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "Premor"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -650,7 +650,7 @@ msgstr "Nadaljuj"
 msgid "Remove this printer"
 msgstr "Odstrani tiskalnik"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Onemogočeno"
 

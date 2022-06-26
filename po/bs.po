@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-23 19:03+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2018-11-09 18:11+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -33,7 +33,7 @@ msgid "Print Test Page"
 msgstr "Štampaj testnu stranicu"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "Testna stranica"
 
@@ -102,7 +102,7 @@ msgid "Refresh"
 msgstr "Osvježi"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:62
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "Otkaži"
 
@@ -284,12 +284,12 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Optički provodnik za fotografije više ne radi"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 #, fuzzy
 msgid "Unnamed Printer"
 msgstr "Dodaj štampač"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Spremno"
 
@@ -641,13 +641,13 @@ msgstr "Magenta"
 msgid "Tri-color"
 msgstr "Trobojno"
 
-#: src/Widgets/JobRow.vala:71 src/Widgets/JobRow.vala:114
-msgid "Pause"
-msgstr "Pauza"
-
-#: src/Widgets/JobRow.vala:106
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "Nastavi"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "Pauza"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -655,7 +655,7 @@ msgstr "Nastavi"
 msgid "Remove this printer"
 msgstr "Ukloni štampač"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Deaktivirano"
 
