@@ -19,7 +19,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.InkLevel : Gtk.Box {
+public class Printers.InkLevel : Gtk.FlowBox {
     public unowned Printer printer { get; construct; }
     private const string STYLE_CLASS =
     """
@@ -34,10 +34,159 @@ public class Printers.InkLevel : Gtk.Box {
 
     construct {
         homogeneous = true;
-        orientation = Gtk.Orientation.HORIZONTAL;
-        spacing = 12;
+        column_spacing = 12;
+        row_spacing = 24;
+        max_children_per_line = 30;
 
-        var colors = printer.get_color_levels ();
+        // var colors = printer.get_color_levels ();
+
+        var cyan = new Printer.ColorLevel () {
+            color = "#00ffff",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Imaging Unit (Cyan)"
+        };
+
+        var cyana = new Printer.ColorLevel () {
+            color = "#00ffff",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Toner (Cyan)"
+        };
+
+        var cyanc = new Printer.ColorLevel () {
+            color = "#FF00FF",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Imaging Unit (Magenta)"
+        };
+
+        var cyand = new Printer.ColorLevel () {
+            color = "#FF00FF",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Toner (Magenta)"
+        };
+
+        var cyane = new Printer.ColorLevel () {
+            color = "#FFFF00",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Imaging Unit (Yellow)"
+        };
+
+        var cyanf = new Printer.ColorLevel () {
+            color = "#FFFF00",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Toner (Yellow)"
+        };
+
+        var cyang = new Printer.ColorLevel () {
+            color = "#000000",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Toner (Black)"
+        };
+
+        var cyanh = new Printer.ColorLevel () {
+            color = "#000000",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Drum Cartridge"
+        };
+
+        var cyani = new Printer.ColorLevel () {
+            color = "#000000",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Developer Cartridge"
+        };
+
+        var cyanj = new Printer.ColorLevel () {
+            color = "cyan",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Waste Toner Box"
+        };
+
+        var cyank = new Printer.ColorLevel () {
+            color = "cyan",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Fusing Unit"
+        };
+
+        var cyanl = new Printer.ColorLevel () {
+            color = "cyan",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Image Transfer Belt Unit"
+        };
+
+        var cyanm = new Printer.ColorLevel () {
+            color = "cyan",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Transfer Roller Unit"
+        };
+
+        var cyann = new Printer.ColorLevel () {
+            color = "cyan",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Ozone Filter"
+        };
+
+        var cyano = new Printer.ColorLevel () {
+            color = "cyan",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Toner Filter"
+        };
+
+        var cyanp = new Printer.ColorLevel () {
+            color = "cyan",
+            level = 5,
+            level_max = 10,
+            level_min = 0,
+            name = "Staple Cartridge"
+        };
+
+        var colors = new Gee.ArrayList<Printer.ColorLevel> ();
+        colors.add (cyan);
+        colors.add (cyana);
+        colors.add (cyanc);
+        colors.add (cyand);
+        colors.add (cyane);
+        colors.add (cyanf);
+        colors.add (cyang);
+        colors.add (cyanh);
+        colors.add (cyani);
+        colors.add (cyanj);
+        colors.add (cyank);
+        colors.add (cyanl);
+        colors.add (cyanm);
+        colors.add (cyann);
+        colors.add (cyano);
+        colors.add (cyanp);
+
+        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
 
         foreach (Printer.ColorLevel color in colors) {
             string[] colors_codes = { null, "3689E6" };
@@ -51,6 +200,7 @@ public class Printers.InkLevel : Gtk.Box {
                 var css_color = STYLE_CLASS.printf (colors_codes[i]);
 
                 var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max) {
+                    height_request = 128,
                     hexpand = true,
                     vexpand = true,
                     inverted = true,
@@ -69,11 +219,18 @@ public class Printers.InkLevel : Gtk.Box {
                 ink_box.add (level);
             }
 
-            var label = new Gtk.Label (get_translated_name (color.name ?? "black"));
+            var label = new Gtk.Label (get_translated_name (color.name ?? "black")) {
+                justify = Gtk.Justification.CENTER,
+                wrap = true,
+                max_width_chars = 10,
+                yalign = 0
+            };
 
             var color_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
             color_box.add (ink_box);
             color_box.add (label);
+
+            size_group.add_widget (label);
 
             add (color_box);
         }
