@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2022-06-17 21:25+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -32,7 +32,7 @@ msgid "Print Test Page"
 msgstr "הדפסת עמוד ניסיון"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "עמוד ניסיון"
 
@@ -100,7 +100,7 @@ msgid "Refresh"
 msgstr "רענון"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -277,40 +277,60 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "הפוטומוליך האופטי אינו פועל עוד"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "מדפסת ללא שם"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "מוכנה"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "משימה ממתינה"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "מוחזקת"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "בהליכי עיבוד…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "המשימה נעצרה"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "נעצרה"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "המשימה בוטלה"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "ביטול"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "המשימה הושמדה"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "המשימה הושלמה"
 
 #: src/Views/JobsView.vala:30
@@ -321,7 +341,7 @@ msgstr "תור ההדפסה ריק"
 msgid "There are no pending jobs in the queue."
 msgstr "אין משימות ממתינות בתור."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "משימות שהושלמו"
 
@@ -611,21 +631,30 @@ msgstr "מג׳נטה"
 msgid "Tri-color"
 msgstr "טרי־קולור"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "השהיה"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "המשך"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "השהיה"
 
 #: src/Widgets/PrinterRow.vala:41
 msgid "Remove this printer"
 msgstr "הסרת המדפסת"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "מושבתת"
+
+#~ msgid "Processing…"
+#~ msgstr "בהליכי עיבוד…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "המשימה נעצרה"
+
+#~ msgid "Job Canceled"
+#~ msgstr "המשימה בוטלה"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "יש להוסיף מדפסת כדי להתחיל להדפיס"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2018-05-30 00:04+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -30,7 +30,7 @@ msgid "Print Test Page"
 msgstr "Imprimă pagină de probă"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "Pagina de probă"
 
@@ -102,7 +102,7 @@ msgid "Refresh"
 msgstr "Reîmprospătă"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "Anulare"
 
@@ -284,41 +284,61 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Conductorul fotografic optic nu mai funcționează"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 #, fuzzy
 msgid "Unnamed Printer"
 msgstr "Adăugați imprimanta"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Gata"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "Lucru în așteptare"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "În așteptare"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "Prelucrare…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Lucru oprit"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Oprit"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Lucru Anulat"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Anulare"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "Lucrul a fost omis"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "Lucru comletat"
 
 #: src/Views/JobsView.vala:30
@@ -329,7 +349,7 @@ msgstr "Coada de imprimire este goală"
 msgid "There are no pending jobs in the queue."
 msgstr "Nu există nicio lucrare în coada de așteptare."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "Lucrări finalizate"
 
@@ -621,13 +641,13 @@ msgstr "Purpuriu"
 msgid "Tri-color"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "Pauză"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "Relua"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "Pauză"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -635,6 +655,15 @@ msgstr "Relua"
 msgid "Remove this printer"
 msgstr "Eliminați impresora"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Dezactivat"
+
+#~ msgid "Processing…"
+#~ msgstr "Prelucrare…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Lucru oprit"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Lucru Anulat"

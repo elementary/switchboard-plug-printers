@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2018-10-22 19:26+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -32,7 +32,7 @@ msgid "Print Test Page"
 msgstr "Skriv ut testsida"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "Testsida"
 
@@ -101,7 +101,7 @@ msgid "Refresh"
 msgstr "Uppdatera"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -282,41 +282,61 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Den optiska fotoledaren fungerar inte längre"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 #, fuzzy
 msgid "Unnamed Printer"
 msgstr "Lägg till skrivare"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Klar"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "Utskrift väntar"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "I kö"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "Processar…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Utskrift stoppad"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Stoppad"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Utskrift återkallad"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Avbryt"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "Utskrift avbruten"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "Utskrift fullföljd"
 
 #: src/Views/JobsView.vala:30
@@ -327,7 +347,7 @@ msgstr "Utskriftskön är tom"
 msgid "There are no pending jobs in the queue."
 msgstr "Det finns inga väntande utskrifter i kön."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "Utförda jobb"
 
@@ -619,13 +639,13 @@ msgstr "Magenta"
 msgid "Tri-color"
 msgstr "Trefärgad"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "Pausa"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "Återuppta"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "Pausa"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -633,9 +653,18 @@ msgstr "Återuppta"
 msgid "Remove this printer"
 msgstr "Ta bort skrivare"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Inaktiverad"
+
+#~ msgid "Processing…"
+#~ msgstr "Processar…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Utskrift stoppad"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Utskrift återkallad"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Lägg till en skrivare för att börja skriva ut"

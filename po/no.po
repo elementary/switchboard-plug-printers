@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -23,7 +23,7 @@ msgid "Print Test Page"
 msgstr ""
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgid "Refresh"
 msgstr ""
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr ""
 
@@ -268,40 +268,47 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr ""
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr ""
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr ""
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+msgctxt "Print Job"
+msgid "Pending"
 msgstr ""
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr ""
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
 msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
+#: src/Objects/Job.vala:140
+msgctxt "Print Job"
+msgid "Stopped"
 msgstr ""
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Canceled"
 msgstr ""
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr ""
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+msgctxt "Print Job"
+msgid "Completed"
 msgstr ""
 
 #: src/Views/JobsView.vala:30
@@ -312,7 +319,7 @@ msgstr ""
 msgid "There are no pending jobs in the queue."
 msgstr ""
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr ""
 
@@ -602,18 +609,18 @@ msgstr ""
 msgid "Tri-color"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
+#: src/Widgets/JobRow.vala:156
+msgid "Resume"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:101
-msgid "Resume"
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
 msgstr ""
 
 #: src/Widgets/PrinterRow.vala:41
 msgid "Remove this printer"
 msgstr ""
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr ""

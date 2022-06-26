@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2017-08-31 23:37+0000\n"
 "Last-Translator: Grammatopoulos Athanasios-Vasi <darkthanos.gr@gmail.com>\n"
 "Language-Team: Greek <https://weblate.elementary.io/projects/switchboard/"
@@ -33,7 +33,7 @@ msgid "Print Test Page"
 msgstr "Εκτύπωση δοκιμαστικής σελίδας"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "Δοκιμαστική σελίδα"
 
@@ -102,7 +102,7 @@ msgid "Refresh"
 msgstr "Ανανέωση"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr ""
 
@@ -281,41 +281,48 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr ""
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 #, fuzzy
 msgid "Unnamed Printer"
 msgstr "Προσθήκη εκτυπωτή"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Έτοιμος"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+msgctxt "Print Job"
+msgid "Pending"
 msgstr ""
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr ""
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
 msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
+#: src/Objects/Job.vala:140
+msgctxt "Print Job"
+msgid "Stopped"
 msgstr ""
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Canceled"
 msgstr ""
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr ""
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+msgctxt "Print Job"
+msgid "Completed"
 msgstr ""
 
 #: src/Views/JobsView.vala:30
@@ -326,7 +333,7 @@ msgstr ""
 msgid "There are no pending jobs in the queue."
 msgstr ""
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr ""
 
@@ -620,12 +627,12 @@ msgstr ""
 msgid "Tri-color"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
+#: src/Widgets/JobRow.vala:156
+msgid "Resume"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:101
-msgid "Resume"
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
 msgstr ""
 
 #: src/Widgets/PrinterRow.vala:41
@@ -634,7 +641,7 @@ msgstr ""
 msgid "Remove this printer"
 msgstr "Αφαίρεση εκτυπωτή"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr ""
 

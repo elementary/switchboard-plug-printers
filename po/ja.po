@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
-"PO-Revision-Date: 2022-06-18 06:41+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
+"PO-Revision-Date: 2022-06-24 20:45+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ja/>\n"
@@ -32,7 +32,7 @@ msgid "Print Test Page"
 msgstr "テストページを印刷"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "テストページ"
 
@@ -101,7 +101,7 @@ msgid "Refresh"
 msgstr "再読み込み"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -252,7 +252,7 @@ msgstr "オフライン"
 #: src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
-msgstr "停止中"
+msgstr "停止"
 
 #. / Translators: The printer marker supply waste receptacle is almost full
 #: src/Objects/Printer.vala:69
@@ -278,41 +278,48 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "感光体が寿命に達しました"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "名称未設定プリンター"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "準備完了"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
-msgstr "動作保留"
+#: src/Objects/Job.vala:134
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "保留中"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+msgctxt "Print Job"
 msgid "On Hold"
-msgstr "保留"
+msgstr "待機中"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "動作中…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr "印刷中"
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "ジョブを停止しました"
+#: src/Objects/Job.vala:140
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "停止"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "ジョブをキャンセルしました"
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "キャンセル済み"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
-msgstr "ジョブを中断しました"
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "中断済み"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
-msgstr "ジョブを完了しました"
+#: src/Objects/Job.vala:147
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "完了"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
@@ -322,7 +329,7 @@ msgstr "プリントキューは空です"
 msgid "There are no pending jobs in the queue."
 msgstr "キューには保留中のジョブはありません。"
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "完了したジョブ"
 
@@ -612,21 +619,30 @@ msgstr "マゼンタ"
 msgid "Tri-color"
 msgstr "3色"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "一時停止"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "再開"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "一時停止"
 
 #: src/Widgets/PrinterRow.vala:41
 msgid "Remove this printer"
 msgstr "このプリンターを削除"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "無効"
+
+#~ msgid "Processing…"
+#~ msgstr "動作中…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "ジョブを停止しました"
+
+#~ msgid "Job Canceled"
+#~ msgstr "ジョブをキャンセルしました"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "印刷を開始するにはプリンターを追加してください"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2021-08-14 15:23+0000\n"
 "Last-Translator: DartDeaDia <DartDeaDia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -33,7 +33,7 @@ msgid "Print Test Page"
 msgstr "Печать пробной страницы"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "Пробная страница"
 
@@ -102,7 +102,7 @@ msgid "Refresh"
 msgstr "Обновить"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "Отменить"
 
@@ -281,40 +281,60 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Фотобарабан не работает"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "Безымянный принтер"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Готов к работе"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "Задание в ожидании"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "На удерживании"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "В процессе…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Задание остановлено"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Остановлен"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Задание отменено"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Отменить"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "Задание прервано"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "Задание завершено"
 
 #: src/Views/JobsView.vala:30
@@ -325,7 +345,7 @@ msgstr "Очередь печати пуста"
 msgid "There are no pending jobs in the queue."
 msgstr "В очереди нет незаконченных заданий."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "Выполненные задания"
 
@@ -615,13 +635,13 @@ msgstr "Фиолетовый"
 msgid "Tri-color"
 msgstr "Трехцветный"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "Пауза"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "Возобновить"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "Пауза"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -629,9 +649,18 @@ msgstr "Возобновить"
 msgid "Remove this printer"
 msgstr "Удалить принтер"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Отключено"
+
+#~ msgid "Processing…"
+#~ msgstr "В процессе…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Задание остановлено"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Задание отменено"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Добавьте принтер для начала печати"

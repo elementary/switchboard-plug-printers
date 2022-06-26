@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2021-08-27 17:04+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -32,7 +32,7 @@ msgid "Print Test Page"
 msgstr "Tesztoldal nyomtatása"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "Tesztoldal"
 
@@ -101,7 +101,7 @@ msgid "Refresh"
 msgstr "Frissítés"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "Mégse"
 
@@ -281,40 +281,60 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Az optikai fotovezető meghibásodott"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "Névtelen nyomtató"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Készenlétben"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "Feladat függőben"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "Felfüggesztve"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "Feldolgozás…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Feladat megállítva"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Leállítva"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Mégse"
+
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "Feladat megszakítva"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
-msgstr "Feladat megszakítva"
-
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "Feladat kész"
 
 #: src/Views/JobsView.vala:30
@@ -325,7 +345,7 @@ msgstr "A nyomtatási sor üres"
 msgid "There are no pending jobs in the queue."
 msgstr "Nincsenek függőben lévő feladatok a sorban."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "Befejezett feladatok"
 
@@ -615,13 +635,13 @@ msgstr "Bíborvörös"
 msgid "Tri-color"
 msgstr "Háromszínű"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "Szünet"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "Folytatás"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "Szünet"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -629,6 +649,15 @@ msgstr "Folytatás"
 msgid "Remove this printer"
 msgstr "Nyomtató eltávolítása"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Letiltva"
+
+#~ msgid "Processing…"
+#~ msgstr "Feldolgozás…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Feladat megállítva"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Feladat megszakítva"

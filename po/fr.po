@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
-"PO-Revision-Date: 2022-06-16 09:04+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
+"PO-Revision-Date: 2022-06-24 12:02+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/fr/>\n"
@@ -32,7 +32,7 @@ msgid "Print Test Page"
 msgstr "Imprimer une page de test"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "Page de test"
 
@@ -104,7 +104,7 @@ msgid "Refresh"
 msgstr "Actualiser"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "Annuler"
 
@@ -282,41 +282,48 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Le photo-conducteur optique n'est plus en état de fonctionnement"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "Imprimante sans nom"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Prêt"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
-msgstr "Tâche en attente"
-
-#: src/Objects/Job.vala:103
-msgid "On Hold"
+#: src/Objects/Job.vala:134
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "En attente"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "Traitement…"
+#: src/Objects/Job.vala:136
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "En suspens"
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Tâche arrêtée"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr "En cours"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Tâche annulée"
+#: src/Objects/Job.vala:140
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Arrêtée"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
-msgstr "Tâche interrompue"
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Annulée"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
-msgstr "Tâche terminée"
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Interrompue"
+
+#: src/Objects/Job.vala:147
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Terminé"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
@@ -326,7 +333,7 @@ msgstr "La file d'impression est vide"
 msgid "There are no pending jobs in the queue."
 msgstr "Il n'y a aucune tâche dans la file."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "Tâches terminées"
 
@@ -616,21 +623,30 @@ msgstr "Magenta"
 msgid "Tri-color"
 msgstr "Tricolore"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "Mettre en pause"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "Reprendre"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "Mettre en pause"
 
 #: src/Widgets/PrinterRow.vala:41
 msgid "Remove this printer"
 msgstr "Supprimer cette imprimante"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Désactivé"
+
+#~ msgid "Processing…"
+#~ msgstr "Traitement…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Tâche arrêtée"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Tâche annulée"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Ajoutez une imprimante pour commencer à imprimer"

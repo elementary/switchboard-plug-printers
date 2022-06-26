@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:12+0000\n"
+"POT-Creation-Date: 2022-06-25 07:43+0000\n"
 "PO-Revision-Date: 2019-07-21 03:24+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -32,7 +32,7 @@ msgid "Print Test Page"
 msgstr "시험 페이지 인쇄"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:110
 msgid "Test page"
 msgstr "시험 페이지"
 
@@ -100,7 +100,7 @@ msgid "Refresh"
 msgstr "새로 고침"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:55
+#: src/Widgets/JobRow.vala:77
 msgid "Cancel"
 msgstr "취소"
 
@@ -280,40 +280,60 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "감광 반도체가 더 이상 작동하지 않습니다"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "이름 없는 프린터"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "사용함"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:134
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "작업 보류 중"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:136
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "대기 중"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "작업 중…"
+#: src/Objects/Job.vala:138
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "작업이 중지 됨"
+#: src/Objects/Job.vala:140
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "정지 됨"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "작업이 취소 됨"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "취소"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "작업이 중단 됨"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:147
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "작업이 완료 됨"
 
 #: src/Views/JobsView.vala:30
@@ -324,7 +344,7 @@ msgstr "프린트 대기열이 비었습니다"
 msgid "There are no pending jobs in the queue."
 msgstr "대기중인 작업이 없습니다."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:93
 msgid "Completed Jobs"
 msgstr "끝난 작업"
 
@@ -614,13 +634,13 @@ msgstr "진홍색"
 msgid "Tri-color"
 msgstr "삼원색"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "일시 중지"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:156
 msgid "Resume"
 msgstr "다시 작동"
+
+#: src/Widgets/JobRow.vala:159
+msgid "Pause"
+msgstr "일시 중지"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -628,9 +648,18 @@ msgstr "다시 작동"
 msgid "Remove this printer"
 msgstr "프린터 제거"
 
-#: src/Widgets/PrinterRow.vala:123
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "사용 안 함"
+
+#~ msgid "Processing…"
+#~ msgstr "작업 중…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "작업이 중지 됨"
+
+#~ msgid "Job Canceled"
+#~ msgstr "작업이 취소 됨"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "인쇄하시려면 프린터를 추가하세요"
