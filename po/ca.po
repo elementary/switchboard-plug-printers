@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 18:25+0000\n"
+"POT-Creation-Date: 2022-06-28 19:18+0000\n"
 "PO-Revision-Date: 2022-06-26 18:21+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -15,24 +15,30 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 msgid "Print Queue"
 msgstr "Cua d'impressió"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr "Configuració de la pàgina"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr "Configuració i subministraments"
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Imprimeix una pàgina de prova"
 
+#: src/PrinterPage.vala:55
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear Queue"
+msgstr "Cua d'impressió"
+
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:110
+#: src/PrinterPage.vala:120
 msgid "Test page"
 msgstr "Pàgina de prova"
 
@@ -290,50 +296,50 @@ msgstr "Impressora sense nom"
 msgid "Ready"
 msgstr "A punt"
 
-#: src/Objects/Job.vala:134
+#: src/Objects/Job.vala:142
 msgctxt "Print Job"
 msgid "Pending"
 msgstr "Pendent"
 
-#: src/Objects/Job.vala:136
+#: src/Objects/Job.vala:144
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "En espera"
 
-#: src/Objects/Job.vala:138
+#: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
 msgstr "En curs"
 
-#: src/Objects/Job.vala:140
+#: src/Objects/Job.vala:148
 msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Aturada"
 
-#: src/Objects/Job.vala:142
+#: src/Objects/Job.vala:150
 msgctxt "Print Job"
 msgid "Canceled"
 msgstr "Cancel·lada"
 
-#: src/Objects/Job.vala:144
+#: src/Objects/Job.vala:152
 msgctxt "Print Job"
 msgid "Aborted"
 msgstr "Avortada"
 
-#: src/Objects/Job.vala:147
+#: src/Objects/Job.vala:155
 msgctxt "Print Job"
 msgid "Completed"
 msgstr "Feta"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "La cua d'impressió és buida."
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "No hi ha tasques pendents a la cua."
 
-#: src/Views/JobsView.vala:93
+#: src/Views/JobsView.vala:92
 msgid "Completed Jobs"
 msgstr "Tasques acabades"
 

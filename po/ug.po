@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 18:25+0000\n"
+"POT-Creation-Date: 2022-06-28 19:18+0000\n"
 "PO-Revision-Date: 2017-01-02 07:57+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: \n"
@@ -13,25 +13,30 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 "X-Generator: Launchpad (build 18330)\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 #, fuzzy
 msgid "Print Queue"
 msgstr "پرىنتېرلار"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "سىناق بەتنى بېسىش"
 
+#: src/PrinterPage.vala:55
+#, fuzzy
+msgid "Clear Queue"
+msgstr "پرىنتېرلار"
+
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:110
+#: src/PrinterPage.vala:120
 msgid "Test page"
 msgstr "سىناق بەت"
 
@@ -291,25 +296,25 @@ msgstr "پرىنتېر قوشۇش"
 msgid "Ready"
 msgstr "تەييار بولدى"
 
-#: src/Objects/Job.vala:134
+#: src/Objects/Job.vala:142
 #, fuzzy
 #| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
 msgstr "ۋەزىپە توختىتىپ قويۇلدى"
 
-#: src/Objects/Job.vala:136
+#: src/Objects/Job.vala:144
 #, fuzzy
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "ساقلاۋاتىدۇ"
 
-#: src/Objects/Job.vala:138
+#: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
 msgstr ""
 
-#: src/Objects/Job.vala:140
+#: src/Objects/Job.vala:148
 #, fuzzy
 #| msgctxt "printer state"
 #| msgid "Stopped"
@@ -317,35 +322,35 @@ msgctxt "Print Job"
 msgid "Stopped"
 msgstr "توختىدى"
 
-#: src/Objects/Job.vala:142
+#: src/Objects/Job.vala:150
 #, fuzzy
 msgctxt "Print Job"
 msgid "Canceled"
 msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
 
-#: src/Objects/Job.vala:144
+#: src/Objects/Job.vala:152
 #, fuzzy
 msgctxt "Print Job"
 msgid "Aborted"
 msgstr "ۋەزىپە توختىتىلدى"
 
-#: src/Objects/Job.vala:147
+#: src/Objects/Job.vala:155
 #, fuzzy
 #| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
 msgstr "ۋەزىپە تاماملاندى"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "ۋەزىپە سىپىدە ۋەزىپە يوق"
 
-#: src/Views/JobsView.vala:93
+#: src/Views/JobsView.vala:92
 #, fuzzy
 msgid "Completed Jobs"
 msgstr "تاماملانغان ۋەزىپىلەرنى كۆرسىتىش"

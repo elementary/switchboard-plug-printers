@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 18:25+0000\n"
+"POT-Creation-Date: 2022-06-28 19:18+0000\n"
 "PO-Revision-Date: 2021-05-13 11:04+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -15,24 +15,30 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 msgid "Print Queue"
 msgstr "打印队列"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr "页面设置"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr "设置和用品"
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "打印测试页"
 
+#: src/PrinterPage.vala:55
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear Queue"
+msgstr "打印队列"
+
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:110
+#: src/PrinterPage.vala:120
 msgid "Test page"
 msgstr "测试页"
 
@@ -287,26 +293,26 @@ msgstr "未命名打印机"
 msgid "Ready"
 msgstr "就绪"
 
-#: src/Objects/Job.vala:134
+#: src/Objects/Job.vala:142
 #, fuzzy
 #| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
 msgstr "任务挂起"
 
-#: src/Objects/Job.vala:136
+#: src/Objects/Job.vala:144
 #, fuzzy
 #| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "等待中"
 
-#: src/Objects/Job.vala:138
+#: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
 msgstr ""
 
-#: src/Objects/Job.vala:140
+#: src/Objects/Job.vala:148
 #, fuzzy
 #| msgctxt "printer state"
 #| msgid "Stopped"
@@ -314,36 +320,36 @@ msgctxt "Print Job"
 msgid "Stopped"
 msgstr "停机"
 
-#: src/Objects/Job.vala:142
+#: src/Objects/Job.vala:150
 #, fuzzy
 #| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
 msgstr "取消"
 
-#: src/Objects/Job.vala:144
+#: src/Objects/Job.vala:152
 #, fuzzy
 #| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
 msgstr "任务已放弃"
 
-#: src/Objects/Job.vala:147
+#: src/Objects/Job.vala:155
 #, fuzzy
 #| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
 msgstr "任务已完成"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "打印队列为空"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "队列中无任务。"
 
-#: src/Views/JobsView.vala:93
+#: src/Views/JobsView.vala:92
 msgid "Completed Jobs"
 msgstr "已完成的任务"
 
