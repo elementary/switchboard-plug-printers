@@ -54,7 +54,7 @@ public class Printers.InkLevel : Gtk.FlowBox {
                 var css_color = STYLE_CLASS.printf (colors_codes[i]);
 
                 var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max) {
-                    height_request = 128,
+                    height_request = 64,
                     hexpand = true,
                     vexpand = true,
                     inverted = true,
