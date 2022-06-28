@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-28 19:37+0000\n"
-"PO-Revision-Date: 2022-06-16 15:12+0000\n"
+"PO-Revision-Date: 2022-06-29 04:56+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/uk/>\n"
@@ -31,11 +31,11 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:12
 msgid "New Features:"
-msgstr ""
+msgstr "Нові функції:"
 
 #: data/printers.appdata.xml.in:14
 msgid "Allow clearing the queue for each printer"
-msgstr ""
+msgstr "Можливість очищення черги для кожного принтера"
 
 #: data/printers.appdata.xml.in:16 data/printers.appdata.xml.in:29
 #: data/printers.appdata.xml.in:37 data/printers.appdata.xml.in:45
@@ -56,7 +56,7 @@ msgstr "Показ назв кольорів під рівнем чорнил"
 
 #: data/printers.appdata.xml.in:21
 msgid "Avoid expanding the window for printers with many ink levels"
-msgstr ""
+msgstr "Уникнення розширення вікна для принтерів з багатьма рівнями чорнила"
 
 #: data/printers.appdata.xml.in:22
 msgid "Use newer add/remove list pattern"
