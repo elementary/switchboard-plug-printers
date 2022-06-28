@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 18:25+0000\n"
+"POT-Creation-Date: 2022-06-28 19:18+0000\n"
 "PO-Revision-Date: 2019-10-17 17:23+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,24 +16,28 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 msgid "Print Queue"
 msgstr ""
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr ""
 
+#: src/PrinterPage.vala:55
+msgid "Clear Queue"
+msgstr ""
+
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:110
+#: src/PrinterPage.vala:120
 msgid "Test page"
 msgstr ""
 
@@ -286,50 +290,50 @@ msgstr ""
 msgid "Ready"
 msgstr ""
 
-#: src/Objects/Job.vala:134
+#: src/Objects/Job.vala:142
 msgctxt "Print Job"
 msgid "Pending"
 msgstr ""
 
-#: src/Objects/Job.vala:136
+#: src/Objects/Job.vala:144
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr ""
 
-#: src/Objects/Job.vala:138
+#: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
 msgstr ""
 
-#: src/Objects/Job.vala:140
+#: src/Objects/Job.vala:148
 msgctxt "Print Job"
 msgid "Stopped"
 msgstr ""
 
-#: src/Objects/Job.vala:142
+#: src/Objects/Job.vala:150
 msgctxt "Print Job"
 msgid "Canceled"
 msgstr ""
 
-#: src/Objects/Job.vala:144
+#: src/Objects/Job.vala:152
 msgctxt "Print Job"
 msgid "Aborted"
 msgstr ""
 
-#: src/Objects/Job.vala:147
+#: src/Objects/Job.vala:155
 msgctxt "Print Job"
 msgid "Completed"
 msgstr ""
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr ""
 
-#: src/Views/JobsView.vala:93
+#: src/Views/JobsView.vala:92
 msgid "Completed Jobs"
 msgstr ""
 

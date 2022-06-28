@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 18:25+0000\n"
+"POT-Creation-Date: 2022-06-28 19:18+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Estonian <https://l10n.elementary.io/projects/switchboard/"
@@ -15,25 +15,30 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 #, fuzzy
 msgid "Print Queue"
 msgstr "Printerid"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Trüki testlehekülg"
 
+#: src/PrinterPage.vala:55
+#, fuzzy
+msgid "Clear Queue"
+msgstr "Printerid"
+
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:110
+#: src/PrinterPage.vala:120
 msgid "Test page"
 msgstr "Testleht"
 
@@ -295,25 +300,25 @@ msgstr "Printeri lisamine"
 msgid "Ready"
 msgstr "Valmis"
 
-#: src/Objects/Job.vala:134
+#: src/Objects/Job.vala:142
 #, fuzzy
 #| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
 msgstr "Printimine pooleli"
 
-#: src/Objects/Job.vala:136
+#: src/Objects/Job.vala:144
 #, fuzzy
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "Ootel"
 
-#: src/Objects/Job.vala:138
+#: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
 msgstr ""
 
-#: src/Objects/Job.vala:140
+#: src/Objects/Job.vala:148
 #, fuzzy
 #| msgctxt "printer state"
 #| msgid "Stopped"
@@ -321,35 +326,35 @@ msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Peatatud"
 
-#: src/Objects/Job.vala:142
+#: src/Objects/Job.vala:150
 #, fuzzy
 msgctxt "Print Job"
 msgid "Canceled"
 msgstr "Printimine tühistatud"
 
-#: src/Objects/Job.vala:144
+#: src/Objects/Job.vala:152
 #, fuzzy
 msgctxt "Print Job"
 msgid "Aborted"
 msgstr "Printimine katkestatud"
 
-#: src/Objects/Job.vala:147
+#: src/Objects/Job.vala:155
 #, fuzzy
 #| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
 msgstr "Printimine valmis"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "Järjekorras pole ühtegi printimistööd"
 
-#: src/Views/JobsView.vala:93
+#: src/Views/JobsView.vala:92
 #, fuzzy
 msgid "Completed Jobs"
 msgstr "Lõpetatud printimistööd"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 18:25+0000\n"
+"POT-Creation-Date: 2022-06-28 19:18+0000\n"
 "PO-Revision-Date: 2020-10-24 13:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -15,24 +15,30 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 msgid "Print Queue"
 msgstr "Coda di stampa"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr "Impostazioni di pagina"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr "Impostazioni e forniture"
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Stampa pagina di prova"
 
+#: src/PrinterPage.vala:55
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear Queue"
+msgstr "Coda di stampa"
+
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:110
+#: src/PrinterPage.vala:120
 msgid "Test page"
 msgstr "Pagina di prova"
 
@@ -294,26 +300,26 @@ msgstr "Stampante senza nome"
 msgid "Ready"
 msgstr "Pronto"
 
-#: src/Objects/Job.vala:134
+#: src/Objects/Job.vala:142
 #, fuzzy
 #| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
 msgstr "Lavoro sospeso"
 
-#: src/Objects/Job.vala:136
+#: src/Objects/Job.vala:144
 #, fuzzy
 #| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "In attesa"
 
-#: src/Objects/Job.vala:138
+#: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
 msgstr ""
 
-#: src/Objects/Job.vala:140
+#: src/Objects/Job.vala:148
 #, fuzzy
 #| msgctxt "printer state"
 #| msgid "Stopped"
@@ -321,36 +327,36 @@ msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Arrestata"
 
-#: src/Objects/Job.vala:142
+#: src/Objects/Job.vala:150
 #, fuzzy
 #| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
 msgstr "Annulla"
 
-#: src/Objects/Job.vala:144
+#: src/Objects/Job.vala:152
 #, fuzzy
 #| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
 msgstr "Lavoro abortito"
 
-#: src/Objects/Job.vala:147
+#: src/Objects/Job.vala:155
 #, fuzzy
 #| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
 msgstr "Lavoro completato"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "La coda di stampa è vuota"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "Non ci sono lavori in coda."
 
-#: src/Views/JobsView.vala:93
+#: src/Views/JobsView.vala:92
 msgid "Completed Jobs"
 msgstr "Lavori completati"
 
