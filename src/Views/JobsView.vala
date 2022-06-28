@@ -23,7 +23,7 @@
 public class Printers.JobsView : Gtk.Frame {
     private Printer printer;
     private Gtk.ListBox list_box;
-    public uint n_jobs { get; private set; }
+    private Gtk.Button clear_button;
 
     public JobsView (Printer printer) {
         this.printer = printer;
@@ -41,7 +41,23 @@ public class Printers.JobsView : Gtk.Frame {
         scrolled.expand = true;
         scrolled.add (list_box);
         scrolled.show_all ();
-        add (scrolled);
+
+        clear_button = new Gtk.Button.with_label (_("Clear All")) {
+            always_show_image = true,
+            image = new Gtk.Image.from_icon_name ("edit-clear-all-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            sensitive = list_box.get_children ().length () > 0
+        };
+        clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
+        var actionbar = new Gtk.ActionBar ();
+        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        actionbar.add (clear_button);
+
+        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        box.add (scrolled);
+        box.add (actionbar);
+
+        add (box);
 
         refresh_job_list ();
 
@@ -59,8 +75,10 @@ public class Printers.JobsView : Gtk.Frame {
                 }
             }
 
-            n_jobs = list_box.get_children ().length ();
+            clear_button.sensitive = list_box.get_children ().length () > 0;
         });
+
+        clear_button.clicked.connect (() => clear_queue ());
     }
 
     // Sort all ongoing jobs first, otherwise sort in descending order of displayed time (null last)
@@ -129,6 +147,6 @@ public class Printers.JobsView : Gtk.Frame {
             list_box.add (new JobRow (printer, job));
         }
 
-        n_jobs = list_box.get_children ().length ();
+        clear_button.sensitive = list_box.get_children ().length () > 0;
     }
 }
