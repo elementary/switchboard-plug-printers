@@ -61,8 +61,6 @@ public class Printers.JobsView : Gtk.Frame {
 
         refresh_job_list ();
 
-        refresh_job_list ();
-
         unowned Cups.Notifier notifier = Cups.Notifier.get_default ();
         notifier.job_created.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
             if (printer.dest.name != name) {
