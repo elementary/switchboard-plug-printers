@@ -85,6 +85,14 @@ public class Printers.Job : GLib.Object {
         }
     }
 
+    public void purge () {
+        try {
+            Cups.get_pk_helper ().job_cancel_purge (uid, true);
+        } catch (Error e) {
+            critical (e.message);
+        }
+    }
+
     public void resume () {
         try {
             Cups.get_pk_helper ().job_set_hold_until (uid, "no-hold");

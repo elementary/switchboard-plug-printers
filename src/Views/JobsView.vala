@@ -23,6 +23,7 @@
 public class Printers.JobsView : Gtk.Frame {
     private Printer printer;
     private Gtk.ListBox list_box;
+    public uint n_jobs { get; private set; }
 
     public JobsView (Printer printer) {
         this.printer = printer;
@@ -40,13 +41,9 @@ public class Printers.JobsView : Gtk.Frame {
         scrolled.expand = true;
         scrolled.add (list_box);
         scrolled.show_all ();
-
-        var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
-        foreach (var job in jobs) {
-            list_box.add (new JobRow (printer, job));
-        }
-
         add (scrolled);
+
+        refresh_job_list ();
 
         unowned Cups.Notifier notifier = Cups.Notifier.get_default ();
         notifier.job_created.connect ((text, printer_uri, name, state, state_reasons, is_accepting_jobs, job_id, job_state, job_state_reason, job_name, job_impressions_completed) => {
@@ -61,6 +58,8 @@ public class Printers.JobsView : Gtk.Frame {
                     break;
                 }
             }
+
+            n_jobs = list_box.get_children ().length ();
         });
     }
 
@@ -98,5 +97,38 @@ public class Printers.JobsView : Gtk.Frame {
         } else {
             row1.set_header (null);
         }
+    }
+
+    public void clear_queue () {
+        var dialog = new ClearQueueDialog (printer) {
+            transient_for = (Gtk.Window) get_toplevel ()
+        };
+        dialog.response.connect ((response_id) => {
+            dialog.destroy ();
+
+            if (response_id == Gtk.ResponseType.OK) {
+                list_box.@foreach ((row) => {
+                    var job = ((JobRow)row).job;
+                    job.purge ();
+                });
+
+                refresh_job_list ();
+            }
+        });
+
+        dialog.present ();
+    }
+
+    private void refresh_job_list () {
+        list_box.@foreach ((row) => {
+            list_box.remove (row);
+        });
+
+        var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
+        foreach (var job in jobs) {
+            list_box.add (new JobRow (printer, job));
+        }
+
+        n_jobs = list_box.get_children ().length ();
     }
 }
