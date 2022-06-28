@@ -9,6 +9,10 @@
   <releases>
     <release version="2.2.0" date="2026-06-15" urgency="medium">
       <description>
+        <p>New Features:</p>
+        <ul>
+          <li>Allow clearing the queue for each printer</li>
+        </ul>
         <p>Improvements:</p>
         <ul>
           <li>Improved job row layout</li>

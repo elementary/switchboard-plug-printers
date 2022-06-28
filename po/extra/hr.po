@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-25 07:43+0000\n"
+"POT-Creation-Date: 2022-06-28 19:18+0000\n"
 "PO-Revision-Date: 2020-04-12 11:10+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -28,33 +28,45 @@ msgstr ""
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 
-#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:24
-#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
-msgid "Minor updates:"
+#: data/printers.appdata.xml.in:12
+msgid "New Features:"
 msgstr ""
 
 #: data/printers.appdata.xml.in:14
+msgid "Allow clearing the queue for each printer"
+msgstr ""
+
+#: data/printers.appdata.xml.in:16 data/printers.appdata.xml.in:29
+#: data/printers.appdata.xml.in:37 data/printers.appdata.xml.in:45
+msgid "Minor updates:"
+msgstr ""
+
+#: data/printers.appdata.xml.in:18
 msgid "Update sidebar after adding or removing printer"
 msgstr ""
 
-#: data/printers.appdata.xml.in:15
+#: data/printers.appdata.xml.in:19
 msgid "Show the supported language for each driver"
 msgstr ""
 
-#: data/printers.appdata.xml.in:16
+#: data/printers.appdata.xml.in:20
 msgid "Show color names below ink levels"
 msgstr ""
 
-#: data/printers.appdata.xml.in:17
+#: data/printers.appdata.xml.in:21
+msgid "Avoid expanding the window for printers with many ink levels"
+msgstr ""
+
+#: data/printers.appdata.xml.in:22
 msgid "Use newer add/remove list pattern"
 msgstr ""
 
-#: data/printers.appdata.xml.in:18 data/printers.appdata.xml.in:26
-#: data/printers.appdata.xml.in:34 data/printers.appdata.xml.in:42
-#: data/printers.appdata.xml.in:49
+#: data/printers.appdata.xml.in:23 data/printers.appdata.xml.in:31
+#: data/printers.appdata.xml.in:39 data/printers.appdata.xml.in:47
+#: data/printers.appdata.xml.in:54
 msgid "Updated translations"
 msgstr "Nadopunjeni prijevodi"
 
-#: data/printers.appdata.xml.in:48
+#: data/printers.appdata.xml.in:53
 msgid "Show a default name if a printer is unnamed"
 msgstr ""

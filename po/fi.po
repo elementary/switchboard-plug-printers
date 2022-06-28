@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-25 07:43+0000\n"
+"POT-Creation-Date: 2022-06-28 19:18+0000\n"
 "PO-Revision-Date: 2021-08-16 08:39+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -15,24 +15,30 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 msgid "Print Queue"
 msgstr "Tulostusjono"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr "Sivun määritykset"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr "Asetukset ja tarvikkeet"
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Tulosta testisivu"
 
+#: src/PrinterPage.vala:55
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear Queue"
+msgstr "Tulostusjono"
+
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:110
+#: src/PrinterPage.vala:120
 msgid "Test page"
 msgstr "Testisivu"
 
@@ -290,26 +296,26 @@ msgstr "Nimetön tulostin"
 msgid "Ready"
 msgstr "Valmis"
 
-#: src/Objects/Job.vala:134
+#: src/Objects/Job.vala:142
 #, fuzzy
 #| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
 msgstr "Työ odottaa"
 
-#: src/Objects/Job.vala:136
+#: src/Objects/Job.vala:144
 #, fuzzy
 #| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "Pidossa"
 
-#: src/Objects/Job.vala:138
+#: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
 msgstr ""
 
-#: src/Objects/Job.vala:140
+#: src/Objects/Job.vala:148
 #, fuzzy
 #| msgctxt "printer state"
 #| msgid "Stopped"
@@ -317,36 +323,36 @@ msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Pysäytetty"
 
-#: src/Objects/Job.vala:142
+#: src/Objects/Job.vala:150
 #, fuzzy
 #| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
 msgstr "Peru"
 
-#: src/Objects/Job.vala:144
+#: src/Objects/Job.vala:152
 #, fuzzy
 #| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
 msgstr "Työ lopetettu"
 
-#: src/Objects/Job.vala:147
+#: src/Objects/Job.vala:155
 #, fuzzy
 #| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
 msgstr "Työ valmistui"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "Tulostusjono on tyhjä"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "Tulostusjonossa ei ole töitä."
 
-#: src/Views/JobsView.vala:93
+#: src/Views/JobsView.vala:92
 msgid "Completed Jobs"
 msgstr "Valmistuneet työt"
 
@@ -608,39 +614,39 @@ msgstr "Labra 1 tai Juhan pöytä"
 msgid "Use as default printer:"
 msgstr "Käytä oletustulostimena:"
 
-#: src/Widgets/InkLevel.vala:86
+#: src/Widgets/InkLevel.vala:97
 msgid "Black (PGBK)"
 msgstr "Musta (PGBK)"
 
-#: src/Widgets/InkLevel.vala:89
+#: src/Widgets/InkLevel.vala:100
 msgid "Black (BK)"
 msgstr "Musta (BK)"
 
-#: src/Widgets/InkLevel.vala:93
+#: src/Widgets/InkLevel.vala:104
 msgid "Black"
 msgstr "Musta"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:108
 msgid "Yellow"
 msgstr "Keltainen"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:112
 msgid "Cyan"
 msgstr "Syaani"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:116
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/InkLevel.vala:107
+#: src/Widgets/InkLevel.vala:118
 msgid "Tri-color"
 msgstr "Kolmiväri"
 
-#: src/Widgets/JobRow.vala:156
+#: src/Widgets/JobRow.vala:158
 msgid "Resume"
 msgstr "Jatka"
 
-#: src/Widgets/JobRow.vala:159
+#: src/Widgets/JobRow.vala:163
 msgid "Pause"
 msgstr "Keskeytä"
 

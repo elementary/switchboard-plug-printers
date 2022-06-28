@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-25 07:43+0000\n"
+"POT-Creation-Date: 2022-06-28 19:18+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,25 +16,30 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 #, fuzzy
 msgid "Print Queue"
 msgstr "Pisači"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Ispiši testnu stranicu"
 
+#: src/PrinterPage.vala:55
+#, fuzzy
+msgid "Clear Queue"
+msgstr "Pisači"
+
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:110
+#: src/PrinterPage.vala:120
 msgid "Test page"
 msgstr "Testna stranica"
 
@@ -296,25 +301,25 @@ msgstr "Dodaj pisač"
 msgid "Ready"
 msgstr "Spreman"
 
-#: src/Objects/Job.vala:134
+#: src/Objects/Job.vala:142
 #, fuzzy
 #| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
 msgstr "Čekanje zadatka"
 
-#: src/Objects/Job.vala:136
+#: src/Objects/Job.vala:144
 #, fuzzy
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "Na čekanju"
 
-#: src/Objects/Job.vala:138
+#: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
 msgstr ""
 
-#: src/Objects/Job.vala:140
+#: src/Objects/Job.vala:148
 #, fuzzy
 #| msgctxt "printer state"
 #| msgid "Stopped"
@@ -322,35 +327,35 @@ msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Zaustavljeno"
 
-#: src/Objects/Job.vala:142
+#: src/Objects/Job.vala:150
 #, fuzzy
 msgctxt "Print Job"
 msgid "Canceled"
 msgstr "Zadatak poništen"
 
-#: src/Objects/Job.vala:144
+#: src/Objects/Job.vala:152
 #, fuzzy
 msgctxt "Print Job"
 msgid "Aborted"
 msgstr "Zadatak prekinut"
 
-#: src/Objects/Job.vala:147
+#: src/Objects/Job.vala:155
 #, fuzzy
 #| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
 msgstr "Zadatak završen"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr ""
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "Nema zadataka na čekanju"
 
-#: src/Views/JobsView.vala:93
+#: src/Views/JobsView.vala:92
 #, fuzzy
 msgid "Completed Jobs"
 msgstr "Prikaži završene zadatke"
@@ -622,39 +627,39 @@ msgstr "Lab 1 ili Goranov radni stoll"
 msgid "Use as default printer:"
 msgstr "Koristi kao zadani pisač"
 
-#: src/Widgets/InkLevel.vala:86
+#: src/Widgets/InkLevel.vala:97
 msgid "Black (PGBK)"
 msgstr "Crna (PGBK)"
 
-#: src/Widgets/InkLevel.vala:89
+#: src/Widgets/InkLevel.vala:100
 msgid "Black (BK)"
 msgstr "Crna (BK)"
 
-#: src/Widgets/InkLevel.vala:93
+#: src/Widgets/InkLevel.vala:104
 msgid "Black"
 msgstr "Crna"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:108
 msgid "Yellow"
 msgstr "Žuta"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:112
 msgid "Cyan"
 msgstr "Modra"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:116
 msgid "Magenta"
 msgstr "Ljubičasta"
 
-#: src/Widgets/InkLevel.vala:107
+#: src/Widgets/InkLevel.vala:118
 msgid "Tri-color"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:156
+#: src/Widgets/JobRow.vala:158
 msgid "Resume"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:159
+#: src/Widgets/JobRow.vala:163
 msgid "Pause"
 msgstr ""
 
