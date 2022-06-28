@@ -34,8 +34,8 @@ public class Printers.Job : GLib.Object {
 
     public bool canceled_or_aborted {
         get {
-            return (state in CUPS.IPP.JobState.CANCELED) ||
-                   (state in CUPS.IPP.JobState.ABORTED);
+            return (state == CUPS.IPP.JobState.CANCELED) ||
+                   (state == CUPS.IPP.JobState.ABORTED);
         }
     }
 
