@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2019-01-06 23:12+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -31,14 +31,8 @@ msgstr "Innstillingar og forsyningar"
 msgid "Print Test Page"
 msgstr "Skriv ut testside"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "Utskriftskø"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Testside"
 
@@ -351,7 +345,13 @@ msgstr "Utskriftskøa er tom"
 msgid "There are no pending jobs in the queue."
 msgstr "Ingen jobbar i utskriftskøa."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Utskriftskø"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Fullførte jobbar"
 

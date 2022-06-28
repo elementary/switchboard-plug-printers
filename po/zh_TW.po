@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2020-03-01 14:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -31,14 +31,8 @@ msgstr "設定與供應"
 msgid "Print Test Page"
 msgstr "列印測試頁"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "印表機佇列"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "測試頁"
 
@@ -349,7 +343,13 @@ msgstr "空的列印佇列"
 msgid "There are no pending jobs in the queue."
 msgstr "佇列中已沒有擱置的工作。"
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "印表機佇列"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "完成的工作"
 

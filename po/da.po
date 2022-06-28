@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2020-05-27 12:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
@@ -31,14 +31,8 @@ msgstr "Indstillinger og Forsyninger"
 msgid "Print Test Page"
 msgstr "Udskriv testside"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "Udskriftskø"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Testside"
 
@@ -353,7 +347,13 @@ msgstr "Udskriftskøen Er Tom"
 msgid "There are no pending jobs in the queue."
 msgstr "Der er ingen ventende job i køen."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Udskriftskø"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Udførte Job"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -31,14 +31,8 @@ msgstr "Instellingen & voorraden"
 msgid "Print Test Page"
 msgstr "Test pagina afdrukken"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "Printwachtrij"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Test pagina"
 
@@ -357,7 +351,13 @@ msgstr "De afdruk wachtrij is leeg"
 msgid "There are no pending jobs in the queue."
 msgstr "Er zijn geen afwachtende taken in de wachtrij."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Printwachtrij"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Voltooide afdruktaken"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2021-08-27 09:34+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -31,14 +31,8 @@ msgstr "Configuración y suministros"
 msgid "Print Test Page"
 msgstr "Imprimir página de prueba"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "Cola de impresión"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Página de prueba"
 
@@ -355,7 +349,13 @@ msgstr "La cola de impresión está vacía"
 msgid "There are no pending jobs in the queue."
 msgstr "No hay trabajos pendientes en la cola de impresión."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Cola de impresión"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Impresiones completadas"
 

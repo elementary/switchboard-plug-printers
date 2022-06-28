@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2021-08-14 15:23+0000\n"
 "Last-Translator: DartDeaDia <DartDeaDia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -32,14 +32,8 @@ msgstr "Настройки и расходные материалы"
 msgid "Print Test Page"
 msgstr "Печать пробной страницы"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "Очередь печати"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Пробная страница"
 
@@ -351,7 +345,13 @@ msgstr "Очередь печати пуста"
 msgid "There are no pending jobs in the queue."
 msgstr "В очереди нет незаконченных заданий."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Очередь печати"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Выполненные задания"
 

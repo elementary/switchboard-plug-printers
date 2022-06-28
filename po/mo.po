@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2018-05-30 00:04+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -29,14 +29,8 @@ msgstr "Setări și consumabile"
 msgid "Print Test Page"
 msgstr "Imprimă pagină de probă"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "Coadă de imprimare"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Pagina de probă"
 
@@ -355,7 +349,13 @@ msgstr "Coada de imprimire este goală"
 msgid "There are no pending jobs in the queue."
 msgstr "Nu există nicio lucrare în coada de așteptare."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Coadă de imprimare"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Lucrări finalizate"
 
