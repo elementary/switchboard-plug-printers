@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-25 07:43+0000\n"
-"PO-Revision-Date: 2022-06-16 09:04+0000\n"
+"PO-Revision-Date: 2022-06-27 10:57+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/tr/>\n"
@@ -289,15 +289,11 @@ msgid "Ready"
 msgstr "Hazır"
 
 #: src/Objects/Job.vala:134
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "İş Bekliyor"
+msgstr "Bekliyor"
 
 #: src/Objects/Job.vala:136
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "Beklemede"
@@ -305,36 +301,27 @@ msgstr "Beklemede"
 #: src/Objects/Job.vala:138
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "Devam Ediyor"
 
 #: src/Objects/Job.vala:140
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
 msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Durduruldu"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "İptal"
+msgstr "İptal Edildi"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "İş İptal Edildi"
+msgstr "Durduruldu"
 
 #: src/Objects/Job.vala:147
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "İş Tamamlandı"
+msgstr "Tamamlandı"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"

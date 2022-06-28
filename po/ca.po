@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-25 07:43+0000\n"
-"PO-Revision-Date: 2022-06-16 15:12+0000\n"
+"PO-Revision-Date: 2022-06-26 18:21+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ca/>\n"
@@ -291,15 +291,11 @@ msgid "Ready"
 msgstr "A punt"
 
 #: src/Objects/Job.vala:134
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "Tasca pendent"
+msgstr "Pendent"
 
 #: src/Objects/Job.vala:136
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "En espera"
@@ -307,36 +303,27 @@ msgstr "En espera"
 #: src/Objects/Job.vala:138
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "En curs"
 
 #: src/Objects/Job.vala:140
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
 msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Aturada"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "Cancel·la"
+msgstr "Cancel·lada"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "Tasca avortada"
+msgstr "Avortada"
 
 #: src/Objects/Job.vala:147
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "Tasca feta"
+msgstr "Feta"
 
 #: src/Views/JobsView.vala:30
 msgid "Print Queue Is Empty"
