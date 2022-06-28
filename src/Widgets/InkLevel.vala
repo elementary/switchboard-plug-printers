@@ -19,7 +19,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.InkLevel : Gtk.Box {
+public class Printers.InkLevel : Gtk.FlowBox {
     public unowned Printer printer { get; construct; }
     private const string STYLE_CLASS =
     """
@@ -34,10 +34,13 @@ public class Printers.InkLevel : Gtk.Box {
 
     construct {
         homogeneous = true;
-        orientation = Gtk.Orientation.HORIZONTAL;
-        spacing = 12;
+        column_spacing = 12;
+        row_spacing = 24;
+        max_children_per_line = 30;
 
         var colors = printer.get_color_levels ();
+
+        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
 
         foreach (Printer.ColorLevel color in colors) {
             string[] colors_codes = { null, "3689E6" };
@@ -51,6 +54,7 @@ public class Printers.InkLevel : Gtk.Box {
                 var css_color = STYLE_CLASS.printf (colors_codes[i]);
 
                 var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max) {
+                    height_request = 64,
                     hexpand = true,
                     vexpand = true,
                     inverted = true,
@@ -69,11 +73,18 @@ public class Printers.InkLevel : Gtk.Box {
                 ink_box.add (level);
             }
 
-            var label = new Gtk.Label (get_translated_name (color.name ?? "black"));
+            var label = new Gtk.Label (get_translated_name (color.name ?? "black")) {
+                justify = Gtk.Justification.CENTER,
+                wrap = true,
+                max_width_chars = 10,
+                yalign = 0
+            };
 
             var color_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
             color_box.add (ink_box);
             color_box.add (label);
+
+            size_group.add_widget (label);
 
             add (color_box);
         }

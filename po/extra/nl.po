@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-25 07:43+0000\n"
+"POT-Creation-Date: 2022-06-28 18:25+0000\n"
 "PO-Revision-Date: 2020-06-09 10:11+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -27,8 +27,8 @@ msgstr "Printer instellingen"
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Configureer printers, beheer printers en bekijk inkt levels"
 
-#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:24
-#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:25
+#: data/printers.appdata.xml.in:33 data/printers.appdata.xml.in:41
 msgid "Minor updates:"
 msgstr "Kleine updates:"
 
@@ -45,15 +45,19 @@ msgid "Show color names below ink levels"
 msgstr ""
 
 #: data/printers.appdata.xml.in:17
+msgid "Avoid expanding the window for printers with many ink levels"
+msgstr ""
+
+#: data/printers.appdata.xml.in:18
 msgid "Use newer add/remove list pattern"
 msgstr ""
 
-#: data/printers.appdata.xml.in:18 data/printers.appdata.xml.in:26
-#: data/printers.appdata.xml.in:34 data/printers.appdata.xml.in:42
-#: data/printers.appdata.xml.in:49
+#: data/printers.appdata.xml.in:19 data/printers.appdata.xml.in:27
+#: data/printers.appdata.xml.in:35 data/printers.appdata.xml.in:43
+#: data/printers.appdata.xml.in:50
 msgid "Updated translations"
 msgstr "Bijgewerkte vertalingen"
 
-#: data/printers.appdata.xml.in:48
+#: data/printers.appdata.xml.in:49
 msgid "Show a default name if a printer is unnamed"
 msgstr "Toon een standaard naam als een printer geen naam heeft"
