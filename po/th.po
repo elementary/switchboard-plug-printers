@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2015-10-14 17:32+0000\n"
 "Last-Translator: ABCDEFGH <aefgh7233@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,13 +30,8 @@ msgstr ""
 msgid "Print Test Page"
 msgstr "พิมพ์หน้าทดสอบ"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-msgid "Clear Queue"
-msgstr "เครื่องพิมพ์"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr ""
 
@@ -347,7 +342,12 @@ msgstr ""
 msgid "There are no pending jobs in the queue."
 msgstr "ไม่มีงานในคิว"
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+msgid "Clear All"
+msgstr "เครื่องพิมพ์"
+
+#: src/Views/JobsView.vala:110
 #, fuzzy
 msgid "Completed Jobs"
 msgstr "แสดงงานที่เสร็จสมบูรณ์"

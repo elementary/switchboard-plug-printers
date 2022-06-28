@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2022-06-24 12:02+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -31,14 +31,8 @@ msgstr "Paramètres et cartouches"
 msgid "Print Test Page"
 msgstr "Imprimer une page de test"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "File d'impression"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Page de test"
 
@@ -339,7 +333,13 @@ msgstr "La file d'impression est vide"
 msgid "There are no pending jobs in the queue."
 msgstr "Il n'y a aucune tâche dans la file."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "File d'impression"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Tâches terminées"
 

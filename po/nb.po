@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2019-06-27 14:12+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -31,14 +31,8 @@ msgstr "Innstillinger og rekvisita"
 msgid "Print Test Page"
 msgstr "Skriv ut testside"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "Utskriftskø"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Testside"
 
@@ -353,7 +347,13 @@ msgstr "Utskriftkøen er tom"
 msgid "There are no pending jobs in the queue."
 msgstr "Ingen jobber i utskriftskøen."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Utskriftskø"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Fullførte jobber"
 

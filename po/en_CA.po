@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2018-04-25 00:36+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
@@ -31,14 +31,8 @@ msgstr "Settings & Supplies"
 msgid "Print Test Page"
 msgstr "Print Test Page"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "Print Queue"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Test page"
 
@@ -352,7 +346,13 @@ msgstr "Print Queue Is Empty"
 msgid "There are no pending jobs in the queue."
 msgstr "There are no pending jobs in the queue."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Print Queue"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Completed Jobs"
 

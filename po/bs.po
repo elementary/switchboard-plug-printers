@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2018-11-09 18:11+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -32,14 +32,8 @@ msgstr "Podešavanja i oprema"
 msgid "Print Test Page"
 msgstr "Štampaj testnu stranicu"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "Red za štampanje"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Testna stranica"
 
@@ -355,7 +349,13 @@ msgstr "Lista za štampanje je prazna"
 msgid "There are no pending jobs in the queue."
 msgstr "Nema preostalih zadataka u listi čekanja."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Red za štampanje"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Završeni zadaci"
 

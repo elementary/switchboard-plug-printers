@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2022-06-17 21:25+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -31,14 +31,8 @@ msgstr "הגדרות ואספקה"
 msgid "Print Test Page"
 msgstr "הדפסת עמוד ניסיון"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "תור הדפסה"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "עמוד ניסיון"
 
@@ -347,7 +341,13 @@ msgstr "תור ההדפסה ריק"
 msgid "There are no pending jobs in the queue."
 msgstr "אין משימות ממתינות בתור."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "תור הדפסה"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "משימות שהושלמו"
 

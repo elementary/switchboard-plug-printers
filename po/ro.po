@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2019-10-17 17:23+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -32,12 +32,8 @@ msgstr ""
 msgid "Print Test Page"
 msgstr ""
 
-#: src/PrinterPage.vala:55
-msgid "Clear Queue"
-msgstr ""
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr ""
 
@@ -333,7 +329,11 @@ msgstr ""
 msgid "There are no pending jobs in the queue."
 msgstr ""
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+msgid "Clear All"
+msgstr ""
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr ""
 

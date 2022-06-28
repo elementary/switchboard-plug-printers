@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:18+0000\n"
+"POT-Creation-Date: 2022-06-28 19:37+0000\n"
 "PO-Revision-Date: 2020-10-24 13:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -31,14 +31,8 @@ msgstr "Impostazioni e forniture"
 msgid "Print Test Page"
 msgstr "Stampa pagina di prova"
 
-#: src/PrinterPage.vala:55
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear Queue"
-msgstr "Coda di stampa"
-
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:120
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Pagina di prova"
 
@@ -356,7 +350,13 @@ msgstr "La coda di stampa è vuota"
 msgid "There are no pending jobs in the queue."
 msgstr "Non ci sono lavori in coda."
 
-#: src/Views/JobsView.vala:92
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Coda di stampa"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Lavori completati"
 
