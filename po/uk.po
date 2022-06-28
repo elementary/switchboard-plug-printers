@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-28 19:37+0000\n"
-"PO-Revision-Date: 2022-06-24 06:50+0000\n"
+"PO-Revision-Date: 2022-06-29 04:56+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/uk/>\n"
@@ -333,10 +333,8 @@ msgid "There are no pending jobs in the queue."
 msgstr "У черзі немає незавершених завдань."
 
 #: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "Черга друку"
+msgstr "Очистити все"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
