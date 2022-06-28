@@ -126,9 +126,7 @@ public class Printers.JobsView : Gtk.Frame {
 
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
         foreach (var job in jobs) {
-            if (!job.canceled_or_aborted) {
-                list_box.add (new JobRow (printer, job));
-            }
+            list_box.add (new JobRow (printer, job));
         }
 
         n_jobs = list_box.get_children ().length ();
