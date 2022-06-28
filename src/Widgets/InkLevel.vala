@@ -38,45 +38,7 @@ public class Printers.InkLevel : Gtk.FlowBox {
         row_spacing = 24;
         max_children_per_line = 30;
 
-        var cyan = new Printer.ColorLevel () {
-             color = "#00ffff",
-             level = 8,
-             level_max = 10,
-             level_min = 0,
-             name = "Cyan"
-         };
-
-        var magenta = new Printer.ColorLevel () {
-             color = "#FF00FF",
-             level = 9,
-             level_max = 10,
-             level_min = 0,
-             name = "Magenta"
-         };
-
-        var yellow = new Printer.ColorLevel () {
-             color = "#FFFF00",
-             level = 7,
-             level_max = 10,
-             level_min = 0,
-             name = "Yellow"
-         };
-
-        var black = new Printer.ColorLevel () {
-             color = "#000000#333333",
-             level = 8,
-             level_max = 10,
-             level_min = 0,
-             name = "Black"
-         };
-
-var colors = new Gee.ArrayList<Printer.ColorLevel> ();
-colors.add (cyan);
-colors.add (magenta);
-colors.add (yellow);
-colors.add (black);
-
-        // var colors = printer.get_color_levels ();
+        var colors = printer.get_color_levels ();
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
 
