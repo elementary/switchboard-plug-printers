@@ -127,6 +127,7 @@ public class Printers.JobsView : Gtk.Frame {
             if (response_id == Gtk.ResponseType.OK) {
                 list_box.@foreach ((row) => {
                     var job = ((JobRow)row).job;
+                    job.pause (); // Purging pending/in_progress jobs does not always remove canceled job
                     job.purge ();
                 });
 
