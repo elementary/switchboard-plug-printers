@@ -120,7 +120,9 @@ public class Printers.JobRow : Gtk.ListBoxRow {
 
         start_pause_button.clicked.connect (() => {
             unowned Cups.PkHelper pk_helper = Cups.get_pk_helper ();
-            if (job.state == CUPS.IPP.JobState.PROCESSING) {
+            if (job.state == CUPS.IPP.JobState.PROCESSING ||
+                job.state == CUPS.IPP.JobState.PENDING) {
+
                 try {
                     pk_helper.job_set_hold_until (job.uid, "indefinite");
                 } catch (Error e) {
@@ -155,7 +157,9 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         if (job.state == CUPS.IPP.JobState.HELD) {
             start_pause_button.label = _("Resume");
             action_revealer.reveal_child = true;
-        } else if (job.state == CUPS.IPP.JobState.PROCESSING) {
+        } else if (job.state == CUPS.IPP.JobState.PROCESSING ||
+                   job.state == CUPS.IPP.JobState.PENDING) {
+
             start_pause_button.label = _("Pause");
             action_revealer.reveal_child = true;
         } else {
