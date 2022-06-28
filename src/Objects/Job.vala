@@ -32,13 +32,6 @@ public class Printers.Job : GLib.Object {
     public DateTime creation_time { get; construct; }
     public DateTime? completed_time { get; set; default = null; }
 
-    public bool canceled_or_aborted {
-        get {
-            return (state in CUPS.IPP.JobState.CANCELED) ||
-                   (state in CUPS.IPP.JobState.ABORTED);
-        }
-    }
-
     public Job (CUPS.Job cjob, Printer printer) {
         Object (
             creation_time: cjob.creation_time > 0 ? new DateTime.from_unix_local (cjob.creation_time) : new DateTime.now (),
