@@ -100,7 +100,9 @@ public class Printers.JobsView : Gtk.Frame {
     }
 
     public void clear_queue () {
-        var dialog = new ClearQueueDialog (printer);
+        var dialog = new ClearQueueDialog (printer) {
+            transient_for = (Gtk.Window) get_toplevel ()
+        };
         dialog.response.connect ((response_id) => {
             dialog.destroy ();
 

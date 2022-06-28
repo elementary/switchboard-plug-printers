@@ -23,16 +23,17 @@ public class Printers.ClearQueueDialog : Granite.MessageDialog {
     public ClearQueueDialog (Printer printer) {
         Object (
             buttons: Gtk.ButtonsType.CANCEL,
-            image_icon: new ThemedIcon ("dialog-question"),
+            image_icon: new ThemedIcon ("edit-clear"),
+            badge_icon: new ThemedIcon ("dialog-question"),
             modal: true,
             printer: printer,
-            primary_text: _("Are You Sure You Want To Remove All Jobs from '%s'?").printf (printer.info),
-            secondary_text: _("By removing all jobs, you will cancel any unfinished jobs and lose all print history.")
+            primary_text: _("Clear all pending and completed jobs from “%s”?").printf (printer.info),
+            secondary_text: _("All unfinished jobs will be canceled and all print history will be erased.")
         );
     }
 
     construct {
-        var button = add_button (_("Remove"), Gtk.ResponseType.OK);
+        var button = add_button (_("Clear Queue"), Gtk.ResponseType.OK);
         button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
     }
 }
