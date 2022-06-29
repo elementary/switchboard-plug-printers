@@ -176,16 +176,17 @@ public class Printers.Job : GLib.Object {
     }
 
     public GLib.Icon get_file_icon () {
-        if (".png" in title || ".jpg" in title || ".jpeg" in title || ".bmp" in title) {
-            return new ThemedIcon ("image-x-generic");
-        } else if (".xcf" in title) {
-            return new ThemedIcon ("image-x-xcf");
-        } else if (".svg" in title) {
-            return new ThemedIcon ("image-x-svg+xml");
-        } else if (".pdf" in title) {
-            return new ThemedIcon ("application-pdf");
+        var content_type = GLib.ContentType.from_mime_type (format);
+        if (content_type != null) {
+            return GLib.ContentType.get_icon (content_type);
         }
 
-        return new ThemedIcon (format.replace ("/", "-"));
+        bool result_uncertain;
+        content_type = GLib.ContentType.guess (title, null, out result_uncertain);
+        if (!result_uncertain) {
+            return GLib.ContentType.get_icon (content_type);
+        }
+
+        return new ThemedIcon ("unknown");
     }
 }
