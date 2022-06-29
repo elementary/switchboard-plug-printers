@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:37+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
 "PO-Revision-Date: 2021-05-13 11:04+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -100,7 +100,7 @@ msgid "Refresh"
 msgstr "刷新"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:77
+#: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "取消"
 
@@ -639,11 +639,11 @@ msgstr "品红"
 msgid "Tri-color"
 msgstr "三色"
 
-#: src/Widgets/JobRow.vala:158
+#: src/Widgets/JobRow.vala:160
 msgid "Resume"
 msgstr "继续"
 
-#: src/Widgets/JobRow.vala:163
+#: src/Widgets/JobRow.vala:165
 msgid "Pause"
 msgstr "暂停"
 

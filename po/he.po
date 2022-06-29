@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:37+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
 "PO-Revision-Date: 2022-06-17 21:25+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -100,7 +100,7 @@ msgid "Refresh"
 msgstr "רענון"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:77
+#: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -637,11 +637,11 @@ msgstr "מג׳נטה"
 msgid "Tri-color"
 msgstr "טרי־קולור"
 
-#: src/Widgets/JobRow.vala:158
+#: src/Widgets/JobRow.vala:160
 msgid "Resume"
 msgstr "המשך"
 
-#: src/Widgets/JobRow.vala:163
+#: src/Widgets/JobRow.vala:165
 msgid "Pause"
 msgstr "השהיה"
 
