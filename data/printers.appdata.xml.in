@@ -65,6 +65,9 @@
     <screenshot>
       <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/master/data/screenshot-settings.png</image>
     </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/master/data/screenshot-add-printer.png</image>
+    </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/switchboard-plug-printers/issues</url>
