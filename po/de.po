@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-06-25 05:26+0000\n"
+"PO-Revision-Date: 2022-06-29 21:39+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -334,10 +334,8 @@ msgid "There are no pending jobs in the queue."
 msgstr "Es befinden sich keine ausstehenden Aufträge in der Warteschlange."
 
 #: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "Druckwarteschlange"
+msgstr "Alle entfernen"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
