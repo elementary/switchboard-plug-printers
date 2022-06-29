@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-28 19:37+0000\n"
-"PO-Revision-Date: 2022-06-17 18:50+0000\n"
+"PO-Revision-Date: 2022-06-29 08:35+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/pl/>\n"
@@ -32,11 +32,11 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:12
 msgid "New Features:"
-msgstr ""
+msgstr "Nowe funkcje:"
 
 #: data/printers.appdata.xml.in:14
 msgid "Allow clearing the queue for each printer"
-msgstr ""
+msgstr "Dodano możliwość wyczyszczenia kolejki dla każdej drukarki"
 
 #: data/printers.appdata.xml.in:16 data/printers.appdata.xml.in:29
 #: data/printers.appdata.xml.in:37 data/printers.appdata.xml.in:45
@@ -59,7 +59,7 @@ msgstr "Pokazano nazwy kolorów pod ilością tuszu"
 
 #: data/printers.appdata.xml.in:21
 msgid "Avoid expanding the window for printers with many ink levels"
-msgstr ""
+msgstr "Uniknięto rozszerzania okna dla drukarek z wieloma poziomami tuszu"
 
 #: data/printers.appdata.xml.in:22
 msgid "Use newer add/remove list pattern"

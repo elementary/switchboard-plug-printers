@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-28 19:37+0000\n"
-"PO-Revision-Date: 2022-06-16 13:37+0000\n"
+"PO-Revision-Date: 2022-06-29 08:35+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/fr/>\n"
@@ -31,11 +31,12 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:12
 msgid "New Features:"
-msgstr ""
+msgstr "Nouvelles fonctionnalités :"
 
 #: data/printers.appdata.xml.in:14
 msgid "Allow clearing the queue for each printer"
 msgstr ""
+"Il est désormais possible de vider la file d'attente pour chaque imprimante"
 
 #: data/printers.appdata.xml.in:16 data/printers.appdata.xml.in:29
 #: data/printers.appdata.xml.in:37 data/printers.appdata.xml.in:45
@@ -59,6 +60,8 @@ msgstr "Affichage du nom des couleurs sous les niveau d'encre"
 #: data/printers.appdata.xml.in:21
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr ""
+"Nous avons empêché l'agrandissement de la fenêtre pour les imprimantes avec "
+"de nombreux niveaux d'encre"
 
 #: data/printers.appdata.xml.in:22
 msgid "Use newer add/remove list pattern"
