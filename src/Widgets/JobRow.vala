@@ -43,7 +43,9 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.DND);
+        var icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.DND) {
+            pixel_size = 32
+        };
 
         job_state_icon = new Gtk.Image () {
             gicon = job.state_icon (),
