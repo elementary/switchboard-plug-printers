@@ -1,3 +1,30 @@
+switchboard-plug-printers (2.2.0) bionic; urgency=medium
+
+  * Release 2.2.0 (#170)
+  * Job: Trust CUPS regarding the reported mimetype (#178)
+  * Pause before purge (#176)
+  * Update translation files
+  * Update translation template
+  * Move clear button into the queue (#175)
+  * Add button to clear queue (#163)
+  * InkLevel: use flowbox for ink levels (#173)
+  * Allow pausing and canceling pending jobs (#174)
+  * JobRow: Redesign and code clean (#171)
+  * Simplify and use CUPSNotifier to update printer state (#168)
+  * Sync job status (#169)
+  * InkLevel: Add labels, modernize code (#166)
+  * Use newer add/remove list pattern (#165)
+  * AddDialog: Show the supported language for each driver. (#158)
+  * Fix notifier subscription callback (#159)
+  * l10n: Correctly setup the locales (#153)
+  * Release 2.1.10 (#149)
+  * CUPSNotifier.vala: explicit cast for callback (#141)
+  * Replace Gtk.Dialog with Granite.Dialog (#142)
+  * LINGUAS: sort, remove en_US
+  * Allow the sender parameter of DBusSignalCallback to be null (#136)
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 29 Jun 2022 17:38:55 +0000
+
 switchboard-plug-printers (2.1.10) bionic; urgency=medium
 
   * Release 2.1.10 (#149)
