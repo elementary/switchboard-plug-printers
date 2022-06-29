@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:37+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
 "PO-Revision-Date: 2022-06-29 08:35+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -38,15 +38,13 @@ msgstr "Nowe funkcje:"
 msgid "Allow clearing the queue for each printer"
 msgstr "Dodano możliwość wyczyszczenia kolejki dla każdej drukarki"
 
-#: data/printers.appdata.xml.in:16 data/printers.appdata.xml.in:29
-#: data/printers.appdata.xml.in:37 data/printers.appdata.xml.in:45
-msgid "Minor updates:"
-msgstr "Mniejsze aktualizacje:"
+#: data/printers.appdata.xml.in:16
+msgid "Improvements:"
+msgstr ""
 
 #: data/printers.appdata.xml.in:18
-msgid "Update sidebar after adding or removing printer"
+msgid "Improved job row layout"
 msgstr ""
-"Panel boczny po dodaniu lub usunięciu drukarki jest teraz aktualizowany"
 
 #: data/printers.appdata.xml.in:19
 msgid "Show the supported language for each driver"
@@ -65,12 +63,37 @@ msgstr "Uniknięto rozszerzania okna dla drukarek z wieloma poziomami tuszu"
 msgid "Use newer add/remove list pattern"
 msgstr "Użyto nowszego wzoru listy dodaj/usuń"
 
-#: data/printers.appdata.xml.in:23 data/printers.appdata.xml.in:31
-#: data/printers.appdata.xml.in:39 data/printers.appdata.xml.in:47
-#: data/printers.appdata.xml.in:54
+#: data/printers.appdata.xml.in:24
+msgid "Fixes:"
+msgstr ""
+
+#: data/printers.appdata.xml.in:26
+msgid "Update sidebar after adding or removing printer"
+msgstr ""
+"Panel boczny po dodaniu lub usunięciu drukarki jest teraz aktualizowany"
+
+#: data/printers.appdata.xml.in:27
+#, fuzzy
+#| msgid "Update sidebar after adding or removing printer"
+msgid "Update sidebar after enabling or disabling printer"
+msgstr ""
+"Panel boczny po dodaniu lub usunięciu drukarki jest teraz aktualizowany"
+
+#: data/printers.appdata.xml.in:28
+msgid "Update job list after job state change"
+msgstr ""
+
+#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
+#: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
+msgid "Minor updates:"
+msgstr "Mniejsze aktualizacje:"
+
+#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
+#: data/printers.appdata.xml.in:48 data/printers.appdata.xml.in:56
+#: data/printers.appdata.xml.in:63
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/printers.appdata.xml.in:53
+#: data/printers.appdata.xml.in:62
 msgid "Show a default name if a printer is unnamed"
 msgstr "Wyświetlaj nazwę domyślną, jeżeli drukarka nie ma nazwy"
