@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-28 19:37+0000\n"
-"PO-Revision-Date: 2022-06-24 12:02+0000\n"
+"PO-Revision-Date: 2022-06-29 08:35+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/fr/>\n"
@@ -334,10 +334,8 @@ msgid "There are no pending jobs in the queue."
 msgstr "Il n'y a aucune tâche dans la file."
 
 #: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "File d'impression"
+msgstr "Tout effacer"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
