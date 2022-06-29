@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-06-29 04:56+0000\n"
+"PO-Revision-Date: 2022-06-29 21:39+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/uk/>\n"
@@ -39,11 +39,11 @@ msgstr "Можливість очищення черги для кожного �
 
 #: data/printers.appdata.xml.in:16
 msgid "Improvements:"
-msgstr ""
+msgstr "Удосконалення:"
 
 #: data/printers.appdata.xml.in:18
 msgid "Improved job row layout"
-msgstr ""
+msgstr "Поліпшено роботу подання рядками"
 
 #: data/printers.appdata.xml.in:19
 msgid "Show the supported language for each driver"
@@ -63,21 +63,19 @@ msgstr "Використано новіші шаблони додавання/в
 
 #: data/printers.appdata.xml.in:24
 msgid "Fixes:"
-msgstr ""
+msgstr "Виправлення:"
 
 #: data/printers.appdata.xml.in:26
 msgid "Update sidebar after adding or removing printer"
 msgstr "Оновлення бічної панелі після додавання або вилучення принтера"
 
 #: data/printers.appdata.xml.in:27
-#, fuzzy
-#| msgid "Update sidebar after adding or removing printer"
 msgid "Update sidebar after enabling or disabling printer"
-msgstr "Оновлення бічної панелі після додавання або вилучення принтера"
+msgstr "Оновлення бічної панелі після ввімкнення або вимкнення принтера"
 
 #: data/printers.appdata.xml.in:28
 msgid "Update job list after job state change"
-msgstr ""
+msgstr "Оновлено список завдань після зміни стану роботи"
 
 #: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
 #: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
