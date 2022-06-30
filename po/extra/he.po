@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-06-30 07:35+0000\n"
+"PO-Revision-Date: 2022-06-30 13:47+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/he/>\n"
@@ -53,7 +53,7 @@ msgstr "מוצגים שמות הצבעים מתחת לכמויות הדיו"
 
 #: data/printers.appdata.xml.in:21
 msgid "Avoid expanding the window for printers with many ink levels"
-msgstr ""
+msgstr "נמנעה הרחבת החלון למדפסות עם הרבה רמות דיו"
 
 #: data/printers.appdata.xml.in:22
 msgid "Use newer add/remove list pattern"
@@ -61,21 +61,19 @@ msgstr "להשתמש בתבנית חדשה להוספה/הסרה מרשימה"
 
 #: data/printers.appdata.xml.in:24
 msgid "Fixes:"
-msgstr ""
+msgstr "תיקונים:"
 
 #: data/printers.appdata.xml.in:26
 msgid "Update sidebar after adding or removing printer"
 msgstr "סרגל הצד מעודכן לאחר הוספת או הסרת מדפסת"
 
 #: data/printers.appdata.xml.in:27
-#, fuzzy
-#| msgid "Update sidebar after adding or removing printer"
 msgid "Update sidebar after enabling or disabling printer"
-msgstr "סרגל הצד מעודכן לאחר הוספת או הסרת מדפסת"
+msgstr "סרגל הצד מעודכן לאחר הפעלת או השבתת מדפסת"
 
 #: data/printers.appdata.xml.in:28
 msgid "Update job list after job state change"
-msgstr ""
+msgstr "רישום המשימה מתעדכן לאחר שינוי מצב המשימה"
 
 #: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
 #: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
