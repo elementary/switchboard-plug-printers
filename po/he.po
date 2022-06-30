@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-06-17 21:25+0000\n"
+"PO-Revision-Date: 2022-06-30 13:47+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/he/>\n"
@@ -286,15 +286,11 @@ msgid "Ready"
 msgstr "מוכנה"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "משימה ממתינה"
+msgstr "בהמתנה"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "מוחזקת"
@@ -302,36 +298,27 @@ msgstr "מוחזקת"
 #: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "בתהליך"
 
 #: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
 msgctxt "Print Job"
 msgid "Stopped"
 msgstr "נעצרה"
 
 #: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "ביטול"
+msgstr "בוטלה"
 
 #: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "המשימה הושמדה"
+msgstr "הושמדה"
 
 #: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "המשימה הושלמה"
+msgstr "הושלמה"
 
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
@@ -342,10 +329,8 @@ msgid "There are no pending jobs in the queue."
 msgstr "אין משימות ממתינות בתור."
 
 #: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "תור הדפסה"
+msgstr "פינוי הכול"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
