@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-06-29 08:35+0000\n"
+"PO-Revision-Date: 2022-06-30 10:04+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/fr/>\n"
@@ -40,11 +40,11 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:16
 msgid "Improvements:"
-msgstr ""
+msgstr "Améliorations :"
 
 #: data/printers.appdata.xml.in:18
 msgid "Improved job row layout"
-msgstr ""
+msgstr "Amélioration de la disposition de la ligne d'une tâche d'impression"
 
 #: data/printers.appdata.xml.in:19
 msgid "Show the supported language for each driver"
@@ -66,7 +66,7 @@ msgstr "Utilisation du nouveau modèle de liste d'ajout/suppression"
 
 #: data/printers.appdata.xml.in:24
 msgid "Fixes:"
-msgstr ""
+msgstr "Corrections :"
 
 #: data/printers.appdata.xml.in:26
 msgid "Update sidebar after adding or removing printer"
@@ -75,16 +75,16 @@ msgstr ""
 "imprimante"
 
 #: data/printers.appdata.xml.in:27
-#, fuzzy
-#| msgid "Update sidebar after adding or removing printer"
 msgid "Update sidebar after enabling or disabling printer"
 msgstr ""
-"Mise à jour de la barre latérale après l'ajout et la suppression d'une "
-"imprimante"
+"Mise à jour de la barre latérale après l'activation et la désactivation "
+"d'une imprimante"
 
 #: data/printers.appdata.xml.in:28
 msgid "Update job list after job state change"
 msgstr ""
+"Mise à jour de la liste des tâches d'impression après un changement d'état "
+"de la tâche"
 
 #: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
 #: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
