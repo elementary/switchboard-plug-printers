@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-06-29 08:35+0000\n"
+"PO-Revision-Date: 2022-06-30 07:35+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/pl/>\n"
@@ -40,11 +40,11 @@ msgstr "Dodano możliwość wyczyszczenia kolejki dla każdej drukarki"
 
 #: data/printers.appdata.xml.in:16
 msgid "Improvements:"
-msgstr ""
+msgstr "Ulepszenia:"
 
 #: data/printers.appdata.xml.in:18
 msgid "Improved job row layout"
-msgstr ""
+msgstr "Ulepszono układ wierszy zadań"
 
 #: data/printers.appdata.xml.in:19
 msgid "Show the supported language for each driver"
@@ -65,7 +65,7 @@ msgstr "Użyto nowszego wzoru listy dodaj/usuń"
 
 #: data/printers.appdata.xml.in:24
 msgid "Fixes:"
-msgstr ""
+msgstr "Poprawki:"
 
 #: data/printers.appdata.xml.in:26
 msgid "Update sidebar after adding or removing printer"
@@ -73,15 +73,13 @@ msgstr ""
 "Panel boczny po dodaniu lub usunięciu drukarki jest teraz aktualizowany"
 
 #: data/printers.appdata.xml.in:27
-#, fuzzy
-#| msgid "Update sidebar after adding or removing printer"
 msgid "Update sidebar after enabling or disabling printer"
 msgstr ""
-"Panel boczny po dodaniu lub usunięciu drukarki jest teraz aktualizowany"
+"Panel boczny po włączeniu lub wyłączeniu drukarki jest teraz aktualizowany"
 
 #: data/printers.appdata.xml.in:28
 msgid "Update job list after job state change"
-msgstr ""
+msgstr "Lista zadań teraz aktualizowany po zmianie statusu zadania"
 
 #: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
 #: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
