@@ -557,9 +557,10 @@ public class Printers.AddDialog : Granite.Dialog {
     private void populate_driver_list_from_make (string make, string? selected_make_and_model = null) {
         driver_cancellable.cancel ();
         driver_cancellable = new Cancellable ();
-        driver_view.@foreach ((row) => {
-            driver_view.remove (row);
-        });
+        var children = driver_view.observe_children ();
+        for (var index = 0; index < children.get_n_items (); index++) {
+            driver_view.remove ((Gtk.Widget) children.get_item (index));
+        }
 
         find_drivers.begin (make, selected_make_and_model, (obj, res) => {
             if (!driver_cancellable.is_cancelled ()) {
@@ -581,7 +582,7 @@ public class Printers.AddDialog : Granite.Dialog {
 
             if (driver.ppd_make == make) {
                 var row = new DriverRow (driver);
-                driver_view.add (row);
+                driver_view.append (row);
                 if (driver.ppd_make_and_model == selected_make_and_model) {
                    row_to_select = row;
                 }
@@ -701,10 +702,8 @@ public class Printers.AddDialog : Granite.Dialog {
                 halign = Gtk.Align.START,
                 ellipsize = Pango.EllipsizeMode.MIDDLE
             };
-
-            unowned var style_context = detail_label.get_style_context ();
-            style_context.add_class (Granite.STYLE_CLASS_SMALL_LABEL);
-            style_context.add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+            detail_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
+            detail_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
             var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
                 margin_top = 6,
@@ -712,11 +711,10 @@ public class Printers.AddDialog : Granite.Dialog {
                 margin_bottom = 6,
                 margin_end = 6
             };
-            box.add (model_label);
-            box.add (detail_label);
+            box.append (model_label);
+            box.append (detail_label);
 
-            add (box);
-            show_all ();
+            child = box;
         }
     }
 }

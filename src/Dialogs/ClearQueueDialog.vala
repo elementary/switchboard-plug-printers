@@ -34,6 +34,6 @@ public class Printers.ClearQueueDialog : Granite.MessageDialog {
 
     construct {
         var button = add_button (_("Clear All"), Gtk.ResponseType.OK);
-        button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
     }
 }

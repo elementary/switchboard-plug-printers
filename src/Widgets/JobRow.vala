@@ -43,7 +43,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.DND) {
+        var icon = new Gtk.Image.from_gicon (job.get_file_icon ()) {
             pixel_size = 32
         };
 
@@ -74,12 +74,12 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         date_label = new Gtk.Label (Granite.DateTime.get_relative_datetime (job.creation_time)) {
             halign = Gtk.Align.END
         };
-        date_label.add_css_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        date_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
-        var cancel_button = new Gtk.Button.from_icon_name ("process-stop-symbolic", Gtk.IconSize.SMALL_TOOLBAR) {
+        var cancel_button = new Gtk.Button.from_icon_name ("process-stop-symbolic") {
             tooltip_text = _("Cancel")
         };
-        cancel_button.add_css_class (Gtk.STYLE_CLASS_FLAT);
+        cancel_button.add_css_class (Granite.STYLE_CLASS_FLAT);
         cancel_button.add_css_class (Granite.STYLE_CLASS_ACCENT);
         cancel_button.add_css_class ("red");
 
@@ -114,7 +114,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         grid.attach (date_label, 2, 0, 1, 2);
         grid.attach (action_revealer, 3, 0, 1, 2);
 
-        child = box;
+        child = grid;
 
         update_state ();
 

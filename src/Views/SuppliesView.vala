@@ -19,11 +19,17 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.SuppliesView: Gtk.ScrolledWindow {
+public class Printers.SuppliesView: Gtk.Widget {
     public Printer printer { get; construct; }
+
+    private Gtk.ScrolledWindow main_widget;
 
     public SuppliesView (Printer printer) {
         Object (printer: printer);
+    }
+
+    static construct {
+        set_layout_manager_type (typeof (Gtk.BinLayout));
     }
 
     construct {
@@ -73,6 +79,15 @@ public class Printers.SuppliesView: Gtk.ScrolledWindow {
         grid.attach (default_switch, 1, 2);
         grid.attach (ink_level, 0, 3, 2, 1);
 
-        add (grid);
+        main_widget = new Gtk.ScrolledWindow () {
+            child = grid
+        };
+        main_widget.set_parent (this);
+    }
+
+    ~SuppliesView () {
+        while (this.get_last_child () != null) {
+            this.get_last_child ().unparent ();
+        }
     }
 }

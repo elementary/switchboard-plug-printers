@@ -34,13 +34,13 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var remove_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU) {
+        var remove_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic") {
             valign = Gtk.Align.CENTER,
             halign = Gtk.Align.END,
             hexpand = true,
             tooltip_text = _("Remove this printer")
         };
-        remove_button.add_css_class (Gtk.STYLE_CLASS_FLAT);
+        remove_button.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         name_label = new Gtk.Label (null) {
             ellipsize = Pango.EllipsizeMode.END,

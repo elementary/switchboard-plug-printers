@@ -47,20 +47,24 @@ public class Printers.JobsView : Gtk.Frame {
             child = list_box
         };
 
-        clear_button = new Gtk.Button.with_label (_("Clear All")) {
-            always_show_image = true,
-            sensitive = list_box.get_children ().length () > 0
-        };
-        clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-
+        var clear_button_label = new Gtk.Label (_("Clear All"));
         var clear_button_image = new Gtk.Image.from_icon_name ("edit-clear-all-symbolic") {
             pixel_size = 16,
             halign = Gtk.Align.START
         };
-        clear_button_image.set_parent (clear_button);
+
+        var clear_button_indicator_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        clear_button_indicator_box.append (clear_button_image);
+        clear_button_indicator_box.append (clear_button_label);
+
+        clear_button = new Gtk.Button () {
+            sensitive = list_box.observe_children ().get_n_items () > 0,
+            child = clear_button_indicator_box
+        };
+        clear_button.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.add_css_class (Gtk.STYLE_CLASS_FLAT);
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
         actionbar.pack_start (clear_button);
 
         var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
@@ -85,7 +89,7 @@ public class Printers.JobsView : Gtk.Frame {
                 }
             }
 
-            clear_button.sensitive = list_box.get_children ().length () > 0;
+            clear_button.sensitive = list_box.observe_children ().get_n_items () > 0;
         });
 
         clear_button.clicked.connect (() => clear_queue ());
@@ -133,17 +137,19 @@ public class Printers.JobsView : Gtk.Frame {
 
     public void clear_queue () {
         var dialog = new ClearQueueDialog (printer) {
-            transient_for = (Gtk.Window) get_toplevel ()
+            transient_for = (Gtk.Window) get_root ()
         };
         dialog.response.connect ((response_id) => {
             dialog.destroy ();
 
             if (response_id == Gtk.ResponseType.OK) {
-                list_box.@foreach ((row) => {
-                    var job = ((JobRow)row).job;
+                var children = list_box.observe_children ();
+                for (var index = 0; index < children.get_n_items (); index++) {
+                    var row = (JobRow) children.get_item (index);
+                    var job = row.job;
                     job.pause (); // Purging pending/in_progress jobs does not always remove canceled job
                     job.purge ();
-                });
+                }
 
                 refresh_job_list ();
             }
@@ -153,15 +159,16 @@ public class Printers.JobsView : Gtk.Frame {
     }
 
     private void refresh_job_list () {
-        list_box.@foreach ((row) => {
-            list_box.remove (row);
-        });
+        var children = list_box.observe_children ();
+        for (var index = 0; index < children.get_n_items (); index++) {
+            list_box.remove ((Gtk.Widget) children.get_item (index));
+        }
 
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
         foreach (var job in jobs) {
-            list_box.add (new JobRow (printer, job));
+            list_box.append (new JobRow (printer, job));
         }
 
-        clear_button.sensitive = list_box.get_children ().length () > 0;
+        clear_button.sensitive = list_box.observe_children ().get_n_items () > 0;
     }
 }

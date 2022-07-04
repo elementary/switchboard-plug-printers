@@ -19,7 +19,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.InkLevel : Gtk.FlowBox {
+public class Printers.InkLevel : Gtk.Widget {
     public unowned Printer printer { get; construct; }
     private const string STYLE_CLASS =
     """
@@ -28,23 +28,30 @@ public class Printers.InkLevel : Gtk.FlowBox {
     }
     """;
 
+    private Gtk.FlowBox main_widget;
+
     public InkLevel (Printer printer) {
         Object (
-            printer: printer,
-            orientation: Gtk.Orientation.HORIZONTAL,
-            spacing: 6
+            printer: printer
         );
     }
 
-    construct {
-        homogeneous = true;
-        column_spacing = 12;
-        row_spacing = 24;
-        max_children_per_line = 30;
+    static construct {
+        set_layout_manager_type (typeof (Gtk.BinLayout));
+    }
 
+    construct {
         var colors = printer.get_color_levels ();
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
+
+        main_widget = new Gtk.FlowBox () {
+            homogeneous = true,
+            column_spacing = 12,
+            row_spacing = 24,
+            max_children_per_line = 30
+        };
+        main_widget.set_parent (this);
 
         foreach (Printer.ColorLevel color in colors) {
             string[] colors_codes = { null, "3689E6" };
@@ -68,7 +75,7 @@ public class Printers.InkLevel : Gtk.FlowBox {
 
                 var provider = new Gtk.CssProvider ();
                 try {
-                    provider.load_from_data (css_color, css_color.length);
+                    provider.load_from_data (css_color.data);
                     level.get_style_context ().add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
                 } catch (Error e) {
                     warning ("Could not create CSS Provider: %s\nStylesheet:\n%s", e.message, css_color);
@@ -90,7 +97,7 @@ public class Printers.InkLevel : Gtk.FlowBox {
 
             size_group.add_widget (label);
 
-            append (color_box);
+            main_widget.append (color_box);
         }
     }
 
@@ -123,5 +130,11 @@ public class Printers.InkLevel : Gtk.FlowBox {
         }
 
         return name;
+    }
+
+    ~InkLevel () {
+        while (this.get_last_child () != null) {
+            this.get_last_child ().unparent ();
+        }
     }
 }

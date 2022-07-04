@@ -47,19 +47,24 @@ public class Printers.PrinterList : Gtk.Grid {
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.add_css_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-        var add_button = new Gtk.Button.with_label (_("Add Printer…")) {
-            margin_top = 3,
-            margin_bottom = 3
-        };
-        add_button.add_css_class (Gtk.STYLE_CLASS_FLAT);
-
+        var add_button_label = new Gtk.Label (_("Add Printer…"));
         var add_button_image = new Gtk.Image.from_icon_name ("list-add-symbolic") {
             halign = Gtk.Align.START,
             pixel_size = 16
         };
-        add_button_image.set_parent (add_button);
+
+        var add_button_indicator_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        add_button_indicator_box.append (add_button_image);
+        add_button_indicator_box.append (add_button_label);
+
+        var add_button = new Gtk.Button () {
+            margin_top = 3,
+            margin_bottom = 3,
+            child = add_button_indicator_box
+        };
+        add_button.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         actionbar.pack_start (add_button);
         attach (scrolled, 0, 0);
