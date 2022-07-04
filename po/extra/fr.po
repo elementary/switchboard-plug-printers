@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2022-05-30 10:51+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"PO-Revision-Date: 2022-06-30 10:04+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/fr/>\n"
@@ -30,13 +30,73 @@ msgstr ""
 "d'encre"
 
 #: data/printers.appdata.xml.in:12
+msgid "New Features:"
+msgstr "Nouvelles fonctionnalités :"
+
+#: data/printers.appdata.xml.in:14
+msgid "Allow clearing the queue for each printer"
+msgstr ""
+"Il est désormais possible de vider la file d'attente pour chaque imprimante"
+
+#: data/printers.appdata.xml.in:16
+msgid "Improvements:"
+msgstr "Améliorations :"
+
+#: data/printers.appdata.xml.in:18
+msgid "Improved job row layout"
+msgstr "Amélioration de la disposition de la ligne d'une tâche d'impression"
+
+#: data/printers.appdata.xml.in:19
+msgid "Show the supported language for each driver"
+msgstr "Affichage de la langue prise en charge pour chaque pilote"
+
+#: data/printers.appdata.xml.in:20
+msgid "Show color names below ink levels"
+msgstr "Affichage du nom des couleurs sous les niveau d'encre"
+
+#: data/printers.appdata.xml.in:21
+msgid "Avoid expanding the window for printers with many ink levels"
+msgstr ""
+"Nous avons empêché l'agrandissement de la fenêtre pour les imprimantes avec "
+"de nombreux niveaux d'encre"
+
+#: data/printers.appdata.xml.in:22
+msgid "Use newer add/remove list pattern"
+msgstr "Utilisation du nouveau modèle de liste d'ajout/suppression"
+
+#: data/printers.appdata.xml.in:24
+msgid "Fixes:"
+msgstr "Corrections :"
+
+#: data/printers.appdata.xml.in:26
+msgid "Update sidebar after adding or removing printer"
+msgstr ""
+"Mise à jour de la barre latérale après l'ajout et la suppression d'une "
+"imprimante"
+
+#: data/printers.appdata.xml.in:27
+msgid "Update sidebar after enabling or disabling printer"
+msgstr ""
+"Mise à jour de la barre latérale après l'activation et la désactivation "
+"d'une imprimante"
+
+#: data/printers.appdata.xml.in:28
+msgid "Update job list after job state change"
+msgstr ""
+"Mise à jour de la liste des tâches d'impression après un changement d'état "
+"de la tâche"
+
+#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
+#: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
 msgid "Minor updates:"
 msgstr "Mises à jour mineures :"
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
+#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
+#: data/printers.appdata.xml.in:48 data/printers.appdata.xml.in:56
+#: data/printers.appdata.xml.in:63
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/printers.appdata.xml.in:20
+#: data/printers.appdata.xml.in:62
 msgid "Show a default name if a printer is unnamed"
 msgstr "Afficher un nom par défaut si l'imprimante n'a pas été nommée"

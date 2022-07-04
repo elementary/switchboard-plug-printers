@@ -5,6 +5,7 @@ plug_files = files(
     'CUPSPkHelper.vala',
     'CUPSNotifier.vala',
     'Dialogs/AddDialog.vala',
+    'Dialogs/ClearQueueDialog.vala',
     'Dialogs/RemoveDialog.vala',
     'Objects/DeviceDriver.vala',
     'Objects/Printer.vala',

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:26+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
 "PO-Revision-Date: 2019-05-09 18:15-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -25,13 +25,64 @@ msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 
 #: data/printers.appdata.xml.in:12
-msgid "Minor updates:"
+msgid "New Features:"
 msgstr ""
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
-msgid "Updated translations"
+#: data/printers.appdata.xml.in:14
+msgid "Allow clearing the queue for each printer"
+msgstr ""
+
+#: data/printers.appdata.xml.in:16
+msgid "Improvements:"
+msgstr ""
+
+#: data/printers.appdata.xml.in:18
+msgid "Improved job row layout"
+msgstr ""
+
+#: data/printers.appdata.xml.in:19
+msgid "Show the supported language for each driver"
 msgstr ""
 
 #: data/printers.appdata.xml.in:20
+msgid "Show color names below ink levels"
+msgstr ""
+
+#: data/printers.appdata.xml.in:21
+msgid "Avoid expanding the window for printers with many ink levels"
+msgstr ""
+
+#: data/printers.appdata.xml.in:22
+msgid "Use newer add/remove list pattern"
+msgstr ""
+
+#: data/printers.appdata.xml.in:24
+msgid "Fixes:"
+msgstr ""
+
+#: data/printers.appdata.xml.in:26
+msgid "Update sidebar after adding or removing printer"
+msgstr ""
+
+#: data/printers.appdata.xml.in:27
+msgid "Update sidebar after enabling or disabling printer"
+msgstr ""
+
+#: data/printers.appdata.xml.in:28
+msgid "Update job list after job state change"
+msgstr ""
+
+#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
+#: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
+msgid "Minor updates:"
+msgstr ""
+
+#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
+#: data/printers.appdata.xml.in:48 data/printers.appdata.xml.in:56
+#: data/printers.appdata.xml.in:63
+msgid "Updated translations"
+msgstr ""
+
+#: data/printers.appdata.xml.in:62
 msgid "Show a default name if a printer is unnamed"
 msgstr ""

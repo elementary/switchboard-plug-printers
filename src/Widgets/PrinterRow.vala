@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015-2016 elementary LLC.
+ * Copyright 2015 - 2022 elementary, Inc. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -34,6 +34,14 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     }
 
     construct {
+        var remove_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU) {
+            valign = Gtk.Align.CENTER,
+            halign = Gtk.Align.END,
+            hexpand = true,
+            tooltip_text = _("Remove this printer")
+        };
+        remove_button.add_css_class (Gtk.STYLE_CLASS_FLAT);
+
         name_label = new Gtk.Label (null) {
             ellipsize = Pango.EllipsizeMode.END,
             xalign = 0
@@ -72,28 +80,36 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0, 1, 1);
         grid.attach (status_label, 1, 1, 1, 1);
+        grid.attach (remove_button, 2, 0, 2, 2);
 
         child = grid;
 
         page = new PrinterPage (printer);
 
-        update_status ();
-        printer.notify["state-reasons"].connect (() => update_status ());
         printer.bind_property ("info", this, "tooltip-text", GLib.BindingFlags.SYNC_CREATE);
         printer.bind_property ("info", name_label, "label", GLib.BindingFlags.SYNC_CREATE);
+        printer.notify["state"].connect (() => {
+            update_status ();
+        });
 
-        printer.enabled_changed.connect (update_status);
+        remove_button.clicked.connect (() => {
+            var remove_dialog = new RemoveDialog (printer) {
+                transient_for = (Gtk.Window) get_root ()
+            };
+            remove_dialog.present ();
+        });
 
         printer.deleted.connect (() => {
             page.destroy ();
             destroy ();
         });
+
+        update_status ();
     }
 
     private void update_status () {
-        if (printer.enabled) {
+        if (printer.is_enabled) {
             status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
-
             switch (printer.state_reasons_raw) {
                 case "offline":
                     status_image.icon_name = "user-offline";

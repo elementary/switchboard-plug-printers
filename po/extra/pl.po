@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:26+0000\n"
-"PO-Revision-Date: 2021-11-07 12:18+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"PO-Revision-Date: 2022-06-30 07:35+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/pl/>\n"
@@ -31,13 +31,67 @@ msgstr ""
 "atramentu"
 
 #: data/printers.appdata.xml.in:12
+msgid "New Features:"
+msgstr "Nowe funkcje:"
+
+#: data/printers.appdata.xml.in:14
+msgid "Allow clearing the queue for each printer"
+msgstr "Dodano możliwość wyczyszczenia kolejki dla każdej drukarki"
+
+#: data/printers.appdata.xml.in:16
+msgid "Improvements:"
+msgstr "Ulepszenia:"
+
+#: data/printers.appdata.xml.in:18
+msgid "Improved job row layout"
+msgstr "Ulepszono układ wierszy zadań"
+
+#: data/printers.appdata.xml.in:19
+msgid "Show the supported language for each driver"
+msgstr ""
+"Pokazywana jest lista wszystkich dostępnych języków dla każdego sterownika"
+
+#: data/printers.appdata.xml.in:20
+msgid "Show color names below ink levels"
+msgstr "Pokazano nazwy kolorów pod ilością tuszu"
+
+#: data/printers.appdata.xml.in:21
+msgid "Avoid expanding the window for printers with many ink levels"
+msgstr "Uniknięto rozszerzania okna dla drukarek z wieloma poziomami tuszu"
+
+#: data/printers.appdata.xml.in:22
+msgid "Use newer add/remove list pattern"
+msgstr "Użyto nowszego wzoru listy dodaj/usuń"
+
+#: data/printers.appdata.xml.in:24
+msgid "Fixes:"
+msgstr "Poprawki:"
+
+#: data/printers.appdata.xml.in:26
+msgid "Update sidebar after adding or removing printer"
+msgstr ""
+"Panel boczny po dodaniu lub usunięciu drukarki jest teraz aktualizowany"
+
+#: data/printers.appdata.xml.in:27
+msgid "Update sidebar after enabling or disabling printer"
+msgstr ""
+"Panel boczny po włączeniu lub wyłączeniu drukarki jest teraz aktualizowany"
+
+#: data/printers.appdata.xml.in:28
+msgid "Update job list after job state change"
+msgstr "Lista zadań teraz aktualizowany po zmianie statusu zadania"
+
+#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
+#: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
 msgid "Minor updates:"
 msgstr "Mniejsze aktualizacje:"
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:21
+#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
+#: data/printers.appdata.xml.in:48 data/printers.appdata.xml.in:56
+#: data/printers.appdata.xml.in:63
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/printers.appdata.xml.in:20
+#: data/printers.appdata.xml.in:62
 msgid "Show a default name if a printer is unnamed"
 msgstr "Wyświetlaj nazwę domyślną, jeżeli drukarka nie ma nazwy"

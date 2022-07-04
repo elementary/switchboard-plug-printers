@@ -47,32 +47,25 @@ public class Printers.PrinterList : Gtk.Grid {
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.add_css_class ("inline-toolbar");
+        actionbar.add_css_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
 
-        var add_button = new Gtk.Button () {
-            child = new Gtk.Image.from_icon_name ("list-add-symbolic") {
-                pixel_size = 16
-            },
-            tooltip_text = _("Add Printer…")
+        var add_button = new Gtk.Button.with_label (_("Add Printer…")) {
+            margin_top = 3,
+            margin_bottom = 3
         };
-        add_button.add_css_class (Granite.STYLE_CLASS_FLAT);
+        add_button.add_css_class (Gtk.STYLE_CLASS_FLAT);
 
-        var remove_button = new Gtk.Button () {
-             child = new Gtk.Image.from_icon_name ("list-remove-symbolic") {
-                pixel_size = 16
-            },
-            tooltip_text = _("Remove Printer"),
-            sensitive = false
+        var add_button_image = new Gtk.Image.from_icon_name ("list-add-symbolic") {
+            halign = Gtk.Align.START,
+            pixel_size = 16
         };
-        remove_button.add_css_class (Granite.STYLE_CLASS_FLAT);
+        add_button_image.set_parent (add_button);
 
         actionbar.pack_start (add_button);
-        actionbar.pack_start (remove_button);
         attach (scrolled, 0, 0);
         attach (actionbar, 0, 1);
 
         list_box.row_selected.connect ((row) => {
-            remove_button.sensitive = (row != null);
             if (row != null) {
                 stack.set_visible_child (((PrinterRow) row).page);
             }
@@ -90,15 +83,6 @@ public class Printers.PrinterList : Gtk.Grid {
             }
 
             add_dialog.present ();
-        });
-
-        remove_button.clicked.connect (() => {
-            var printer = ((PrinterRow)list_box.get_selected_row ()).printer;
-
-            var remove_dialog = new RemoveDialog (printer) {
-                transient_for = (Gtk.Window) get_root ()
-            };
-            remove_dialog.present ();
         });
 
         unowned PrinterManager manager = PrinterManager.get_default ();

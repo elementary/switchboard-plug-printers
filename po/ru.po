@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
 "PO-Revision-Date: 2021-08-14 15:23+0000\n"
 "Last-Translator: DartDeaDia <DartDeaDia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,24 +16,24 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 msgid "Print Queue"
 msgstr "Очередь печати"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr "Параметры страницы"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr "Настройки и расходные материалы"
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Печать пробной страницы"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Пробная страница"
 
@@ -41,24 +41,20 @@ msgstr "Пробная страница"
 msgid "Add Printer…"
 msgstr "Добавить принтер…"
 
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Удалить принтер"
-
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Printers"
 msgstr "Принтеры"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Настройка принтеров, управление очередью печати и просмотр уровня чернил"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:52
 msgid "No Printers Available"
 msgstr "Нет доступных принтеров"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:53
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr "Подключитесь к принтеру, щелкнув значок на панели инструментов ниже."
 
@@ -97,75 +93,81 @@ msgstr "LPD/LPR-сервер или принтер"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:66
 msgid "Finding nearby printers…"
 msgstr "Поиск ближайших принтеров…"
 
-#: src/Dialogs/AddDialog.vala:86
+#: src/Dialogs/AddDialog.vala:85
 msgid "Refresh"
 msgstr "Обновить"
 
-#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
-#: src/Widgets/JobRow.vala:55
+#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
+#: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "Отменить"
 
-#: src/Dialogs/AddDialog.vala:91
+#: src/Dialogs/AddDialog.vala:90
 msgid "Next"
 msgstr "Далее"
 
-#: src/Dialogs/AddDialog.vala:109
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "Невозможно перечислить все доступные принтеры"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:225
+#: src/Dialogs/AddDialog.vala:224
 msgid "Connection:"
 msgstr "Подключение:"
 
-#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
 msgstr "Описание:"
 
-#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
 msgid "Location:"
 msgstr "Расположение:"
 
-#: src/Dialogs/AddDialog.vala:246
+#: src/Dialogs/AddDialog.vala:245
 msgid "Lab 1 or John's desk"
 msgstr "Лаборатория 1"
 
-#: src/Dialogs/AddDialog.vala:304
+#: src/Dialogs/AddDialog.vala:266
+#, fuzzy
+#| msgid "Processing…"
+msgid "Loading…"
+msgstr "В процессе…"
+
+#: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
 msgstr "Назад"
 
-#: src/Dialogs/AddDialog.vala:308
+#: src/Dialogs/AddDialog.vala:297
 msgid "Add Printer"
 msgstr "Добавить принтер"
 
-#: src/Dialogs/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(рекомендуемый)"
-
-#: src/Dialogs/AddDialog.vala:605
+#: src/Dialogs/AddDialog.vala:606
 msgid "Serial"
 msgstr "Серия"
 
-#: src/Dialogs/AddDialog.vala:608
+#: src/Dialogs/AddDialog.vala:609
 msgid "Local Printers"
 msgstr "Локальные принтеры"
 
-#: src/Dialogs/AddDialog.vala:611
+#: src/Dialogs/AddDialog.vala:612
 msgid "Network Printers"
 msgstr "Сетевые принтеры"
 
-#: src/Dialogs/AddDialog.vala:614
+#: src/Dialogs/AddDialog.vala:615
 msgid "Available Network Printers"
 msgstr "Доступные сетевые принтеры"
+
+#: src/Dialogs/AddDialog.vala:651
+msgid "(recommended)"
+msgstr "(рекомендуемый)"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
@@ -279,51 +281,77 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Фотобарабан не работает"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "Безымянный принтер"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Готов к работе"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "Задание в ожидании"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "На удерживании"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "В процессе…"
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Задание остановлено"
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Остановлен"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Задание отменено"
+#: src/Objects/Job.vala:150
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Отменить"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:152
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "Задание прервано"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:155
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "Задание завершено"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "Очередь печати пуста"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "В очереди нет незаконченных заданий."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Очередь печати"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Выполненные задания"
 
@@ -585,45 +613,60 @@ msgstr "Лаборатория 1 или рабочий стол Джона"
 msgid "Use as default printer:"
 msgstr "Использовать как принтер по умолчанию:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:97
 msgid "Black (PGBK)"
 msgstr "Чёрный (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:100
 msgid "Black (BK)"
 msgstr "Чёрный (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:104
 msgid "Black"
 msgstr "Чёрный"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:108
 msgid "Yellow"
 msgstr "Жёлтый"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:112
 msgid "Cyan"
 msgstr "Бирюзовый"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:116
 msgid "Magenta"
 msgstr "Фиолетовый"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:118
 msgid "Tri-color"
 msgstr "Трехцветный"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "Пауза"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:160
 msgid "Resume"
 msgstr "Возобновить"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/JobRow.vala:165
+msgid "Pause"
+msgstr "Пауза"
+
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "Удалить принтер"
+
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Отключено"
+
+#~ msgid "Processing…"
+#~ msgstr "В процессе…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Задание остановлено"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Задание отменено"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Добавьте принтер для начала печати"

@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
-"PO-Revision-Date: 2021-02-18 20:23+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"PO-Revision-Date: 2022-06-29 08:35+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/fr/>\n"
 "Language: fr\n"
@@ -15,24 +15,24 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 msgid "Print Queue"
 msgstr "File d'impression"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr "Paramètres de la page"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr "Paramètres et cartouches"
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Imprimer une page de test"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Page de test"
 
@@ -40,25 +40,21 @@ msgstr "Page de test"
 msgid "Add Printer…"
 msgstr "Ajouter une imprimante…"
 
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Supprimer l'imprimante"
-
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Printers"
 msgstr "Imprimantes"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Configurer les imprimantes, gérer la file d'impression et voir le niveau "
 "d'encre"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:52
 msgid "No Printers Available"
 msgstr "Aucune imprimante disponible"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:53
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 "Connectez-vous à une imprimante en cliquant sur l'icône dans la barre "
@@ -99,75 +95,79 @@ msgstr "Hôte ou imprimante LPD/LPR"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:66
 msgid "Finding nearby printers…"
 msgstr "Recherche des imprimantes à proximité…"
 
-#: src/Dialogs/AddDialog.vala:86
+#: src/Dialogs/AddDialog.vala:85
 msgid "Refresh"
 msgstr "Actualiser"
 
-#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
-#: src/Widgets/JobRow.vala:55
+#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
+#: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/Dialogs/AddDialog.vala:91
+#: src/Dialogs/AddDialog.vala:90
 msgid "Next"
 msgstr "Suivant"
 
-#: src/Dialogs/AddDialog.vala:109
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "Impossible de lister les imprimantes disponibles"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:225
+#: src/Dialogs/AddDialog.vala:224
 msgid "Connection:"
 msgstr "Connexion :"
 
-#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
 msgstr "Description :"
 
-#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "MaqueImprimante 3000"
 
-#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
 msgid "Location:"
 msgstr "Emplacement :"
 
-#: src/Dialogs/AddDialog.vala:246
+#: src/Dialogs/AddDialog.vala:245
 msgid "Lab 1 or John's desk"
 msgstr "Labo 1 ou Bureau de Jean"
 
-#: src/Dialogs/AddDialog.vala:304
+#: src/Dialogs/AddDialog.vala:266
+msgid "Loading…"
+msgstr "Chargement…"
+
+#: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
 msgstr "Précédent"
 
-#: src/Dialogs/AddDialog.vala:308
+#: src/Dialogs/AddDialog.vala:297
 msgid "Add Printer"
 msgstr "Ajouter une imprimante"
 
-#: src/Dialogs/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(recommandé)"
-
-#: src/Dialogs/AddDialog.vala:605
+#: src/Dialogs/AddDialog.vala:606
 msgid "Serial"
 msgstr "Série"
 
-#: src/Dialogs/AddDialog.vala:608
+#: src/Dialogs/AddDialog.vala:609
 msgid "Local Printers"
 msgstr "Imprimantes locales"
 
-#: src/Dialogs/AddDialog.vala:611
+#: src/Dialogs/AddDialog.vala:612
 msgid "Network Printers"
 msgstr "Imprimantes réseau"
 
-#: src/Dialogs/AddDialog.vala:614
+#: src/Dialogs/AddDialog.vala:615
 msgid "Available Network Printers"
 msgstr "Imprimantes réseau disponibles"
+
+#: src/Dialogs/AddDialog.vala:651
+msgid "(recommended)"
+msgstr "(recommandé)"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
@@ -282,51 +282,62 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Le photo-conducteur optique n'est plus en état de fonctionnement"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "Imprimante sans nom"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Prêt"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
-msgstr "Tâche en attente"
-
-#: src/Objects/Job.vala:103
-msgid "On Hold"
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "En attente"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "Traitement…"
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "En suspens"
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Tâche arrêtée"
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr "En cours"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Tâche annulée"
+#: src/Objects/Job.vala:148
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Arrêtée"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
-msgstr "Tâche interrompue"
+#: src/Objects/Job.vala:150
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Annulée"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
-msgstr "Tâche terminée"
+#: src/Objects/Job.vala:152
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Interrompue"
 
-#: src/Views/JobsView.vala:30
+#: src/Objects/Job.vala:155
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Terminé"
+
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "La file d'impression est vide"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "Il n'y a aucune tâche dans la file."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:45
+msgid "Clear All"
+msgstr "Tout effacer"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Tâches terminées"
 
@@ -588,45 +599,58 @@ msgstr "Labo 1 ou Bureau de Jean"
 msgid "Use as default printer:"
 msgstr "Utiliser comme imprimante par défaut :"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:97
 msgid "Black (PGBK)"
 msgstr "Noir (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:100
 msgid "Black (BK)"
 msgstr "Noir (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:104
 msgid "Black"
 msgstr "Noir"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:108
 msgid "Yellow"
 msgstr "Jaune"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:112
 msgid "Cyan"
 msgstr "Cyan"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:116
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:118
 msgid "Tri-color"
 msgstr "Tricolore"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "Mettre en pause"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:160
 msgid "Resume"
 msgstr "Reprendre"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/JobRow.vala:165
+msgid "Pause"
+msgstr "Mettre en pause"
+
+#: src/Widgets/PrinterRow.vala:41
+msgid "Remove this printer"
+msgstr "Supprimer cette imprimante"
+
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Désactivé"
+
+#~ msgid "Processing…"
+#~ msgstr "Traitement…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Tâche arrêtée"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Tâche annulée"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Ajoutez une imprimante pour commencer à imprimer"

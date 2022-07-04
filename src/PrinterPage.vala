@@ -35,7 +35,8 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
 
     construct {
         var stack = new Gtk.Stack ();
-        stack.add_titled (new JobsView (printer), "general", _("Print Queue"));
+        var jobs_view = new JobsView (printer);
+        stack.add_titled (jobs_view, "general", _("Print Queue"));
         stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
         stack.add_titled (new SuppliesView (printer), "supplies", _("Settings & Supplies"));
 
@@ -62,7 +63,11 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
         printer.bind_property ("info", this, "title");
         printer.bind_property ("location", this, "description");
 
-        printer.bind_property ("enabled", status_switch, "active", BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
+        status_switch.active = printer.is_enabled;
+        print_test.sensitive = status_switch.active;
+
+        status_switch.bind_property ("active", printer, "is-enabled", BindingFlags.DEFAULT);
+        status_switch.bind_property ("active", print_test, "sensitive", BindingFlags.DEFAULT);
     }
 
     private string? get_testprint_filename (string datadir) {

@@ -19,7 +19,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.SuppliesView: Gtk.Grid {
+public class Printers.SuppliesView: Gtk.ScrolledWindow {
     public Printer printer { get; construct; }
 
     public SuppliesView (Printer printer) {
@@ -61,14 +61,18 @@ public class Printers.SuppliesView: Gtk.Grid {
             margin_top = 12
         };
 
-        column_spacing = 12;
-        row_spacing = 12;
-        attach (name_label, 0, 0);
-        attach (name_entry, 1, 0);
-        attach (location_label, 0, 1);
-        attach (location_entry, 1, 1);
-        attach (default_label, 0, 2);
-        attach (default_switch, 1, 2);
-        attach (ink_level, 0, 3, 2, 1);
+        var grid = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 12
+        };
+        grid.attach (name_label, 0, 0);
+        grid.attach (name_entry, 1, 0);
+        grid.attach (location_label, 0, 1);
+        grid.attach (location_entry, 1, 1);
+        grid.attach (default_label, 0, 2);
+        grid.attach (default_switch, 1, 2);
+        grid.attach (ink_level, 0, 3, 2, 1);
+
+        add (grid);
     }
 }

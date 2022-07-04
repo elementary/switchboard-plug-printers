@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:28+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
 "PO-Revision-Date: 2020-05-30 20:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -15,24 +15,24 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
-#: src/PrinterPage.vala:38
+#: src/PrinterPage.vala:39
 msgid "Print Queue"
 msgstr "Tisková fronta"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:40
 msgid "Page Setup"
 msgstr "Nastavení stránky"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
 msgstr "Nastavení a spotřební materiál"
 
-#: src/PrinterPage.vala:51
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Vytisknout zkušební stránku"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:106
+#: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Zkušební stránka"
 
@@ -40,24 +40,20 @@ msgstr "Zkušební stránka"
 msgid "Add Printer…"
 msgstr "Přidat tiskárnu…"
 
-#: src/PrinterList.vala:52
-msgid "Remove Printer"
-msgstr "Odstranit tiskárnu"
-
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Printers"
 msgstr "Tiskárny"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Nastavuje tiskárny, spravuje tiskové fronty a kontroluje hladiny inkoustu"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:52
 msgid "No Printers Available"
 msgstr "Žádné tiskárny k dispozici"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:53
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr "Připojte se k tiskárně kliknutím na ikonu v nástrojové liště níže."
 
@@ -96,75 +92,81 @@ msgstr "LPD/LPR host nebo tiskárna"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:66
 msgid "Finding nearby printers…"
 msgstr "Hledání tiskáren v okolí…"
 
-#: src/Dialogs/AddDialog.vala:86
+#: src/Dialogs/AddDialog.vala:85
 msgid "Refresh"
 msgstr "Obnovit"
 
-#: src/Dialogs/AddDialog.vala:89 src/Dialogs/AddDialog.vala:306
-#: src/Widgets/JobRow.vala:55
+#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
+#: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "Storno"
 
-#: src/Dialogs/AddDialog.vala:91
+#: src/Dialogs/AddDialog.vala:90
 msgid "Next"
 msgstr "Další"
 
-#: src/Dialogs/AddDialog.vala:109
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "Nelze vypsat všechny dostupné tiskárny"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:225
+#: src/Dialogs/AddDialog.vala:224
 msgid "Connection:"
 msgstr "Připojení:"
 
-#: src/Dialogs/AddDialog.vala:233 src/Views/SuppliesView.vala:30
+#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
 msgstr "Popis:"
 
-#: src/Dialogs/AddDialog.vala:237 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:241 src/Views/SuppliesView.vala:39
+#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
 msgid "Location:"
 msgstr "Umístění:"
 
-#: src/Dialogs/AddDialog.vala:246
+#: src/Dialogs/AddDialog.vala:245
 msgid "Lab 1 or John's desk"
 msgstr "Laboratoř 1 nebo Honzův stůl"
 
-#: src/Dialogs/AddDialog.vala:304
+#: src/Dialogs/AddDialog.vala:266
+#, fuzzy
+#| msgid "Processing…"
+msgid "Loading…"
+msgstr "Zpracovává se…"
+
+#: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
 msgstr "Předchozí"
 
-#: src/Dialogs/AddDialog.vala:308
+#: src/Dialogs/AddDialog.vala:297
 msgid "Add Printer"
 msgstr "Přidat tiskárnu"
 
-#: src/Dialogs/AddDialog.vala:543
-msgid "(recommended)"
-msgstr "(doporučené)"
-
-#: src/Dialogs/AddDialog.vala:605
+#: src/Dialogs/AddDialog.vala:606
 msgid "Serial"
 msgstr "Sériový port"
 
-#: src/Dialogs/AddDialog.vala:608
+#: src/Dialogs/AddDialog.vala:609
 msgid "Local Printers"
 msgstr "Místní tiskárny"
 
-#: src/Dialogs/AddDialog.vala:611
+#: src/Dialogs/AddDialog.vala:612
 msgid "Network Printers"
 msgstr "Síťové tiskárny"
 
-#: src/Dialogs/AddDialog.vala:614
+#: src/Dialogs/AddDialog.vala:615
 msgid "Available Network Printers"
 msgstr "Dostupné síťové tiskárny"
+
+#: src/Dialogs/AddDialog.vala:651
+msgid "(recommended)"
+msgstr "(doporučené)"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
@@ -280,51 +282,77 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Optický fotoválec už nefunguje"
 
-#: src/Objects/Printer.vala:170
+#: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
 msgstr "Nepojmenovaná tiskárna"
 
-#: src/Objects/Printer.vala:283
+#: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Připraveno"
 
-#: src/Objects/Job.vala:101
-msgid "Job Pending"
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
 msgstr "Úloha čeká"
 
-#: src/Objects/Job.vala:103
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
 msgid "On Hold"
 msgstr "Pozastaveno"
 
-#: src/Objects/Job.vala:105
-msgid "Processing…"
-msgstr "Zpracovává se…"
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
 
-#: src/Objects/Job.vala:107
-msgid "Job Stopped"
-msgstr "Úloha zastavena"
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Zastavená"
 
-#: src/Objects/Job.vala:109
-msgid "Job Canceled"
-msgstr "Úloha zrušena"
+#: src/Objects/Job.vala:150
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Storno"
 
-#: src/Objects/Job.vala:111
-msgid "Job Aborted"
+#: src/Objects/Job.vala:152
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
 msgstr "Úloha zamítnuta"
 
-#: src/Objects/Job.vala:114
-msgid "Job Completed"
+#: src/Objects/Job.vala:155
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
 msgstr "Úloha dokončena"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "Tisková fronta je prázdná"
 
-#: src/Views/JobsView.vala:30
+#: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "V této frontě nejsou žádné čekající úlohy."
 
-#: src/Views/JobsView.vala:76
+#: src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Tisková fronta"
+
+#: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
 msgstr "Dokončené úlohy"
 
@@ -586,45 +614,60 @@ msgstr "Laboratoř 1 nebo Honzův stůl"
 msgid "Use as default printer:"
 msgstr "Požívat jako výchozí tiskárnu:"
 
-#: src/Widgets/InkLevel.vala:94
+#: src/Widgets/InkLevel.vala:97
 msgid "Black (PGBK)"
 msgstr "Černá (PGBK)"
 
-#: src/Widgets/InkLevel.vala:97
+#: src/Widgets/InkLevel.vala:100
 msgid "Black (BK)"
 msgstr "Černá (BK)"
 
-#: src/Widgets/InkLevel.vala:101
+#: src/Widgets/InkLevel.vala:104
 msgid "Black"
 msgstr "Černá (Black)"
 
-#: src/Widgets/InkLevel.vala:105
+#: src/Widgets/InkLevel.vala:108
 msgid "Yellow"
 msgstr "Žlutá (Yellow)"
 
-#: src/Widgets/InkLevel.vala:109
+#: src/Widgets/InkLevel.vala:112
 msgid "Cyan"
 msgstr "Tyrkysová (Cyan)"
 
-#: src/Widgets/InkLevel.vala:113
+#: src/Widgets/InkLevel.vala:116
 msgid "Magenta"
 msgstr "Purpurová (Magenta)"
 
-#: src/Widgets/InkLevel.vala:115
+#: src/Widgets/InkLevel.vala:118
 msgid "Tri-color"
 msgstr "Tříbarevná"
 
-#: src/Widgets/JobRow.vala:64 src/Widgets/JobRow.vala:109
-msgid "Pause"
-msgstr "Pozastavit"
-
-#: src/Widgets/JobRow.vala:101
+#: src/Widgets/JobRow.vala:160
 msgid "Resume"
 msgstr "Pokračovat"
 
-#: src/Widgets/PrinterRow.vala:107
+#: src/Widgets/JobRow.vala:165
+msgid "Pause"
+msgstr "Pozastavit"
+
+#: src/Widgets/PrinterRow.vala:41
+#, fuzzy
+#| msgid "Remove Printer"
+msgid "Remove this printer"
+msgstr "Odstranit tiskárnu"
+
+#: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Vypnuto"
+
+#~ msgid "Processing…"
+#~ msgstr "Zpracovává se…"
+
+#~ msgid "Job Stopped"
+#~ msgstr "Úloha zastavena"
+
+#~ msgid "Job Canceled"
+#~ msgstr "Úloha zrušena"
 
 #~ msgid "Add a printer to begin printing"
 #~ msgstr "Přidat tiskárnu pro umožnění tisku"
