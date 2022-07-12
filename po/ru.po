@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-07-12 18:24+0000\n"
-"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
+"PO-Revision-Date: 2022-07-12 19:46+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ru/>\n"
 "Language: ru\n"
@@ -313,18 +313,14 @@ msgid "Canceled"
 msgstr "Отменён"
 
 #: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "Задание прервано"
+msgstr "Прервано"
 
 #: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "Задание завершено"
+msgstr "Завершено"
 
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
@@ -335,10 +331,8 @@ msgid "There are no pending jobs in the queue."
 msgstr "В очереди нет незаконченных заданий."
 
 #: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "Очередь печати"
+msgstr "Очистить всё"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
