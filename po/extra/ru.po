@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
 "PO-Revision-Date: 2022-07-12 19:46+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ru/>\n"
 "Language: ru\n"
@@ -51,7 +51,7 @@ msgstr "Отображение поддерживаемого языка для 
 
 #: data/printers.appdata.xml.in:20
 msgid "Show color names below ink levels"
-msgstr "Отображение название цветов под уровнем чернил"
+msgstr "Отображение названий цветов под уровнем чернил"
 
 #: data/printers.appdata.xml.in:21
 msgid "Avoid expanding the window for printers with many ink levels"
