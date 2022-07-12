@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2021-08-14 15:23+0000\n"
-"Last-Translator: DartDeaDia <DartDeaDia@protonmail.com>\n"
+"PO-Revision-Date: 2022-07-12 18:24+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ru/>\n"
 "Language: ru\n"
@@ -136,10 +136,8 @@ msgid "Lab 1 or John's desk"
 msgstr "Лаборатория 1"
 
 #: src/Dialogs/AddDialog.vala:266
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "В процессе…"
+msgstr "Загрузка…"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
@@ -290,23 +288,19 @@ msgid "Ready"
 msgstr "Готов к работе"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "Задание в ожидании"
+msgstr "Ожидание"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
-msgstr "На удерживании"
+msgstr "На удержании"
 
 #: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "В процессе"
 
 #: src/Objects/Job.vala:148
 #, fuzzy
@@ -317,11 +311,9 @@ msgid "Stopped"
 msgstr "Остановлен"
 
 #: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "Отменить"
+msgstr "Отменён"
 
 #: src/Objects/Job.vala:152
 #, fuzzy
