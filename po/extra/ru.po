@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
 "PO-Revision-Date: 2022-07-12 18:19+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ru/>\n"
 "Language: ru\n"
@@ -39,7 +39,7 @@ msgstr "Очистка очереди для каждого принтера"
 
 #: data/printers.appdata.xml.in:16
 msgid "Improvements:"
-msgstr ""
+msgstr "Улучшения:"
 
 #: data/printers.appdata.xml.in:18
 msgid "Improved job row layout"
