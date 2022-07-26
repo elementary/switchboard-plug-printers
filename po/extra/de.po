@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
 "PO-Revision-Date: 2022-07-26 20:58+0000\n"
-"Last-Translator: ActualDisaster2447 <1jbe1vkry@mozmail.com>\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/de/>\n"
 "Language: de\n"
@@ -51,7 +51,7 @@ msgstr "Anzeige die unterstützten Sprachen für jeden Treiber"
 
 #: data/printers.appdata.xml.in:20
 msgid "Show color names below ink levels"
-msgstr ""
+msgstr "Farbnamen unter den Tintenständen anzeigen"
 
 #: data/printers.appdata.xml.in:21
 msgid "Avoid expanding the window for printers with many ink levels"
@@ -70,10 +70,13 @@ msgstr "Fehlerbehebungen:"
 #: data/printers.appdata.xml.in:26
 msgid "Update sidebar after adding or removing printer"
 msgstr ""
+"Seitenleiste nach dem Hinzufügen oder Entfernen eines Druckers aktualisieren"
 
 #: data/printers.appdata.xml.in:27
 msgid "Update sidebar after enabling or disabling printer"
 msgstr ""
+"Seitenleiste nach dem Aktivieren oder Deaktivieren eines Druckers "
+"aktualisieren"
 
 #: data/printers.appdata.xml.in:28
 msgid "Update job list after job state change"
