@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-07-12 19:46+0000\n"
-"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
+"PO-Revision-Date: 2022-08-01 20:11+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ru/>\n"
 "Language: ru\n"
@@ -633,10 +633,8 @@ msgid "Pause"
 msgstr "Пауза"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
-msgstr "Удалить принтер"
+msgstr "Удалить этот принтер"
 
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
