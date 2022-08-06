@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:37+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
 "PO-Revision-Date: 2021-04-26 17:51+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -102,7 +102,7 @@ msgid "Refresh"
 msgstr ""
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:77
+#: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "الغاء"
 
@@ -628,11 +628,11 @@ msgstr ""
 msgid "Tri-color"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:158
+#: src/Widgets/JobRow.vala:160
 msgid "Resume"
 msgstr ""
 
-#: src/Widgets/JobRow.vala:163
+#: src/Widgets/JobRow.vala:165
 msgid "Pause"
 msgstr ""
 

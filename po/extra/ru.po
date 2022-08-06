@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:37+0000\n"
-"PO-Revision-Date: 2021-04-24 13:12+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"PO-Revision-Date: 2022-07-12 19:46+0000\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ru/>\n"
 "Language: ru\n"
@@ -31,43 +31,65 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:12
 msgid "New Features:"
-msgstr ""
+msgstr "Новые функции:"
 
 #: data/printers.appdata.xml.in:14
 msgid "Allow clearing the queue for each printer"
-msgstr ""
+msgstr "Очистка очереди для каждого принтера"
 
-#: data/printers.appdata.xml.in:16 data/printers.appdata.xml.in:29
-#: data/printers.appdata.xml.in:37 data/printers.appdata.xml.in:45
-msgid "Minor updates:"
-msgstr "Незначительные обновления:"
+#: data/printers.appdata.xml.in:16
+msgid "Improvements:"
+msgstr "Улучшения:"
 
 #: data/printers.appdata.xml.in:18
-msgid "Update sidebar after adding or removing printer"
-msgstr ""
+msgid "Improved job row layout"
+msgstr "Улучшена планировка списка задач"
 
 #: data/printers.appdata.xml.in:19
 msgid "Show the supported language for each driver"
-msgstr ""
+msgstr "Отображение поддерживаемого языка для каждого драйвера"
 
 #: data/printers.appdata.xml.in:20
 msgid "Show color names below ink levels"
-msgstr ""
+msgstr "Отображение названий цветов под уровнем чернил"
 
 #: data/printers.appdata.xml.in:21
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr ""
+"Избежание увеличения окна для принтеров с большим количеством различных "
+"чернил"
 
 #: data/printers.appdata.xml.in:22
 msgid "Use newer add/remove list pattern"
-msgstr ""
+msgstr "Использование нового шаблона добавления/удаления"
 
-#: data/printers.appdata.xml.in:23 data/printers.appdata.xml.in:31
-#: data/printers.appdata.xml.in:39 data/printers.appdata.xml.in:47
-#: data/printers.appdata.xml.in:54
+#: data/printers.appdata.xml.in:24
+msgid "Fixes:"
+msgstr "Исправления:"
+
+#: data/printers.appdata.xml.in:26
+msgid "Update sidebar after adding or removing printer"
+msgstr "Обновление боковой панели после добавления или удаления принтера"
+
+#: data/printers.appdata.xml.in:27
+msgid "Update sidebar after enabling or disabling printer"
+msgstr "Обновление боковой панели после включения или выключения принтера"
+
+#: data/printers.appdata.xml.in:28
+msgid "Update job list after job state change"
+msgstr "Обновление списка задач после обновления статуса задачи"
+
+#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
+#: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
+msgid "Minor updates:"
+msgstr "Незначительные обновления:"
+
+#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
+#: data/printers.appdata.xml.in:48 data/printers.appdata.xml.in:56
+#: data/printers.appdata.xml.in:63
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/printers.appdata.xml.in:53
+#: data/printers.appdata.xml.in:62
 msgid "Show a default name if a printer is unnamed"
 msgstr "Показывать стандартное имя, если принтер без имени"

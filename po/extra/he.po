@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:37+0000\n"
-"PO-Revision-Date: 2022-06-17 21:25+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"PO-Revision-Date: 2022-06-30 13:47+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/he/>\n"
@@ -29,20 +29,19 @@ msgstr "הגדרת מדפסות, ניהול תורי הדפסה והצגת רמ�
 
 #: data/printers.appdata.xml.in:12
 msgid "New Features:"
-msgstr ""
+msgstr "יכולות חדשות:"
 
 #: data/printers.appdata.xml.in:14
 msgid "Allow clearing the queue for each printer"
-msgstr ""
+msgstr "לאפשר לפנות את התור של כל אחת מהמדפסות"
 
-#: data/printers.appdata.xml.in:16 data/printers.appdata.xml.in:29
-#: data/printers.appdata.xml.in:37 data/printers.appdata.xml.in:45
-msgid "Minor updates:"
-msgstr "עדכונים משניים:"
+#: data/printers.appdata.xml.in:16
+msgid "Improvements:"
+msgstr "שיפורים:"
 
 #: data/printers.appdata.xml.in:18
-msgid "Update sidebar after adding or removing printer"
-msgstr "סרגל הצד מעודכן לאחר הוספת או הסרת מדפסת"
+msgid "Improved job row layout"
+msgstr "פריסת שורות המשימות השתפרה"
 
 #: data/printers.appdata.xml.in:19
 msgid "Show the supported language for each driver"
@@ -54,18 +53,39 @@ msgstr "מוצגים שמות הצבעים מתחת לכמויות הדיו"
 
 #: data/printers.appdata.xml.in:21
 msgid "Avoid expanding the window for printers with many ink levels"
-msgstr ""
+msgstr "נמנעה הרחבת החלון למדפסות עם הרבה רמות דיו"
 
 #: data/printers.appdata.xml.in:22
 msgid "Use newer add/remove list pattern"
 msgstr "להשתמש בתבנית חדשה להוספה/הסרה מרשימה"
 
-#: data/printers.appdata.xml.in:23 data/printers.appdata.xml.in:31
-#: data/printers.appdata.xml.in:39 data/printers.appdata.xml.in:47
-#: data/printers.appdata.xml.in:54
+#: data/printers.appdata.xml.in:24
+msgid "Fixes:"
+msgstr "תיקונים:"
+
+#: data/printers.appdata.xml.in:26
+msgid "Update sidebar after adding or removing printer"
+msgstr "סרגל הצד מעודכן לאחר הוספת או הסרת מדפסת"
+
+#: data/printers.appdata.xml.in:27
+msgid "Update sidebar after enabling or disabling printer"
+msgstr "סרגל הצד מעודכן לאחר הפעלת או השבתת מדפסת"
+
+#: data/printers.appdata.xml.in:28
+msgid "Update job list after job state change"
+msgstr "רישום המשימה מתעדכן לאחר שינוי מצב המשימה"
+
+#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
+#: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
+msgid "Minor updates:"
+msgstr "עדכונים משניים:"
+
+#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
+#: data/printers.appdata.xml.in:48 data/printers.appdata.xml.in:56
+#: data/printers.appdata.xml.in:63
 msgid "Updated translations"
 msgstr "תרגומים עודכנו"
 
-#: data/printers.appdata.xml.in:53
+#: data/printers.appdata.xml.in:62
 msgid "Show a default name if a printer is unnamed"
 msgstr "הצגת שם בררת מחדל אם למדפסת אין שם"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:37+0000\n"
-"PO-Revision-Date: 2022-06-25 05:26+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"PO-Revision-Date: 2022-06-29 21:39+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -103,7 +103,7 @@ msgid "Refresh"
 msgstr "Aktualisieren"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:77
+#: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -334,10 +334,8 @@ msgid "There are no pending jobs in the queue."
 msgstr "Es befinden sich keine ausstehenden Aufträge in der Warteschlange."
 
 #: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "Druckwarteschlange"
+msgstr "Alle entfernen"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
@@ -629,11 +627,11 @@ msgstr "Magenta"
 msgid "Tri-color"
 msgstr "Dreifarbig"
 
-#: src/Widgets/JobRow.vala:158
+#: src/Widgets/JobRow.vala:160
 msgid "Resume"
 msgstr "Fortsetzen"
 
-#: src/Widgets/JobRow.vala:163
+#: src/Widgets/JobRow.vala:165
 msgid "Pause"
 msgstr "Pausieren"
 

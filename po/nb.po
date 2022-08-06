@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-28 19:37+0000\n"
-"PO-Revision-Date: 2019-06-27 14:12+0000\n"
+"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"PO-Revision-Date: 2022-07-08 10:31+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/nb/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:49+0000\n"
 
 #: src/PrinterPage.vala:39
@@ -101,7 +101,7 @@ msgid "Refresh"
 msgstr "Oppdater"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
-#: src/Widgets/JobRow.vala:77
+#: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -135,10 +135,8 @@ msgid "Lab 1 or John's desk"
 msgstr "Laboratorie 1 eller Ole's skrivebord"
 
 #: src/Dialogs/AddDialog.vala:266
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "Behandler…"
+msgstr "Laster inn …"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
@@ -283,20 +281,17 @@ msgid "The optical photo conductor is no longer functioning"
 msgstr "Bildetrommelen fungerer ikke lenger"
 
 #: src/Objects/Printer.vala:151
-#, fuzzy
 msgid "Unnamed Printer"
-msgstr "Legg til skriver"
+msgstr "Skriver uten navn"
 
 #: src/Objects/Printer.vala:224
 msgid "Ready"
 msgstr "Klar"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "Jobb venter"
+msgstr "Ventende"
 
 #: src/Objects/Job.vala:144
 #, fuzzy
@@ -306,9 +301,10 @@ msgid "On Hold"
 msgstr "På vent"
 
 #: src/Objects/Job.vala:146
+#, fuzzy
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "Underveis"
 
 #: src/Objects/Job.vala:148
 #, fuzzy
@@ -319,25 +315,19 @@ msgid "Stopped"
 msgstr "Stoppet"
 
 #: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "Avbryt"
+msgstr "Avbrutt"
 
 #: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "Jobb avbrutt"
+msgstr "Kansellert"
 
 #: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "Jobb fullført"
+msgstr "Fullført"
 
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
@@ -348,10 +338,8 @@ msgid "There are no pending jobs in the queue."
 msgstr "Ingen jobber i utskriftskøen."
 
 #: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "Utskriftskø"
+msgstr "Tøm alle"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
@@ -647,19 +635,17 @@ msgstr "Magentarød"
 msgid "Tri-color"
 msgstr "Trefarget"
 
-#: src/Widgets/JobRow.vala:158
+#: src/Widgets/JobRow.vala:160
 msgid "Resume"
 msgstr "Fortsett"
 
-#: src/Widgets/JobRow.vala:163
+#: src/Widgets/JobRow.vala:165
 msgid "Pause"
 msgstr "Pause"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
-msgstr "Fjern skriver"
+msgstr "Fjern denne skriveren"
 
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
