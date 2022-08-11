@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2021-08-16 08:39+0000\n"
+"PO-Revision-Date: 2022-08-11 17:38+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/fi/>\n"
@@ -135,10 +135,8 @@ msgid "Lab 1 or John's desk"
 msgstr "Huone 1 tai Jussin pöytä"
 
 #: src/Dialogs/AddDialog.vala:266
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "Prosessoidaan…"
+msgstr "Ladataan…"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
@@ -291,15 +289,11 @@ msgid "Ready"
 msgstr "Valmis"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "Työ odottaa"
+msgstr "Odottaa"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "Pidossa"
@@ -307,36 +301,27 @@ msgstr "Pidossa"
 #: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "Meneillään"
 
 #: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
 msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Pysäytetty"
 
 #: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "Peru"
+msgstr "Peruttu"
 
 #: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "Työ lopetettu"
+msgstr "Lopetettu"
 
 #: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "Työ valmistui"
+msgstr "Valmistunut"
 
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
@@ -347,10 +332,8 @@ msgid "There are no pending jobs in the queue."
 msgstr "Tulostusjonossa ei ole töitä."
 
 #: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "Tulostusjono"
+msgstr "Tyhjennä kaikki"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
@@ -651,10 +634,8 @@ msgid "Pause"
 msgstr "Keskeytä"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
-msgstr "Poista tulostin"
+msgstr "Poista tämä tulostin"
 
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
