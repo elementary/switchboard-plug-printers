@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-06-18 06:41+0000\n"
+"PO-Revision-Date: 2022-08-11 15:50+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ja/>\n"
@@ -29,23 +29,23 @@ msgstr "プリンターを設定し、プリントキューを管理し、イン
 
 #: data/printers.appdata.xml.in:12
 msgid "New Features:"
-msgstr ""
+msgstr "新機能:"
 
 #: data/printers.appdata.xml.in:14
 msgid "Allow clearing the queue for each printer"
-msgstr ""
+msgstr "プリンターごとのキューの消去に対応"
 
 #: data/printers.appdata.xml.in:16
 msgid "Improvements:"
-msgstr ""
+msgstr "改善点:"
 
 #: data/printers.appdata.xml.in:18
 msgid "Improved job row layout"
-msgstr ""
+msgstr "ジョブ一覧のレイアウトを改善"
 
 #: data/printers.appdata.xml.in:19
 msgid "Show the supported language for each driver"
-msgstr ""
+msgstr "各ドライバーの対応言語を表示"
 
 #: data/printers.appdata.xml.in:20
 msgid "Show color names below ink levels"
@@ -53,7 +53,7 @@ msgstr "インク残量の下に色名表示を追加"
 
 #: data/printers.appdata.xml.in:21
 msgid "Avoid expanding the window for printers with many ink levels"
-msgstr ""
+msgstr "プリンターにインクレベルが複数存在する場合に、ウィンドウの大きさが意図せず大きくなってしまわないように修正"
 
 #: data/printers.appdata.xml.in:22
 msgid "Use newer add/remove list pattern"
@@ -61,21 +61,19 @@ msgstr "一覧への追加／削除に新しいデザインパターンを使う
 
 #: data/printers.appdata.xml.in:24
 msgid "Fixes:"
-msgstr ""
+msgstr "修正点:"
 
 #: data/printers.appdata.xml.in:26
 msgid "Update sidebar after adding or removing printer"
-msgstr "プリンターの追加・削除後はサイドバーを更新するように修正"
+msgstr "プリンターの追加・削除後に、サイドバーを更新するように修正"
 
 #: data/printers.appdata.xml.in:27
-#, fuzzy
-#| msgid "Update sidebar after adding or removing printer"
 msgid "Update sidebar after enabling or disabling printer"
-msgstr "プリンターの追加・削除後はサイドバーを更新するように修正"
+msgstr "プリンターの有効化・無効化後に、サイドバーを更新するように修正"
 
 #: data/printers.appdata.xml.in:28
 msgid "Update job list after job state change"
-msgstr ""
+msgstr "ジョブの状態が変化したら、ジョブ一覧を更新するように修正"
 
 #: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
 #: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54

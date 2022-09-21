@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2019-07-21 03:24+0000\n"
+"PO-Revision-Date: 2022-08-06 15:44+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ko/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/PrinterPage.vala:39
@@ -134,10 +134,8 @@ msgid "Lab 1 or John's desk"
 msgstr "연구실 1 또는 누군가의 책상"
 
 #: src/Dialogs/AddDialog.vala:266
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "작업 중…"
+msgstr "불러오는 중…"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
@@ -254,7 +252,7 @@ msgstr "오프라인"
 #: src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
-msgstr "정지 됨"
+msgstr "정지됨"
 
 #. / Translators: The printer marker supply waste receptacle is almost full
 #: src/Objects/Printer.vala:69
@@ -289,15 +287,11 @@ msgid "Ready"
 msgstr "사용함"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "작업 보류 중"
+msgstr "보류 중"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "대기 중"
@@ -305,36 +299,27 @@ msgstr "대기 중"
 #: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "진행 중"
 
 #: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
 msgctxt "Print Job"
 msgid "Stopped"
-msgstr "정지 됨"
+msgstr "정지됨"
 
 #: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "취소"
+msgstr "취소됨"
 
 #: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "작업이 중단 됨"
+msgstr "중단됨"
 
 #: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "작업이 완료 됨"
+msgstr "작업 완료"
 
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
@@ -345,10 +330,8 @@ msgid "There are no pending jobs in the queue."
 msgstr "대기중인 작업이 없습니다."
 
 #: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "프린트 대기열"
+msgstr "모두 지우기"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
@@ -649,8 +632,6 @@ msgid "Pause"
 msgstr "일시 중지"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
 msgstr "프린터 제거"
 
