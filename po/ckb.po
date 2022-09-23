@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-09-21 02:54+0000\n"
+"PO-Revision-Date: 2022-09-23 23:35+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/ckb/>\n"
@@ -179,7 +179,7 @@ msgstr ""
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
-msgstr ""
+msgstr "سڕینەوە"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -551,7 +551,7 @@ msgstr ""
 
 #: src/Views/SetupView.vala:379
 msgid "Manual"
-msgstr ""
+msgstr "دەستی"
 
 #: src/Views/SetupView.vala:382
 msgid "Middle"
@@ -636,4 +636,4 @@ msgstr ""
 
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
-msgstr ""
+msgstr "وەستێنراو"
