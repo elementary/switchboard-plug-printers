@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-09-23 23:35+0000\n"
+"PO-Revision-Date: 2022-09-25 06:58+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/ckb/>\n"
@@ -539,7 +539,7 @@ msgstr ""
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
-msgstr ""
+msgstr "چەپ"
 
 #: src/Views/SetupView.vala:373
 msgid "Main Tray"
@@ -567,7 +567,7 @@ msgstr ""
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
-msgstr ""
+msgstr "ڕاست"
 
 #: src/Views/SetupView.vala:395
 msgid "Side"
@@ -628,7 +628,7 @@ msgstr ""
 
 #: src/Widgets/JobRow.vala:165
 msgid "Pause"
-msgstr ""
+msgstr "ڕاگرتن"
 
 #: src/Widgets/PrinterRow.vala:41
 msgid "Remove this printer"
