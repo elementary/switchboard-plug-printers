@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-09-25 06:58+0000\n"
+"PO-Revision-Date: 2022-09-27 14:02+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/ckb/>\n"
@@ -115,7 +115,7 @@ msgstr ""
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:224
 msgid "Connection:"
-msgstr ""
+msgstr "پەیوەستی:"
 
 #: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
