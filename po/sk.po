@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2021-08-28 17:06+0000\n"
+"PO-Revision-Date: 2022-09-30 22:36+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/sk/>\n"
@@ -136,10 +136,8 @@ msgid "Lab 1 or John's desk"
 msgstr "Laboratórium 1 alebo Janov stôl"
 
 #: src/Dialogs/AddDialog.vala:266
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "Spracováva sa…"
+msgstr "Načítava sa…"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
@@ -292,15 +290,11 @@ msgid "Ready"
 msgstr "Pripravené"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "Čakajúca úloha"
+msgstr "Čaká sa"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "Pozastavené"
@@ -308,36 +302,27 @@ msgstr "Pozastavené"
 #: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "Prebieha"
 
 #: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
 msgctxt "Print Job"
 msgid "Stopped"
-msgstr "Zastavená"
+msgstr "Zastavené"
 
 #: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "Zrušiť"
+msgstr "Zrušené"
 
 #: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "Úloha zamietnutá"
+msgstr "Zamietnuté"
 
 #: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "Úloha dokončená"
+msgstr "Dokončené"
 
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
@@ -348,10 +333,8 @@ msgid "There are no pending jobs in the queue."
 msgstr "V tejto fronte nie sú žiadne čakajúce úlohy."
 
 #: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "Tlačová fronta"
+msgstr "Vymazať všetko"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
@@ -652,10 +635,8 @@ msgid "Pause"
 msgstr "Pozastaviť"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
-msgstr "Odstrániť tlačiareň"
+msgstr "Odstrániť túto tlačiareň"
 
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
