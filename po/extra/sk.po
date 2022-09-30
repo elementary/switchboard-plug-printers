@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2021-08-25 17:20+0000\n"
+"PO-Revision-Date: 2022-09-30 22:36+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/sk/>\n"
@@ -31,51 +31,52 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:12
 msgid "New Features:"
-msgstr ""
+msgstr "Nové funkcie:"
 
 #: data/printers.appdata.xml.in:14
 msgid "Allow clearing the queue for each printer"
-msgstr ""
+msgstr "Povolené zmazanie fronty tlače pre jednotlivé tlačiarne zvlášť"
 
 #: data/printers.appdata.xml.in:16
 msgid "Improvements:"
-msgstr ""
+msgstr "Vylepšenia:"
 
 #: data/printers.appdata.xml.in:18
 msgid "Improved job row layout"
-msgstr ""
+msgstr "Vylepšenie rozloženia riadku tlačových úloh"
 
 #: data/printers.appdata.xml.in:19
 msgid "Show the supported language for each driver"
-msgstr ""
+msgstr "Zobraziť podporovaný jazyk pre každý ovládač"
 
 #: data/printers.appdata.xml.in:20
 msgid "Show color names below ink levels"
-msgstr ""
+msgstr "Zobrazovať názvy farieb pod úrovňami atramentu"
 
 #: data/printers.appdata.xml.in:21
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr ""
+"Zabrániť zväčšeniu okna pre tlačiarne s veľkým množstvom úrovní atramentu"
 
 #: data/printers.appdata.xml.in:22
 msgid "Use newer add/remove list pattern"
-msgstr ""
+msgstr "Používať nový vzor pridávania/odstraňovania v zozname"
 
 #: data/printers.appdata.xml.in:24
 msgid "Fixes:"
-msgstr ""
+msgstr "Opravy:"
 
 #: data/printers.appdata.xml.in:26
 msgid "Update sidebar after adding or removing printer"
-msgstr ""
+msgstr "Aktualizovať bočný panel po pridaní alebo odstránení tlačiarne"
 
 #: data/printers.appdata.xml.in:27
 msgid "Update sidebar after enabling or disabling printer"
-msgstr ""
+msgstr "Aktualizovať bočný panel po zapnutí alebo vypnutí tlačiarne"
 
 #: data/printers.appdata.xml.in:28
 msgid "Update job list after job state change"
-msgstr ""
+msgstr "Aktualizovať zoznam úloh po zmene stavu úlohy"
 
 #: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
 #: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
