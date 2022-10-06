@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-10-04 21:31+0000\n"
+"PO-Revision-Date: 2022-10-07 16:57+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/ckb/>\n"
@@ -17,87 +17,88 @@ msgstr ""
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
-msgstr ""
+msgstr "نۆرەی چاپکردن"
 
 #: src/PrinterPage.vala:40
 msgid "Page Setup"
-msgstr ""
+msgstr "ڕێکخستنی پەڕە"
 
 #: src/PrinterPage.vala:41
 msgid "Settings & Supplies"
-msgstr ""
+msgstr "ڕێکخستنەکان & دابینکردنەکان"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
-msgstr ""
+msgstr "پەڕەی تاقیکردنەوە چاپ بکە"
 
 #. / TRANSLATORS: Name of the test page job
 #: src/PrinterPage.vala:111
 msgid "Test page"
-msgstr ""
+msgstr "پەڕەی تاقیکردنەوە"
 
 #: src/PrinterList.vala:50
 msgid "Add Printer…"
-msgstr ""
+msgstr "زیادکردنی چاپکەر…"
 
 #: src/Plug.vala:38
 msgid "Printers"
-msgstr ""
+msgstr "چاپکەرەکان"
 
 #: src/Plug.vala:39
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
+"چاپکەرەکان ڕێک بخە، نۆرەی چاپکردنەکان بەڕێوەبەرە و، ئاستی ڕەنگەکان بزانە"
 
 #: src/Plug.vala:52
 msgid "No Printers Available"
-msgstr ""
+msgstr "هیچ چاپکەرێک بەردەست نییە"
 
 #: src/Plug.vala:53
 msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
+msgstr "پەیوەست ببە بە چاپکەرێک لە ڕێگەی ئایکۆنی زیادکردن لە شریتەکەی خوارەوە."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
 msgid "Internet Printing Protocol (https)"
-msgstr ""
+msgstr "پرۆتۆکۆلی چاپکردنی ئینتەرنێتی (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
 #: src/Dialogs/AddDialog.vala:29
 msgid "Internet Printing Protocol (http)"
-msgstr ""
+msgstr "پرۆتۆکۆلی چاپکردنی ئینتەرنێتی (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
 #: src/Dialogs/AddDialog.vala:31
 msgid "Internet Printing Protocol (ipp)"
-msgstr ""
+msgstr "پرۆتۆکۆلی چاپکردنی ئینتەرنێتی (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
 #: src/Dialogs/AddDialog.vala:33
 msgid "Internet Printing Protocol (ipps)"
-msgstr ""
+msgstr "پرۆتۆکۆلی چاپکردنی ئینتەرنێتی (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
 #: src/Dialogs/AddDialog.vala:35
 msgid "Internet Printing Protocol (ipp14)"
-msgstr ""
+msgstr "پرۆتۆکۆلی چاپکردنی ئینتەرنێتی (ipp14)"
 
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:37
 msgid "LPD/LPR Host or Printer"
-msgstr ""
+msgstr "چاپکەر یان هۆستی LPD/LPR"
 
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:39
 msgid "AppSocket/HP JetDirect"
-msgstr ""
+msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:66
 msgid "Finding nearby printers…"
-msgstr ""
+msgstr "دۆزینەوەی چاپکەرەکانی دەوروبەر…"
 
 #: src/Dialogs/AddDialog.vala:85
 msgid "Refresh"
-msgstr ""
+msgstr "نوێکردنەوە"
 
 #: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
 #: src/Widgets/JobRow.vala:79
@@ -110,7 +111,7 @@ msgstr "دواتر"
 
 #: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
-msgstr ""
+msgstr "بینینی هەموو چاپکەرە بەردەستەکان مەحاڵە"
 
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:224
@@ -119,56 +120,56 @@ msgstr "پەیوەستی:"
 
 #: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
 msgid "Description:"
-msgstr ""
+msgstr "فرۆزە:"
 
 #: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
-msgstr ""
+msgstr "براند پرێنتەر X3000"
 
 #: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
 msgid "Location:"
-msgstr ""
+msgstr "شوێن:"
 
 #: src/Dialogs/AddDialog.vala:245
 msgid "Lab 1 or John's desk"
-msgstr ""
+msgstr "تاقیگەی ١ یان مێزی ئاگا"
 
 #: src/Dialogs/AddDialog.vala:266
 msgid "Loading…"
-msgstr ""
+msgstr "ئامادەکردن…"
 
 #: src/Dialogs/AddDialog.vala:293
 msgid "Previous"
-msgstr ""
+msgstr "پێشتر"
 
 #: src/Dialogs/AddDialog.vala:297
 msgid "Add Printer"
-msgstr ""
+msgstr "زیادکردنی چاپکەر"
 
 #: src/Dialogs/AddDialog.vala:606
 msgid "Serial"
-msgstr ""
+msgstr "زنجیرەیی"
 
 #: src/Dialogs/AddDialog.vala:609
 msgid "Local Printers"
-msgstr ""
+msgstr "چاپکەرە ناوخۆییەکان"
 
 #: src/Dialogs/AddDialog.vala:612
 msgid "Network Printers"
-msgstr ""
+msgstr "چاپکەرەکانی ڕایەڵە"
 
 #: src/Dialogs/AddDialog.vala:615
 msgid "Available Network Printers"
-msgstr ""
+msgstr "چاپکەرە بەردەستەکانی ڕایەڵە"
 
 #: src/Dialogs/AddDialog.vala:651
 msgid "(recommended)"
-msgstr ""
+msgstr "(پێشنیازکراو)"
 
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
-msgstr ""
+msgstr "دڵنیایی دەتەوێت '%s' بسڕیتەوە؟"
 
 #: src/Dialogs/RemoveDialog.vala:30
 #, c-format
@@ -176,6 +177,8 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
+"بە سڕینەوەی '%s' هەموو مێژووی چاپکردنەکان و ڕێکخستنەکانی وابەستە پێی "
+"دەسڕدرێنەوە."
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
@@ -185,369 +188,384 @@ msgstr "سڕینەوە"
 #: src/Objects/Printer.vala:45
 msgctxt "printer state"
 msgid "Low on toner"
-msgstr ""
+msgstr "ڕەنگی کەمە"
 
 #. / Translators: The printer has no toner left
 #: src/Objects/Printer.vala:47
 msgctxt "printer state"
 msgid "Out of toner"
-msgstr ""
+msgstr "ڕەنگی تێدا نەماوە"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: src/Objects/Printer.vala:49
 msgctxt "printer state"
 msgid "Low on developer"
-msgstr ""
+msgstr "گەشەپێدەری کەمە"
 
 #. / Translators: "Developer" is a chemical for photo development, http://en.wikipedia.org/wiki/Photographic_developer
 #: src/Objects/Printer.vala:51
 msgctxt "printer state"
 msgid "Out of developer"
-msgstr ""
+msgstr "گەشەپێدەری تێدا نەماوە"
 
 #. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr ""
+msgstr "ماکە سەپلای کەمە"
 
 #. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr ""
+msgstr "ماکە سەپلای تێدا نەماوە"
 
 #. / Translators: One or more covers on the printer are open
 #: src/Objects/Printer.vala:57
 msgctxt "printer state"
 msgid "Open cover"
-msgstr ""
+msgstr "قەپاغەکەی بکەوە"
 
 #. / Translators: One or more doors on the printer are open
 #: src/Objects/Printer.vala:59
 msgctxt "printer state"
 msgid "Open door"
-msgstr ""
+msgstr "دەرگە بکەوە"
 
 #. / Translators: At least one input tray is low on media
 #: src/Objects/Printer.vala:61
 msgctxt "printer state"
 msgid "Low on paper"
-msgstr ""
+msgstr "پەڕی کەمە"
 
 #. / Translators: At least one input tray is empty
 #: src/Objects/Printer.vala:63
 msgctxt "printer state"
 msgid "Out of paper"
-msgstr ""
+msgstr "پەڕی تێدا نەماوە"
 
 #. / Translators: The printer is offline
 #: src/Objects/Printer.vala:65
 msgctxt "printer state"
 msgid "Offline"
-msgstr ""
+msgstr "دەرهێڵ"
 
 #. / Translators: Someone has stopped the Printer
 #: src/Objects/Printer.vala:67
 msgctxt "printer state"
 msgid "Stopped"
-msgstr ""
+msgstr "وەستا"
 
 #. / Translators: The printer marker supply waste receptacle is almost full
 #: src/Objects/Printer.vala:69
 msgctxt "printer state"
 msgid "Waste receptacle almost full"
-msgstr ""
+msgstr "تیاگرەی پاشماوە نزیکە پڕ بێت"
 
 #. / Translators: The printer marker supply waste receptacle is full
 #: src/Objects/Printer.vala:71
 msgctxt "printer state"
 msgid "Waste receptacle full"
-msgstr ""
+msgstr "گیرەی پاشماوە پڕە"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:73
+#, fuzzy
 msgctxt "printer state"
 msgid "The optical photo conductor is near end of life"
-msgstr ""
+msgstr "The optical photo conductor is near end of life"
 
 #. / Translators: Optical photo conductors are used in laser printers
 #: src/Objects/Printer.vala:75
+#, fuzzy
 msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
+msgstr "The optical photo conductor is no longer functioning"
 
 #: src/Objects/Printer.vala:151
 msgid "Unnamed Printer"
-msgstr ""
+msgstr "چاپکەری ناو لێ نەنراو"
 
 #: src/Objects/Printer.vala:224
 msgid "Ready"
-msgstr ""
+msgstr "ئامادە"
 
 #: src/Objects/Job.vala:142
 msgctxt "Print Job"
 msgid "Pending"
-msgstr ""
+msgstr "چاوەڕێ"
 
 #: src/Objects/Job.vala:144
 msgctxt "Print Job"
 msgid "On Hold"
-msgstr ""
+msgstr "وەستاوە"
 
 #: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "لە کاردایە"
 
 #: src/Objects/Job.vala:148
 msgctxt "Print Job"
 msgid "Stopped"
-msgstr ""
+msgstr "وەستا"
 
 #: src/Objects/Job.vala:150
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr ""
+msgstr "هەڵوەشاوە"
 
 #: src/Objects/Job.vala:152
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr ""
+msgstr "پچڕێندراو"
 
 #: src/Objects/Job.vala:155
 msgctxt "Print Job"
 msgid "Completed"
-msgstr ""
+msgstr "تەواوبوو"
 
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
-msgstr ""
+msgstr "نۆرەی چاپکردن بەتاڵە"
 
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
-msgstr ""
+msgstr "هیچ کارێک نییە لە نۆرەدا چاوەڕێ بکات."
 
 #: src/Views/JobsView.vala:45
 msgid "Clear All"
-msgstr ""
+msgstr "سڕینەوەی هەموو"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
-msgstr ""
+msgstr "کارە تەواوبووەکان"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
-msgstr ""
+msgstr "لاپەڕەکان بۆ هەر لایەک:"
 
 #: src/Views/SetupView.vala:74
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "قەراخی درێژ (ستاندارد)"
 
 #: src/Views/SetupView.vala:75
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "قەراخی کورت (فلیپ)"
 
 #: src/Views/SetupView.vala:126
 msgid "Two-sided:"
-msgstr ""
+msgstr "دوو-لاکراو:"
 
 #: src/Views/SetupView.vala:143
 msgid "Portrait"
-msgstr ""
+msgstr "درێژی"
 
 #: src/Views/SetupView.vala:146
 msgid "Landscape"
-msgstr ""
+msgstr "پانی"
 
 #: src/Views/SetupView.vala:149
 msgid "Reverse portrait"
-msgstr ""
+msgstr "درێژی هەڵگەڕاوە"
 
 #: src/Views/SetupView.vala:152
 msgid "Reverse landscape"
-msgstr ""
+msgstr "پانی هەڵگەڕاوە"
 
 #: src/Views/SetupView.vala:161
 msgid "Orientation:"
-msgstr ""
+msgstr "ئاڕاستەکردن:"
 
 #: src/Views/SetupView.vala:181
 msgid "Media Size:"
-msgstr ""
+msgstr "قەبارەی میدیا:"
 
 #: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
 msgid "Automatic"
-msgstr ""
+msgstr "خۆکار"
 
 #: src/Views/SetupView.vala:198
 msgid "One Color"
-msgstr ""
+msgstr "یەک ڕەنگ"
 
 #: src/Views/SetupView.vala:201
 msgid "Color"
-msgstr ""
+msgstr "ڕەنگ"
 
 #: src/Views/SetupView.vala:204
 msgid "One Color + Black"
-msgstr ""
+msgstr "یەک ڕەنگ + ڕەش"
 
 #: src/Views/SetupView.vala:207
 msgid "Greyscale"
-msgstr ""
+msgstr "خۆڵەمێشی"
 
 #: src/Views/SetupView.vala:210
 msgid "Processed Color"
-msgstr ""
+msgstr "ڕەنگی پرۆسێس کراو"
 
 #: src/Views/SetupView.vala:213
 msgid "Processed Greyscale"
-msgstr ""
+msgstr "خۆڵەمێشی پرۆسێس کراو"
 
 #: src/Views/SetupView.vala:222
 msgid "Color mode:"
-msgstr ""
+msgstr "دۆخی ڕەنگ:"
 
 #: src/Views/SetupView.vala:236
 msgid "Top Bin"
-msgstr ""
+msgstr "بینی سەرەوە"
 
 #: src/Views/SetupView.vala:239
 msgid "Middle Bin"
-msgstr ""
+msgstr "بینی ناوەڕاست"
 
 #: src/Views/SetupView.vala:242
 msgid "Bottom Bin"
-msgstr ""
+msgstr "بینی خوارەوە"
 
 #: src/Views/SetupView.vala:245
 msgid "Side Bin"
-msgstr ""
+msgstr "بینی لا"
 
 #: src/Views/SetupView.vala:248
 msgid "Left Bin"
-msgstr ""
+msgstr "بینی چەپ"
 
 #: src/Views/SetupView.vala:251
 msgid "Right Bin"
-msgstr ""
+msgstr "بینی ڕاست"
 
 #: src/Views/SetupView.vala:254
 msgid "Center Bin"
-msgstr ""
+msgstr "بینی ناوەند"
 
 #: src/Views/SetupView.vala:257
 msgid "Rear Bin"
-msgstr ""
+msgstr "بینی پشتەوە"
 
 #: src/Views/SetupView.vala:260
 msgid "Face Up Bin"
-msgstr ""
+msgstr "بینی پێشەوە"
 
 #: src/Views/SetupView.vala:263
+#, fuzzy
 msgid "Face Down Bin"
-msgstr ""
+msgstr "Face Down Bin"
 
 #: src/Views/SetupView.vala:266
+#, fuzzy
 msgid "Large Capacity Bin"
-msgstr ""
+msgstr "Large Capacity Bin"
 
 #: src/Views/SetupView.vala:269
+#, fuzzy
 msgid "My Mailbox"
-msgstr ""
+msgstr "My Mailbox"
 
 #: src/Views/SetupView.vala:274
-#, c-format
+#, c-format, fuzzy
 msgid "Stacker %d"
-msgstr ""
+msgstr "Stacker %d"
 
 #: src/Views/SetupView.vala:277
-#, c-format
+#, c-format, fuzzy
 msgid "Mailbox %d"
-msgstr ""
+msgstr "Mailbox %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
-#, c-format
+#, c-format, fuzzy
 msgid "Tray %d"
-msgstr ""
+msgstr "Tray %d"
 
 #: src/Views/SetupView.vala:293
+#, fuzzy
 msgid "Output Tray:"
-msgstr ""
+msgstr "Output Tray:"
 
 #: src/Views/SetupView.vala:307
 msgid "Draft"
-msgstr ""
+msgstr "ڕەشنووس"
 
 #: src/Views/SetupView.vala:310
 msgid "Normal"
-msgstr ""
+msgstr "ئاسایی"
 
 #: src/Views/SetupView.vala:313
 msgid "High"
-msgstr ""
+msgstr "بەرز"
 
 #: src/Views/SetupView.vala:319
 msgid "Quality:"
-msgstr ""
+msgstr "کوالێتی:"
 
 #: src/Views/SetupView.vala:333
+#, fuzzy
 msgid "Paper Allocation"
-msgstr ""
+msgstr "Paper Allocation"
 
 #: src/Views/SetupView.vala:336
+#, fuzzy
 msgid "Alternate Tray"
-msgstr ""
+msgstr "Alternate Tray"
 
 #: src/Views/SetupView.vala:339
+#, fuzzy
 msgid "Alternate Roll"
-msgstr ""
+msgstr "Alternate Roll"
 
 #: src/Views/SetupView.vala:345
 msgid "Bottom"
-msgstr ""
+msgstr "خوارەوە"
 
 #: src/Views/SetupView.vala:348
+#, fuzzy
 msgid "By-pass Tray"
-msgstr ""
+msgstr "By-pass Tray"
 
 #: src/Views/SetupView.vala:351
 msgid "Center"
 msgstr "ناوەڕاست"
 
 #: src/Views/SetupView.vala:354
+#, fuzzy
 msgid "Continuous Autofeed"
-msgstr ""
+msgstr "Continuous Autofeed"
 
 #: src/Views/SetupView.vala:358
 msgid "Disk"
-msgstr ""
+msgstr "پەپکە"
 
 #: src/Views/SetupView.vala:361
 msgid "Envelope"
-msgstr ""
+msgstr "کاخەزی نامە"
 
 #: src/Views/SetupView.vala:364
+#, fuzzy
 msgid "Hagaki"
-msgstr ""
+msgstr "Hagaki"
 
 #: src/Views/SetupView.vala:367
+#, fuzzy
 msgid "Large Capacity"
-msgstr ""
+msgstr "Large Capacity"
 
 #: src/Views/SetupView.vala:370
 msgid "Left"
 msgstr "چەپ"
 
 #: src/Views/SetupView.vala:373
+#, fuzzy
 msgid "Main Tray"
-msgstr ""
+msgstr "Main Tray"
 
 #: src/Views/SetupView.vala:376
+#, fuzzy
 msgid "Main Roll"
-msgstr ""
+msgstr "Main Roll"
 
 #: src/Views/SetupView.vala:379
 msgid "Manual"
@@ -555,15 +573,15 @@ msgstr "دەستی"
 
 #: src/Views/SetupView.vala:382
 msgid "Middle"
-msgstr ""
+msgstr "ناوەڕاست"
 
 #: src/Views/SetupView.vala:385
 msgid "Photo"
-msgstr ""
+msgstr "وێنە"
 
 #: src/Views/SetupView.vala:389
 msgid "Rear"
-msgstr ""
+msgstr "پشتەوە"
 
 #: src/Views/SetupView.vala:392
 msgid "Right"
@@ -571,60 +589,60 @@ msgstr "ڕاست"
 
 #: src/Views/SetupView.vala:395
 msgid "Side"
-msgstr ""
+msgstr "لا"
 
 #: src/Views/SetupView.vala:398
 msgid "Top"
-msgstr ""
+msgstr "سەرەوە"
 
 #: src/Views/SetupView.vala:403
-#, c-format
+#, c-format, fuzzy
 msgid "Roll %d"
-msgstr ""
+msgstr "Roll %d"
 
 #: src/Views/SetupView.vala:419
 msgid "Paper Source:"
-msgstr ""
+msgstr "سەرچاوەی پەڕ:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
-msgstr ""
+msgstr "تاقیگەی یەک یان مێزی ئاگا"
 
 #: src/Views/SuppliesView.vala:47
 msgid "Use as default printer:"
-msgstr ""
+msgstr "وەکو چاپکەری سەرەکی بەکاریبهێنە:"
 
 #: src/Widgets/InkLevel.vala:97
 msgid "Black (PGBK)"
-msgstr ""
+msgstr "ڕەش (PGBK)"
 
 #: src/Widgets/InkLevel.vala:100
 msgid "Black (BK)"
-msgstr ""
+msgstr "ڕەش (BK)"
 
 #: src/Widgets/InkLevel.vala:104
 msgid "Black"
-msgstr ""
+msgstr "ڕەش"
 
 #: src/Widgets/InkLevel.vala:108
 msgid "Yellow"
-msgstr ""
+msgstr "زەرد"
 
 #: src/Widgets/InkLevel.vala:112
 msgid "Cyan"
-msgstr ""
+msgstr "سایان (شینی تۆخ)"
 
 #: src/Widgets/InkLevel.vala:116
 msgid "Magenta"
-msgstr ""
+msgstr "ماگێنتا"
 
 #: src/Widgets/InkLevel.vala:118
 msgid "Tri-color"
-msgstr ""
+msgstr "سێ ڕەنگ"
 
 #: src/Widgets/JobRow.vala:160
 msgid "Resume"
-msgstr ""
+msgstr "بەردەوام بوون"
 
 #: src/Widgets/JobRow.vala:165
 msgid "Pause"
@@ -632,7 +650,7 @@ msgstr "ڕاگرتن"
 
 #: src/Widgets/PrinterRow.vala:41
 msgid "Remove this printer"
-msgstr ""
+msgstr "ئەم چاپکەرە بسڕەوە"
 
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
