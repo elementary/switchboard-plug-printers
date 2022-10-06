@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-09-21 15:36+0000\n"
+"PO-Revision-Date: 2022-10-07 16:57+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/printers-plug-extra/ckb/>\n"
@@ -26,6 +26,7 @@ msgstr "ڕێکخستنەکانی چاپکەر"
 #: data/printers.appdata.xml.in:6
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
+"چاپکەرەکان ڕێک بخە، نۆرەی چاپکردنەکان بەڕێوەبەرە و، ئاستی ڕەنگەکان بزانە"
 
 #: data/printers.appdata.xml.in:12
 msgid "New Features:"
