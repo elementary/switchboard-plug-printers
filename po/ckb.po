@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"POT-Creation-Date: 2022-10-20 17:46+0000\n"
 "PO-Revision-Date: 2022-10-07 16:57+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -467,17 +467,17 @@ msgid "My Mailbox"
 msgstr "My Mailbox"
 
 #: src/Views/SetupView.vala:274
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Stacker %d"
 msgstr "Stacker %d"
 
 #: src/Views/SetupView.vala:277
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Mailbox %d"
 msgstr "Mailbox %d"
 
 #: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Tray %d"
 msgstr "Tray %d"
 
@@ -596,7 +596,7 @@ msgid "Top"
 msgstr "سەرەوە"
 
 #: src/Views/SetupView.vala:403
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Roll %d"
 msgstr "Roll %d"
 
