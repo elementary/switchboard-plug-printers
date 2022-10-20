@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"POT-Creation-Date: 2022-10-20 17:46+0000\n"
 "PO-Revision-Date: 2022-07-26 20:58+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -29,70 +29,71 @@ msgstr ""
 "Drucker einrichten, Druckwarteschlangen verwalten und Tintenfüllstände "
 "anzeigen"
 
-#: data/printers.appdata.xml.in:12
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:39
+#: data/printers.appdata.xml.in:47 data/printers.appdata.xml.in:55
+#: data/printers.appdata.xml.in:63
+msgid "Minor updates:"
+msgstr "Kleinere Aktualisierungen:"
+
+#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:41
+#: data/printers.appdata.xml.in:49 data/printers.appdata.xml.in:57
+#: data/printers.appdata.xml.in:65 data/printers.appdata.xml.in:72
+msgid "Updated translations"
+msgstr "Aktualisierte Übersetzungen"
+
+#: data/printers.appdata.xml.in:21
 msgid "New Features:"
 msgstr "Neue Funktionen:"
 
-#: data/printers.appdata.xml.in:14
+#: data/printers.appdata.xml.in:23
 msgid "Allow clearing the queue for each printer"
 msgstr "Löschen der Warteschlange für jeden Drucker erlauben"
 
-#: data/printers.appdata.xml.in:16
+#: data/printers.appdata.xml.in:25
 msgid "Improvements:"
 msgstr "Verbesserungen:"
 
-#: data/printers.appdata.xml.in:18
+#: data/printers.appdata.xml.in:27
 msgid "Improved job row layout"
 msgstr "Anordnung der Warteschlange verbessert"
 
-#: data/printers.appdata.xml.in:19
+#: data/printers.appdata.xml.in:28
 msgid "Show the supported language for each driver"
 msgstr "Anzeige die unterstützten Sprachen für jeden Treiber"
 
-#: data/printers.appdata.xml.in:20
+#: data/printers.appdata.xml.in:29
 msgid "Show color names below ink levels"
 msgstr "Farbnamen unter den Tintenständen anzeigen"
 
-#: data/printers.appdata.xml.in:21
+#: data/printers.appdata.xml.in:30
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr ""
 "Vermeide es das Fenster für Drucker mit vielen Tintenfüllständen zu "
 "vergrößern"
 
-#: data/printers.appdata.xml.in:22
+#: data/printers.appdata.xml.in:31
 msgid "Use newer add/remove list pattern"
 msgstr ""
 
-#: data/printers.appdata.xml.in:24
+#: data/printers.appdata.xml.in:33
 msgid "Fixes:"
 msgstr "Fehlerbehebungen:"
 
-#: data/printers.appdata.xml.in:26
+#: data/printers.appdata.xml.in:35
 msgid "Update sidebar after adding or removing printer"
 msgstr ""
 "Seitenleiste nach dem Hinzufügen oder Entfernen eines Druckers aktualisieren"
 
-#: data/printers.appdata.xml.in:27
+#: data/printers.appdata.xml.in:36
 msgid "Update sidebar after enabling or disabling printer"
 msgstr ""
 "Seitenleiste nach dem Aktivieren oder Deaktivieren eines Druckers "
 "aktualisieren"
 
-#: data/printers.appdata.xml.in:28
+#: data/printers.appdata.xml.in:37
 msgid "Update job list after job state change"
 msgstr ""
 
-#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
-#: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
-msgid "Minor updates:"
-msgstr "Kleinere Aktualisierungen:"
-
-#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
-#: data/printers.appdata.xml.in:48 data/printers.appdata.xml.in:56
-#: data/printers.appdata.xml.in:63
-msgid "Updated translations"
-msgstr "Aktualisierte Übersetzungen"
-
-#: data/printers.appdata.xml.in:62
+#: data/printers.appdata.xml.in:71
 msgid "Show a default name if a printer is unnamed"
 msgstr "Zeige Standardnamen wenn ein Printer unbenannt ist"
