@@ -1,3 +1,11 @@
+switchboard-plug-printers (2.2.1) bionic; urgency=medium
+
+  * Release 2.2.1 (#181)
+  * Update translation files
+  * Update translation template
+
+ -- elementary OS Team <builds@elementary.io>  Fri, 21 Oct 2022 22:08:21 +0000
+
 switchboard-plug-printers (2.2.0) bionic; urgency=medium
 
   * Release 2.2.0 (#170)
