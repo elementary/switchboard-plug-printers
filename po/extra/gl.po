@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"POT-Creation-Date: 2022-10-20 17:46+0000\n"
 "PO-Revision-Date: 2019-09-30 14:23+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/switchboard/"
@@ -31,65 +31,66 @@ msgstr ""
 "Configurar impresoras, xestionar colas de impresión e visualizar os niveis "
 "de tinta"
 
-#: data/printers.appdata.xml.in:12
-msgid "New Features:"
-msgstr ""
-
-#: data/printers.appdata.xml.in:14
-msgid "Allow clearing the queue for each printer"
-msgstr ""
-
-#: data/printers.appdata.xml.in:16
-msgid "Improvements:"
-msgstr ""
-
-#: data/printers.appdata.xml.in:18
-msgid "Improved job row layout"
-msgstr ""
-
-#: data/printers.appdata.xml.in:19
-msgid "Show the supported language for each driver"
-msgstr ""
-
-#: data/printers.appdata.xml.in:20
-msgid "Show color names below ink levels"
-msgstr ""
-
-#: data/printers.appdata.xml.in:21
-msgid "Avoid expanding the window for printers with many ink levels"
-msgstr ""
-
-#: data/printers.appdata.xml.in:22
-msgid "Use newer add/remove list pattern"
-msgstr ""
-
-#: data/printers.appdata.xml.in:24
-msgid "Fixes:"
-msgstr ""
-
-#: data/printers.appdata.xml.in:26
-msgid "Update sidebar after adding or removing printer"
-msgstr ""
-
-#: data/printers.appdata.xml.in:27
-msgid "Update sidebar after enabling or disabling printer"
-msgstr ""
-
-#: data/printers.appdata.xml.in:28
-msgid "Update job list after job state change"
-msgstr ""
-
-#: data/printers.appdata.xml.in:30 data/printers.appdata.xml.in:38
-#: data/printers.appdata.xml.in:46 data/printers.appdata.xml.in:54
+#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:39
+#: data/printers.appdata.xml.in:47 data/printers.appdata.xml.in:55
+#: data/printers.appdata.xml.in:63
 msgid "Minor updates:"
 msgstr ""
 
-#: data/printers.appdata.xml.in:32 data/printers.appdata.xml.in:40
-#: data/printers.appdata.xml.in:48 data/printers.appdata.xml.in:56
-#: data/printers.appdata.xml.in:63
+#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:41
+#: data/printers.appdata.xml.in:49 data/printers.appdata.xml.in:57
+#: data/printers.appdata.xml.in:65 data/printers.appdata.xml.in:72
 msgid "Updated translations"
 msgstr ""
 
-#: data/printers.appdata.xml.in:62
+#: data/printers.appdata.xml.in:21
+msgid "New Features:"
+msgstr ""
+
+#: data/printers.appdata.xml.in:23
+msgid "Allow clearing the queue for each printer"
+msgstr ""
+
+#: data/printers.appdata.xml.in:25
+msgid "Improvements:"
+msgstr ""
+
+#: data/printers.appdata.xml.in:27
+msgid "Improved job row layout"
+msgstr ""
+
+#: data/printers.appdata.xml.in:28
+msgid "Show the supported language for each driver"
+msgstr ""
+
+#: data/printers.appdata.xml.in:29
+msgid "Show color names below ink levels"
+msgstr ""
+
+#: data/printers.appdata.xml.in:30
+msgid "Avoid expanding the window for printers with many ink levels"
+msgstr ""
+
+#: data/printers.appdata.xml.in:31
+msgid "Use newer add/remove list pattern"
+msgstr ""
+
+#: data/printers.appdata.xml.in:33
+msgid "Fixes:"
+msgstr ""
+
+#: data/printers.appdata.xml.in:35
+msgid "Update sidebar after adding or removing printer"
+msgstr ""
+
+#: data/printers.appdata.xml.in:36
+msgid "Update sidebar after enabling or disabling printer"
+msgstr ""
+
+#: data/printers.appdata.xml.in:37
+msgid "Update job list after job state change"
+msgstr ""
+
+#: data/printers.appdata.xml.in:71
 msgid "Show a default name if a printer is unnamed"
 msgstr ""
