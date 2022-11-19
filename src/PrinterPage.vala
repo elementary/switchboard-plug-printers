@@ -73,14 +73,16 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
             page = "testprint";
         } else {
             //  Random selection from fun ones
-            string[] fun_pages = {"sudoku"};
+            string[] fun_pages = {
+                "sudoku-testprint",
+                //  "fortune-testprint"
+            };
             page = fun_pages[GLib.Random.int_range (0, fun_pages.length)];
         }
 
         string[] testprints = {"/data/" + page, "/data/" + page + ".ps"};
         foreach (var testprint in testprints) {
             string filename = datadir + testprint;
-            stdout.printf(filename+"\n");
             if (Posix.access (filename, Posix.R_OK) == 0) {
                 return filename;
             }
@@ -92,19 +94,19 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
     private void print_test_page () {
 
         // Ask the user if they want a fun test page
-        var dialog = new Granite.Dialog () {
-            //  transient_for = window
-        };
-
-
-        dialog.get_content_area().add (
-            new Gtk.Label (_("Do you want a fun or boring test page?")) {
-                xalign= 0,
-                xpad= 13
-            }
+        var dialog = new Granite.MessageDialog.with_image_from_icon_name (
+            _("Do you want a practical or fun test page?"),
+            "",
+            "dialog-information",
+            Gtk.ButtonsType.CANCEL
         );
 
-        dialog.add_button (_("Cancel"), 0);
+        //  TODO make function
+        var checkbox = new Gtk.CheckButton.with_label (_("Remember my choice"));
+        checkbox.show ();
+
+        dialog.custom_bin.add (checkbox);
+
         dialog.add_button (_("Boring"), 1);
         dialog.add_button (_("Fun!"), 2);
 
