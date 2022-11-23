@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:46+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2022-06-30 13:47+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -14,6 +14,26 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "מדפסות"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr "הגדרת מדפסות, ניהול תורי הדפסה והצגת רמות דיו"
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr "אין מדפסות זמינות"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr "יש להתחבר למדפסת על ידי לחיצה על הסמל בסרגל הכלים שלהלן."
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "הוספת מדפסת…"
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -35,26 +55,6 @@ msgstr "הדפסת עמוד ניסיון"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "עמוד ניסיון"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "הוספת מדפסת…"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "מדפסות"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "הגדרת מדפסות, ניהול תורי הדפסה והצגת רמות דיו"
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr "אין מדפסות זמינות"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr "יש להתחבר למדפסת על ידי לחיצה על הסמל בסרגל הכלים שלהלן."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -165,6 +165,20 @@ msgstr "מדפסות רשת זמינות"
 msgid "(recommended)"
 msgstr "(מומלץ)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+msgid "Clear All"
+msgstr "פינוי הכול"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -180,6 +194,41 @@ msgstr "הסרת ‚%s‘ תגרום לאבדן כל היסטוריית ההדפ
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "הסרה"
+
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "בהמתנה"
+
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "מוחזקת"
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr "בתהליך"
+
+#: src/Objects/Job.vala:148
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "נעצרה"
+
+#: src/Objects/Job.vala:150
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "בוטלה"
+
+#: src/Objects/Job.vala:152
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "הושמדה"
+
+#: src/Objects/Job.vala:155
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "הושלמה"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -285,41 +334,6 @@ msgstr "מדפסת ללא שם"
 msgid "Ready"
 msgstr "מוכנה"
 
-#: src/Objects/Job.vala:142
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "בהמתנה"
-
-#: src/Objects/Job.vala:144
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "מוחזקת"
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr "בתהליך"
-
-#: src/Objects/Job.vala:148
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "נעצרה"
-
-#: src/Objects/Job.vala:150
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "בוטלה"
-
-#: src/Objects/Job.vala:152
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "הושמדה"
-
-#: src/Objects/Job.vala:155
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "הושלמה"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "תור ההדפסה ריק"
@@ -327,10 +341,6 @@ msgstr "תור ההדפסה ריק"
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "אין משימות ממתינות בתור."
-
-#: src/Views/JobsView.vala:45
-msgid "Clear All"
-msgstr "פינוי הכול"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"

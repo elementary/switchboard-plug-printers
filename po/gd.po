@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:46+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2015-09-03 23:37+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,6 +12,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 "X-Generator: Launchpad (build 18330)\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr ""
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr ""
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr ""
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr ""
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -32,26 +52,6 @@ msgstr ""
 #. / TRANSLATORS: Name of the test page job
 #: src/PrinterPage.vala:111
 msgid "Test page"
-msgstr ""
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr ""
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr ""
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr ""
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 
 #. / Tranlators: This is a protocol name, please keep the (https).
@@ -163,6 +163,20 @@ msgstr ""
 msgid "(recommended)"
 msgstr ""
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+msgid "Clear All"
+msgstr ""
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -177,6 +191,41 @@ msgstr ""
 
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
+msgstr ""
+
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Pending"
+msgstr ""
+
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr ""
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
+
+#: src/Objects/Job.vala:148
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr ""
+
+#: src/Objects/Job.vala:150
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr ""
+
+#: src/Objects/Job.vala:152
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr ""
+
+#: src/Objects/Job.vala:155
+msgctxt "Print Job"
+msgid "Completed"
 msgstr ""
 
 #. / Translators: The printer is low on toner
@@ -283,51 +332,12 @@ msgstr ""
 msgid "Ready"
 msgstr ""
 
-#: src/Objects/Job.vala:142
-msgctxt "Print Job"
-msgid "Pending"
-msgstr ""
-
-#: src/Objects/Job.vala:144
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr ""
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr ""
-
-#: src/Objects/Job.vala:148
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr ""
-
-#: src/Objects/Job.vala:150
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr ""
-
-#: src/Objects/Job.vala:152
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr ""
-
-#: src/Objects/Job.vala:155
-msgctxt "Print Job"
-msgid "Completed"
-msgstr ""
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr ""
 
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
-msgstr ""
-
-#: src/Views/JobsView.vala:45
-msgid "Clear All"
 msgstr ""
 
 #: src/Views/JobsView.vala:110

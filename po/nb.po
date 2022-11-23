@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:46+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2022-07-08 10:31+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -14,6 +14,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:49+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "Skrivere"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr "Sett opp skrivere, håndter utskriftskøer, og sjekk blekknivåer"
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr "Ingen skrivere tilgjengelig"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+"Koble til en skriver ved å klikke på dens ikon i verktøylinjen nedenfor."
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "Legg til skriver…"
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -35,27 +56,6 @@ msgstr "Skriv ut testside"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Testside"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "Legg til skriver…"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "Skrivere"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "Sett opp skrivere, håndter utskriftskøer, og sjekk blekknivåer"
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr "Ingen skrivere tilgjengelig"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
-"Koble til en skriver ved å klikke på dens ikon i verktøylinjen nedenfor."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -166,6 +166,20 @@ msgstr "Tilgjengelige nettverksskrivere"
 msgid "(recommended)"
 msgstr "(anbefalt)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+msgid "Clear All"
+msgstr "Tøm alle"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -183,6 +197,47 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "Fjern"
+
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "Ventende"
+
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "På vent"
+
+#: src/Objects/Job.vala:146
+#, fuzzy
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr "Underveis"
+
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Stoppet"
+
+#: src/Objects/Job.vala:150
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Avbrutt"
+
+#: src/Objects/Job.vala:152
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Kansellert"
+
+#: src/Objects/Job.vala:155
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Fullført"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -288,47 +343,6 @@ msgstr "Skriver uten navn"
 msgid "Ready"
 msgstr "Klar"
 
-#: src/Objects/Job.vala:142
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "Ventende"
-
-#: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "På vent"
-
-#: src/Objects/Job.vala:146
-#, fuzzy
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr "Underveis"
-
-#: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "Stoppet"
-
-#: src/Objects/Job.vala:150
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "Avbrutt"
-
-#: src/Objects/Job.vala:152
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "Kansellert"
-
-#: src/Objects/Job.vala:155
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "Fullført"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "Utskriftkøen er tom"
@@ -336,10 +350,6 @@ msgstr "Utskriftkøen er tom"
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "Ingen jobber i utskriftskøen."
-
-#: src/Views/JobsView.vala:45
-msgid "Clear All"
-msgstr "Tøm alle"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"

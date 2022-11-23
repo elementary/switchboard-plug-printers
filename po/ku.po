@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:46+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Kurdish <https://l10n.elementary.io/projects/switchboard/"
@@ -14,6 +14,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "Çapger"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr ""
+
+#: src/Plug.vala:52
+#, fuzzy
+msgid "No Printers Available"
+msgstr "na çapker"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "çapker zêde bike …"
 
 #: src/PrinterPage.vala:39
 #, fuzzy
@@ -36,27 +57,6 @@ msgstr "Pel Becerribîne çap bike"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Pel Becerribîne"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "çapker zêde bike …"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "Çapger"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-
-#: src/Plug.vala:52
-#, fuzzy
-msgid "No Printers Available"
-msgstr "na çapker"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -170,6 +170,21 @@ msgstr "çapgere Tor na berdeste"
 msgid "(recommended)"
 msgstr "(pêşniyar kirin)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#, fuzzy
+msgid "Clear All"
+msgstr "Çapger"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -185,6 +200,50 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "Rake"
+
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "kar çêbûnê ye"
+
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr ""
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
+
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Hat sekinandin"
+
+#: src/Objects/Job.vala:150
+#, fuzzy
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Kar rakirî"
+
+#: src/Objects/Job.vala:152
+#, fuzzy
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Kar êxistî"
+
+#: src/Objects/Job.vala:155
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Kar temamkirî"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -291,50 +350,6 @@ msgstr "çapker zêde  bike"
 msgid "Ready"
 msgstr "Amade"
 
-#: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "kar çêbûnê ye"
-
-#: src/Objects/Job.vala:144
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr ""
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr ""
-
-#: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "Hat sekinandin"
-
-#: src/Objects/Job.vala:150
-#, fuzzy
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "Kar rakirî"
-
-#: src/Objects/Job.vala:152
-#, fuzzy
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "Kar êxistî"
-
-#: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "Kar temamkirî"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr ""
@@ -342,11 +357,6 @@ msgstr ""
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr ""
-
-#: src/Views/JobsView.vala:45
-#, fuzzy
-msgid "Clear All"
-msgstr "Çapger"
 
 #: src/Views/JobsView.vala:110
 #, fuzzy

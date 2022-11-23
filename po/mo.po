@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:46+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2018-05-30 00:04+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -12,6 +12,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "Imprimante"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr ""
+"Configurați imprimantele, gestionați cozile de imprimare și vizualizați "
+"nivelurile de cerneală"
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr "Nu sunt disponibile imprimante"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+"Conectați-vă la o imprimantă făcând clic pe pictograma din bara de "
+"instrumente de mai jos."
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "Adăugați imprimantă …"
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -33,30 +57,6 @@ msgstr "Imprimă pagină de probă"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Pagina de probă"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "Adăugați imprimantă …"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "Imprimante"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-"Configurați imprimantele, gestionați cozile de imprimare și vizualizați "
-"nivelurile de cerneală"
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr "Nu sunt disponibile imprimante"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
-"Conectați-vă la o imprimantă făcând clic pe pictograma din bara de "
-"instrumente de mai jos."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -169,6 +169,22 @@ msgstr "Disponibile imprimante de rețea"
 msgid "(recommended)"
 msgstr "(recomandat)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Coadă de imprimare"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -186,6 +202,54 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "Șterge"
+
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "Lucru în așteptare"
+
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "În așteptare"
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
+
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Oprit"
+
+#: src/Objects/Job.vala:150
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Anulare"
+
+#: src/Objects/Job.vala:152
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Lucrul a fost omis"
+
+#: src/Objects/Job.vala:155
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Lucru comletat"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -293,54 +357,6 @@ msgstr "Adăugați imprimanta"
 msgid "Ready"
 msgstr "Gata"
 
-#: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "Lucru în așteptare"
-
-#: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "În așteptare"
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr ""
-
-#: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "Oprit"
-
-#: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "Anulare"
-
-#: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "Lucrul a fost omis"
-
-#: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "Lucru comletat"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "Coada de imprimire este goală"
@@ -348,12 +364,6 @@ msgstr "Coada de imprimire este goală"
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "Nu există nicio lucrare în coada de așteptare."
-
-#: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear All"
-msgstr "Coadă de imprimare"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"

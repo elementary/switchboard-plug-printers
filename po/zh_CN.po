@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:46+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2022-07-20 09:38+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -14,6 +14,26 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "打印机"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr "配置打印机、管理打印队列、查看墨水余量"
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr "无可用打印机"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr "单击下方工具栏中的图标连接到打印机。"
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "添加打印机…"
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -35,26 +55,6 @@ msgstr "打印测试页"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "测试页"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "添加打印机…"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "打印机"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "配置打印机、管理打印队列、查看墨水余量"
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr "无可用打印机"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr "单击下方工具栏中的图标连接到打印机。"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -165,6 +165,20 @@ msgstr "可用的网络打印机"
 msgid "(recommended)"
 msgstr "（推荐）"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+msgid "Clear All"
+msgstr "清除所有"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -180,6 +194,41 @@ msgstr "移除“%s“之后，与此设备相关的打印记录和配置都会�
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "删除"
+
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "等待中"
+
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "暂停中"
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr "正在处理"
+
+#: src/Objects/Job.vala:148
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "已停止"
+
+#: src/Objects/Job.vala:150
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "已取消"
+
+#: src/Objects/Job.vala:152
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "已放弃"
+
+#: src/Objects/Job.vala:155
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "已完成"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -285,41 +334,6 @@ msgstr "未命名打印机"
 msgid "Ready"
 msgstr "就绪"
 
-#: src/Objects/Job.vala:142
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "等待中"
-
-#: src/Objects/Job.vala:144
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "暂停中"
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr "正在处理"
-
-#: src/Objects/Job.vala:148
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "已停止"
-
-#: src/Objects/Job.vala:150
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "已取消"
-
-#: src/Objects/Job.vala:152
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "已放弃"
-
-#: src/Objects/Job.vala:155
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "已完成"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "打印队列为空"
@@ -327,10 +341,6 @@ msgstr "打印队列为空"
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "队列中无任务。"
-
-#: src/Views/JobsView.vala:45
-msgid "Clear All"
-msgstr "清除所有"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
