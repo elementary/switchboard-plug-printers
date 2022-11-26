@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-23 05:08+0000\n"
-"PO-Revision-Date: 2022-10-16 04:44+0000\n"
+"PO-Revision-Date: 2022-11-27 09:25+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/tr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/Plug.vala:38
@@ -169,12 +169,12 @@ msgstr "(önerilen)"
 #: src/Dialogs/ClearQueueDialog.vala:30
 #, c-format
 msgid "Clear all pending and completed jobs from “%s”?"
-msgstr ""
+msgstr "Bekleyen ve tamamlanan tüm işler “%s” cihazından silinsin mi?"
 
 #: src/Dialogs/ClearQueueDialog.vala:31
 msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
-msgstr ""
+msgstr "Tüm bitmemiş işler iptal edilecek ve tüm yazdırma geçmişi silinecektir."
 
 #: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
 msgid "Clear All"
