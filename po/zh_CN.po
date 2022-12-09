@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-23 05:08+0000\n"
-"PO-Revision-Date: 2022-07-20 09:38+0000\n"
+"PO-Revision-Date: 2022-12-10 05:25+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/zh_Hans/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
 #: src/Plug.vala:38
@@ -168,12 +168,12 @@ msgstr "（推荐）"
 #: src/Dialogs/ClearQueueDialog.vala:30
 #, c-format
 msgid "Clear all pending and completed jobs from “%s”?"
-msgstr ""
+msgstr "清除 “%s” 内所有等待中和已完成的任务?"
 
 #: src/Dialogs/ClearQueueDialog.vala:31
 msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
-msgstr ""
+msgstr "所有未完成的任务都将被取消，所有打印历史都会被清除。"
 
 #: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
 msgid "Clear All"
