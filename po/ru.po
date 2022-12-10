@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-23 05:08+0000\n"
-"PO-Revision-Date: 2022-11-27 09:25+0000\n"
+"PO-Revision-Date: 2022-12-11 14:25+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ru/>\n"
@@ -170,7 +170,7 @@ msgstr "(рекомендуемый)"
 #: src/Dialogs/ClearQueueDialog.vala:30
 #, c-format
 msgid "Clear all pending and completed jobs from “%s”?"
-msgstr "Удалить все ожидающие и завершённые задания у «%s»?"
+msgstr "Удалить все ожидающие и завершённые задачи у «%s»?"
 
 #: src/Dialogs/ClearQueueDialog.vala:31
 msgid ""
@@ -342,11 +342,11 @@ msgstr "Очередь печати пуста"
 
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
-msgstr "В очереди нет незаконченных заданий."
+msgstr "В очереди нет незавершённых задач."
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
-msgstr "Выполненные задания"
+msgstr "Выполненные задачи"
 
 #: src/Views/SetupView.vala:53
 msgid "Pages per side:"
