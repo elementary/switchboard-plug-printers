@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2020-02-01 02:08+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -14,6 +14,29 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "Печатащи машини"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr ""
+"Настройка на принтерите, управление на опашките за печат и проверка на "
+"нивото на мастилото"
+
+#: src/Plug.vala:52
+#, fuzzy
+msgid "No Printers Available"
+msgstr "Няма печатащи машини"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "Добавяне на печатаща машина"
 
 #: src/PrinterPage.vala:39
 #, fuzzy
@@ -36,29 +59,6 @@ msgstr "Печат на пробна страница"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Пробна страница"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "Добавяне на печатаща машина"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "Печатащи машини"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-"Настройка на принтерите, управление на опашките за печат и проверка на "
-"нивото на мастилото"
-
-#: src/Plug.vala:52
-#, fuzzy
-msgid "No Printers Available"
-msgstr "Няма печатащи машини"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -171,6 +171,21 @@ msgstr "Налични мрежови принтери"
 msgid "(recommended)"
 msgstr "(препоръчително)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#, fuzzy
+msgid "Clear All"
+msgstr "Печатащи машини"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -188,6 +203,47 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "Премахване"
+
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Pending"
+msgstr ""
+
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr ""
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
+
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Спрян"
+
+#: src/Objects/Job.vala:150
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Отказ"
+
+#: src/Objects/Job.vala:152
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr ""
+
+#: src/Objects/Job.vala:155
+#, fuzzy
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Показване на завършените задачи"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -294,47 +350,6 @@ msgstr "Добавяне на печатаща машина"
 msgid "Ready"
 msgstr "В готовност"
 
-#: src/Objects/Job.vala:142
-msgctxt "Print Job"
-msgid "Pending"
-msgstr ""
-
-#: src/Objects/Job.vala:144
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr ""
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr ""
-
-#: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "Спрян"
-
-#: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "Отказ"
-
-#: src/Objects/Job.vala:152
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr ""
-
-#: src/Objects/Job.vala:155
-#, fuzzy
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "Показване на завършените задачи"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr ""
@@ -343,11 +358,6 @@ msgstr ""
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "В опашката няма задачи"
-
-#: src/Views/JobsView.vala:45
-#, fuzzy
-msgid "Clear All"
-msgstr "Печатащи машини"
 
 #: src/Views/JobsView.vala:110
 #, fuzzy

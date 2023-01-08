@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2018-10-22 19:26+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -14,6 +14,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "Skrivare"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr "Ställ in skrivare, hantera utskriftsköer och kontrollera bläcknivåer"
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr "Inga skrivare tillgängliga"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+"Anslut till en skrivare genom att klicka på ikonen i verktygsfältet nedan."
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "Lägg till skrivare…"
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -35,27 +56,6 @@ msgstr "Skriv ut testsida"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Testsida"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "Lägg till skrivare…"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "Skrivare"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "Ställ in skrivare, hantera utskriftsköer och kontrollera bläcknivåer"
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr "Inga skrivare tillgängliga"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
-"Anslut till en skrivare genom att klicka på ikonen i verktygsfältet nedan."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -168,6 +168,22 @@ msgstr "Tillgängliga nätverksskrivare"
 msgid "(recommended)"
 msgstr "(rekommenderad)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Utskriftskö"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -185,6 +201,54 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "Ta bort"
+
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "Utskrift väntar"
+
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "I kö"
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
+
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Stoppad"
+
+#: src/Objects/Job.vala:150
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Avbryt"
+
+#: src/Objects/Job.vala:152
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Utskrift avbruten"
+
+#: src/Objects/Job.vala:155
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Utskrift fullföljd"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -291,54 +355,6 @@ msgstr "Lägg till skrivare"
 msgid "Ready"
 msgstr "Klar"
 
-#: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "Utskrift väntar"
-
-#: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "I kö"
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr ""
-
-#: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "Stoppad"
-
-#: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "Avbryt"
-
-#: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "Utskrift avbruten"
-
-#: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "Utskrift fullföljd"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "Utskriftskön är tom"
@@ -346,12 +362,6 @@ msgstr "Utskriftskön är tom"
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "Det finns inga väntande utskrifter i kön."
-
-#: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear All"
-msgstr "Utskriftskö"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"

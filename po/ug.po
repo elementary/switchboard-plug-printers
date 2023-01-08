@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2017-01-02 07:57+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: \n"
@@ -12,6 +12,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 "X-Generator: Launchpad (build 18330)\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "پرىنتېرلار"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr "پرىنتېرلارنى تەڭشەش، بىسىش سىپىنى باشقۇرۇش، قالغان سىياھنى كۆرۈش"
+
+#: src/Plug.vala:52
+#, fuzzy
+msgid "No Printers Available"
+msgstr "پرىنتېر يوق"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "پرىنتېر قىتىش...."
 
 #: src/PrinterPage.vala:39
 #, fuzzy
@@ -34,27 +55,6 @@ msgstr "سىناق بەتنى بېسىش"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "سىناق بەت"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "پرىنتېر قىتىش...."
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "پرىنتېرلار"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "پرىنتېرلارنى تەڭشەش، بىسىش سىپىنى باشقۇرۇش، قالغان سىياھنى كۆرۈش"
-
-#: src/Plug.vala:52
-#, fuzzy
-msgid "No Printers Available"
-msgstr "پرىنتېر يوق"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -168,6 +168,21 @@ msgstr "ئىشلەتكىلى بولىدىغان تور پرىنتېرلىرى"
 msgid "(recommended)"
 msgstr "(تەۋسىيە قىلىنغان)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#, fuzzy
+msgid "Clear All"
+msgstr "پرىنتېرلار"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -185,6 +200,51 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "چىقىرىۋىتىش"
+
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "ۋەزىپە توختىتىپ قويۇلدى"
+
+#: src/Objects/Job.vala:144
+#, fuzzy
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "ساقلاۋاتىدۇ"
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
+
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "توختىدى"
+
+#: src/Objects/Job.vala:150
+#, fuzzy
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
+
+#: src/Objects/Job.vala:152
+#, fuzzy
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "ۋەزىپە توختىتىلدى"
+
+#: src/Objects/Job.vala:155
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "ۋەزىپە تاماملاندى"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -291,51 +351,6 @@ msgstr "پرىنتېر قوشۇش"
 msgid "Ready"
 msgstr "تەييار بولدى"
 
-#: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "ۋەزىپە توختىتىپ قويۇلدى"
-
-#: src/Objects/Job.vala:144
-#, fuzzy
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "ساقلاۋاتىدۇ"
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr ""
-
-#: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "توختىدى"
-
-#: src/Objects/Job.vala:150
-#, fuzzy
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
-
-#: src/Objects/Job.vala:152
-#, fuzzy
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "ۋەزىپە توختىتىلدى"
-
-#: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "ۋەزىپە تاماملاندى"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr ""
@@ -344,11 +359,6 @@ msgstr ""
 #, fuzzy
 msgid "There are no pending jobs in the queue."
 msgstr "ۋەزىپە سىپىدە ۋەزىپە يوق"
-
-#: src/Views/JobsView.vala:45
-#, fuzzy
-msgid "Clear All"
-msgstr "پرىنتېرلار"
 
 #: src/Views/JobsView.vala:110
 #, fuzzy

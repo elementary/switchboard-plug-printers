@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2018-04-25 00:36+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
@@ -14,6 +14,26 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "Printers"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr "Configure printers, manage print queues, and view ink levels"
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr "No Printers Available"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr "Connect to a printer by clicking the icon in the toolbar below."
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "Add Printer…"
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -35,26 +55,6 @@ msgstr "Print Test Page"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Test page"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "Add Printer…"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "Printers"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "Configure printers, manage print queues, and view ink levels"
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr "No Printers Available"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr "Connect to a printer by clicking the icon in the toolbar below."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -167,6 +167,22 @@ msgstr "Available Network Printers"
 msgid "(recommended)"
 msgstr "(recommended)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Print Queue"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -184,6 +200,54 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "Remove"
+
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "Job Pending"
+
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "On Hold"
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
+
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Stopped"
+
+#: src/Objects/Job.vala:150
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Cancel"
+
+#: src/Objects/Job.vala:152
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Job Aborted"
+
+#: src/Objects/Job.vala:155
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Job Completed"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -290,54 +354,6 @@ msgstr "Add Printer"
 msgid "Ready"
 msgstr "Ready"
 
-#: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "Job Pending"
-
-#: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "On Hold"
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr ""
-
-#: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "Stopped"
-
-#: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "Cancel"
-
-#: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "Job Aborted"
-
-#: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "Job Completed"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "Print Queue Is Empty"
@@ -345,12 +361,6 @@ msgstr "Print Queue Is Empty"
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "There are no pending jobs in the queue."
-
-#: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear All"
-msgstr "Print Queue"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"

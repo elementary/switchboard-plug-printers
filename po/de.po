@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
-"PO-Revision-Date: 2022-06-29 21:39+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
+"PO-Revision-Date: 2022-11-27 09:25+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -12,8 +12,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "Drucker"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr ""
+"Drucker einrichten, Druckwarteschlangen verwalten und Tintenfüllstände "
+"anzeigen"
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr "Keine Drucker eingerichtet"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+"Drucker einbinden mit Klick auf das Symbol »+« in der Werkzeugleiste unten."
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "Drucker hinzufügen …"
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -35,29 +58,6 @@ msgstr "Testseite drucken"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Testseite"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "Drucker hinzufügen …"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "Drucker"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-"Drucker einrichten, Druckwarteschlangen verwalten und Tintenfüllstände "
-"anzeigen"
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr "Keine Drucker eingerichtet"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
-"Drucker einbinden mit Klick auf das Symbol »+« in der Werkzeugleiste unten."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -168,6 +168,22 @@ msgstr "Verfügbare Netzwerkdrucker"
 msgid "(recommended)"
 msgstr "(empfohlen)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr "Alle ausstehenden und abgeschlossenen Druckaufträge für »%s« löschen?"
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+"Alle noch nicht abgeschlossenen Druckaufträge werden abgebrochen und der "
+"gesamte Druckauftragsverlauf wird gelöscht."
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+msgid "Clear All"
+msgstr "Alle entfernen"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -185,6 +201,41 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "Entfernen"
+
+#: src/Objects/Job.vala:142
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "Ausstehend"
+
+#: src/Objects/Job.vala:144
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "In der Warteschleife"
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr "In Verarbeitung"
+
+#: src/Objects/Job.vala:148
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Angehalten"
+
+#: src/Objects/Job.vala:150
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Abgebrochen"
+
+#: src/Objects/Job.vala:152
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Abgebrochen"
+
+#: src/Objects/Job.vala:155
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Abgeschlossen"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -290,41 +341,6 @@ msgstr "Drucker ohne Namen"
 msgid "Ready"
 msgstr "Startbereit"
 
-#: src/Objects/Job.vala:142
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "Ausstehend"
-
-#: src/Objects/Job.vala:144
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "In der Warteschleife"
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr "In Verarbeitung"
-
-#: src/Objects/Job.vala:148
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "Angehalten"
-
-#: src/Objects/Job.vala:150
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "Abgebrochen"
-
-#: src/Objects/Job.vala:152
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "Abgebrochen"
-
-#: src/Objects/Job.vala:155
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "Abgeschlossen"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "Druckwarteschlange ist leer"
@@ -332,10 +348,6 @@ msgstr "Druckwarteschlange ist leer"
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "Es befinden sich keine ausstehenden Aufträge in der Warteschlange."
-
-#: src/Views/JobsView.vala:45
-msgid "Clear All"
-msgstr "Alle entfernen"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"

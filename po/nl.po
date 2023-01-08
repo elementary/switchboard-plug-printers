@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2022-08-14 02:55+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -14,6 +14,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "Printers"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr "Configureer printers, beheer printers en bekijk inkt levels"
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr "Geen printers beschikbaar"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr ""
+"Maak verbinding met een printer door op het icoon op de taakbalk beneden te "
+"klikken."
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "Printer toevoegen…"
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -35,28 +57,6 @@ msgstr "Test pagina afdrukken"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Test pagina"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "Printer toevoegen…"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "Printers"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "Configureer printers, beheer printers en bekijk inkt levels"
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr "Geen printers beschikbaar"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr ""
-"Maak verbinding met een printer door op het icoon op de taakbalk beneden te "
-"klikken."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -169,6 +169,20 @@ msgstr "Beschikbaar Netwerk Printers"
 msgid "(recommended)"
 msgstr "(aanbevolen)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+msgid "Clear All"
+msgstr "Alles wissen"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -186,6 +200,54 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "Verwijder"
+
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "Taak in afwachting"
+
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "In de wacht"
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
+
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Gestopt"
+
+#: src/Objects/Job.vala:150
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Annuleren"
+
+#: src/Objects/Job.vala:152
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Taak afgebroken"
+
+#: src/Objects/Job.vala:155
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "taak voltooid"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -295,54 +357,6 @@ msgstr "Printer zonder naam"
 msgid "Ready"
 msgstr "Gereed"
 
-#: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "Taak in afwachting"
-
-#: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "In de wacht"
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr ""
-
-#: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "Gestopt"
-
-#: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "Annuleren"
-
-#: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "Taak afgebroken"
-
-#: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "taak voltooid"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "De afdruk wachtrij is leeg"
@@ -350,10 +364,6 @@ msgstr "De afdruk wachtrij is leeg"
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "Er zijn geen afwachtende taken in de wachtrij."
-
-#: src/Views/JobsView.vala:45
-msgid "Clear All"
-msgstr "Alles wissen"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"

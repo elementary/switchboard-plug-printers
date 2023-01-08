@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2019-07-22 04:24+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -14,6 +14,26 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "Printiloj"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr "Agordi printilojn, mastrumi printajn vicojn, kaj vidi inkajn nivelojn"
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr "Neniu printilo disponebla"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr "Konektu al printilo klakante la piktogramon en la malsupra ilobreto."
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "Aldoni printilon…"
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -35,26 +55,6 @@ msgstr "Printi testan paĝon"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Testa paĝo"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "Aldoni printilon…"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "Printiloj"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr "Agordi printilojn, mastrumi printajn vicojn, kaj vidi inkajn nivelojn"
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr "Neniu printilo disponebla"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr "Konektu al printilo klakante la piktogramon en la malsupra ilobreto."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -167,6 +167,22 @@ msgstr "Disponeblaj retaj printiloj"
 msgid "(recommended)"
 msgstr "(rekomendita)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Printa vico"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -183,6 +199,54 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "Forigi"
+
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "Printadoj atendantaj"
+
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "Paŭza"
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
+
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Haltita"
+
+#: src/Objects/Job.vala:150
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Rezigni"
+
+#: src/Objects/Job.vala:152
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Tasko ĉesita"
+
+#: src/Objects/Job.vala:155
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Tasko finita"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -288,54 +352,6 @@ msgstr "Sennoma printilo"
 msgid "Ready"
 msgstr "Preta"
 
-#: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "Printadoj atendantaj"
-
-#: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "Paŭza"
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr ""
-
-#: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "Haltita"
-
-#: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "Rezigni"
-
-#: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "Tasko ĉesita"
-
-#: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "Tasko finita"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "Printa vico malplenas"
@@ -343,12 +359,6 @@ msgstr "Printa vico malplenas"
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "Ne estas atendanta tasko en la printovico."
-
-#: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear All"
-msgstr "Printa vico"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 17:38+0000\n"
+"POT-Creation-Date: 2022-11-23 05:08+0000\n"
 "PO-Revision-Date: 2018-11-09 18:11+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -15,6 +15,27 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
+
+#: src/Plug.vala:38
+msgid "Printers"
+msgstr "Štampači"
+
+#: src/Plug.vala:39
+msgid "Configure printers, manage print queues, and view ink levels"
+msgstr ""
+"Podesite štampače, upravljajte redovima za štampanje i pogledajte nivoe tinte"
+
+#: src/Plug.vala:52
+msgid "No Printers Available"
+msgstr "Nema dostupnih štampača"
+
+#: src/Plug.vala:53
+msgid "Connect to a printer by clicking the icon in the toolbar below."
+msgstr "Povežite štampač klikom na ikonu na traci alatki ispod."
+
+#: src/PrinterList.vala:50
+msgid "Add Printer…"
+msgstr "Dodaj štampač…"
 
 #: src/PrinterPage.vala:39
 msgid "Print Queue"
@@ -36,27 +57,6 @@ msgstr "Štampaj testnu stranicu"
 #: src/PrinterPage.vala:111
 msgid "Test page"
 msgstr "Testna stranica"
-
-#: src/PrinterList.vala:50
-msgid "Add Printer…"
-msgstr "Dodaj štampač…"
-
-#: src/Plug.vala:38
-msgid "Printers"
-msgstr "Štampači"
-
-#: src/Plug.vala:39
-msgid "Configure printers, manage print queues, and view ink levels"
-msgstr ""
-"Podesite štampače, upravljajte redovima za štampanje i pogledajte nivoe tinte"
-
-#: src/Plug.vala:52
-msgid "No Printers Available"
-msgstr "Nema dostupnih štampača"
-
-#: src/Plug.vala:53
-msgid "Connect to a printer by clicking the icon in the toolbar below."
-msgstr "Povežite štampač klikom na ikonu na traci alatki ispod."
 
 #. / Tranlators: This is a protocol name, please keep the (https).
 #: src/Dialogs/AddDialog.vala:27
@@ -169,6 +169,22 @@ msgstr "Dostupni mrežni štampači"
 msgid "(recommended)"
 msgstr "(preporučeno)"
 
+#: src/Dialogs/ClearQueueDialog.vala:30
+#, c-format
+msgid "Clear all pending and completed jobs from “%s”?"
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:31
+msgid ""
+"All unfinished jobs will be canceled and all print history will be erased."
+msgstr ""
+
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#, fuzzy
+#| msgid "Print Queue"
+msgid "Clear All"
+msgstr "Red za štampanje"
+
 #: src/Dialogs/RemoveDialog.vala:29
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
@@ -186,6 +202,54 @@ msgstr ""
 #: src/Dialogs/RemoveDialog.vala:35
 msgid "Remove"
 msgstr "Ukloni"
+
+#: src/Objects/Job.vala:142
+#, fuzzy
+#| msgid "Job Pending"
+msgctxt "Print Job"
+msgid "Pending"
+msgstr "Preostali zadatak"
+
+#: src/Objects/Job.vala:144
+#, fuzzy
+#| msgid "On Hold"
+msgctxt "Print Job"
+msgid "On Hold"
+msgstr "Na čekanju"
+
+#: src/Objects/Job.vala:146
+msgctxt "Print Job"
+msgid "In Progress"
+msgstr ""
+
+#: src/Objects/Job.vala:148
+#, fuzzy
+#| msgctxt "printer state"
+#| msgid "Stopped"
+msgctxt "Print Job"
+msgid "Stopped"
+msgstr "Zaustavljen"
+
+#: src/Objects/Job.vala:150
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "Print Job"
+msgid "Canceled"
+msgstr "Otkaži"
+
+#: src/Objects/Job.vala:152
+#, fuzzy
+#| msgid "Job Aborted"
+msgctxt "Print Job"
+msgid "Aborted"
+msgstr "Zadatak prekinut"
+
+#: src/Objects/Job.vala:155
+#, fuzzy
+#| msgid "Job Completed"
+msgctxt "Print Job"
+msgid "Completed"
+msgstr "Zadatak završen"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -293,54 +357,6 @@ msgstr "Dodaj štampač"
 msgid "Ready"
 msgstr "Spremno"
 
-#: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
-msgctxt "Print Job"
-msgid "Pending"
-msgstr "Preostali zadatak"
-
-#: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
-msgctxt "Print Job"
-msgid "On Hold"
-msgstr "Na čekanju"
-
-#: src/Objects/Job.vala:146
-msgctxt "Print Job"
-msgid "In Progress"
-msgstr ""
-
-#: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
-msgctxt "Print Job"
-msgid "Stopped"
-msgstr "Zaustavljen"
-
-#: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
-msgctxt "Print Job"
-msgid "Canceled"
-msgstr "Otkaži"
-
-#: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
-msgctxt "Print Job"
-msgid "Aborted"
-msgstr "Zadatak prekinut"
-
-#: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
-msgctxt "Print Job"
-msgid "Completed"
-msgstr "Zadatak završen"
-
 #: src/Views/JobsView.vala:31
 msgid "Print Queue Is Empty"
 msgstr "Lista za štampanje je prazna"
@@ -348,12 +364,6 @@ msgstr "Lista za štampanje je prazna"
 #: src/Views/JobsView.vala:31
 msgid "There are no pending jobs in the queue."
 msgstr "Nema preostalih zadataka u listi čekanja."
-
-#: src/Views/JobsView.vala:45
-#, fuzzy
-#| msgid "Print Queue"
-msgid "Clear All"
-msgstr "Red za štampanje"
 
 #: src/Views/JobsView.vala:110
 msgid "Completed Jobs"
