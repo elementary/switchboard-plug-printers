@@ -84,7 +84,6 @@ public class Printers.AddDialog : Granite.Dialog {
         var scrolled = new Gtk.ScrolledWindow () {
             child = devices_list
         };
-        // scrolled.shadow_type = Gtk.ShadowType.IN;
 
         refresh_button = new Gtk.Button.with_label (_("Refresh")) {
             sensitive = false,
@@ -335,10 +334,17 @@ public class Printers.AddDialog : Granite.Dialog {
         };
         next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+        var button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+            halign = Gtk.Align.END
+        };
         button_box.append (previous_button);
         button_box.append (cancel_button);
         button_box.append (next_button);
+
+        var buttons_size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.BOTH);
+        buttons_size_group.add_widget (previous_button);
+        buttons_size_group.add_widget (cancel_button);
+        buttons_size_group.add_widget (next_button);
 
         var device_grid = new Gtk.Grid () {
             hexpand = true,
