@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-23 05:08+0000\n"
-"PO-Revision-Date: 2023-03-11 14:25+0000\n"
+"PO-Revision-Date: 2023-03-11 16:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ka/>\n"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:25
 msgid "Improvements:"
-msgstr ""
+msgstr "გაუმჯობესებები:"
 
 #: data/printers.appdata.xml.in:27
 msgid "Improved job row layout"
@@ -73,7 +73,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:33
 msgid "Fixes:"
-msgstr ""
+msgstr "შეცდომების გასწორებები:"
 
 #: data/printers.appdata.xml.in:35
 msgid "Update sidebar after adding or removing printer"
