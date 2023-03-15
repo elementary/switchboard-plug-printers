@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-23 05:08+0000\n"
-"PO-Revision-Date: 2022-07-08 10:31+0000\n"
+"PO-Revision-Date: 2023-02-14 13:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/nb/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:49+0000\n"
 
 #: src/Plug.vala:38
@@ -169,12 +169,13 @@ msgstr "(anbefalt)"
 #: src/Dialogs/ClearQueueDialog.vala:30
 #, c-format
 msgid "Clear all pending and completed jobs from “%s”?"
-msgstr ""
+msgstr "Tøm alle ventende og fullførte jobber fra «%s»?"
 
 #: src/Dialogs/ClearQueueDialog.vala:31
 msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
 msgstr ""
+"Alle ufullførte jobber vil bli avbrutt og utskriftshistorikken vil bli tømt."
 
 #: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
 msgid "Clear All"
