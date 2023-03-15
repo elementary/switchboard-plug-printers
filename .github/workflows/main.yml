@@ -14,7 +14,7 @@ jobs:
       - name: Install Dependencies
         run: |
           apt update
-          apt install -y libcups2-dev libswitchboard-3-dev libgranite7-dev libgtk-4-dev meson valac
+          apt install -y libcups2-dev libswitchboard-3-dev libgranite-7-dev libgtk-4-dev meson valac
       - name: Build
         env:
           DESTDIR: out
