@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-23 05:08+0000\n"
-"PO-Revision-Date: 2020-06-09 10:11+0000\n"
-"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"PO-Revision-Date: 2023-06-23 10:07+0000\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/printers.appdata.xml.in:5
 msgid "Printer Settings"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:25
 msgid "Improvements:"
-msgstr ""
+msgstr "Verbeteringen:"
 
 #: data/printers.appdata.xml.in:27
 msgid "Improved job row layout"
@@ -73,7 +73,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:33
 msgid "Fixes:"
-msgstr ""
+msgstr "Oplossingen:"
 
 #: data/printers.appdata.xml.in:35
 msgid "Update sidebar after adding or removing printer"
