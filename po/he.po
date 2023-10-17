@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-23 05:08+0000\n"
+"POT-Creation-Date: 2023-10-17 22:09+0000\n"
 "PO-Revision-Date: 2022-11-27 09:25+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -91,77 +91,83 @@ msgstr "מארח או מדפסת LPD/LPR"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:66
+#: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
 msgstr "איתור מדפסות בקרבת מקום…"
 
-#: src/Dialogs/AddDialog.vala:85
+#: src/Dialogs/AddDialog.vala:93
 msgid "Refresh"
 msgstr "רענון"
 
-#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
+#: src/Dialogs/AddDialog.vala:97 src/Dialogs/AddDialog.vala:320
 #: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "ביטול"
 
-#: src/Dialogs/AddDialog.vala:90
+#: src/Dialogs/AddDialog.vala:99
 msgid "Next"
 msgstr "הבא"
 
-#: src/Dialogs/AddDialog.vala:108
+#: src/Dialogs/AddDialog.vala:124
 msgid "Impossible to list all available printers"
 msgstr "לא ניתן להציג את כל המדפסות הזמינות"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:224
-msgid "Connection:"
+#: src/Dialogs/AddDialog.vala:241
+#, fuzzy
+#| msgid "Connection:"
+msgid "Connection"
 msgstr "חיבור:"
 
-#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
-msgid "Description:"
+#: src/Dialogs/AddDialog.vala:248
+#, fuzzy
+#| msgid "Description:"
+msgid "Description"
 msgstr "תיאור:"
 
-#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:252 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
-msgid "Location:"
+#: src/Dialogs/AddDialog.vala:256
+#, fuzzy
+#| msgid "Location:"
+msgid "Location"
 msgstr "מיקום:"
 
-#: src/Dialogs/AddDialog.vala:245
+#: src/Dialogs/AddDialog.vala:260
 msgid "Lab 1 or John's desk"
 msgstr "מעבדה 1 או העמדה של יוסי"
 
-#: src/Dialogs/AddDialog.vala:266
+#: src/Dialogs/AddDialog.vala:287
 msgid "Loading…"
 msgstr "בהליכי טעינה…"
 
-#: src/Dialogs/AddDialog.vala:293
-msgid "Previous"
-msgstr "הקודם"
+#: src/Dialogs/AddDialog.vala:318
+msgid "Back"
+msgstr ""
 
-#: src/Dialogs/AddDialog.vala:297
+#: src/Dialogs/AddDialog.vala:322
 msgid "Add Printer"
 msgstr "הוספת מדפסת"
 
-#: src/Dialogs/AddDialog.vala:606
+#: src/Dialogs/AddDialog.vala:635
 msgid "Serial"
 msgstr "טורי"
 
-#: src/Dialogs/AddDialog.vala:609
+#: src/Dialogs/AddDialog.vala:638
 msgid "Local Printers"
 msgstr "מדפסות מקומיות"
 
-#: src/Dialogs/AddDialog.vala:612
+#: src/Dialogs/AddDialog.vala:641
 msgid "Network Printers"
 msgstr "מדפסות רשת"
 
-#: src/Dialogs/AddDialog.vala:615
+#: src/Dialogs/AddDialog.vala:644
 msgid "Available Network Printers"
 msgstr "מדפסות רשת זמינות"
 
-#: src/Dialogs/AddDialog.vala:651
+#: src/Dialogs/AddDialog.vala:682
 msgid "(recommended)"
 msgstr "(מומלץ)"
 
@@ -596,6 +602,14 @@ msgstr "גליל %d"
 msgid "Paper Source:"
 msgstr "מקור הנייר:"
 
+#: src/Views/SuppliesView.vala:30
+msgid "Description:"
+msgstr "תיאור:"
+
+#: src/Views/SuppliesView.vala:39
+msgid "Location:"
+msgstr "מיקום:"
+
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
 msgstr "מעבדה 1 או העמדה של יוסי"
@@ -647,6 +661,9 @@ msgstr "הסרת המדפסת"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "מושבתת"
+
+#~ msgid "Previous"
+#~ msgstr "הקודם"
 
 #~ msgid "Processing…"
 #~ msgstr "בהליכי עיבוד…"

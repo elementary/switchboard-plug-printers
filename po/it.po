@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-23 05:08+0000\n"
+"POT-Creation-Date: 2023-10-17 22:09+0000\n"
 "PO-Revision-Date: 2020-10-24 13:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -95,79 +95,85 @@ msgstr "Host o stampante LPD/LPR"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:66
+#: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
 msgstr "Trovando stampanti vicine…"
 
-#: src/Dialogs/AddDialog.vala:85
+#: src/Dialogs/AddDialog.vala:93
 msgid "Refresh"
 msgstr "Aggiorna"
 
-#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
+#: src/Dialogs/AddDialog.vala:97 src/Dialogs/AddDialog.vala:320
 #: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "Annulla"
 
-#: src/Dialogs/AddDialog.vala:90
+#: src/Dialogs/AddDialog.vala:99
 msgid "Next"
 msgstr "Avanti"
 
-#: src/Dialogs/AddDialog.vala:108
+#: src/Dialogs/AddDialog.vala:124
 msgid "Impossible to list all available printers"
 msgstr "Impossibile elencare tutte le stampanti disponibili"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:224
-msgid "Connection:"
+#: src/Dialogs/AddDialog.vala:241
+#, fuzzy
+#| msgid "Connection:"
+msgid "Connection"
 msgstr "Connessione:"
 
-#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
-msgid "Description:"
+#: src/Dialogs/AddDialog.vala:248
+#, fuzzy
+#| msgid "Description:"
+msgid "Description"
 msgstr "Descrizione:"
 
-#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:252 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
-msgid "Location:"
+#: src/Dialogs/AddDialog.vala:256
+#, fuzzy
+#| msgid "Location:"
+msgid "Location"
 msgstr "Posizione:"
 
-#: src/Dialogs/AddDialog.vala:245
+#: src/Dialogs/AddDialog.vala:260
 msgid "Lab 1 or John's desk"
 msgstr "Laboratorio 1 o scrivania di John"
 
-#: src/Dialogs/AddDialog.vala:266
+#: src/Dialogs/AddDialog.vala:287
 #, fuzzy
 #| msgid "Processing…"
 msgid "Loading…"
 msgstr "Elaborazione in corso…"
 
-#: src/Dialogs/AddDialog.vala:293
-msgid "Previous"
-msgstr "Indietro"
+#: src/Dialogs/AddDialog.vala:318
+msgid "Back"
+msgstr ""
 
-#: src/Dialogs/AddDialog.vala:297
+#: src/Dialogs/AddDialog.vala:322
 msgid "Add Printer"
 msgstr "Aggiungi una stampante"
 
-#: src/Dialogs/AddDialog.vala:606
+#: src/Dialogs/AddDialog.vala:635
 msgid "Serial"
 msgstr "Seriale"
 
-#: src/Dialogs/AddDialog.vala:609
+#: src/Dialogs/AddDialog.vala:638
 msgid "Local Printers"
 msgstr "Stampanti locali"
 
-#: src/Dialogs/AddDialog.vala:612
+#: src/Dialogs/AddDialog.vala:641
 msgid "Network Printers"
 msgstr "Stampanti di rete"
 
-#: src/Dialogs/AddDialog.vala:615
+#: src/Dialogs/AddDialog.vala:644
 msgid "Available Network Printers"
 msgstr "Stampanti di rete disponibili"
 
-#: src/Dialogs/AddDialog.vala:651
+#: src/Dialogs/AddDialog.vala:682
 msgid "(recommended)"
 msgstr "(consigliato)"
 
@@ -620,6 +626,14 @@ msgstr "Rotolo %d"
 msgid "Paper Source:"
 msgstr "Fonte di carta:"
 
+#: src/Views/SuppliesView.vala:30
+msgid "Description:"
+msgstr "Descrizione:"
+
+#: src/Views/SuppliesView.vala:39
+msgid "Location:"
+msgstr "Posizione:"
+
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
 msgstr "Laboratorio 1 o Scrivania di John"
@@ -673,6 +687,9 @@ msgstr "Rimuovi stampante"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Disabilitato"
+
+#~ msgid "Previous"
+#~ msgstr "Indietro"
 
 #~ msgid "Processing…"
 #~ msgstr "Elaborazione in corso…"
