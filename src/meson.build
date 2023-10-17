@@ -17,8 +17,7 @@ plug_files = files(
     'Views/SuppliesView.vala',
     'Widgets/InkLevel.vala',
     'Widgets/JobRow.vala',
-    'Widgets/PrinterRow.vala',
-    'Widgets/ModeButton.vala'
+    'Widgets/PrinterRow.vala'
 )
 
 switchboard_dep = dependency('switchboard-3')

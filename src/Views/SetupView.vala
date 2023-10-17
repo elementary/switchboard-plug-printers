@@ -32,23 +32,32 @@ public class Printers.OptionsPage : Gtk.Grid {
         var pages_per_sheet = new Gee.TreeSet<int> ();
         var default_page = printer.get_pages_per_sheet (pages_per_sheet);
 
-        var pages_modebutton = new Printers.ModeButton ();
+        var pages_box = new Gtk.Box (HORIZONTAL, 0) {
+            homogeneous = true
+        };
+        pages_box.add_css_class (Granite.STYLE_CLASS_LINKED);
 
         if (pages_per_sheet.size == 1) {
-            pages_modebutton.sensitive = false;
+            pages_box.sensitive = false;
         }
 
         foreach (var page in pages_per_sheet) {
-            var index = pages_modebutton.append_text ("%d".printf (page));
-            if (page == default_page) {
-                pages_modebutton.selected = index;
-            }
-        }
+            var toggle = new Gtk.ToggleButton.with_label ("%d".printf (page));
 
-        pages_modebutton.mode_changed.connect ((w) => {
-            var label = w as Gtk.Label;
-            printer.set_default_pages (label.label);
-        });
+            pages_box.append (toggle);
+
+            if (pages_box.get_first_child () != null) {
+                toggle.group = (Gtk.ToggleButton) pages_box.get_first_child ();
+            }
+
+            if (page == default_page) {
+                toggle.active = true;
+            }
+
+            toggle.clicked.connect (() => {
+                printer.set_default_pages ("%d".printf (page));
+            });
+        }
 
         var pages_label = new Gtk.Label (_("Pages per side:")) {
             xalign = 1
@@ -69,43 +78,45 @@ public class Printers.OptionsPage : Gtk.Grid {
         switch_box.append (two_switch);
 
         if (sides.size > 2) {
-            var two_mode = new Printers.ModeButton () {
-                hexpand = true
+            var mode_long = new Gtk.CheckButton.with_label (dpgettext2 ("gtk30", "printing option value", "Long Edge (Standard)"));
+
+            var mode_short = new Gtk.CheckButton.with_label (dpgettext2 ("gtk30", "printing option value", "Short Edge (Flip)")) {
+                group = mode_long
             };
-            two_mode.append_text (dpgettext2 ("gtk30", "printing option value", "Long Edge (Standard)"));
-            two_mode.append_text (dpgettext2 ("gtk30", "printing option value", "Short Edge (Flip)"));
-            two_mode.selected = 0;
 
-            two_switch.bind_property ("active", two_mode, "sensitive");
+            two_switch.bind_property ("active", mode_long, "sensitive", SYNC_CREATE);
+            two_switch.bind_property ("active", mode_short, "sensitive", SYNC_CREATE);
 
-            switch_box.append (two_mode);
+            switch_box.append (mode_long);
+            switch_box.append (mode_short);
 
             switch (default_side) {
                 case CUPS.Attributes.Sided.TWO_LONG_EDGE:
-                    two_mode.selected = 0;
+                    mode_long.active = true;
                     two_switch.active = true;
                     break;
                 case CUPS.Attributes.Sided.TWO_SHORT_EDGE:
-                    two_mode.selected = 1;
+                    mode_short.active = true;
                     two_switch.active = true;
                     break;
                 case CUPS.Attributes.Sided.ONE:
+                    mode_long.active = true;
                     two_switch.active = false;
-                    two_mode.sensitive = false;
                     break;
             }
 
-            two_mode.notify["selected"].connect (() => {
-                if (two_mode.selected == 0) {
-                    printer.set_default_side (CUPS.Attributes.Sided.TWO_LONG_EDGE);
-                } else {
-                    printer.set_default_side (CUPS.Attributes.Sided.TWO_SHORT_EDGE);
-                }
+            mode_long.activate.connect (() => {
+                printer.set_default_side (CUPS.Attributes.Sided.TWO_LONG_EDGE);
             });
+
+            mode_short.activate.connect (() => {
+                printer.set_default_side (CUPS.Attributes.Sided.TWO_SHORT_EDGE);
+            });
+
 
             two_switch.notify["active"].connect (() => {
                 if (two_switch.active) {
-                    if (two_mode.selected == 0) {
+                    if (mode_long.active) {
                         printer.set_default_side (CUPS.Attributes.Sided.TWO_LONG_EDGE);
                     } else {
                         printer.set_default_side (CUPS.Attributes.Sided.TWO_SHORT_EDGE);
@@ -131,7 +142,7 @@ public class Printers.OptionsPage : Gtk.Grid {
         column_spacing = 12;
         row_spacing = 12;
         attach (pages_label, 1, 0);
-        attach (pages_modebutton, 2, 0);
+        attach (pages_box, 2, 0);
         attach (two_side_label, 1, 1);
         attach (switch_box, 2, 1);
 
