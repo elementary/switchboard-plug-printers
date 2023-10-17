@@ -101,7 +101,7 @@ public class Printers.AddDialog : Gtk.Window {
         var next_button = new Gtk.Button.with_label (_("Next")) {
             sensitive = false
         };
-        next_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         var button_box = new Gtk.Box (HORIZONTAL, 6);
         button_box.append (refresh_button);
@@ -133,9 +133,14 @@ public class Printers.AddDialog : Gtk.Window {
         stack.add_named (devices_box, "devices-grid");
         stack.add_child (alertview);
 
+        var window_handle = new Gtk.WindowHandle () {
+            child = stack
+        };
+
         default_height = 450;
         default_width = 500;
-        child = stack;
+        child = window_handle;
+        titlebar = new Gtk.Grid () { visible = false };
         add_css_class ("dialog");
 
         drivers = new Gee.LinkedList<Printers.DeviceDriver> ();
@@ -238,14 +243,18 @@ public class Printers.AddDialog : Gtk.Window {
 
     // Shows the next panel with further configuration
     private void continue_with_tempdevice (TempDevice temp_device) {
-        var connection_label = new Granite.HeaderLabel (_("Connection"));
+        var connection_label = new Granite.HeaderLabel (_("Connection")) {
+            margin_bottom = 3
+        };
 
         var connection_entry = new Gtk.Entry () {
             hexpand = true,
             placeholder_text = "ipp://hostname/ipp/port1"
         };
 
-        var description_label = new Granite.HeaderLabel (_("Description"));
+        var description_label = new Granite.HeaderLabel (_("Description")) {
+            margin_bottom = 3
+        };
 
         var description_entry = new Gtk.Entry () {
             hexpand = true,
@@ -253,7 +262,9 @@ public class Printers.AddDialog : Gtk.Window {
             text = temp_device.get_model_from_id () ?? ""
         };
 
-        var location_label = new Granite.HeaderLabel (_("Location"));
+        var location_label = new Granite.HeaderLabel (_("Location")) {
+            margin_bottom = 3
+        };
 
         var location_entry = new Gtk.Entry () {
             hexpand = true,
@@ -320,14 +331,12 @@ public class Printers.AddDialog : Gtk.Window {
 
         var previous_button = new Gtk.Button.with_label (_("Back"));
 
-        var cancel_button = new Gtk.Button.with_label (_("Cancel")) {
-            halign = Gtk.Align.END
-        };
+        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
 
         var next_button = new Gtk.Button.with_label (_("Add Printer")) {
             sensitive = false
         };
-        next_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         var button_box = new Gtk.Box (HORIZONTAL, 6) {
             halign = END,
@@ -671,7 +680,7 @@ public class Printers.AddDialog : Gtk.Window {
                 margin_start = 12,
                 xalign = 0
             };
-            get_style_context ().add_class (Granite.STYLE_CLASS_MENUITEM);
+            add_css_class (Granite.STYLE_CLASS_MENUITEM);
 
             child = label;
         }
