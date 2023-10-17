@@ -67,9 +67,10 @@ public class Printers.PrinterList : Gtk.Grid {
 
         add_button.clicked.connect (() => {
             if (add_dialog == null) {
-                add_dialog = new Printers.AddDialog ();
-                add_dialog.transient_for = (Gtk.Window) get_toplevel ();
-                add_dialog.show_all ();
+                add_dialog = new Printers.AddDialog () {
+                    modal = true,
+                    transient_for = (Gtk.Window) get_toplevel ()
+                };
 
                 add_dialog.destroy.connect (() => {
                     add_dialog = null;

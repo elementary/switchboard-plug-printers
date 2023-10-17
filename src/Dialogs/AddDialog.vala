@@ -40,7 +40,7 @@ namespace Printers.Translations {
     }
 }
 
-public class Printers.AddDialog : Granite.Dialog {
+public class Printers.AddDialog : Hdy.Window {
     private Gtk.Button refresh_button;
     private Gtk.Stack stack;
     private Granite.Widgets.AlertView alertview;
@@ -58,66 +58,83 @@ public class Printers.AddDialog : Granite.Dialog {
     }
 
     construct {
-        var spinner = new Gtk.Spinner ();
-        spinner.halign = Gtk.Align.CENTER;
-        spinner.valign = Gtk.Align.CENTER;
+        var spinner = new Gtk.Spinner () {
+            halign = CENTER,
+            valign = CENTER
+        };
         spinner.start ();
 
         var loading_label = new Gtk.Label (_("Finding nearby printers…"));
 
-        var loading_grid = new Gtk.Grid ();
-        loading_grid.column_spacing = 6;
-        loading_grid.halign = loading_grid.valign = Gtk.Align.CENTER;
-        loading_grid.add (loading_label);
-        loading_grid.add (spinner);
-        loading_grid.show_all ();
+        var loading_box = new Gtk.Box (HORIZONTAL, 6) {
+            halign = CENTER,
+            valign = CENTER
+        };
+        loading_box.add (loading_label);
+        loading_box.add (spinner);
+        loading_box.show_all ();
 
-        devices_list = new Gtk.ListBox ();
-        devices_list.expand = true;
-        devices_list.set_placeholder (loading_grid);
+        devices_list = new Gtk.ListBox () {
+            hexpand = true,
+            vexpand = true
+        };
+        devices_list.set_placeholder (loading_box);
         devices_list.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) temp_device_list_header);
         devices_list.set_sort_func ((Gtk.ListBoxSortFunc) temp_device_list_sort);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.shadow_type = Gtk.ShadowType.IN;
-        scrolled.add (devices_list);
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = devices_list
+        };
 
-        refresh_button = new Gtk.Button.with_label (_("Refresh"));
-        refresh_button.sensitive = false;
+        var frame = new Gtk.Frame (null) {
+            child = scrolled
+        };
+
+        refresh_button = new Gtk.Button.with_label (_("Refresh")) {
+            sensitive = false
+        };
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
 
-        var next_button = new Gtk.Button.with_label (_("Next"));
+        var next_button = new Gtk.Button.with_label (_("Next")) {
+            sensitive = false
+        };
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-        next_button.sensitive = false;
 
-        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        button_box.layout_style = Gtk.ButtonBoxStyle.END;
-        button_box.spacing = 6;
+        var button_box = new Gtk.Box (HORIZONTAL, 6);
         button_box.add (refresh_button);
+        button_box.add (new Gtk.Grid () { hexpand = true });
         button_box.add (cancel_button);
         button_box.add (next_button);
-        button_box.set_child_secondary (refresh_button, true);
 
-        var devices_grid = new Gtk.Grid ();
-        devices_grid.orientation = Gtk.Orientation.VERTICAL;
-        devices_grid.row_spacing = 24;
-        devices_grid.add (scrolled);
-        devices_grid.add (button_box);
+        var size_group = new Gtk.SizeGroup (HORIZONTAL);
+        size_group.add_widget (refresh_button);
+        size_group.add_widget (cancel_button);
+        size_group.add_widget (next_button);
+
+        var devices_box = new Gtk.Box (VERTICAL, 24) {
+            margin_top = 12,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
+        };
+        devices_box.add (frame);
+        devices_box.add (button_box);
 
         alertview = new Granite.Widgets.AlertView (_("Impossible to list all available printers"), "", "dialog-error");
         alertview.no_show_all = true;
 
-        stack = new Gtk.Stack ();
-        stack.margin_start = stack.margin_end = 12;
-        stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
-        stack.width_request = 500;
-        stack.height_request = 300;
-        stack.add_named (devices_grid, "devices-grid");
+        stack = new Gtk.Stack () {
+            transition_type = SLIDE_LEFT_RIGHT
+        };
+        stack.add_named (devices_box, "devices-grid");
         stack.add (alertview);
 
-        deletable = false;
-        get_content_area ().add (stack);
+        default_height = 450;
+        default_width = 500;
+        child = stack;
+        type_hint = DIALOG;
+        show_all ();
 
         drivers = new Gee.LinkedList<Printers.DeviceDriver> ();
 
@@ -221,119 +238,131 @@ public class Printers.AddDialog : Granite.Dialog {
 
     // Shows the next panel with further configuration
     private void continue_with_tempdevice (TempDevice temp_device) {
-        var connection_label = new Gtk.Label (_("Connection:"));
-        connection_label.margin_start = 12;
-        connection_label.xalign = 1;
+        var connection_label = new Granite.HeaderLabel (_("Connection"));
 
-        var connection_entry = new Gtk.Entry ();
-        connection_entry.hexpand = true;
-        connection_entry.placeholder_text = "ipp://hostname/ipp/port1";
+        var connection_entry = new Gtk.Entry () {
+            hexpand = true,
+            placeholder_text = "ipp://hostname/ipp/port1"
+        };
 
-        var description_label = new Gtk.Label (_("Description:"));
-        description_label.xalign = 1;
+        var description_label = new Granite.HeaderLabel (_("Description"));
 
-        var description_entry = new Gtk.Entry ();
-        description_entry.placeholder_text = _("BrandPrinter X3000");
-        description_entry.hexpand = true;
-        description_entry.text = temp_device.get_model_from_id () ?? "";
+        var description_entry = new Gtk.Entry () {
+            hexpand = true,
+            placeholder_text = _("BrandPrinter X3000"),
+            text = temp_device.get_model_from_id () ?? ""
+        };
 
-        var location_label = new Gtk.Label (_("Location:"));
-        location_label.xalign = 1;
+        var location_label = new Granite.HeaderLabel (_("Location"));
 
-        var location_entry = new Gtk.Entry ();
-        location_entry.hexpand = true;
-        location_entry.placeholder_text = _("Lab 1 or John's desk");
+        var location_entry = new Gtk.Entry () {
+            hexpand = true,
+            placeholder_text = _("Lab 1 or John's desk")
+        };
 
-        var spinner = new Gtk.Spinner ();
-        spinner.halign = spinner.valign = Gtk.Align.CENTER;
+        var spinner = new Gtk.Spinner () {
+            halign = CENTER,
+            valign = CENTER
+        };
         spinner.start ();
 
         make_list_store = new Gtk.ListStore (1, typeof (string));
 
-        var cellrenderer = new Gtk.CellRendererText ();
-        cellrenderer.xpad = 12;
+        var cellrenderer = new Gtk.CellRendererText () {
+            xpad = 6
+        };
 
-        make_view = new Gtk.TreeView.with_model (make_list_store);
-        make_view.headers_visible = false;
+        make_view = new Gtk.TreeView.with_model (make_list_store) {
+            headers_visible = false
+        };
         make_view.get_selection ().mode = Gtk.SelectionMode.BROWSE;
         make_view.insert_column_with_attributes (-1, null, cellrenderer, "text", 0);
 
-        var make_scrolled = new Gtk.ScrolledWindow (null, null);
-        make_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
-        make_scrolled.add (make_view);
+        var make_scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = make_view,
+            hscrollbar_policy = NEVER
+        };
 
         driver_view = new Gtk.ListBox ();
         driver_view.set_placeholder (new Gtk.Label (_("Loading…")));
 
-        var driver_scrolled = new Gtk.ScrolledWindow (null, null);
-        driver_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
-        driver_scrolled.add (driver_view);
-        driver_scrolled.expand = true;
+        var driver_scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = driver_view,
+            hscrollbar_policy = NEVER,
+            hexpand = true,
+            vexpand = true
+        };
 
-        var drivers_grid = new Gtk.Grid ();
-        drivers_grid.expand = true;
-        drivers_grid.add (make_scrolled);
-        drivers_grid.add (new Gtk.Separator (Gtk.Orientation.VERTICAL));
-        drivers_grid.add (driver_scrolled);
+        var drivers_paned = new Gtk.Paned (HORIZONTAL);
+        drivers_paned.pack1 (make_scrolled, false, false);
+        drivers_paned.pack2 (driver_scrolled, true, false);
 
-        drivers_stack = new Gtk.Stack ();
-        drivers_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
-        drivers_stack.expand = true;
+        drivers_stack = new Gtk.Stack () {
+            transition_type = CROSSFADE,
+            hexpand = true,
+            vexpand = true
+        };
         drivers_stack.add_named (spinner, "loading");
-        drivers_stack.add_named (drivers_grid, "drivers");
+        drivers_stack.add_named (drivers_paned, "drivers");
         drivers_stack.show_all ();
 
-        var frame = new Gtk.Frame (null);
-        frame.margin_top = frame.margin_bottom = 12;
-        frame.add (drivers_stack);
+        var frame = new Gtk.Frame (null) {
+            child = drivers_stack,
+            margin_top = 12,
+            margin_bottom = 24
+        };
 
         driver_cancellable = new Cancellable ();
         fetch_ppds (temp_device);
 
-        var previous_button = new Gtk.Button.with_label (_("Previous"));
+        var previous_button = new Gtk.Button.with_label (_("Back"));
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
 
-        var next_button = new Gtk.Button.with_label (_("Add Printer"));
+        var next_button = new Gtk.Button.with_label (_("Add Printer")) {
+            sensitive = false
+        };
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-        next_button.sensitive = false;
 
-        var button_grid = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        button_grid.layout_style = Gtk.ButtonBoxStyle.END;
-        button_grid.spacing = 6;
-        button_grid.add (previous_button);
-        button_grid.add (cancel_button);
-        button_grid.add (next_button);
+        var button_box = new Gtk.Box (HORIZONTAL, 6) {
+            halign = END,
+            homogeneous = true
+        };
+        button_box.add (previous_button);
+        button_box.add (cancel_button);
+        button_box.add (next_button);
 
-        var device_grid = new Gtk.Grid ();
-        device_grid.expand = true;
-        device_grid.row_spacing = 12;
-        device_grid.column_spacing = 12;
-        device_grid.attach (description_label, 0, 1, 1, 1);
-        device_grid.attach (description_entry, 1, 1, 1, 1);
+        var device_box = new Gtk.Box (VERTICAL, 0) {
+            margin_top = 12,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
+        };
+        device_box.add (description_label);
+        device_box.add (description_entry);
 
         if (":" in temp_device.device_uri) {
             description_entry.grab_focus ();
         } else {
             connection_entry.text = temp_device.device_uri;
-            device_grid.attach (connection_label, 0, 0, 1, 1);
-            device_grid.attach (connection_entry, 1, 0, 1, 1);
+            device_box.add (connection_label);
+            device_box.add (connection_entry);
             connection_entry.grab_focus ();
         }
 
-        device_grid.attach (location_label, 0, 2, 1, 1);
-        device_grid.attach (location_entry, 1, 2, 1, 1);
-        device_grid.attach (frame, 0, 3, 2, 1);
-        device_grid.attach (button_grid, 0, 4, 2, 1);
-        device_grid.show_all ();
+        device_box.add (location_label);
+        device_box.add (location_entry);
+        device_box.add (frame);
+        device_box.add (button_box);
+        device_box.show_all ();
 
-        stack.add (device_grid);
-        stack.set_visible_child (device_grid);
+        stack.add (device_box);
+        stack.set_visible_child (device_box);
 
         previous_button.clicked.connect (() => {
             driver_cancellable.cancel ();
             stack.visible_child_name = "devices-grid";
-            device_grid.destroy ();
+            device_box.destroy ();
         });
 
         cancel_button.clicked.connect (() => {
@@ -624,18 +653,20 @@ public class Printers.AddDialog : Granite.Dialog {
     }
 
     public class TempDeviceRow : Gtk.ListBoxRow {
-        public TempDevice temp_device { public get; private set; }
+        public TempDevice temp_device { get; private set; }
+
         public TempDeviceRow (TempDevice temp_device) {
             this.temp_device = temp_device;
-            var grid = new Gtk.Grid ();
-            var label = new Gtk.Label (temp_device.device_info);
+
+            var label = new Gtk.Label (temp_device.device_info) {
+                margin_top = 3,
+                margin_bottom = 3,
+                margin_start = 12,
+                xalign = 0
+            };
             get_style_context ().add_class (Gtk.STYLE_CLASS_MENUITEM);
-            label.margin_start = 12;
-            label.margin_top = 3;
-            label.margin_bottom = 3;
-            ((Gtk.Misc)label).xalign = 0;
-            grid.add (label);
-            add (grid);
+
+            child = label;
             show_all ();
         }
     }
@@ -673,7 +704,7 @@ public class Printers.AddDialog : Granite.Dialog {
             box.add (model_label);
             box.add (detail_label);
 
-            add (box);
+            child = box;
             show_all ();
         }
     }
