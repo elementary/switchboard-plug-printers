@@ -88,22 +88,21 @@ public class Printers.AddDialog : Gtk.Window {
         var frame = new Gtk.Frame (null) {
             child = scrolled
         };
+        frame.add_css_class ("dialog-content-area");
 
         refresh_button = new Gtk.Button.with_label (_("Refresh")) {
             sensitive = false
         };
 
-        var cancel_button = new Gtk.Button.with_label (_("Cancel")) {
-            width_request = 85,
-            height_request = 27
-        };
+        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
 
         var next_button = new Gtk.Button.with_label (_("Next")) {
             sensitive = false
         };
         next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var button_box = new Gtk.Box (HORIZONTAL, 6);
+        var button_box = new Gtk.Box (HORIZONTAL, 0);
+        button_box.add_css_class ("dialog-action-area");
         button_box.append (refresh_button);
         button_box.append (new Gtk.Grid () { hexpand = true });
         button_box.append (cancel_button);
@@ -114,12 +113,7 @@ public class Printers.AddDialog : Gtk.Window {
         size_group.add_widget (cancel_button);
         size_group.add_widget (next_button);
 
-        var devices_box = new Gtk.Box (VERTICAL, 24) {
-            margin_top = 12,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12
-        };
+        var devices_box = new Gtk.Box (VERTICAL, 0);
         devices_box.append (frame);
         devices_box.append (button_box);
 
@@ -322,8 +316,7 @@ public class Printers.AddDialog : Gtk.Window {
 
         var frame = new Gtk.Frame (null) {
             child = drivers_stack,
-            margin_top = 12,
-            margin_bottom = 24
+            margin_top = 12
         };
 
         driver_cancellable = new Cancellable ();
@@ -338,35 +331,35 @@ public class Printers.AddDialog : Gtk.Window {
         };
         next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var button_box = new Gtk.Box (HORIZONTAL, 6) {
+        var button_box = new Gtk.Box (HORIZONTAL, 0) {
             halign = END,
             homogeneous = true
         };
+        button_box.add_css_class ("dialog-action-area");
         button_box.append (previous_button);
         button_box.append (cancel_button);
         button_box.append (next_button);
 
-        var device_box = new Gtk.Box (VERTICAL, 0) {
-            margin_top = 12,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12
-        };
-        device_box.append (description_label);
-        device_box.append (description_entry);
+        var content_box = new Gtk.Box (VERTICAL, 0);
+        content_box.add_css_class ("dialog-content-area");
+        content_box.append (description_label);
+        content_box.append (description_entry);
 
         if (":" in temp_device.device_uri) {
             description_entry.grab_focus ();
         } else {
             connection_entry.text = temp_device.device_uri;
-            device_box.append (connection_label);
-            device_box.append (connection_entry);
+            content_box.append (connection_label);
+            content_box.append (connection_entry);
             connection_entry.grab_focus ();
         }
 
-        device_box.append (location_label);
-        device_box.append (location_entry);
-        device_box.append (frame);
+        content_box.append (location_label);
+        content_box.append (location_entry);
+        content_box.append (frame);
+
+        var device_box = new Gtk.Box (VERTICAL, 0);
+        device_box.append (content_box);
         device_box.append (button_box);
 
         stack.add_child (device_box);
