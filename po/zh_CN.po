@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-23 05:08+0000\n"
+"POT-Creation-Date: 2023-10-17 22:09+0000\n"
 "PO-Revision-Date: 2022-12-10 05:25+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -91,77 +91,83 @@ msgstr "LPD/LPR 主机或打印机"
 msgid "AppSocket/HP JetDirect"
 msgstr "应用接口/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:66
+#: src/Dialogs/AddDialog.vala:67
 msgid "Finding nearby printers…"
 msgstr "正在查找附近的打印机…"
 
-#: src/Dialogs/AddDialog.vala:85
+#: src/Dialogs/AddDialog.vala:93
 msgid "Refresh"
 msgstr "刷新"
 
-#: src/Dialogs/AddDialog.vala:88 src/Dialogs/AddDialog.vala:295
+#: src/Dialogs/AddDialog.vala:97 src/Dialogs/AddDialog.vala:320
 #: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Dialogs/AddDialog.vala:90
+#: src/Dialogs/AddDialog.vala:99
 msgid "Next"
 msgstr "下一步"
 
-#: src/Dialogs/AddDialog.vala:108
+#: src/Dialogs/AddDialog.vala:124
 msgid "Impossible to list all available printers"
 msgstr "无法列出所有可用打印机"
 
 #. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:224
-msgid "Connection:"
+#: src/Dialogs/AddDialog.vala:241
+#, fuzzy
+#| msgid "Connection:"
+msgid "Connection"
 msgstr "连接："
 
-#: src/Dialogs/AddDialog.vala:232 src/Views/SuppliesView.vala:30
-msgid "Description:"
+#: src/Dialogs/AddDialog.vala:248
+#, fuzzy
+#| msgid "Description:"
+msgid "Description"
 msgstr "描述："
 
-#: src/Dialogs/AddDialog.vala:236 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:252 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "品牌打印机 X3000"
 
-#: src/Dialogs/AddDialog.vala:240 src/Views/SuppliesView.vala:39
-msgid "Location:"
+#: src/Dialogs/AddDialog.vala:256
+#, fuzzy
+#| msgid "Location:"
+msgid "Location"
 msgstr "位置："
 
-#: src/Dialogs/AddDialog.vala:245
+#: src/Dialogs/AddDialog.vala:260
 msgid "Lab 1 or John's desk"
 msgstr "如：“实验室1”或\"办公桌\""
 
-#: src/Dialogs/AddDialog.vala:266
+#: src/Dialogs/AddDialog.vala:287
 msgid "Loading…"
 msgstr "加载中…"
 
-#: src/Dialogs/AddDialog.vala:293
-msgid "Previous"
-msgstr "上一步"
+#: src/Dialogs/AddDialog.vala:318
+msgid "Back"
+msgstr ""
 
-#: src/Dialogs/AddDialog.vala:297
+#: src/Dialogs/AddDialog.vala:322
 msgid "Add Printer"
 msgstr "添加打印机"
 
-#: src/Dialogs/AddDialog.vala:606
+#: src/Dialogs/AddDialog.vala:635
 msgid "Serial"
 msgstr "序列号"
 
-#: src/Dialogs/AddDialog.vala:609
+#: src/Dialogs/AddDialog.vala:638
 msgid "Local Printers"
 msgstr "本地打印机"
 
-#: src/Dialogs/AddDialog.vala:612
+#: src/Dialogs/AddDialog.vala:641
 msgid "Network Printers"
 msgstr "网络打印机"
 
-#: src/Dialogs/AddDialog.vala:615
+#: src/Dialogs/AddDialog.vala:644
 msgid "Available Network Printers"
 msgstr "可用的网络打印机"
 
-#: src/Dialogs/AddDialog.vala:651
+#: src/Dialogs/AddDialog.vala:682
 msgid "(recommended)"
 msgstr "（推荐）"
 
@@ -596,6 +602,14 @@ msgstr "卷 %d"
 msgid "Paper Source:"
 msgstr "纸张来源："
 
+#: src/Views/SuppliesView.vala:30
+msgid "Description:"
+msgstr "描述："
+
+#: src/Views/SuppliesView.vala:39
+msgid "Location:"
+msgstr "位置："
+
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 或 John's Desk"
@@ -647,6 +661,9 @@ msgstr "移除此打印机"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "已禁用"
+
+#~ msgid "Previous"
+#~ msgstr "上一步"
 
 #~ msgid "Processing…"
 #~ msgstr "处理中…"
