@@ -23,7 +23,7 @@ public class Printers.InkLevel : Gtk.Widget {
     public unowned Printer printer { get; construct; }
     private const string STYLE_CLASS =
     """
-    block.filled {
+    levelbar.%s block.filled {
         background-color: #%s;
     }
     """;
@@ -62,7 +62,8 @@ public class Printers.InkLevel : Gtk.Widget {
             var ink_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 3);
 
             for (int i = 1; i < colors_codes.length; i++) {
-                var css_color = STYLE_CLASS.printf (colors_codes[i]);
+                var style_class = color.name + "%i".printf (i);
+                var css_color = STYLE_CLASS.printf (style_class, colors_codes[i]);
 
                 var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max) {
                     height_request = 64,
@@ -72,11 +73,12 @@ public class Printers.InkLevel : Gtk.Widget {
                     orientation = Gtk.Orientation.VERTICAL,
                     value = color.level
                 };
+                level.add_css_class (style_class);
 
                 var provider = new Gtk.CssProvider ();
                 try {
                     provider.load_from_data (css_color.data);
-                    level.get_style_context ().add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                    Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
                 } catch (Error e) {
                     warning ("Could not create CSS Provider: %s\nStylesheet:\n%s", e.message, css_color);
                 }
