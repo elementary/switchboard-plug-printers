@@ -98,7 +98,6 @@ public class Printers.OptionsPage : Gtk.Grid {
                 printer.set_default_side (CUPS.Attributes.Sided.TWO_SHORT_EDGE);
             });
 
-
             two_switch.notify["active"].connect (() => {
                 if (two_switch.active) {
                     if (mode_long.active) {
