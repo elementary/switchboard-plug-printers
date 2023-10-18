@@ -43,25 +43,23 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         remove_button.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         name_label = new Gtk.Label (null) {
-            ellipsize = Pango.EllipsizeMode.END,
+            ellipsize = END,
             xalign = 0
         };
         name_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         status_label = new Gtk.Label (null) {
             use_markup = true,
-            ellipsize = Pango.EllipsizeMode.END,
+            ellipsize = END,
             xalign = 0
         };
 
-        printer_image = new Gtk.Image.from_icon_name ("printer") {
-            pixel_size = 32
-        };
+        printer_image = new Gtk.Image.from_icon_name ("printer");
+        printer_image.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
 
         status_image = new Gtk.Image.from_icon_name ("user-available") {
-            pixel_size = 16,
-            halign = Gtk.Align.END,
-            valign = Gtk.Align.END
+            halign = END,
+            valign = END
         };
 
         var overlay = new Gtk.Overlay () {
@@ -71,11 +69,7 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         overlay.add_overlay (status_image);
 
         var grid = new Gtk.Grid () {
-            margin_end = 6,
-            margin_top = 6,
-            margin_bottom = 6,
-            margin_start = 3,
-            column_spacing = 3
+            column_spacing = 6
         };
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0, 1, 1);

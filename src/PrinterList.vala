@@ -23,6 +23,7 @@ public class Printers.PrinterList : Gtk.Box {
         vexpand = true;
 
         list_box = new Gtk.ListBox ();
+        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
         var scrolled = new Gtk.ScrolledWindow () {
             child = list_box,
