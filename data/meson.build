@@ -1,6 +1,6 @@
 i18n.merge_file(
     input: 'printers.appdata.xml.in',
-    output: 'io.elementary.switchboard.printers.appdata.xml',
+    output: meson.project_name () + '.metainfo.xml',
     po_dir: join_paths(meson.source_root(), 'po', 'extra'),
     type: 'xml',
     install: true,

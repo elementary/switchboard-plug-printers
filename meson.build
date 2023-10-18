@@ -1,10 +1,9 @@
 project(
-    'printers',
+    'io.elementary.settings.printers',
     'vala', 'c',
     version: '2.2.1'
 )
 
-gettext_name = meson.project_name() + '-plug'
 gnome = import('gnome')
 i18n = import('i18n')
 
@@ -13,7 +12,7 @@ datadir = join_paths(prefix, get_option('datadir'))
 libdir = join_paths(prefix, get_option('libdir'))
 
 add_project_arguments(
-    '-DGETTEXT_PACKAGE="@0@"'.format(gettext_name),
+    '-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()),
     language:'c'
 )
 

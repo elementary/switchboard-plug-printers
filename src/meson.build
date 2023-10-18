@@ -28,7 +28,7 @@ cups_vapi = meson.get_compiler('vala').find_library('cups', dirs: join_paths(mes
 cups_dep = declare_dependency(dependencies: [cups_lib, cups_vapi])
 
 gettext_data = configuration_data()
-gettext_data.set('GETTEXT_PACKAGE', gettext_name)
+gettext_data.set('GETTEXT_PACKAGE', meson.project_name())
 gettext_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 gettext_declaration = configure_file(
     configuration: gettext_data,

@@ -1,4 +1,4 @@
-# Switchboard Printers Plug
+# Printers Settings
 [![Translation status](https://l10n.elementary.io/widgets/switchboard/-/switchboard-plug-printers/svg-badge.svg)](https://l10n.elementary.io/engage/switchboard/?utm_source=widget)
 
 ![screenshot](data/screenshot.png?raw=true)
@@ -8,9 +8,9 @@
 You'll need the following dependencies:
 
 * libcups2-dev
-* libswitchboard-2.0-dev
-* libgranite-dev
-* libgtk-3-dev
+* libswitchboard-3-dev
+* libgranite-7-dev
+* libgtk-4-dev
 * meson
 * valac
 
