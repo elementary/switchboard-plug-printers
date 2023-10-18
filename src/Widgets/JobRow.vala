@@ -43,15 +43,13 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var icon = new Gtk.Image.from_gicon (job.get_file_icon ()) {
-            pixel_size = 32
-        };
+        var icon = new Gtk.Image.from_gicon (job.get_file_icon ());
+        icon.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
 
         job_state_icon = new Gtk.Image () {
             gicon = job.state_icon (),
             halign = Gtk.Align.END,
-            valign = Gtk.Align.END,
-            pixel_size = 16
+            valign = Gtk.Align.END
         };
 
         var icon_overlay = new Gtk.Overlay () {
@@ -101,12 +99,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         };
 
         var grid = new Gtk.Grid () {
-            column_spacing = 3,
-            margin_top = 6,
-            // Visually the same margin since file type icons don't fill the canvas
-            margin_end = 9,
-            margin_bottom = 6,
-            margin_start = 6
+            column_spacing = 6
         };
         grid.attach (icon_overlay, 0, 0, 1, 2);
         grid.attach (title, 1, 0);

@@ -23,6 +23,7 @@ public class Printers.JobsView : Gtk.Frame {
         list_box = new Gtk.ListBox () {
             selection_mode = SINGLE
         };
+        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list_box.set_placeholder (alert);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) update_header);
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare);
@@ -100,14 +101,7 @@ public class Printers.JobsView : Gtk.Frame {
     [CCode (instance_pos = -1)]
     private void update_header (JobRow row1, JobRow? row2) {
         if (!row1.job.is_ongoing && (row2 == null || row2.job.is_ongoing)) {
-            var label = new Gtk.Label (_("Completed Jobs")) {
-                xalign = 0,
-                margin_top = 3,
-                margin_end = 3,
-                margin_bottom = 3,
-                margin_start = 3
-            };
-            label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
+            var label = new Granite.HeaderLabel (_("Completed Jobs"));
 
             row1.set_header (label);
         } else {
