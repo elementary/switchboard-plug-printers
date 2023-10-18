@@ -1,5 +1,5 @@
 /*
- * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-License-Identifier: LGPL-3.0-or-later
  * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
