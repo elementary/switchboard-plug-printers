@@ -21,7 +21,7 @@ public class Printers.JobsView : Gtk.Frame {
         };
 
         list_box = new Gtk.ListBox () {
-            selection_mode = Gtk.SelectionMode.SINGLE
+            selection_mode = SINGLE
         };
         list_box.set_placeholder (alert);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) update_header);
@@ -46,7 +46,7 @@ public class Printers.JobsView : Gtk.Frame {
         actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
         actionbar.pack_start (clear_button);
 
-        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        var box = new Gtk.Box (VERTICAL, 0);
         box.append (scrolled);
         box.append (actionbar);
 
