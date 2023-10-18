@@ -39,8 +39,7 @@ public class Printers.JobsView : Gtk.Frame {
 
         clear_button = new Gtk.Button () {
             child = clear_button_box,
-            has_frame = false,
-            sensitive = list_box.get_first_child () is JobRow
+            has_frame = false
         };
 
         var actionbar = new Gtk.ActionBar ();
@@ -157,6 +156,6 @@ public class Printers.JobsView : Gtk.Frame {
             list_box.append (new JobRow (printer, job));
         }
 
-        clear_button.sensitive = list_box.observe_children ().get_n_items () > 0;
+        clear_button.sensitive = list_box.get_first_child () is JobRow;
     }
 }
