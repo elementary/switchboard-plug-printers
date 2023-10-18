@@ -1,21 +1,6 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
-/*-
- * Copyright (c) 2015-2018 elementary LLC. (https://elementary.io)
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Library General Public
- * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Library General Public License for more details.
- *
- * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
- * Boston, MA 02110-1301, USA.
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
@@ -44,11 +29,11 @@ public class Printers.OptionsPage : Gtk.Grid {
         foreach (var page in pages_per_sheet) {
             var toggle = new Gtk.ToggleButton.with_label ("%d".printf (page));
 
-            pages_box.append (toggle);
-
             if (pages_box.get_first_child () != null) {
                 toggle.group = (Gtk.ToggleButton) pages_box.get_first_child ();
             }
+
+            pages_box.append (toggle);
 
             if (page == default_page) {
                 toggle.active = true;
@@ -67,7 +52,7 @@ public class Printers.OptionsPage : Gtk.Grid {
         var default_side = printer.get_sides (sides);
 
         var two_switch = new Gtk.Switch () {
-            valign = Gtk.Align.CENTER
+            valign = CENTER
         };
 
         if (sides.size == 1) {
@@ -174,6 +159,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             var label = new Gtk.Label (_("Orientation:")) {
                 xalign = 1
             };
+
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
@@ -195,6 +181,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             var label = new Gtk.Label (_("Media Size:")) {
                 xalign = 1
             };
+
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
@@ -237,6 +224,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             var label = new Gtk.Label (_("Color mode:")) {
                 xalign = 1
             };
+
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
@@ -309,6 +297,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             var label = new Gtk.Label (_("Output Tray:")) {
                 xalign = 1
             };
+
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
@@ -336,6 +325,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             var label = new Gtk.Label (_("Quality:")) {
                 xalign = 1
             };
+
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
@@ -437,6 +427,7 @@ public class Printers.OptionsPage : Gtk.Grid {
             var label = new Gtk.Label (_("Paper Source:")) {
                 xalign = 1
             };
+
             attach (label, 1, row_index, 1, 1);
             attach (combobox, 2, row_index, 1, 1);
             row_index++;
