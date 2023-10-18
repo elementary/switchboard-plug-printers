@@ -22,8 +22,6 @@
 public class Printers.SuppliesView: Gtk.Widget {
     public Printer printer { get; construct; }
 
-    private Gtk.ScrolledWindow main_widget;
-
     public SuppliesView (Printer printer) {
         Object (printer: printer);
     }
@@ -79,15 +77,15 @@ public class Printers.SuppliesView: Gtk.Widget {
         grid.attach (default_switch, 1, 2);
         grid.attach (ink_level, 0, 3, 2, 1);
 
-        main_widget = new Gtk.ScrolledWindow () {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = grid
         };
-        main_widget.set_parent (this);
+        scrolled.set_parent (this);
     }
 
     ~SuppliesView () {
-        while (this.get_last_child () != null) {
-            this.get_last_child ().unparent ();
+        while (get_last_child () != null) {
+            get_last_child ().unparent ();
         }
     }
 }
