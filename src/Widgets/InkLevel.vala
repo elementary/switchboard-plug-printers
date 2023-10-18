@@ -28,12 +28,8 @@ public class Printers.InkLevel : Gtk.Widget {
     }
     """;
 
-    private Gtk.FlowBox main_widget;
-
     public InkLevel (Printer printer) {
-        Object (
-            printer: printer
-        );
+        Object (printer: printer);
     }
 
     static construct {
@@ -45,13 +41,13 @@ public class Printers.InkLevel : Gtk.Widget {
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
 
-        main_widget = new Gtk.FlowBox () {
+        var flowbox = new Gtk.FlowBox () {
             homogeneous = true,
             column_spacing = 12,
             row_spacing = 24,
             max_children_per_line = 30
         };
-        main_widget.set_parent (this);
+        flowbox.set_parent (this);
 
         foreach (Printer.ColorLevel color in colors) {
             string[] colors_codes = { null, "3689E6" };
@@ -99,7 +95,7 @@ public class Printers.InkLevel : Gtk.Widget {
 
             size_group.add_widget (label);
 
-            main_widget.append (color_box);
+            flowbox.append (color_box);
         }
     }
 
