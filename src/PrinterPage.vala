@@ -45,10 +45,11 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
             stack = stack
         };
 
-        var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
-        var stack_switcher_children = stack_switcher.observe_children ();
-        for (var index = 0; index < stack_switcher_children.get_n_items (); index++) {
-            sizegroup.add_widget ((Gtk.ToggleButton) stack_switcher_children.get_item (index));
+        var sizegroup = new Gtk.SizeGroup (HORIZONTAL);
+        var child = stack_switcher.get_first_child ();
+        while (child != null) {
+            sizegroup.add_widget (child);
+            child = child.get_next_sibling ();
         }
 
         content_area.row_spacing = 24;

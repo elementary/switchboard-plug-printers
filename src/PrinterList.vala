@@ -83,15 +83,7 @@ public class Printers.PrinterList : Gtk.Box {
 
         has_child = true;
         row.destroy.connect (() => {
-            uint i = 0;
-            var children = list_box.observe_children ();
-            for (var index = 0; index < children.get_n_items (); index++) {
-                if ((PrinterRow) children.get_item (index) != row) {
-                    i++;
-                }
-            }
-
-            has_child = i > 0;
+            has_child = list_box.get_first_child != null;
         });
     }
 }

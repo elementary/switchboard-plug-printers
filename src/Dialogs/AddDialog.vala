@@ -153,9 +153,11 @@ public class Printers.AddDialog : Gtk.Window {
 
         refresh_button.clicked.connect (() => {
             refresh_button.sensitive = false;
-            var children = devices_list.observe_children ();
-            for (var index = 0; index < children.get_n_items (); index++) {
-                devices_list.remove ((Gtk.Widget) children.get_item (index));
+
+            var child = devices_list.get_first_child ();
+            while (child != null) {
+                devices_list.remove (child);
+                child = child.get_next_sibling ();
             }
 
             search_device.begin ();
@@ -556,9 +558,11 @@ public class Printers.AddDialog : Gtk.Window {
     private void populate_driver_list_from_make (string make, string? selected_make_and_model = null) {
         driver_cancellable.cancel ();
         driver_cancellable = new Cancellable ();
-        var children = driver_view.observe_children ();
-        for (var index = 0; index < children.get_n_items (); index++) {
-            driver_view.remove ((Gtk.Widget) children.get_item (index));
+
+        var child = driver_view.get_first_child ();
+        while (child != null) {
+            driver_view.remove (child);
+            child = child.get_next_sibling ();
         }
 
         find_drivers.begin (make, selected_make_and_model, (obj, res) => {
