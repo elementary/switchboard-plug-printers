@@ -247,7 +247,7 @@ public class Printers.AddDialog : Hdy.Window {
         };
 
         var connection_label = new Granite.HeaderLabel (_("Connection")) {
-            mnemonic_widget =  connection_entry
+            mnemonic_widget = connection_entry
         };
 
         var connection_error = new ErrorRevealer (
