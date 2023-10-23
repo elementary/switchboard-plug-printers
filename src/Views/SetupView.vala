@@ -63,9 +63,9 @@ public class Printers.OptionsPage : Gtk.Grid {
         switch_box.append (two_switch);
 
         if (sides.size > 2) {
-            var mode_long = new Gtk.CheckButton.with_label (dpgettext2 ("gtk30", "printing option value", "Long Edge (Standard)"));
+            var mode_long = new Gtk.CheckButton.with_label (dpgettext2 ("gtk40", "printing option value", "Long Edge (Standard)"));
 
-            var mode_short = new Gtk.CheckButton.with_label (dpgettext2 ("gtk30", "printing option value", "Short Edge (Flip)")) {
+            var mode_short = new Gtk.CheckButton.with_label (dpgettext2 ("gtk40", "printing option value", "Short Edge (Flip)")) {
                 group = mode_long
             };
 
@@ -137,16 +137,16 @@ public class Printers.OptionsPage : Gtk.Grid {
             foreach (var orientation in orientations) {
                 switch (orientation) {
                     case CUPS.Attributes.Orientation.PORTRAIT:
-                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.PORTRAIT), dgettext ("gtk30", "Portrait"));
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.PORTRAIT), dgettext ("gtk40", "Portrait"));
                         break;
                     case CUPS.Attributes.Orientation.LANDSCAPE:
-                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.LANDSCAPE), dgettext ("gtk30", "Landscape"));
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.LANDSCAPE), dgettext ("gtk40", "Landscape"));
                         break;
                     case CUPS.Attributes.Orientation.REVERSE_PORTRAIT:
-                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_PORTRAIT), dgettext ("gtk30", "Reverse portrait"));
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_PORTRAIT), dgettext ("gtk40", "Reverse portrait"));
                         break;
                     case CUPS.Attributes.Orientation.REVERSE_LANDSCAPE:
-                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_LANDSCAPE), dgettext ("gtk30", "Reverse landscape"));
+                        combobox.append ("%d".printf (CUPS.Attributes.Orientation.REVERSE_LANDSCAPE), dgettext ("gtk40", "Reverse landscape"));
                         break;
                 }
             }
@@ -236,51 +236,51 @@ public class Printers.OptionsPage : Gtk.Grid {
             foreach (var output_bin in output_bins) {
                 switch (output_bin) {
                     case "top":
-                        combobox.append (output_bin, dgettext ("gtk30", "Top Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Top Bin"));
                         break;
                     case "middle":
-                        combobox.append (output_bin, dgettext ("gtk30", "Middle Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Middle Bin"));
                         break;
                     case "bottom":
-                        combobox.append (output_bin, dgettext ("gtk30", "Bottom Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Bottom Bin"));
                         break;
                     case "side":
-                        combobox.append (output_bin, dgettext ("gtk30", "Side Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Side Bin"));
                         break;
                     case "left":
-                        combobox.append (output_bin, dgettext ("gtk30", "Left Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Left Bin"));
                         break;
                     case "right":
-                        combobox.append (output_bin, dgettext ("gtk30", "Right Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Right Bin"));
                         break;
                     case "center":
-                        combobox.append (output_bin, dgettext ("gtk30", "Center Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Center Bin"));
                         break;
                     case "rear":
-                        combobox.append (output_bin, dgettext ("gtk30", "Rear Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Rear Bin"));
                         break;
                     case "face-up":
-                        combobox.append (output_bin, dgettext ("gtk30", "Face Up Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Face Up Bin"));
                         break;
                     case "face-down":
-                        combobox.append (output_bin, dgettext ("gtk30", "Face Down Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Face Down Bin"));
                         break;
                     case "large-capacity":
-                        combobox.append (output_bin, dgettext ("gtk30", "Large Capacity Bin"));
+                        combobox.append (output_bin, dgettext ("gtk40", "Large Capacity Bin"));
                         break;
                     case "my-mailbox":
-                        combobox.append (output_bin, dgettext ("gtk30", "My Mailbox"));
+                        combobox.append (output_bin, dgettext ("gtk40", "My Mailbox"));
                         break;
                     default:
                         if ("stacker-" in output_bin) {
                             int number = int.parse (output_bin.replace ("stacker-", ""));
-                            combobox.append (output_bin, dgettext ("gtk30", "Stacker %d").printf (number));
+                            combobox.append (output_bin, dgettext ("gtk40", "Stacker %d").printf (number));
                         } else if ("mailbox-" in output_bin) {
                             int number = int.parse (output_bin.replace ("mailbox-", ""));
-                            combobox.append (output_bin, dgettext ("gtk30", "Mailbox %d").printf (number));
+                            combobox.append (output_bin, dgettext ("gtk40", "Mailbox %d").printf (number));
                         } else if ("tray-" in output_bin) {
                             int number = int.parse (output_bin.replace ("tray-", ""));
-                            combobox.append (output_bin, dgettext ("gtk30", "Tray %d").printf (number));
+                            combobox.append (output_bin, dgettext ("gtk40", "Tray %d").printf (number));
                         } else {
                             combobox.append (output_bin, output_bin);
                         }
