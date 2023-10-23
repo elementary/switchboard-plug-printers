@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-17 22:09+0000\n"
-"PO-Revision-Date: 2023-05-07 01:06+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"PO-Revision-Date: 2023-10-20 19:10+0000\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/nl/>\n"
 "Language: nl\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/Plug.vala:38
@@ -116,26 +116,20 @@ msgstr "het is niet mogelijk om alle printers te laten zien"
 
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:241
-#, fuzzy
-#| msgid "Connection:"
 msgid "Connection"
-msgstr "Verbinding:"
+msgstr "Verbinding"
 
 #: src/Dialogs/AddDialog.vala:248
-#, fuzzy
-#| msgid "Description:"
 msgid "Description"
-msgstr "Omschrijving:"
+msgstr "Omschrijving"
 
 #: src/Dialogs/AddDialog.vala:252 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "MerkPrinter X3000"
 
 #: src/Dialogs/AddDialog.vala:256
-#, fuzzy
-#| msgid "Location:"
 msgid "Location"
-msgstr "Locatie:"
+msgstr "Locatie"
 
 #: src/Dialogs/AddDialog.vala:260
 msgid "Lab 1 or John's desk"
@@ -147,7 +141,7 @@ msgstr "Laden…"
 
 #: src/Dialogs/AddDialog.vala:318
 msgid "Back"
-msgstr ""
+msgstr "Terug"
 
 #: src/Dialogs/AddDialog.vala:322
 msgid "Add Printer"

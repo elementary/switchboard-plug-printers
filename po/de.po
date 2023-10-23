@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-17 22:09+0000\n"
-"PO-Revision-Date: 2022-11-27 09:25+0000\n"
+"PO-Revision-Date: 2023-10-20 19:10+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/Plug.vala:38
@@ -117,26 +117,20 @@ msgstr "Alle verfügbaren Drucker aufzulisten nicht möglich"
 
 #. Shows the next panel with further configuration
 #: src/Dialogs/AddDialog.vala:241
-#, fuzzy
-#| msgid "Connection:"
 msgid "Connection"
-msgstr "Verbindung:"
+msgstr "Verbindung"
 
 #: src/Dialogs/AddDialog.vala:248
-#, fuzzy
-#| msgid "Description:"
 msgid "Description"
-msgstr "Beschreibung:"
+msgstr "Beschreibung"
 
 #: src/Dialogs/AddDialog.vala:252 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
 #: src/Dialogs/AddDialog.vala:256
-#, fuzzy
-#| msgid "Location:"
 msgid "Location"
-msgstr "Ort:"
+msgstr "Standort"
 
 #: src/Dialogs/AddDialog.vala:260
 msgid "Lab 1 or John's desk"
@@ -615,7 +609,7 @@ msgstr "Beschreibung:"
 
 #: src/Views/SuppliesView.vala:39
 msgid "Location:"
-msgstr "Ort:"
+msgstr "Standort:"
 
 #: src/Views/SuppliesView.vala:44
 msgid "Lab 1 or John's Desk"
