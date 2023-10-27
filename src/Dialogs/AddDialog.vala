@@ -26,6 +26,9 @@ namespace Printers.Translations {
 }
 
 public class Printers.AddDialog : Gtk.Window {
+    private Granite.ValidatedEntry connection_entry;
+    private Granite.ValidatedEntry description_entry;
+    private Gtk.Button add_printer_button;
     private Gtk.Button refresh_button;
     private Gtk.Stack stack;
     private Granite.Placeholder alertview;
@@ -222,32 +225,43 @@ public class Printers.AddDialog : Gtk.Window {
 
     // Shows the next panel with further configuration
     private void continue_with_tempdevice (TempDevice temp_device) {
-        var connection_label = new Granite.HeaderLabel (_("Connection")) {
-            margin_bottom = 3
-        };
-
-        var connection_entry = new Gtk.Entry () {
+        connection_entry = new Granite.ValidatedEntry () {
             hexpand = true,
             placeholder_text = "ipp://hostname/ipp/port1"
         };
 
-        var description_label = new Granite.HeaderLabel (_("Description")) {
-            margin_bottom = 3
+        var connection_label = new Granite.HeaderLabel (_("Connection")) {
+            mnemonic_widget = connection_entry
         };
 
-        var description_entry = new Gtk.Entry () {
+        var connection_error = new ErrorRevealer (
+            _("Connection uri must contain “://“")
+        );
+        connection_error.add_css_class (Granite.STYLE_CLASS_ERROR);
+
+        description_entry = new Granite.ValidatedEntry () {
             hexpand = true,
+            min_length = 1,
             placeholder_text = _("BrandPrinter X3000"),
             text = temp_device.get_model_from_id () ?? ""
         };
 
-        var location_label = new Granite.HeaderLabel (_("Location")) {
-            margin_bottom = 3
+        var description_label = new Granite.HeaderLabel (_("Description")) {
+            mnemonic_widget = description_entry
         };
+
+        var description_error = new ErrorRevealer (
+            _("Description cannot be empty")
+        );
+        description_error.add_css_class (Granite.STYLE_CLASS_ERROR);
 
         var location_entry = new Gtk.Entry () {
             hexpand = true,
             placeholder_text = _("Lab 1 or John's desk")
+        };
+
+        var location_label = new Granite.HeaderLabel (_("Location")) {
+            mnemonic_widget = location_entry
         };
 
         var spinner = new Gtk.Spinner () {
@@ -311,10 +325,10 @@ public class Printers.AddDialog : Gtk.Window {
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
 
-        var next_button = new Gtk.Button.with_label (_("Add Printer")) {
+        add_printer_button = new Gtk.Button.with_label (_("Add Printer")) {
             sensitive = false
         };
-        next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        add_printer_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         var button_box = new Gtk.Box (HORIZONTAL, 0) {
             halign = END,
@@ -323,20 +337,25 @@ public class Printers.AddDialog : Gtk.Window {
         button_box.add_css_class ("dialog-action-area");
         button_box.append (previous_button);
         button_box.append (cancel_button);
-        button_box.append (next_button);
+        button_box.append (add_printer_button);
 
-        var content_box = new Gtk.Box (VERTICAL, 0);
+        var content_box = new Gtk.Box (VERTICAL, 3);
         content_box.add_css_class ("dialog-content-area");
         content_box.append (description_label);
         content_box.append (description_entry);
+        content_box.append (description_error);
 
-        if (":" in temp_device.device_uri) {
-            description_entry.grab_focus ();
-        } else {
+        if (!(":" in temp_device.device_uri)) {
+            connection_entry.changed.connect (() => {
+                connection_entry.is_valid = connection_entry.text.contains ("://");
+                connection_error.reveal_child = !connection_entry.is_valid;
+                validate_form ();
+            });
+
             connection_entry.text = temp_device.device_uri;
             content_box.append (connection_label);
             content_box.append (connection_entry);
-            connection_entry.grab_focus ();
+            content_box.append (connection_error);
         }
 
         content_box.append (location_label);
@@ -360,13 +379,13 @@ public class Printers.AddDialog : Gtk.Window {
             destroy ();
         });
 
-        next_button.clicked.connect (() => {
+        add_printer_button.clicked.connect (() => {
             try {
                 var name = temp_device.device_info.replace (" ", "_");
                 name = name.replace ("/", "_");
                 name = name.replace ("#", "_");
                 var uri = temp_device.device_uri;
-                if (connection_entry.visible) {
+                if (connection_entry.parent != null) {
                     uri = connection_entry.text;
                 }
 
@@ -384,32 +403,26 @@ public class Printers.AddDialog : Gtk.Window {
         driver_view.row_selected.connect ((row) => {
             if (row != null) {
                 selected_driver = ((DriverRow)row).driver;
-                bool can_go_next = true;
-                can_go_next &= !connection_entry.visible || connection_entry.text.contains ("://");
-                can_go_next &= selected_driver != null;
-                can_go_next &= description_entry.text != "";
-                next_button.sensitive = can_go_next;
+                validate_form ();
             } else {
-                next_button.sensitive = false;
+                add_printer_button.sensitive = false;
                 selected_driver = null;
             }
         });
 
-        description_entry.changed.connect (() => {
-            bool can_go_next = true;
-            can_go_next &= !connection_entry.visible || connection_entry.text.contains ("://");
-            can_go_next &= selected_driver != null;
-            can_go_next &= description_entry.text != "";
-            next_button.sensitive = can_go_next;
-        });
+        description_entry.changed.connect (validate_form);
+        description_entry.bind_property (
+            "is-valid", description_error, "reveal-child", INVERT_BOOLEAN | SYNC_CREATE
+        );
+    }
 
-        connection_entry.changed.connect (() => {
-            bool can_go_next = true;
-            can_go_next &= !connection_entry.visible || connection_entry.text.contains ("://");
-            can_go_next &= selected_driver != null;
-            can_go_next &= description_entry.text != "";
-            next_button.sensitive = can_go_next;
-        });
+    private void validate_form () {
+        bool can_go_next = true;
+        can_go_next &= connection_entry.parent == null || connection_entry.is_valid;
+        can_go_next &= selected_driver != null;
+        can_go_next &= description_entry.is_valid;
+
+        add_printer_button.sensitive = can_go_next;
     }
 
     // Retreives all the drivers from the CUPS server.
