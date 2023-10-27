@@ -34,14 +34,17 @@ public class Printers.JobsView : Gtk.Frame {
             vexpand = true
         };
 
+        var clear_button_label = new Gtk.Label (_("Clear All"));
+
         var clear_button_box = new Gtk.Box (HORIZONTAL, 0);
         clear_button_box.append (new Gtk.Image.from_icon_name ("edit-clear-all-symbolic"));
-        clear_button_box.append (new Gtk.Label (_("Clear All")));
+        clear_button_box.append (clear_button_label);
 
         clear_button = new Gtk.Button () {
             child = clear_button_box,
             has_frame = false
         };
+        clear_button_label.mnemonic_widget = clear_button;
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
@@ -117,15 +120,12 @@ public class Printers.JobsView : Gtk.Frame {
             dialog.destroy ();
 
             if (response_id == Gtk.ResponseType.OK) {
-                var child = list_box.get_first_child ();
-                while (child != null) {
-                    if (child is JobRow) {
-                        var job = ((JobRow) child).job;
-                        job.pause (); // Purging pending/in_progress jobs does not always remove canceled job
-                        job.purge ();
-                    }
+                while (list_box.get_row_at_index (0) != null) {
+                    var job = ((JobRow) list_box.get_row_at_index (0)).job;
+                    job.pause (); // Purging pending/in_progress jobs does not always remove canceled job
+                    job.purge ();
 
-                    child = child.get_next_sibling ();
+                    list_box.remove (list_box.get_row_at_index (0));
                 }
 
                 refresh_job_list ();
