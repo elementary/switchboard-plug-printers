@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-17 22:09+0000\n"
+"POT-Creation-Date: 2023-10-27 18:28+0000\n"
 "PO-Revision-Date: 2022-12-10 05:25+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -31,7 +31,7 @@ msgstr "无可用打印机"
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr "单击下方工具栏中的图标连接到打印机。"
 
-#: src/PrinterList.vala:50
+#: src/PrinterList.vala:37
 msgid "Add Printer…"
 msgstr "添加打印机…"
 
@@ -91,83 +91,90 @@ msgstr "LPD/LPR 主机或打印机"
 msgid "AppSocket/HP JetDirect"
 msgstr "应用接口/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:70
 msgid "Finding nearby printers…"
 msgstr "正在查找附近的打印机…"
 
-#: src/Dialogs/AddDialog.vala:93
+#: src/Dialogs/AddDialog.vala:96
 msgid "Refresh"
 msgstr "刷新"
 
-#: src/Dialogs/AddDialog.vala:97 src/Dialogs/AddDialog.vala:320
+#: src/Dialogs/AddDialog.vala:100 src/Dialogs/AddDialog.vala:344
 #: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Dialogs/AddDialog.vala:99
+#: src/Dialogs/AddDialog.vala:102
 msgid "Next"
 msgstr "下一步"
 
-#: src/Dialogs/AddDialog.vala:124
+#: src/Dialogs/AddDialog.vala:127
 msgid "Impossible to list all available printers"
 msgstr "无法列出所有可用打印机"
 
-#. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:241
+#: src/Dialogs/AddDialog.vala:249
 #, fuzzy
 #| msgid "Connection:"
 msgid "Connection"
 msgstr "连接："
 
-#: src/Dialogs/AddDialog.vala:248
+#: src/Dialogs/AddDialog.vala:254
+msgid "Connection uri must contain “://“"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+msgid "BrandPrinter X3000"
+msgstr "品牌打印机 X3000"
+
+#: src/Dialogs/AddDialog.vala:267
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
 msgstr "描述："
 
-#: src/Dialogs/AddDialog.vala:252 src/Views/SuppliesView.vala:35
-msgid "BrandPrinter X3000"
-msgstr "品牌打印机 X3000"
+#: src/Dialogs/AddDialog.vala:272
+msgid "Description cannot be empty"
+msgstr ""
 
-#: src/Dialogs/AddDialog.vala:256
+#: src/Dialogs/AddDialog.vala:280
+msgid "Lab 1 or John's desk"
+msgstr "如：“实验室1”或\"办公桌\""
+
+#: src/Dialogs/AddDialog.vala:283
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
 msgstr "位置："
 
-#: src/Dialogs/AddDialog.vala:260
-msgid "Lab 1 or John's desk"
-msgstr "如：“实验室1”或\"办公桌\""
-
-#: src/Dialogs/AddDialog.vala:287
+#: src/Dialogs/AddDialog.vala:311
 msgid "Loading…"
 msgstr "加载中…"
 
-#: src/Dialogs/AddDialog.vala:318
+#: src/Dialogs/AddDialog.vala:342
 msgid "Back"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:322
+#: src/Dialogs/AddDialog.vala:346
 msgid "Add Printer"
 msgstr "添加打印机"
 
-#: src/Dialogs/AddDialog.vala:635
+#: src/Dialogs/AddDialog.vala:658
 msgid "Serial"
 msgstr "序列号"
 
-#: src/Dialogs/AddDialog.vala:638
+#: src/Dialogs/AddDialog.vala:661
 msgid "Local Printers"
 msgstr "本地打印机"
 
-#: src/Dialogs/AddDialog.vala:641
+#: src/Dialogs/AddDialog.vala:664
 msgid "Network Printers"
 msgstr "网络打印机"
 
-#: src/Dialogs/AddDialog.vala:644
+#: src/Dialogs/AddDialog.vala:667
 msgid "Available Network Printers"
 msgstr "可用的网络打印机"
 
-#: src/Dialogs/AddDialog.vala:682
+#: src/Dialogs/AddDialog.vala:705
 msgid "(recommended)"
 msgstr "（推荐）"
 
@@ -181,7 +188,7 @@ msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
 msgstr "所有未完成的任务都将被取消，所有打印历史都会被清除。"
 
-#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:37
 msgid "Clear All"
 msgstr "清除所有"
 
@@ -340,265 +347,265 @@ msgstr "未命名打印机"
 msgid "Ready"
 msgstr "就绪"
 
-#: src/Views/JobsView.vala:31
+#: src/Views/JobsView.vala:19
 msgid "Print Queue Is Empty"
 msgstr "打印队列为空"
 
-#: src/Views/JobsView.vala:31
+#: src/Views/JobsView.vala:19
 msgid "There are no pending jobs in the queue."
 msgstr "队列中无任务。"
 
-#: src/Views/JobsView.vala:110
+#: src/Views/JobsView.vala:103
 msgid "Completed Jobs"
 msgstr "已完成的任务"
 
-#: src/Views/SetupView.vala:53
+#: src/Views/SetupView.vala:38
 msgid "Pages per side:"
 msgstr "布局类型："
 
-#: src/Views/SetupView.vala:74
+#: src/Views/SetupView.vala:57
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "长边（标准）"
 
-#: src/Views/SetupView.vala:75
+#: src/Views/SetupView.vala:59
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "短边（翻转）"
 
-#: src/Views/SetupView.vala:126
+#: src/Views/SetupView.vala:113
 msgid "Two-sided:"
 msgstr "双面："
 
-#: src/Views/SetupView.vala:143
+#: src/Views/SetupView.vala:131
 msgid "Portrait"
 msgstr "纵向"
 
-#: src/Views/SetupView.vala:146
+#: src/Views/SetupView.vala:134
 msgid "Landscape"
 msgstr "横向"
 
-#: src/Views/SetupView.vala:149
+#: src/Views/SetupView.vala:137
 msgid "Reverse portrait"
 msgstr "反转纵向"
 
-#: src/Views/SetupView.vala:152
+#: src/Views/SetupView.vala:140
 msgid "Reverse landscape"
 msgstr "反转横向"
 
-#: src/Views/SetupView.vala:161
+#: src/Views/SetupView.vala:149
 msgid "Orientation:"
 msgstr "方向："
 
-#: src/Views/SetupView.vala:181
+#: src/Views/SetupView.vala:171
 msgid "Media Size:"
 msgstr "纸张尺寸："
 
-#: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
+#: src/Views/SetupView.vala:187 src/Views/SetupView.vala:340
 msgid "Automatic"
 msgstr "自动"
 
-#: src/Views/SetupView.vala:198
+#: src/Views/SetupView.vala:190
 msgid "One Color"
 msgstr "单色"
 
-#: src/Views/SetupView.vala:201
+#: src/Views/SetupView.vala:193
 msgid "Color"
 msgstr "彩色"
 
-#: src/Views/SetupView.vala:204
+#: src/Views/SetupView.vala:196
 msgid "One Color + Black"
 msgstr "单色 + 黑色"
 
-#: src/Views/SetupView.vala:207
+#: src/Views/SetupView.vala:199
 msgid "Greyscale"
 msgstr "黑白"
 
-#: src/Views/SetupView.vala:210
+#: src/Views/SetupView.vala:202
 msgid "Processed Color"
 msgstr "经处理的彩色"
 
-#: src/Views/SetupView.vala:213
+#: src/Views/SetupView.vala:205
 msgid "Processed Greyscale"
 msgstr "经处理的黑白"
 
-#: src/Views/SetupView.vala:222
+#: src/Views/SetupView.vala:214
 msgid "Color mode:"
 msgstr "颜色模式："
 
-#: src/Views/SetupView.vala:236
+#: src/Views/SetupView.vala:230
 msgid "Top Bin"
 msgstr "顶部仓"
 
-#: src/Views/SetupView.vala:239
+#: src/Views/SetupView.vala:233
 msgid "Middle Bin"
 msgstr "中间纸盒"
 
-#: src/Views/SetupView.vala:242
+#: src/Views/SetupView.vala:236
 msgid "Bottom Bin"
 msgstr "底部纸盒"
 
-#: src/Views/SetupView.vala:245
+#: src/Views/SetupView.vala:239
 msgid "Side Bin"
 msgstr "侧边纸盒"
 
-#: src/Views/SetupView.vala:248
+#: src/Views/SetupView.vala:242
 msgid "Left Bin"
 msgstr "左侧纸盒"
 
-#: src/Views/SetupView.vala:251
+#: src/Views/SetupView.vala:245
 msgid "Right Bin"
 msgstr "右侧纸盒"
 
-#: src/Views/SetupView.vala:254
+#: src/Views/SetupView.vala:248
 msgid "Center Bin"
 msgstr "中部纸盒"
 
-#: src/Views/SetupView.vala:257
+#: src/Views/SetupView.vala:251
 msgid "Rear Bin"
 msgstr "后侧纸盒"
 
-#: src/Views/SetupView.vala:260
+#: src/Views/SetupView.vala:254
 msgid "Face Up Bin"
 msgstr "正面仓"
 
-#: src/Views/SetupView.vala:263
+#: src/Views/SetupView.vala:257
 msgid "Face Down Bin"
 msgstr "底部仓"
 
-#: src/Views/SetupView.vala:266
+#: src/Views/SetupView.vala:260
 msgid "Large Capacity Bin"
 msgstr "大容量纸盒"
 
-#: src/Views/SetupView.vala:269
+#: src/Views/SetupView.vala:263
 msgid "My Mailbox"
 msgstr "我的邮箱"
 
-#: src/Views/SetupView.vala:274
+#: src/Views/SetupView.vala:268
 #, c-format
 msgid "Stacker %d"
 msgstr "堆叠器 %d"
 
-#: src/Views/SetupView.vala:277
+#: src/Views/SetupView.vala:271
 #, c-format
 msgid "Mailbox %d"
 msgstr "邮箱 %d"
 
-#: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
+#: src/Views/SetupView.vala:274 src/Views/SetupView.vala:404
 #, c-format
 msgid "Tray %d"
 msgstr "托盘 %d"
 
-#: src/Views/SetupView.vala:293
+#: src/Views/SetupView.vala:287
 msgid "Output Tray:"
 msgstr "输出托盘："
 
-#: src/Views/SetupView.vala:307
+#: src/Views/SetupView.vala:303
 msgid "Draft"
 msgstr "草稿"
 
-#: src/Views/SetupView.vala:310
+#: src/Views/SetupView.vala:306
 msgid "Normal"
 msgstr "普通"
 
-#: src/Views/SetupView.vala:313
+#: src/Views/SetupView.vala:309
 msgid "High"
 msgstr "高"
 
-#: src/Views/SetupView.vala:319
+#: src/Views/SetupView.vala:315
 msgid "Quality:"
 msgstr "质量："
 
-#: src/Views/SetupView.vala:333
+#: src/Views/SetupView.vala:331
 msgid "Paper Allocation"
 msgstr "纸张分配"
 
-#: src/Views/SetupView.vala:336
+#: src/Views/SetupView.vala:334
 msgid "Alternate Tray"
 msgstr "备用托盘"
 
-#: src/Views/SetupView.vala:339
+#: src/Views/SetupView.vala:337
 msgid "Alternate Roll"
 msgstr "备用卷"
 
-#: src/Views/SetupView.vala:345
+#: src/Views/SetupView.vala:343
 msgid "Bottom"
 msgstr "底部"
 
-#: src/Views/SetupView.vala:348
+#: src/Views/SetupView.vala:346
 msgid "By-pass Tray"
 msgstr "侧面托盘"
 
-#: src/Views/SetupView.vala:351
+#: src/Views/SetupView.vala:349
 msgid "Center"
 msgstr "均衡"
 
-#: src/Views/SetupView.vala:354
+#: src/Views/SetupView.vala:352
 msgid "Continuous Autofeed"
 msgstr "连续自动供纸"
 
-#: src/Views/SetupView.vala:358
+#: src/Views/SetupView.vala:356
 msgid "Disk"
 msgstr "磁盘"
 
-#: src/Views/SetupView.vala:361
+#: src/Views/SetupView.vala:359
 msgid "Envelope"
 msgstr "信封"
 
-#: src/Views/SetupView.vala:364
+#: src/Views/SetupView.vala:362
 msgid "Hagaki"
 msgstr "日式明信片"
 
-#: src/Views/SetupView.vala:367
+#: src/Views/SetupView.vala:365
 msgid "Large Capacity"
 msgstr "大容量"
 
-#: src/Views/SetupView.vala:370
+#: src/Views/SetupView.vala:368
 msgid "Left"
 msgstr "左声道"
 
-#: src/Views/SetupView.vala:373
+#: src/Views/SetupView.vala:371
 msgid "Main Tray"
 msgstr "主托盘"
 
-#: src/Views/SetupView.vala:376
+#: src/Views/SetupView.vala:374
 msgid "Main Roll"
 msgstr "主卷"
 
-#: src/Views/SetupView.vala:379
+#: src/Views/SetupView.vala:377
 msgid "Manual"
 msgstr "手动选择"
 
-#: src/Views/SetupView.vala:382
+#: src/Views/SetupView.vala:380
 msgid "Middle"
 msgstr "中部"
 
-#: src/Views/SetupView.vala:385
+#: src/Views/SetupView.vala:383
 msgid "Photo"
 msgstr "照片"
 
-#: src/Views/SetupView.vala:389
+#: src/Views/SetupView.vala:387
 msgid "Rear"
 msgstr "后侧"
 
-#: src/Views/SetupView.vala:392
+#: src/Views/SetupView.vala:390
 msgid "Right"
 msgstr "右声道"
 
-#: src/Views/SetupView.vala:395
+#: src/Views/SetupView.vala:393
 msgid "Side"
 msgstr "边缘"
 
-#: src/Views/SetupView.vala:398
+#: src/Views/SetupView.vala:396
 msgid "Top"
 msgstr "顶部"
 
-#: src/Views/SetupView.vala:403
+#: src/Views/SetupView.vala:401
 #, c-format
 msgid "Roll %d"
 msgstr "卷 %d"
 
-#: src/Views/SetupView.vala:419
+#: src/Views/SetupView.vala:417
 msgid "Paper Source:"
 msgstr "纸张来源："
 

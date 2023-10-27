@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-17 22:09+0000\n"
+"POT-Creation-Date: 2023-10-27 18:28+0000\n"
 "PO-Revision-Date: 2020-05-30 20:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -32,7 +32,7 @@ msgstr "Žádné tiskárny k dispozici"
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr "Připojte se k tiskárně kliknutím na ikonu v nástrojové liště níže."
 
-#: src/PrinterList.vala:50
+#: src/PrinterList.vala:37
 msgid "Add Printer…"
 msgstr "Přidat tiskárnu…"
 
@@ -92,85 +92,92 @@ msgstr "LPD/LPR host nebo tiskárna"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:70
 msgid "Finding nearby printers…"
 msgstr "Hledání tiskáren v okolí…"
 
-#: src/Dialogs/AddDialog.vala:93
+#: src/Dialogs/AddDialog.vala:96
 msgid "Refresh"
 msgstr "Obnovit"
 
-#: src/Dialogs/AddDialog.vala:97 src/Dialogs/AddDialog.vala:320
+#: src/Dialogs/AddDialog.vala:100 src/Dialogs/AddDialog.vala:344
 #: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "Storno"
 
-#: src/Dialogs/AddDialog.vala:99
+#: src/Dialogs/AddDialog.vala:102
 msgid "Next"
 msgstr "Další"
 
-#: src/Dialogs/AddDialog.vala:124
+#: src/Dialogs/AddDialog.vala:127
 msgid "Impossible to list all available printers"
 msgstr "Nelze vypsat všechny dostupné tiskárny"
 
-#. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:241
+#: src/Dialogs/AddDialog.vala:249
 #, fuzzy
 #| msgid "Connection:"
 msgid "Connection"
 msgstr "Připojení:"
 
-#: src/Dialogs/AddDialog.vala:248
+#: src/Dialogs/AddDialog.vala:254
+msgid "Connection uri must contain “://“"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+msgid "BrandPrinter X3000"
+msgstr "BrandPrinter X3000"
+
+#: src/Dialogs/AddDialog.vala:267
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
 msgstr "Popis:"
 
-#: src/Dialogs/AddDialog.vala:252 src/Views/SuppliesView.vala:35
-msgid "BrandPrinter X3000"
-msgstr "BrandPrinter X3000"
+#: src/Dialogs/AddDialog.vala:272
+msgid "Description cannot be empty"
+msgstr ""
 
-#: src/Dialogs/AddDialog.vala:256
+#: src/Dialogs/AddDialog.vala:280
+msgid "Lab 1 or John's desk"
+msgstr "Laboratoř 1 nebo Honzův stůl"
+
+#: src/Dialogs/AddDialog.vala:283
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
 msgstr "Umístění:"
 
-#: src/Dialogs/AddDialog.vala:260
-msgid "Lab 1 or John's desk"
-msgstr "Laboratoř 1 nebo Honzův stůl"
-
-#: src/Dialogs/AddDialog.vala:287
+#: src/Dialogs/AddDialog.vala:311
 #, fuzzy
 #| msgid "Processing…"
 msgid "Loading…"
 msgstr "Zpracovává se…"
 
-#: src/Dialogs/AddDialog.vala:318
+#: src/Dialogs/AddDialog.vala:342
 msgid "Back"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:322
+#: src/Dialogs/AddDialog.vala:346
 msgid "Add Printer"
 msgstr "Přidat tiskárnu"
 
-#: src/Dialogs/AddDialog.vala:635
+#: src/Dialogs/AddDialog.vala:658
 msgid "Serial"
 msgstr "Sériový port"
 
-#: src/Dialogs/AddDialog.vala:638
+#: src/Dialogs/AddDialog.vala:661
 msgid "Local Printers"
 msgstr "Místní tiskárny"
 
-#: src/Dialogs/AddDialog.vala:641
+#: src/Dialogs/AddDialog.vala:664
 msgid "Network Printers"
 msgstr "Síťové tiskárny"
 
-#: src/Dialogs/AddDialog.vala:644
+#: src/Dialogs/AddDialog.vala:667
 msgid "Available Network Printers"
 msgstr "Dostupné síťové tiskárny"
 
-#: src/Dialogs/AddDialog.vala:682
+#: src/Dialogs/AddDialog.vala:705
 msgid "(recommended)"
 msgstr "(doporučené)"
 
@@ -184,7 +191,7 @@ msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
 msgstr ""
 
-#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:37
 #, fuzzy
 #| msgid "Print Queue"
 msgid "Clear All"
@@ -360,265 +367,265 @@ msgstr "Nepojmenovaná tiskárna"
 msgid "Ready"
 msgstr "Připraveno"
 
-#: src/Views/JobsView.vala:31
+#: src/Views/JobsView.vala:19
 msgid "Print Queue Is Empty"
 msgstr "Tisková fronta je prázdná"
 
-#: src/Views/JobsView.vala:31
+#: src/Views/JobsView.vala:19
 msgid "There are no pending jobs in the queue."
 msgstr "V této frontě nejsou žádné čekající úlohy."
 
-#: src/Views/JobsView.vala:110
+#: src/Views/JobsView.vala:103
 msgid "Completed Jobs"
 msgstr "Dokončené úlohy"
 
-#: src/Views/SetupView.vala:53
+#: src/Views/SetupView.vala:38
 msgid "Pages per side:"
 msgstr "Stránek na stranu:"
 
-#: src/Views/SetupView.vala:74
+#: src/Views/SetupView.vala:57
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Dlouhá hrana (standardní)"
 
-#: src/Views/SetupView.vala:75
+#: src/Views/SetupView.vala:59
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Krátká hrana (flip)"
 
-#: src/Views/SetupView.vala:126
+#: src/Views/SetupView.vala:113
 msgid "Two-sided:"
 msgstr "Oboustranně:"
 
-#: src/Views/SetupView.vala:143
+#: src/Views/SetupView.vala:131
 msgid "Portrait"
 msgstr "Portrét"
 
-#: src/Views/SetupView.vala:146
+#: src/Views/SetupView.vala:134
 msgid "Landscape"
 msgstr "Krajina"
 
-#: src/Views/SetupView.vala:149
+#: src/Views/SetupView.vala:137
 msgid "Reverse portrait"
 msgstr "Obrácený portrét"
 
-#: src/Views/SetupView.vala:152
+#: src/Views/SetupView.vala:140
 msgid "Reverse landscape"
 msgstr "Obrácená krajina"
 
-#: src/Views/SetupView.vala:161
+#: src/Views/SetupView.vala:149
 msgid "Orientation:"
 msgstr "Orientace:"
 
-#: src/Views/SetupView.vala:181
+#: src/Views/SetupView.vala:171
 msgid "Media Size:"
 msgstr "Velikost média:"
 
-#: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
+#: src/Views/SetupView.vala:187 src/Views/SetupView.vala:340
 msgid "Automatic"
 msgstr "Automatický"
 
-#: src/Views/SetupView.vala:198
+#: src/Views/SetupView.vala:190
 msgid "One Color"
 msgstr "Jednobarevné"
 
-#: src/Views/SetupView.vala:201
+#: src/Views/SetupView.vala:193
 msgid "Color"
 msgstr "Barevné"
 
-#: src/Views/SetupView.vala:204
+#: src/Views/SetupView.vala:196
 msgid "One Color + Black"
 msgstr "Jedna barva + Černá"
 
-#: src/Views/SetupView.vala:207
+#: src/Views/SetupView.vala:199
 msgid "Greyscale"
 msgstr "Stupně šedi"
 
-#: src/Views/SetupView.vala:210
+#: src/Views/SetupView.vala:202
 msgid "Processed Color"
 msgstr "Zpracovaná barva"
 
-#: src/Views/SetupView.vala:213
+#: src/Views/SetupView.vala:205
 msgid "Processed Greyscale"
 msgstr "Zpracované odstíny šedi"
 
-#: src/Views/SetupView.vala:222
+#: src/Views/SetupView.vala:214
 msgid "Color mode:"
 msgstr "Režim barev:"
 
-#: src/Views/SetupView.vala:236
+#: src/Views/SetupView.vala:230
 msgid "Top Bin"
 msgstr "Horní zásobník"
 
-#: src/Views/SetupView.vala:239
+#: src/Views/SetupView.vala:233
 msgid "Middle Bin"
 msgstr "Prostřední zásobník"
 
-#: src/Views/SetupView.vala:242
+#: src/Views/SetupView.vala:236
 msgid "Bottom Bin"
 msgstr "Spodní zásobník"
 
-#: src/Views/SetupView.vala:245
+#: src/Views/SetupView.vala:239
 msgid "Side Bin"
 msgstr "Boční zásobník"
 
-#: src/Views/SetupView.vala:248
+#: src/Views/SetupView.vala:242
 msgid "Left Bin"
 msgstr "Levý zásobník"
 
-#: src/Views/SetupView.vala:251
+#: src/Views/SetupView.vala:245
 msgid "Right Bin"
 msgstr "Pravý zásobník"
 
-#: src/Views/SetupView.vala:254
+#: src/Views/SetupView.vala:248
 msgid "Center Bin"
 msgstr "Prostřední zásobník"
 
-#: src/Views/SetupView.vala:257
+#: src/Views/SetupView.vala:251
 msgid "Rear Bin"
 msgstr "Zadní zásobník"
 
-#: src/Views/SetupView.vala:260
+#: src/Views/SetupView.vala:254
 msgid "Face Up Bin"
 msgstr "Zásobník s tiskem na vrchní stranu"
 
-#: src/Views/SetupView.vala:263
+#: src/Views/SetupView.vala:257
 msgid "Face Down Bin"
 msgstr "Zásobník s tiskem na spodní stranu"
 
-#: src/Views/SetupView.vala:266
+#: src/Views/SetupView.vala:260
 msgid "Large Capacity Bin"
 msgstr "Velkokapacitní zásobník"
 
-#: src/Views/SetupView.vala:269
+#: src/Views/SetupView.vala:263
 msgid "My Mailbox"
 msgstr "Moje e-mailová schránka"
 
-#: src/Views/SetupView.vala:274
+#: src/Views/SetupView.vala:268
 #, c-format
 msgid "Stacker %d"
 msgstr "Stohovač %d"
 
-#: src/Views/SetupView.vala:277
+#: src/Views/SetupView.vala:271
 #, c-format
 msgid "Mailbox %d"
 msgstr "E-mailová schránka %d"
 
-#: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
+#: src/Views/SetupView.vala:274 src/Views/SetupView.vala:404
 #, c-format
 msgid "Tray %d"
 msgstr "Zásobník %d"
 
-#: src/Views/SetupView.vala:293
+#: src/Views/SetupView.vala:287
 msgid "Output Tray:"
 msgstr "Výstupní přihrádka:"
 
-#: src/Views/SetupView.vala:307
+#: src/Views/SetupView.vala:303
 msgid "Draft"
 msgstr "Koncept"
 
-#: src/Views/SetupView.vala:310
+#: src/Views/SetupView.vala:306
 msgid "Normal"
 msgstr "Normální"
 
-#: src/Views/SetupView.vala:313
+#: src/Views/SetupView.vala:309
 msgid "High"
 msgstr "Vysoká"
 
-#: src/Views/SetupView.vala:319
+#: src/Views/SetupView.vala:315
 msgid "Quality:"
 msgstr "Kvalita:"
 
-#: src/Views/SetupView.vala:333
+#: src/Views/SetupView.vala:331
 msgid "Paper Allocation"
 msgstr "Umístění papíru"
 
-#: src/Views/SetupView.vala:336
+#: src/Views/SetupView.vala:334
 msgid "Alternate Tray"
 msgstr "Alternativní zásobník"
 
-#: src/Views/SetupView.vala:339
+#: src/Views/SetupView.vala:337
 msgid "Alternate Roll"
 msgstr "Alternativní role"
 
-#: src/Views/SetupView.vala:345
+#: src/Views/SetupView.vala:343
 msgid "Bottom"
 msgstr "Spodní"
 
-#: src/Views/SetupView.vala:348
+#: src/Views/SetupView.vala:346
 msgid "By-pass Tray"
 msgstr "Náhradní zásobník"
 
-#: src/Views/SetupView.vala:351
+#: src/Views/SetupView.vala:349
 msgid "Center"
 msgstr "Střední"
 
-#: src/Views/SetupView.vala:354
+#: src/Views/SetupView.vala:352
 msgid "Continuous Autofeed"
 msgstr "Plynulé automatické plnění"
 
-#: src/Views/SetupView.vala:358
+#: src/Views/SetupView.vala:356
 msgid "Disk"
 msgstr "Disk"
 
-#: src/Views/SetupView.vala:361
+#: src/Views/SetupView.vala:359
 msgid "Envelope"
 msgstr "Obálka"
 
-#: src/Views/SetupView.vala:364
+#: src/Views/SetupView.vala:362
 msgid "Hagaki"
 msgstr "Hagaki"
 
-#: src/Views/SetupView.vala:367
+#: src/Views/SetupView.vala:365
 msgid "Large Capacity"
 msgstr "Velkokapacitní"
 
-#: src/Views/SetupView.vala:370
+#: src/Views/SetupView.vala:368
 msgid "Left"
 msgstr "Levé"
 
-#: src/Views/SetupView.vala:373
+#: src/Views/SetupView.vala:371
 msgid "Main Tray"
 msgstr "Hlavní zásobík"
 
-#: src/Views/SetupView.vala:376
+#: src/Views/SetupView.vala:374
 msgid "Main Roll"
 msgstr "Hlavní role"
 
-#: src/Views/SetupView.vala:379
+#: src/Views/SetupView.vala:377
 msgid "Manual"
 msgstr "Ručně"
 
-#: src/Views/SetupView.vala:382
+#: src/Views/SetupView.vala:380
 msgid "Middle"
 msgstr "Střední"
 
-#: src/Views/SetupView.vala:385
+#: src/Views/SetupView.vala:383
 msgid "Photo"
 msgstr "Fotka"
 
-#: src/Views/SetupView.vala:389
+#: src/Views/SetupView.vala:387
 msgid "Rear"
 msgstr "Zadní"
 
-#: src/Views/SetupView.vala:392
+#: src/Views/SetupView.vala:390
 msgid "Right"
 msgstr "Pravé"
 
-#: src/Views/SetupView.vala:395
+#: src/Views/SetupView.vala:393
 msgid "Side"
 msgstr "Boční"
 
-#: src/Views/SetupView.vala:398
+#: src/Views/SetupView.vala:396
 msgid "Top"
 msgstr "Horní"
 
-#: src/Views/SetupView.vala:403
+#: src/Views/SetupView.vala:401
 #, c-format
 msgid "Roll %d"
 msgstr "Role %d"
 
-#: src/Views/SetupView.vala:419
+#: src/Views/SetupView.vala:417
 msgid "Paper Source:"
 msgstr "Zdroj papíru:"
 

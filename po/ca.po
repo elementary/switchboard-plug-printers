@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-17 22:09+0000\n"
+"POT-Creation-Date: 2023-10-27 18:28+0000\n"
 "PO-Revision-Date: 2023-10-20 19:10+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -34,7 +34,7 @@ msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 "Connecteu amb una impressora clicant a la icona de la barra d'eines de sota."
 
-#: src/PrinterList.vala:50
+#: src/PrinterList.vala:37
 msgid "Add Printer…"
 msgstr "Afegeix una impressora…"
 
@@ -94,77 +94,84 @@ msgstr "Amfitrió/impressora LPD/LPR"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:67
+#: src/Dialogs/AddDialog.vala:70
 msgid "Finding nearby printers…"
 msgstr "Se cerquen impressores properes…"
 
-#: src/Dialogs/AddDialog.vala:93
+#: src/Dialogs/AddDialog.vala:96
 msgid "Refresh"
 msgstr "Actualitza"
 
-#: src/Dialogs/AddDialog.vala:97 src/Dialogs/AddDialog.vala:320
+#: src/Dialogs/AddDialog.vala:100 src/Dialogs/AddDialog.vala:344
 #: src/Widgets/JobRow.vala:79
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: src/Dialogs/AddDialog.vala:99
+#: src/Dialogs/AddDialog.vala:102
 msgid "Next"
 msgstr "Següent"
 
-#: src/Dialogs/AddDialog.vala:124
+#: src/Dialogs/AddDialog.vala:127
 msgid "Impossible to list all available printers"
 msgstr "No és possible enumerar totes les impressores disponibles"
 
-#. Shows the next panel with further configuration
-#: src/Dialogs/AddDialog.vala:241
+#: src/Dialogs/AddDialog.vala:249
 msgid "Connection"
 msgstr "Connexió"
 
-#: src/Dialogs/AddDialog.vala:248
-msgid "Description"
-msgstr "Descripció"
+#: src/Dialogs/AddDialog.vala:254
+msgid "Connection uri must contain “://“"
+msgstr ""
 
-#: src/Dialogs/AddDialog.vala:252 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:256
-msgid "Location"
-msgstr "Ubicació"
+#: src/Dialogs/AddDialog.vala:267
+msgid "Description"
+msgstr "Descripció"
 
-#: src/Dialogs/AddDialog.vala:260
+#: src/Dialogs/AddDialog.vala:272
+msgid "Description cannot be empty"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:280
 msgid "Lab 1 or John's desk"
 msgstr "Laboratori 1 o Escriptori del Joan"
 
-#: src/Dialogs/AddDialog.vala:287
+#: src/Dialogs/AddDialog.vala:283
+msgid "Location"
+msgstr "Ubicació"
+
+#: src/Dialogs/AddDialog.vala:311
 msgid "Loading…"
 msgstr "Es carrega…"
 
-#: src/Dialogs/AddDialog.vala:318
+#: src/Dialogs/AddDialog.vala:342
 msgid "Back"
 msgstr "Enrere"
 
-#: src/Dialogs/AddDialog.vala:322
+#: src/Dialogs/AddDialog.vala:346
 msgid "Add Printer"
 msgstr "Afegeix una impressora"
 
-#: src/Dialogs/AddDialog.vala:635
+#: src/Dialogs/AddDialog.vala:658
 msgid "Serial"
 msgstr "Número de sèrie"
 
-#: src/Dialogs/AddDialog.vala:638
+#: src/Dialogs/AddDialog.vala:661
 msgid "Local Printers"
 msgstr "Impressores locals"
 
-#: src/Dialogs/AddDialog.vala:641
+#: src/Dialogs/AddDialog.vala:664
 msgid "Network Printers"
 msgstr "Impressores de xarxa"
 
-#: src/Dialogs/AddDialog.vala:644
+#: src/Dialogs/AddDialog.vala:667
 msgid "Available Network Printers"
 msgstr "Impressores de xarxa disponibles"
 
-#: src/Dialogs/AddDialog.vala:682
+#: src/Dialogs/AddDialog.vala:705
 msgid "(recommended)"
 msgstr "(recomanat)"
 
@@ -180,7 +187,7 @@ msgstr ""
 "Totes les tasques no acabades es cancel·laran i s'esborrarà tot l'historial "
 "d'impressió."
 
-#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:45
+#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:37
 msgid "Clear All"
 msgstr "Neteja-ho tot"
 
@@ -341,265 +348,265 @@ msgstr "Impressora sense nom"
 msgid "Ready"
 msgstr "A punt"
 
-#: src/Views/JobsView.vala:31
+#: src/Views/JobsView.vala:19
 msgid "Print Queue Is Empty"
 msgstr "La cua d'impressió és buida."
 
-#: src/Views/JobsView.vala:31
+#: src/Views/JobsView.vala:19
 msgid "There are no pending jobs in the queue."
 msgstr "No hi ha tasques pendents a la cua."
 
-#: src/Views/JobsView.vala:110
+#: src/Views/JobsView.vala:103
 msgid "Completed Jobs"
 msgstr "Tasques acabades"
 
-#: src/Views/SetupView.vala:53
+#: src/Views/SetupView.vala:38
 msgid "Pages per side:"
 msgstr "Pàgines per cara:"
 
-#: src/Views/SetupView.vala:74
+#: src/Views/SetupView.vala:57
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Cantó llarg (estàndard)"
 
-#: src/Views/SetupView.vala:75
+#: src/Views/SetupView.vala:59
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Cantó curt (apaïsat)"
 
-#: src/Views/SetupView.vala:126
+#: src/Views/SetupView.vala:113
 msgid "Two-sided:"
 msgstr "Doble cara:"
 
-#: src/Views/SetupView.vala:143
+#: src/Views/SetupView.vala:131
 msgid "Portrait"
 msgstr "Retrat"
 
-#: src/Views/SetupView.vala:146
+#: src/Views/SetupView.vala:134
 msgid "Landscape"
 msgstr "Paisatge"
 
-#: src/Views/SetupView.vala:149
+#: src/Views/SetupView.vala:137
 msgid "Reverse portrait"
 msgstr "Retrat invers"
 
-#: src/Views/SetupView.vala:152
+#: src/Views/SetupView.vala:140
 msgid "Reverse landscape"
 msgstr "Paisatge invers"
 
-#: src/Views/SetupView.vala:161
+#: src/Views/SetupView.vala:149
 msgid "Orientation:"
 msgstr "Orientació:"
 
-#: src/Views/SetupView.vala:181
+#: src/Views/SetupView.vala:171
 msgid "Media Size:"
 msgstr "Mida del mitjà:"
 
-#: src/Views/SetupView.vala:195 src/Views/SetupView.vala:342
+#: src/Views/SetupView.vala:187 src/Views/SetupView.vala:340
 msgid "Automatic"
 msgstr "Automàtic"
 
-#: src/Views/SetupView.vala:198
+#: src/Views/SetupView.vala:190
 msgid "One Color"
 msgstr "Un color"
 
-#: src/Views/SetupView.vala:201
+#: src/Views/SetupView.vala:193
 msgid "Color"
 msgstr "Color"
 
-#: src/Views/SetupView.vala:204
+#: src/Views/SetupView.vala:196
 msgid "One Color + Black"
 msgstr "Un color + Negre"
 
-#: src/Views/SetupView.vala:207
+#: src/Views/SetupView.vala:199
 msgid "Greyscale"
 msgstr "Escala de grisos"
 
-#: src/Views/SetupView.vala:210
+#: src/Views/SetupView.vala:202
 msgid "Processed Color"
 msgstr "Color processat"
 
-#: src/Views/SetupView.vala:213
+#: src/Views/SetupView.vala:205
 msgid "Processed Greyscale"
 msgstr "Escala de grisos processada"
 
-#: src/Views/SetupView.vala:222
+#: src/Views/SetupView.vala:214
 msgid "Color mode:"
 msgstr "Mode del color:"
 
-#: src/Views/SetupView.vala:236
+#: src/Views/SetupView.vala:230
 msgid "Top Bin"
 msgstr "A dalt"
 
-#: src/Views/SetupView.vala:239
+#: src/Views/SetupView.vala:233
 msgid "Middle Bin"
 msgstr "Al mig"
 
-#: src/Views/SetupView.vala:242
+#: src/Views/SetupView.vala:236
 msgid "Bottom Bin"
 msgstr "A baix"
 
-#: src/Views/SetupView.vala:245
+#: src/Views/SetupView.vala:239
 msgid "Side Bin"
 msgstr "Side Bin"
 
-#: src/Views/SetupView.vala:248
+#: src/Views/SetupView.vala:242
 msgid "Left Bin"
 msgstr "Esquerra"
 
-#: src/Views/SetupView.vala:251
+#: src/Views/SetupView.vala:245
 msgid "Right Bin"
 msgstr "Paperera a la dreta"
 
-#: src/Views/SetupView.vala:254
+#: src/Views/SetupView.vala:248
 msgid "Center Bin"
 msgstr "Paperera al mig"
 
-#: src/Views/SetupView.vala:257
+#: src/Views/SetupView.vala:251
 msgid "Rear Bin"
 msgstr "Posterior"
 
-#: src/Views/SetupView.vala:260
+#: src/Views/SetupView.vala:254
 msgid "Face Up Bin"
 msgstr "De cara a dalt"
 
-#: src/Views/SetupView.vala:263
+#: src/Views/SetupView.vala:257
 msgid "Face Down Bin"
 msgstr "De cara a baix"
 
-#: src/Views/SetupView.vala:266
+#: src/Views/SetupView.vala:260
 msgid "Large Capacity Bin"
 msgstr "De gran capacitat"
 
-#: src/Views/SetupView.vala:269
+#: src/Views/SetupView.vala:263
 msgid "My Mailbox"
 msgstr "La meva bústia"
 
-#: src/Views/SetupView.vala:274
+#: src/Views/SetupView.vala:268
 #, c-format
 msgid "Stacker %d"
 msgstr "Pila %d"
 
-#: src/Views/SetupView.vala:277
+#: src/Views/SetupView.vala:271
 #, c-format
 msgid "Mailbox %d"
 msgstr "Bústia %d"
 
-#: src/Views/SetupView.vala:280 src/Views/SetupView.vala:406
+#: src/Views/SetupView.vala:274 src/Views/SetupView.vala:404
 #, c-format
 msgid "Tray %d"
 msgstr "Safata %d"
 
-#: src/Views/SetupView.vala:293
+#: src/Views/SetupView.vala:287
 msgid "Output Tray:"
 msgstr "Safata de sortida:"
 
-#: src/Views/SetupView.vala:307
+#: src/Views/SetupView.vala:303
 msgid "Draft"
 msgstr "Esborrany"
 
-#: src/Views/SetupView.vala:310
+#: src/Views/SetupView.vala:306
 msgid "Normal"
 msgstr "Normal"
 
-#: src/Views/SetupView.vala:313
+#: src/Views/SetupView.vala:309
 msgid "High"
 msgstr "Alt"
 
-#: src/Views/SetupView.vala:319
+#: src/Views/SetupView.vala:315
 msgid "Quality:"
 msgstr "Qualitat:"
 
-#: src/Views/SetupView.vala:333
+#: src/Views/SetupView.vala:331
 msgid "Paper Allocation"
 msgstr "Assignació del paper"
 
-#: src/Views/SetupView.vala:336
+#: src/Views/SetupView.vala:334
 msgid "Alternate Tray"
 msgstr "Alternança de safates"
 
-#: src/Views/SetupView.vala:339
+#: src/Views/SetupView.vala:337
 msgid "Alternate Roll"
 msgstr "Alternança de rotllo"
 
-#: src/Views/SetupView.vala:345
+#: src/Views/SetupView.vala:343
 msgid "Bottom"
 msgstr "Inferior"
 
-#: src/Views/SetupView.vala:348
+#: src/Views/SetupView.vala:346
 msgid "By-pass Tray"
 msgstr "Safata de bypass"
 
-#: src/Views/SetupView.vala:351
+#: src/Views/SetupView.vala:349
 msgid "Center"
 msgstr "Centre"
 
-#: src/Views/SetupView.vala:354
+#: src/Views/SetupView.vala:352
 msgid "Continuous Autofeed"
 msgstr "Alimentador continu"
 
-#: src/Views/SetupView.vala:358
+#: src/Views/SetupView.vala:356
 msgid "Disk"
 msgstr "Disc"
 
-#: src/Views/SetupView.vala:361
+#: src/Views/SetupView.vala:359
 msgid "Envelope"
 msgstr "Sobre"
 
-#: src/Views/SetupView.vala:364
+#: src/Views/SetupView.vala:362
 msgid "Hagaki"
 msgstr "Hagaki"
 
-#: src/Views/SetupView.vala:367
+#: src/Views/SetupView.vala:365
 msgid "Large Capacity"
 msgstr "De gran capacitat"
 
-#: src/Views/SetupView.vala:370
+#: src/Views/SetupView.vala:368
 msgid "Left"
 msgstr "Esquerra"
 
-#: src/Views/SetupView.vala:373
+#: src/Views/SetupView.vala:371
 msgid "Main Tray"
 msgstr "Safata principal"
 
-#: src/Views/SetupView.vala:376
+#: src/Views/SetupView.vala:374
 msgid "Main Roll"
 msgstr "Rotllo principal"
 
-#: src/Views/SetupView.vala:379
+#: src/Views/SetupView.vala:377
 msgid "Manual"
 msgstr "Manual"
 
-#: src/Views/SetupView.vala:382
+#: src/Views/SetupView.vala:380
 msgid "Middle"
 msgstr "Al mig"
 
-#: src/Views/SetupView.vala:385
+#: src/Views/SetupView.vala:383
 msgid "Photo"
 msgstr "Fotografia"
 
-#: src/Views/SetupView.vala:389
+#: src/Views/SetupView.vala:387
 msgid "Rear"
 msgstr "Posterior"
 
-#: src/Views/SetupView.vala:392
+#: src/Views/SetupView.vala:390
 msgid "Right"
 msgstr "Dreta"
 
-#: src/Views/SetupView.vala:395
+#: src/Views/SetupView.vala:393
 msgid "Side"
 msgstr "Lateral"
 
-#: src/Views/SetupView.vala:398
+#: src/Views/SetupView.vala:396
 msgid "Top"
 msgstr "A dalt"
 
-#: src/Views/SetupView.vala:403
+#: src/Views/SetupView.vala:401
 #, c-format
 msgid "Roll %d"
 msgstr "Rotllo %d"
 
-#: src/Views/SetupView.vala:419
+#: src/Views/SetupView.vala:417
 msgid "Paper Source:"
 msgstr "Font del paper:"
 
