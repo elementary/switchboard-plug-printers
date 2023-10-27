@@ -136,13 +136,8 @@ public class Printers.JobsView : Gtk.Frame {
     }
 
     private void refresh_job_list () {
-        var child = list_box.get_first_child ();
-        while (child != null) {
-            if (child is JobRow) {
-                list_box.remove (child);
-            }
-
-            child = child.get_next_sibling ();
+        while (list_box.get_row_at_index (0) != null) {
+            list_box.remove (list_box.get_row_at_index (0));
         }
 
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
