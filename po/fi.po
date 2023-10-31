@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-27 18:28+0000\n"
-"PO-Revision-Date: 2022-12-15 19:25+0000\n"
+"PO-Revision-Date: 2023-11-01 23:10+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/fi/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
 #: src/Plug.vala:38
@@ -114,38 +114,32 @@ msgid "Impossible to list all available printers"
 msgstr "Kaikkien saatavilla olevien tulostimen luettelointi ei ole mahdollista"
 
 #: src/Dialogs/AddDialog.vala:249
-#, fuzzy
-#| msgid "Connection:"
 msgid "Connection"
-msgstr "Yhteys:"
+msgstr "Yhteys"
 
 #: src/Dialogs/AddDialog.vala:254
 msgid "Connection uri must contain “://“"
-msgstr ""
+msgstr "Yhteyden URI:n tulee sisältää “://“"
 
 #: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
 #: src/Dialogs/AddDialog.vala:267
-#, fuzzy
-#| msgid "Description:"
 msgid "Description"
-msgstr "Kuvaus:"
+msgstr "Kuvaus"
 
 #: src/Dialogs/AddDialog.vala:272
 msgid "Description cannot be empty"
-msgstr ""
+msgstr "Kuvaus ei voi olla tyhjä"
 
 #: src/Dialogs/AddDialog.vala:280
 msgid "Lab 1 or John's desk"
 msgstr "Huone 1 tai Jussin pöytä"
 
 #: src/Dialogs/AddDialog.vala:283
-#, fuzzy
-#| msgid "Location:"
 msgid "Location"
-msgstr "Sijainti:"
+msgstr "Sijainti"
 
 #: src/Dialogs/AddDialog.vala:311
 msgid "Loading…"
@@ -153,7 +147,7 @@ msgstr "Ladataan…"
 
 #: src/Dialogs/AddDialog.vala:342
 msgid "Back"
-msgstr ""
+msgstr "Takaisin"
 
 #: src/Dialogs/AddDialog.vala:346
 msgid "Add Printer"
