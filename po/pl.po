@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-27 18:28+0000\n"
-"PO-Revision-Date: 2023-10-20 19:10+0000\n"
+"PO-Revision-Date: 2023-11-04 23:10+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/pl/>\n"
@@ -123,7 +123,7 @@ msgstr "Połączenie"
 
 #: src/Dialogs/AddDialog.vala:254
 msgid "Connection uri must contain “://“"
-msgstr ""
+msgstr "URI połączenia musi zawierać „://”"
 
 #: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
 msgid "BrandPrinter X3000"
@@ -135,7 +135,7 @@ msgstr "Opis"
 
 #: src/Dialogs/AddDialog.vala:272
 msgid "Description cannot be empty"
-msgstr ""
+msgstr "Opis nie może być pusty"
 
 #: src/Dialogs/AddDialog.vala:280
 msgid "Lab 1 or John's desk"
