@@ -34,8 +34,11 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
     }
 
     construct {
-        var stack = new Gtk.Stack ();
         var jobs_view = new JobsView (printer);
+
+        var stack = new Gtk.Stack () {
+            vhomogeneous = false
+        };
         stack.add_titled (jobs_view, "general", _("Print Queue"));
         stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
         stack.add_titled (new SuppliesView (printer), "supplies", _("Settings & Supplies"));
