@@ -116,20 +116,18 @@ public class Printers.Printer : GLib.Object {
         }
     }
 
+    public void set_as_default () {
+        try {
+            Cups.get_pk_helper ().printer_set_default (dest.name);
+            default_changed ();
+        } catch (Error e) {
+            critical (e.message);
+        }
+    }
+
     public bool is_default {
         get {
             return dest.is_default;
-        }
-
-        set {
-            if (value == true) {
-                try {
-                    Cups.get_pk_helper ().printer_set_default (dest.name);
-                    default_changed ();
-                } catch (Error e) {
-                    critical (e.message);
-                }
-            }
         }
     }
 

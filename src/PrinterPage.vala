@@ -34,8 +34,11 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
     }
 
     construct {
-        var stack = new Gtk.Stack ();
         var jobs_view = new JobsView (printer);
+
+        var stack = new Gtk.Stack () {
+            vhomogeneous = false
+        };
         stack.add_titled (jobs_view, "general", _("Print Queue"));
         stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
         stack.add_titled (new SuppliesView (printer), "supplies", _("Settings & Supplies"));
@@ -49,9 +52,15 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
         content_area.attach (stack_switcher, 0, 1);
         content_area.attach (stack, 0, 2);
 
+        var set_default = new Gtk.Button.with_label (_("Set as Default")) {
+            sensitive = !printer.is_default
+        };
+        set_default.clicked.connect (printer.set_as_default);
+
         var print_test = new Gtk.Button.with_label (_("Print Test Page"));
         print_test.clicked.connect (() => print_test_page ());
 
+        action_area.add (set_default);
         action_area.add (print_test);
 
         printer.bind_property ("info", this, "title");
@@ -62,6 +71,10 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
 
         status_switch.bind_property ("active", printer, "is-enabled", BindingFlags.DEFAULT);
         status_switch.bind_property ("active", print_test, "sensitive", BindingFlags.DEFAULT);
+
+        printer.default_changed.connect (() => {
+            set_default.sensitive = !printer.is_default;
+        });
 
         show_all ();
     }

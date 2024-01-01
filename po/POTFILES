@@ -9,6 +9,5 @@ src/Objects/Printer.vala
 src/Views/JobsView.vala
 src/Views/SetupView.vala
 src/Views/SuppliesView.vala
-src/Widgets/InkLevel.vala
 src/Widgets/JobRow.vala
 src/Widgets/PrinterRow.vala

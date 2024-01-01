@@ -1,72 +1,141 @@
-/*-
- * Copyright (c) 2015-2018 elementary LLC. (https://elementary.io)
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Library General Public
- * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Library General Public License for more details.
- *
- * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
- * Boston, MA 02110-1301, USA.
+/*
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.SuppliesView: Gtk.ScrolledWindow {
+public class Printers.SuppliesView: Gtk.Box {
     public Printer printer { get; construct; }
+
+    private const string STYLE_CLASS =
+    """
+    block.filled {
+        background-color: #%s;
+    }
+    """;
 
     public SuppliesView (Printer printer) {
         Object (printer: printer);
     }
 
     construct {
-        var name_label = new Gtk.Label (_("Description:"));
-        name_label.xalign = 1;
-
-        var name_entry = new Gtk.Entry ();
-        name_entry.hexpand = true;
-        name_entry.placeholder_text = _("BrandPrinter X3000");
-        name_entry.text = printer.info;
-        name_entry.bind_property ("text", printer, "info", GLib.BindingFlags.BIDIRECTIONAL);
-
-        var location_label = new Gtk.Label (_("Location:"));
-        location_label.xalign = 1;
-
-        var location_entry = new Gtk.Entry ();
-        location_entry.text = printer.location;
-        location_entry.placeholder_text = _("Lab 1 or John's Desk");
-        location_entry.bind_property ("text", printer, "location", GLib.BindingFlags.BIDIRECTIONAL);
-
-        var default_label = new Gtk.Label (_("Use as default printer:"));
-
-        var default_switch = new Gtk.Switch ();
-        default_switch.active = printer.is_default;
-        default_switch.halign = Gtk.Align.START;
-        default_switch.valign = Gtk.Align.CENTER;
-        default_switch.bind_property ("active", printer, "is-default", GLib.BindingFlags.BIDIRECTIONAL);
-
-        var ink_level = new InkLevel (printer);
-        ink_level.margin_top = 12;
-
-        var grid = new Gtk.Grid () {
-            column_spacing = 12,
-            row_spacing = 12
+        var name_entry = new Gtk.Entry () {
+            hexpand = true,
+            placeholder_text = _("BrandPrinter X3000")
         };
-        grid.attach (name_label, 0, 0);
-        grid.attach (name_entry, 1, 0);
-        grid.attach (location_label, 0, 1);
-        grid.attach (location_entry, 1, 1);
-        grid.attach (default_label, 0, 2);
-        grid.attach (default_switch, 1, 2);
-        grid.attach (ink_level, 0, 3, 2, 1);
 
-        add (grid);
+        var name_label = new Granite.HeaderLabel (_("Description")) {
+            mnemonic_widget = name_entry
+        };
+
+        var location_entry = new Gtk.Entry () {
+            placeholder_text = _("Lab 1 or John's Desk")
+        };
+
+        var location_label = new Granite.HeaderLabel (_("Location")) {
+            margin_top = 12,
+            mnemonic_widget = location_entry
+        };
+
+        var ink_flowbox = new Gtk.FlowBox () {
+            column_spacing = 12,
+            homogeneous = true,
+            margin_top = 24,
+            max_children_per_line = 30,
+            row_spacing = 24
+        };
+
+        orientation = VERTICAL;
+        add (name_label);
+        add (name_entry);
+        add (location_label);
+        add (location_entry);
+        add (ink_flowbox);
+
+        printer.bind_property ("info", name_entry, "text", BIDIRECTIONAL | SYNC_CREATE);
+        printer.bind_property ("location", location_entry, "text", BIDIRECTIONAL | SYNC_CREATE);
+
+        var colors = printer.get_color_levels ();
+
+        var size_group = new Gtk.SizeGroup (VERTICAL);
+
+        foreach (Printer.ColorLevel color in colors) {
+            string[] colors_codes = { null, "3689E6" };
+            if ("#" in color.color) {
+                colors_codes = color.color.split ("#");
+            }
+
+            var ink_box = new Gtk.Box (HORIZONTAL, 3);
+
+            for (int i = 1; i < colors_codes.length; i++) {
+                var css_color = STYLE_CLASS.printf (colors_codes[i]);
+
+                var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max) {
+                    height_request = 64,
+                    hexpand = true,
+                    vexpand = true,
+                    inverted = true,
+                    orientation = VERTICAL,
+                    value = color.level
+                };
+
+                var provider = new Gtk.CssProvider ();
+                try {
+                    provider.load_from_data (css_color, css_color.length);
+                    level.get_style_context ().add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                } catch (Error e) {
+                    warning ("Could not create CSS Provider: %s\nStylesheet:\n%s", e.message, css_color);
+                }
+
+                ink_box.add (level);
+            }
+
+            var label = new Gtk.Label (get_translated_name (color.name ?? "black")) {
+                justify = CENTER,
+                wrap = true,
+                max_width_chars = 10,
+                yalign = 0
+            };
+
+            var color_box = new Gtk.Box (VERTICAL, 6);
+            color_box.add (ink_box);
+            color_box.add (label);
+
+            size_group.add_widget (label);
+
+            ink_flowbox.add (color_box);
+        }
+    }
+
+    private unowned string get_translated_name (string name) {
+        switch (name) {
+            case "black(PGBK)":
+            case "Black(PGBK)":
+                return _("Black (PGBK)");
+            case "black(BK)":
+            case "Black(BK)":
+                return _("Black (BK)");
+            case "black":
+            case "black ink":
+            case "Black":
+                return _("Black");
+            case "yellow":
+            case "yellow ink":
+            case "Yellow":
+                return _("Yellow");
+            case "cyan":
+            case "cyan ink":
+            case "Cyan":
+                return _("Cyan");
+            case "magenta":
+            case "magenta ink":
+            case "Magenta":
+                return _("Magenta");
+            case "tri-color ink":
+                return _("Tri-color");
+        }
+
+        return name;
     }
 }

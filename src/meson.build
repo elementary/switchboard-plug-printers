@@ -16,7 +16,6 @@ plug_files = files(
     'Views/SetupView.vala',
     'Views/SuppliesView.vala',
     'Widgets/ErrorRevealer.vala',
-    'Widgets/InkLevel.vala',
     'Widgets/JobRow.vala',
     'Widgets/PrinterRow.vala'
 )
