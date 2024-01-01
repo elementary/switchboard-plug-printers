@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:28+0000\n"
+"POT-Creation-Date: 2024-01-01 12:31+0000\n"
 "PO-Revision-Date: 2023-12-06 21:10+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -37,24 +37,28 @@ msgstr ""
 msgid "Add Printer…"
 msgstr "Printer toevoegen…"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:42
 msgid "Print Queue"
 msgstr "Printwachtrij"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:43
 msgid "Page Setup"
 msgstr "Pagina instellingen"
 
-#: src/PrinterPage.vala:41
+#: src/PrinterPage.vala:44
 msgid "Settings & Supplies"
 msgstr "Instellingen & voorraden"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:55
+msgid "Set as Default"
+msgstr ""
+
+#: src/PrinterPage.vala:60
 msgid "Print Test Page"
 msgstr "Test pagina afdrukken"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:111
+#: src/PrinterPage.vala:124
 msgid "Test page"
 msgstr "Test pagina"
 
@@ -122,11 +126,11 @@ msgstr "Verbinding"
 msgid "Connection uri must contain “://“"
 msgstr "Uri voor verbinding moet een “://“ bevatten"
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "MerkPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:267
+#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
 msgid "Description"
 msgstr "Omschrijving"
 
@@ -138,7 +142,7 @@ msgstr "Beschrijving kan niet leeg zijn"
 msgid "Lab 1 or John's desk"
 msgstr "Lab 1 of John's bureau"
 
-#: src/Dialogs/AddDialog.vala:283
+#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
 msgid "Location"
 msgstr "Locatie"
 
@@ -343,11 +347,11 @@ msgstr ""
 "De optische lichtgevoelige geleider (optical photo conductor) functioneert "
 "niet meer"
 
-#: src/Objects/Printer.vala:151
+#: src/Objects/Printer.vala:149
 msgid "Unnamed Printer"
 msgstr "Printer zonder naam"
 
-#: src/Objects/Printer.vala:224
+#: src/Objects/Printer.vala:222
 msgid "Ready"
 msgstr "Gereed"
 
@@ -613,47 +617,35 @@ msgstr "Rol %d"
 msgid "Paper Source:"
 msgstr "Papier invoer:"
 
-#: src/Views/SuppliesView.vala:30
-msgid "Description:"
-msgstr "Omschrijving:"
-
-#: src/Views/SuppliesView.vala:39
-msgid "Location:"
-msgstr "Locatie:"
-
-#: src/Views/SuppliesView.vala:44
+#: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
 msgstr "lab 1 of john's bureau"
 
-#: src/Views/SuppliesView.vala:47
-msgid "Use as default printer:"
-msgstr "Gebruik als standaardprinter:"
-
-#: src/Widgets/InkLevel.vala:97
+#: src/Views/SuppliesView.vala:115
 msgid "Black (PGBK)"
 msgstr "Zwart (PGBK)"
 
-#: src/Widgets/InkLevel.vala:100
+#: src/Views/SuppliesView.vala:118
 msgid "Black (BK)"
 msgstr "Zwart (BK)"
 
-#: src/Widgets/InkLevel.vala:104
+#: src/Views/SuppliesView.vala:122
 msgid "Black"
 msgstr "Zwart"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Views/SuppliesView.vala:126
 msgid "Yellow"
 msgstr "Geel"
 
-#: src/Widgets/InkLevel.vala:112
+#: src/Views/SuppliesView.vala:130
 msgid "Cyan"
 msgstr "Lichtblauw"
 
-#: src/Widgets/InkLevel.vala:116
+#: src/Views/SuppliesView.vala:134
 msgid "Magenta"
 msgstr "Roze"
 
-#: src/Widgets/InkLevel.vala:118
+#: src/Views/SuppliesView.vala:136
 msgid "Tri-color"
 msgstr "Drie kleuren"
 
@@ -672,6 +664,15 @@ msgstr "Verwijder deze printer"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Uitgeschakeld"
+
+#~ msgid "Description:"
+#~ msgstr "Omschrijving:"
+
+#~ msgid "Location:"
+#~ msgstr "Locatie:"
+
+#~ msgid "Use as default printer:"
+#~ msgstr "Gebruik als standaardprinter:"
 
 #~ msgid "Previous"
 #~ msgstr "Vorige"

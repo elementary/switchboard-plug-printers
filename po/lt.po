@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:28+0000\n"
+"POT-Creation-Date: 2024-01-01 12:31+0000\n"
 "PO-Revision-Date: 2019-07-22 07:24+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -40,24 +40,28 @@ msgstr ""
 msgid "Add Printer…"
 msgstr "Pridėti spausdintuvą…"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:42
 msgid "Print Queue"
 msgstr "Spausdinimo eilė"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:43
 msgid "Page Setup"
 msgstr "Puslapio sąranka"
 
-#: src/PrinterPage.vala:41
+#: src/PrinterPage.vala:44
 msgid "Settings & Supplies"
 msgstr "Nustatymai ir tiekėjai"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:55
+msgid "Set as Default"
+msgstr ""
+
+#: src/PrinterPage.vala:60
 msgid "Print Test Page"
 msgstr "Spausdinti bandomąjį puslapį"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:111
+#: src/PrinterPage.vala:124
 msgid "Test page"
 msgstr "Bandomasis puslapis"
 
@@ -127,11 +131,11 @@ msgstr "Ryšys:"
 msgid "Connection uri must contain “://“"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "SpausdintuvoPavadinimas X3000"
 
-#: src/Dialogs/AddDialog.vala:267
+#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
@@ -145,7 +149,7 @@ msgstr ""
 msgid "Lab 1 or John's desk"
 msgstr "1 kabinetas ar Jono stalas"
 
-#: src/Dialogs/AddDialog.vala:283
+#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
@@ -363,11 +367,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Optinis fotolaidininkas daugiau nebeveikia"
 
-#: src/Objects/Printer.vala:151
+#: src/Objects/Printer.vala:149
 msgid "Unnamed Printer"
 msgstr "Spausdintuvas be pavadinimo"
 
-#: src/Objects/Printer.vala:224
+#: src/Objects/Printer.vala:222
 msgid "Ready"
 msgstr "Pasiruošęs"
 
@@ -633,47 +637,35 @@ msgstr "Rulonas %d"
 msgid "Paper Source:"
 msgstr "Popieriaus šaltinis:"
 
-#: src/Views/SuppliesView.vala:30
-msgid "Description:"
-msgstr "Aprašas:"
-
-#: src/Views/SuppliesView.vala:39
-msgid "Location:"
-msgstr "Vieta:"
-
-#: src/Views/SuppliesView.vala:44
+#: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
 msgstr "1 kabinetas arba Jono stalas"
 
-#: src/Views/SuppliesView.vala:47
-msgid "Use as default printer:"
-msgstr "Naudoti kaip numatytąjį spausdintuvą:"
-
-#: src/Widgets/InkLevel.vala:97
+#: src/Views/SuppliesView.vala:115
 msgid "Black (PGBK)"
 msgstr "Juoda (PGBK)"
 
-#: src/Widgets/InkLevel.vala:100
+#: src/Views/SuppliesView.vala:118
 msgid "Black (BK)"
 msgstr "Juoda (BK)"
 
-#: src/Widgets/InkLevel.vala:104
+#: src/Views/SuppliesView.vala:122
 msgid "Black"
 msgstr "Juoda"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Views/SuppliesView.vala:126
 msgid "Yellow"
 msgstr "Geltona"
 
-#: src/Widgets/InkLevel.vala:112
+#: src/Views/SuppliesView.vala:130
 msgid "Cyan"
 msgstr "Žydra"
 
-#: src/Widgets/InkLevel.vala:116
+#: src/Views/SuppliesView.vala:134
 msgid "Magenta"
 msgstr "Purpurinė"
 
-#: src/Widgets/InkLevel.vala:118
+#: src/Views/SuppliesView.vala:136
 msgid "Tri-color"
 msgstr "Trispalvė"
 
@@ -694,6 +686,15 @@ msgstr "Šalinti spausdintuvą"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Išjungta"
+
+#~ msgid "Description:"
+#~ msgstr "Aprašas:"
+
+#~ msgid "Location:"
+#~ msgstr "Vieta:"
+
+#~ msgid "Use as default printer:"
+#~ msgstr "Naudoti kaip numatytąjį spausdintuvą:"
 
 #~ msgid "Previous"
 #~ msgstr "Ankstesnis"

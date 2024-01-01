@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:28+0000\n"
+"POT-Creation-Date: 2024-01-01 12:31+0000\n"
 "PO-Revision-Date: 2019-07-22 04:24+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -35,24 +35,28 @@ msgstr "Konektu al printilo klakante la piktogramon en la malsupra ilobreto."
 msgid "Add Printer…"
 msgstr "Aldoni printilon…"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:42
 msgid "Print Queue"
 msgstr "Printa vico"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:43
 msgid "Page Setup"
 msgstr "Paĝaj agordoj"
 
-#: src/PrinterPage.vala:41
+#: src/PrinterPage.vala:44
 msgid "Settings & Supplies"
 msgstr "Agordoj & Provizaĵoj"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:55
+msgid "Set as Default"
+msgstr ""
+
+#: src/PrinterPage.vala:60
 msgid "Print Test Page"
 msgstr "Printi testan paĝon"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:111
+#: src/PrinterPage.vala:124
 msgid "Test page"
 msgstr "Testa paĝo"
 
@@ -122,11 +126,11 @@ msgstr "Konekto:"
 msgid "Connection uri must contain “://“"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:267
+#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
@@ -140,7 +144,7 @@ msgstr ""
 msgid "Lab 1 or John's desk"
 msgstr "Lab 1 aŭ oficejo de John"
 
-#: src/Dialogs/AddDialog.vala:283
+#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
@@ -357,11 +361,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "La optika foton-kondukilo kadukas"
 
-#: src/Objects/Printer.vala:151
+#: src/Objects/Printer.vala:149
 msgid "Unnamed Printer"
 msgstr "Sennoma printilo"
 
-#: src/Objects/Printer.vala:224
+#: src/Objects/Printer.vala:222
 msgid "Ready"
 msgstr "Preta"
 
@@ -627,47 +631,35 @@ msgstr "Rulcilindro %d"
 msgid "Paper Source:"
 msgstr "Papera fonto:"
 
-#: src/Views/SuppliesView.vala:30
-msgid "Description:"
-msgstr "Priskribo:"
-
-#: src/Views/SuppliesView.vala:39
-msgid "Location:"
-msgstr "Loko:"
-
-#: src/Views/SuppliesView.vala:44
+#: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 aŭ oficejo de John"
 
-#: src/Views/SuppliesView.vala:47
-msgid "Use as default printer:"
-msgstr "Uzi kiel aprioran printilon:"
-
-#: src/Widgets/InkLevel.vala:97
+#: src/Views/SuppliesView.vala:115
 msgid "Black (PGBK)"
 msgstr "Nigra (PGBK-koloroj)"
 
-#: src/Widgets/InkLevel.vala:100
+#: src/Views/SuppliesView.vala:118
 msgid "Black (BK)"
 msgstr "Nigra (BK-koloroj)"
 
-#: src/Widgets/InkLevel.vala:104
+#: src/Views/SuppliesView.vala:122
 msgid "Black"
 msgstr "Nigra"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Views/SuppliesView.vala:126
 msgid "Yellow"
 msgstr "Flava"
 
-#: src/Widgets/InkLevel.vala:112
+#: src/Views/SuppliesView.vala:130
 msgid "Cyan"
 msgstr "Cejana"
 
-#: src/Widgets/InkLevel.vala:116
+#: src/Views/SuppliesView.vala:134
 msgid "Magenta"
 msgstr "Fuksina"
 
-#: src/Widgets/InkLevel.vala:118
+#: src/Views/SuppliesView.vala:136
 msgid "Tri-color"
 msgstr "Tri-kolora"
 
@@ -688,6 +680,15 @@ msgstr "Forigi printilon"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Malaktivigita"
+
+#~ msgid "Description:"
+#~ msgstr "Priskribo:"
+
+#~ msgid "Location:"
+#~ msgstr "Loko:"
+
+#~ msgid "Use as default printer:"
+#~ msgstr "Uzi kiel aprioran printilon:"
 
 #~ msgid "Previous"
 #~ msgstr "Antaŭa"

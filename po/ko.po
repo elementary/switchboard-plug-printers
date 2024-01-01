@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:28+0000\n"
+"POT-Creation-Date: 2024-01-01 12:31+0000\n"
 "PO-Revision-Date: 2022-08-06 15:44+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -35,24 +35,28 @@ msgstr "아래 툴바의 아이콘을 클릭해서 프린터에 연결하세요.
 msgid "Add Printer…"
 msgstr "프린터 추가…"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:42
 msgid "Print Queue"
 msgstr "프린트 대기열"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:43
 msgid "Page Setup"
 msgstr "페이지 설정"
 
-#: src/PrinterPage.vala:41
+#: src/PrinterPage.vala:44
 msgid "Settings & Supplies"
 msgstr "설정 및 공급"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:55
+msgid "Set as Default"
+msgstr ""
+
+#: src/PrinterPage.vala:60
 msgid "Print Test Page"
 msgstr "시험 페이지 인쇄"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:111
+#: src/PrinterPage.vala:124
 msgid "Test page"
 msgstr "시험 페이지"
 
@@ -122,11 +126,11 @@ msgstr "연결:"
 msgid "Connection uri must contain “://“"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "브랜드 프린터 X3000"
 
-#: src/Dialogs/AddDialog.vala:267
+#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
@@ -140,7 +144,7 @@ msgstr ""
 msgid "Lab 1 or John's desk"
 msgstr "연구실 1 또는 누군가의 책상"
 
-#: src/Dialogs/AddDialog.vala:283
+#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
@@ -340,11 +344,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "감광 반도체가 더 이상 작동하지 않습니다"
 
-#: src/Objects/Printer.vala:151
+#: src/Objects/Printer.vala:149
 msgid "Unnamed Printer"
 msgstr "이름 없는 프린터"
 
-#: src/Objects/Printer.vala:224
+#: src/Objects/Printer.vala:222
 msgid "Ready"
 msgstr "사용함"
 
@@ -610,47 +614,35 @@ msgstr "%d개 롤"
 msgid "Paper Source:"
 msgstr "용지 공급:"
 
-#: src/Views/SuppliesView.vala:30
-msgid "Description:"
-msgstr "설명:"
-
-#: src/Views/SuppliesView.vala:39
-msgid "Location:"
-msgstr "위치:"
-
-#: src/Views/SuppliesView.vala:44
+#: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
 msgstr "연구실 1 또는 누군가의 책상"
 
-#: src/Views/SuppliesView.vala:47
-msgid "Use as default printer:"
-msgstr "기본 프린터로 사용함:"
-
-#: src/Widgets/InkLevel.vala:97
+#: src/Views/SuppliesView.vala:115
 msgid "Black (PGBK)"
 msgstr "검은색 (PGBK)"
 
-#: src/Widgets/InkLevel.vala:100
+#: src/Views/SuppliesView.vala:118
 msgid "Black (BK)"
 msgstr "검은색 (BK)"
 
-#: src/Widgets/InkLevel.vala:104
+#: src/Views/SuppliesView.vala:122
 msgid "Black"
 msgstr "검은색"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Views/SuppliesView.vala:126
 msgid "Yellow"
 msgstr "노란색"
 
-#: src/Widgets/InkLevel.vala:112
+#: src/Views/SuppliesView.vala:130
 msgid "Cyan"
 msgstr "청록색"
 
-#: src/Widgets/InkLevel.vala:116
+#: src/Views/SuppliesView.vala:134
 msgid "Magenta"
 msgstr "진홍색"
 
-#: src/Widgets/InkLevel.vala:118
+#: src/Views/SuppliesView.vala:136
 msgid "Tri-color"
 msgstr "삼원색"
 
@@ -669,6 +661,15 @@ msgstr "프린터 제거"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "사용 안 함"
+
+#~ msgid "Description:"
+#~ msgstr "설명:"
+
+#~ msgid "Location:"
+#~ msgstr "위치:"
+
+#~ msgid "Use as default printer:"
+#~ msgstr "기본 프린터로 사용함:"
 
 #~ msgid "Previous"
 #~ msgstr "이전"

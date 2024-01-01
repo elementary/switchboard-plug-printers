@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:28+0000\n"
+"POT-Creation-Date: 2024-01-01 12:31+0000\n"
 "PO-Revision-Date: 2023-11-01 23:10+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -36,24 +36,28 @@ msgstr ""
 msgid "Add Printer…"
 msgstr "Lisää tulostin…"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:42
 msgid "Print Queue"
 msgstr "Tulostusjono"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:43
 msgid "Page Setup"
 msgstr "Sivun määritykset"
 
-#: src/PrinterPage.vala:41
+#: src/PrinterPage.vala:44
 msgid "Settings & Supplies"
 msgstr "Asetukset ja tarvikkeet"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:55
+msgid "Set as Default"
+msgstr ""
+
+#: src/PrinterPage.vala:60
 msgid "Print Test Page"
 msgstr "Tulosta testisivu"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:111
+#: src/PrinterPage.vala:124
 msgid "Test page"
 msgstr "Testisivu"
 
@@ -121,11 +125,11 @@ msgstr "Yhteys"
 msgid "Connection uri must contain “://“"
 msgstr "Yhteyden URI:n tulee sisältää “://“"
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:267
+#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
 msgid "Description"
 msgstr "Kuvaus"
 
@@ -137,7 +141,7 @@ msgstr "Kuvaus ei voi olla tyhjä"
 msgid "Lab 1 or John's desk"
 msgstr "Huone 1 tai Jussin pöytä"
 
-#: src/Dialogs/AddDialog.vala:283
+#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
 msgid "Location"
 msgstr "Sijainti"
 
@@ -337,11 +341,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Valojohdeyksikkö on rikki"
 
-#: src/Objects/Printer.vala:151
+#: src/Objects/Printer.vala:149
 msgid "Unnamed Printer"
 msgstr "Nimetön tulostin"
 
-#: src/Objects/Printer.vala:224
+#: src/Objects/Printer.vala:222
 msgid "Ready"
 msgstr "Valmis"
 
@@ -607,47 +611,35 @@ msgstr "Rullaa %d"
 msgid "Paper Source:"
 msgstr "Paperilähde:"
 
-#: src/Views/SuppliesView.vala:30
-msgid "Description:"
-msgstr "Kuvaus:"
-
-#: src/Views/SuppliesView.vala:39
-msgid "Location:"
-msgstr "Sijainti:"
-
-#: src/Views/SuppliesView.vala:44
+#: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
 msgstr "Labra 1 tai Juhan pöytä"
 
-#: src/Views/SuppliesView.vala:47
-msgid "Use as default printer:"
-msgstr "Käytä oletustulostimena:"
-
-#: src/Widgets/InkLevel.vala:97
+#: src/Views/SuppliesView.vala:115
 msgid "Black (PGBK)"
 msgstr "Musta (PGBK)"
 
-#: src/Widgets/InkLevel.vala:100
+#: src/Views/SuppliesView.vala:118
 msgid "Black (BK)"
 msgstr "Musta (BK)"
 
-#: src/Widgets/InkLevel.vala:104
+#: src/Views/SuppliesView.vala:122
 msgid "Black"
 msgstr "Musta"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Views/SuppliesView.vala:126
 msgid "Yellow"
 msgstr "Keltainen"
 
-#: src/Widgets/InkLevel.vala:112
+#: src/Views/SuppliesView.vala:130
 msgid "Cyan"
 msgstr "Syaani"
 
-#: src/Widgets/InkLevel.vala:116
+#: src/Views/SuppliesView.vala:134
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/InkLevel.vala:118
+#: src/Views/SuppliesView.vala:136
 msgid "Tri-color"
 msgstr "Kolmiväri"
 
@@ -666,6 +658,15 @@ msgstr "Poista tämä tulostin"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Pois käytöstä"
+
+#~ msgid "Description:"
+#~ msgstr "Kuvaus:"
+
+#~ msgid "Location:"
+#~ msgstr "Sijainti:"
+
+#~ msgid "Use as default printer:"
+#~ msgstr "Käytä oletustulostimena:"
 
 #~ msgid "Previous"
 #~ msgstr "Edellinen"

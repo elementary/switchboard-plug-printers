@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:28+0000\n"
+"POT-Creation-Date: 2024-01-01 12:31+0000\n"
 "PO-Revision-Date: 2022-10-07 16:57+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -36,24 +36,28 @@ msgstr "پەیوەست ببە بە چاپکەرێک لە ڕێگەی ئایکۆن
 msgid "Add Printer…"
 msgstr "زیادکردنی چاپکەر…"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:42
 msgid "Print Queue"
 msgstr "نۆرەی چاپکردن"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:43
 msgid "Page Setup"
 msgstr "ڕێکخستنی پەڕە"
 
-#: src/PrinterPage.vala:41
+#: src/PrinterPage.vala:44
 msgid "Settings & Supplies"
 msgstr "ڕێکخستنەکان & دابینکردنەکان"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:55
+msgid "Set as Default"
+msgstr ""
+
+#: src/PrinterPage.vala:60
 msgid "Print Test Page"
 msgstr "پەڕەی تاقیکردنەوە چاپ بکە"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:111
+#: src/PrinterPage.vala:124
 msgid "Test page"
 msgstr "پەڕەی تاقیکردنەوە"
 
@@ -123,11 +127,11 @@ msgstr "پەیوەستی:"
 msgid "Connection uri must contain “://“"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "براند پرێنتەر X3000"
 
-#: src/Dialogs/AddDialog.vala:267
+#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
@@ -141,7 +145,7 @@ msgstr ""
 msgid "Lab 1 or John's desk"
 msgstr "تاقیگەی ١ یان مێزی ئاگا"
 
-#: src/Dialogs/AddDialog.vala:283
+#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
@@ -344,11 +348,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "The optical photo conductor is no longer functioning"
 
-#: src/Objects/Printer.vala:151
+#: src/Objects/Printer.vala:149
 msgid "Unnamed Printer"
 msgstr "چاپکەری ناو لێ نەنراو"
 
-#: src/Objects/Printer.vala:224
+#: src/Objects/Printer.vala:222
 msgid "Ready"
 msgstr "ئامادە"
 
@@ -627,47 +631,35 @@ msgstr "Roll %d"
 msgid "Paper Source:"
 msgstr "سەرچاوەی پەڕ:"
 
-#: src/Views/SuppliesView.vala:30
-msgid "Description:"
-msgstr "فرۆزە:"
-
-#: src/Views/SuppliesView.vala:39
-msgid "Location:"
-msgstr "شوێن:"
-
-#: src/Views/SuppliesView.vala:44
+#: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
 msgstr "تاقیگەی یەک یان مێزی ئاگا"
 
-#: src/Views/SuppliesView.vala:47
-msgid "Use as default printer:"
-msgstr "وەکو چاپکەری سەرەکی بەکاریبهێنە:"
-
-#: src/Widgets/InkLevel.vala:97
+#: src/Views/SuppliesView.vala:115
 msgid "Black (PGBK)"
 msgstr "ڕەش (PGBK)"
 
-#: src/Widgets/InkLevel.vala:100
+#: src/Views/SuppliesView.vala:118
 msgid "Black (BK)"
 msgstr "ڕەش (BK)"
 
-#: src/Widgets/InkLevel.vala:104
+#: src/Views/SuppliesView.vala:122
 msgid "Black"
 msgstr "ڕەش"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Views/SuppliesView.vala:126
 msgid "Yellow"
 msgstr "زەرد"
 
-#: src/Widgets/InkLevel.vala:112
+#: src/Views/SuppliesView.vala:130
 msgid "Cyan"
 msgstr "سایان (شینی تۆخ)"
 
-#: src/Widgets/InkLevel.vala:116
+#: src/Views/SuppliesView.vala:134
 msgid "Magenta"
 msgstr "ماگێنتا"
 
-#: src/Widgets/InkLevel.vala:118
+#: src/Views/SuppliesView.vala:136
 msgid "Tri-color"
 msgstr "سێ ڕەنگ"
 
@@ -686,6 +678,15 @@ msgstr "ئەم چاپکەرە بسڕەوە"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "وەستێنراو"
+
+#~ msgid "Description:"
+#~ msgstr "فرۆزە:"
+
+#~ msgid "Location:"
+#~ msgstr "شوێن:"
+
+#~ msgid "Use as default printer:"
+#~ msgstr "وەکو چاپکەری سەرەکی بەکاریبهێنە:"
 
 #~ msgid "Previous"
 #~ msgstr "پێشتر"

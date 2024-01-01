@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:28+0000\n"
+"POT-Creation-Date: 2024-01-01 12:31+0000\n"
 "PO-Revision-Date: 2023-12-16 04:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -36,24 +36,28 @@ msgstr ""
 msgid "Add Printer…"
 msgstr "Nyomtató hozzáadása…"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:42
 msgid "Print Queue"
 msgstr "Nyomtatási sor"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:43
 msgid "Page Setup"
 msgstr "Oldalbeállítás"
 
-#: src/PrinterPage.vala:41
+#: src/PrinterPage.vala:44
 msgid "Settings & Supplies"
 msgstr "Beállítások és kellékek"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:55
+msgid "Set as Default"
+msgstr ""
+
+#: src/PrinterPage.vala:60
 msgid "Print Test Page"
 msgstr "Tesztoldal nyomtatása"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:111
+#: src/PrinterPage.vala:124
 msgid "Test page"
 msgstr "Tesztoldal"
 
@@ -121,11 +125,11 @@ msgstr "Kapcsolat"
 msgid "Connection uri must contain “://“"
 msgstr "A kapcsolat urinak tartalmaznia kell \"://\"-t"
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:267
+#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
 msgid "Description"
 msgstr "Leírás"
 
@@ -137,7 +141,7 @@ msgstr "A leírás nem lehet üres"
 msgid "Lab 1 or John's desk"
 msgstr "1-es labor vagy Tamás asztala"
 
-#: src/Dialogs/AddDialog.vala:283
+#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
 msgid "Location"
 msgstr "Hely"
 
@@ -338,11 +342,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Az optikai fotovezető meghibásodott"
 
-#: src/Objects/Printer.vala:151
+#: src/Objects/Printer.vala:149
 msgid "Unnamed Printer"
 msgstr "Névtelen nyomtató"
 
-#: src/Objects/Printer.vala:224
+#: src/Objects/Printer.vala:222
 msgid "Ready"
 msgstr "Készenlétben"
 
@@ -608,47 +612,35 @@ msgstr "%d. tekercs"
 msgid "Paper Source:"
 msgstr "Papírforrás:"
 
-#: src/Views/SuppliesView.vala:30
-msgid "Description:"
-msgstr "Leírás:"
-
-#: src/Views/SuppliesView.vala:39
-msgid "Location:"
-msgstr "Hely:"
-
-#: src/Views/SuppliesView.vala:44
+#: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
 msgstr "1-es labor vagy Tamás asztala"
 
-#: src/Views/SuppliesView.vala:47
-msgid "Use as default printer:"
-msgstr "Használja alapértelmezett nyomtatóként:"
-
-#: src/Widgets/InkLevel.vala:97
+#: src/Views/SuppliesView.vala:115
 msgid "Black (PGBK)"
 msgstr "Fekete (PGBK)"
 
-#: src/Widgets/InkLevel.vala:100
+#: src/Views/SuppliesView.vala:118
 msgid "Black (BK)"
 msgstr "Fekete (BK)"
 
-#: src/Widgets/InkLevel.vala:104
+#: src/Views/SuppliesView.vala:122
 msgid "Black"
 msgstr "Fekete"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Views/SuppliesView.vala:126
 msgid "Yellow"
 msgstr "Sárga"
 
-#: src/Widgets/InkLevel.vala:112
+#: src/Views/SuppliesView.vala:130
 msgid "Cyan"
 msgstr "Cián"
 
-#: src/Widgets/InkLevel.vala:116
+#: src/Views/SuppliesView.vala:134
 msgid "Magenta"
 msgstr "Bíborvörös"
 
-#: src/Widgets/InkLevel.vala:118
+#: src/Views/SuppliesView.vala:136
 msgid "Tri-color"
 msgstr "Háromszínű"
 
@@ -667,6 +659,15 @@ msgstr "Nyomtató eltávolítása"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Kikapcsolva"
+
+#~ msgid "Description:"
+#~ msgstr "Leírás:"
+
+#~ msgid "Location:"
+#~ msgstr "Hely:"
+
+#~ msgid "Use as default printer:"
+#~ msgstr "Használja alapértelmezett nyomtatóként:"
 
 #~ msgid "Previous"
 #~ msgstr "Előző"
