@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:28+0000\n"
+"POT-Creation-Date: 2024-01-01 12:31+0000\n"
 "PO-Revision-Date: 2015-10-14 17:32+0000\n"
 "Last-Translator: ABCDEFGH <aefgh7233@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,25 +33,29 @@ msgstr ""
 msgid "Add Printer…"
 msgstr ""
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:42
 #, fuzzy
 msgid "Print Queue"
 msgstr "เครื่องพิมพ์"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:43
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:41
+#: src/PrinterPage.vala:44
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:55
+msgid "Set as Default"
+msgstr ""
+
+#: src/PrinterPage.vala:60
 msgid "Print Test Page"
 msgstr "พิมพ์หน้าทดสอบ"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:111
+#: src/PrinterPage.vala:124
 msgid "Test page"
 msgstr ""
 
@@ -120,11 +124,11 @@ msgstr ""
 msgid "Connection uri must contain “://“"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:267
+#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
 msgid "Description"
 msgstr ""
 
@@ -136,7 +140,7 @@ msgstr ""
 msgid "Lab 1 or John's desk"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:283
+#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
 msgid "Location"
 msgstr ""
 
@@ -346,12 +350,12 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr ""
 
-#: src/Objects/Printer.vala:151
+#: src/Objects/Printer.vala:149
 #, fuzzy
 msgid "Unnamed Printer"
 msgstr "เครื่องพิมพ์"
 
-#: src/Objects/Printer.vala:224
+#: src/Objects/Printer.vala:222
 msgid "Ready"
 msgstr "พร้อม"
 
@@ -627,48 +631,35 @@ msgstr "Roll %d"
 msgid "Paper Source:"
 msgstr "แหล่งเก็บกระดาษ:"
 
-#: src/Views/SuppliesView.vala:30
-msgid "Description:"
-msgstr ""
-
-#: src/Views/SuppliesView.vala:39
-msgid "Location:"
-msgstr ""
-
-#: src/Views/SuppliesView.vala:44
+#: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
 msgstr ""
 
-#: src/Views/SuppliesView.vala:47
-#, fuzzy
-msgid "Use as default printer:"
-msgstr "ใช้ให้เป็นเครื่องพิมพ์เริ่มต้น"
-
-#: src/Widgets/InkLevel.vala:97
+#: src/Views/SuppliesView.vala:115
 msgid "Black (PGBK)"
 msgstr ""
 
-#: src/Widgets/InkLevel.vala:100
+#: src/Views/SuppliesView.vala:118
 msgid "Black (BK)"
 msgstr ""
 
-#: src/Widgets/InkLevel.vala:104
+#: src/Views/SuppliesView.vala:122
 msgid "Black"
 msgstr ""
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Views/SuppliesView.vala:126
 msgid "Yellow"
 msgstr ""
 
-#: src/Widgets/InkLevel.vala:112
+#: src/Views/SuppliesView.vala:130
 msgid "Cyan"
 msgstr ""
 
-#: src/Widgets/InkLevel.vala:116
+#: src/Views/SuppliesView.vala:134
 msgid "Magenta"
 msgstr ""
 
-#: src/Widgets/InkLevel.vala:118
+#: src/Views/SuppliesView.vala:136
 msgid "Tri-color"
 msgstr ""
 
@@ -687,6 +678,10 @@ msgstr ""
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Use as default printer:"
+#~ msgstr "ใช้ให้เป็นเครื่องพิมพ์เริ่มต้น"
 
 #~ msgid "Processing…"
 #~ msgstr "กำลังประมวลผล..."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:28+0000\n"
+"POT-Creation-Date: 2024-01-01 12:31+0000\n"
 "PO-Revision-Date: 2023-10-29 00:13+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -35,24 +35,28 @@ msgstr "Connect to a printer by clicking the icon in the toolbar below."
 msgid "Add Printer…"
 msgstr "Add Printer…"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:42
 msgid "Print Queue"
 msgstr "Print Queue"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:43
 msgid "Page Setup"
 msgstr "Page Setup"
 
-#: src/PrinterPage.vala:41
+#: src/PrinterPage.vala:44
 msgid "Settings & Supplies"
 msgstr "Settings & Supplies"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:55
+msgid "Set as Default"
+msgstr ""
+
+#: src/PrinterPage.vala:60
 msgid "Print Test Page"
 msgstr "Print Test Page"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:111
+#: src/PrinterPage.vala:124
 msgid "Test page"
 msgstr "Test page"
 
@@ -120,11 +124,11 @@ msgstr "Connection"
 msgid "Connection uri must contain “://“"
 msgstr "Connection uri must contain “://“"
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:267
+#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
 msgid "Description"
 msgstr "Description"
 
@@ -136,7 +140,7 @@ msgstr "Description cannot be empty"
 msgid "Lab 1 or John's desk"
 msgstr "Lab 1 or John's desk"
 
-#: src/Dialogs/AddDialog.vala:283
+#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
 msgid "Location"
 msgstr "Location"
 
@@ -336,11 +340,11 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "The optical photo conductor is no longer functioning"
 
-#: src/Objects/Printer.vala:151
+#: src/Objects/Printer.vala:149
 msgid "Unnamed Printer"
 msgstr "Unnamed Printer"
 
-#: src/Objects/Printer.vala:224
+#: src/Objects/Printer.vala:222
 msgid "Ready"
 msgstr "Ready"
 
@@ -606,47 +610,35 @@ msgstr "Roll %d"
 msgid "Paper Source:"
 msgstr "Paper Source:"
 
-#: src/Views/SuppliesView.vala:30
-msgid "Description:"
-msgstr "Description:"
-
-#: src/Views/SuppliesView.vala:39
-msgid "Location:"
-msgstr "Location:"
-
-#: src/Views/SuppliesView.vala:44
+#: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
 msgstr "Lab 1 or Fred's Desk"
 
-#: src/Views/SuppliesView.vala:47
-msgid "Use as default printer:"
-msgstr "Use as default printer:"
-
-#: src/Widgets/InkLevel.vala:97
+#: src/Views/SuppliesView.vala:115
 msgid "Black (PGBK)"
 msgstr "Black (PGBK)"
 
-#: src/Widgets/InkLevel.vala:100
+#: src/Views/SuppliesView.vala:118
 msgid "Black (BK)"
 msgstr "Black (BK)"
 
-#: src/Widgets/InkLevel.vala:104
+#: src/Views/SuppliesView.vala:122
 msgid "Black"
 msgstr "Black"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Views/SuppliesView.vala:126
 msgid "Yellow"
 msgstr "Yellow"
 
-#: src/Widgets/InkLevel.vala:112
+#: src/Views/SuppliesView.vala:130
 msgid "Cyan"
 msgstr "Cyan"
 
-#: src/Widgets/InkLevel.vala:116
+#: src/Views/SuppliesView.vala:134
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/InkLevel.vala:118
+#: src/Views/SuppliesView.vala:136
 msgid "Tri-color"
 msgstr "Tri-colour"
 
@@ -665,6 +657,15 @@ msgstr "Remove this printer"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Disabled"
+
+#~ msgid "Description:"
+#~ msgstr "Description:"
+
+#~ msgid "Location:"
+#~ msgstr "Location:"
+
+#~ msgid "Use as default printer:"
+#~ msgstr "Use as default printer:"
 
 #~ msgid "Previous"
 #~ msgstr "Previous"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:28+0000\n"
+"POT-Creation-Date: 2024-01-01 12:31+0000\n"
 "PO-Revision-Date: 2018-10-22 19:26+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -36,24 +36,28 @@ msgstr ""
 msgid "Add Printer…"
 msgstr "Lägg till skrivare…"
 
-#: src/PrinterPage.vala:39
+#: src/PrinterPage.vala:42
 msgid "Print Queue"
 msgstr "Utskriftskö"
 
-#: src/PrinterPage.vala:40
+#: src/PrinterPage.vala:43
 msgid "Page Setup"
 msgstr "Siduppsättning"
 
-#: src/PrinterPage.vala:41
+#: src/PrinterPage.vala:44
 msgid "Settings & Supplies"
 msgstr "Inställningar och utrustning"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:55
+msgid "Set as Default"
+msgstr ""
+
+#: src/PrinterPage.vala:60
 msgid "Print Test Page"
 msgstr "Skriv ut testsida"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:111
+#: src/PrinterPage.vala:124
 msgid "Test page"
 msgstr "Testsida"
 
@@ -123,11 +127,11 @@ msgstr "Anslutning:"
 msgid "Connection uri must contain “://“"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:35
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:267
+#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
@@ -141,7 +145,7 @@ msgstr ""
 msgid "Lab 1 or John's desk"
 msgstr "Labb 1 eller Svens skrivbord"
 
-#: src/Dialogs/AddDialog.vala:283
+#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
@@ -359,12 +363,12 @@ msgctxt "printer state"
 msgid "The optical photo conductor is no longer functioning"
 msgstr "Den optiska fotoledaren fungerar inte längre"
 
-#: src/Objects/Printer.vala:151
+#: src/Objects/Printer.vala:149
 #, fuzzy
 msgid "Unnamed Printer"
 msgstr "Lägg till skrivare"
 
-#: src/Objects/Printer.vala:224
+#: src/Objects/Printer.vala:222
 msgid "Ready"
 msgstr "Klar"
 
@@ -632,47 +636,35 @@ msgstr "Rulle %d"
 msgid "Paper Source:"
 msgstr "Papperskälla:"
 
-#: src/Views/SuppliesView.vala:30
-msgid "Description:"
-msgstr "Beskrivning:"
-
-#: src/Views/SuppliesView.vala:39
-msgid "Location:"
-msgstr "Plats:"
-
-#: src/Views/SuppliesView.vala:44
+#: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
 msgstr "Labb 1 eller Svens skrivbord"
 
-#: src/Views/SuppliesView.vala:47
-msgid "Use as default printer:"
-msgstr "Använd som standardskrivare:"
-
-#: src/Widgets/InkLevel.vala:97
+#: src/Views/SuppliesView.vala:115
 msgid "Black (PGBK)"
 msgstr "Svart (PGBK)"
 
-#: src/Widgets/InkLevel.vala:100
+#: src/Views/SuppliesView.vala:118
 msgid "Black (BK)"
 msgstr "Svart (BK)"
 
-#: src/Widgets/InkLevel.vala:104
+#: src/Views/SuppliesView.vala:122
 msgid "Black"
 msgstr "Svart"
 
-#: src/Widgets/InkLevel.vala:108
+#: src/Views/SuppliesView.vala:126
 msgid "Yellow"
 msgstr "Gul"
 
-#: src/Widgets/InkLevel.vala:112
+#: src/Views/SuppliesView.vala:130
 msgid "Cyan"
 msgstr "Cyan"
 
-#: src/Widgets/InkLevel.vala:116
+#: src/Views/SuppliesView.vala:134
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Widgets/InkLevel.vala:118
+#: src/Views/SuppliesView.vala:136
 msgid "Tri-color"
 msgstr "Trefärgad"
 
@@ -693,6 +685,15 @@ msgstr "Ta bort skrivare"
 #: src/Widgets/PrinterRow.vala:124
 msgid "Disabled"
 msgstr "Inaktiverad"
+
+#~ msgid "Description:"
+#~ msgstr "Beskrivning:"
+
+#~ msgid "Location:"
+#~ msgstr "Plats:"
+
+#~ msgid "Use as default printer:"
+#~ msgstr "Använd som standardskrivare:"
 
 #~ msgid "Previous"
 #~ msgstr "Tillbaka"
