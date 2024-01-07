@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-01 12:31+0000\n"
-"PO-Revision-Date: 2023-10-29 00:13+0000\n"
+"PO-Revision-Date: 2024-01-08 14:11+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/de/>\n"
@@ -52,7 +52,7 @@ msgstr "Einstellungen & Zubehör"
 
 #: src/PrinterPage.vala:55
 msgid "Set as Default"
-msgstr ""
+msgstr "Als Standard festlegen"
 
 #: src/PrinterPage.vala:60
 msgid "Print Test Page"
