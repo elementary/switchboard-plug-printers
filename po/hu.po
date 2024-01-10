@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-01 12:31+0000\n"
-"PO-Revision-Date: 2023-12-16 04:07+0000\n"
+"PO-Revision-Date: 2024-01-12 00:11+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/hu/>\n"
@@ -50,7 +50,7 @@ msgstr "Beállítások és kellékek"
 
 #: src/PrinterPage.vala:55
 msgid "Set as Default"
-msgstr ""
+msgstr "Beállítás alapértelmezettként"
 
 #: src/PrinterPage.vala:60
 msgid "Print Test Page"
