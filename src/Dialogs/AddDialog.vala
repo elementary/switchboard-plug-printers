@@ -1,21 +1,6 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
-/*-
- * Copyright (c) 2015-2018 elementary LLC. (https://elementary.io)
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Library General Public
- * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Library General Public License for more details.
- *
- * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
- * Boston, MA 02110-1301, USA.
+/*
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
@@ -40,13 +25,13 @@ namespace Printers.Translations {
     }
 }
 
-public class Printers.AddDialog : Hdy.Window {
+public class Printers.AddDialog : Gtk.Window {
     private Granite.ValidatedEntry connection_entry;
     private Granite.ValidatedEntry description_entry;
     private Gtk.Button add_printer_button;
     private Gtk.Button refresh_button;
     private Gtk.Stack stack;
-    private Granite.Widgets.AlertView alertview;
+    private Granite.Placeholder alertview;
     private Gtk.Stack drivers_stack;
     private Gee.LinkedList<Printers.DeviceDriver> drivers;
     private Gtk.ListBox driver_view;
@@ -73,9 +58,8 @@ public class Printers.AddDialog : Hdy.Window {
             halign = CENTER,
             valign = CENTER
         };
-        loading_box.add (loading_label);
-        loading_box.add (spinner);
-        loading_box.show_all ();
+        loading_box.append (loading_label);
+        loading_box.append (spinner);
 
         devices_list = new Gtk.ListBox () {
             hexpand = true,
@@ -85,13 +69,14 @@ public class Printers.AddDialog : Hdy.Window {
         devices_list.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) temp_device_list_header);
         devices_list.set_sort_func ((Gtk.ListBoxSortFunc) temp_device_list_sort);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = devices_list
         };
 
         var frame = new Gtk.Frame (null) {
             child = scrolled
         };
+        frame.add_css_class ("dialog-content-area");
 
         refresh_button = new Gtk.Button.with_label (_("Refresh")) {
             sensitive = false
@@ -102,42 +87,43 @@ public class Printers.AddDialog : Hdy.Window {
         var next_button = new Gtk.Button.with_label (_("Next")) {
             sensitive = false
         };
-        next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        next_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var button_box = new Gtk.Box (HORIZONTAL, 6);
-        button_box.add (refresh_button);
-        button_box.add (new Gtk.Grid () { hexpand = true });
-        button_box.add (cancel_button);
-        button_box.add (next_button);
+        var button_box = new Gtk.Box (HORIZONTAL, 0);
+        button_box.add_css_class ("dialog-action-area");
+        button_box.append (refresh_button);
+        button_box.append (new Gtk.Grid () { hexpand = true });
+        button_box.append (cancel_button);
+        button_box.append (next_button);
 
         var size_group = new Gtk.SizeGroup (HORIZONTAL);
         size_group.add_widget (refresh_button);
         size_group.add_widget (cancel_button);
         size_group.add_widget (next_button);
 
-        var devices_box = new Gtk.Box (VERTICAL, 24) {
-            margin_top = 12,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12
-        };
-        devices_box.add (frame);
-        devices_box.add (button_box);
+        var devices_box = new Gtk.Box (VERTICAL, 0);
+        devices_box.append (frame);
+        devices_box.append (button_box);
 
-        alertview = new Granite.Widgets.AlertView (_("Impossible to list all available printers"), "", "dialog-error");
-        alertview.no_show_all = true;
+        alertview = new Granite.Placeholder (_("Impossible to list all available printers")) {
+            icon = new ThemedIcon ("dialog-error")
+        };
 
         stack = new Gtk.Stack () {
             transition_type = SLIDE_LEFT_RIGHT
         };
         stack.add_named (devices_box, "devices-grid");
-        stack.add (alertview);
+        stack.add_child (alertview);
+
+        var window_handle = new Gtk.WindowHandle () {
+            child = stack
+        };
 
         default_height = 450;
         default_width = 500;
-        child = stack;
-        type_hint = DIALOG;
-        show_all ();
+        child = window_handle;
+        titlebar = new Gtk.Grid () { visible = false };
+        add_css_class ("dialog");
 
         drivers = new Gee.LinkedList<Printers.DeviceDriver> ();
 
@@ -155,8 +141,9 @@ public class Printers.AddDialog : Hdy.Window {
 
         refresh_button.clicked.connect (() => {
             refresh_button.sensitive = false;
-            foreach (var row in devices_list.get_children ()) {
-                devices_list.remove (row);
+
+            while (devices_list.get_row_at_index (0) != null) {
+                devices_list.remove (devices_list.get_row_at_index (0));
             }
 
             search_device.begin ();
@@ -224,17 +211,14 @@ public class Printers.AddDialog : Hdy.Window {
     // Once devices are available.
     private void process_devices (Gee.Collection<Printers.TempDevice> tempdevices) {
         foreach (var tempdevice in tempdevices) {
-            devices_list.add (new TempDeviceRow (tempdevice));
+            devices_list.append (new TempDeviceRow (tempdevice));
         }
 
-        devices_list.show_all ();
         refresh_button.sensitive = true;
     }
 
     // Shows the error panel
     private void show_error (string error) {
-        alertview.no_show_all = false;
-        alertview.show_all ();
         stack.set_visible_child (alertview);
         alertview.description = error;
     }
@@ -252,10 +236,8 @@ public class Printers.AddDialog : Hdy.Window {
 
         var connection_error = new ErrorRevealer (
             _("Connection uri must contain “://“")
-        ) {
-            margin_top = 3
-        };
-        connection_error.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+        );
+        connection_error.add_css_class (Granite.STYLE_CLASS_ERROR);
 
         description_entry = new Granite.ValidatedEntry () {
             hexpand = true,
@@ -270,10 +252,8 @@ public class Printers.AddDialog : Hdy.Window {
 
         var description_error = new ErrorRevealer (
             _("Description cannot be empty")
-        ) {
-            margin_top = 3
-        };
-        description_error.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+        );
+        description_error.add_css_class (Granite.STYLE_CLASS_ERROR);
 
         var location_entry = new Gtk.Entry () {
             hexpand = true,
@@ -302,7 +282,7 @@ public class Printers.AddDialog : Hdy.Window {
         make_view.get_selection ().mode = Gtk.SelectionMode.BROWSE;
         make_view.insert_column_with_attributes (-1, null, cellrenderer, "text", 0);
 
-        var make_scrolled = new Gtk.ScrolledWindow (null, null) {
+        var make_scrolled = new Gtk.ScrolledWindow () {
             child = make_view,
             hscrollbar_policy = NEVER
         };
@@ -310,16 +290,20 @@ public class Printers.AddDialog : Hdy.Window {
         driver_view = new Gtk.ListBox ();
         driver_view.set_placeholder (new Gtk.Label (_("Loading…")));
 
-        var driver_scrolled = new Gtk.ScrolledWindow (null, null) {
+        var driver_scrolled = new Gtk.ScrolledWindow () {
             child = driver_view,
             hscrollbar_policy = NEVER,
             hexpand = true,
             vexpand = true
         };
 
-        var drivers_paned = new Gtk.Paned (HORIZONTAL);
-        drivers_paned.pack1 (make_scrolled, false, false);
-        drivers_paned.pack2 (driver_scrolled, true, false);
+        var drivers_paned = new Gtk.Paned (HORIZONTAL) {
+            start_child = make_scrolled,
+            end_child = driver_scrolled,
+            resize_start_child = false,
+            shrink_start_child = false,
+            shrink_end_child = false
+        };
 
         drivers_stack = new Gtk.Stack () {
             transition_type = CROSSFADE,
@@ -328,12 +312,10 @@ public class Printers.AddDialog : Hdy.Window {
         };
         drivers_stack.add_named (spinner, "loading");
         drivers_stack.add_named (drivers_paned, "drivers");
-        drivers_stack.show_all ();
 
         var frame = new Gtk.Frame (null) {
             child = drivers_stack,
-            margin_top = 12,
-            margin_bottom = 24
+            margin_top = 12
         };
 
         driver_cancellable = new Cancellable ();
@@ -346,25 +328,22 @@ public class Printers.AddDialog : Hdy.Window {
         add_printer_button = new Gtk.Button.with_label (_("Add Printer")) {
             sensitive = false
         };
-        add_printer_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        add_printer_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var button_box = new Gtk.Box (HORIZONTAL, 6) {
+        var button_box = new Gtk.Box (HORIZONTAL, 0) {
             halign = END,
             homogeneous = true
         };
-        button_box.add (previous_button);
-        button_box.add (cancel_button);
-        button_box.add (add_printer_button);
+        button_box.add_css_class ("dialog-action-area");
+        button_box.append (previous_button);
+        button_box.append (cancel_button);
+        button_box.append (add_printer_button);
 
-        var device_box = new Gtk.Box (VERTICAL, 0) {
-            margin_top = 12,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12
-        };
-        device_box.add (description_label);
-        device_box.add (description_entry);
-        device_box.add (description_error);
+        var content_box = new Gtk.Box (VERTICAL, 3);
+        content_box.add_css_class ("dialog-content-area");
+        content_box.append (description_label);
+        content_box.append (description_entry);
+        content_box.append (description_error);
 
         if (!(":" in temp_device.device_uri)) {
             connection_entry.changed.connect (() => {
@@ -374,18 +353,20 @@ public class Printers.AddDialog : Hdy.Window {
             });
 
             connection_entry.text = temp_device.device_uri;
-            device_box.add (connection_label);
-            device_box.add (connection_entry);
-            device_box.add (connection_error);
+            content_box.append (connection_label);
+            content_box.append (connection_entry);
+            content_box.append (connection_error);
         }
 
-        device_box.add (location_label);
-        device_box.add (location_entry);
-        device_box.add (frame);
-        device_box.add (button_box);
-        device_box.show_all ();
+        content_box.append (location_label);
+        content_box.append (location_entry);
+        content_box.append (frame);
 
-        stack.add (device_box);
+        var device_box = new Gtk.Box (VERTICAL, 0);
+        device_box.append (content_box);
+        device_box.append (button_box);
+
+        stack.add_child (device_box);
         stack.set_visible_child (device_box);
 
         previous_button.clicked.connect (() => {
@@ -573,9 +554,10 @@ public class Printers.AddDialog : Hdy.Window {
     private void populate_driver_list_from_make (string make, string? selected_make_and_model = null) {
         driver_cancellable.cancel ();
         driver_cancellable = new Cancellable ();
-        driver_view.@foreach ((row) => {
-            driver_view.remove (row);
-        });
+
+        while (driver_view.get_row_at_index (0) != null) {
+            driver_view.remove (driver_view.get_row_at_index (0));
+        }
 
         find_drivers.begin (make, selected_make_and_model, (obj, res) => {
             if (!driver_cancellable.is_cancelled ()) {
@@ -597,7 +579,7 @@ public class Printers.AddDialog : Hdy.Window {
 
             if (driver.ppd_make == make) {
                 var row = new DriverRow (driver);
-                driver_view.add (row);
+                driver_view.append (row);
                 if (driver.ppd_make_and_model == selected_make_and_model) {
                    row_to_select = row;
                 }
@@ -676,21 +658,22 @@ public class Printers.AddDialog : Hdy.Window {
     }
 
     public class TempDeviceRow : Gtk.ListBoxRow {
-        public TempDevice temp_device { get; private set; }
+        public TempDevice temp_device { get; construct set; }
 
         public TempDeviceRow (TempDevice temp_device) {
-            this.temp_device = temp_device;
+            Object (temp_device: temp_device);
+        }
 
+        construct {
             var label = new Gtk.Label (temp_device.device_info) {
                 margin_top = 3,
                 margin_bottom = 3,
                 margin_start = 12,
                 xalign = 0
             };
-            get_style_context ().add_class (Gtk.STYLE_CLASS_MENUITEM);
+            add_css_class (Granite.STYLE_CLASS_MENUITEM);
 
             child = label;
-            show_all ();
         }
     }
 
@@ -713,10 +696,8 @@ public class Printers.AddDialog : Hdy.Window {
                 halign = Gtk.Align.START,
                 ellipsize = Pango.EllipsizeMode.MIDDLE
             };
-
-            unowned var style_context = detail_label.get_style_context ();
-            style_context.add_class (Granite.STYLE_CLASS_SMALL_LABEL);
-            style_context.add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+            detail_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
+            detail_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
             var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
                 margin_top = 6,
@@ -724,11 +705,10 @@ public class Printers.AddDialog : Hdy.Window {
                 margin_bottom = 6,
                 margin_end = 6
             };
-            box.add (model_label);
-            box.add (detail_label);
+            box.append (model_label);
+            box.append (detail_label);
 
             child = box;
-            show_all ();
         }
     }
 }

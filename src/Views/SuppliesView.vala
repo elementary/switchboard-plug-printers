@@ -10,7 +10,7 @@ public class Printers.SuppliesView: Gtk.Box {
 
     private const string STYLE_CLASS =
     """
-    block.filled {
+    levelbar.color-%s block.filled {
         background-color: #%s;
     }
     """;
@@ -34,24 +34,25 @@ public class Printers.SuppliesView: Gtk.Box {
         };
 
         var location_label = new Granite.HeaderLabel (_("Location")) {
-            margin_top = 12,
+            margin_top = 9,
             mnemonic_widget = location_entry
         };
 
         var ink_flowbox = new Gtk.FlowBox () {
             column_spacing = 12,
             homogeneous = true,
-            margin_top = 24,
+            margin_top = 21,
             max_children_per_line = 30,
             row_spacing = 24
         };
 
         orientation = VERTICAL;
-        add (name_label);
-        add (name_entry);
-        add (location_label);
-        add (location_entry);
-        add (ink_flowbox);
+        spacing = 3;
+        append (name_label);
+        append (name_entry);
+        append (location_label);
+        append (location_entry);
+        append (ink_flowbox);
 
         printer.bind_property ("info", name_entry, "text", BIDIRECTIONAL | SYNC_CREATE);
         printer.bind_property ("location", location_entry, "text", BIDIRECTIONAL | SYNC_CREATE);
@@ -69,7 +70,7 @@ public class Printers.SuppliesView: Gtk.Box {
             var ink_box = new Gtk.Box (HORIZONTAL, 3);
 
             for (int i = 1; i < colors_codes.length; i++) {
-                var css_color = STYLE_CLASS.printf (colors_codes[i]);
+                var css_color = STYLE_CLASS.printf (colors_codes[i], colors_codes[i]);
 
                 var level = new Gtk.LevelBar.for_interval (color.level_min, color.level_max) {
                     height_request = 64,
@@ -79,16 +80,17 @@ public class Printers.SuppliesView: Gtk.Box {
                     orientation = VERTICAL,
                     value = color.level
                 };
+                level.add_css_class ("color-" + colors_codes[i]);
 
                 var provider = new Gtk.CssProvider ();
                 try {
-                    provider.load_from_data (css_color, css_color.length);
-                    level.get_style_context ().add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                    provider.load_from_data (css_color.data);
+                    Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
                 } catch (Error e) {
                     warning ("Could not create CSS Provider: %s\nStylesheet:\n%s", e.message, css_color);
                 }
 
-                ink_box.add (level);
+                ink_box.append (level);
             }
 
             var label = new Gtk.Label (get_translated_name (color.name ?? "black")) {
@@ -99,12 +101,12 @@ public class Printers.SuppliesView: Gtk.Box {
             };
 
             var color_box = new Gtk.Box (VERTICAL, 6);
-            color_box.add (ink_box);
-            color_box.add (label);
+            color_box.append (ink_box);
+            color_box.append (label);
 
             size_group.add_widget (label);
 
-            ink_flowbox.add (color_box);
+            ink_flowbox.append (color_box);
         }
     }
 

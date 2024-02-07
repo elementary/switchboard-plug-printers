@@ -28,6 +28,6 @@ private class Printers.ErrorRevealer : Gtk.Box {
         bind_property ("reveal-child", revealer, "reveal-child", SYNC_CREATE);
         bind_property ("label", label_widget, "label", SYNC_CREATE);
 
-        add (revealer);
+        append (revealer);
     }
 }

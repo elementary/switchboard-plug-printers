@@ -1,21 +1,6 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
-/*-
- * Copyright (c) 2015-2018 elementary LLC. (https://elementary.io)
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Library General Public
- * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Library General Public License for more details.
- *
- * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
- * Boston, MA 02110-1301, USA.
+/*
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
@@ -43,10 +28,17 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
         stack.add_titled (new OptionsPage (printer), "options", _("Page Setup"));
         stack.add_titled (new SuppliesView (printer), "supplies", _("Settings & Supplies"));
 
-        var stack_switcher = new Gtk.StackSwitcher ();
-        stack_switcher.halign = Gtk.Align.CENTER;
-        stack_switcher.homogeneous = true;
-        stack_switcher.stack = stack;
+        var stack_switcher = new Gtk.StackSwitcher () {
+            halign = Gtk.Align.CENTER,
+            stack = stack
+        };
+
+        var sizegroup = new Gtk.SizeGroup (HORIZONTAL);
+        var child = stack_switcher.get_first_child ();
+        while (child != null) {
+            sizegroup.add_widget (child);
+            child = child.get_next_sibling ();
+        }
 
         content_area.row_spacing = 24;
         content_area.attach (stack_switcher, 0, 1);
@@ -60,8 +52,8 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
         var print_test = new Gtk.Button.with_label (_("Print Test Page"));
         print_test.clicked.connect (() => print_test_page ());
 
-        action_area.add (set_default);
-        action_area.add (print_test);
+        action_area.append (set_default);
+        action_area.append (print_test);
 
         printer.bind_property ("info", this, "title");
         printer.bind_property ("location", this, "description");
@@ -75,8 +67,6 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
         printer.default_changed.connect (() => {
             set_default.sensitive = !printer.is_default;
         });
-
-        show_all ();
     }
 
     private string? get_testprint_filename (string datadir) {

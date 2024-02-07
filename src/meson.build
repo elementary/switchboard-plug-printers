@@ -20,7 +20,7 @@ plug_files = files(
     'Widgets/PrinterRow.vala'
 )
 
-switchboard_dep = dependency('switchboard-2.0')
+switchboard_dep = dependency('switchboard-3')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
 cups_lib = meson.get_compiler('c').find_library('cups')
@@ -28,7 +28,7 @@ cups_vapi = meson.get_compiler('vala').find_library('cups', dirs: join_paths(mes
 cups_dep = declare_dependency(dependencies: [cups_lib, cups_vapi])
 
 gettext_data = configuration_data()
-gettext_data.set('GETTEXT_PACKAGE', gettext_name)
+gettext_data.set('GETTEXT_PACKAGE', meson.project_name())
 gettext_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 gettext_declaration = configure_file(
     configuration: gettext_data,
@@ -44,9 +44,8 @@ shared_module(
         dependency('glib-2.0'),
         dependency('gio-2.0'),
         dependency('gobject-2.0'),
-        dependency('granite', version: '>=6.0.0'),
-        dependency('gtk+-3.0'),
-        dependency('libhandy-1'),
+        dependency('granite-7', version: '>=7.4.0'),
+        dependency('gtk4'),
         meson.get_compiler('vala').find_library('posix'),
         cups_dep,
         switchboard_dep

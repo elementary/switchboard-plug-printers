@@ -34,44 +34,50 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var remove_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU) {
+        var remove_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic") {
             valign = Gtk.Align.CENTER,
             halign = Gtk.Align.END,
             hexpand = true,
             tooltip_text = _("Remove this printer")
         };
-        remove_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        remove_button.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-        name_label = new Gtk.Label (null);
-        name_label.get_style_context ().add_class ("h3");
-        name_label.ellipsize = Pango.EllipsizeMode.END;
-        name_label.xalign = 0;
+        name_label = new Gtk.Label (null) {
+            ellipsize = END,
+            xalign = 0
+        };
+        name_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        status_label = new Gtk.Label (null);
-        status_label.use_markup = true;
-        status_label.ellipsize = Pango.EllipsizeMode.END;
-        status_label.xalign = 0;
+        status_label = new Gtk.Label (null) {
+            use_markup = true,
+            ellipsize = END,
+            xalign = 0
+        };
 
-        printer_image = new Gtk.Image.from_icon_name ("printer", Gtk.IconSize.DND);
-        printer_image.pixel_size = 32;
+        printer_image = new Gtk.Image.from_icon_name ("printer");
+        printer_image.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
 
-        status_image = new Gtk.Image.from_icon_name ("user-available", Gtk.IconSize.MENU);
-        status_image.halign = status_image.valign = Gtk.Align.END;
+        status_image = new Gtk.Image.from_icon_name ("user-available") {
+            halign = END,
+            valign = END
+        };
 
-        var overlay = new Gtk.Overlay ();
-        overlay.width_request = 38;
-        overlay.add (printer_image);
+        var overlay = new Gtk.Overlay () {
+            child = printer_image,
+            width_request = 38
+        };
         overlay.add_overlay (status_image);
 
-        var grid = new Gtk.Grid ();
-        grid.margin = 6;
-        grid.margin_start = 3;
-        grid.column_spacing = 3;
+        var grid = new Gtk.Grid () {
+            column_spacing = 6
+        };
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0, 1, 1);
         grid.attach (status_label, 1, 1, 1, 1);
         grid.attach (remove_button, 2, 0, 2, 2);
-        add (grid);
+
+        child = grid;
+
         page = new PrinterPage (printer);
 
         printer.bind_property ("info", this, "tooltip-text", GLib.BindingFlags.SYNC_CREATE);
@@ -80,11 +86,10 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
             update_status ();
         });
 
-        show_all ();
-
         remove_button.clicked.connect (() => {
-            var remove_dialog = new RemoveDialog (printer);
-            remove_dialog.transient_for = (Gtk.Window) get_toplevel ();
+            var remove_dialog = new RemoveDialog (printer) {
+                transient_for = (Gtk.Window) get_root ()
+            };
             remove_dialog.present ();
         });
 

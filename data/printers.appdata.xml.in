@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-  <id>io.elementary.switchboard.printers</id>
-  <extends>io.elementary.switchboard</extends>
+  <id>io.elementary.settings.printers</id>
+  <extends>io.elementary.settings</extends>
   <name>Printer Settings</name>
   <summary>Configure printers, manage print queues, and view ink levels</summary>
   <icon type="stock">printer</icon>
-  <translation type="gettext">printers-plug</translation>
+  <translation type="gettext">io.elementary.settings.printers</translation>
   <releases>
     <release version="2.2.1" date="2022-10-20" urgency="medium">
       <description>

@@ -16,39 +16,43 @@ public class Printers.JobsView : Gtk.Frame {
     }
 
     construct {
-        var alert = new Granite.Widgets.AlertView (_("Print Queue Is Empty"), _("There are no pending jobs in the queue."), "");
-        alert.show_all ();
+        var alert = new Granite.Placeholder (_("Print Queue Is Empty")) {
+            description = _("There are no pending jobs in the queue.")
+        };
 
         list_box = new Gtk.ListBox () {
             selection_mode = SINGLE
         };
+        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list_box.set_placeholder (alert);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) update_header);
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = list_box,
             hexpand = true,
             vexpand = true
         };
 
+        var clear_button_label = new Gtk.Label (_("Clear All"));
+
         var clear_button_box = new Gtk.Box (HORIZONTAL, 0);
-        clear_button_box.add (new Gtk.Image.from_icon_name ("edit-clear-all-symbolic", BUTTON));
-        clear_button_box.add (new Gtk.Label (_("Clear All")));
+        clear_button_box.append (new Gtk.Image.from_icon_name ("edit-clear-all-symbolic"));
+        clear_button_box.append (clear_button_label);
 
         clear_button = new Gtk.Button () {
             child = clear_button_box,
-            sensitive = list_box.get_children ().length () > 0
+            has_frame = false
         };
-        clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        clear_button_label.mnemonic_widget = clear_button;
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
         actionbar.pack_start (clear_button);
 
         var box = new Gtk.Box (VERTICAL, 0);
-        box.add (scrolled);
-        box.add (actionbar);
+        box.append (scrolled);
+        box.append (actionbar);
 
         child = box;
 
@@ -63,12 +67,12 @@ public class Printers.JobsView : Gtk.Frame {
             var jobs_ = printer.get_jobs (true, CUPS.WhichJobs.ALL);
             foreach (var job in jobs_) {
                 if (job.uid == job_id) {
-                    list_box.add (new JobRow (printer, job));
+                    list_box.append (new JobRow (printer, job));
                     break;
                 }
             }
 
-            clear_button.sensitive = list_box.get_children ().length () > 0;
+            clear_button.sensitive = list_box.get_first_child () is JobRow;
         });
 
         clear_button.clicked.connect (() => clear_queue ());
@@ -100,14 +104,7 @@ public class Printers.JobsView : Gtk.Frame {
     [CCode (instance_pos = -1)]
     private void update_header (JobRow row1, JobRow? row2) {
         if (!row1.job.is_ongoing && (row2 == null || row2.job.is_ongoing)) {
-            var label = new Gtk.Label (_("Completed Jobs")) {
-                xalign = 0,
-                margin_top = 3,
-                margin_end = 3,
-                margin_bottom = 3,
-                margin_start = 3
-            };
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+            var label = new Granite.HeaderLabel (_("Completed Jobs"));
 
             row1.set_header (label);
         } else {
@@ -117,17 +114,19 @@ public class Printers.JobsView : Gtk.Frame {
 
     public void clear_queue () {
         var dialog = new ClearQueueDialog (printer) {
-            transient_for = (Gtk.Window) get_toplevel ()
+            transient_for = (Gtk.Window) get_root ()
         };
         dialog.response.connect ((response_id) => {
             dialog.destroy ();
 
             if (response_id == Gtk.ResponseType.OK) {
-                list_box.@foreach ((row) => {
-                    var job = ((JobRow)row).job;
+                while (list_box.get_row_at_index (0) != null) {
+                    var job = ((JobRow) list_box.get_row_at_index (0)).job;
                     job.pause (); // Purging pending/in_progress jobs does not always remove canceled job
                     job.purge ();
-                });
+
+                    list_box.remove (list_box.get_row_at_index (0));
+                }
 
                 refresh_job_list ();
             }
@@ -137,15 +136,15 @@ public class Printers.JobsView : Gtk.Frame {
     }
 
     private void refresh_job_list () {
-        list_box.@foreach ((row) => {
-            list_box.remove (row);
-        });
+        while (list_box.get_row_at_index (0) != null) {
+            list_box.remove (list_box.get_row_at_index (0));
+        }
 
         var jobs = printer.get_jobs (true, CUPS.WhichJobs.ALL);
         foreach (var job in jobs) {
-            list_box.add (new JobRow (printer, job));
+            list_box.append (new JobRow (printer, job));
         }
 
-        clear_button.sensitive = list_box.get_children ().length () > 0;
+        clear_button.sensitive = list_box.get_first_child () is JobRow;
     }
 }

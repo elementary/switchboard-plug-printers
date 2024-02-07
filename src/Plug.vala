@@ -1,21 +1,6 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
-/*-
- * Copyright (c) 2015 Pantheon Developers (https://launchpad.net/switchboard-plug-printers)
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Library General Public
- * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Library General Public License for more details.
- *
- * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
- * Boston, MA 02110-1301, USA.
+/*
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
@@ -34,7 +19,7 @@ namespace Printers {
             var settings = new Gee.TreeMap<string, string?> (null, null);
             settings.set ("printer", null);
             Object (category: Category.HARDWARE,
-                    code_name: "io.elementary.switchboard.printers",
+                    code_name: "io.elementary.settings.printers",
                     display_name: _("Printers"),
                     description: _("Configure printers, manage print queues, and view ink levels"),
                     icon: "printer",
@@ -43,28 +28,33 @@ namespace Printers {
 
         public override Gtk.Widget get_widget () {
             if (main_paned == null) {
-                var stack = new Gtk.Stack ();
-                stack.visible = true;
+                var stack = new Gtk.Stack () {
+                    visible = true
+                };
 
                 list = new PrinterList (stack);
 
-                var empty_alert = new Granite.Widgets.AlertView (
-                    _("No Printers Available"),
-                    _("Connect to a printer by clicking the icon in the toolbar below."),
-                    "printer-error"
-                );
-                empty_alert.visible = true;
-                empty_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
+                var empty_alert = new Granite.Placeholder (_("No Printers Available")) {
+                    description = _("Connect to a printer by clicking the icon in the toolbar below."),
+                    icon = new ThemedIcon ("printer-error"),
+                    visible = true
+                };
+                empty_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
 
-                main_stack = new Gtk.Stack ();
-                main_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+                main_stack = new Gtk.Stack () {
+                    transition_type = Gtk.StackTransitionType.CROSSFADE
+                };
                 main_stack.add_named (empty_alert, "empty-alert");
                 main_stack.add_named (stack, "main-paned");
 
-                main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
-                main_paned.pack1 (list, false, false);
-                main_paned.pack2 (main_stack, true, false);
-                main_paned.show_all ();
+                main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
+                    start_child = list,
+                    resize_start_child = false,
+                    shrink_start_child = false,
+                    end_child = main_stack,
+                    resize_end_child = true,
+                    shrink_end_child = false
+                };
 
                 update_alert_visible ();
 

@@ -23,8 +23,9 @@ public class Printers.PrinterList : Gtk.Box {
         vexpand = true;
 
         list_box = new Gtk.ListBox ();
+        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = list_box,
             hscrollbar_policy = NEVER,
             width_request = 250,
@@ -33,22 +34,22 @@ public class Printers.PrinterList : Gtk.Box {
         };
 
         var add_button_box = new Gtk.Box (HORIZONTAL, 0);
-        add_button_box.add (new Gtk.Image.from_icon_name ("list-add-symbolic", BUTTON));
-        add_button_box.add (new Gtk.Label (_("Add Printer…")));
+        add_button_box.append (new Gtk.Image.from_icon_name ("list-add-symbolic"));
+        add_button_box.append (new Gtk.Label (_("Add Printer…")));
 
         var add_button = new Gtk.Button () {
             child = add_button_box,
+            has_frame = false,
             margin_top = 3,
             margin_bottom = 3
         };
-        add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        actionbar.add (add_button);
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+        actionbar.pack_start (add_button);
 
-        add (scrolled);
-        add (actionbar);
+        append (scrolled);
+        append (actionbar);
 
         list_box.row_selected.connect ((row) => {
             if (row != null) {
@@ -59,7 +60,7 @@ public class Printers.PrinterList : Gtk.Box {
         add_button.clicked.connect (() => {
             var add_dialog = new Printers.AddDialog () {
                 modal = true,
-                transient_for = (Gtk.Window) get_toplevel ()
+                transient_for = (Gtk.Window) get_root ()
             };
 
             add_dialog.present ();
@@ -75,22 +76,16 @@ public class Printers.PrinterList : Gtk.Box {
 
     public void add_printer (Printer printer) {
         var row = new PrinterRow (printer);
-        list_box.add (row);
-        stack.add (row.page);
+        list_box.append (row);
+        stack.add_child (row.page);
         if (printer.is_default) {
             list_box.select_row (row);
         }
 
         has_child = true;
         row.destroy.connect (() => {
-            uint i = 0;
-            list_box.get_children ().foreach ((child) => {
-                if (child != row) {
-                    i++;
-                }
-            });
-
-            has_child = i > 0;
+            list_box.remove (row);
+            has_child = list_box.get_row_at_index (0) != null;
         });
     }
 }

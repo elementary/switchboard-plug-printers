@@ -43,19 +43,18 @@ public class Printers.JobRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var icon = new Gtk.Image.from_gicon (job.get_file_icon (), Gtk.IconSize.DND) {
-            pixel_size = 32
-        };
+        var icon = new Gtk.Image.from_gicon (job.get_file_icon ());
+        icon.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
 
         job_state_icon = new Gtk.Image () {
             gicon = job.state_icon (),
             halign = Gtk.Align.END,
-            valign = Gtk.Align.END,
-            icon_size = Gtk.IconSize.SMALL_TOOLBAR
+            valign = Gtk.Align.END
         };
 
-        var icon_overlay = new Gtk.Overlay ();
-        icon_overlay.add (icon);
+        var icon_overlay = new Gtk.Overlay () {
+            child = icon
+        };
         icon_overlay.add_overlay (job_state_icon);
 
         var title = new Gtk.Label (job.title) {
@@ -68,19 +67,19 @@ public class Printers.JobRow : Gtk.ListBoxRow {
             halign = Gtk.Align.START,
             ellipsize = Pango.EllipsizeMode.END
         };
-        state_label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+        state_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         date_label = new Gtk.Label (Granite.DateTime.get_relative_datetime (job.creation_time)) {
             halign = Gtk.Align.END
         };
-        date_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        date_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
-        var cancel_button = new Gtk.Button.from_icon_name ("process-stop-symbolic", Gtk.IconSize.SMALL_TOOLBAR) {
+        var cancel_button = new Gtk.Button.from_icon_name ("process-stop-symbolic") {
             tooltip_text = _("Cancel")
         };
-        cancel_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        cancel_button.get_style_context ().add_class (Granite.STYLE_CLASS_ACCENT);
-        cancel_button.get_style_context ().add_class ("red");
+        cancel_button.add_css_class (Granite.STYLE_CLASS_FLAT);
+        cancel_button.add_css_class (Granite.STYLE_CLASS_ACCENT);
+        cancel_button.add_css_class ("red");
 
         start_pause_button = new Gtk.Button () {
             valign = Gtk.Align.CENTER
@@ -91,21 +90,16 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         var action_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 3) {
             margin_start = 6
         };
-        action_box.add (cancel_button);
-        action_box.add (start_pause_button);
+        action_box.append (cancel_button);
+        action_box.append (start_pause_button);
 
         action_revealer = new Gtk.Revealer () {
-            transition_type = Gtk.RevealerTransitionType.SLIDE_LEFT
+            transition_type = Gtk.RevealerTransitionType.SLIDE_LEFT,
+            child = action_box
         };
-        action_revealer.add (action_box);
 
         var grid = new Gtk.Grid () {
-            column_spacing = 3,
-            margin_top = 6,
-            // Visually the same margin since file type icons don't fill the canvas
-            margin_end = 9,
-            margin_bottom = 6,
-            margin_start = 6
+            column_spacing = 6
         };
         grid.attach (icon_overlay, 0, 0, 1, 2);
         grid.attach (title, 1, 0);
@@ -113,8 +107,7 @@ public class Printers.JobRow : Gtk.ListBoxRow {
         grid.attach (date_label, 2, 0, 1, 2);
         grid.attach (action_revealer, 3, 0, 1, 2);
 
-        add (grid);
-        show_all ();
+        child = grid;
 
         update_state ();
 
