@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 15:56+0000\n"
-"PO-Revision-Date: 2023-11-14 16:10+0000\n"
+"PO-Revision-Date: 2024-02-09 15:13+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/printers-plug-extra/nb/>\n"
@@ -41,7 +41,7 @@ msgstr "Oppdaterte oversettelser"
 
 #: data/printers.appdata.xml.in:21
 msgid "New Features:"
-msgstr ""
+msgstr "Nye funksjoner:"
 
 #: data/printers.appdata.xml.in:23
 msgid "Allow clearing the queue for each printer"
