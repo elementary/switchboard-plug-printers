@@ -5,15 +5,14 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Printers.PrinterPage : Granite.SimpleSettingsPage {
+public class Printers.PrinterPage : Switchboard.SettingsPage {
     public unowned Printer printer { get; construct; }
 
     public PrinterPage (Printer printer) {
         Object (
             activatable: true,
-            icon_name: "printer",
+            icon: new ThemedIcon ("printer"),
             title: printer.info,
-            description: printer.location,
             printer: printer
         );
     }
@@ -34,29 +33,27 @@ public class Printers.PrinterPage : Granite.SimpleSettingsPage {
         };
 
         var sizegroup = new Gtk.SizeGroup (HORIZONTAL);
-        var child = stack_switcher.get_first_child ();
-        while (child != null) {
-            sizegroup.add_widget (child);
-            child = child.get_next_sibling ();
+        var switcher_child = stack_switcher.get_first_child ();
+        while (switcher_child != null) {
+            sizegroup.add_widget (switcher_child);
+            switcher_child = switcher_child.get_next_sibling ();
         }
 
-        content_area.row_spacing = 24;
-        content_area.attach (stack_switcher, 0, 1);
-        content_area.attach (stack, 0, 2);
+        var box = new Gtk.Box (VERTICAL, 24);
+        box.append (stack_switcher);
+        box.append (stack);
 
-        var set_default = new Gtk.Button.with_label (_("Set as Default")) {
-            sensitive = !printer.is_default
-        };
+        child = box;
+
+        var set_default = add_button (_("Set as Default"));
+        set_default.sensitive = !printer.is_default;
         set_default.clicked.connect (printer.set_as_default);
 
-        var print_test = new Gtk.Button.with_label (_("Print Test Page"));
+        var print_test = add_button (_("Print Test Page"));
         print_test.clicked.connect (() => print_test_page ());
 
-        action_area.append (set_default);
-        action_area.append (print_test);
-
         printer.bind_property ("info", this, "title");
-        printer.bind_property ("location", this, "description");
+        printer.bind_property ("location", this, "description", SYNC_CREATE);
 
         status_switch.active = printer.is_enabled;
         print_test.sensitive = status_switch.active;
