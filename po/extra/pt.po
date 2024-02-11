@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 15:56+0000\n"
-"PO-Revision-Date: 2022-08-10 19:12+0000\n"
+"PO-Revision-Date: 2024-02-10 23:29+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: data/printers.appdata.xml.in:5
 msgid "Printer Settings"
@@ -46,7 +46,7 @@ msgstr "Novas funcionalidades:"
 
 #: data/printers.appdata.xml.in:23
 msgid "Allow clearing the queue for each printer"
-msgstr ""
+msgstr "Permitir a limpeza da fila de espera para cada impressora"
 
 #: data/printers.appdata.xml.in:25
 msgid "Improvements:"
@@ -54,23 +54,24 @@ msgstr "Melhorias:"
 
 #: data/printers.appdata.xml.in:27
 msgid "Improved job row layout"
-msgstr ""
+msgstr "Melhoria da disposição das linhas de trabalho"
 
 #: data/printers.appdata.xml.in:28
 msgid "Show the supported language for each driver"
-msgstr ""
+msgstr "Mostrar o idioma suportado por cada controlador"
 
 #: data/printers.appdata.xml.in:29
 msgid "Show color names below ink levels"
-msgstr ""
+msgstr "Mostrar nomes de cores abaixo dos níveis dos tinteiros"
 
 #: data/printers.appdata.xml.in:30
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr ""
+"Evitar expandir a janela para impressoras com muitos níveis de tinteiros"
 
 #: data/printers.appdata.xml.in:31
 msgid "Use newer add/remove list pattern"
-msgstr ""
+msgstr "Utilizar um padrão de lista de adicionar/remover mais recente"
 
 #: data/printers.appdata.xml.in:33
 msgid "Fixes:"
@@ -78,15 +79,15 @@ msgstr "Correções:"
 
 #: data/printers.appdata.xml.in:35
 msgid "Update sidebar after adding or removing printer"
-msgstr ""
+msgstr "Atualizar a barra lateral depois de adicionar ou remover a impressora"
 
 #: data/printers.appdata.xml.in:36
 msgid "Update sidebar after enabling or disabling printer"
-msgstr ""
+msgstr "Atualizar a barra lateral depois de ativar ou desativar a impressora"
 
 #: data/printers.appdata.xml.in:37
 msgid "Update job list after job state change"
-msgstr ""
+msgstr "Atualizar a lista de tarefas após alteração do estado da tarefa"
 
 #: data/printers.appdata.xml.in:71
 msgid "Show a default name if a printer is unnamed"
