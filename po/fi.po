@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 12:31+0000\n"
+"POT-Creation-Date: 2024-02-07 15:56+0000\n"
 "PO-Revision-Date: 2023-11-01 23:10+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -15,189 +15,189 @@ msgstr ""
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
 
-#: src/Plug.vala:38
+#: src/Plug.vala:23
 msgid "Printers"
 msgstr "Tulostimet"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:24
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr "Määritä tulostimet, hallitse tulostusjonoja ja tarkista väriainetasot"
 
-#: src/Plug.vala:52
+#: src/Plug.vala:37
 msgid "No Printers Available"
 msgstr "Ei tulostimia käytettävissä"
 
-#: src/Plug.vala:53
+#: src/Plug.vala:38
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 "Yhdistä tulostimeen napsauttamalla kuvaketta alla olevasta työkalupalkista."
 
-#: src/PrinterList.vala:37
+#: src/PrinterList.vala:38
 msgid "Add Printer…"
 msgstr "Lisää tulostin…"
 
-#: src/PrinterPage.vala:42
+#: src/PrinterPage.vala:27
 msgid "Print Queue"
 msgstr "Tulostusjono"
 
-#: src/PrinterPage.vala:43
+#: src/PrinterPage.vala:28
 msgid "Page Setup"
 msgstr "Sivun määritykset"
 
-#: src/PrinterPage.vala:44
+#: src/PrinterPage.vala:29
 msgid "Settings & Supplies"
 msgstr "Asetukset ja tarvikkeet"
 
-#: src/PrinterPage.vala:55
+#: src/PrinterPage.vala:47
 msgid "Set as Default"
 msgstr ""
 
-#: src/PrinterPage.vala:60
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Tulosta testisivu"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:124
+#: src/PrinterPage.vala:114
 msgid "Test page"
 msgstr "Testisivu"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
-#: src/Dialogs/AddDialog.vala:27
+#: src/Dialogs/AddDialog.vala:12
 msgid "Internet Printing Protocol (https)"
 msgstr "Internetin tulostus protokolla (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
-#: src/Dialogs/AddDialog.vala:29
+#: src/Dialogs/AddDialog.vala:14
 msgid "Internet Printing Protocol (http)"
 msgstr "Internetin tulostus protokolla (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
-#: src/Dialogs/AddDialog.vala:31
+#: src/Dialogs/AddDialog.vala:16
 msgid "Internet Printing Protocol (ipp)"
 msgstr "Internetin tulostus protokolla (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
-#: src/Dialogs/AddDialog.vala:33
+#: src/Dialogs/AddDialog.vala:18
 msgid "Internet Printing Protocol (ipps)"
 msgstr "Internetin tulostus protokolla (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: src/Dialogs/AddDialog.vala:35
+#: src/Dialogs/AddDialog.vala:20
 msgid "Internet Printing Protocol (ipp14)"
 msgstr "Internetin tulostus protokolla (ipp14)"
 
 #. / Tranlators: This is a protocol name.
-#: src/Dialogs/AddDialog.vala:37
+#: src/Dialogs/AddDialog.vala:22
 msgid "LPD/LPR Host or Printer"
 msgstr "LPD/LPR-palvelin tai -tulostin"
 
 #. / Tranlators: This is a protocol name.
-#: src/Dialogs/AddDialog.vala:39
+#: src/Dialogs/AddDialog.vala:24
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:70
+#: src/Dialogs/AddDialog.vala:55
 msgid "Finding nearby printers…"
 msgstr "Etsitään lähettyvillä olevia tulostimia…"
 
-#: src/Dialogs/AddDialog.vala:96
+#: src/Dialogs/AddDialog.vala:81
 msgid "Refresh"
 msgstr "Päivitä"
 
-#: src/Dialogs/AddDialog.vala:100 src/Dialogs/AddDialog.vala:344
-#: src/Widgets/JobRow.vala:79
+#: src/Dialogs/AddDialog.vala:85 src/Dialogs/AddDialog.vala:326
+#: src/Widgets/JobRow.vala:78
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/Dialogs/AddDialog.vala:102
+#: src/Dialogs/AddDialog.vala:87
 msgid "Next"
 msgstr "Seuraava"
 
-#: src/Dialogs/AddDialog.vala:127
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "Kaikkien saatavilla olevien tulostimen luettelointi ei ole mahdollista"
 
-#: src/Dialogs/AddDialog.vala:249
+#: src/Dialogs/AddDialog.vala:233
 msgid "Connection"
 msgstr "Yhteys"
 
-#: src/Dialogs/AddDialog.vala:254
+#: src/Dialogs/AddDialog.vala:238
 msgid "Connection uri must contain “://“"
 msgstr "Yhteyden URI:n tulee sisältää “://“"
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
+#: src/Dialogs/AddDialog.vala:245 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
+#: src/Dialogs/AddDialog.vala:249 src/Views/SuppliesView.vala:28
 msgid "Description"
 msgstr "Kuvaus"
 
-#: src/Dialogs/AddDialog.vala:272
+#: src/Dialogs/AddDialog.vala:254
 msgid "Description cannot be empty"
 msgstr "Kuvaus ei voi olla tyhjä"
 
-#: src/Dialogs/AddDialog.vala:280
+#: src/Dialogs/AddDialog.vala:260
 msgid "Lab 1 or John's desk"
 msgstr "Huone 1 tai Jussin pöytä"
 
-#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:36
 msgid "Location"
 msgstr "Sijainti"
 
-#: src/Dialogs/AddDialog.vala:311
+#: src/Dialogs/AddDialog.vala:291
 msgid "Loading…"
 msgstr "Ladataan…"
 
-#: src/Dialogs/AddDialog.vala:342
+#: src/Dialogs/AddDialog.vala:324
 msgid "Back"
 msgstr "Takaisin"
 
-#: src/Dialogs/AddDialog.vala:346
+#: src/Dialogs/AddDialog.vala:328
 msgid "Add Printer"
 msgstr "Lisää tulostin"
 
-#: src/Dialogs/AddDialog.vala:658
+#: src/Dialogs/AddDialog.vala:640
 msgid "Serial"
 msgstr "Sarja"
 
-#: src/Dialogs/AddDialog.vala:661
+#: src/Dialogs/AddDialog.vala:643
 msgid "Local Printers"
 msgstr "Paikalliset tulostimet"
 
-#: src/Dialogs/AddDialog.vala:664
+#: src/Dialogs/AddDialog.vala:646
 msgid "Network Printers"
 msgstr "Verkkotulostimet"
 
-#: src/Dialogs/AddDialog.vala:667
+#: src/Dialogs/AddDialog.vala:649
 msgid "Available Network Printers"
 msgstr "Saatavilla olevat verkkotulostimet"
 
-#: src/Dialogs/AddDialog.vala:705
+#: src/Dialogs/AddDialog.vala:688
 msgid "(recommended)"
 msgstr "(suositeltu)"
 
-#: src/Dialogs/ClearQueueDialog.vala:30
+#: src/Dialogs/ClearQueueDialog.vala:16
 #, c-format
 msgid "Clear all pending and completed jobs from “%s”?"
 msgstr "Tyhjennetäänkö kaikki odottavat ja valmiit työt tulostimelta “%s”?"
 
-#: src/Dialogs/ClearQueueDialog.vala:31
+#: src/Dialogs/ClearQueueDialog.vala:17
 msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
 msgstr ""
 "Kaikki keskeneräiset työt perutaan ja koko tulostushistoria poistetaan."
 
-#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:37
+#: src/Dialogs/ClearQueueDialog.vala:22 src/Views/JobsView.vala:37
 msgid "Clear All"
 msgstr "Tyhjennä kaikki"
 
-#: src/Dialogs/RemoveDialog.vala:29
+#: src/Dialogs/RemoveDialog.vala:15
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
 msgstr "Poistetaanko '%s'?"
 
-#: src/Dialogs/RemoveDialog.vala:30
+#: src/Dialogs/RemoveDialog.vala:16
 #, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
@@ -206,7 +206,7 @@ msgstr ""
 "Jos '%s' poistetaan, kaikki sen tulostushistoria ja siihen liitetyt "
 "määritykset poistetaan."
 
-#: src/Dialogs/RemoveDialog.vala:35
+#: src/Dialogs/RemoveDialog.vala:21
 msgid "Remove"
 msgstr "Poista"
 
@@ -353,261 +353,261 @@ msgstr "Valmis"
 msgid "Print Queue Is Empty"
 msgstr "Tulostusjono on tyhjä"
 
-#: src/Views/JobsView.vala:19
+#: src/Views/JobsView.vala:20
 msgid "There are no pending jobs in the queue."
 msgstr "Tulostusjonossa ei ole töitä."
 
-#: src/Views/JobsView.vala:103
+#: src/Views/JobsView.vala:107
 msgid "Completed Jobs"
 msgstr "Valmistuneet työt"
 
-#: src/Views/SetupView.vala:38
+#: src/Views/SetupView.vala:47
 msgid "Pages per side:"
 msgstr "Sivua per puoli:"
 
-#: src/Views/SetupView.vala:57
+#: src/Views/SetupView.vala:66
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Pitkä reuna (vakio)"
 
-#: src/Views/SetupView.vala:59
+#: src/Views/SetupView.vala:68
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Lyhyt reuna (kääntö)"
 
-#: src/Views/SetupView.vala:113
+#: src/Views/SetupView.vala:122
 msgid "Two-sided:"
 msgstr "Kaksipuoleinen:"
 
-#: src/Views/SetupView.vala:131
+#: src/Views/SetupView.vala:140
 msgid "Portrait"
 msgstr "Pysty"
 
-#: src/Views/SetupView.vala:134
+#: src/Views/SetupView.vala:143
 msgid "Landscape"
 msgstr "Vaaka"
 
-#: src/Views/SetupView.vala:137
+#: src/Views/SetupView.vala:146
 msgid "Reverse portrait"
 msgstr "Päinvastainen pysty"
 
-#: src/Views/SetupView.vala:140
+#: src/Views/SetupView.vala:149
 msgid "Reverse landscape"
 msgstr "Päinvastainen vaaka"
 
-#: src/Views/SetupView.vala:149
+#: src/Views/SetupView.vala:158
 msgid "Orientation:"
 msgstr "Suunta:"
 
-#: src/Views/SetupView.vala:171
+#: src/Views/SetupView.vala:180
 msgid "Media Size:"
 msgstr "Median koko:"
 
-#: src/Views/SetupView.vala:187 src/Views/SetupView.vala:340
+#: src/Views/SetupView.vala:196 src/Views/SetupView.vala:349
 msgid "Automatic"
 msgstr "Automaattinen"
 
-#: src/Views/SetupView.vala:190
+#: src/Views/SetupView.vala:199
 msgid "One Color"
 msgstr "Yksi väri"
 
-#: src/Views/SetupView.vala:193
+#: src/Views/SetupView.vala:202
 msgid "Color"
 msgstr "Väri"
 
-#: src/Views/SetupView.vala:196
+#: src/Views/SetupView.vala:205
 msgid "One Color + Black"
 msgstr "Yksi väri ja musta"
 
-#: src/Views/SetupView.vala:199
+#: src/Views/SetupView.vala:208
 msgid "Greyscale"
 msgstr "Harmaasävy"
 
-#: src/Views/SetupView.vala:202
+#: src/Views/SetupView.vala:211
 msgid "Processed Color"
 msgstr "Prosessoitu väri"
 
-#: src/Views/SetupView.vala:205
+#: src/Views/SetupView.vala:214
 msgid "Processed Greyscale"
 msgstr "Käsitelty harmaasävy"
 
-#: src/Views/SetupView.vala:214
+#: src/Views/SetupView.vala:223
 msgid "Color mode:"
 msgstr "Väritila:"
 
-#: src/Views/SetupView.vala:230
+#: src/Views/SetupView.vala:239
 msgid "Top Bin"
 msgstr "Yläosa"
 
-#: src/Views/SetupView.vala:233
+#: src/Views/SetupView.vala:242
 msgid "Middle Bin"
 msgstr "Keskiosa"
 
-#: src/Views/SetupView.vala:236
+#: src/Views/SetupView.vala:245
 msgid "Bottom Bin"
 msgstr "Alaosa"
 
-#: src/Views/SetupView.vala:239
+#: src/Views/SetupView.vala:248
 msgid "Side Bin"
 msgstr "Sivuosa"
 
-#: src/Views/SetupView.vala:242
+#: src/Views/SetupView.vala:251
 msgid "Left Bin"
 msgstr "Vasenosa"
 
-#: src/Views/SetupView.vala:245
+#: src/Views/SetupView.vala:254
 msgid "Right Bin"
 msgstr "Oikeaosa"
 
-#: src/Views/SetupView.vala:248
+#: src/Views/SetupView.vala:257
 msgid "Center Bin"
 msgstr "Keskiosa"
 
-#: src/Views/SetupView.vala:251
+#: src/Views/SetupView.vala:260
 msgid "Rear Bin"
 msgstr "Takasäiliö"
 
-#: src/Views/SetupView.vala:254
+#: src/Views/SetupView.vala:263
 msgid "Face Up Bin"
 msgstr "Etuylös-säiliö"
 
-#: src/Views/SetupView.vala:257
+#: src/Views/SetupView.vala:266
 msgid "Face Down Bin"
 msgstr "Etualas-säiliö"
 
-#: src/Views/SetupView.vala:260
+#: src/Views/SetupView.vala:269
 msgid "Large Capacity Bin"
 msgstr "Suuren kapasiteetin säiliö"
 
-#: src/Views/SetupView.vala:263
+#: src/Views/SetupView.vala:272
 msgid "My Mailbox"
 msgstr "Oma postilaatikko"
 
-#: src/Views/SetupView.vala:268
+#: src/Views/SetupView.vala:277
 #, c-format
 msgid "Stacker %d"
 msgstr "Keräin %d"
 
-#: src/Views/SetupView.vala:271
+#: src/Views/SetupView.vala:280
 #, c-format
 msgid "Mailbox %d"
 msgstr "Postilaatikko %d"
 
-#: src/Views/SetupView.vala:274 src/Views/SetupView.vala:404
+#: src/Views/SetupView.vala:283 src/Views/SetupView.vala:413
 #, c-format
 msgid "Tray %d"
 msgstr "Taso %d"
 
-#: src/Views/SetupView.vala:287
+#: src/Views/SetupView.vala:296
 msgid "Output Tray:"
 msgstr "Tulostelokero:"
 
-#: src/Views/SetupView.vala:303
+#: src/Views/SetupView.vala:312
 msgid "Draft"
 msgstr "Luonnos"
 
-#: src/Views/SetupView.vala:306
+#: src/Views/SetupView.vala:315
 msgid "Normal"
 msgstr "Tavallinen"
 
-#: src/Views/SetupView.vala:309
+#: src/Views/SetupView.vala:318
 msgid "High"
 msgstr "Korkea"
 
-#: src/Views/SetupView.vala:315
+#: src/Views/SetupView.vala:324
 msgid "Quality:"
 msgstr "Laatu:"
 
-#: src/Views/SetupView.vala:331
+#: src/Views/SetupView.vala:340
 msgid "Paper Allocation"
 msgstr "Paperin varaaminen"
 
-#: src/Views/SetupView.vala:334
+#: src/Views/SetupView.vala:343
 msgid "Alternate Tray"
 msgstr "Vaihtoehtoinen lokero"
 
-#: src/Views/SetupView.vala:337
+#: src/Views/SetupView.vala:346
 msgid "Alternate Roll"
 msgstr "Vaihtoehtoinen rulla"
 
-#: src/Views/SetupView.vala:343
+#: src/Views/SetupView.vala:352
 msgid "Bottom"
 msgstr "Alaosa"
 
-#: src/Views/SetupView.vala:346
+#: src/Views/SetupView.vala:355
 msgid "By-pass Tray"
 msgstr "Ohitustaso"
 
-#: src/Views/SetupView.vala:349
+#: src/Views/SetupView.vala:358
 msgid "Center"
 msgstr "Keski"
 
-#: src/Views/SetupView.vala:352
+#: src/Views/SetupView.vala:361
 msgid "Continuous Autofeed"
 msgstr "Jatkuva automaattisyöttö"
 
-#: src/Views/SetupView.vala:356
+#: src/Views/SetupView.vala:365
 msgid "Disk"
 msgstr "Levy"
 
-#: src/Views/SetupView.vala:359
+#: src/Views/SetupView.vala:368
 msgid "Envelope"
 msgstr "Kirjekuori"
 
-#: src/Views/SetupView.vala:362
+#: src/Views/SetupView.vala:371
 msgid "Hagaki"
 msgstr "Hagaki"
 
-#: src/Views/SetupView.vala:365
+#: src/Views/SetupView.vala:374
 msgid "Large Capacity"
 msgstr "Suuri kapasiteetti"
 
-#: src/Views/SetupView.vala:368
+#: src/Views/SetupView.vala:377
 msgid "Left"
 msgstr "Vasen"
 
-#: src/Views/SetupView.vala:371
+#: src/Views/SetupView.vala:380
 msgid "Main Tray"
 msgstr "Päätaso"
 
-#: src/Views/SetupView.vala:374
+#: src/Views/SetupView.vala:383
 msgid "Main Roll"
 msgstr "Päärulla"
 
-#: src/Views/SetupView.vala:377
+#: src/Views/SetupView.vala:386
 msgid "Manual"
 msgstr "Manuaalinen"
 
-#: src/Views/SetupView.vala:380
+#: src/Views/SetupView.vala:389
 msgid "Middle"
 msgstr "Keski"
 
-#: src/Views/SetupView.vala:383
+#: src/Views/SetupView.vala:392
 msgid "Photo"
 msgstr "Valokuva"
 
-#: src/Views/SetupView.vala:387
+#: src/Views/SetupView.vala:396
 msgid "Rear"
 msgstr "Taka"
 
-#: src/Views/SetupView.vala:390
+#: src/Views/SetupView.vala:399
 msgid "Right"
 msgstr "Oikea"
 
-#: src/Views/SetupView.vala:393
+#: src/Views/SetupView.vala:402
 msgid "Side"
 msgstr "Puoli"
 
-#: src/Views/SetupView.vala:396
+#: src/Views/SetupView.vala:405
 msgid "Top"
 msgstr "Korkein"
 
-#: src/Views/SetupView.vala:401
+#: src/Views/SetupView.vala:410
 #, c-format
 msgid "Roll %d"
 msgstr "Rullaa %d"
 
-#: src/Views/SetupView.vala:417
+#: src/Views/SetupView.vala:426
 msgid "Paper Source:"
 msgstr "Paperilähde:"
 
@@ -615,39 +615,39 @@ msgstr "Paperilähde:"
 msgid "Lab 1 or John's Desk"
 msgstr "Labra 1 tai Juhan pöytä"
 
-#: src/Views/SuppliesView.vala:115
+#: src/Views/SuppliesView.vala:117
 msgid "Black (PGBK)"
 msgstr "Musta (PGBK)"
 
-#: src/Views/SuppliesView.vala:118
+#: src/Views/SuppliesView.vala:120
 msgid "Black (BK)"
 msgstr "Musta (BK)"
 
-#: src/Views/SuppliesView.vala:122
+#: src/Views/SuppliesView.vala:124
 msgid "Black"
 msgstr "Musta"
 
-#: src/Views/SuppliesView.vala:126
+#: src/Views/SuppliesView.vala:128
 msgid "Yellow"
 msgstr "Keltainen"
 
-#: src/Views/SuppliesView.vala:130
+#: src/Views/SuppliesView.vala:132
 msgid "Cyan"
 msgstr "Syaani"
 
-#: src/Views/SuppliesView.vala:134
+#: src/Views/SuppliesView.vala:136
 msgid "Magenta"
 msgstr "Magenta"
 
-#: src/Views/SuppliesView.vala:136
+#: src/Views/SuppliesView.vala:138
 msgid "Tri-color"
 msgstr "Kolmiväri"
 
-#: src/Widgets/JobRow.vala:160
+#: src/Widgets/JobRow.vala:153
 msgid "Resume"
 msgstr "Jatka"
 
-#: src/Widgets/JobRow.vala:165
+#: src/Widgets/JobRow.vala:158
 msgid "Pause"
 msgstr "Keskeytä"
 
@@ -655,7 +655,7 @@ msgstr "Keskeytä"
 msgid "Remove this printer"
 msgstr "Poista tämä tulostin"
 
-#: src/Widgets/PrinterRow.vala:124
+#: src/Widgets/PrinterRow.vala:129
 msgid "Disabled"
 msgstr "Pois käytöstä"
 

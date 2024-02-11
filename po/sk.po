@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 12:31+0000\n"
+"POT-Creation-Date: 2024-02-07 15:56+0000\n"
 "PO-Revision-Date: 2023-10-27 11:10+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -15,190 +15,190 @@ msgstr ""
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
-#: src/Plug.vala:38
+#: src/Plug.vala:23
 msgid "Printers"
 msgstr "Tlačiarne"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:24
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Nastavujte tlačiarne, spravujte tlačové fronty a kontrolujte stav zásobníkov "
 "atramentu"
 
-#: src/Plug.vala:52
+#: src/Plug.vala:37
 msgid "No Printers Available"
 msgstr "Žiadne tlačiarne k dispozícii"
 
-#: src/Plug.vala:53
+#: src/Plug.vala:38
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr "Pripojte sa k tlačiarni kliknutím na ikonu v lište dole."
 
-#: src/PrinterList.vala:37
+#: src/PrinterList.vala:38
 msgid "Add Printer…"
 msgstr "Pridať tlačiareň…"
 
-#: src/PrinterPage.vala:42
+#: src/PrinterPage.vala:27
 msgid "Print Queue"
 msgstr "Tlačová fronta"
 
-#: src/PrinterPage.vala:43
+#: src/PrinterPage.vala:28
 msgid "Page Setup"
 msgstr "Nastavenia stránky"
 
-#: src/PrinterPage.vala:44
+#: src/PrinterPage.vala:29
 msgid "Settings & Supplies"
 msgstr "Nastavenia a spotrebný materiál"
 
-#: src/PrinterPage.vala:55
+#: src/PrinterPage.vala:47
 msgid "Set as Default"
 msgstr ""
 
-#: src/PrinterPage.vala:60
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "Vytlačiť skúšobnú stránku"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:124
+#: src/PrinterPage.vala:114
 msgid "Test page"
 msgstr "Skúšobná stránka"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
-#: src/Dialogs/AddDialog.vala:27
+#: src/Dialogs/AddDialog.vala:12
 msgid "Internet Printing Protocol (https)"
 msgstr "Internetový tlačový protokol (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
-#: src/Dialogs/AddDialog.vala:29
+#: src/Dialogs/AddDialog.vala:14
 msgid "Internet Printing Protocol (http)"
 msgstr "Internetový tlačový protokol (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
-#: src/Dialogs/AddDialog.vala:31
+#: src/Dialogs/AddDialog.vala:16
 msgid "Internet Printing Protocol (ipp)"
 msgstr "Internetový tlačový protokol (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
-#: src/Dialogs/AddDialog.vala:33
+#: src/Dialogs/AddDialog.vala:18
 msgid "Internet Printing Protocol (ipps)"
 msgstr "Internetový tlačový protokol (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: src/Dialogs/AddDialog.vala:35
+#: src/Dialogs/AddDialog.vala:20
 msgid "Internet Printing Protocol (ipp14)"
 msgstr "Internetový tlačový protokol (ipp14)"
 
 #. / Tranlators: This is a protocol name.
-#: src/Dialogs/AddDialog.vala:37
+#: src/Dialogs/AddDialog.vala:22
 msgid "LPD/LPR Host or Printer"
 msgstr "LPD/LPR hostiteľa alebo tlačiarne"
 
 #. / Tranlators: This is a protocol name.
-#: src/Dialogs/AddDialog.vala:39
+#: src/Dialogs/AddDialog.vala:24
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:70
+#: src/Dialogs/AddDialog.vala:55
 msgid "Finding nearby printers…"
 msgstr "Hľadanie tlačiarní v blízkosti…"
 
-#: src/Dialogs/AddDialog.vala:96
+#: src/Dialogs/AddDialog.vala:81
 msgid "Refresh"
 msgstr "Obnoviť"
 
-#: src/Dialogs/AddDialog.vala:100 src/Dialogs/AddDialog.vala:344
-#: src/Widgets/JobRow.vala:79
+#: src/Dialogs/AddDialog.vala:85 src/Dialogs/AddDialog.vala:326
+#: src/Widgets/JobRow.vala:78
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: src/Dialogs/AddDialog.vala:102
+#: src/Dialogs/AddDialog.vala:87
 msgid "Next"
 msgstr "Ďalej"
 
-#: src/Dialogs/AddDialog.vala:127
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "Nemožné uviesť všetky dostupné tlačiarne"
 
-#: src/Dialogs/AddDialog.vala:249
+#: src/Dialogs/AddDialog.vala:233
 msgid "Connection"
 msgstr "Pripojenie"
 
-#: src/Dialogs/AddDialog.vala:254
+#: src/Dialogs/AddDialog.vala:238
 msgid "Connection uri must contain “://“"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
+#: src/Dialogs/AddDialog.vala:245 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "ZnačkaTlačiarne X3000"
 
-#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
+#: src/Dialogs/AddDialog.vala:249 src/Views/SuppliesView.vala:28
 msgid "Description"
 msgstr "Popis"
 
-#: src/Dialogs/AddDialog.vala:272
+#: src/Dialogs/AddDialog.vala:254
 msgid "Description cannot be empty"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:280
+#: src/Dialogs/AddDialog.vala:260
 msgid "Lab 1 or John's desk"
 msgstr "Laboratórium 1 alebo Janov stôl"
 
-#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:36
 msgid "Location"
 msgstr "Umiestnenie"
 
-#: src/Dialogs/AddDialog.vala:311
+#: src/Dialogs/AddDialog.vala:291
 msgid "Loading…"
 msgstr "Načítava sa…"
 
-#: src/Dialogs/AddDialog.vala:342
+#: src/Dialogs/AddDialog.vala:324
 msgid "Back"
 msgstr "Späť"
 
-#: src/Dialogs/AddDialog.vala:346
+#: src/Dialogs/AddDialog.vala:328
 msgid "Add Printer"
 msgstr "Pridať tlačiareň"
 
-#: src/Dialogs/AddDialog.vala:658
+#: src/Dialogs/AddDialog.vala:640
 msgid "Serial"
 msgstr "Sériový port"
 
-#: src/Dialogs/AddDialog.vala:661
+#: src/Dialogs/AddDialog.vala:643
 msgid "Local Printers"
 msgstr "Miestne tlačiarne"
 
-#: src/Dialogs/AddDialog.vala:664
+#: src/Dialogs/AddDialog.vala:646
 msgid "Network Printers"
 msgstr "Sieťové tlačiarne"
 
-#: src/Dialogs/AddDialog.vala:667
+#: src/Dialogs/AddDialog.vala:649
 msgid "Available Network Printers"
 msgstr "Dostupné sieťové tlačiarne"
 
-#: src/Dialogs/AddDialog.vala:705
+#: src/Dialogs/AddDialog.vala:688
 msgid "(recommended)"
 msgstr "(odporúčané)"
 
-#: src/Dialogs/ClearQueueDialog.vala:30
+#: src/Dialogs/ClearQueueDialog.vala:16
 #, c-format
 msgid "Clear all pending and completed jobs from “%s”?"
 msgstr "Odstrániť všetky prebiehajúce a dokončené úlohy z „%s“?"
 
-#: src/Dialogs/ClearQueueDialog.vala:31
+#: src/Dialogs/ClearQueueDialog.vala:17
 msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
 msgstr ""
 "Všetky nedokončené úlohy budú zrušené a celá história tlače bude vymazaná."
 
-#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:37
+#: src/Dialogs/ClearQueueDialog.vala:22 src/Views/JobsView.vala:37
 msgid "Clear All"
 msgstr "Vymazať všetko"
 
-#: src/Dialogs/RemoveDialog.vala:29
+#: src/Dialogs/RemoveDialog.vala:15
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
 msgstr "Naozaj chcete odstrániť ‚%s‘?"
 
-#: src/Dialogs/RemoveDialog.vala:30
+#: src/Dialogs/RemoveDialog.vala:16
 #, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
@@ -207,7 +207,7 @@ msgstr ""
 "Odstránením ‚%s‘ stratíte celú históriu tlače a všetky nastavenia s ňou "
 "spojené."
 
-#: src/Dialogs/RemoveDialog.vala:35
+#: src/Dialogs/RemoveDialog.vala:21
 msgid "Remove"
 msgstr "Odstrániť"
 
@@ -354,261 +354,261 @@ msgstr "Pripravené"
 msgid "Print Queue Is Empty"
 msgstr "Tlačová fronta je prázdna"
 
-#: src/Views/JobsView.vala:19
+#: src/Views/JobsView.vala:20
 msgid "There are no pending jobs in the queue."
 msgstr "V tejto fronte nie sú žiadne čakajúce úlohy."
 
-#: src/Views/JobsView.vala:103
+#: src/Views/JobsView.vala:107
 msgid "Completed Jobs"
 msgstr "Dokončené úlohy"
 
-#: src/Views/SetupView.vala:38
+#: src/Views/SetupView.vala:47
 msgid "Pages per side:"
 msgstr "Stránok na stranu:"
 
-#: src/Views/SetupView.vala:57
+#: src/Views/SetupView.vala:66
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "Obrátiť okolo dlhého okraja (štandardné)"
 
-#: src/Views/SetupView.vala:59
+#: src/Views/SetupView.vala:68
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "Obrátiť okolo krátkeho okraja (prevrátiť)"
 
-#: src/Views/SetupView.vala:113
+#: src/Views/SetupView.vala:122
 msgid "Two-sided:"
 msgstr "Obojstranný:"
 
-#: src/Views/SetupView.vala:131
+#: src/Views/SetupView.vala:140
 msgid "Portrait"
 msgstr "Na výšku"
 
-#: src/Views/SetupView.vala:134
+#: src/Views/SetupView.vala:143
 msgid "Landscape"
 msgstr "Na šírku"
 
-#: src/Views/SetupView.vala:137
+#: src/Views/SetupView.vala:146
 msgid "Reverse portrait"
 msgstr "Obrátene na výšku"
 
-#: src/Views/SetupView.vala:140
+#: src/Views/SetupView.vala:149
 msgid "Reverse landscape"
 msgstr "Obrátene na šírku"
 
-#: src/Views/SetupView.vala:149
+#: src/Views/SetupView.vala:158
 msgid "Orientation:"
 msgstr "Orientácia:"
 
-#: src/Views/SetupView.vala:171
+#: src/Views/SetupView.vala:180
 msgid "Media Size:"
 msgstr "Velikosť média:"
 
-#: src/Views/SetupView.vala:187 src/Views/SetupView.vala:340
+#: src/Views/SetupView.vala:196 src/Views/SetupView.vala:349
 msgid "Automatic"
 msgstr "Automatický"
 
-#: src/Views/SetupView.vala:190
+#: src/Views/SetupView.vala:199
 msgid "One Color"
 msgstr "Jednofarebný"
 
-#: src/Views/SetupView.vala:193
+#: src/Views/SetupView.vala:202
 msgid "Color"
 msgstr "Farebný"
 
-#: src/Views/SetupView.vala:196
+#: src/Views/SetupView.vala:205
 msgid "One Color + Black"
 msgstr "Jednofarebný + čierna"
 
-#: src/Views/SetupView.vala:199
+#: src/Views/SetupView.vala:208
 msgid "Greyscale"
 msgstr "Odtiene šedej"
 
-#: src/Views/SetupView.vala:202
+#: src/Views/SetupView.vala:211
 msgid "Processed Color"
 msgstr "Spracovaná farba"
 
-#: src/Views/SetupView.vala:205
+#: src/Views/SetupView.vala:214
 msgid "Processed Greyscale"
 msgstr "Spracované odtiene šedej"
 
-#: src/Views/SetupView.vala:214
+#: src/Views/SetupView.vala:223
 msgid "Color mode:"
 msgstr "Farebný režim:"
 
-#: src/Views/SetupView.vala:230
+#: src/Views/SetupView.vala:239
 msgid "Top Bin"
 msgstr "Vrchný zásobník"
 
-#: src/Views/SetupView.vala:233
+#: src/Views/SetupView.vala:242
 msgid "Middle Bin"
 msgstr "Stredný zásobník"
 
-#: src/Views/SetupView.vala:236
+#: src/Views/SetupView.vala:245
 msgid "Bottom Bin"
 msgstr "Spodný zásobník"
 
-#: src/Views/SetupView.vala:239
+#: src/Views/SetupView.vala:248
 msgid "Side Bin"
 msgstr "Bočný zásobník"
 
-#: src/Views/SetupView.vala:242
+#: src/Views/SetupView.vala:251
 msgid "Left Bin"
 msgstr "Ľavý zásobník"
 
-#: src/Views/SetupView.vala:245
+#: src/Views/SetupView.vala:254
 msgid "Right Bin"
 msgstr "Pravý zásobník"
 
-#: src/Views/SetupView.vala:248
+#: src/Views/SetupView.vala:257
 msgid "Center Bin"
 msgstr "Stredný zásobník"
 
-#: src/Views/SetupView.vala:251
+#: src/Views/SetupView.vala:260
 msgid "Rear Bin"
 msgstr "Zadný zásobník"
 
-#: src/Views/SetupView.vala:254
+#: src/Views/SetupView.vala:263
 msgid "Face Up Bin"
 msgstr "Zásobník s tlačou na vrchnú stranu"
 
-#: src/Views/SetupView.vala:257
+#: src/Views/SetupView.vala:266
 msgid "Face Down Bin"
 msgstr "Zásobník s tlačou na spodnú stranu"
 
-#: src/Views/SetupView.vala:260
+#: src/Views/SetupView.vala:269
 msgid "Large Capacity Bin"
 msgstr "Veľkokapacitný zásobník"
 
-#: src/Views/SetupView.vala:263
+#: src/Views/SetupView.vala:272
 msgid "My Mailbox"
 msgstr "Moja e-mailová schránka"
 
-#: src/Views/SetupView.vala:268
+#: src/Views/SetupView.vala:277
 #, c-format
 msgid "Stacker %d"
 msgstr "Zakladač %d"
 
-#: src/Views/SetupView.vala:271
+#: src/Views/SetupView.vala:280
 #, c-format
 msgid "Mailbox %d"
 msgstr "E-mailová schránka %d"
 
-#: src/Views/SetupView.vala:274 src/Views/SetupView.vala:404
+#: src/Views/SetupView.vala:283 src/Views/SetupView.vala:413
 #, c-format
 msgid "Tray %d"
 msgstr "Zásobník %d"
 
-#: src/Views/SetupView.vala:287
+#: src/Views/SetupView.vala:296
 msgid "Output Tray:"
 msgstr "Výstupný zásobník:"
 
-#: src/Views/SetupView.vala:303
+#: src/Views/SetupView.vala:312
 msgid "Draft"
 msgstr "Koncept"
 
-#: src/Views/SetupView.vala:306
+#: src/Views/SetupView.vala:315
 msgid "Normal"
 msgstr "Normálna"
 
-#: src/Views/SetupView.vala:309
+#: src/Views/SetupView.vala:318
 msgid "High"
 msgstr "Vysoká"
 
-#: src/Views/SetupView.vala:315
+#: src/Views/SetupView.vala:324
 msgid "Quality:"
 msgstr "Kvalita:"
 
-#: src/Views/SetupView.vala:331
+#: src/Views/SetupView.vala:340
 msgid "Paper Allocation"
 msgstr "Umiestnenie papiera"
 
-#: src/Views/SetupView.vala:334
+#: src/Views/SetupView.vala:343
 msgid "Alternate Tray"
 msgstr "Alternatívny zásobník"
 
-#: src/Views/SetupView.vala:337
+#: src/Views/SetupView.vala:346
 msgid "Alternate Roll"
 msgstr "Alternatívna rolka"
 
-#: src/Views/SetupView.vala:343
+#: src/Views/SetupView.vala:352
 msgid "Bottom"
 msgstr "Spodné"
 
-#: src/Views/SetupView.vala:346
+#: src/Views/SetupView.vala:355
 msgid "By-pass Tray"
 msgstr "Náhradný zásobník"
 
-#: src/Views/SetupView.vala:349
+#: src/Views/SetupView.vala:358
 msgid "Center"
 msgstr "Stredné"
 
-#: src/Views/SetupView.vala:352
+#: src/Views/SetupView.vala:361
 msgid "Continuous Autofeed"
 msgstr "Automatické plnenie"
 
-#: src/Views/SetupView.vala:356
+#: src/Views/SetupView.vala:365
 msgid "Disk"
 msgstr "Disk"
 
-#: src/Views/SetupView.vala:359
+#: src/Views/SetupView.vala:368
 msgid "Envelope"
 msgstr "Obálka"
 
-#: src/Views/SetupView.vala:362
+#: src/Views/SetupView.vala:371
 msgid "Hagaki"
 msgstr "Hagaki"
 
-#: src/Views/SetupView.vala:365
+#: src/Views/SetupView.vala:374
 msgid "Large Capacity"
 msgstr "Veľkokapacitné"
 
-#: src/Views/SetupView.vala:368
+#: src/Views/SetupView.vala:377
 msgid "Left"
 msgstr "Ľavé"
 
-#: src/Views/SetupView.vala:371
+#: src/Views/SetupView.vala:380
 msgid "Main Tray"
 msgstr "Hlavný zásobník"
 
-#: src/Views/SetupView.vala:374
+#: src/Views/SetupView.vala:383
 msgid "Main Roll"
 msgstr "Hlavná rolka"
 
-#: src/Views/SetupView.vala:377
+#: src/Views/SetupView.vala:386
 msgid "Manual"
 msgstr "Ručný"
 
-#: src/Views/SetupView.vala:380
+#: src/Views/SetupView.vala:389
 msgid "Middle"
 msgstr "Stred"
 
-#: src/Views/SetupView.vala:383
+#: src/Views/SetupView.vala:392
 msgid "Photo"
 msgstr "Fotografia"
 
-#: src/Views/SetupView.vala:387
+#: src/Views/SetupView.vala:396
 msgid "Rear"
 msgstr "Zadné"
 
-#: src/Views/SetupView.vala:390
+#: src/Views/SetupView.vala:399
 msgid "Right"
 msgstr "Pravé"
 
-#: src/Views/SetupView.vala:393
+#: src/Views/SetupView.vala:402
 msgid "Side"
 msgstr "Strana"
 
-#: src/Views/SetupView.vala:396
+#: src/Views/SetupView.vala:405
 msgid "Top"
 msgstr "Vrchné"
 
-#: src/Views/SetupView.vala:401
+#: src/Views/SetupView.vala:410
 #, c-format
 msgid "Roll %d"
 msgstr "Rolka %d"
 
-#: src/Views/SetupView.vala:417
+#: src/Views/SetupView.vala:426
 msgid "Paper Source:"
 msgstr "Zdroj papiera:"
 
@@ -616,39 +616,39 @@ msgstr "Zdroj papiera:"
 msgid "Lab 1 or John's Desk"
 msgstr "Laboratórium 1 alebo Janov stôl"
 
-#: src/Views/SuppliesView.vala:115
+#: src/Views/SuppliesView.vala:117
 msgid "Black (PGBK)"
 msgstr "Čierna (PGBK)"
 
-#: src/Views/SuppliesView.vala:118
+#: src/Views/SuppliesView.vala:120
 msgid "Black (BK)"
 msgstr "Čierna (BK)"
 
-#: src/Views/SuppliesView.vala:122
+#: src/Views/SuppliesView.vala:124
 msgid "Black"
 msgstr "Čierna"
 
-#: src/Views/SuppliesView.vala:126
+#: src/Views/SuppliesView.vala:128
 msgid "Yellow"
 msgstr "Žltá"
 
-#: src/Views/SuppliesView.vala:130
+#: src/Views/SuppliesView.vala:132
 msgid "Cyan"
 msgstr "Azúrová"
 
-#: src/Views/SuppliesView.vala:134
+#: src/Views/SuppliesView.vala:136
 msgid "Magenta"
 msgstr "Purpurová"
 
-#: src/Views/SuppliesView.vala:136
+#: src/Views/SuppliesView.vala:138
 msgid "Tri-color"
 msgstr "Trojfarebná"
 
-#: src/Widgets/JobRow.vala:160
+#: src/Widgets/JobRow.vala:153
 msgid "Resume"
 msgstr "Zrušiť pozastavenie"
 
-#: src/Widgets/JobRow.vala:165
+#: src/Widgets/JobRow.vala:158
 msgid "Pause"
 msgstr "Pozastaviť"
 
@@ -656,7 +656,7 @@ msgstr "Pozastaviť"
 msgid "Remove this printer"
 msgstr "Odstrániť túto tlačiareň"
 
-#: src/Widgets/PrinterRow.vala:124
+#: src/Widgets/PrinterRow.vala:129
 msgid "Disabled"
 msgstr "Vypnuté"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 12:31+0000\n"
+"POT-Creation-Date: 2024-02-07 15:56+0000\n"
 "PO-Revision-Date: 2022-10-07 16:57+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -15,194 +15,194 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
-#: src/Plug.vala:38
+#: src/Plug.vala:23
 msgid "Printers"
 msgstr "چاپکەرەکان"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:24
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "چاپکەرەکان ڕێک بخە، نۆرەی چاپکردنەکان بەڕێوەبەرە و، ئاستی ڕەنگەکان بزانە"
 
-#: src/Plug.vala:52
+#: src/Plug.vala:37
 msgid "No Printers Available"
 msgstr "هیچ چاپکەرێک بەردەست نییە"
 
-#: src/Plug.vala:53
+#: src/Plug.vala:38
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr "پەیوەست ببە بە چاپکەرێک لە ڕێگەی ئایکۆنی زیادکردن لە شریتەکەی خوارەوە."
 
-#: src/PrinterList.vala:37
+#: src/PrinterList.vala:38
 msgid "Add Printer…"
 msgstr "زیادکردنی چاپکەر…"
 
-#: src/PrinterPage.vala:42
+#: src/PrinterPage.vala:27
 msgid "Print Queue"
 msgstr "نۆرەی چاپکردن"
 
-#: src/PrinterPage.vala:43
+#: src/PrinterPage.vala:28
 msgid "Page Setup"
 msgstr "ڕێکخستنی پەڕە"
 
-#: src/PrinterPage.vala:44
+#: src/PrinterPage.vala:29
 msgid "Settings & Supplies"
 msgstr "ڕێکخستنەکان & دابینکردنەکان"
 
-#: src/PrinterPage.vala:55
+#: src/PrinterPage.vala:47
 msgid "Set as Default"
 msgstr ""
 
-#: src/PrinterPage.vala:60
+#: src/PrinterPage.vala:52
 msgid "Print Test Page"
 msgstr "پەڕەی تاقیکردنەوە چاپ بکە"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:124
+#: src/PrinterPage.vala:114
 msgid "Test page"
 msgstr "پەڕەی تاقیکردنەوە"
 
 #. / Tranlators: This is a protocol name, please keep the (https).
-#: src/Dialogs/AddDialog.vala:27
+#: src/Dialogs/AddDialog.vala:12
 msgid "Internet Printing Protocol (https)"
 msgstr "پرۆتۆکۆلی چاپکردنی ئینتەرنێتی (https)"
 
 #. / Tranlators: This is a protocol name, please keep the (http).
-#: src/Dialogs/AddDialog.vala:29
+#: src/Dialogs/AddDialog.vala:14
 msgid "Internet Printing Protocol (http)"
 msgstr "پرۆتۆکۆلی چاپکردنی ئینتەرنێتی (http)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp).
-#: src/Dialogs/AddDialog.vala:31
+#: src/Dialogs/AddDialog.vala:16
 msgid "Internet Printing Protocol (ipp)"
 msgstr "پرۆتۆکۆلی چاپکردنی ئینتەرنێتی (ipp)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipps).
-#: src/Dialogs/AddDialog.vala:33
+#: src/Dialogs/AddDialog.vala:18
 msgid "Internet Printing Protocol (ipps)"
 msgstr "پرۆتۆکۆلی چاپکردنی ئینتەرنێتی (ipps)"
 
 #. / Tranlators: This is a protocol name, please keep the (ipp14).
-#: src/Dialogs/AddDialog.vala:35
+#: src/Dialogs/AddDialog.vala:20
 msgid "Internet Printing Protocol (ipp14)"
 msgstr "پرۆتۆکۆلی چاپکردنی ئینتەرنێتی (ipp14)"
 
 #. / Tranlators: This is a protocol name.
-#: src/Dialogs/AddDialog.vala:37
+#: src/Dialogs/AddDialog.vala:22
 msgid "LPD/LPR Host or Printer"
 msgstr "چاپکەر یان هۆستی LPD/LPR"
 
 #. / Tranlators: This is a protocol name.
-#: src/Dialogs/AddDialog.vala:39
+#: src/Dialogs/AddDialog.vala:24
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:70
+#: src/Dialogs/AddDialog.vala:55
 msgid "Finding nearby printers…"
 msgstr "دۆزینەوەی چاپکەرەکانی دەوروبەر…"
 
-#: src/Dialogs/AddDialog.vala:96
+#: src/Dialogs/AddDialog.vala:81
 msgid "Refresh"
 msgstr "نوێکردنەوە"
 
-#: src/Dialogs/AddDialog.vala:100 src/Dialogs/AddDialog.vala:344
-#: src/Widgets/JobRow.vala:79
+#: src/Dialogs/AddDialog.vala:85 src/Dialogs/AddDialog.vala:326
+#: src/Widgets/JobRow.vala:78
 msgid "Cancel"
 msgstr "هەڵوەشاندنەوە"
 
-#: src/Dialogs/AddDialog.vala:102
+#: src/Dialogs/AddDialog.vala:87
 msgid "Next"
 msgstr "دواتر"
 
-#: src/Dialogs/AddDialog.vala:127
+#: src/Dialogs/AddDialog.vala:108
 msgid "Impossible to list all available printers"
 msgstr "بینینی هەموو چاپکەرە بەردەستەکان مەحاڵە"
 
-#: src/Dialogs/AddDialog.vala:249
+#: src/Dialogs/AddDialog.vala:233
 #, fuzzy
 #| msgid "Connection:"
 msgid "Connection"
 msgstr "پەیوەستی:"
 
-#: src/Dialogs/AddDialog.vala:254
+#: src/Dialogs/AddDialog.vala:238
 msgid "Connection uri must contain “://“"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:25
+#: src/Dialogs/AddDialog.vala:245 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "براند پرێنتەر X3000"
 
-#: src/Dialogs/AddDialog.vala:267 src/Views/SuppliesView.vala:28
+#: src/Dialogs/AddDialog.vala:249 src/Views/SuppliesView.vala:28
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
 msgstr "فرۆزە:"
 
-#: src/Dialogs/AddDialog.vala:272
+#: src/Dialogs/AddDialog.vala:254
 msgid "Description cannot be empty"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:280
+#: src/Dialogs/AddDialog.vala:260
 msgid "Lab 1 or John's desk"
 msgstr "تاقیگەی ١ یان مێزی ئاگا"
 
-#: src/Dialogs/AddDialog.vala:283 src/Views/SuppliesView.vala:36
+#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:36
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
 msgstr "شوێن:"
 
-#: src/Dialogs/AddDialog.vala:311
+#: src/Dialogs/AddDialog.vala:291
 msgid "Loading…"
 msgstr "ئامادەکردن…"
 
-#: src/Dialogs/AddDialog.vala:342
+#: src/Dialogs/AddDialog.vala:324
 msgid "Back"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:346
+#: src/Dialogs/AddDialog.vala:328
 msgid "Add Printer"
 msgstr "زیادکردنی چاپکەر"
 
-#: src/Dialogs/AddDialog.vala:658
+#: src/Dialogs/AddDialog.vala:640
 msgid "Serial"
 msgstr "زنجیرەیی"
 
-#: src/Dialogs/AddDialog.vala:661
+#: src/Dialogs/AddDialog.vala:643
 msgid "Local Printers"
 msgstr "چاپکەرە ناوخۆییەکان"
 
-#: src/Dialogs/AddDialog.vala:664
+#: src/Dialogs/AddDialog.vala:646
 msgid "Network Printers"
 msgstr "چاپکەرەکانی ڕایەڵە"
 
-#: src/Dialogs/AddDialog.vala:667
+#: src/Dialogs/AddDialog.vala:649
 msgid "Available Network Printers"
 msgstr "چاپکەرە بەردەستەکانی ڕایەڵە"
 
-#: src/Dialogs/AddDialog.vala:705
+#: src/Dialogs/AddDialog.vala:688
 msgid "(recommended)"
 msgstr "(پێشنیازکراو)"
 
-#: src/Dialogs/ClearQueueDialog.vala:30
+#: src/Dialogs/ClearQueueDialog.vala:16
 #, c-format
 msgid "Clear all pending and completed jobs from “%s”?"
 msgstr ""
 
-#: src/Dialogs/ClearQueueDialog.vala:31
+#: src/Dialogs/ClearQueueDialog.vala:17
 msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
 msgstr ""
 
-#: src/Dialogs/ClearQueueDialog.vala:36 src/Views/JobsView.vala:37
+#: src/Dialogs/ClearQueueDialog.vala:22 src/Views/JobsView.vala:37
 msgid "Clear All"
 msgstr "سڕینەوەی هەموو"
 
-#: src/Dialogs/RemoveDialog.vala:29
+#: src/Dialogs/RemoveDialog.vala:15
 #, c-format
 msgid "Are You Sure You Want To Remove '%s'?"
 msgstr "دڵنیایی دەتەوێت '%s' بسڕیتەوە؟"
 
-#: src/Dialogs/RemoveDialog.vala:30
+#: src/Dialogs/RemoveDialog.vala:16
 #, c-format
 msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
@@ -211,7 +211,7 @@ msgstr ""
 "بە سڕینەوەی '%s' هەموو مێژووی چاپکردنەکان و ڕێکخستنەکانی وابەستە پێی "
 "دەسڕدرێنەوە."
 
-#: src/Dialogs/RemoveDialog.vala:35
+#: src/Dialogs/RemoveDialog.vala:21
 msgid "Remove"
 msgstr "سڕینەوە"
 
@@ -360,274 +360,274 @@ msgstr "ئامادە"
 msgid "Print Queue Is Empty"
 msgstr "نۆرەی چاپکردن بەتاڵە"
 
-#: src/Views/JobsView.vala:19
+#: src/Views/JobsView.vala:20
 msgid "There are no pending jobs in the queue."
 msgstr "هیچ کارێک نییە لە نۆرەدا چاوەڕێ بکات."
 
-#: src/Views/JobsView.vala:103
+#: src/Views/JobsView.vala:107
 msgid "Completed Jobs"
 msgstr "کارە تەواوبووەکان"
 
-#: src/Views/SetupView.vala:38
+#: src/Views/SetupView.vala:47
 msgid "Pages per side:"
 msgstr "لاپەڕەکان بۆ هەر لایەک:"
 
-#: src/Views/SetupView.vala:57
+#: src/Views/SetupView.vala:66
 msgctxt "printing option value"
 msgid "Long Edge (Standard)"
 msgstr "قەراخی درێژ (ستاندارد)"
 
-#: src/Views/SetupView.vala:59
+#: src/Views/SetupView.vala:68
 msgctxt "printing option value"
 msgid "Short Edge (Flip)"
 msgstr "قەراخی کورت (فلیپ)"
 
-#: src/Views/SetupView.vala:113
+#: src/Views/SetupView.vala:122
 msgid "Two-sided:"
 msgstr "دوو-لاکراو:"
 
-#: src/Views/SetupView.vala:131
+#: src/Views/SetupView.vala:140
 msgid "Portrait"
 msgstr "درێژی"
 
-#: src/Views/SetupView.vala:134
+#: src/Views/SetupView.vala:143
 msgid "Landscape"
 msgstr "پانی"
 
-#: src/Views/SetupView.vala:137
+#: src/Views/SetupView.vala:146
 msgid "Reverse portrait"
 msgstr "درێژی هەڵگەڕاوە"
 
-#: src/Views/SetupView.vala:140
+#: src/Views/SetupView.vala:149
 msgid "Reverse landscape"
 msgstr "پانی هەڵگەڕاوە"
 
-#: src/Views/SetupView.vala:149
+#: src/Views/SetupView.vala:158
 msgid "Orientation:"
 msgstr "ئاڕاستەکردن:"
 
-#: src/Views/SetupView.vala:171
+#: src/Views/SetupView.vala:180
 msgid "Media Size:"
 msgstr "قەبارەی میدیا:"
 
-#: src/Views/SetupView.vala:187 src/Views/SetupView.vala:340
+#: src/Views/SetupView.vala:196 src/Views/SetupView.vala:349
 msgid "Automatic"
 msgstr "خۆکار"
 
-#: src/Views/SetupView.vala:190
+#: src/Views/SetupView.vala:199
 msgid "One Color"
 msgstr "یەک ڕەنگ"
 
-#: src/Views/SetupView.vala:193
+#: src/Views/SetupView.vala:202
 msgid "Color"
 msgstr "ڕەنگ"
 
-#: src/Views/SetupView.vala:196
+#: src/Views/SetupView.vala:205
 msgid "One Color + Black"
 msgstr "یەک ڕەنگ + ڕەش"
 
-#: src/Views/SetupView.vala:199
+#: src/Views/SetupView.vala:208
 msgid "Greyscale"
 msgstr "خۆڵەمێشی"
 
-#: src/Views/SetupView.vala:202
+#: src/Views/SetupView.vala:211
 msgid "Processed Color"
 msgstr "ڕەنگی پرۆسێس کراو"
 
-#: src/Views/SetupView.vala:205
+#: src/Views/SetupView.vala:214
 msgid "Processed Greyscale"
 msgstr "خۆڵەمێشی پرۆسێس کراو"
 
-#: src/Views/SetupView.vala:214
+#: src/Views/SetupView.vala:223
 msgid "Color mode:"
 msgstr "دۆخی ڕەنگ:"
 
-#: src/Views/SetupView.vala:230
+#: src/Views/SetupView.vala:239
 msgid "Top Bin"
 msgstr "بینی سەرەوە"
 
-#: src/Views/SetupView.vala:233
+#: src/Views/SetupView.vala:242
 msgid "Middle Bin"
 msgstr "بینی ناوەڕاست"
 
-#: src/Views/SetupView.vala:236
+#: src/Views/SetupView.vala:245
 msgid "Bottom Bin"
 msgstr "بینی خوارەوە"
 
-#: src/Views/SetupView.vala:239
+#: src/Views/SetupView.vala:248
 msgid "Side Bin"
 msgstr "بینی لا"
 
-#: src/Views/SetupView.vala:242
+#: src/Views/SetupView.vala:251
 msgid "Left Bin"
 msgstr "بینی چەپ"
 
-#: src/Views/SetupView.vala:245
+#: src/Views/SetupView.vala:254
 msgid "Right Bin"
 msgstr "بینی ڕاست"
 
-#: src/Views/SetupView.vala:248
+#: src/Views/SetupView.vala:257
 msgid "Center Bin"
 msgstr "بینی ناوەند"
 
-#: src/Views/SetupView.vala:251
+#: src/Views/SetupView.vala:260
 msgid "Rear Bin"
 msgstr "بینی پشتەوە"
 
-#: src/Views/SetupView.vala:254
+#: src/Views/SetupView.vala:263
 msgid "Face Up Bin"
 msgstr "بینی پێشەوە"
 
-#: src/Views/SetupView.vala:257
+#: src/Views/SetupView.vala:266
 #, fuzzy
 msgid "Face Down Bin"
 msgstr "Face Down Bin"
 
-#: src/Views/SetupView.vala:260
+#: src/Views/SetupView.vala:269
 #, fuzzy
 msgid "Large Capacity Bin"
 msgstr "Large Capacity Bin"
 
-#: src/Views/SetupView.vala:263
+#: src/Views/SetupView.vala:272
 #, fuzzy
 msgid "My Mailbox"
 msgstr "My Mailbox"
 
-#: src/Views/SetupView.vala:268
+#: src/Views/SetupView.vala:277
 #, fuzzy, c-format
 msgid "Stacker %d"
 msgstr "Stacker %d"
 
-#: src/Views/SetupView.vala:271
+#: src/Views/SetupView.vala:280
 #, fuzzy, c-format
 msgid "Mailbox %d"
 msgstr "Mailbox %d"
 
-#: src/Views/SetupView.vala:274 src/Views/SetupView.vala:404
+#: src/Views/SetupView.vala:283 src/Views/SetupView.vala:413
 #, fuzzy, c-format
 msgid "Tray %d"
 msgstr "Tray %d"
 
-#: src/Views/SetupView.vala:287
+#: src/Views/SetupView.vala:296
 #, fuzzy
 msgid "Output Tray:"
 msgstr "Output Tray:"
 
-#: src/Views/SetupView.vala:303
+#: src/Views/SetupView.vala:312
 msgid "Draft"
 msgstr "ڕەشنووس"
 
-#: src/Views/SetupView.vala:306
+#: src/Views/SetupView.vala:315
 msgid "Normal"
 msgstr "ئاسایی"
 
-#: src/Views/SetupView.vala:309
+#: src/Views/SetupView.vala:318
 msgid "High"
 msgstr "بەرز"
 
-#: src/Views/SetupView.vala:315
+#: src/Views/SetupView.vala:324
 msgid "Quality:"
 msgstr "کوالێتی:"
 
-#: src/Views/SetupView.vala:331
+#: src/Views/SetupView.vala:340
 #, fuzzy
 msgid "Paper Allocation"
 msgstr "Paper Allocation"
 
-#: src/Views/SetupView.vala:334
+#: src/Views/SetupView.vala:343
 #, fuzzy
 msgid "Alternate Tray"
 msgstr "Alternate Tray"
 
-#: src/Views/SetupView.vala:337
+#: src/Views/SetupView.vala:346
 #, fuzzy
 msgid "Alternate Roll"
 msgstr "Alternate Roll"
 
-#: src/Views/SetupView.vala:343
+#: src/Views/SetupView.vala:352
 msgid "Bottom"
 msgstr "خوارەوە"
 
-#: src/Views/SetupView.vala:346
+#: src/Views/SetupView.vala:355
 #, fuzzy
 msgid "By-pass Tray"
 msgstr "By-pass Tray"
 
-#: src/Views/SetupView.vala:349
+#: src/Views/SetupView.vala:358
 msgid "Center"
 msgstr "ناوەڕاست"
 
-#: src/Views/SetupView.vala:352
+#: src/Views/SetupView.vala:361
 #, fuzzy
 msgid "Continuous Autofeed"
 msgstr "Continuous Autofeed"
 
-#: src/Views/SetupView.vala:356
+#: src/Views/SetupView.vala:365
 msgid "Disk"
 msgstr "پەپکە"
 
-#: src/Views/SetupView.vala:359
+#: src/Views/SetupView.vala:368
 msgid "Envelope"
 msgstr "کاخەزی نامە"
 
-#: src/Views/SetupView.vala:362
+#: src/Views/SetupView.vala:371
 #, fuzzy
 msgid "Hagaki"
 msgstr "Hagaki"
 
-#: src/Views/SetupView.vala:365
+#: src/Views/SetupView.vala:374
 #, fuzzy
 msgid "Large Capacity"
 msgstr "Large Capacity"
 
-#: src/Views/SetupView.vala:368
+#: src/Views/SetupView.vala:377
 msgid "Left"
 msgstr "چەپ"
 
-#: src/Views/SetupView.vala:371
+#: src/Views/SetupView.vala:380
 #, fuzzy
 msgid "Main Tray"
 msgstr "Main Tray"
 
-#: src/Views/SetupView.vala:374
+#: src/Views/SetupView.vala:383
 #, fuzzy
 msgid "Main Roll"
 msgstr "Main Roll"
 
-#: src/Views/SetupView.vala:377
+#: src/Views/SetupView.vala:386
 msgid "Manual"
 msgstr "دەستی"
 
-#: src/Views/SetupView.vala:380
+#: src/Views/SetupView.vala:389
 msgid "Middle"
 msgstr "ناوەڕاست"
 
-#: src/Views/SetupView.vala:383
+#: src/Views/SetupView.vala:392
 msgid "Photo"
 msgstr "وێنە"
 
-#: src/Views/SetupView.vala:387
+#: src/Views/SetupView.vala:396
 msgid "Rear"
 msgstr "پشتەوە"
 
-#: src/Views/SetupView.vala:390
+#: src/Views/SetupView.vala:399
 msgid "Right"
 msgstr "ڕاست"
 
-#: src/Views/SetupView.vala:393
+#: src/Views/SetupView.vala:402
 msgid "Side"
 msgstr "لا"
 
-#: src/Views/SetupView.vala:396
+#: src/Views/SetupView.vala:405
 msgid "Top"
 msgstr "سەرەوە"
 
-#: src/Views/SetupView.vala:401
+#: src/Views/SetupView.vala:410
 #, fuzzy, c-format
 msgid "Roll %d"
 msgstr "Roll %d"
 
-#: src/Views/SetupView.vala:417
+#: src/Views/SetupView.vala:426
 msgid "Paper Source:"
 msgstr "سەرچاوەی پەڕ:"
 
@@ -635,39 +635,39 @@ msgstr "سەرچاوەی پەڕ:"
 msgid "Lab 1 or John's Desk"
 msgstr "تاقیگەی یەک یان مێزی ئاگا"
 
-#: src/Views/SuppliesView.vala:115
+#: src/Views/SuppliesView.vala:117
 msgid "Black (PGBK)"
 msgstr "ڕەش (PGBK)"
 
-#: src/Views/SuppliesView.vala:118
+#: src/Views/SuppliesView.vala:120
 msgid "Black (BK)"
 msgstr "ڕەش (BK)"
 
-#: src/Views/SuppliesView.vala:122
+#: src/Views/SuppliesView.vala:124
 msgid "Black"
 msgstr "ڕەش"
 
-#: src/Views/SuppliesView.vala:126
+#: src/Views/SuppliesView.vala:128
 msgid "Yellow"
 msgstr "زەرد"
 
-#: src/Views/SuppliesView.vala:130
+#: src/Views/SuppliesView.vala:132
 msgid "Cyan"
 msgstr "سایان (شینی تۆخ)"
 
-#: src/Views/SuppliesView.vala:134
+#: src/Views/SuppliesView.vala:136
 msgid "Magenta"
 msgstr "ماگێنتا"
 
-#: src/Views/SuppliesView.vala:136
+#: src/Views/SuppliesView.vala:138
 msgid "Tri-color"
 msgstr "سێ ڕەنگ"
 
-#: src/Widgets/JobRow.vala:160
+#: src/Widgets/JobRow.vala:153
 msgid "Resume"
 msgstr "بەردەوام بوون"
 
-#: src/Widgets/JobRow.vala:165
+#: src/Widgets/JobRow.vala:158
 msgid "Pause"
 msgstr "ڕاگرتن"
 
@@ -675,7 +675,7 @@ msgstr "ڕاگرتن"
 msgid "Remove this printer"
 msgstr "ئەم چاپکەرە بسڕەوە"
 
-#: src/Widgets/PrinterRow.vala:124
+#: src/Widgets/PrinterRow.vala:129
 msgid "Disabled"
 msgstr "وەستێنراو"
 
