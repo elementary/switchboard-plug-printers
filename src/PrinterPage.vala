@@ -44,6 +44,7 @@ public class Printers.PrinterPage : Switchboard.SettingsPage {
         box.append (stack);
 
         child = box;
+        show_end_title_buttons = true;
 
         var set_default = add_button (_("Set as Default"));
         set_default.sensitive = !printer.is_default;
