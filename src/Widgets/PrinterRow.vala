@@ -49,10 +49,10 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         name_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         status_label = new Gtk.Label (null) {
-            use_markup = true,
             ellipsize = END,
             xalign = 0
         };
+        status_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         printer_image = new Gtk.Image.from_icon_name ("printer");
         printer_image.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
@@ -63,8 +63,7 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         };
 
         var overlay = new Gtk.Overlay () {
-            child = printer_image,
-            width_request = 38
+            child = printer_image
         };
         overlay.add_overlay (status_image);
 
@@ -103,7 +102,7 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
 
     private void update_status () {
         if (printer.is_enabled) {
-            status_label.label = "<span font_size=\"small\">%s</span>".printf (GLib.Markup.escape_text (printer.state_reasons));
+            status_label.label = printer.state_reasons;
             switch (printer.state_reasons_raw) {
                 case "offline":
                     status_image.icon_name = "user-offline";
@@ -126,7 +125,7 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
             }
         } else {
             status_image.icon_name = "user-offline";
-            status_label.label = "<span font_size=\"small\">%s</span>".printf (_("Disabled"));
+            status_label.label = _("Disabled");
         }
     }
 }

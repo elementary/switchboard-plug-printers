@@ -42,23 +42,22 @@ public class Printers.PrinterList : Gtk.Box {
 
         var add_button = new Gtk.Button () {
             child = add_button_box,
-            has_frame = false,
-            margin_top = 3,
-            margin_bottom = 3
+            has_frame = false
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
         actionbar.pack_start (add_button);
 
         var toolbarview = new Adw.ToolbarView () {
             content = scrolled,
-            top_bar_style = FLAT
+            top_bar_style = FLAT,
+            bottom_bar_style = RAISED
         };
         toolbarview.add_top_bar (headerbar);
         toolbarview.add_bottom_bar (actionbar);
 
         append (toolbarview);
+        add_css_class (Granite.STYLE_CLASS_SIDEBAR);
 
         list_box.row_selected.connect ((row) => {
             if (row != null) {
