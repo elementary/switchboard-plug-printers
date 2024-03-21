@@ -17,18 +17,21 @@ public class Printers.PrinterList : Gtk.Box {
         Object (stack: stack);
     }
 
+    class construct {
+        set_css_name ("settingssidebar");
+    }
+
     construct {
-        orientation = Gtk.Orientation.VERTICAL;
-        hexpand = true;
-        vexpand = true;
+        var headerbar = new Adw.HeaderBar () {
+            show_end_title_buttons = false,
+            show_title = false
+        };
 
         list_box = new Gtk.ListBox ();
-        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
         var scrolled = new Gtk.ScrolledWindow () {
             child = list_box,
             hscrollbar_policy = NEVER,
-            width_request = 250,
             hexpand = true,
             vexpand = true
         };
@@ -39,17 +42,22 @@ public class Printers.PrinterList : Gtk.Box {
 
         var add_button = new Gtk.Button () {
             child = add_button_box,
-            has_frame = false,
-            margin_top = 3,
-            margin_bottom = 3
+            has_frame = false
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
         actionbar.pack_start (add_button);
 
-        append (scrolled);
-        append (actionbar);
+        var toolbarview = new Adw.ToolbarView () {
+            content = scrolled,
+            top_bar_style = FLAT,
+            bottom_bar_style = RAISED
+        };
+        toolbarview.add_top_bar (headerbar);
+        toolbarview.add_bottom_bar (actionbar);
+
+        append (toolbarview);
+        add_css_class (Granite.STYLE_CLASS_SIDEBAR);
 
         list_box.row_selected.connect ((row) => {
             if (row != null) {
