@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 15:56+0000\n"
-"PO-Revision-Date: 2022-12-20 23:25+0000\n"
+"PO-Revision-Date: 2024-03-26 22:13+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/Plug.vala:23
@@ -51,7 +51,7 @@ msgstr "Definições e Acessórios"
 
 #: src/PrinterPage.vala:47
 msgid "Set as Default"
-msgstr ""
+msgstr "Definir como predefinida"
 
 #: src/PrinterPage.vala:52
 msgid "Print Test Page"
@@ -119,38 +119,32 @@ msgid "Impossible to list all available printers"
 msgstr "Impossível listar todas as impressoras disponíveis"
 
 #: src/Dialogs/AddDialog.vala:233
-#, fuzzy
-#| msgid "Connection:"
 msgid "Connection"
-msgstr "Ligação:"
+msgstr "Ligação"
 
 #: src/Dialogs/AddDialog.vala:238
 msgid "Connection uri must contain “://“"
-msgstr ""
+msgstr "O uri de ligação deve conter \"://\""
 
 #: src/Dialogs/AddDialog.vala:245 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
 #: src/Dialogs/AddDialog.vala:249 src/Views/SuppliesView.vala:28
-#, fuzzy
-#| msgid "Description:"
 msgid "Description"
-msgstr "Descrição:"
+msgstr "Descrição"
 
 #: src/Dialogs/AddDialog.vala:254
 msgid "Description cannot be empty"
-msgstr ""
+msgstr "A descrição não pode estar em branco"
 
 #: src/Dialogs/AddDialog.vala:260
 msgid "Lab 1 or John's desk"
 msgstr "Sala 1 ou Secretária do João"
 
 #: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:36
-#, fuzzy
-#| msgid "Location:"
 msgid "Location"
-msgstr "Localização:"
+msgstr "Localização"
 
 #: src/Dialogs/AddDialog.vala:291
 msgid "Loading…"
@@ -158,7 +152,7 @@ msgstr "A carregar…"
 
 #: src/Dialogs/AddDialog.vala:324
 msgid "Back"
-msgstr ""
+msgstr "Voltar"
 
 #: src/Dialogs/AddDialog.vala:328
 msgid "Add Printer"
