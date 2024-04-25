@@ -25,13 +25,12 @@ namespace Printers.Translations {
     }
 }
 
-public class Printers.AddDialog : Gtk.Window {
+public class Printers.AddDialog : Granite.Dialog {
+    private Adw.NavigationView navigation_view;
     private Granite.ValidatedEntry connection_entry;
     private Granite.ValidatedEntry description_entry;
     private Gtk.Button add_printer_button;
     private Gtk.Button refresh_button;
-    private Gtk.Stack stack;
-    private Granite.Placeholder alertview;
     private Gtk.Stack drivers_stack;
     private Gee.LinkedList<Printers.DeviceDriver> drivers;
     private Gtk.ListBox driver_view;
@@ -105,25 +104,14 @@ public class Printers.AddDialog : Gtk.Window {
         devices_box.append (frame);
         devices_box.append (button_box);
 
-        alertview = new Granite.Placeholder (_("Impossible to list all available printers")) {
-            icon = new ThemedIcon ("dialog-error")
-        };
+        var devices_page = new Adw.NavigationPage (devices_box, _("Select Printer"));
 
-        stack = new Gtk.Stack () {
-            transition_type = SLIDE_LEFT_RIGHT
-        };
-        stack.add_named (devices_box, "devices-grid");
-        stack.add_child (alertview);
-
-        var window_handle = new Gtk.WindowHandle () {
-            child = stack
-        };
+        navigation_view = new Adw.NavigationView ();
+        navigation_view.add (devices_page);
 
         default_height = 450;
         default_width = 500;
-        child = window_handle;
-        titlebar = new Gtk.Grid () { visible = false };
-        add_css_class ("dialog");
+        child = navigation_view;
 
         drivers = new Gee.LinkedList<Printers.DeviceDriver> ();
 
@@ -219,8 +207,33 @@ public class Printers.AddDialog : Gtk.Window {
 
     // Shows the error panel
     private void show_error (string error) {
-        stack.set_visible_child (alertview);
-        alertview.description = error;
+        var alertview = new Granite.Placeholder (_("Impossible to list all available printers")) {
+            icon = new ThemedIcon ("dialog-error"),
+            description = error,
+            vexpand = true
+        };
+        alertview.add_css_class ("dialog-content-area");
+
+        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
+
+        var button_box = new Gtk.Box (HORIZONTAL, 0) {
+            halign = END,
+            homogeneous = true
+        };
+        button_box.add_css_class ("dialog-action-area");
+        button_box.append (cancel_button);
+
+        var error_box = new Gtk.Box (VERTICAL, 0);
+        error_box.append (alertview);
+        error_box.append (button_box);
+
+        var error_page = new Adw.NavigationPage (error_box, _("Setup Error"));
+
+        navigation_view.push (error_page);
+
+        cancel_button.clicked.connect (() => {
+            destroy ();
+        });
     }
 
     // Shows the next panel with further configuration
@@ -366,12 +379,13 @@ public class Printers.AddDialog : Gtk.Window {
         device_box.append (content_box);
         device_box.append (button_box);
 
-        stack.add_child (device_box);
-        stack.set_visible_child (device_box);
+        var setup_page = new Adw.NavigationPage (device_box, _("Printer Setup"));
+
+        navigation_view.push (setup_page);
 
         previous_button.clicked.connect (() => {
             driver_cancellable.cancel ();
-            stack.visible_child_name = "devices-grid";
+            navigation_view.pop ();
             device_box.destroy ();
         });
 
