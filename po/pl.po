@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 15:56+0000\n"
-"PO-Revision-Date: 2024-01-04 01:39+0000\n"
+"PO-Revision-Date: 2024-04-23 20:13+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/pl/>\n"
@@ -517,7 +517,7 @@ msgstr "Normalna"
 
 #: src/Views/SetupView.vala:318
 msgid "High"
-msgstr "Wysoka"
+msgstr "Wysoki"
 
 #: src/Views/SetupView.vala:324
 msgid "Quality:"
