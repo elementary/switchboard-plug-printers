@@ -7,9 +7,10 @@
 
 You'll need the following dependencies:
 
+* libadwaita-1-dev >=1.4.0
 * libcups2-dev
 * libswitchboard-3-dev
-* libgranite-7-dev
+* libgranite-7-dev >=7.4.0
 * libgtk-4-dev
 * meson
 * valac
