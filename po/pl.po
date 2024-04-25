@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 15:56+0000\n"
+"POT-Creation-Date: 2024-04-25 17:18+0000\n"
 "PO-Revision-Date: 2024-04-23 20:13+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -36,32 +36,32 @@ msgstr ""
 "Połącz z drukarką poprzez kliknięcie na ikonie znajdującej się na poniższym "
 "pasku narzędzi."
 
-#: src/PrinterList.vala:38
+#: src/PrinterList.vala:41
 msgid "Add Printer…"
 msgstr "Dodaj drukarkę…"
 
-#: src/PrinterPage.vala:27
+#: src/PrinterPage.vala:26
 msgid "Print Queue"
 msgstr "Kolejka w drukarce"
 
-#: src/PrinterPage.vala:28
+#: src/PrinterPage.vala:27
 msgid "Page Setup"
 msgstr "Ustawienia strony"
 
-#: src/PrinterPage.vala:29
+#: src/PrinterPage.vala:28
 msgid "Settings & Supplies"
 msgstr "Ustawienia i zasoby"
 
-#: src/PrinterPage.vala:47
+#: src/PrinterPage.vala:49
 msgid "Set as Default"
 msgstr "Ustaw jako domyślną"
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:53
 msgid "Print Test Page"
 msgstr "Wydrukuj stronę testową"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:112
 msgid "Test page"
 msgstr "Strona testowa"
 
@@ -100,84 +100,101 @@ msgstr "Komputer lub drukarka LPD/LPR"
 msgid "AppSocket/HP JetDirect"
 msgstr "AppSocket/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:55
+#: src/Dialogs/AddDialog.vala:54
 msgid "Finding nearby printers…"
 msgstr "Wyszukiwanie drukarek w pobliżu…"
 
-#: src/Dialogs/AddDialog.vala:81
+#: src/Dialogs/AddDialog.vala:80
 msgid "Refresh"
 msgstr "Odśwież"
 
-#: src/Dialogs/AddDialog.vala:85 src/Dialogs/AddDialog.vala:326
-#: src/Widgets/JobRow.vala:78
+#: src/Dialogs/AddDialog.vala:84 src/Dialogs/AddDialog.vala:217
+#: src/Dialogs/AddDialog.vala:339 src/Widgets/JobRow.vala:78
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: src/Dialogs/AddDialog.vala:87
+#: src/Dialogs/AddDialog.vala:86
 msgid "Next"
 msgstr "Dalej"
 
-#: src/Dialogs/AddDialog.vala:108
+#: src/Dialogs/AddDialog.vala:107
+#, fuzzy
+#| msgid "Network Printers"
+msgid "Select Printer"
+msgstr "Sieciowe drukarki"
+
+#. Shows the error panel
+#: src/Dialogs/AddDialog.vala:210
 msgid "Impossible to list all available printers"
 msgstr "Nie jest możliwe wypisanie wszystkich dostępnych drukarek"
 
-#: src/Dialogs/AddDialog.vala:233
+#: src/Dialogs/AddDialog.vala:230
+msgid "Setup Error"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:246
 msgid "Connection"
 msgstr "Połączenie"
 
-#: src/Dialogs/AddDialog.vala:238
+#: src/Dialogs/AddDialog.vala:251
 msgid "Connection uri must contain “://“"
 msgstr "URI połączenia musi zawierać „://”"
 
-#: src/Dialogs/AddDialog.vala:245 src/Views/SuppliesView.vala:25
+#: src/Dialogs/AddDialog.vala:258 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
-#: src/Dialogs/AddDialog.vala:249 src/Views/SuppliesView.vala:28
+#: src/Dialogs/AddDialog.vala:262 src/Views/SuppliesView.vala:28
 msgid "Description"
 msgstr "Opis"
 
-#: src/Dialogs/AddDialog.vala:254
+#: src/Dialogs/AddDialog.vala:267
 msgid "Description cannot be empty"
 msgstr "Opis nie może być pusty"
 
-#: src/Dialogs/AddDialog.vala:260
+#: src/Dialogs/AddDialog.vala:273
 msgid "Lab 1 or John's desk"
 msgstr "Laboratorium 1 lub pulpit Janka"
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:36
+#: src/Dialogs/AddDialog.vala:276 src/Views/SuppliesView.vala:36
 msgid "Location"
 msgstr "Położenie"
 
-#: src/Dialogs/AddDialog.vala:291
+#: src/Dialogs/AddDialog.vala:304
 msgid "Loading…"
 msgstr "Ładowanie…"
 
-#: src/Dialogs/AddDialog.vala:324
+#: src/Dialogs/AddDialog.vala:337
 msgid "Back"
 msgstr "Wróć"
 
-#: src/Dialogs/AddDialog.vala:328
+#: src/Dialogs/AddDialog.vala:341
 msgid "Add Printer"
 msgstr "Dodaj drukarkę"
 
-#: src/Dialogs/AddDialog.vala:640
+#: src/Dialogs/AddDialog.vala:382
+#, fuzzy
+#| msgid "Page Setup"
+msgid "Printer Setup"
+msgstr "Ustawienia strony"
+
+#: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
 msgstr "Szeregowy"
 
-#: src/Dialogs/AddDialog.vala:643
+#: src/Dialogs/AddDialog.vala:657
 msgid "Local Printers"
 msgstr "Lokalne drukarki"
 
-#: src/Dialogs/AddDialog.vala:646
+#: src/Dialogs/AddDialog.vala:660
 msgid "Network Printers"
 msgstr "Sieciowe drukarki"
 
-#: src/Dialogs/AddDialog.vala:649
+#: src/Dialogs/AddDialog.vala:663
 msgid "Available Network Printers"
 msgstr "Dostępne drukarki sieciowe"
 
-#: src/Dialogs/AddDialog.vala:688
+#: src/Dialogs/AddDialog.vala:702
 msgid "(recommended)"
 msgstr "(rekomendowane)"
 
@@ -660,7 +677,7 @@ msgstr "Wstrzymaj"
 msgid "Remove this printer"
 msgstr "Usuń tę drukarkę"
 
-#: src/Widgets/PrinterRow.vala:129
+#: src/Widgets/PrinterRow.vala:128
 msgid "Disabled"
 msgstr "Wyłączone"
 

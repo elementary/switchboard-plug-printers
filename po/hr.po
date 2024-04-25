@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 15:56+0000\n"
+"POT-Creation-Date: 2024-04-25 17:18+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -35,33 +35,33 @@ msgstr "Nema pisača"
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
 
-#: src/PrinterList.vala:38
+#: src/PrinterList.vala:41
 msgid "Add Printer…"
 msgstr "Dodaj pisač…"
 
-#: src/PrinterPage.vala:27
+#: src/PrinterPage.vala:26
 #, fuzzy
 msgid "Print Queue"
 msgstr "Pisači"
 
-#: src/PrinterPage.vala:28
+#: src/PrinterPage.vala:27
 msgid "Page Setup"
 msgstr ""
 
-#: src/PrinterPage.vala:29
+#: src/PrinterPage.vala:28
 msgid "Settings & Supplies"
 msgstr ""
 
-#: src/PrinterPage.vala:47
+#: src/PrinterPage.vala:49
 msgid "Set as Default"
 msgstr ""
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:53
 msgid "Print Test Page"
 msgstr "Ispiši testnu stranicu"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:112
 msgid "Test page"
 msgstr "Testna stranica"
 
@@ -100,93 +100,110 @@ msgstr "LPD/LPR računalo ili pisač"
 msgid "AppSocket/HP JetDirect"
 msgstr "Priključnica aplikacije/HP JetDirect"
 
-#: src/Dialogs/AddDialog.vala:55
+#: src/Dialogs/AddDialog.vala:54
 msgid "Finding nearby printers…"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:81
+#: src/Dialogs/AddDialog.vala:80
 msgid "Refresh"
 msgstr "Osvježi"
 
-#: src/Dialogs/AddDialog.vala:85 src/Dialogs/AddDialog.vala:326
-#: src/Widgets/JobRow.vala:78
+#: src/Dialogs/AddDialog.vala:84 src/Dialogs/AddDialog.vala:217
+#: src/Dialogs/AddDialog.vala:339 src/Widgets/JobRow.vala:78
 #, fuzzy
 msgid "Cancel"
 msgstr "Zadatak poništen"
 
-#: src/Dialogs/AddDialog.vala:87
+#: src/Dialogs/AddDialog.vala:86
 msgid "Next"
 msgstr "Sljedeća"
 
-#: src/Dialogs/AddDialog.vala:108
+#: src/Dialogs/AddDialog.vala:107
+#, fuzzy
+#| msgid "Network Printers"
+msgid "Select Printer"
+msgstr "Mrežni pisači"
+
+#. Shows the error panel
+#: src/Dialogs/AddDialog.vala:210
 msgid "Impossible to list all available printers"
 msgstr "Nemoguće je prikazati sve dostupne pisače"
 
-#: src/Dialogs/AddDialog.vala:233
+#: src/Dialogs/AddDialog.vala:230
+msgid "Setup Error"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:246
 #, fuzzy
 #| msgid "Connection:"
 msgid "Connection"
 msgstr "Povezivanje:"
 
-#: src/Dialogs/AddDialog.vala:238
+#: src/Dialogs/AddDialog.vala:251
 msgid "Connection uri must contain “://“"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:245 src/Views/SuppliesView.vala:25
+#: src/Dialogs/AddDialog.vala:258 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPisač X3000"
 
-#: src/Dialogs/AddDialog.vala:249 src/Views/SuppliesView.vala:28
+#: src/Dialogs/AddDialog.vala:262 src/Views/SuppliesView.vala:28
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
 msgstr "Opis:"
 
-#: src/Dialogs/AddDialog.vala:254
+#: src/Dialogs/AddDialog.vala:267
 msgid "Description cannot be empty"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:260
+#: src/Dialogs/AddDialog.vala:273
 msgid "Lab 1 or John's desk"
 msgstr "Lab 1 ili Goranov radni stol"
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:36
+#: src/Dialogs/AddDialog.vala:276 src/Views/SuppliesView.vala:36
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
 msgstr "Lokacija:"
 
-#: src/Dialogs/AddDialog.vala:291
+#: src/Dialogs/AddDialog.vala:304
 #, fuzzy
 #| msgid "Processing…"
 msgid "Loading…"
 msgstr "Obrađivanje…"
 
-#: src/Dialogs/AddDialog.vala:324
+#: src/Dialogs/AddDialog.vala:337
 msgid "Back"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:328
+#: src/Dialogs/AddDialog.vala:341
 msgid "Add Printer"
 msgstr "Dodaj pisač"
 
-#: src/Dialogs/AddDialog.vala:640
+#: src/Dialogs/AddDialog.vala:382
+#, fuzzy
+#| msgid "Printers"
+msgid "Printer Setup"
+msgstr "Pisači"
+
+#: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
 msgstr "Serijski"
 
-#: src/Dialogs/AddDialog.vala:643
+#: src/Dialogs/AddDialog.vala:657
 msgid "Local Printers"
 msgstr "Lokalni pisači"
 
-#: src/Dialogs/AddDialog.vala:646
+#: src/Dialogs/AddDialog.vala:660
 msgid "Network Printers"
 msgstr "Mrežni pisači"
 
-#: src/Dialogs/AddDialog.vala:649
+#: src/Dialogs/AddDialog.vala:663
 msgid "Available Network Printers"
 msgstr "Dostupni mrežni pisači"
 
-#: src/Dialogs/AddDialog.vala:688
+#: src/Dialogs/AddDialog.vala:702
 msgid "(recommended)"
 msgstr "(preporučljivo)"
 
@@ -691,7 +708,7 @@ msgstr ""
 msgid "Remove this printer"
 msgstr "Ukloni pisač"
 
-#: src/Widgets/PrinterRow.vala:129
+#: src/Widgets/PrinterRow.vala:128
 msgid "Disabled"
 msgstr "Onemogućeno"
 

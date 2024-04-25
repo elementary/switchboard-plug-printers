@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 15:56+0000\n"
+"POT-Creation-Date: 2024-04-25 17:18+0000\n"
 "PO-Revision-Date: 2020-12-16 22:16+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -31,32 +31,32 @@ msgstr "कोणतेही प्रिंटर उपलब्ध नाह
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr "खालील टूलबारमधील चिन्हावर क्लिक करुन प्रिंटरशी कनेक्ट करा."
 
-#: src/PrinterList.vala:38
+#: src/PrinterList.vala:41
 msgid "Add Printer…"
 msgstr "प्रिंटर जोडा…"
 
-#: src/PrinterPage.vala:27
+#: src/PrinterPage.vala:26
 msgid "Print Queue"
 msgstr "मुद्रण रांग"
 
-#: src/PrinterPage.vala:28
+#: src/PrinterPage.vala:27
 msgid "Page Setup"
 msgstr "पृष्ठ व्यवस्था"
 
-#: src/PrinterPage.vala:29
+#: src/PrinterPage.vala:28
 msgid "Settings & Supplies"
 msgstr "सेटिंग्ज आणि पुरवठा"
 
-#: src/PrinterPage.vala:47
+#: src/PrinterPage.vala:49
 msgid "Set as Default"
 msgstr ""
 
-#: src/PrinterPage.vala:52
+#: src/PrinterPage.vala:53
 msgid "Print Test Page"
 msgstr "चाचणी पृष्ठ मुद्रित करा"
 
 #. / TRANSLATORS: Name of the test page job
-#: src/PrinterPage.vala:114
+#: src/PrinterPage.vala:112
 msgid "Test page"
 msgstr "चाचणी पृष्ठ"
 
@@ -95,90 +95,107 @@ msgstr "एलपीडी / एलपीआर होस्ट किंवा 
 msgid "AppSocket/HP JetDirect"
 msgstr "अॅपसॉकेट / एचपी जेट डायरेक्ट"
 
-#: src/Dialogs/AddDialog.vala:55
+#: src/Dialogs/AddDialog.vala:54
 msgid "Finding nearby printers…"
 msgstr "जवळील प्रिंटर शोधत आहे…"
 
-#: src/Dialogs/AddDialog.vala:81
+#: src/Dialogs/AddDialog.vala:80
 msgid "Refresh"
 msgstr "रीफ्रेश करा"
 
-#: src/Dialogs/AddDialog.vala:85 src/Dialogs/AddDialog.vala:326
-#: src/Widgets/JobRow.vala:78
+#: src/Dialogs/AddDialog.vala:84 src/Dialogs/AddDialog.vala:217
+#: src/Dialogs/AddDialog.vala:339 src/Widgets/JobRow.vala:78
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: src/Dialogs/AddDialog.vala:87
+#: src/Dialogs/AddDialog.vala:86
 msgid "Next"
 msgstr "पुढे"
 
-#: src/Dialogs/AddDialog.vala:108
+#: src/Dialogs/AddDialog.vala:107
+#, fuzzy
+#| msgid "Network Printers"
+msgid "Select Printer"
+msgstr "नेटवर्क प्रिंटर"
+
+#. Shows the error panel
+#: src/Dialogs/AddDialog.vala:210
 msgid "Impossible to list all available printers"
 msgstr "सर्व उपलब्ध प्रिंटर सूचीबद्ध करणे अशक्य"
 
-#: src/Dialogs/AddDialog.vala:233
+#: src/Dialogs/AddDialog.vala:230
+msgid "Setup Error"
+msgstr ""
+
+#: src/Dialogs/AddDialog.vala:246
 #, fuzzy
 #| msgid "Connection:"
 msgid "Connection"
 msgstr "जोडणी:"
 
-#: src/Dialogs/AddDialog.vala:238
+#: src/Dialogs/AddDialog.vala:251
 msgid "Connection uri must contain “://“"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:245 src/Views/SuppliesView.vala:25
+#: src/Dialogs/AddDialog.vala:258 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "ब्रँडप्रिंटर एक्स 3000"
 
-#: src/Dialogs/AddDialog.vala:249 src/Views/SuppliesView.vala:28
+#: src/Dialogs/AddDialog.vala:262 src/Views/SuppliesView.vala:28
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
 msgstr "वर्णन:"
 
-#: src/Dialogs/AddDialog.vala:254
+#: src/Dialogs/AddDialog.vala:267
 msgid "Description cannot be empty"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:260
+#: src/Dialogs/AddDialog.vala:273
 msgid "Lab 1 or John's desk"
 msgstr "लॅब 1 किंवा जॉनचे डेस्क"
 
-#: src/Dialogs/AddDialog.vala:263 src/Views/SuppliesView.vala:36
+#: src/Dialogs/AddDialog.vala:276 src/Views/SuppliesView.vala:36
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
 msgstr "स्थान:"
 
-#: src/Dialogs/AddDialog.vala:291
+#: src/Dialogs/AddDialog.vala:304
 msgid "Loading…"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:324
+#: src/Dialogs/AddDialog.vala:337
 msgid "Back"
 msgstr ""
 
-#: src/Dialogs/AddDialog.vala:328
+#: src/Dialogs/AddDialog.vala:341
 msgid "Add Printer"
 msgstr "प्रिंटर जोडा"
 
-#: src/Dialogs/AddDialog.vala:640
+#: src/Dialogs/AddDialog.vala:382
+#, fuzzy
+#| msgid "Page Setup"
+msgid "Printer Setup"
+msgstr "पृष्ठ व्यवस्था"
+
+#: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
 msgstr "सीरियल"
 
-#: src/Dialogs/AddDialog.vala:643
+#: src/Dialogs/AddDialog.vala:657
 msgid "Local Printers"
 msgstr "स्थानिक प्रिंटर"
 
-#: src/Dialogs/AddDialog.vala:646
+#: src/Dialogs/AddDialog.vala:660
 msgid "Network Printers"
 msgstr "नेटवर्क प्रिंटर"
 
-#: src/Dialogs/AddDialog.vala:649
+#: src/Dialogs/AddDialog.vala:663
 msgid "Available Network Printers"
 msgstr "उपलब्ध नेटवर्क प्रिंटर"
 
-#: src/Dialogs/AddDialog.vala:688
+#: src/Dialogs/AddDialog.vala:702
 msgid "(recommended)"
 msgstr "(शिफारस केलेले)"
 
@@ -667,7 +684,7 @@ msgstr "थांबवा"
 msgid "Remove this printer"
 msgstr "प्रिंटर काढा"
 
-#: src/Widgets/PrinterRow.vala:129
+#: src/Widgets/PrinterRow.vala:128
 msgid "Disabled"
 msgstr "अक्षम"
 
