@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-04-23 20:13+0000\n"
+"PO-Revision-Date: 2024-04-27 10:28+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/pl/>\n"
@@ -118,10 +118,8 @@ msgid "Next"
 msgstr "Dalej"
 
 #: src/Dialogs/AddDialog.vala:107
-#, fuzzy
-#| msgid "Network Printers"
 msgid "Select Printer"
-msgstr "Sieciowe drukarki"
+msgstr "Wybierz drukarkę"
 
 #. Shows the error panel
 #: src/Dialogs/AddDialog.vala:210
@@ -130,7 +128,7 @@ msgstr "Nie jest możliwe wypisanie wszystkich dostępnych drukarek"
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "Błąd konfiguracji"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Connection"
@@ -173,10 +171,8 @@ msgid "Add Printer"
 msgstr "Dodaj drukarkę"
 
 #: src/Dialogs/AddDialog.vala:382
-#, fuzzy
-#| msgid "Page Setup"
 msgid "Printer Setup"
-msgstr "Ustawienia strony"
+msgstr "Konfiguracja drukarki"
 
 #: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
