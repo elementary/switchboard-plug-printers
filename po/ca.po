@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-04-23 20:13+0000\n"
+"PO-Revision-Date: 2024-04-27 10:28+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ca/>\n"
@@ -116,10 +116,8 @@ msgid "Next"
 msgstr "Següent"
 
 #: src/Dialogs/AddDialog.vala:107
-#, fuzzy
-#| msgid "Network Printers"
 msgid "Select Printer"
-msgstr "Impressores de xarxa"
+msgstr "Selecció de la impressora"
 
 #. Shows the error panel
 #: src/Dialogs/AddDialog.vala:210
@@ -128,7 +126,7 @@ msgstr "No és possible enumerar totes les impressores disponibles"
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "Error de configuració"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Connection"
@@ -171,10 +169,8 @@ msgid "Add Printer"
 msgstr "Afegeix una impressora"
 
 #: src/Dialogs/AddDialog.vala:382
-#, fuzzy
-#| msgid "Page Setup"
 msgid "Printer Setup"
-msgstr "Configuració de la pàgina"
+msgstr "Configuració de la impressora"
 
 #: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
