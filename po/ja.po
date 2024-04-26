@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-02-19 12:12+0000\n"
+"PO-Revision-Date: 2024-04-27 10:28+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ja/>\n"
@@ -114,10 +114,8 @@ msgid "Next"
 msgstr "次へ"
 
 #: src/Dialogs/AddDialog.vala:107
-#, fuzzy
-#| msgid "Network Printers"
 msgid "Select Printer"
-msgstr "ネットワークプリンター"
+msgstr "プリンターを選択"
 
 #. Shows the error panel
 #: src/Dialogs/AddDialog.vala:210
@@ -126,7 +124,7 @@ msgstr "利用可能なすべてのプリンターの一覧を作成できませ
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "セットアップエラー"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Connection"
@@ -169,10 +167,8 @@ msgid "Add Printer"
 msgstr "プリンターを追加"
 
 #: src/Dialogs/AddDialog.vala:382
-#, fuzzy
-#| msgid "Page Setup"
 msgid "Printer Setup"
-msgstr "ページセットアップ"
+msgstr "プリンターセットアップ"
 
 #: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
