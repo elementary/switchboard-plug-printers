@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-01-04 01:39+0000\n"
+"PO-Revision-Date: 2024-04-29 00:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/he/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/Plug.vala:23
@@ -113,10 +113,8 @@ msgid "Next"
 msgstr "הבא"
 
 #: src/Dialogs/AddDialog.vala:107
-#, fuzzy
-#| msgid "Network Printers"
 msgid "Select Printer"
-msgstr "מדפסות רשת"
+msgstr "בחירת מדפסת"
 
 #. Shows the error panel
 #: src/Dialogs/AddDialog.vala:210
@@ -125,7 +123,7 @@ msgstr "לא ניתן להציג את כל המדפסות הזמינות"
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "שגיאת התקנה"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Connection"
@@ -168,10 +166,8 @@ msgid "Add Printer"
 msgstr "הוספת מדפסת"
 
 #: src/Dialogs/AddDialog.vala:382
-#, fuzzy
-#| msgid "Page Setup"
 msgid "Printer Setup"
-msgstr "הגדרת עמוד"
+msgstr "הגדרת מדפסת"
 
 #: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
