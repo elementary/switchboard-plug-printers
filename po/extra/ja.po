@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2022-08-11 15:50+0000\n"
+"PO-Revision-Date: 2024-05-09 13:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5\n"
 
 #: data/printers.appdata.xml.in:5
 msgid "Printer Settings"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:31
 msgid "Use newer add/remove list pattern"
-msgstr "一覧への追加／削除に新しいデザインパターンを使うように修正"
+msgstr "一覧への追加/削除に新しいデザインパターンを使うように修正"
 
 #: data/printers.appdata.xml.in:33
 msgid "Fixes:"
