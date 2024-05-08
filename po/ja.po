@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-05-07 05:13+0000\n"
+"PO-Revision-Date: 2024-05-09 13:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ja/>\n"
@@ -148,7 +148,7 @@ msgstr "説明は必須項目です"
 
 #: src/Dialogs/AddDialog.vala:273
 msgid "Lab 1 or John's desk"
-msgstr "第1研究室／山田さんのデスク"
+msgstr "第1研究室/山田さんのデスク"
 
 #: src/Dialogs/AddDialog.vala:276 src/Views/SuppliesView.vala:36
 msgid "Location"
@@ -522,7 +522,7 @@ msgstr "標準"
 
 #: src/Views/SetupView.vala:318
 msgid "High"
-msgstr ""
+msgstr "高"
 
 #: src/Views/SetupView.vala:324
 msgid "Quality:"
@@ -623,7 +623,7 @@ msgstr "用紙のソース:"
 
 #: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
-msgstr "第1研究室／山田さんのデスク"
+msgstr "第1研究室/山田さんのデスク"
 
 #: src/Views/SuppliesView.vala:117
 msgid "Black (PGBK)"
