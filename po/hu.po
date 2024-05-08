@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-01-12 00:11+0000\n"
+"PO-Revision-Date: 2024-05-09 13:13+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/hu/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/Plug.vala:23
@@ -114,10 +114,8 @@ msgid "Next"
 msgstr "Következő"
 
 #: src/Dialogs/AddDialog.vala:107
-#, fuzzy
-#| msgid "Network Printers"
 msgid "Select Printer"
-msgstr "Hálózati nyomtatók"
+msgstr "Nyomtató kiválasztása"
 
 #. Shows the error panel
 #: src/Dialogs/AddDialog.vala:210
@@ -126,7 +124,7 @@ msgstr "Nem lehet kilistázni az összes rendelkezésre álló nyomtatót"
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "Beállítási hiba"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Connection"
@@ -169,10 +167,8 @@ msgid "Add Printer"
 msgstr "Nyomtató hozzáadása"
 
 #: src/Dialogs/AddDialog.vala:382
-#, fuzzy
-#| msgid "Page Setup"
 msgid "Printer Setup"
-msgstr "Oldalbeállítás"
+msgstr "Nyomtatóbeállítás"
 
 #: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
