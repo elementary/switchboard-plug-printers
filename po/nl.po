@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-05-29 18:20+0000\n"
-"Last-Translator: Sven <622b1a13-49d8-4ace-bca7-48bff17b4780@unbox.at>\n"
+"PO-Revision-Date: 2024-05-29 20:51+0000\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/nl/>\n"
 "Language: nl\n"
@@ -171,7 +171,7 @@ msgstr "Printer toevoegen"
 
 #: src/Dialogs/AddDialog.vala:382
 msgid "Printer Setup"
-msgstr "Printerinstellingen"
+msgstr "Printer instellen"
 
 #: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
