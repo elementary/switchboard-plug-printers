@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
 "PO-Revision-Date: 2024-05-29 20:51+0000\n"
-"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
+"Last-Translator: Sven <622b1a13-49d8-4ace-bca7-48bff17b4780@unbox.at>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/nl/>\n"
 "Language: nl\n"
@@ -51,7 +51,7 @@ msgstr "Instellingen & voorraden"
 
 #: src/PrinterPage.vala:49
 msgid "Set as Default"
-msgstr ""
+msgstr "Instellen als standaard"
 
 #: src/PrinterPage.vala:53
 msgid "Print Test Page"
@@ -115,10 +115,8 @@ msgid "Next"
 msgstr "Volgende"
 
 #: src/Dialogs/AddDialog.vala:107
-#, fuzzy
-#| msgid "Network Printers"
 msgid "Select Printer"
-msgstr "Netwerk Printers"
+msgstr "Selecteer printer"
 
 #. Shows the error panel
 #: src/Dialogs/AddDialog.vala:210
@@ -127,7 +125,7 @@ msgstr "het is niet mogelijk om alle printers te laten zien"
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "Installatiefout"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Connection"
