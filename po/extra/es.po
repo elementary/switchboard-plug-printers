@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-06-13 08:33+0000\n"
+"PO-Revision-Date: 2024-06-14 03:33+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/es/>\n"
@@ -75,7 +75,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:33
 msgid "Fixes:"
-msgstr ""
+msgstr "Correcciones:"
 
 #: data/printers.appdata.xml.in:35
 msgid "Update sidebar after adding or removing printer"
