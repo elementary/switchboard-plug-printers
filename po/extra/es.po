@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-06-14 03:33+0000\n"
+"PO-Revision-Date: 2024-06-15 19:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/es/>\n"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: data/printers.appdata.xml.in:25
 msgid "Improvements:"
-msgstr ""
+msgstr "Mejoras:"
 
 #: data/printers.appdata.xml.in:27
 msgid "Improved job row layout"
