@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-06-13 17:16+0000\n"
+"PO-Revision-Date: 2024-06-15 19:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/es/>\n"
@@ -216,10 +216,8 @@ msgid ""
 msgstr ""
 
 #: src/Dialogs/ClearQueueDialog.vala:22 src/Views/JobsView.vala:37
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "Cola de impresión"
+msgstr "Limpiar todo"
 
 #: src/Dialogs/RemoveDialog.vala:15
 #, c-format
@@ -267,11 +265,9 @@ msgid "Stopped"
 msgstr "Detenida"
 
 #: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "Cancelar"
+msgstr "Cancelado"
 
 #: src/Objects/Job.vala:152
 #, fuzzy
@@ -606,7 +602,7 @@ msgstr "Gran capacidad"
 
 #: src/Views/SetupView.vala:377
 msgid "Left"
-msgstr "Izquierda"
+msgstr "Izquierdo"
 
 #: src/Views/SetupView.vala:380
 msgid "Main Tray"
@@ -634,7 +630,7 @@ msgstr "Trasero"
 
 #: src/Views/SetupView.vala:399
 msgid "Right"
-msgstr "Derecha"
+msgstr "Derecho"
 
 #: src/Views/SetupView.vala:402
 msgid "Side"
