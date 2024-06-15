@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2023-02-14 13:25+0000\n"
+"PO-Revision-Date: 2024-06-16 21:16+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/nb/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:49+0000\n"
 
 #: src/Plug.vala:23
@@ -50,7 +50,7 @@ msgstr "Innstillinger og rekvisita"
 
 #: src/PrinterPage.vala:49
 msgid "Set as Default"
-msgstr ""
+msgstr "Sett som forvalg"
 
 #: src/PrinterPage.vala:53
 msgid "Print Test Page"
@@ -126,7 +126,7 @@ msgstr "Umulig å liste opp alle tilgjengelige skrivere"
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "Oppsettsfeil"
 
 #: src/Dialogs/AddDialog.vala:246
 #, fuzzy
@@ -135,8 +135,9 @@ msgid "Connection"
 msgstr "Forbindelse:"
 
 #: src/Dialogs/AddDialog.vala:251
+#, fuzzy
 msgid "Connection uri must contain “://“"
-msgstr ""
+msgstr "Tilkoblings-URI må inneholde «://»"
 
 #: src/Dialogs/AddDialog.vala:258 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
@@ -149,8 +150,9 @@ msgid "Description"
 msgstr "Beskrivelse:"
 
 #: src/Dialogs/AddDialog.vala:267
+#, fuzzy
 msgid "Description cannot be empty"
-msgstr ""
+msgstr "Beskrivelse må fylles ut"
 
 #: src/Dialogs/AddDialog.vala:273
 msgid "Lab 1 or John's desk"
@@ -168,7 +170,7 @@ msgstr "Laster inn …"
 
 #: src/Dialogs/AddDialog.vala:337
 msgid "Back"
-msgstr ""
+msgstr "Tilbake"
 
 #: src/Dialogs/AddDialog.vala:341
 msgid "Add Printer"
