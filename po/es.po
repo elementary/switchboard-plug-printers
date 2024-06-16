@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2024-06-15 19:16+0000\n"
+"PO-Revision-Date: 2024-06-16 21:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/es/>\n"
@@ -27,17 +27,17 @@ msgstr ""
 
 #: src/Plug.vala:37
 msgid "No Printers Available"
-msgstr "Sin impresoras disponibles"
+msgstr "No hay impresoras disponibles"
 
 #: src/Plug.vala:38
 msgid "Connect to a printer by clicking the icon in the toolbar below."
 msgstr ""
-"Conéctese con una impresora pulsando en el icono en la barra de herramientas "
-"más abajo."
+"Conéctese a una impresora haciendo clic en el icono en la barra de "
+"herramientas a continuación."
 
 #: src/PrinterList.vala:41
 msgid "Add Printer…"
-msgstr "Añadir impresora…"
+msgstr "Agregar impresora…"
 
 #: src/PrinterPage.vala:26
 msgid "Print Queue"
@@ -53,7 +53,7 @@ msgstr "Configuración y suministros"
 
 #: src/PrinterPage.vala:49
 msgid "Set as Default"
-msgstr ""
+msgstr "Establecer como predeterminada"
 
 #: src/PrinterPage.vala:53
 msgid "Print Test Page"
@@ -92,7 +92,7 @@ msgstr "Protocolo de Impresión por Internet (ipp14)"
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:22
 msgid "LPD/LPR Host or Printer"
-msgstr "Anfitrión o impresora LPD/LPR"
+msgstr "Servido o impresora LPD/LPR"
 
 #. / Tranlators: This is a protocol name.
 #: src/Dialogs/AddDialog.vala:24
@@ -101,7 +101,7 @@ msgstr "AppSocket/HP JetDirect"
 
 #: src/Dialogs/AddDialog.vala:54
 msgid "Finding nearby printers…"
-msgstr "Encontrar impresoras cercanas…"
+msgstr "Buscando impresoras cercanas…"
 
 #: src/Dialogs/AddDialog.vala:80
 msgid "Refresh"
@@ -117,10 +117,8 @@ msgid "Next"
 msgstr "Siguiente"
 
 #: src/Dialogs/AddDialog.vala:107
-#, fuzzy
-#| msgid "Network Printers"
 msgid "Select Printer"
-msgstr "Impresoras en red"
+msgstr "Seleccione impresora"
 
 #. Shows the error panel
 #: src/Dialogs/AddDialog.vala:210
@@ -129,47 +127,39 @@ msgstr "No se pueden enumerar todas las impresoras disponibles"
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "Error de configuración"
 
 #: src/Dialogs/AddDialog.vala:246
-#, fuzzy
-#| msgid "Connection:"
 msgid "Connection"
-msgstr "Conexión:"
+msgstr "Conexión"
 
 #: src/Dialogs/AddDialog.vala:251
 msgid "Connection uri must contain “://“"
-msgstr ""
+msgstr "La URI de conexión debe contener «://»"
 
 #: src/Dialogs/AddDialog.vala:258 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
 #: src/Dialogs/AddDialog.vala:262 src/Views/SuppliesView.vala:28
-#, fuzzy
-#| msgid "Description:"
 msgid "Description"
-msgstr "Descripción:"
+msgstr "Descripción"
 
 #: src/Dialogs/AddDialog.vala:267
 msgid "Description cannot be empty"
-msgstr ""
+msgstr "La descripción no puede estar vacía"
 
 #: src/Dialogs/AddDialog.vala:273
 msgid "Lab 1 or John's desk"
 msgstr "Laboratorio 1 o Escritorio de Rosa"
 
 #: src/Dialogs/AddDialog.vala:276 src/Views/SuppliesView.vala:36
-#, fuzzy
-#| msgid "Location:"
 msgid "Location"
-msgstr "Ubicación:"
+msgstr "Ubicación"
 
 #: src/Dialogs/AddDialog.vala:304
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "Procesando…"
+msgstr "Cargando…"
 
 #: src/Dialogs/AddDialog.vala:337
 msgid "Back"
@@ -177,13 +167,11 @@ msgstr "Atrás"
 
 #: src/Dialogs/AddDialog.vala:341
 msgid "Add Printer"
-msgstr "Añadir impresora"
+msgstr "Agregar impresora"
 
 #: src/Dialogs/AddDialog.vala:382
-#, fuzzy
-#| msgid "Page Setup"
 msgid "Printer Setup"
-msgstr "Configuración de página"
+msgstr "Configuración de la impresora"
 
 #: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
@@ -195,11 +183,11 @@ msgstr "Impresoras locales"
 
 #: src/Dialogs/AddDialog.vala:660
 msgid "Network Printers"
-msgstr "Impresoras en red"
+msgstr "Impresoras de red"
 
 #: src/Dialogs/AddDialog.vala:663
 msgid "Available Network Printers"
-msgstr "Impresoras en red disponibles"
+msgstr "Impresoras de red disponibles"
 
 #: src/Dialogs/AddDialog.vala:702
 msgid "(recommended)"
@@ -208,12 +196,14 @@ msgstr "(recomendado)"
 #: src/Dialogs/ClearQueueDialog.vala:16
 #, c-format
 msgid "Clear all pending and completed jobs from “%s”?"
-msgstr ""
+msgstr "¿Desea limpiar todas las tareas terminadas y pendientes de «%s»?"
 
 #: src/Dialogs/ClearQueueDialog.vala:17
 msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
 msgstr ""
+"Todas las tareas sin terminar serán canceladas y el historial de impresión "
+"será borrado."
 
 #: src/Dialogs/ClearQueueDialog.vala:22 src/Views/JobsView.vala:37
 msgid "Clear All"
@@ -230,7 +220,7 @@ msgid ""
 "By removing '%s' you'll lose all print history and configuration associated "
 "with it."
 msgstr ""
-"Al quitar «%s» se perderá el histórico de impresión y la configuración "
+"Al quitar «%s» se perderá el historial de impresión y la configuración "
 "asociada."
 
 #: src/Dialogs/RemoveDialog.vala:21
@@ -238,15 +228,11 @@ msgid "Remove"
 msgstr "Quitar"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "Trabajo pendiente"
+msgstr "Pendiente"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
 msgstr "En pausa"
@@ -254,12 +240,9 @@ msgstr "En pausa"
 #: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "En progreso"
 
 #: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
 msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Detenida"
@@ -267,21 +250,17 @@ msgstr "Detenida"
 #: src/Objects/Job.vala:150
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "Cancelado"
+msgstr "Cancelada"
 
 #: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "Impresión abortada"
+msgstr "Abortada"
 
 #: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "Impresión completa"
+msgstr "Completa"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -311,13 +290,13 @@ msgstr "Sin revelador"
 #: src/Objects/Printer.vala:53
 msgctxt "printer state"
 msgid "Low on a marker supply"
-msgstr "Nivel de marcador bajo"
+msgstr "Nivel de un marcador de tinta bajo"
 
 #. / Translators: "marker" is one color bin of the printer
 #: src/Objects/Printer.vala:55
 msgctxt "printer state"
 msgid "Out of a marker supply"
-msgstr "Marcador agotado"
+msgstr "Un marcador de tinta agotado"
 
 #. / Translators: One or more covers on the printer are open
 #: src/Objects/Printer.vala:57
@@ -439,7 +418,7 @@ msgstr "Orientación:"
 
 #: src/Views/SetupView.vala:180
 msgid "Media Size:"
-msgstr "Tamaño del soporte:"
+msgstr "Tamaño del medio:"
 
 #: src/Views/SetupView.vala:196 src/Views/SetupView.vala:349
 msgid "Automatic"
@@ -475,47 +454,47 @@ msgstr "Modo de color:"
 
 #: src/Views/SetupView.vala:239
 msgid "Top Bin"
-msgstr "Superior"
+msgstr "Bandeja superior"
 
 #: src/Views/SetupView.vala:242
 msgid "Middle Bin"
-msgstr "Medio"
+msgstr "Bandeja del medio"
 
 #: src/Views/SetupView.vala:245
 msgid "Bottom Bin"
-msgstr "Inferior"
+msgstr "Bandeja inferior"
 
 #: src/Views/SetupView.vala:248
 msgid "Side Bin"
-msgstr "Lateral"
+msgstr "Bandeja lateral"
 
 #: src/Views/SetupView.vala:251
 msgid "Left Bin"
-msgstr "Izquierda"
+msgstr "Bandeja izquierda"
 
 #: src/Views/SetupView.vala:254
 msgid "Right Bin"
-msgstr "Derecha"
+msgstr "Bandeja derecha"
 
 #: src/Views/SetupView.vala:257
 msgid "Center Bin"
-msgstr "Centro"
+msgstr "Bandeja del centro"
 
 #: src/Views/SetupView.vala:260
 msgid "Rear Bin"
-msgstr "Trasero"
+msgstr "Bandeja trasera"
 
 #: src/Views/SetupView.vala:263
 msgid "Face Up Bin"
-msgstr "Boca arriba"
+msgstr "Bandeja boca arriba"
 
 #: src/Views/SetupView.vala:266
 msgid "Face Down Bin"
-msgstr "Boca abajo"
+msgstr "Bandeja boca abajo"
 
 #: src/Views/SetupView.vala:269
 msgid "Large Capacity Bin"
-msgstr "Gran capacidad"
+msgstr "Bandeja de gran capacidad"
 
 #: src/Views/SetupView.vala:272
 msgid "My Mailbox"
@@ -529,7 +508,7 @@ msgstr "Apilado %d"
 #: src/Views/SetupView.vala:280
 #, c-format
 msgid "Mailbox %d"
-msgstr "Mailbox %d"
+msgstr "Buzón %d"
 
 #: src/Views/SetupView.vala:283 src/Views/SetupView.vala:413
 #, c-format
@@ -550,7 +529,7 @@ msgstr "Normal"
 
 #: src/Views/SetupView.vala:318
 msgid "High"
-msgstr "Alto"
+msgstr "Alta"
 
 #: src/Views/SetupView.vala:324
 msgid "Quality:"
@@ -651,7 +630,7 @@ msgstr "Fuente de papel:"
 
 #: src/Views/SuppliesView.vala:33
 msgid "Lab 1 or John's Desk"
-msgstr "Laboratorio 1 o Escritorio de John"
+msgstr "Laboratorio 1 o Escritorio de Rosa"
 
 #: src/Views/SuppliesView.vala:117
 msgid "Black (PGBK)"
@@ -690,10 +669,8 @@ msgid "Pause"
 msgstr "Pausar"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
-msgstr "Quitar impresora"
+msgstr "Quitar esta impresora"
 
 #: src/Widgets/PrinterRow.vala:128
 msgid "Disabled"
