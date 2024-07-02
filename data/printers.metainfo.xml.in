@@ -2,11 +2,52 @@
 <component type="addon">
   <id>io.elementary.settings.printers</id>
   <extends>io.elementary.settings</extends>
+  <translation type="gettext">io.elementary.settings.printers</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+
+  <icon type="stock">printer</icon>
   <name>Printer Settings</name>
   <summary>Configure printers, manage print queues, and view ink levels</summary>
-  <icon type="stock">printer</icon>
-  <translation type="gettext">io.elementary.settings.printers</translation>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/2.2.1/data/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/2.2.1/data/screenshot-page-setup.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/2.2.1/data/screenshot-settings.png</image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1" />
+
+  <url type="bugtracker">https://github.com/elementary/switchboard-plug-printers/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/switchboard-plug-printers/discussions</url>
+  <url type="homepage">https://elementary.io/</url>
+  <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+
+  <developer id="org.elementaryos">
+    <name>elementary, Inc.</name>
+  </developer>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
   <releases>
+    <release version="8.0.0" date="2024-07-02" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Improved screen reader support</li>
+          <li>Provide feedback for form validation when adding printers</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="2.2.1" date="2022-10-20" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -42,6 +83,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.1.10" date="2021-07-21" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -50,6 +92,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.1.9" date="2020-05-28" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -58,34 +101,8 @@
         </ul>
       </description>
     </release>
-    <release version="2.1.8" date="2020-04-03" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-    <release version="2.1.7" date="2019-11-15" urgency="medium">
-      <description>
-        <p>Show a default name if a printer is unnamed</p>
-        <p>Updated translations</p>
-      </description>
-    </release>
+
+    <release version="2.1.8" date="2020-04-03" urgency="medium" />
+    <release version="2.1.7" date="2019-11-15" urgency="medium" />
   </releases>
-  <screenshots>
-    <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/2.2.1/data/screenshot.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/2.2.1/data/screenshot-page-setup.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/2.2.1/data/screenshot-settings.png</image>
-    </screenshot>
-  </screenshots>
-  <url type="homepage">https://elementary.io</url>
-  <url type="bugtracker">https://github.com/elementary/switchboard-plug-printers/issues</url>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0+</project_license>
 </component>
