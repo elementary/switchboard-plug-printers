@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-25 17:18+0000\n"
+"POT-Creation-Date: 2024-07-02 18:08+0000\n"
 "PO-Revision-Date: 2024-02-10 23:29+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -19,76 +19,87 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.0.2\n"
 
-#: data/printers.appdata.xml.in:5
+#: data/printers.metainfo.xml.in:10
 msgid "Printer Settings"
 msgstr "Definições da Impressora"
 
-#: data/printers.appdata.xml.in:6
+#: data/printers.metainfo.xml.in:11
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Configurar impressoras, gerir filas de impressão e ver nível dos tinteiros"
 
-#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:39
-#: data/printers.appdata.xml.in:47 data/printers.appdata.xml.in:55
-#: data/printers.appdata.xml.in:63
+#: data/printers.metainfo.xml.in:34
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
+#: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
+#: data/printers.metainfo.xml.in:98
 msgid "Minor updates:"
 msgstr "Pequena atualizações:"
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:41
-#: data/printers.appdata.xml.in:49 data/printers.appdata.xml.in:57
-#: data/printers.appdata.xml.in:65 data/printers.appdata.xml.in:72
+#: data/printers.metainfo.xml.in:44
+msgid "Improved screen reader support"
+msgstr ""
+
+#: data/printers.metainfo.xml.in:45
+msgid "Provide feedback for form validation when adding printers"
+msgstr ""
+
+#: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
+#: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
+#: data/printers.metainfo.xml.in:100
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/printers.appdata.xml.in:21
+#: data/printers.metainfo.xml.in:62
 msgid "New Features:"
 msgstr "Novas funcionalidades:"
 
-#: data/printers.appdata.xml.in:23
+#: data/printers.metainfo.xml.in:64
 msgid "Allow clearing the queue for each printer"
 msgstr "Permitir a limpeza da fila de espera para cada impressora"
 
-#: data/printers.appdata.xml.in:25
+#: data/printers.metainfo.xml.in:66
 msgid "Improvements:"
 msgstr "Melhorias:"
 
-#: data/printers.appdata.xml.in:27
+#: data/printers.metainfo.xml.in:68
 msgid "Improved job row layout"
 msgstr "Melhoria da disposição das linhas de trabalho"
 
-#: data/printers.appdata.xml.in:28
+#: data/printers.metainfo.xml.in:69
 msgid "Show the supported language for each driver"
 msgstr "Mostrar o idioma suportado por cada controlador"
 
-#: data/printers.appdata.xml.in:29
+#: data/printers.metainfo.xml.in:70
 msgid "Show color names below ink levels"
 msgstr "Mostrar nomes de cores abaixo dos níveis dos tinteiros"
 
-#: data/printers.appdata.xml.in:30
+#: data/printers.metainfo.xml.in:71
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr ""
 "Evitar expandir a janela para impressoras com muitos níveis de tinteiros"
 
-#: data/printers.appdata.xml.in:31
+#: data/printers.metainfo.xml.in:72
 msgid "Use newer add/remove list pattern"
 msgstr "Utilizar um padrão de lista de adicionar/remover mais recente"
 
-#: data/printers.appdata.xml.in:33
+#: data/printers.metainfo.xml.in:74
 msgid "Fixes:"
 msgstr "Correções:"
 
-#: data/printers.appdata.xml.in:35
+#: data/printers.metainfo.xml.in:76
 msgid "Update sidebar after adding or removing printer"
 msgstr "Atualizar a barra lateral depois de adicionar ou remover a impressora"
 
-#: data/printers.appdata.xml.in:36
+#: data/printers.metainfo.xml.in:77
 msgid "Update sidebar after enabling or disabling printer"
 msgstr "Atualizar a barra lateral depois de ativar ou desativar a impressora"
 
-#: data/printers.appdata.xml.in:37
+#: data/printers.metainfo.xml.in:78
 msgid "Update job list after job state change"
 msgstr "Atualizar a lista de tarefas após alteração do estado da tarefa"
 
-#: data/printers.appdata.xml.in:71
-msgid "Show a default name if a printer is unnamed"
-msgstr "Mostrar um nome predefinido se uma impressora não tiver nome"
+#~ msgid "Show a default name if a printer is unnamed"
+#~ msgstr "Mostrar um nome predefinido se uma impressora não tiver nome"
