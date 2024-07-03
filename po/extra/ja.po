@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2024-05-09 13:13+0000\n"
+"PO-Revision-Date: 2024-07-04 22:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/printers.metainfo.xml.in:10
 msgid "Printer Settings"
@@ -29,7 +29,7 @@ msgstr "プリンターを設定し、プリントキューを管理し、イン
 
 #: data/printers.metainfo.xml.in:34
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
 #: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
@@ -39,11 +39,11 @@ msgstr "そのほかのアップデート:"
 
 #: data/printers.metainfo.xml.in:44
 msgid "Improved screen reader support"
-msgstr ""
+msgstr "スクリーンリーダーへの対応を改善"
 
 #: data/printers.metainfo.xml.in:45
 msgid "Provide feedback for form validation when adding printers"
-msgstr ""
+msgstr "プリンター追加時、入力欄のバリデーション結果をユーザーに表示するように改善"
 
 #: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
 #: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
