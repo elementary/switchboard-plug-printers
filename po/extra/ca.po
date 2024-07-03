@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2022-06-30 07:35+0000\n"
+"PO-Revision-Date: 2024-07-03 20:16+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/printers.metainfo.xml.in:10
 msgid "Printer Settings"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: data/printers.metainfo.xml.in:34
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
 #: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
@@ -41,11 +41,13 @@ msgstr "Actualitzacions menors:"
 
 #: data/printers.metainfo.xml.in:44
 msgid "Improved screen reader support"
-msgstr ""
+msgstr "Suport millorat del lector de pantalla"
 
 #: data/printers.metainfo.xml.in:45
 msgid "Provide feedback for form validation when adding printers"
 msgstr ""
+"Proporcioneu comentaris per a la validació del formulari quan afegiu "
+"impressores"
 
 #: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
 #: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
