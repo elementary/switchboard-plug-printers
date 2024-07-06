@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2022-06-29 21:39+0000\n"
+"PO-Revision-Date: 2024-07-07 18:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/printers.metainfo.xml.in:10
 msgid "Printer Settings"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: data/printers.metainfo.xml.in:34
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
 #: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
@@ -41,11 +41,12 @@ msgstr "Незначні оновлення:"
 
 #: data/printers.metainfo.xml.in:44
 msgid "Improved screen reader support"
-msgstr ""
+msgstr "Поліпшено підтримку зчитування з екрана"
 
 #: data/printers.metainfo.xml.in:45
 msgid "Provide feedback for form validation when adding printers"
 msgstr ""
+"Надавати зворотний зв'язок для перевірки форми під час додавання принтерів"
 
 #: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
 #: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
