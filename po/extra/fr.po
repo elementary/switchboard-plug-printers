@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2022-06-30 10:04+0000\n"
+"PO-Revision-Date: 2024-07-11 08:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/printers.metainfo.xml.in:10
 msgid "Printer Settings"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: data/printers.metainfo.xml.in:34
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
 #: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
@@ -41,11 +41,12 @@ msgstr "Mises à jour mineures :"
 
 #: data/printers.metainfo.xml.in:44
 msgid "Improved screen reader support"
-msgstr ""
+msgstr "Amélioration de l'accessibilité pour les lecteurs d'écran"
 
 #: data/printers.metainfo.xml.in:45
 msgid "Provide feedback for form validation when adding printers"
 msgstr ""
+"Ajout de retours à la validation du formulaire lors de l'ajout d'imprimantes"
 
 #: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
 #: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
@@ -55,7 +56,7 @@ msgstr "Mise à jour des traductions"
 
 #: data/printers.metainfo.xml.in:62
 msgid "New Features:"
-msgstr "Nouvelles fonctionnalités :"
+msgstr "Nouvelles fonctionnalités :"
 
 #: data/printers.metainfo.xml.in:64
 msgid "Allow clearing the queue for each printer"
