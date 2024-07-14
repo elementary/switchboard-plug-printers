@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2024-06-20 12:16+0000\n"
+"PO-Revision-Date: 2024-07-15 13:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/Plug.vala:23
@@ -365,7 +365,7 @@ msgstr "プリントキューは空です"
 
 #: src/Views/JobsView.vala:20
 msgid "There are no pending jobs in the queue."
-msgstr "キューには保留中のジョブはありません。"
+msgstr "キューに保留中のジョブはありません。"
 
 #: src/Views/JobsView.vala:107
 msgid "Completed Jobs"
