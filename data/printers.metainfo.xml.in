@@ -47,7 +47,7 @@
         </ul>
       </description>
       <issues>
-          <issue url="https://github.com/elementary/switchboard-plug-printers/issues/155">Inconsistent vertical spacing of buttons</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-printers/issues/155">Inconsistent vertical spacing of buttons</issue>
       </issues>
     </release>
 
