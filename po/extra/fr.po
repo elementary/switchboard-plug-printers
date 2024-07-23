@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-25 17:18+0000\n"
-"PO-Revision-Date: 2022-06-30 10:04+0000\n"
+"POT-Creation-Date: 2024-07-02 18:08+0000\n"
+"PO-Revision-Date: 2024-07-11 08:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/fr/>\n"
@@ -17,87 +17,99 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
-#: data/printers.appdata.xml.in:5
+#: data/printers.metainfo.xml.in:10
 msgid "Printer Settings"
 msgstr "Paramètres d'imprimantes"
 
-#: data/printers.appdata.xml.in:6
+#: data/printers.metainfo.xml.in:11
 msgid "Configure printers, manage print queues, and view ink levels"
 msgstr ""
 "Configurer les imprimantes, gérer la file d'impression et voir le niveau "
 "d'encre"
 
-#: data/printers.appdata.xml.in:12 data/printers.appdata.xml.in:39
-#: data/printers.appdata.xml.in:47 data/printers.appdata.xml.in:55
-#: data/printers.appdata.xml.in:63
+#: data/printers.metainfo.xml.in:34
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
+#: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
+#: data/printers.metainfo.xml.in:98
 msgid "Minor updates:"
 msgstr "Mises à jour mineures :"
 
-#: data/printers.appdata.xml.in:14 data/printers.appdata.xml.in:41
-#: data/printers.appdata.xml.in:49 data/printers.appdata.xml.in:57
-#: data/printers.appdata.xml.in:65 data/printers.appdata.xml.in:72
+#: data/printers.metainfo.xml.in:44
+msgid "Improved screen reader support"
+msgstr "Amélioration de l'accessibilité pour les lecteurs d'écran"
+
+#: data/printers.metainfo.xml.in:45
+msgid "Provide feedback for form validation when adding printers"
+msgstr ""
+"Ajout de retours à la validation du formulaire lors de l'ajout d'imprimantes"
+
+#: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
+#: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
+#: data/printers.metainfo.xml.in:100
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/printers.appdata.xml.in:21
+#: data/printers.metainfo.xml.in:62
 msgid "New Features:"
-msgstr "Nouvelles fonctionnalités :"
+msgstr "Nouvelles fonctionnalités :"
 
-#: data/printers.appdata.xml.in:23
+#: data/printers.metainfo.xml.in:64
 msgid "Allow clearing the queue for each printer"
 msgstr ""
 "Il est désormais possible de vider la file d'attente pour chaque imprimante"
 
-#: data/printers.appdata.xml.in:25
+#: data/printers.metainfo.xml.in:66
 msgid "Improvements:"
 msgstr "Améliorations :"
 
-#: data/printers.appdata.xml.in:27
+#: data/printers.metainfo.xml.in:68
 msgid "Improved job row layout"
 msgstr "Amélioration de la disposition de la ligne d'une tâche d'impression"
 
-#: data/printers.appdata.xml.in:28
+#: data/printers.metainfo.xml.in:69
 msgid "Show the supported language for each driver"
 msgstr "Affichage de la langue prise en charge pour chaque pilote"
 
-#: data/printers.appdata.xml.in:29
+#: data/printers.metainfo.xml.in:70
 msgid "Show color names below ink levels"
 msgstr "Affichage du nom des couleurs sous les niveau d'encre"
 
-#: data/printers.appdata.xml.in:30
+#: data/printers.metainfo.xml.in:71
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr ""
 "Nous avons empêché l'agrandissement de la fenêtre pour les imprimantes avec "
 "de nombreux niveaux d'encre"
 
-#: data/printers.appdata.xml.in:31
+#: data/printers.metainfo.xml.in:72
 msgid "Use newer add/remove list pattern"
 msgstr "Utilisation du nouveau modèle de liste d'ajout/suppression"
 
-#: data/printers.appdata.xml.in:33
+#: data/printers.metainfo.xml.in:74
 msgid "Fixes:"
 msgstr "Corrections :"
 
-#: data/printers.appdata.xml.in:35
+#: data/printers.metainfo.xml.in:76
 msgid "Update sidebar after adding or removing printer"
 msgstr ""
 "Mise à jour de la barre latérale après l'ajout et la suppression d'une "
 "imprimante"
 
-#: data/printers.appdata.xml.in:36
+#: data/printers.metainfo.xml.in:77
 msgid "Update sidebar after enabling or disabling printer"
 msgstr ""
 "Mise à jour de la barre latérale après l'activation et la désactivation "
 "d'une imprimante"
 
-#: data/printers.appdata.xml.in:37
+#: data/printers.metainfo.xml.in:78
 msgid "Update job list after job state change"
 msgstr ""
 "Mise à jour de la liste des tâches d'impression après un changement d'état "
 "de la tâche"
 
-#: data/printers.appdata.xml.in:71
-msgid "Show a default name if a printer is unnamed"
-msgstr "Afficher un nom par défaut si l'imprimante n'a pas été nommée"
+#~ msgid "Show a default name if a printer is unnamed"
+#~ msgstr "Afficher un nom par défaut si l'imprimante n'a pas été nommée"
