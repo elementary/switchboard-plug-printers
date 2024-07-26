@@ -1,7 +1,7 @@
 project(
     'io.elementary.settings.printers',
     'vala', 'c',
-    version: '2.2.1'
+    version: '8.0.0'
 )
 
 gnome = import('gnome')
