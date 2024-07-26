@@ -1,3 +1,9 @@
+io.elementary.settings.printers (8.0.0) noble; urgency=medium
+
+  * Release 8.0.0
+
+ -- Danielle Foré <danielle@elementary.io>  Fri, 26 Jul 2024 10:37:51 -0700
+
 io.elementary.settings.printers (2.2.1) bionic; urgency=medium
 
   * Release 2.2.1 (#181)
