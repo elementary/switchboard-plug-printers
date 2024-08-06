@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2017-01-02 07:57+0000\n"
-"Last-Translator: ablimet <Unknown>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Uyghur <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-printers/ug/>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
 
 #: src/Plug.vala:23
 msgid "Printers"
@@ -105,9 +107,8 @@ msgstr "يېڭىلاش"
 
 #: src/Dialogs/AddDialog.vala:84 src/Dialogs/AddDialog.vala:217
 #: src/Dialogs/AddDialog.vala:339 src/Widgets/JobRow.vala:78
-#, fuzzy
 msgid "Cancel"
-msgstr "ۋەزىپە ئەمەلدىن قالدۇرۇلدى"
+msgstr "ئەمەلدىن قالدۇرۇش"
 
 #: src/Dialogs/AddDialog.vala:86
 msgid "Next"
@@ -695,7 +696,7 @@ msgstr ""
 
 #: src/Widgets/JobRow.vala:158
 msgid "Pause"
-msgstr ""
+msgstr "ۋاقىتلىق توختىتىش"
 
 #: src/Widgets/PrinterRow.vala:41
 #, fuzzy
@@ -705,7 +706,7 @@ msgstr "پرىنتېرنى چىقىرىۋېتىش"
 
 #: src/Widgets/PrinterRow.vala:128
 msgid "Disabled"
-msgstr ""
+msgstr "قوزغىتىلمىغان"
 
 #~ msgid "Description:"
 #~ msgstr "چۈشەندۈرۈش:"
