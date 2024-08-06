@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2020-03-01 14:09+0000\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/Plug.vala:23
@@ -212,10 +212,8 @@ msgid ""
 msgstr ""
 
 #: src/Dialogs/ClearQueueDialog.vala:22 src/Views/JobsView.vala:37
-#, fuzzy
-#| msgid "Print Queue"
 msgid "Clear All"
-msgstr "印表機佇列"
+msgstr "全部清除"
 
 #: src/Dialogs/RemoveDialog.vala:15
 #, c-format
