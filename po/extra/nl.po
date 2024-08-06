@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2023-06-23 10:07+0000\n"
-"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/printers.metainfo.xml.in:10
 msgid "Printer Settings"
@@ -29,7 +29,7 @@ msgstr "Configureer printers, beheer printers en bekijk inkt levels"
 
 #: data/printers.metainfo.xml.in:34
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
 #: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
@@ -39,7 +39,7 @@ msgstr "Kleine updates:"
 
 #: data/printers.metainfo.xml.in:44
 msgid "Improved screen reader support"
-msgstr ""
+msgstr "Verbeterde schermlezerondersteuning"
 
 #: data/printers.metainfo.xml.in:45
 msgid "Provide feedback for form validation when adding printers"
