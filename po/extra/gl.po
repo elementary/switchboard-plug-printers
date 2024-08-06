@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2019-09-30 14:23+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/gl/>\n"
 "Language: gl\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/printers.metainfo.xml.in:10
-#, fuzzy
-#| msgid "Printers"
 msgid "Printer Settings"
-msgstr "Impresoras"
+msgstr "Configuración da impresora"
 
 #: data/printers.metainfo.xml.in:11
 msgid "Configure printers, manage print queues, and view ink levels"
