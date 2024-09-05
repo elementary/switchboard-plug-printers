@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-05 21:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/printers-plug-extra/zh_Hant/>\n"
@@ -43,7 +43,7 @@ msgstr "改善螢幕閱讀器支援"
 
 #: data/printers.metainfo.xml.in:45
 msgid "Provide feedback for form validation when adding printers"
-msgstr ""
+msgstr "新增印表機時將輸入欄位的檢查結果顯示給使用者"
 
 #: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
 #: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
@@ -53,35 +53,35 @@ msgstr "翻譯更新"
 
 #: data/printers.metainfo.xml.in:62
 msgid "New Features:"
-msgstr ""
+msgstr "新功能："
 
 #: data/printers.metainfo.xml.in:64
 msgid "Allow clearing the queue for each printer"
-msgstr ""
+msgstr "允許為各個印表機清除佇列"
 
 #: data/printers.metainfo.xml.in:66
 msgid "Improvements:"
-msgstr ""
+msgstr "改善項目："
 
 #: data/printers.metainfo.xml.in:68
 msgid "Improved job row layout"
-msgstr ""
+msgstr "改善工作項目一覽的佈局"
 
 #: data/printers.metainfo.xml.in:69
 msgid "Show the supported language for each driver"
-msgstr ""
+msgstr "為各個驅動程式顯示支援的語言"
 
 #: data/printers.metainfo.xml.in:70
 msgid "Show color names below ink levels"
-msgstr ""
+msgstr "在墨水碳粉量下方顯示色彩名稱"
 
 #: data/printers.metainfo.xml.in:71
 msgid "Avoid expanding the window for printers with many ink levels"
-msgstr ""
+msgstr "避免視窗大小為有許多墨水碳粉量的印表機而變得太大"
 
 #: data/printers.metainfo.xml.in:72
 msgid "Use newer add/remove list pattern"
-msgstr ""
+msgstr "用較新的清單新增/移除設計"
 
 #: data/printers.metainfo.xml.in:74
 msgid "Fixes:"
@@ -89,15 +89,15 @@ msgstr "修正："
 
 #: data/printers.metainfo.xml.in:76
 msgid "Update sidebar after adding or removing printer"
-msgstr ""
+msgstr "加入或移除印表機後更新側邊欄"
 
 #: data/printers.metainfo.xml.in:77
 msgid "Update sidebar after enabling or disabling printer"
-msgstr ""
+msgstr "啟用或停用印表機後更新側邊欄"
 
 #: data/printers.metainfo.xml.in:78
 msgid "Update job list after job state change"
-msgstr ""
+msgstr "工作狀態變更後更新工作清單"
 
 #~ msgid "Show a default name if a printer is unnamed"
 #~ msgstr "如果印表機沒有命名則顯示預設名稱"
