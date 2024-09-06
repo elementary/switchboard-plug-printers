@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2024-09-05 21:13+0000\n"
+"PO-Revision-Date: 2024-09-06 10:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/zh_Hant/>\n"
@@ -101,7 +101,7 @@ msgstr "尋找鄰近的印表機…"
 
 #: src/Dialogs/AddDialog.vala:80
 msgid "Refresh"
-msgstr "重整"
+msgstr "重新整理"
 
 #: src/Dialogs/AddDialog.vala:84 src/Dialogs/AddDialog.vala:217
 #: src/Dialogs/AddDialog.vala:339 src/Widgets/JobRow.vala:78
