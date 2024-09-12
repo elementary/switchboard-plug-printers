@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2024-07-04 22:16+0000\n"
+"PO-Revision-Date: 2024-09-13 00:01+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/ka/>\n"
@@ -53,7 +53,7 @@ msgstr "განახლებული თარგმანები"
 
 #: data/printers.metainfo.xml.in:62
 msgid "New Features:"
-msgstr ""
+msgstr "ახალი ფუნქციები:"
 
 #: data/printers.metainfo.xml.in:64
 msgid "Allow clearing the queue for each printer"
