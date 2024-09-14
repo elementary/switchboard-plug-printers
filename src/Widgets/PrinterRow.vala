@@ -57,7 +57,7 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
         printer_image = new Gtk.Image.from_icon_name ("printer");
         printer_image.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
 
-        status_image = new Gtk.Image.from_icon_name ("user-available") {
+        status_image = new Gtk.Image.from_icon_name ("emblem-enabled") {
             halign = END,
             valign = END
         };
@@ -105,11 +105,11 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
             status_label.label = printer.state_reasons;
             switch (printer.state_reasons_raw) {
                 case "offline":
-                    status_image.icon_name = "user-offline";
+                    status_image.icon_name = "emblem-disabled";
                     break;
                 case "none":
                 case null:
-                    status_image.icon_name = "user-available";
+                    status_image.icon_name = "emblem-enabled";
                     break;
                 case "developer-low":
                 case "marker-supply-low":
@@ -117,14 +117,14 @@ public class Printers.PrinterRow : Gtk.ListBoxRow {
                 case "media-low":
                 case "opc-near-eol":
                 case "toner-low":
-                    status_image.icon_name = "user-away";
+                    status_image.icon_name = "emblem-warning";
                     break;
                 default:
-                    status_image.icon_name = "user-busy";
+                    status_image.icon_name = "emblem-error";
                     break;
             }
         } else {
-            status_image.icon_name = "user-offline";
+            status_image.icon_name = "emblem-disabled";
             status_label.label = _("Disabled");
         }
     }
