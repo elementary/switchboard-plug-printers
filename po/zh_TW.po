@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-02 18:08+0000\n"
-"PO-Revision-Date: 2024-08-07 18:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-09-06 10:13+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-printers/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -37,7 +37,7 @@ msgstr "加入印表機…"
 
 #: src/PrinterPage.vala:26
 msgid "Print Queue"
-msgstr "印表機佇列"
+msgstr "列印佇列"
 
 #: src/PrinterPage.vala:27
 msgid "Page Setup"
@@ -49,7 +49,7 @@ msgstr "設定與供應"
 
 #: src/PrinterPage.vala:49
 msgid "Set as Default"
-msgstr ""
+msgstr "設為預設值"
 
 #: src/PrinterPage.vala:53
 msgid "Print Test Page"
@@ -101,7 +101,7 @@ msgstr "尋找鄰近的印表機…"
 
 #: src/Dialogs/AddDialog.vala:80
 msgid "Refresh"
-msgstr "重整"
+msgstr "重新整理"
 
 #: src/Dialogs/AddDialog.vala:84 src/Dialogs/AddDialog.vala:217
 #: src/Dialogs/AddDialog.vala:339 src/Widgets/JobRow.vala:78
@@ -113,10 +113,8 @@ msgid "Next"
 msgstr "下一個"
 
 #: src/Dialogs/AddDialog.vala:107
-#, fuzzy
-#| msgid "Network Printers"
 msgid "Select Printer"
-msgstr "網路印表機"
+msgstr "選擇印表機"
 
 #. Shows the error panel
 #: src/Dialogs/AddDialog.vala:210
@@ -125,61 +123,51 @@ msgstr "無法列出所有可用的印表機"
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "設置錯誤"
 
 #: src/Dialogs/AddDialog.vala:246
-#, fuzzy
-#| msgid "Connection:"
 msgid "Connection"
-msgstr "連線："
+msgstr "連線"
 
 #: src/Dialogs/AddDialog.vala:251
 msgid "Connection uri must contain “://“"
-msgstr ""
+msgstr "連線 URI 必須包含 \"://\""
 
 #: src/Dialogs/AddDialog.vala:258 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
 #: src/Dialogs/AddDialog.vala:262 src/Views/SuppliesView.vala:28
-#, fuzzy
-#| msgid "Description:"
 msgid "Description"
-msgstr "描述："
+msgstr "描述"
 
 #: src/Dialogs/AddDialog.vala:267
 msgid "Description cannot be empty"
-msgstr ""
+msgstr "描述不能是空的"
 
 #: src/Dialogs/AddDialog.vala:273
 msgid "Lab 1 or John's desk"
 msgstr "例如「實驗室一」或「小明的桌子」"
 
 #: src/Dialogs/AddDialog.vala:276 src/Views/SuppliesView.vala:36
-#, fuzzy
-#| msgid "Location:"
 msgid "Location"
-msgstr "位置："
+msgstr "位置"
 
 #: src/Dialogs/AddDialog.vala:304
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "處理中…"
+msgstr "載入中…"
 
 #: src/Dialogs/AddDialog.vala:337
 msgid "Back"
-msgstr ""
+msgstr "返回"
 
 #: src/Dialogs/AddDialog.vala:341
 msgid "Add Printer"
 msgstr "加入印表機"
 
 #: src/Dialogs/AddDialog.vala:382
-#, fuzzy
-#| msgid "Page Setup"
 msgid "Printer Setup"
-msgstr "頁面設置"
+msgstr "印表機設置"
 
 #: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
@@ -204,12 +192,12 @@ msgstr "（建議）"
 #: src/Dialogs/ClearQueueDialog.vala:16
 #, c-format
 msgid "Clear all pending and completed jobs from “%s”?"
-msgstr ""
+msgstr "要從「%s」清除所有待處理和已完成的工作嗎？"
 
 #: src/Dialogs/ClearQueueDialog.vala:17
 msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
-msgstr ""
+msgstr "所有未完成的工作都會被取消，並且會刪除所有列印歷史。"
 
 #: src/Dialogs/ClearQueueDialog.vala:22 src/Views/JobsView.vala:37
 msgid "Clear All"
@@ -232,52 +220,39 @@ msgid "Remove"
 msgstr "移除"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "工作擱置中"
+msgstr "待處理"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
-msgstr "暫停"
+msgstr "待機中"
 
 #: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "處理中"
 
 #: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
 msgctxt "Print Job"
 msgid "Stopped"
 msgstr "已停止"
 
 #: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "取消"
+msgstr "已取消"
 
 #: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "工作已中止"
+msgstr "已中止"
 
 #: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "工作已完成"
+msgstr "已完成"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -389,7 +364,7 @@ msgstr "空的列印佇列"
 
 #: src/Views/JobsView.vala:20
 msgid "There are no pending jobs in the queue."
-msgstr "佇列中已沒有擱置的工作。"
+msgstr "佇列中沒有待處理的工作。"
 
 #: src/Views/JobsView.vala:107
 msgid "Completed Jobs"
@@ -686,10 +661,8 @@ msgid "Pause"
 msgstr "暫停"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
-msgstr "移除印表機"
+msgstr "移除這台印表機"
 
 #: src/Widgets/PrinterRow.vala:128
 msgid "Disabled"
