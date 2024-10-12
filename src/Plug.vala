@@ -56,6 +56,9 @@ namespace Printers {
                     shrink_end_child = false
                 };
 
+                var settings = new Settings ("io.elementary.settings");
+                settings.bind ("sidebar-position", main_paned, "position", DEFAULT);
+
                 update_alert_visible ();
 
                 list.notify["has-child"].connect (() => {
