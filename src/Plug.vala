@@ -56,6 +56,12 @@ namespace Printers {
                     shrink_end_child = false
                 };
 
+                var sss = SettingsSchemaSource.get_default ().lookup ("io.elementary.settings", true);
+                if (sss != null && sss.has_key ("sidebar-position")) {
+                    var settings = new Settings ("io.elementary.settings");
+                    settings.bind ("sidebar-position", main_paned, "position", DEFAULT);
+                }
+
                 update_alert_visible ();
 
                 list.notify["has-child"].connect (() => {
