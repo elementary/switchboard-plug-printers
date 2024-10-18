@@ -67,8 +67,21 @@ public class Printers.PrinterPage : Switchboard.SettingsPage {
         });
     }
 
-    private string? get_testprint_filename (string datadir) {
-        string[] testprints = {"/data/testprint", "/data/testprint.ps"};
+    private string? get_testprint_filename (string datadir, bool boring) {
+        //  Boring test page
+        string page;
+        if (boring) {
+            page = "testprint";
+        } else {
+            //  Random selection from fun ones
+            string[] fun_pages = {
+                "sudoku-testprint",
+                //  "fortune-testprint"
+            };
+            page = fun_pages[GLib.Random.int_range (0, fun_pages.length)];
+        }
+
+        string[] testprints = {"/data/" + page, "/data/" + page + ".ps"};
         foreach (var testprint in testprints) {
             string filename = datadir + testprint;
             if (Posix.access (filename, Posix.R_OK) == 0) {
@@ -80,37 +93,75 @@ public class Printers.PrinterPage : Switchboard.SettingsPage {
     }
 
     private void print_test_page () {
-        string? filename = null;
-        var datadir = GLib.Environment.get_variable ("CUPS_DATADIR");
-        if (datadir != null) {
-            filename = get_testprint_filename (datadir);
-        } else {
-            string[] dirs = { "/usr/share/cups", "/usr/local/share/cups" };
-            foreach (var dir in dirs) {
-                filename = get_testprint_filename (dir);
-                if (filename != null) {
+
+        // Ask the user if they want a fun test page
+        var dialog = new Granite.MessageDialog.with_image_from_icon_name (
+            _("Do you want a practical or fun test page?"),
+            "",
+            "dialog-information",
+            Gtk.ButtonsType.CANCEL
+        );
+
+        //  TODO make function
+        var checkbox = new Gtk.CheckButton.with_label (_("Remember my choice"));
+        checkbox.show ();
+
+        dialog.custom_bin.add (checkbox);
+
+        dialog.add_button (_("Boring"), 1);
+        dialog.add_button (_("Fun!"), 2);
+
+        dialog.show_all ();
+        dialog.response.connect ((response_id) => {
+
+            bool boring_page;
+
+            switch (response_id) {
+                case 1:
+                    boring_page = true;
                     break;
+                case 2:
+                    boring_page = false;
+                    break;
+                default:
+                    dialog.destroy ();
+                    return;
+            }
+
+            string? filename = null;
+            var datadir = GLib.Environment.get_variable ("CUPS_DATADIR");
+            if (datadir != null) {
+                filename = get_testprint_filename (datadir, boring_page);
+            } else {
+                string[] dirs = { "/usr/share/cups", "/usr/local/share/cups" };
+                foreach (var dir in dirs) {
+                    filename = get_testprint_filename (dir, boring_page);
+                    if (filename != null) {
+                        break;
+                    }
                 }
             }
-        }
 
-        if (filename != null) {
-            var type = int.parse (printer.printer_type);
-            string printer_uri, resource;
-            if (CUPS.PrinterType.CLASS in type) {
-                printer_uri = "ipp://localhost/classes/%s".printf (printer.dest.name);
-                resource = "/classes/%s".printf (printer.dest.name);
-            } else {
-                printer_uri = "ipp://localhost/printers/%s".printf (printer.dest.name);
-                resource = "/printers/%s".printf (printer.dest.name);
+            if (filename != null) {
+                var type = int.parse (printer.printer_type);
+                string printer_uri, resource;
+                if (CUPS.PrinterType.CLASS in type) {
+                    printer_uri = "ipp://localhost/classes/%s".printf (printer.dest.name);
+                    resource = "/classes/%s".printf (printer.dest.name);
+                } else {
+                    printer_uri = "ipp://localhost/printers/%s".printf (printer.dest.name);
+                    resource = "/printers/%s".printf (printer.dest.name);
+                }
+
+                var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.PRINT_JOB);
+                request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, printer_uri);
+                request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.NAME, "requesting-user-name", null, CUPS.get_user ());
+                /// TRANSLATORS: Name of the test page job
+                request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.NAME, "job-name", null, _("Test page"));
+                request.do_file_request (CUPS.HTTP.DEFAULT, resource, filename);
             }
 
-            var request = new CUPS.IPP.IPP.request (CUPS.IPP.Operation.PRINT_JOB);
-            request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.URI, "printer-uri", null, printer_uri);
-            request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.NAME, "requesting-user-name", null, CUPS.get_user ());
-            /// TRANSLATORS: Name of the test page job
-            request.add_string (CUPS.IPP.Tag.OPERATION, CUPS.IPP.Tag.NAME, "job-name", null, _("Test page"));
-            request.do_file_request (CUPS.HTTP.DEFAULT, resource, filename);
-        }
+            dialog.destroy ();
+        });
     }
 }
