@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-02 18:08+0000\n"
+"POT-Creation-Date: 2024-10-21 22:20+0000\n"
 "PO-Revision-Date: 2024-07-03 20:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -34,74 +34,78 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
-#: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
-#: data/printers.metainfo.xml.in:98
+#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:52
+#: data/printers.metainfo.xml.in:66 data/printers.metainfo.xml.in:93
+#: data/printers.metainfo.xml.in:102 data/printers.metainfo.xml.in:111
 msgid "Minor updates:"
 msgstr "Mniejsze aktualizacje:"
 
 #: data/printers.metainfo.xml.in:44
-msgid "Improved screen reader support"
-msgstr "Poprawiono wsparcie czytników ekranu"
+msgid "Restore sidebar position"
+msgstr ""
 
-#: data/printers.metainfo.xml.in:45
-msgid "Provide feedback for form validation when adding printers"
-msgstr "Dodano informacje zwrotną z walidacji podczas dodawania drukarek"
-
-#: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
-#: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
-#: data/printers.metainfo.xml.in:100
+#: data/printers.metainfo.xml.in:45 data/printers.metainfo.xml.in:56
+#: data/printers.metainfo.xml.in:68 data/printers.metainfo.xml.in:95
+#: data/printers.metainfo.xml.in:104 data/printers.metainfo.xml.in:113
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/printers.metainfo.xml.in:62
+#: data/printers.metainfo.xml.in:54
+msgid "Improved screen reader support"
+msgstr "Poprawiono wsparcie czytników ekranu"
+
+#: data/printers.metainfo.xml.in:55
+msgid "Provide feedback for form validation when adding printers"
+msgstr "Dodano informacje zwrotną z walidacji podczas dodawania drukarek"
+
+#: data/printers.metainfo.xml.in:75
 msgid "New Features:"
 msgstr "Nowe funkcje:"
 
-#: data/printers.metainfo.xml.in:64
+#: data/printers.metainfo.xml.in:77
 msgid "Allow clearing the queue for each printer"
 msgstr "Dodano możliwość wyczyszczenia kolejki dla każdej drukarki"
 
-#: data/printers.metainfo.xml.in:66
+#: data/printers.metainfo.xml.in:79
 msgid "Improvements:"
 msgstr "Ulepszenia:"
 
-#: data/printers.metainfo.xml.in:68
+#: data/printers.metainfo.xml.in:81
 msgid "Improved job row layout"
 msgstr "Ulepszono układ wierszy zadań"
 
-#: data/printers.metainfo.xml.in:69
+#: data/printers.metainfo.xml.in:82
 msgid "Show the supported language for each driver"
 msgstr ""
 "Pokazywana jest lista wszystkich dostępnych języków dla każdego sterownika"
 
-#: data/printers.metainfo.xml.in:70
+#: data/printers.metainfo.xml.in:83
 msgid "Show color names below ink levels"
 msgstr "Pokazano nazwy kolorów pod ilością tuszu"
 
-#: data/printers.metainfo.xml.in:71
+#: data/printers.metainfo.xml.in:84
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr "Uniknięto rozszerzania okna dla drukarek z wieloma poziomami tuszu"
 
-#: data/printers.metainfo.xml.in:72
+#: data/printers.metainfo.xml.in:85
 msgid "Use newer add/remove list pattern"
 msgstr "Użyto nowszego wzoru listy dodaj/usuń"
 
-#: data/printers.metainfo.xml.in:74
+#: data/printers.metainfo.xml.in:87
 msgid "Fixes:"
 msgstr "Poprawki:"
 
-#: data/printers.metainfo.xml.in:76
+#: data/printers.metainfo.xml.in:89
 msgid "Update sidebar after adding or removing printer"
 msgstr ""
 "Panel boczny po dodaniu lub usunięciu drukarki jest teraz aktualizowany"
 
-#: data/printers.metainfo.xml.in:77
+#: data/printers.metainfo.xml.in:90
 msgid "Update sidebar after enabling or disabling printer"
 msgstr ""
 "Panel boczny po włączeniu lub wyłączeniu drukarki jest teraz aktualizowany"
 
-#: data/printers.metainfo.xml.in:78
+#: data/printers.metainfo.xml.in:91
 msgid "Update job list after job state change"
 msgstr "Lista zadań teraz aktualizowany po zmianie statusu zadania"
 

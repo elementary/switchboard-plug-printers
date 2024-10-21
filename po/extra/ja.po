@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-02 18:08+0000\n"
+"POT-Creation-Date: 2024-10-21 22:20+0000\n"
 "PO-Revision-Date: 2024-07-04 22:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -31,73 +31,78 @@ msgstr "プリンターを設定し、プリントキューを管理し、イン
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
-#: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
-#: data/printers.metainfo.xml.in:98
+#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:52
+#: data/printers.metainfo.xml.in:66 data/printers.metainfo.xml.in:93
+#: data/printers.metainfo.xml.in:102 data/printers.metainfo.xml.in:111
 msgid "Minor updates:"
 msgstr "そのほかのアップデート:"
 
 #: data/printers.metainfo.xml.in:44
-msgid "Improved screen reader support"
-msgstr "スクリーンリーダーへの対応を改善"
+msgid "Restore sidebar position"
+msgstr ""
 
-#: data/printers.metainfo.xml.in:45
-msgid "Provide feedback for form validation when adding printers"
-msgstr "プリンター追加時、入力欄のバリデーション結果をユーザーに表示するように改善"
-
-#: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
-#: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
-#: data/printers.metainfo.xml.in:100
+#: data/printers.metainfo.xml.in:45 data/printers.metainfo.xml.in:56
+#: data/printers.metainfo.xml.in:68 data/printers.metainfo.xml.in:95
+#: data/printers.metainfo.xml.in:104 data/printers.metainfo.xml.in:113
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/printers.metainfo.xml.in:62
+#: data/printers.metainfo.xml.in:54
+msgid "Improved screen reader support"
+msgstr "スクリーンリーダーへの対応を改善"
+
+#: data/printers.metainfo.xml.in:55
+msgid "Provide feedback for form validation when adding printers"
+msgstr ""
+"プリンター追加時、入力欄のバリデーション結果をユーザーに表示するように改善"
+
+#: data/printers.metainfo.xml.in:75
 msgid "New Features:"
 msgstr "新機能:"
 
-#: data/printers.metainfo.xml.in:64
+#: data/printers.metainfo.xml.in:77
 msgid "Allow clearing the queue for each printer"
 msgstr "プリンターごとのキューの消去に対応"
 
-#: data/printers.metainfo.xml.in:66
+#: data/printers.metainfo.xml.in:79
 msgid "Improvements:"
 msgstr "改善点:"
 
-#: data/printers.metainfo.xml.in:68
+#: data/printers.metainfo.xml.in:81
 msgid "Improved job row layout"
 msgstr "ジョブ一覧のレイアウトを改善"
 
-#: data/printers.metainfo.xml.in:69
+#: data/printers.metainfo.xml.in:82
 msgid "Show the supported language for each driver"
 msgstr "各ドライバーの対応言語を表示"
 
-#: data/printers.metainfo.xml.in:70
+#: data/printers.metainfo.xml.in:83
 msgid "Show color names below ink levels"
 msgstr "インク残量の下に色名表示を追加"
 
-#: data/printers.metainfo.xml.in:71
+#: data/printers.metainfo.xml.in:84
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr ""
 "プリンターにインクレベルが複数存在する場合に、ウィンドウの大きさが意図せず大"
 "きくなってしまわないように修正"
 
-#: data/printers.metainfo.xml.in:72
+#: data/printers.metainfo.xml.in:85
 msgid "Use newer add/remove list pattern"
 msgstr "一覧への追加/削除に新しいデザインパターンを使うように修正"
 
-#: data/printers.metainfo.xml.in:74
+#: data/printers.metainfo.xml.in:87
 msgid "Fixes:"
 msgstr "修正点:"
 
-#: data/printers.metainfo.xml.in:76
+#: data/printers.metainfo.xml.in:89
 msgid "Update sidebar after adding or removing printer"
 msgstr "プリンターの追加・削除後に、サイドバーを更新するように修正"
 
-#: data/printers.metainfo.xml.in:77
+#: data/printers.metainfo.xml.in:90
 msgid "Update sidebar after enabling or disabling printer"
 msgstr "プリンターの有効化・無効化後に、サイドバーを更新するように修正"
 
-#: data/printers.metainfo.xml.in:78
+#: data/printers.metainfo.xml.in:91
 msgid "Update job list after job state change"
 msgstr "ジョブの状態が変化したら、ジョブ一覧を更新するように修正"
 

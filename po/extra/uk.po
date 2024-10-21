@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-02 18:08+0000\n"
+"POT-Creation-Date: 2024-10-21 22:20+0000\n"
 "PO-Revision-Date: 2024-07-07 18:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -33,72 +33,76 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
-#: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
-#: data/printers.metainfo.xml.in:98
+#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:52
+#: data/printers.metainfo.xml.in:66 data/printers.metainfo.xml.in:93
+#: data/printers.metainfo.xml.in:102 data/printers.metainfo.xml.in:111
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
 #: data/printers.metainfo.xml.in:44
+msgid "Restore sidebar position"
+msgstr ""
+
+#: data/printers.metainfo.xml.in:45 data/printers.metainfo.xml.in:56
+#: data/printers.metainfo.xml.in:68 data/printers.metainfo.xml.in:95
+#: data/printers.metainfo.xml.in:104 data/printers.metainfo.xml.in:113
+msgid "Updated translations"
+msgstr "Оновлені переклади"
+
+#: data/printers.metainfo.xml.in:54
 msgid "Improved screen reader support"
 msgstr "Поліпшено підтримку зчитування з екрана"
 
-#: data/printers.metainfo.xml.in:45
+#: data/printers.metainfo.xml.in:55
 msgid "Provide feedback for form validation when adding printers"
 msgstr ""
 "Надавати зворотний зв'язок для перевірки форми під час додавання принтерів"
 
-#: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
-#: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
-#: data/printers.metainfo.xml.in:100
-msgid "Updated translations"
-msgstr "Оновлені переклади"
-
-#: data/printers.metainfo.xml.in:62
+#: data/printers.metainfo.xml.in:75
 msgid "New Features:"
 msgstr "Нові функції:"
 
-#: data/printers.metainfo.xml.in:64
+#: data/printers.metainfo.xml.in:77
 msgid "Allow clearing the queue for each printer"
 msgstr "Можливість очищення черги для кожного принтера"
 
-#: data/printers.metainfo.xml.in:66
+#: data/printers.metainfo.xml.in:79
 msgid "Improvements:"
 msgstr "Удосконалення:"
 
-#: data/printers.metainfo.xml.in:68
+#: data/printers.metainfo.xml.in:81
 msgid "Improved job row layout"
 msgstr "Поліпшено роботу подання рядками"
 
-#: data/printers.metainfo.xml.in:69
+#: data/printers.metainfo.xml.in:82
 msgid "Show the supported language for each driver"
 msgstr "Показ підтримуваних мов для кожного драйвера"
 
-#: data/printers.metainfo.xml.in:70
+#: data/printers.metainfo.xml.in:83
 msgid "Show color names below ink levels"
 msgstr "Показ назв кольорів під рівнем чорнил"
 
-#: data/printers.metainfo.xml.in:71
+#: data/printers.metainfo.xml.in:84
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr "Уникнення розширення вікна для принтерів з багатьма рівнями чорнила"
 
-#: data/printers.metainfo.xml.in:72
+#: data/printers.metainfo.xml.in:85
 msgid "Use newer add/remove list pattern"
 msgstr "Використано новіші шаблони додавання/видалення списку"
 
-#: data/printers.metainfo.xml.in:74
+#: data/printers.metainfo.xml.in:87
 msgid "Fixes:"
 msgstr "Виправлення:"
 
-#: data/printers.metainfo.xml.in:76
+#: data/printers.metainfo.xml.in:89
 msgid "Update sidebar after adding or removing printer"
 msgstr "Оновлення бічної панелі після додавання або вилучення принтера"
 
-#: data/printers.metainfo.xml.in:77
+#: data/printers.metainfo.xml.in:90
 msgid "Update sidebar after enabling or disabling printer"
 msgstr "Оновлення бічної панелі після ввімкнення або вимкнення принтера"
 
-#: data/printers.metainfo.xml.in:78
+#: data/printers.metainfo.xml.in:91
 msgid "Update job list after job state change"
 msgstr "Оновлено список завдань після зміни стану роботи"
 

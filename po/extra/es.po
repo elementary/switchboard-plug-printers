@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-02 18:08+0000\n"
+"POT-Creation-Date: 2024-10-21 22:20+0000\n"
 "PO-Revision-Date: 2024-07-03 20:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -33,77 +33,81 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
-#: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
-#: data/printers.metainfo.xml.in:98
+#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:52
+#: data/printers.metainfo.xml.in:66 data/printers.metainfo.xml.in:93
+#: data/printers.metainfo.xml.in:102 data/printers.metainfo.xml.in:111
 msgid "Minor updates:"
 msgstr "Actualizaciones menores:"
 
 #: data/printers.metainfo.xml.in:44
+msgid "Restore sidebar position"
+msgstr ""
+
+#: data/printers.metainfo.xml.in:45 data/printers.metainfo.xml.in:56
+#: data/printers.metainfo.xml.in:68 data/printers.metainfo.xml.in:95
+#: data/printers.metainfo.xml.in:104 data/printers.metainfo.xml.in:113
+msgid "Updated translations"
+msgstr "Traducciones actualizadas"
+
+#: data/printers.metainfo.xml.in:54
 msgid "Improved screen reader support"
 msgstr "Se mejoró el soporte para lectores de pantalla"
 
-#: data/printers.metainfo.xml.in:45
+#: data/printers.metainfo.xml.in:55
 msgid "Provide feedback for form validation when adding printers"
 msgstr ""
 "Se muestran mensajes de error con comentarios al validar el formulario para "
 "agregar nuevas impresoras"
 
-#: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
-#: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
-#: data/printers.metainfo.xml.in:100
-msgid "Updated translations"
-msgstr "Traducciones actualizadas"
-
-#: data/printers.metainfo.xml.in:62
+#: data/printers.metainfo.xml.in:75
 msgid "New Features:"
 msgstr "Nuevas características:"
 
-#: data/printers.metainfo.xml.in:64
+#: data/printers.metainfo.xml.in:77
 msgid "Allow clearing the queue for each printer"
 msgstr "Se puede limpiar la cola para cada impresora"
 
-#: data/printers.metainfo.xml.in:66
+#: data/printers.metainfo.xml.in:79
 msgid "Improvements:"
 msgstr "Mejoras:"
 
-#: data/printers.metainfo.xml.in:68
+#: data/printers.metainfo.xml.in:81
 msgid "Improved job row layout"
 msgstr "Se mejoró la disposición de las filas de tareas"
 
-#: data/printers.metainfo.xml.in:69
+#: data/printers.metainfo.xml.in:82
 msgid "Show the supported language for each driver"
 msgstr "Se muestra el idioma soportado para cada controlador"
 
-#: data/printers.metainfo.xml.in:70
+#: data/printers.metainfo.xml.in:83
 msgid "Show color names below ink levels"
 msgstr "Se muestran los nombres de color con bajos niveles de tinta"
 
-#: data/printers.metainfo.xml.in:71
+#: data/printers.metainfo.xml.in:84
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr ""
 "Se evita que se expanda la ventana para impresoras con muchos niveles de "
 "tinta"
 
-#: data/printers.metainfo.xml.in:72
+#: data/printers.metainfo.xml.in:85
 msgid "Use newer add/remove list pattern"
 msgstr "Se usa un patrón de lista de añadir/quitar más moderno"
 
-#: data/printers.metainfo.xml.in:74
+#: data/printers.metainfo.xml.in:87
 msgid "Fixes:"
 msgstr "Correcciones:"
 
-#: data/printers.metainfo.xml.in:76
+#: data/printers.metainfo.xml.in:89
 msgid "Update sidebar after adding or removing printer"
 msgstr ""
 "Ahora se actualiza la barra lateral después de añadir o quitar una impresora"
 
-#: data/printers.metainfo.xml.in:77
+#: data/printers.metainfo.xml.in:90
 msgid "Update sidebar after enabling or disabling printer"
 msgstr ""
 "Se actualiza la barra lateral después de activar o desactivar una impresora"
 
-#: data/printers.metainfo.xml.in:78
+#: data/printers.metainfo.xml.in:91
 msgid "Update job list after job state change"
 msgstr ""
 "Se actualiza la lista de tareas después de un cambio de estado de una tarea"
