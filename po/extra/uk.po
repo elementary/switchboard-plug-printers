@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-21 22:20+0000\n"
-"PO-Revision-Date: 2024-07-07 18:16+0000\n"
+"PO-Revision-Date: 2024-10-22 06:26+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/uk/>\n"
@@ -41,7 +41,7 @@ msgstr "Незначні оновлення:"
 
 #: data/printers.metainfo.xml.in:44
 msgid "Restore sidebar position"
-msgstr ""
+msgstr "Відновити позицію бічної панелі"
 
 #: data/printers.metainfo.xml.in:45 data/printers.metainfo.xml.in:56
 #: data/printers.metainfo.xml.in:68 data/printers.metainfo.xml.in:95
