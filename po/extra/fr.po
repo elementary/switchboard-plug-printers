@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-02 18:08+0000\n"
+"POT-Creation-Date: 2024-10-21 22:20+0000\n"
 "PO-Revision-Date: 2024-07-11 08:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -33,79 +33,83 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:53
-#: data/printers.metainfo.xml.in:80 data/printers.metainfo.xml.in:89
-#: data/printers.metainfo.xml.in:98
+#: data/printers.metainfo.xml.in:42 data/printers.metainfo.xml.in:52
+#: data/printers.metainfo.xml.in:66 data/printers.metainfo.xml.in:93
+#: data/printers.metainfo.xml.in:102 data/printers.metainfo.xml.in:111
 msgid "Minor updates:"
 msgstr "Mises à jour mineures :"
 
 #: data/printers.metainfo.xml.in:44
+msgid "Restore sidebar position"
+msgstr ""
+
+#: data/printers.metainfo.xml.in:45 data/printers.metainfo.xml.in:56
+#: data/printers.metainfo.xml.in:68 data/printers.metainfo.xml.in:95
+#: data/printers.metainfo.xml.in:104 data/printers.metainfo.xml.in:113
+msgid "Updated translations"
+msgstr "Mise à jour des traductions"
+
+#: data/printers.metainfo.xml.in:54
 msgid "Improved screen reader support"
 msgstr "Amélioration de l'accessibilité pour les lecteurs d'écran"
 
-#: data/printers.metainfo.xml.in:45
+#: data/printers.metainfo.xml.in:55
 msgid "Provide feedback for form validation when adding printers"
 msgstr ""
 "Ajout de retours à la validation du formulaire lors de l'ajout d'imprimantes"
 
-#: data/printers.metainfo.xml.in:46 data/printers.metainfo.xml.in:55
-#: data/printers.metainfo.xml.in:82 data/printers.metainfo.xml.in:91
-#: data/printers.metainfo.xml.in:100
-msgid "Updated translations"
-msgstr "Mise à jour des traductions"
-
-#: data/printers.metainfo.xml.in:62
+#: data/printers.metainfo.xml.in:75
 msgid "New Features:"
 msgstr "Nouvelles fonctionnalités :"
 
-#: data/printers.metainfo.xml.in:64
+#: data/printers.metainfo.xml.in:77
 msgid "Allow clearing the queue for each printer"
 msgstr ""
 "Il est désormais possible de vider la file d'attente pour chaque imprimante"
 
-#: data/printers.metainfo.xml.in:66
+#: data/printers.metainfo.xml.in:79
 msgid "Improvements:"
 msgstr "Améliorations :"
 
-#: data/printers.metainfo.xml.in:68
+#: data/printers.metainfo.xml.in:81
 msgid "Improved job row layout"
 msgstr "Amélioration de la disposition de la ligne d'une tâche d'impression"
 
-#: data/printers.metainfo.xml.in:69
+#: data/printers.metainfo.xml.in:82
 msgid "Show the supported language for each driver"
 msgstr "Affichage de la langue prise en charge pour chaque pilote"
 
-#: data/printers.metainfo.xml.in:70
+#: data/printers.metainfo.xml.in:83
 msgid "Show color names below ink levels"
 msgstr "Affichage du nom des couleurs sous les niveau d'encre"
 
-#: data/printers.metainfo.xml.in:71
+#: data/printers.metainfo.xml.in:84
 msgid "Avoid expanding the window for printers with many ink levels"
 msgstr ""
 "Nous avons empêché l'agrandissement de la fenêtre pour les imprimantes avec "
 "de nombreux niveaux d'encre"
 
-#: data/printers.metainfo.xml.in:72
+#: data/printers.metainfo.xml.in:85
 msgid "Use newer add/remove list pattern"
 msgstr "Utilisation du nouveau modèle de liste d'ajout/suppression"
 
-#: data/printers.metainfo.xml.in:74
+#: data/printers.metainfo.xml.in:87
 msgid "Fixes:"
 msgstr "Corrections :"
 
-#: data/printers.metainfo.xml.in:76
+#: data/printers.metainfo.xml.in:89
 msgid "Update sidebar after adding or removing printer"
 msgstr ""
 "Mise à jour de la barre latérale après l'ajout et la suppression d'une "
 "imprimante"
 
-#: data/printers.metainfo.xml.in:77
+#: data/printers.metainfo.xml.in:90
 msgid "Update sidebar after enabling or disabling printer"
 msgstr ""
 "Mise à jour de la barre latérale après l'activation et la désactivation "
 "d'une imprimante"
 
-#: data/printers.metainfo.xml.in:78
+#: data/printers.metainfo.xml.in:91
 msgid "Update job list after job state change"
 msgstr ""
 "Mise à jour de la liste des tâches d'impression après un changement d'état "
