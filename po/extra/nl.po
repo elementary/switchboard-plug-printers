@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-21 22:20+0000\n"
-"PO-Revision-Date: 2024-09-05 20:32+0000\n"
+"PO-Revision-Date: 2024-10-29 11:55+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "printers-plug-extra/nl/>\n"
@@ -39,7 +39,7 @@ msgstr "Kleine updates:"
 
 #: data/printers.metainfo.xml.in:44
 msgid "Restore sidebar position"
-msgstr ""
+msgstr "Herstel zijbalk-positie"
 
 #: data/printers.metainfo.xml.in:45 data/printers.metainfo.xml.in:56
 #: data/printers.metainfo.xml.in:68 data/printers.metainfo.xml.in:95
