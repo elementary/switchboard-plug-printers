@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-21 22:20+0000\n"
-"PO-Revision-Date: 2024-07-03 20:16+0000\n"
+"PO-Revision-Date: 2024-11-06 07:51+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/printers-plug-extra/en_GB/>\n"
@@ -39,7 +39,7 @@ msgstr "Minor updates:"
 
 #: data/printers.metainfo.xml.in:44
 msgid "Restore sidebar position"
-msgstr ""
+msgstr "Restore sidebar position"
 
 #: data/printers.metainfo.xml.in:45 data/printers.metainfo.xml.in:56
 #: data/printers.metainfo.xml.in:68 data/printers.metainfo.xml.in:95
