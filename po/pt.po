@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-21 22:20+0000\n"
-"PO-Revision-Date: 2024-03-26 22:13+0000\n"
+"PO-Revision-Date: 2024-11-28 12:16+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-printers/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:09+0000\n"
 
 #: src/Plug.vala:23
@@ -115,10 +115,8 @@ msgid "Next"
 msgstr "Seguinte"
 
 #: src/Dialogs/AddDialog.vala:107
-#, fuzzy
-#| msgid "Network Printers"
 msgid "Select Printer"
-msgstr "Impressoras de Rede"
+msgstr "Selecionar impressora"
 
 #. Shows the error panel
 #: src/Dialogs/AddDialog.vala:210
@@ -127,7 +125,7 @@ msgstr "Impossível listar todas as impressoras disponíveis"
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "Erro de configuração"
 
 #: src/Dialogs/AddDialog.vala:246
 msgid "Connection"
@@ -170,10 +168,8 @@ msgid "Add Printer"
 msgstr "Adicionar impressora"
 
 #: src/Dialogs/AddDialog.vala:382
-#, fuzzy
-#| msgid "Page Setup"
 msgid "Printer Setup"
-msgstr "Configuração da página"
+msgstr "Configuração da impressora"
 
 #: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
