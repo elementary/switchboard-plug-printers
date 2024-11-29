@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-21 22:20+0000\n"
-"PO-Revision-Date: 2024-11-06 01:04+0000\n"
+"PO-Revision-Date: 2024-11-30 16:16+0000\n"
 "Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/printers-plug-extra/pt_BR/>\n"
@@ -50,7 +50,7 @@ msgstr "Traduções atualizadas"
 
 #: data/printers.metainfo.xml.in:54
 msgid "Improved screen reader support"
-msgstr ""
+msgstr "Suporte aprimorado ao leitor de tela"
 
 #: data/printers.metainfo.xml.in:55
 msgid "Provide feedback for form validation when adding printers"
