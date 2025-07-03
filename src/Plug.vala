@@ -34,17 +34,27 @@ namespace Printers {
 
                 list = new PrinterList (stack);
 
+                var header_bar = new Adw.HeaderBar () {
+                    show_title = false,
+                    show_start_title_buttons = false,
+                    show_back_button = false
+                };
+                header_bar.add_css_class (Granite.STYLE_CLASS_FLAT);
+
                 var empty_alert = new Granite.Placeholder (_("No Printers Available")) {
                     description = _("Connect to a printer by clicking the icon in the toolbar below."),
                     icon = new ThemedIcon ("printer-error"),
-                    visible = true
+                    vexpand = true
                 };
-                empty_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
+
+                var placeholder_box = new Gtk.Box (VERTICAL, 0);
+                placeholder_box.append (header_bar);
+                placeholder_box.append (empty_alert);
 
                 main_stack = new Gtk.Stack () {
                     transition_type = Gtk.StackTransitionType.CROSSFADE
                 };
-                main_stack.add_named (empty_alert, "empty-alert");
+                main_stack.add_named (placeholder_box, "empty-alert");
                 main_stack.add_named (stack, "main-paned");
 
                 main_paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
