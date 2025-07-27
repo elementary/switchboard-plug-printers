@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-21 22:20+0000\n"
-"PO-Revision-Date: 2024-08-07 18:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
-"switchboard/switchboard-plug-printers/pt_BR/>\n"
+"PO-Revision-Date: 2025-07-28 04:55+0000\n"
+"Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://l10n.elementaryos.org/projects/"
+"settings/switchboard-plug-printers/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-03-07 06:10+0000\n"
 
 #: src/Plug.vala:23
@@ -50,7 +50,7 @@ msgstr "Configurações e Suprimentos"
 
 #: src/PrinterPage.vala:49
 msgid "Set as Default"
-msgstr ""
+msgstr "Definir como Padrão"
 
 #: src/PrinterPage.vala:53
 msgid "Print Test Page"
@@ -114,10 +114,8 @@ msgid "Next"
 msgstr "Próxima"
 
 #: src/Dialogs/AddDialog.vala:107
-#, fuzzy
-#| msgid "Network Printers"
 msgid "Select Printer"
-msgstr "Impressoras de rede"
+msgstr "Selecionar Impressora"
 
 #. Shows the error panel
 #: src/Dialogs/AddDialog.vala:210
@@ -126,47 +124,39 @@ msgstr "Impossível listar todas as impressoras disponíveis"
 
 #: src/Dialogs/AddDialog.vala:230
 msgid "Setup Error"
-msgstr ""
+msgstr "Erro de Configuração"
 
 #: src/Dialogs/AddDialog.vala:246
-#, fuzzy
-#| msgid "Connection:"
 msgid "Connection"
-msgstr "Conexão:"
+msgstr "Conexão"
 
 #: src/Dialogs/AddDialog.vala:251
 msgid "Connection uri must contain “://“"
-msgstr ""
+msgstr "O uri da conexão deve conter “://”"
 
 #: src/Dialogs/AddDialog.vala:258 src/Views/SuppliesView.vala:25
 msgid "BrandPrinter X3000"
 msgstr "BrandPrinter X3000"
 
 #: src/Dialogs/AddDialog.vala:262 src/Views/SuppliesView.vala:28
-#, fuzzy
-#| msgid "Description:"
 msgid "Description"
-msgstr "Descrição:"
+msgstr "Descrição"
 
 #: src/Dialogs/AddDialog.vala:267
 msgid "Description cannot be empty"
-msgstr ""
+msgstr "Descrição não pode ser vazia"
 
 #: src/Dialogs/AddDialog.vala:273
 msgid "Lab 1 or John's desk"
 msgstr "Laboratório 1 ou Mesa do João"
 
 #: src/Dialogs/AddDialog.vala:276 src/Views/SuppliesView.vala:36
-#, fuzzy
-#| msgid "Location:"
 msgid "Location"
-msgstr "Localização:"
+msgstr "Localização"
 
 #: src/Dialogs/AddDialog.vala:304
-#, fuzzy
-#| msgid "Processing…"
 msgid "Loading…"
-msgstr "Processando…"
+msgstr "Carregando…"
 
 #: src/Dialogs/AddDialog.vala:337
 msgid "Back"
@@ -177,10 +167,8 @@ msgid "Add Printer"
 msgstr "Adicionar impressora"
 
 #: src/Dialogs/AddDialog.vala:382
-#, fuzzy
-#| msgid "Page Setup"
 msgid "Printer Setup"
-msgstr "Configurações da Página"
+msgstr "Configurações da Impressora"
 
 #: src/Dialogs/AddDialog.vala:654
 msgid "Serial"
@@ -205,12 +193,14 @@ msgstr "(recomendado)"
 #: src/Dialogs/ClearQueueDialog.vala:16
 #, c-format
 msgid "Clear all pending and completed jobs from “%s”?"
-msgstr ""
+msgstr "Limpar todos trabalhos pendentes e completos de “%s”?"
 
 #: src/Dialogs/ClearQueueDialog.vala:17
 msgid ""
 "All unfinished jobs will be canceled and all print history will be erased."
 msgstr ""
+"Todos os trabalhos não concluídos serão cancelados e todo o histórico de "
+"impressão será apagado."
 
 #: src/Dialogs/ClearQueueDialog.vala:22 src/Views/JobsView.vala:37
 msgid "Clear All"
@@ -235,52 +225,39 @@ msgid "Remove"
 msgstr "Remover"
 
 #: src/Objects/Job.vala:142
-#, fuzzy
-#| msgid "Job Pending"
 msgctxt "Print Job"
 msgid "Pending"
-msgstr "Tarefa pendente"
+msgstr "Pendente"
 
 #: src/Objects/Job.vala:144
-#, fuzzy
-#| msgid "On Hold"
 msgctxt "Print Job"
 msgid "On Hold"
-msgstr "Em espera"
+msgstr "Em Espera"
 
 #: src/Objects/Job.vala:146
 msgctxt "Print Job"
 msgid "In Progress"
-msgstr ""
+msgstr "Em Progresso"
 
 #: src/Objects/Job.vala:148
-#, fuzzy
-#| msgctxt "printer state"
-#| msgid "Stopped"
 msgctxt "Print Job"
 msgid "Stopped"
 msgstr "Parado"
 
 #: src/Objects/Job.vala:150
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "Print Job"
 msgid "Canceled"
-msgstr "Cancelar"
+msgstr "Cancelado"
 
 #: src/Objects/Job.vala:152
-#, fuzzy
-#| msgid "Job Aborted"
 msgctxt "Print Job"
 msgid "Aborted"
-msgstr "Trabalho abortado"
+msgstr "Abortado"
 
 #: src/Objects/Job.vala:155
-#, fuzzy
-#| msgid "Job Completed"
 msgctxt "Print Job"
 msgid "Completed"
-msgstr "Trabalho concluído"
+msgstr "Concluído"
 
 #. / Translators: The printer is low on toner
 #: src/Objects/Printer.vala:45
@@ -689,10 +666,8 @@ msgid "Pause"
 msgstr "Pausa"
 
 #: src/Widgets/PrinterRow.vala:41
-#, fuzzy
-#| msgid "Remove Printer"
 msgid "Remove this printer"
-msgstr "Remover impressora"
+msgstr "Remover esta impressora"
 
 #: src/Widgets/PrinterRow.vala:128
 msgid "Disabled"
