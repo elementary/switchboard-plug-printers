@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-21 22:20+0000\n"
-"PO-Revision-Date: 2025-08-03 08:55+0000\n"
+"PO-Revision-Date: 2025-08-16 05:55+0000\n"
 "Last-Translator: JieXu <xujie0739@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://"
 "l10n.elementaryos.org/projects/settings/switchboard-plug-printers/zh_Hans/>\n"
@@ -45,7 +45,7 @@ msgstr "页面设置"
 
 #: src/PrinterPage.vala:28
 msgid "Settings & Supplies"
-msgstr "设置和用品"
+msgstr "选项和耗材"
 
 #: src/PrinterPage.vala:49
 msgid "Set as Default"
