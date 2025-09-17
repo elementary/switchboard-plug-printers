@@ -12,23 +12,23 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/8.0.1/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/settings-printers/8.0.1/data/screenshot.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/8.0.1/data/screenshot-page-setup.png</image>
+      <image>https://raw.githubusercontent.com/elementary/settings-printers/8.0.1/data/screenshot-page-setup.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-printers/8.0.1/data/screenshot-settings.png</image>
+      <image>https://raw.githubusercontent.com/elementary/settings-printers/8.0.1/data/screenshot-settings.png</image>
     </screenshot>
   </screenshots>
 
   <content_rating type="oars-1.1" />
 
-  <url type="bugtracker">https://github.com/elementary/switchboard-plug-printers/issues</url>
+  <url type="bugtracker">https://github.com/elementary/settings-printers/issues</url>
   <url type="donation">https://elementary.io/get-involved#funding</url>
-  <url type="help">https://github.com/elementary/switchboard-plug-printers/discussions</url>
+  <url type="help">https://github.com/elementary/settings-printers/discussions</url>
   <url type="homepage">https://elementary.io/</url>
-  <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+  <url type="translate">https://l10n.elementary.io/engage/settings/</url>
 
   <developer id="org.elementaryos">
     <name>elementary, Inc.</name>
@@ -57,7 +57,7 @@
         </ul>
       </description>
       <issues>
-        <issue url="https://github.com/elementary/switchboard-plug-printers/issues/155">Inconsistent vertical spacing of buttons</issue>
+        <issue url="https://github.com/elementary/settings-printers/issues/155">Inconsistent vertical spacing of buttons</issue>
       </issues>
     </release>
 
